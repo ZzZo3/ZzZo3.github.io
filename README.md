@@ -1,4 +1,4 @@
 # ZzZo3.github.io
 desc.
-```swift
+```python
 print("Hello, world!")
