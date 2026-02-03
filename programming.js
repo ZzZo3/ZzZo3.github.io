@@ -54,6 +54,7 @@ let exclusiveMappings = [
     ['∴','type'],
     ['∴?','type?','typeq','typequery','typequeer'],
     ['∴→','types','typeval','typeeval','type->'],
+    ['→','->','eval','evaluates'],
     ['≤','<='],
     ['≤?','<=?','<=q','<=query','<=queer'],
     ['≥','>='],
@@ -388,3 +389,4 @@ function loadFunc() {
     roundPrompt.textContent = 'rounding to ['+roundTo+']'
     console.log('   \"loadFunc()\" finished')
 }
+
