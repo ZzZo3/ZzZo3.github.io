@@ -1,4 +1,4 @@
-const photoCount = 0
+const photoCount = '0'
 
 //STUFF THAT RUNS ON LOAD
 
