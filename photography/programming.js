@@ -5,7 +5,7 @@ const photoCount = 0
 function loadFunc() {
     console.log('\"loadFunc()\" began')
     for(let i = 0; i<pageTitle.length; i++) {
-        pageTitle[i].textContent = 'Photos! '+photoCount
+        pageTitle[i].textContent = 'Photos! ['+photoCount+']'
     }
     console.log('   \"loadFunc()\" finished')
 }
