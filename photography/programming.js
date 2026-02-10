@@ -1,3 +1,4 @@
+//BASE
 const photoCount = '0'
 
 //STUFF THAT RUNS ON LOAD
