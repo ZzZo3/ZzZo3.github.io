@@ -332,6 +332,7 @@ function useArith(A,op,B) {
         out = Math.round(out / roundTo) * roundTo
     }
     console.log('   \"useArith()\" finished: '+out)
+    alert(out)
     return out
 }
 
