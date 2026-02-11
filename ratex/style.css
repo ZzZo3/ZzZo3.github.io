@@ -14,6 +14,24 @@ html, body {
     font-family:'Courier New', Courier, monospace;
 }
 
+/* ZzZ1ty */
+.toZzZ1tyButton {
+    display: inline;
+    border: 2px solid #6011AF;
+    background-color: #8239CA;
+    color: rgb(255, 216, 132);
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.toZzZ1tyButton:hover {
+    background-color: #400B75;
+    color: rgb(255, 216, 132);
+}
+
 /* TABS */
 .tab {
     overflow: hidden;
@@ -45,22 +63,6 @@ html, body {
 }
 .amberButton.active {
     background-color: #212121;
-}
-.toZzZ1tyButton {
-    display: inline;
-    border: 2px solid #6011AF;
-    background-color: #8239CA;
-    color: rgb(255, 216, 132);
-    text-decoration: none;
-    font-family:'Courier New', Courier, monospace;
-    outline: none;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.25s;
-}
-.toZzZ1tyButton:hover {
-    background-color: #400B75;
-    color: rgb(255, 216, 132);
 }
 .tab button {
     padding: 14px 18px;
