@@ -1,11 +1,11 @@
 const mainBody = document.getElementById("mainBody")
 
 function twinkleToggle() {
-    if(mainBody.classList.contains("tileStarry")) {
-        mainBody.classList.replace("tileStarry","tileStarryAlt")
-    } else if(mainBody.classList.contains("tileStarryAlt")) {
-        mainBody.classList.replace("tileStarryAlt","tileStarryAlt1")
+    if(mainBody.classList.contains("tileStarryStatic")) {
+        mainBody.classList.replace("tileStarryStatic","tileStarrySlow")
+    } else if(mainBody.classList.contains("tileStarrySlow")) {
+        mainBody.classList.replace("tileStarrySlow","tileStarryFast")
     } else {
-        mainBody.classList.replace("tileStarryAlt1","tileStarry")
+        mainBody.classList.replace("tileStarryFast","tileStarryStatic")
     }
 }
