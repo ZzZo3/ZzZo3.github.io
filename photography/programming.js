@@ -1,5 +1,5 @@
 //BASE
-const photoCount = '0'
+let photoCount = '0'
 const pageTitle = document.getElementsByClassName('pageTitle')
 //DYNAMIC IMAGE DISPLAY
 const dynamicImageDisplay = document.getElementsByClassName('dynamicImageDisplay')
