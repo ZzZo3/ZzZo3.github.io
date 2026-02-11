@@ -1,6 +1,6 @@
 /* TABS */
 .tab {
-    overflow: hidden;
+    overflow:-moz-scrollbars-horizontal;
     border: 1px solid white;
     border-radius: 5px;
     background-color: black;
