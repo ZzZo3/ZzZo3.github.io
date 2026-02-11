@@ -39,7 +39,7 @@ html, body {
 }
 .toZzZ1tyButton {
     display: inline;
-    border: 1px solid #D0A1FF;
+    border: 2px solid #6011AF;
     background-color: #8239CA;
     color: white;
     text-decoration: none;
@@ -51,9 +51,7 @@ html, body {
 }
 .toZzZ1tyButton:hover {
     background-color: #400B75;
-}
-.toZzZ1tyButton.active {
-    background-color: #400B75;
+    color: rgb(255, 216, 132);
 }
 .tab button {
     padding: 14px 18px;
