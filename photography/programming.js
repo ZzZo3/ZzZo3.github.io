@@ -1,5 +1,6 @@
 //BASE
 const photoCount = '0'
+const pageTitle = document.getElementsByClassName('pageTitle')
 
 //STUFF THAT RUNS ON LOAD
 
