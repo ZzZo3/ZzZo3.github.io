@@ -13,7 +13,7 @@ function loadFunc() {
     photoCount = dynamicImageData.length
     alert(photoCount.toString)
     for(let i = 0; i<pageTitle.length; i++) {
-        pageTitle[i].textContent = 'Photos! ['+photoCount.toString+']'
+        pageTitle[i].textContent = 'Photos! ['+photoCount+']'
     }
     console.log('   \"loadFunc()\" finished')
 }
