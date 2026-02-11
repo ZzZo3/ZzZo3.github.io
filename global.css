@@ -46,6 +46,13 @@ html, body {
     background-size: 60px 60px;
     background-position: top left;
 }
+.tileStarryAlt1 {
+    color: white;
+    background-image: url("./assets/starryNightSlow.png");
+    background-repeat: repeat;
+    background-size: 60px 60px;
+    background-position: top left;
+}
 
 /* ZZZ1TY BUTTON */
 .toZzZ1tyButton {
