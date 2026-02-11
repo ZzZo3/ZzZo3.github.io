@@ -2,10 +2,10 @@ html, body {
     height: 100%;
     background: 
       conic-gradient(
-          #0f0f0f 90deg,
-          #101010 90deg 180deg,
-          #0f0f0f 180deg 270deg,
-          #101010 270deg 360deg
+          #0b0b0b 90deg,
+          #131313 90deg 180deg,
+          #0b0b0b 180deg 270deg,
+          #131313 270deg 360deg
       );
     background-repeat: repeat;
     background-size: 25px 25px;
