@@ -134,13 +134,13 @@ html, body {
     color: rgb(255, 216, 132);
 }
 /* TABLE */
-table {
+.docTable {
     border: 1px solid white;
     border-radius: 5px;
     border-collapse: collapse;
     text-align: center;
 }
-th, td {
+.docTable >* {
     border: 1px solid white;
     border-left: none;
     border-right: none;
