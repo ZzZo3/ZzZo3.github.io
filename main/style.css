@@ -1,12 +1,15 @@
 html {
     height: 100%s;
 }
-body {
-    background-image: url('isometricCityScape.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+mainBody {
+    color: white;
+    
+    background-image: url('isometricCityScape.png'), url("./assets/starryNightSSmooth.gif");
+    background-size: cover,  60px 60px;
+    background-repeat: no-repeat, repeat;
     background-attachment: scroll;
-    background-position: center;
+    background-position: center, top left;
+
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
