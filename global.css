@@ -8,10 +8,10 @@ html, body {
     color: white;
     background: 
       repeating-conic-gradient(
-          #f3f3f3 90deg,
-          #f7f7f7 90deg 180deg,
-          #f3f3f3 180deg 270deg,
-          #f7f7f7 270deg 360deg
+          #080808 90deg,
+          #101010 90deg 180deg,
+          #080808 180deg 270deg,
+          #101010 270deg 360deg
       );
     background-size: 25px 25px;
     background-position: top left;
@@ -20,11 +20,11 @@ html, body {
 .tileLight {
     color: black;
     background: 
+          #f3f3f3 90deg,
+          #f7f7f7 90deg 180deg,
+          #f3f3f3 180deg 270deg,
+          #f7f7f7 270deg 360deg
       repeating-conic-gradient(
-          #080808 90deg,
-          #101010 90deg 180deg,
-          #080808 180deg 270deg,
-          #101010 270deg 360deg
       );
     background-size: 25px 25px;
     background-position: top left;
