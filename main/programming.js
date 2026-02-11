@@ -8,13 +8,11 @@ function twinkleToggle() {
         } else {
             mainBody.classList.replace("staticStars","slowStars")
         }
-    }
-    if(mainBody.classList.contains("slowSmoothStars")) {
+    } else if(mainBody.classList.contains("slowSmoothStars")) {
         mainBody.classList.replace("slowSmoothStars","fastSmoothStars")
     } else if(mainBody.classList.contains("fastSmoothStars")) {
         mainBody.classList.replace("fastSmoothStars","staticStars")
-    }
-    if(mainBody.classList.contains("slowStars")) {
+    } else if(mainBody.classList.contains("slowStars")) {
         mainBody.classList.replace("slowStars","fastStars")
     } else if(mainBody.classList.contains("fastStars")) {
         mainBody.classList.replace("fastStars","staticStars")
