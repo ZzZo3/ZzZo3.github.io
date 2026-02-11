@@ -10,12 +10,10 @@ const dynamicImageData = document.getElementsByClassName('dynamicImageData')
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    dynamicImageData.forEach(img => {
-        return img
-    });
     photoCount = dynamicImageData.length
+    alert(photoCount.toString)
     for(let i = 0; i<pageTitle.length; i++) {
-        pageTitle[i].textContent = 'Photos! ['+photoCount.toString()+']'
+        pageTitle[i].textContent = 'Photos! ['+photoCount.toString+']'
     }
     console.log('   \"loadFunc()\" finished')
 }
