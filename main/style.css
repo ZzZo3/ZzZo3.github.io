@@ -4,7 +4,7 @@ html {
 }
 mainBody {
     color: white;
-    background-image: url('./assets/isometricCityScape.png'), url("./assets/starryNightSSmooth.gif");
+    background-image: url('./assets/isometric/isometricCityScape.png'), url("./assets/backgrounds/starryNightSSmooth.gif");
     background-size: cover,  60px 60px;
     background-repeat: no-repeat, repeat;
     background-attachment: scroll, scroll;
