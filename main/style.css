@@ -1,0 +1,13 @@
+html {
+    height: 100%s;
+}
+body {
+    background-image: url('isometricCityScape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
