@@ -1,17 +1,39 @@
 html, body {
     height: 100%;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* BACKGROUNDS */
+.tileDark {
     background: 
-      conic-gradient(
+      repeating-conic-gradient(
+          #f3f3f3 90deg,
+          #f7f7f7 90deg 180deg,
+          #f3f3f3 180deg 270deg,
+          #f7f7f7 270deg 360deg
+      );
+    background-size: 25px 25px;
+    background-position: top left;
+}
+
+.tileLight {
+    background: 
+      repeating-conic-gradient(
           #080808 90deg,
           #101010 90deg 180deg,
           #080808 180deg 270deg,
           #101010 270deg 360deg
       );
-    background-repeat: repeat;
     background-size: 25px 25px;
     background-position: top left;
-    color: white;
-    font-family:'Courier New', Courier, monospace;
+}
+
+.tileStarry {
+    background-image: "./assets/starryNight.png";
+    background-repeat: repeat;
+    background-size: 60px 60px;
+    background-position: top left;
 }
 
 /* ZZZ1TY BUTTON */
