@@ -385,7 +385,7 @@ function detectRoundEnter(event) {
 function loadFunc() {
     console.log('\"loadFunc()\" began')
     for(let i = 0; i<pageTitle.length; i++) {
-        pageTitle[i].textContent = 'RaTeX '+vNum
+        pageTitle[i].textContent = 'RaTeX! '+vNum
     }
     switchTab(event, 'Writing')
     output.textContent = translate(input.value,false)
