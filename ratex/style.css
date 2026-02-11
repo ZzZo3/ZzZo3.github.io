@@ -42,6 +42,7 @@ html, body {
     border: 1px solid #D0A1FF;
     background-color: #8239CA;
     color: white;
+    text-decoration: none;
     font-family:'Courier New', Courier, monospace;
     outline: none;
     text-align: center;
