@@ -34,6 +34,13 @@ html, body {
 
 .tileStarry {
     color: white;
+    background-image: url("./assets/starryNight.gif");
+    background-repeat: repeat;
+    background-size: 60px 60px;
+    background-position: top left;
+}
+.tileStarryAlt {
+    color: white;
     background-image: url("./assets/starryNight.png");
     background-repeat: repeat;
     background-size: 60px 60px;
