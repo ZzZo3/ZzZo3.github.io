@@ -1,11 +1,12 @@
 /* TABS */
 .tab {
-    overflow-x: auto;
-    overflow-x: -mos-scrollbars-horizontal;
+    overflow-y: hidden;
+    overflow-x: scroll;
     border: 1px solid white;
     border-radius: 5px;
     background-color: black;
     height: 44px;
+    width: 200px;
     align-content:start;
 }
 .tabcontent {
