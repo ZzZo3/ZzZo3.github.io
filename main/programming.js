@@ -1,5 +1,5 @@
 const mainBody = document.getElementById("mainBody")
-let smoothing = false
+let smoothing = true
 
 function twinkleToggle() {
     if(mainBody.classList.contains("staticStars")) {
@@ -13,7 +13,8 @@ function twinkleToggle() {
         mainBody.classList.replace("slowSmoothStars","fastSmoothStars")
     } else if(mainBody.classList.contains("fastSmoothStars")) {
         mainBody.classList.replace("fastSmoothStars","staticStars")
-    } else if(mainBody.classList.contains("slowStars")) {
+    }
+    if(mainBody.classList.contains("slowStars")) {
         mainBody.classList.replace("slowStars","fastStars")
     } else if(mainBody.classList.contains("fastStars")) {
         mainBody.classList.replace("fastStars","staticStars")
