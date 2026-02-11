@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+    background: 
+      conic-gradient(
+          #fbfbfb 90deg,
+          #ffffff 90deg 180deg,
+          #fbfbfb 180deg 270deg,
+          #ffffff 270deg 360deg
+      );
+    background-repeat: repeat;
+    background-size: 25px 25px;
+    background-position: top left;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+}
