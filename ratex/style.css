@@ -3,9 +3,9 @@ html, body {
     background: 
       conic-gradient(
           #0f0f0f 90deg,
-          #1d1d1d 90deg 180deg,
+          #101010 90deg 180deg,
           #0f0f0f 180deg 270deg,
-          #1d1d1d 270deg 360deg
+          #101010 270deg 360deg
       );
     background-repeat: repeat;
     background-size: 25px 25px;
