@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    background: 
+      conic-gradient(
+          #080808 90deg,
+          #101010 90deg 180deg,
+          #080808 180deg 270deg,
+          #101010 270deg 360deg
+      );
+    background-repeat: repeat;
+    background-size: 25px 25px;
+    background-position: top left;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* ZZZ1TY BUTTON */
+.toZzZ1tyButton {
+    display: inline;
+    padding: 2px 6px;
+    margin-right: 18px;
+    margin-left: 0px;
+    border-radius: 5px;
+    border: 2px solid #6011AF;
+    background-color: #8239CA;
+    color: rgb(255, 216, 132);
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.toZzZ1tyButton:hover {
+    background-color: #400B75;
+    color: rgb(255, 216, 132);
+}
+
+/* BUTTONS */
+.amberButton {
+    border: 1px solid white;
+    background-color: black;
+    color: rgb(255, 216, 132);
+    font-family:'Courier New', Courier, monospace;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.amberButton:hover {
+    background-color: #2f2f2f;
+}
+.amberButton.active {
+    background-color: #212121;
+}
+
+.dataButton {
+    padding: 2px 6px;
+    border-radius: 5px;
+}
