@@ -37,6 +37,22 @@ html, body {
 .amberButton.active {
     background-color: #212121;
 }
+.toZzZ1tyButton {
+    border: 1px solid white;
+    background-color: rgb(130, 57, 202);
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.toZzZ1tyButton:hover {
+    background-color: #400B75;
+}
+.toZzZ1tyButton.active {
+    background-color: #400B75;
+}
 .tab button {
     padding: 14px 18px;
     border: none;
