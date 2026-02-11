@@ -59,15 +59,15 @@ html, body {
     border-radius: 5px;
 }
 /*HYPERLINKS*/
-.a:link {
+.hyperlink:link {
     color: rgb(185, 34, 255);
 }
-.a:visited {
+.hyperlink:visited {
     color: rgb(185, 34, 255);
 }
-.a:hover {
+.hyperlink:hover {
     color: red;
 }
-.a:active {
+.hyperlink:active {
     color: red;
 }
