@@ -59,7 +59,10 @@ html, body {
     border-radius: 5px;
 }
 /*HYPERLINKS*/
-.a {
+.a:link {
+    color: rgb(185, 34, 255);
+}
+.a:visited {
     color: rgb(185, 34, 255);
 }
 .a:hover {
