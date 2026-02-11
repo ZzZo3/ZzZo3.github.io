@@ -32,26 +32,26 @@ html, body {
     background-position: top left;
 }
 
-.tileStarryStatic {
+.tileStarry {
     color: white;
-    background-image: url("./assets/starryNight.gif");
     background-repeat: repeat;
     background-size: 60px 60px;
     background-position: top left;
 }
-.tileStarryFast {
-    color: white;
+.staticStars {
     background-image: url("./assets/starryNight.png");
-    background-repeat: repeat;
-    background-size: 60px 60px;
-    background-position: top left;
 }
-.tileStarrySlow {
-    color: white;
+.fastStars {
+    background-image: url("./assets/starryNight.gif");
+}
+.slowStars {
     background-image: url("./assets/starryNightSlow.gif");
-    background-repeat: repeat;
-    background-size: 60px 60px;
-    background-position: top left;
+}
+.fastSmoothStars {
+    background-image: url("./assets/starryNightFSmooth.gif");
+}
+.slowSmoothStars {
+    background-image: url("./assets/starryNightSSmooth.gif");
 }
 
 /* ZZZ1TY BUTTON */
