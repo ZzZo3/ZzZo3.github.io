@@ -2,26 +2,35 @@ const mainBody = document.getElementById("mainBody")
 let smoothing = false
 
 function twinkleToggle() {
-    if (!smoothing) {
-        if(mainBody.classList.contains("staticStars")) {
-            mainBody.classList.replace("staticStars","slowStars")
-        } else if(mainBody.classList.contains("slowStars")) {
-            mainBody.classList.replace("slowStars","fastStars")
-        } else {
-            mainBody.classList.replace("fastStars","staticStars")
-        }
-    } else {
-        if(mainBody.classList.contains("staticStars")) {
+    if(mainBody.classList.contains("staticStars")) {
+        if (smoothing) {
             mainBody.classList.replace("staticStars","slowSmoothStars")
-        } else if(mainBody.classList.contains("slowSmoothStars")) {
-            mainBody.classList.replace("slowSmoothStars","fastSmoothStars")
         } else {
-            mainBody.classList.replace("fastSmoothStars","staticStars")
+            mainBody.classList.replace("staticStars","slowStars")
         }
+    }
+    if(mainBody.classList.contains("slowSmoothStars")) {
+        mainBody.classList.replace("slowSmoothStars","fastSmoothStars")
+    } else if(mainBody.classList.contains("fastSmoothStars")) {
+        mainBody.classList.replace("fastSmoothStars","staticStars")
+    } else if(mainBody.classList.contains("slowStars")) {
+        mainBody.classList.replace("slowStars","fastStars")
+    } else if(mainBody.classList.contains("fastStars")) {
+        mainBody.classList.replace("fastStars","staticStars")
     }
 }
 function smoothTwinkleToggle() {
     smoothing = !smoothing
+    if(mainBody.classList.contains("slowStars")) {
+        mainBody.classList.replace("slowStars","slowSmoothStars")
+    } else if(mainBody.classList.contains("slowSmoothStars")) {
+        mainBody.classList.replace("slowSmoothStars","slowStars")
+    }
+    if(mainBody.classList.contains("fastStars")) {
+        mainBody.classList.replace("fastStars","fastSmoothStars")
+    } else if(mainBody.classList.contains("fastSmoothStars")) {
+        mainBody.classList.replace("fastSmoothStars","fastStars")
+    }
 }
 
 //STUFF THAT RUNS ON LOAD
