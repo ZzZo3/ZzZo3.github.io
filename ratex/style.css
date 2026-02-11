@@ -41,7 +41,7 @@ html, body {
     display: inline;
     border: 2px solid #6011AF;
     background-color: #8239CA;
-    color: white;
+    color: rgb(255, 216, 132);
     text-decoration: none;
     font-family:'Courier New', Courier, monospace;
     outline: none;
