@@ -1,11 +1,11 @@
 html, body {
     height: 100%;
-    color: white;
     font-family:'Courier New', Courier, monospace;
 }
 
 /* BACKGROUNDS */
 .tileDark {
+    color: white;
     background: 
       repeating-conic-gradient(
           #f3f3f3 90deg,
@@ -18,6 +18,7 @@ html, body {
 }
 
 .tileLight {
+    color: black;
     background: 
       repeating-conic-gradient(
           #080808 90deg,
@@ -30,6 +31,7 @@ html, body {
 }
 
 .tileStarry {
+    color: white;
     background-image: "./assets/starryNight.png";
     background-repeat: repeat;
     background-size: 60px 60px;
