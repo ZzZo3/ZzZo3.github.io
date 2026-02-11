@@ -1,5 +1,5 @@
 //BASE
-let photoCount = '0'
+let photoCount = 0
 const pageTitle = document.getElementsByClassName('pageTitle')
 //DYNAMIC IMAGE DISPLAY
 const dynamicImageDisplay = document.getElementsByClassName('dynamicImageDisplay')
@@ -14,7 +14,7 @@ function loadFunc() {
         photoCount += 1
     });
     for(let i = 0; i<pageTitle.length; i++) {
-        pageTitle[i].textContent = 'Photos! ['+photoCount+']'
+        pageTitle[i].textContent = 'Photos! ['+photoCount.toString()+']'
     }
     console.log('   \"loadFunc()\" finished')
 }
