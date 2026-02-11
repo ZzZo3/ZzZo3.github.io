@@ -58,3 +58,13 @@ html, body {
     padding: 2px 6px;
     border-radius: 5px;
 }
+/*HYPERLINKS*/
+.a {
+    color: rgb(185, 34, 255);
+}
+.a:hover {
+    color: red;
+}
+.a:active {
+    color: red;
+}
