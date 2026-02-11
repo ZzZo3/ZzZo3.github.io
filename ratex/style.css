@@ -38,6 +38,7 @@ html, body {
     background-color: #212121;
 }
 .toZzZ1tyButton {
+    display: inline;
     border: 1px solid #D0A1FF;
     background-color: #8239CA;
     color: white;
