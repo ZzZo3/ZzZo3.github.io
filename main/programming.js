@@ -1,8 +1,9 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
 
-const isoScale = 2.0
+const isoSpread = 1.5
 const tileScale = 2.0
+const isoScale = isoSpread * tileScale
 const mountainOffset = 4
 
 function positionTiles() {
