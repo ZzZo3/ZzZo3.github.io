@@ -1,8 +1,6 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
 
-var CLUBNINE = document.getElementById("CLUBNINE");
-
 function positionTiles() {
     console.log('\"positionTiles()\" began')
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
