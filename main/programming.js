@@ -9,6 +9,7 @@ const mountainInput = document.getElementById("mountainInput")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const isometricParent = document.getElementById("isometricParent")
+const isometricContainer = document.getElementById('isometricContainer')
 const Selection = document.getElementById('Selection')
 //RENDER VARIABLES
 let isoSpread = 1.0
@@ -16,54 +17,78 @@ let tileScale = 1.0
 let mountainOffset = 0
 let positionOffsetX = 0
 let positionOffsetY = 0
-let viewPosX = 0
-let viewPosY = 0
+let POSITION = [0,0]
 
 //KEY LISTENER
-document.addEventListener('keydown', function(event) {
-  console.log('Key:', event.key);
-  if (event.key == 'w') {
-    shiftDown()
-    console.log('   isometric render shifted up')
-  }
-  if (event.key == 's') {
-    shiftUp()
-    console.log('   isometric render shifted down')
-  }
-  if (event.key == 'a') {
-    shiftRight()
-    console.log('   isometric render shifted left')
-  }
-  if (event.key == 'd') {
-    shiftLeft()
-    console.log('   isometric render shifted right')
-  }
-  if (event.key =='i') {
-    shiftDown()
-    shiftRight()
+  if (event.key =='w') {
+    POSITION[1] -= 1
+    shiftDownIso()
     console.log('   isometric render shifted -y')
   }
-  if (event.key =='k') {
-    shiftUp()
-    shiftLeft()
+  if (event.key =='s') {
+    POSITION[1] += 1
+    shiftUpIso()
     console.log('   isometric render shifted +y')
   }
-  if (event.key =='j') {
-    shiftUp()
-    shiftRight()
+  if (event.key =='a') {
+    POSITION[0] -= 1
+    shiftRightIso()
     console.log('   isometric render shifted -x')
   }
-  if (event.key =='l') {
-    shiftDown()
-    shiftLeft()
+  if (event.key =='d') {
+    POSITION[0] += 1
+    shiftLeftIso()
     console.log('   isometric render shifted +x')
   }
 });
 
+//POSITION & MOVEMENT
+function shiftUpIso() {
+    isometricContainer.style.top -= ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
+    isometricContainer.style.left -= ( 32 * tileScale * isoSpread ) + "px"
+}
+function shiftDownIso() {
+    isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
+    isometricContainer.style.left += ( 32 * tileScale * isoSpread ) + "px"
+}
+function shiftLeftIso() {
+    isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
+    isometricContainer.style.left -= ( 32 * tileScale * isoSpread ) + "px"
+}
+function shiftRightIso() {
+    isometricContainer.style.top -= ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
+    isometricContainer.style.left += ( 32 * tileScale * isoSpread ) + "px"
+}
+function renderPosition() {
+    let xf = 0.0
+    let yf = 0.0
+    for(let step = 1; step <= POSITION[0]; step++) {
+        shiftRightIso()
+    }
+    if (POSITION[1] > 0) {
+        for(let step = 1; step <= POSITION[1]; step++) {
+            shiftUpIso()
+        }
+    } else (
+        for(let step = -1; step >= POSITION[1]; step-=1) {
+            shiftDownIso()
+        }
+    )
+}
+function jump(x,y) {
+    POSITION[0] = x
+    POSITION[1] = y
+    renderPosition()
+}
+function shift(dx,dy) {
+    POSITION[0] += dx
+    POSITION[1] += dy
+    renderPosition()
+}
 
 //ISOMETRIC RENDER
 
-function setSchematic() {
+function renderSchematic() {
     let clonesToKill = document.querySelectorAll('.cloneSchemTile')
     clonesToKill.forEach((node) => {
         node.remove()
@@ -110,28 +135,12 @@ function setSchematic() {
     }
 }
 
-function summonSelection() {
+function renderSelector() {
     let off = 175
     let xi = 0
-    let yi = 0 //BREAKS WHEN > 0
-    let xf = 0
+    let yi = 0
+    let xf = 0 //to vary later, but breaks when !=0 for some reason
     let yf = 0
-    /*
-    let Xdim = SchematicTile.getAttribute("data-Xdim")
-    let Ydim = SchematicTile.getAttribute("data-Xdim")
-    if(Xdim % 2 == 0) { //SET xi TO HALF OF Xdim
-        xi = Xdim / 2
-    } else {
-        xi = Xdim / 2
-        xi -= 0.5
-    }
-    if(Ydim % 2 == 0) { //SET yi TO HALF OF Ydim
-        yi = Ydim / 2
-    } else {
-        yi = Ydim / 2
-        yi -= 0.5
-    }
-    */
     for(let step = 1; step <= xi; step++) {
         xf += 32*isoScale
         yf -= 11*isoScale
@@ -181,8 +190,8 @@ function renderIsometric() {
             off += mountainOffset
         }
         yf += off * tileScale
-        xf += positionOffsetX
-        yf += positionOffsetY
+        xf += positionOffsetX //remove
+        yf += positionOffsetY //remove
         tile.style.left = xf + "px"
         tile.style.top = yf + "px"
         tile.style.zIndex = yi - xi
@@ -191,23 +200,6 @@ function renderIsometric() {
         return tile
     })
     console.log('   \"renderIsometric()\" finished')
-}
-
-function shiftUp() {
-    positionOffsetY -= (11 + mountainOffset/isoSpread) * isoSpread * tileScale
-    renderIsometric()
-}
-function shiftDown() {
-    positionOffsetY += (11 + mountainOffset/isoSpread) * isoSpread * tileScale
-    renderIsometric()
-}
-function shiftLeft() {
-    positionOffsetX -= 32 * tileScale * isoSpread
-    renderIsometric()
-}
-function shiftRight() {
-    positionOffsetX += 32 * tileScale * isoSpread
-    renderIsometric()
 }
 
 

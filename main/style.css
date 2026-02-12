@@ -7,7 +7,12 @@
     width: 0px;
     height: 0px;
 }
-#isometricParent >* {
+#isometricContainer {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+#isometricContainer >* {
     position: absolute;
     image-rendering: pixelated;
     width: 64px;
