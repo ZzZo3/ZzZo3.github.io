@@ -50,18 +50,21 @@ function positionTiles() {
 function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
     isoSpread = parseFloat(spreadInput)
+    console.log(isoSpread)
     positionTiles()
     console.log('   \"spreadInputFunc()\" finished')
 }
 function scaleInputFunc() {
     console.log('\"scaleInputFunc()\" began')
     tileScale = parseFloat(scaleInput)
+    console.log(tileScale)
     positionTiles()
     console.log('   \"scaleInputFunc()\" finished')
 }
 function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
     mountainOffset = parseInt(mountainInput)
+    console.log(mountainOffset)
     positionTiles()
     console.log('   \"mountainInputFunc()\" finished')
 }
