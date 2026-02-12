@@ -13,10 +13,15 @@
     width: 64px;
     height: 256px;
     border: 1px solid white;
-    outline: 3px solid white;
 }
 #SchematicTile {
     visibility: hidden;
+}
+#isometricTile:hover {
+    visibility: hidden;
+}
+#SchematicTile:hover {
+    border: 2px solid white;
 }
 
 .top >* {
