@@ -150,19 +150,19 @@ function renderIsometric() {
 }
 
 function shiftUp() {
-    positionOffsetY -= 11 * tileScale
+    positionOffsetY -= 11 * tileScale * isoSpread + mountainOffset
     renderIsometric()
 }
 function shiftDown() {
-    positionOffsetY += 11 * tileScale
+    positionOffsetY += 11 * tileScale * isoSpread + mountainOffset
     renderIsometric()
 }
 function shiftLeft() {
-    positionOffsetX -= 32 * tileScale
+    positionOffsetX -= 32 * tileScale * isoSpread
     renderIsometric()
 }
 function shiftRight() {
-    positionOffsetX += 32 * tileScale
+    positionOffsetX += 32 * tileScale * isoSpread
     renderIsometric()
 }
 
