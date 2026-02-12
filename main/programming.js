@@ -110,10 +110,24 @@ function setSchematic() {
 
 function summonSelection() {
     let off = 175
-    let xi = parseInt(Selection.classList[0].slice(1))
-    let yi = parseInt(Selection.classList[1].slice(1))
+    let xi = 0
+    let yi = 0
     let xf = 0
     let yf = 0
+    let Xdim = SchematicTile.getAttribute("data-Xdim")
+    let Ydim = SchematicTile.getAttribute("data-Ydim")
+    if(Xdim % 2 == 0) { //SET xi TO HALF OF Xdim
+        xi = Xdim / 2
+    } else {
+        xi = Xdim / 2
+        xi -= 0.5
+    }
+    if(Ydim % 2 == 0) { //SET yi TO HALF OF Ydim
+        yi = Ydim / 2
+    } else {
+        yi = Ydim / 2
+        yi -= 0.5
+    }
     for(let step = 1; step <= xi; step++) {
         xf += 32*isoScale
         yf -= 11*isoScale
