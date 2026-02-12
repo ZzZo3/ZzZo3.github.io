@@ -14,16 +14,6 @@
     height: 256px;
     shape-image-threshold: 0.5; /*Only pixels with alpha > 0.5 (50% opaque) will trigger focus/click*/
 }
-#CLUBNINE {
-    top: 350px;
-    left: 100px;
-    z-index: 1;
-}
-#CLUBNINE2 {
-    top: 500px;
-    left: 200px;
-    z-index: 1;
-}
 
 .top {
     z-index: 100;
