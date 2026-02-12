@@ -23,39 +23,37 @@ let POSITION = [0,0]
 document.addEventListener('keydown', function(event) {
   console.log('Key:', event.key);
   if (event.key =='w') {
-    POSITION[1] -= 1
     walkUp() // -y(iso) -> -x -y (offset from top left)
-    console.log('   isometric render shifted -y')
   }
   if (event.key =='s') {
-    POSITION[1] += 1
     walkDown() // +y(iso) -> +x +y (offset from top left)
-    console.log('   isometric render shifted +y')
   }
   if (event.key =='a') {
     walkRight() // +x(iso) -> +x -y (offset from top left)
-    console.log('   isometric render shifted -x')
   }
   if (event.key =='d') {
     walkLeft() // -x(iso) -> -x +y (offset from top left)
-    console.log('   isometric render shifted +x')
   }
 });
 
 //POSITION & MOVEMENT
 function walkUp() {
+    console.log('\"walkUp()\" called')
     POSITION[1] -= 1
     shiftV(-1)
 }
 function walkDown() {
+    console.log('\"walkDown()\" called')
     POSITION[1] += 1
     shiftV(1)
 }
 function walkLeft() {
+    console.log('\"walkLeft()\" called')
     POSITION[0] += 1
     shiftH(1)
 }
 function walkRight() {
+    console.log('\"walkRight()\" called')
     POSITION[0] -= 1
     shiftH(-1)
 }
@@ -70,15 +68,20 @@ function shiftV(i) {
     isometricContainer.style.left += ( 32 * tileScale * isoSpread * i) + "px"
 }
 function renderPosition() {
+    console.log('\"renderPosition()\" began')
+    console.log('   isometric coordinates: '+POSITION)
     shiftH(POSITION[0])
     shiftV(POSITION[1])
+    console.log('   \"renderPosition()\" finished')
 }
 function jump(x,y) {
+    console.log('\"jump()\" called')
     POSITION[0] = x
     POSITION[1] = y
     renderPosition()
 }
 function shift(dx,dy) {
+    console.log('\"shift()\" called')
     POSITION[0] += dx
     POSITION[1] += dy
     renderPosition()
@@ -159,8 +162,8 @@ function renderSelector() {
 
 function renderIsometric() {
     console.log('\"renderIsometric()\" began')
-    setSchematic()
-    summonSelection()
+    renderSchematic()
+    renderSelector()
     console.log('   schematic finished rendering...')
     let isoScale = isoSpread * tileScale
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
@@ -207,7 +210,7 @@ function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
     isoSpread = parseFloat(spreadInput.value)
     isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
-    SpLabel.innerText = 'Sp: '+isoSpread
+    SpLabel.innerText = 'Spread: '+isoSpread
     console.log('   '+isoSpread)
     renderIsometric()
     console.log('   \"spreadInputFunc()\" finished')
@@ -216,7 +219,7 @@ function scaleInputFunc() {
     console.log('\"scaleInputFunc()\" began')
     tileScale = parseFloat(scaleInput.value)
     tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
-    ScLabel.innerText = 'Sc: '+tileScale
+    ScLabel.innerText = 'Scale: '+tileScale
     console.log('   '+tileScale)
     renderIsometric()
     console.log('   \"scaleInputFunc()\" finished')
@@ -225,7 +228,7 @@ function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
     mountainOffset = parseInt(mountainInput.value)
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
-    MnLabel.innerText = 'Mn: '+mountainOffset
+    MnLabel.innerText = 'Hill: '+mountainOffset
     renderIsometric()
     console.log('   \"mountainInputFunc()\" finished')
 }
@@ -251,21 +254,21 @@ function resetSpread() {
     console.log('isoSpread -> 1')
     isoSpread = 1.0
     spreadInput.value = "1"
-    SpLabel.innerText = 'Sp: '+isoSpread
+    SpLabel.innerText = 'Spread: '+isoSpread
     renderIsometric()
 }
 function resetScale() {
     console.log('tileScale -> 2')
     tileScale = 2.0
-    scaleInput.value = "1"
-    ScLabel.innerText = 'Sp: '+tileScale
+    scaleInput.value = "2"
+    ScLabel.innerText = 'Scale: '+tileScale
     renderIsometric()
 }
 function resetMountain() {
     console.log('mountainOffset -> 0')
-    mountainInput.value = "0"
-    MnLabel.innerText = 'Sp: '+mountainOffset
     mountainOffset = 0
+    mountainInput.value = "0"
+    MnLabel.innerText = 'Hill: '+mountainOffset
     renderIsometric()
 }
 
