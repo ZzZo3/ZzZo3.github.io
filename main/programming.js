@@ -127,6 +127,7 @@ function summonSelection() {
     yf += off * tileScale
     Selection.style.left = xf + "px"
     Selection.style.top = yf + "px"
+    Selection.style.zIndex = yf - xf + 1
     Selection.style.width = 64*tileScale + "px"
     Selection.style.height = 64*tileScale + "px"
 }
