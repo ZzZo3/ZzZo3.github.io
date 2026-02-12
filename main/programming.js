@@ -13,19 +13,19 @@ const isometricParent = document.getElementById("isometricParent")
 //KEY LISTENER
 document.addEventListener('keydown', function(event) {
   console.log('Key:', event.key);
-  if (event.key === 'ArrowUp') {
+  if (event.key === 'W') {
     console.log('   isometric render shifted up');
     position[1] -= 25
   }
-  if (event.key === 'ArrowDown') {
+  if (event.key === 'S') {
     console.log('   isometric render shifted down');
     position[1] += 25
   }
-  if (event.key === 'ArrowLeft') {
+  if (event.key === 'A') {
     console.log('   isometric render shifted left');
     position[0] -= 25
   }
-  if (event.key === 'ArrowRight') {
+  if (event.key === 'D') {
     console.log('   isometric render shifted right');
     position[0] += 25
   }
