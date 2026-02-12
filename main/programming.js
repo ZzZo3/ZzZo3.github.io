@@ -20,26 +20,43 @@ let positionOffsetY = 100
 document.addEventListener('keydown', function(event) {
   console.log('Key:', event.key);
   if (event.key == 'w') {
+    shiftDown()
     console.log('   isometric render shifted up')
-    positionOffsetY += 11 * tileScale
-    renderIsometric()
   }
   if (event.key == 's') {
+    shiftUp()
     console.log('   isometric render shifted down')
-    positionOffsetY -= 11 * tileScale
-    renderIsometric()
   }
   if (event.key == 'a') {
+    shiftRight()
     console.log('   isometric render shifted left')
-    positionOffsetX += 32 * tileScale
-    renderIsometric()
   }
   if (event.key == 'd') {
+    shiftLeft()
     console.log('   isometric render shifted right')
-    positionOffsetX -= 32 * tileScale
-    renderIsometric()
+  }
+  if (event.key =='i') {
+    shiftUp()
+    shiftLeft()
+    console.log('   isometric render shifted +y')
+  }
+  if (event.key =='k') {
+    shiftDown()
+    shiftRight()
+    console.log('   isometric render shifted -y')
+  }
+  if (event.key =='j') {
+    shiftUp()
+    shiftRight()
+    console.log('   isometric render shifted +x')
+  }
+  if (event.key =='l') {
+    shiftDown()
+    shiftLeft()
+    console.log('   isometric render shifted -x')
   }
 });
+
 
 //ISOMETRIC RENDER
 
@@ -131,6 +148,26 @@ function renderIsometric() {
     })
     console.log('   \"renderIsometric()\" finished')
 }
+
+function shiftUp() {
+    positionOffsetY -= 11 * tileScale
+    renderIsometric()
+}
+function shiftDown() {
+    positionOffsetY += 11 * tileScale
+    renderIsometric()
+}
+function shiftLeft() {
+    positionOffsetX -= 32 * tileScale
+    renderIsometric()
+}
+function shiftRight() {
+    positionOffsetX += 32 * tileScale
+    renderIsometric()
+}
+
+
+//RENDER INPUTS
 
 function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
