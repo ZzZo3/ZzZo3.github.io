@@ -139,24 +139,10 @@ function renderSchematic() {
 function renderSelector() {
     console.log('\"renderSelector()\" began')
     let off = 175
-    let xi = 0
-    let yi = 0
-    let xf = 0 //to vary later, but breaks when !=0 for some reason
-    let yf = 0
-    for(let step = 1; step <= xi; step++) {
-        xf += 32*isoScale
-        yf -= 11*isoScale
-        off -= mountainOffset
-    }
-    for(let step = 1; step <= yi; step++) {
-        xf += 32*isoScale
-        yf += 11*isoScale
-        off += mountainOffset
-    }
-    yf += off * tileScale
-    Selection.style.left = xf + "px"
-    Selection.style.top = yf + "px"
-    Selection.style.zIndex = yf - xf + 1
+    let offsets = Iso2Reg(POSITION[0],POSITION[1])
+    Selection.style.left = offsets[0] + "px"
+    Selection.style.top = offsets[1] + off + "px"
+    Selection.style.zIndex = POSITION[1] - POSITION[0] + 1
     Selection.style.width = 64*tileScale + "px"
     Selection.style.height = 64*tileScale + "px"
     console.log('   \"renderSelector()\" finished')
