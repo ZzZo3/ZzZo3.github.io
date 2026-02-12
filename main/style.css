@@ -21,27 +21,6 @@
     z-index: 100;
 }
 
-#spreadInput {
-    display: block;
-}
-#scaleInput {
-    display: block;
-}
-#mountainInput {
-    display: block;
-}
-#resetSpreadButton {
-    display: inline;
-}
-#resetScaleButton {
-    display: inline;
-}
-#resetMountainButton {
-    display: inline;
-}
-#gridXInput {
-    display: block;
-}
-#gridYInput {
-    display: inline;
+.inputResetPair {
+    display: flex;
 }
