@@ -18,7 +18,7 @@
     visibility: hidden;
 }
 #isometricTile:hover {
-    visibility: hidden;
+    border: 2px solid white;
 }
 #SchematicTile:hover {
     border: 2px solid white;
