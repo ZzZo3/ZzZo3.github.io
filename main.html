@@ -29,15 +29,24 @@
         <a class="hyperlink" href="photography">PHOTOGRAPHY</a>
         <a class="hyperlink" href="notzork">ZZZ0RK</a>
         <div class="inputResetPair top">
-            <input type="range" min="0" max="3" step="0.02" id="spreadInput" placeholder="isoSpread: Float" oninput="spreadInputFunc()">
+            <div class="slider">
+                <label for="spreadInput">Sp:</label>
+                <input type="range" min="0" max="3" step="0.02" id="spreadInput" placeholder="isoSpread: Float" oninput="spreadInputFunc()">
+            </div>
             <button class="dataButton amberButton resetButton" id="resetSpreadButton" onclick="resetSpread()">reset spread</button>
         </div>
         <div class="inputResetPair">
-            <input type="range" min="0" max="4" step="0.02" value="2" id="scaleInput" oninput="scaleInputFunc()">
+            <div class="slider">
+                <label for="scaleInput">Sc:</label>
+                <input type="range" min="0" max="4" step="0.02" value="2" id="scaleInput" oninput="scaleInputFunc()">
+            </div>
             <button class="dataButton amberButton resetButton" id="resetScaleButton" onclick="resetScale()">reset scale</button>
         </div>
         <div class="inputResetPair">
-            <input type="range" min="-38" max="38" step="1" value="0" id="mountainInput" oninput="mountainInputFunc()">
+            <div class="slider">
+                <label for="mountainInput">Mn:</label>
+                <input type="range" min="-38" max="38" step="1" value="0" id="mountainInput" oninput="mountainInputFunc()">
+            </div>
             <button class="dataButton amberButton resetButton" id="resetMountainButton" onclick="resetMountain()">reset mountain</button>
         </div>
         <input type="text" id="gridXInput" placeholder="X dimension: Int (tiles)" oninput="gridXFunc()">

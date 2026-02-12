@@ -13,12 +13,18 @@
     width: 64px;
     height: 256px;
 }
-#isometricTile {
+#SchematicTile { /*all clones*/
     pointer-events: none;
 }
-#SchematicTile {
+.SchematicTile { /*only the one that's not cloned*/
     visibility: hidden;
-    pointer-events: none;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid white;
+    padding: 2%;
 }
 
 .top >* {
