@@ -65,7 +65,7 @@ function scaleInputFunc() {
 }
 function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
-    mountainOffset = parseFloat(mountainInput.value)
+    mountainOffset = parseInt(mountainInput.value)
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
     positionTiles()
     console.log('   \"mountainInputFunc()\" finished')
