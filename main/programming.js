@@ -36,24 +36,24 @@ document.addEventListener('keydown', function(event) {
     console.log('   isometric render shifted right')
   }
   if (event.key =='i') {
-    shiftUp()
-    shiftLeft()
-    console.log('   isometric render shifted +y')
-  }
-  if (event.key =='k') {
     shiftDown()
     shiftRight()
     console.log('   isometric render shifted -y')
   }
-  if (event.key =='j') {
+  if (event.key =='k') {
     shiftUp()
-    shiftRight()
-    console.log('   isometric render shifted +x')
+    shiftLeft()
+    console.log('   isometric render shifted +y')
   }
-  if (event.key =='l') {
+  if (event.key =='j') {
     shiftDown()
     shiftLeft()
     console.log('   isometric render shifted -x')
+  }
+  if (event.key =='l') {
+    shiftUp()
+    shiftRight()
+    console.log('   isometric render shifted +x')
   }
 });
 
