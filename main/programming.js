@@ -124,7 +124,7 @@ function mountainInputFunc() {
 function gridXFunc() {
     console.log('\"gridXFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
-    let val = Number.isNaN(gridXInput.value) ? 6 : gridXInput.value
+    let val = Number.isNaN(gridXInput.value) ? "7" : gridXInput.value
     scheme.setAttribute('data-Xdim',val)
     console.log(scheme.getAttribute('data-Xdim'))
     positionTiles()
@@ -133,7 +133,7 @@ function gridXFunc() {
 function gridYFunc() {
     console.log('\"gridYFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
-    let val = Number.isNaN(gridYInput.value) ? 6 : gridYInput.value
+    let val = Number.isNaN(gridYInput.value) ? "7" : gridYInput.value
     scheme.setAttribute('data-Ydim',val)
     console.log(scheme.getAttribute('data-Ydim'))
     positionTiles()
