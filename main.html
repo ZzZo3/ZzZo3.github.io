@@ -15,7 +15,7 @@
         <!--SCHEMATIC GRID-->
         <img id="SchematicTile" data-Xdim="7" data-Ydim="7" src="./assets/isometric/SCHEMATIC.png">
     </div>
-    <div class="relative">
+    <div class="relative top">
         <h3>n0n-sense.org</h3>
         <p>
             hiiii! this is the main path :3
@@ -27,16 +27,16 @@
             <input type="range" min="0" max="3" step="0.02" id="spreadInput" placeholder="isoSpread: Float" oninput="spreadInputFunc()">
             <button class="dataButton amberButton resetButton" id="resetSpreadButton" onclick="resetSpread()">reset spread</button>
         </div>
-        <div class="inputResetPair top">
+        <div class="inputResetPair">
             <input type="range" min="0" max="4" step="0.02" value="2" id="scaleInput" oninput="scaleInputFunc()">
             <button class="dataButton amberButton resetButton" id="resetScaleButton" onclick="resetScale()">reset scale</button>
         </div>
-        <div class="inputResetPair top">
+        <div class="inputResetPair">
             <input type="range" min="-60" max="38" step="1" value="0" id="mountainInput" oninput="mountainInputFunc()">
             <button class="dataButton amberButton resetButton" id="resetMountainButton" onclick="resetMountain()">reset mountain</button>
         </div>
-        <input type="text" class="top" id="gridXInput" placeholder="X dimension: Int (tiles)" oninput="gridXFunc()">
-        <input type="text" class="top" id="gridYInput" placeholder="Y dimension: Int (tiles)" oninput="gridYFunc()">
+        <input type="text" id="gridXInput" placeholder="X dimension: Int (tiles)" oninput="gridXFunc()">
+        <input type="text" id="gridYInput" placeholder="Y dimension: Int (tiles)" oninput="gridYFunc()">
     </div>
     <script src="./main/programming.js"></script>
 </body>
