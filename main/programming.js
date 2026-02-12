@@ -110,8 +110,8 @@ function setSchematic() {
 
 function summonSelection() {
     let off = 192
-    let xi = parseInt(Selection.classList[1].slice(1))
-    let yi = parseInt(Selection.classList[2].slice(1))
+    let xi = parseInt(Selection.classList[0].slice(1))
+    let yi = parseInt(Selection.classList[1].slice(1))
     let xf = 0
     let yf = 0
     for(let step = 1; step <= xi; step++) {
@@ -257,7 +257,7 @@ function resetScale() {
 }
 function resetMountain() {
     console.log('mountainOffset -> 0')
-    mountainInput.value = "1"
+    mountainInput.value = "0"
     MnLabel.innerText = 'Sp: '+mountainOffset
     mountainOffset = 0
     renderIsometric()

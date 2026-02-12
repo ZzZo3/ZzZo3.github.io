@@ -20,6 +20,7 @@
     visibility: hidden;
 }
 .Selection {
+    height: 64px;
     z-index: 100;
 }
 .slider {
