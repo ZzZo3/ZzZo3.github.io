@@ -24,3 +24,7 @@
     left: 200px;
     z-index: 1;
 }
+
+.top {
+    z-index: 100;
+}
