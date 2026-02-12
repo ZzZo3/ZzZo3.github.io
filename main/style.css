@@ -18,7 +18,7 @@
     visibility: hidden;
 }
 
-.top {
+.top >* {
     z-index: 100;
 }
 
