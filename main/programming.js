@@ -7,12 +7,12 @@ function positionTiles() {
     console.log('\"positionTiles()\" began')
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
     isometricTilesQuery.forEach((element) => {
+        let tile = element
         console.log(tile.classList)
         console.log('   '+tile.classList[1])
         console.log('   '+tile.classList[1].slice(1))
         console.log('   '+tile.classList[1].slice(1) + "px")
         console.log('   predicted success')
-        let tile = element
         let x = tile.classList[1].slice(1)
         let y = tile.classList[2].slice(1)
         //translate x's and y's to isometric tiles
