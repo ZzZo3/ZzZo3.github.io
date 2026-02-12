@@ -125,8 +125,6 @@ function summonSelection() {
         off += mountainOffset
     }
     yf += off * tileScale
-    xf += positionOffsetX
-    yf += positionOffsetY
     Selection.style.left = xf + "px"
     Selection.style.top = yf + "px"
     Selection.style.zIndex = yi - xi
