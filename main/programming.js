@@ -1,36 +1,23 @@
+//BASE
 const mainBody = document.getElementById("mainBody")
-let smoothing = true
 
-function twinkleToggle() {
-    if(mainBody.classList.contains("staticStars")) {
-        if (smoothing) {
-            mainBody.classList.replace("staticStars","slowSmoothStars")
-        } else {
-            mainBody.classList.replace("staticStars","slowStars")
-        }
-    } else if(mainBody.classList.contains("slowSmoothStars")) {
-        mainBody.classList.replace("slowSmoothStars","fastSmoothStars")
-    } else if(mainBody.classList.contains("fastSmoothStars")) {
-        mainBody.classList.replace("fastSmoothStars","staticStars")
-    } else if(mainBody.classList.contains("slowStars")) {
-        mainBody.classList.replace("slowStars","fastStars")
-    } else if(mainBody.classList.contains("fastStars")) {
-        mainBody.classList.replace("fastStars","staticStars")
-    }
-}
-function smoothTwinkleToggle() {
-    smoothing = !smoothing
-    if(mainBody.classList.contains("slowStars")) {
-        mainBody.classList.replace("slowStars","slowSmoothStars")
-    } else if(mainBody.classList.contains("slowSmoothStars")) {
-        mainBody.classList.replace("slowSmoothStars","slowStars")
-    }
-    if(mainBody.classList.contains("fastStars")) {
-        mainBody.classList.replace("fastStars","fastSmoothStars")
-    } else if(mainBody.classList.contains("fastSmoothStars")) {
-        mainBody.classList.replace("fastSmoothStars","fastStars")
-    }
-}
+var CLUBNINE = document.getElementById("CLUBNINE");
+
+var isometricTilesQuery = document.querySelectorAll(".isometricTile");
+isometricTilesQuery.forEach((element) => {
+    console.log(tile.classList)
+    console.log(tile.classList[1])
+    console.log(tile.classList[1].slice(1))
+    console.log(tile.classList[1].slice(1) + "px")
+    console.log('predicted success')
+    let tile = element
+    let x = tile.classList[1].slice(1)
+    let y = tile.classList[2].slice(1)
+    tile.style.left = x + "px";
+    tile.style.top = y + "px";
+    console.log('realized success')
+    return tile
+})
 
 //STUFF THAT RUNS ON LOAD
 

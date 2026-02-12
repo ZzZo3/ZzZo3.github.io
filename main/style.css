@@ -13,3 +13,9 @@ mainBody {
     padding: 0px;
     min-height: 100vh;
 }
+*/
+#isometricTile {
+    width: 32px;
+    height: 256px;
+    position: absolute;
+}
