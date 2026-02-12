@@ -141,15 +141,18 @@ function gridYFunc() {
 function resetSpread() {
     console.log('isoSpread -> 1')
     isoSpread = 1.0
+    spreadInput.value = "1"
     renderIsometric()
 }
 function resetScale() {
     console.log('tileScale -> 2')
     tileScale = 2.0
+    scaleInput.value = "1"
     renderIsometric()
 }
 function resetMountain() {
     console.log('mountainOffset -> 0')
+    mountainInput.value = "1"
     mountainOffset = 0
     renderIsometric()
 }
