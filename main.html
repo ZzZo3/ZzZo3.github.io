@@ -23,11 +23,14 @@
         <a class="hyperlink" href="ratex">RATEX</a>
         <a class="hyperlink" href="photography">PHOTOGRAPHY</a>
         <a class="hyperlink" href="notzork">ZZZ0RK</a>
-        <input type="range" min="1" max="3" step="0.02" class="top" id="spreadInput" placeholder="isoSpread: Float" oninput="spreadInputFunc()">
+        <input type="range" min="0" max="3" step="0.02" class="top" id="spreadInput" placeholder="isoSpread: Float" oninput="spreadInputFunc()">
         <input type="range" min="0" max="4" step="0.02" value="2" class="top" id="scaleInput" oninput="scaleInputFunc()">
         <input type="range" min="-60" max="38" step="1" value="0" class="top" id="mountainInput" oninput="mountainInputFunc()">
         <input type="text" class="top" id="gridXInput" placeholder="X dimension: Int (tiles)" oninput="gridXFunc()">
         <input type="text" class="top" id="gridYInput" placeholder="Y dimension: Int (tiles)" oninput="gridYFunc()">
+        <button class="dataButton amberButton" id="resetSpreadButton" onclick="resetSpread()">reset spread</button>
+        <button class="dataButton amberButton" id="resetScaleButton" onclick="resetScale()">reset scale</button>
+        <button class="dataButton amberButton" id="resetMountainButton" onclick="resetMountain()">reset mountain</button>
     </div>
     <script src="./main/programming.js"></script>
 </body>

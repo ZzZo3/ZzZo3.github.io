@@ -138,7 +138,21 @@ function gridYFunc() {
     renderIsometric()
     console.log('   \"gridYFunc()\" finished')
 }
-
+function resetSpread() {
+    console.log('isoSpread -> 1')
+    isoSpread = 1.0
+    renderIsometric()
+}
+function resetScale() {
+    console.log('tileScale -> 2')
+    tileScale = 2.0
+    renderIsometric()
+}
+function resetMountain() {
+    console.log('mountainOffset -> 0')
+    mountainOffset = 0
+    renderIsometric()
+}
 
 //STUFF THAT RUNS ON LOAD
 
