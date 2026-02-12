@@ -13,6 +13,10 @@ let tileScale = 2.0
 let mountainOffset = 0
 
 function setSchematic() {
+    let clonesToKill = document.querySelectorAll('.cloneSchemTile')
+    clonesToKill.forEach((node) => {
+        node.remove()
+    })
     let isoScale = isoSpread * tileScale
     console.log('\"setSchematic()\" began')
     let SchematicTile = document.getElementById('SchematicTile')
@@ -27,6 +31,7 @@ function setSchematic() {
     for(let xi = 0; xi < Xdim; xi++) {
       for(let yi = 0; yi < Ydim; yi++) {
         let schemTile = SchematicTile.cloneNode()
+        schemTile.classList.add('cloneSchemTile')
         let off = 0
         let xf = 0
         let yf = 0
@@ -47,7 +52,6 @@ function setSchematic() {
         schemTile.style.width = 64*tileScale + "px"
         schemTile.style.height = 256*tileScale + "px"
         schemTile.style.visibility = "visible"
-        schemTile.id = ''
         isometricParent.appendChild(schemTile)
       }
     }
@@ -56,6 +60,7 @@ function setSchematic() {
 }
 
 function positionTiles() {
+    setSchematic()
     let isoScale = isoSpread * tileScale
     console.log('\"positionTiles()\" began')
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
@@ -119,13 +124,19 @@ function mountainInputFunc() {
 function gridXFunc() {
     console.log('\"gridXFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
-    scheme.setAttribute('data-Xdim',gridXInput.value)
+    let val = Number.isNaN(gridXInput.value) ? 0 : gridXInput.value
+    scheme.setAttribute('data-Xdim',val)
+    console.log(scheme.getAttribute('data-Xdim'))
+    positionTiles()
     console.log('   \"gridXFunc()\" finished')
 }
 function gridYFunc() {
     console.log('\"gridYFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
-    scheme.setAttribute('data-Ydim',gridYInput.value)
+    let val = Number.isNaN(gridYInput.value) ? 0 : gridYInput.value
+    scheme.setAttribute('data-Ydim',val)
+    console.log(scheme.getAttribute('data-Ydim'))
+    positionTiles()
     console.log('   \"gridYFunc()\" finished')
 }
 
@@ -134,8 +145,6 @@ function gridYFunc() {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    setSchematic()
     positionTiles()
     console.log('   \"loadFunc()\" finished')
 }
-
