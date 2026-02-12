@@ -104,6 +104,7 @@ function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
     isoSpread = parseFloat(spreadInput.value)
     isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
+    SpLabel.innerText = 'Sp: '+tileScale
     console.log('   '+isoSpread)
     renderIsometric()
     console.log('   \"spreadInputFunc()\" finished')
@@ -112,6 +113,7 @@ function scaleInputFunc() {
     console.log('\"scaleInputFunc()\" began')
     tileScale = parseFloat(scaleInput.value)
     tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
+    ScLabel.innerText = 'Sc: '+tileScale
     console.log('   '+tileScale)
     renderIsometric()
     console.log('   \"scaleInputFunc()\" finished')
@@ -120,6 +122,7 @@ function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
     mountainOffset = parseInt(mountainInput.value)
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
+    MnLabel.innerText = 'Mn: '+mountainOffset
     renderIsometric()
     console.log('   \"mountainInputFunc()\" finished')
 }
