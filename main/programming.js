@@ -5,7 +5,7 @@ const scaleInput = document.getElementById("scaleInput")
 const mountainInput = document.getElementById("mountainInput")
 
 //ISOMETRIC RENDER
-let isoSpread = 1.5
+let isoSpread = 1.0
 let tileScale = 2.0
 let mountainOffset = 0
 
@@ -49,22 +49,33 @@ function positionTiles() {
 
 function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
+    if (parseFloat(spreadInput.value) != NaN) {
     isoSpread = parseFloat(spreadInput.value)
-    console.log(isoSpread)
+    } else {
+        isoSpread = 1.0
+    }
+    console.log('   '+isoSpread)
     positionTiles()
     console.log('   \"spreadInputFunc()\" finished')
 }
 function scaleInputFunc() {
     console.log('\"scaleInputFunc()\" began')
+    if (parseFloat(scaleInput.value) != NaN) {
     tileScale = parseFloat(scaleInput.value)
-    console.log(tileScale)
+    } else {
+        tileScale = 2.0
+    }
+    console.log('   '+tileScale)
     positionTiles()
     console.log('   \"scaleInputFunc()\" finished')
 }
 function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
+    if (parseInt(mountainInput.value) != NaN) {
     mountainOffset = parseInt(mountainInput.value)
-    console.log(mountainOffset)
+    } else {
+        mountainOffset = 0
+    }
     positionTiles()
     console.log('   \"mountainInputFunc()\" finished')
 }
