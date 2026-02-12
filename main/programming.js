@@ -110,8 +110,8 @@ function setSchematic() {
 
 function summonSelection() {
     let off = 175
-    let xi = 3
-    let yi = 3
+    let xi = 1
+    let yi = 1 //BREAKS WHEN > 0
     let xf = 0
     let yf = 0
     /*
