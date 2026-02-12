@@ -13,6 +13,7 @@
     width: 64px;
     height: 256px;
     border: 1px solid white;
+    pointer-events: none;
 }
 #SchematicTile {
     visibility: hidden;
