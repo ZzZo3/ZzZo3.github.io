@@ -122,11 +122,12 @@ function renderSchematic() {
     
     for(let xi = 0; xi < Xdim; xi++) {
       for(let yi = 0; yi < Ydim; yi++) {
+        let offsets = Iso2Reg(xi,yi)
         let schemTile = SchematicTile.cloneNode()
         schemTile.classList.add('cloneSchemTile')
         schemTile.style.zIndex = yi - xi - 1
-        schemTile.style.left = Iso2Reg(xi,yi)[0] + "px"
-        schemTile.style.top = Iso2Reg(xi,yi)[1] + "px"
+        schemTile.style.left = offsets[0] + "px"
+        schemTile.style.top = offsets[1] + "px"
         schemTile.style.width = 64*tileScale + "px"
         schemTile.style.height = 256*tileScale + "px"
         schemTile.style.visibility = "visible"
