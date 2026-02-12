@@ -114,8 +114,9 @@ function summonSelection() {
     let yi = 0
     let xf = 0
     let yf = 0
-    let Xdim = 7
-    let Ydim = 7
+    /*
+    let Xdim = SchematicTile.getAttribute("data-Xdim")
+    let Ydim = SchematicTile.getAttribute("data-Xdim")
     if(Xdim % 2 == 0) { //SET xi TO HALF OF Xdim
         xi = Xdim / 2
     } else {
@@ -128,6 +129,7 @@ function summonSelection() {
         yi = Ydim / 2
         yi -= 0.5
     }
+    */
     for(let step = 1; step <= xi; step++) {
         xf += 32*isoScale
         yf -= 11*isoScale
