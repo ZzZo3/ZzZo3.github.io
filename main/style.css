@@ -39,3 +39,9 @@
 #resetMountainButton {
     display: inline-block;
 }
+#gridXInput {
+    display: block;
+}
+#gridYInput {
+    display: block;
+}
