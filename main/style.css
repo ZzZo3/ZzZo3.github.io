@@ -19,6 +19,9 @@
 .SchematicTile { /*only the one that's not cloned*/
     visibility: hidden;
 }
+.Selection {
+    z-index: 100;
+}
 .slider {
     display: flex;
     flex-direction: column;

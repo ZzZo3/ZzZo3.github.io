@@ -9,6 +9,7 @@ const mountainInput = document.getElementById("mountainInput")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const isometricParent = document.getElementById("isometricParent")
+const Selection = document.getElementById('Selection')
 //RENDER VARIABLES
 let isoSpread = 1.0
 let tileScale = 1.0
@@ -107,9 +108,36 @@ function setSchematic() {
     }
 }
 
+function summonSelection() {
+    let off = 192
+    let xi = parseInt(Selection.classList[1].slice(1))
+    let yi = parseInt(Selection.classList[2].slice(1))
+    let xf = 0
+    let yf = 0
+    for(let step = 1; step <= xi; step++) {
+        xf += 32*isoScale
+        yf -= 11*isoScale
+        off -= mountainOffset
+    }
+    for(let step = 1; step <= yi; step++) {
+        xf += 32*isoScale
+        yf += 11*isoScale
+        off += mountainOffset
+    }
+    yf += off * tileScale
+    xf += positionOffsetX
+    yf += positionOffsetY
+    Selection.style.left = xf + "px"
+    Selection.style.top = yf + "px"
+    Selection.style.zIndex = yi - xi
+    Selection.style.width = 64*tileScale + "px"
+    Selection.style.height = 64*tileScale + "px"
+}
+
 function renderIsometric() {
     console.log('\"renderIsometric()\" began')
     setSchematic()
+    summonSelection()
     console.log('   schematic finished rendering...')
     let isoScale = isoSpread * tileScale
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
