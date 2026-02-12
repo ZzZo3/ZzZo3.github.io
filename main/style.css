@@ -24,6 +24,18 @@
 #spreadInput {
     display: block;
 }
+#scaleInput {
+    display: inline;
+}
+#mountainInput {
+    display: inline;
+}
 #resetSpreadButton {
     display: block;
+}
+#resetScaleButton {
+    display: inline;
+}
+#resetMountainButton {
+    display: inline;
 }
