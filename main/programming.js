@@ -1,12 +1,16 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
+const spreadInput = document.getElementById("spreadInput")
+const scaleInput = document.getElementById("scaleInput")
+const mountainInput = document.getElementById("mountainInput")
 
-const isoSpread = 1.5
-const tileScale = 2.0
-const isoScale = isoSpread * tileScale
-const mountainOffset = 4
+//ISOMETRIC RENDER
+let isoSpread = 1.5
+let tileScale = 2.0
+let mountainOffset = 0
 
 function positionTiles() {
+    let isoScale = isoSpread * tileScale
     console.log('\"positionTiles()\" began')
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
     isometricTilesQuery.forEach((element) => {
@@ -42,6 +46,17 @@ function positionTiles() {
     })
     console.log('   \"positionTiles()\" finished')
 }
+
+spreadInput.oninput = ()=>{
+    isoSpread = parseFloat(spreadInput)
+}
+scaleInput.oninput = ()=>{
+    tileScale = parseFloat(scaleInput)
+}
+mountainInput.oninput = ()=>{
+    mountainOffset = parseInt(mountainInput)
+}
+
 
 //STUFF THAT RUNS ON LOAD
 
