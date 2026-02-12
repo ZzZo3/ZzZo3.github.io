@@ -12,6 +12,7 @@
     image-rendering: pixelated;
     width: 64px;
     height: 256px;
+    shape-image-threshold: 0.5; /*Only pixels with alpha > 0.5 (50% opaque) will trigger focus/click*/
 }
 #CLUBNINE {
     top: 350px;
