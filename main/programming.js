@@ -1,11 +1,11 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
-const isometricParent = document.getElementById("isometricParent")
 const spreadInput = document.getElementById("spreadInput")
 const scaleInput = document.getElementById("scaleInput")
 const mountainInput = document.getElementById("mountainInput")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
+const isometricParent = document.getElementById("isometricParent")
 
 //ISOMETRIC RENDER
 let isoSpread = 1.0
@@ -47,6 +47,7 @@ function setSchematic() {
         schemTile.style.width = 64*tileScale + "px"
         schemTile.style.height = 256*tileScale + "px"
         schemTile.style.visibility = "visible"
+        schemTile.id = ''
         isometricParent.appendChild(schemTile)
       }
     }
