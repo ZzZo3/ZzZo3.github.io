@@ -25,13 +25,13 @@
     display: block;
 }
 #scaleInput {
-    display: inline;
+    display: block;
 }
 #mountainInput {
-    display: inline;
+    display: block;
 }
 #resetSpreadButton {
-    display: block;
+    display: inline;
 }
 #resetScaleButton {
     display: inline;
