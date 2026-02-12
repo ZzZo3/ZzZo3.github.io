@@ -109,7 +109,7 @@ function setSchematic() {
 }
 
 function summonSelection() {
-    let off = 192
+    let off = 170
     let xi = parseInt(Selection.classList[0].slice(1))
     let yi = parseInt(Selection.classList[1].slice(1))
     let xf = 0
