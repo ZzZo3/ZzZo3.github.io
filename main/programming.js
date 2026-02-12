@@ -8,9 +8,9 @@ const gridYInput = document.getElementById("gridYInput")
 const isometricParent = document.getElementById("isometricParent")
 
 //ISOMETRIC RENDER
-let isoSpread = 1.0
-let tileScale = 2.0
-let mountainOffset = 0
+let isoSpread = 1.6
+let tileScale = 1.6
+let mountainOffset = 4
 
 function setSchematic() {
     let clonesToKill = document.querySelectorAll('.cloneSchemTile')
@@ -162,5 +162,8 @@ function resetMountain() {
 function loadFunc() {
     console.log('\"loadFunc()\" began')
     renderIsometric()
+    resetSpread()
+    resetScale()
+    resetMountain()
     console.log('   \"loadFunc()\" finished')
 }
