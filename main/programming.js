@@ -16,6 +16,8 @@ let tileScale = 1.0
 let mountainOffset = 0
 let positionOffsetX = 0
 let positionOffsetY = 0
+let viewPosX = 0
+let viewPosY = 0
 
 //KEY LISTENER
 document.addEventListener('keydown', function(event) {
