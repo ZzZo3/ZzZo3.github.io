@@ -9,7 +9,7 @@
     <link rel="icon" type="image/gif" href="./assets/icons/catspin.gif">
 </head>
 <body class="tileStarry slowSmoothStars" id="mainBody" onload="loadFunc()">
-    <div class="isometricParent">
+    <div id="isometricParent">
         <!--CLUBNINE TILES-->
         <img class="isometricTile x0 y0" id="CLUBNINE" src="./assets/isometric/CLUBNINE.gif">
         <img class="isometricTile x1 y0" src="./assets/isometric/CLUBNINE.gif">
@@ -34,6 +34,8 @@
         <input type="text" class="top" id="spreadInput" placeholder="isoSpread: Float" oninput="spreadInputFunc()">
         <input type="text" class="top" id="scaleInput" placeholder="tileScale: Float" oninput="scaleInputFunc()">
         <input type="text" class="top" id="mountainInput" placeholder="mountainOffset: Int (px)" oninput="mountainInputFunc()">
+        <input type="text" class="top" id="gridXInput" placeholder="X dimension: Int (tiles)" oninput="gridXFunc()">
+        <input type="text" class="top" id="gridYInput" placeholder="Y dimension: Int (tiles)" oninput="gridYFunc()">
     </div>
     <script src="./main/programming.js"></script>
 </body>

@@ -4,6 +4,8 @@ const isometricParent = document.getElementById("isometricParent")
 const spreadInput = document.getElementById("spreadInput")
 const scaleInput = document.getElementById("scaleInput")
 const mountainInput = document.getElementById("mountainInput")
+const gridXInput = document.getElementById("gridXInput")
+const gridYInput = document.getElementById("gridYInput")
 
 //ISOMETRIC RENDER
 let isoSpread = 1.0
@@ -15,8 +17,8 @@ function setSchematic() {
     console.log('\"setSchematic()\" began')
     let SchematicTile = document.getElementById('SchematicTile')
     
-    let Xdim = 6 //SchematicTile.dataset.Xdim
-    let Ydim = 6 //SchematicTile.dataset.Ydim
+    let Xdim = SchematicTile.getAttribute("data-Xdim")
+    let Ydim = SchematicTile.getAttribute("data-Ydim")
     let totalSchemTiles = Xdim * Ydim
     
     console.log('   schemDimensions: ('+Xdim+','+Ydim+')')
@@ -112,6 +114,18 @@ function mountainInputFunc() {
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
     positionTiles()
     console.log('   \"mountainInputFunc()\" finished')
+}
+function gridXFunc() {
+    console.log('\"gridXFunc()\" began')
+    let scheme = document.getElementById('SchematicTile')
+    scheme.setAttribute('data-Xdim',gridXInput.value)
+    console.log('   \"gridXFunc()\" finished')
+}
+function gridYFunc() {
+    console.log('\"gridYFunc()\" began')
+    let scheme = document.getElementById('SchematicTile')
+    scheme.setAttribute('data-Ydim',gridYInput.value)
+    console.log('   \"gridYFunc()\" finished')
 }
 
 
