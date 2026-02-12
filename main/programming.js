@@ -49,12 +49,15 @@ function positionTiles() {
 
 spreadInput.oninput = ()=>{
     isoSpread = parseFloat(spreadInput)
+    positionTiles()
 }
 scaleInput.oninput = ()=>{
     tileScale = parseFloat(scaleInput)
+    positionTiles()
 }
 mountainInput.oninput = ()=>{
     mountainOffset = parseInt(mountainInput)
+    positionTiles()
 }
 
 
