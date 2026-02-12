@@ -48,8 +48,16 @@ function Iso2Reg(xi,yi) {
     xf += 32 * tileScale * isoSpread * yi
     return [xf,yf]
 }
+function renderPosition() {
+    console.log('\"renderPosition()\" began')
+    console.log('   isometric coordinates: '+POSITION)
+    let offsets = Iso2Reg(POSITION[0],POSITION[1])
+    isometricContainer.style.top = offsets[1] + 'px'
+    isometricContainer.style.left = offsets[0] + 'px'
+    console.log('   \"renderPosition()\" finished')
+}
 
-//POSITION & MOVEMENT
+//MOVEMENT
 function walkUp() {
     console.log('\"walkUp()\" called')
     POSITION[1] -= 1
@@ -80,14 +88,6 @@ function shiftV(i) {
     isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale * i) + "px"
     isometricContainer.style.left += ( 32 * tileScale * isoSpread * i) + "px"
 }
-function renderPosition() {
-    console.log('\"renderPosition()\" began')
-    console.log('   isometric coordinates: '+POSITION)
-    let offsets = Iso2Reg(POSITION[0],POSITION[1])
-    isometricContainer.style.top = offsets[1]
-    isometricContainer.style.left = offsets[0]
-    console.log('   \"renderPosition()\" finished')
-}
 function jump(x,y) {
     console.log('\"jump()\" called')
     POSITION[0] = x
@@ -108,7 +108,6 @@ function renderSchematic() {
     clonesToKill.forEach((node) => {
         node.remove()
     })
-    let isoScale = isoSpread * tileScale
     let SchematicTile = document.getElementById('SchematicTile')
     
     let Xdim = SchematicTile.getAttribute("data-Xdim")
@@ -122,25 +121,9 @@ function renderSchematic() {
       for(let yi = 0; yi < Ydim; yi++) {
         let schemTile = SchematicTile.cloneNode()
         schemTile.classList.add('cloneSchemTile')
-        let off = 0
-        let xf = 0
-        let yf = 0
-        for(let step = 1; step <= xi; step++) {
-            xf += 32*isoScale
-            yf -= 11*isoScale
-            off -= mountainOffset
-        }
-        for(let step = 1; step <= yi; step++) {
-            xf += 32*isoScale
-            yf += 11*isoScale
-            off += mountainOffset
-        }
-        yf += off * tileScale
-        xf += positionOffsetX
-        yf += positionOffsetY
-        schemTile.style.left = xf + "px"
-        schemTile.style.top = yf + "px"
         schemTile.style.zIndex = yi - xi - 1
+        schemTile.style.left = Iso2Reg(xi,yi)[0] + "px"
+        schemTile.style.top = Iso2Reg(xi,yi)[1] + "px"
         schemTile.style.width = 64*tileScale + "px"
         schemTile.style.height = 256*tileScale + "px"
         schemTile.style.visibility = "visible"
