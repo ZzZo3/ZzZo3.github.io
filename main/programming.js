@@ -50,7 +50,7 @@ function positionTiles() {
 function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
     isoSpread = parseFloat(spreadInput.value)
-    let isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
+    isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
     console.log('   '+isoSpread)
     positionTiles()
     console.log('   \"spreadInputFunc()\" finished')
