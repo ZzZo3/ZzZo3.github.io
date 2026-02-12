@@ -55,14 +55,13 @@ function setSchematic() {
         isometricParent.appendChild(schemTile)
       }
     }
-    
-    console.log('   \"positionTiles()\" finished')
 }
 
-function positionTiles() {
+function renderIsometric() {
+    console.log('\"renderIsometric()\" began')
     setSchematic()
+    console.log('   schematic finished rendering...')
     let isoScale = isoSpread * tileScale
-    console.log('\"positionTiles()\" began')
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
     isometricTilesQuery.forEach((element) => {
         let tile = element
@@ -95,7 +94,7 @@ function positionTiles() {
         tile.style.height = 256*tileScale + "px"
         return tile
     })
-    console.log('   \"positionTiles()\" finished')
+    console.log('   \"renderIsometric()\" finished')
 }
 
 function spreadInputFunc() {
@@ -103,7 +102,7 @@ function spreadInputFunc() {
     isoSpread = parseFloat(spreadInput.value)
     isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
     console.log('   '+isoSpread)
-    positionTiles()
+    renderIsometric()
     console.log('   \"spreadInputFunc()\" finished')
 }
 function scaleInputFunc() {
@@ -111,14 +110,14 @@ function scaleInputFunc() {
     tileScale = parseFloat(scaleInput.value)
     tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
     console.log('   '+tileScale)
-    positionTiles()
+    renderIsometric()
     console.log('   \"scaleInputFunc()\" finished')
 }
 function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
     mountainOffset = parseInt(mountainInput.value)
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
-    positionTiles()
+    renderIsometric()
     console.log('   \"mountainInputFunc()\" finished')
 }
 function gridXFunc() {
@@ -127,7 +126,7 @@ function gridXFunc() {
     let val = Number.isNaN(gridXInput.value) ? "7" : gridXInput.value
     scheme.setAttribute('data-Xdim',val)
     console.log(scheme.getAttribute('data-Xdim'))
-    positionTiles()
+    renderIsometric()
     console.log('   \"gridXFunc()\" finished')
 }
 function gridYFunc() {
@@ -136,7 +135,7 @@ function gridYFunc() {
     let val = Number.isNaN(gridYInput.value) ? "7" : gridYInput.value
     scheme.setAttribute('data-Ydim',val)
     console.log(scheme.getAttribute('data-Ydim'))
-    positionTiles()
+    renderIsometric()
     console.log('   \"gridYFunc()\" finished')
 }
 
@@ -145,6 +144,6 @@ function gridYFunc() {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    positionTiles()
+    renderIsometric()
     console.log('   \"loadFunc()\" finished')
 }
