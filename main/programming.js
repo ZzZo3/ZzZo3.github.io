@@ -49,33 +49,24 @@ function positionTiles() {
 
 function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
-    if (parseFloat(spreadInput.value) != NaN) {
     isoSpread = parseFloat(spreadInput.value)
-    } else {
-        isoSpread = 1.0
-    }
+    let isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
     console.log('   '+isoSpread)
     positionTiles()
     console.log('   \"spreadInputFunc()\" finished')
 }
 function scaleInputFunc() {
     console.log('\"scaleInputFunc()\" began')
-    if (parseFloat(scaleInput.value) != NaN) {
     tileScale = parseFloat(scaleInput.value)
-    } else {
-        tileScale = 2.0
-    }
+    tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
     console.log('   '+tileScale)
     positionTiles()
     console.log('   \"scaleInputFunc()\" finished')
 }
 function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
-    if (parseInt(mountainInput.value) != NaN) {
-    mountainOffset = parseInt(mountainInput.value)
-    } else {
-        mountainOffset = 0
-    }
+    mountainOffset = parseFloat(mountainInput.value)
+    mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
     positionTiles()
     console.log('   \"mountainInputFunc()\" finished')
 }
