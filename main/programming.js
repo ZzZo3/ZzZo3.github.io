@@ -145,20 +145,20 @@ function resetSpread() {
     console.log('isoSpread -> 1')
     isoSpread = 1.0
     spreadInput.value = "1"
-    SpLabel.value = 'Sp: '+isoSpread
+    SpLabel.innerText = 'Sp: '+isoSpread
     renderIsometric()
 }
 function resetScale() {
     console.log('tileScale -> 2')
     tileScale = 2.0
     scaleInput.value = "1"
-    ScLabel.value = 'Sp: '+tileScale
+    ScLabel.innerText = 'Sp: '+tileScale
     renderIsometric()
 }
 function resetMountain() {
     console.log('mountainOffset -> 0')
     mountainInput.value = "1"
-    MnLabel.value = 'Sp: '+mountainOffset
+    MnLabel.innerText = 'Sp: '+mountainOffset
     mountainOffset = 0
     renderIsometric()
 }
