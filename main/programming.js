@@ -19,24 +19,20 @@ let position = [0,0]
 document.addEventListener('keydown', function(event) {
   console.log('Key:', event.key);
   if (event.key == 'w') {
-    alert('W')
     console.log('   isometric render shifted up')
-    position[1] -= 25
+    position[1] -= 32
   }
   if (event.key == 's') {
-    alert('S')
     console.log('   isometric render shifted down')
-    position[1] += 25
+    position[1] += 32
   }
   if (event.key == 'a') {
-    alert('A')
     console.log('   isometric render shifted left')
-    position[0] -= 25
+    position[0] -= 32
   }
   if (event.key == 'd') {
-    alert('D')
     console.log('   isometric render shifted right')
-    position[0] += 25
+    position[0] += 32
   }
 });
 
@@ -119,6 +115,8 @@ function renderIsometric() {
             off += mountainOffset
         }
         yf += off * tileScale
+        xf += position[0]
+        yf += position[1]
         tile.style.left = xf + "px"
         tile.style.top = yf + "px"
         tile.style.zIndex = yi - xi
