@@ -31,17 +31,17 @@
     display: block;
 }
 #resetSpreadButton {
-    display: inline-block;
+    display: inline;
 }
 #resetScaleButton {
-    display: inline-block;
+    display: inline;
 }
 #resetMountainButton {
-    display: inline-block;
+    display: inline;
 }
 #gridXInput {
     display: block;
 }
 #gridYInput {
-    display: block;
+    display: inline;
 }
