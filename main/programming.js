@@ -104,7 +104,7 @@ function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
     isoSpread = parseFloat(spreadInput.value)
     isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
-    SpLabel.innerText = 'Sp: '+tileScale
+    SpLabel.innerText = 'Sp: '+isoSpread
     console.log('   '+isoSpread)
     renderIsometric()
     console.log('   \"spreadInputFunc()\" finished')
