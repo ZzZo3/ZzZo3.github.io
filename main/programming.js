@@ -36,6 +36,19 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+//TRANSLATE ISOMETRIC COORDINATES TO SCREEN COORDINATES (from top left, where +y is down and +x is right)
+function Iso2Reg(xi,yi) {
+    let xf = 0
+    let yf = 0
+    // xi <- iterations (+leftward, -rightward)
+    yf += (11 + mountainOffset/isoSpread) * isoSpread * tileScale * xi
+    xf -= 32 * tileScale * isoSpread * xi
+    // yi <- iterations (+downward, -upward)
+    yf += (11 + mountainOffset/isoSpread) * isoSpread * tileScale * yi
+    xf += 32 * tileScale * isoSpread * yi
+    return [xf,yf]
+}
+
 //POSITION & MOVEMENT
 function walkUp() {
     console.log('\"walkUp()\" called')
@@ -63,15 +76,16 @@ function shiftH(i) {
     isometricContainer.style.left -= ( 32 * tileScale * isoSpread * i ) + "px"
 }
 function shiftV(i) {
-    // i <- iterations (+downward, -upward)isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
+    // i <- iterations (+downward, -upward)
     isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale * i) + "px"
     isometricContainer.style.left += ( 32 * tileScale * isoSpread * i) + "px"
 }
 function renderPosition() {
     console.log('\"renderPosition()\" began')
     console.log('   isometric coordinates: '+POSITION)
-    shiftH(POSITION[0])
-    shiftV(POSITION[1])
+    let offsets = Iso2Reg(POSITION[0],POSITION[1])
+    isometricContainer.style.top = offsets[1]
+    isometricContainer.style.left = offsets[0]
     console.log('   \"renderPosition()\" finished')
 }
 function jump(x,y) {
@@ -88,14 +102,13 @@ function shift(dx,dy) {
 }
 
 //ISOMETRIC RENDER
-
 function renderSchematic() {
+    console.log('\"renderSchematic()\" began')
     let clonesToKill = document.querySelectorAll('.cloneSchemTile')
     clonesToKill.forEach((node) => {
         node.remove()
     })
     let isoScale = isoSpread * tileScale
-    console.log('\"setSchematic()\" began')
     let SchematicTile = document.getElementById('SchematicTile')
     
     let Xdim = SchematicTile.getAttribute("data-Xdim")
@@ -134,9 +147,11 @@ function renderSchematic() {
         isometricParent.appendChild(schemTile)
       }
     }
+    console.log('   \"renderSchematic()\" finished')
 }
 
 function renderSelector() {
+    console.log('\"renderSelector()\" began')
     let off = 175
     let xi = 0
     let yi = 0
@@ -158,13 +173,14 @@ function renderSelector() {
     Selection.style.zIndex = yf - xf + 1
     Selection.style.width = 64*tileScale + "px"
     Selection.style.height = 64*tileScale + "px"
+    console.log('   \"renderSelector()\" finished')
 }
 
 function renderIsometric() {
     console.log('\"renderIsometric()\" began')
     renderSchematic()
     renderSelector()
-    console.log('   schematic finished rendering...')
+    renderPosition()
     let isoScale = isoSpread * tileScale
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
     isometricTilesQuery.forEach((element) => {
