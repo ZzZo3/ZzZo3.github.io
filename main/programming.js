@@ -10,10 +10,32 @@ const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const isometricParent = document.getElementById("isometricParent")
 
+//KEY LISTENER
+document.addEventListener('keydown', function(event) {
+  console.log('Key:', event.key);
+  if (event.key === 'ArrowUp') {
+    console.log('   isometric render shifted up');
+    position[1] -= 25
+  }
+  if (event.key === 'ArrowDown') {
+    console.log('   isometric render shifted down');
+    position[1] += 25
+  }
+  if (event.key === 'ArrowLeft') {
+    console.log('   isometric render shifted left');
+    position[0] -= 25
+  }
+  if (event.key === 'ArrowRight') {
+    console.log('   isometric render shifted right');
+    position[0] += 25
+  }
+});
+
 //ISOMETRIC RENDER
 let isoSpread = 1.6
 let tileScale = 1.6
 let mountainOffset = 4
+let position = [0,0]
 
 function setSchematic() {
     let clonesToKill = document.querySelectorAll('.cloneSchemTile')
@@ -49,6 +71,8 @@ function setSchematic() {
             off += mountainOffset
         }
         yf += off * tileScale
+        xf += position[0]
+        yf += position[1]
         schemTile.style.left = xf + "px"
         schemTile.style.top = yf + "px"
         schemTile.style.zIndex = yi - xi - 1

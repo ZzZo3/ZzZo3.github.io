@@ -23,7 +23,6 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    border: 1px solid white;
     padding: 2px;
 }
 
