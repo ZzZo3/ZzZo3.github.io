@@ -31,11 +31,11 @@
     display: block;
 }
 #resetSpreadButton {
-    display: inline;
+    display: inline-block;
 }
 #resetScaleButton {
-    display: inline;
+    display: inline-block;
 }
 #resetMountainButton {
-    display: inline;
+    display: inline-block;
 }
