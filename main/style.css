@@ -24,3 +24,7 @@
 .inputResetPair {
     display: flex;
 }
+
+.resetButton {
+    margin-left: 2.5px;
+}
