@@ -1,5 +1,6 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
+const isometricParent = document.getElementById("isometricParent")
 const spreadInput = document.getElementById("spreadInput")
 const scaleInput = document.getElementById("scaleInput")
 const mountainInput = document.getElementById("mountainInput")
@@ -8,6 +9,48 @@ const mountainInput = document.getElementById("mountainInput")
 let isoSpread = 1.0
 let tileScale = 2.0
 let mountainOffset = 0
+
+function setSchematic() {
+    let isoScale = isoSpread * tileScale
+    console.log('\"setSchematic()\" began')
+    let SchematicTile = document.getElementById('SchematicTile')
+    
+    let Xdim = 6 //SchematicTile.dataset.Xdim
+    let Ydim = 6 //SchematicTile.dataset.Ydim
+    let totalSchemTiles = Xdim * Ydim
+    
+    console.log('   schemDimensions: ('+Xdim+','+Ydim+')')
+    console.log('   totalSchemTiles: '+totalSchemTiles)
+    
+    for(let xi = 0; xi <= Xdim; xi++) {
+      for(let yi = 0; yi <= Ydim; yi++) {
+        let schemTile = SchematicTile.cloneNode()
+        let off = 0
+        let xf = 0
+        let yf = 0
+        for(let step = 1; step <= xi; step++) {
+            xf += 32*isoScale
+            yf -= 11*isoScale
+            off -= mountainOffset
+        }
+        for(let step = 1; step <= yi; step++) {
+            xf += 32*isoScale
+            yf += 11*isoScale
+            off += mountainOffset
+        }
+        yf += off * tileScale
+        schemTile.style.left = xf + "px"
+        schemTile.style.top = yf + "px"
+        schemTile.style.zIndex = yi - xi - 1
+        schemTile.style.width = 64*tileScale + "px"
+        schemTile.style.height = 256*tileScale + "px"
+        schemTile.style.visibility = "visible"
+        isometricParent.appendChild(schemTile)
+      }
+    }
+    
+    console.log('   \"positionTiles()\" finished')
+}
 
 function positionTiles() {
     let isoScale = isoSpread * tileScale
@@ -76,6 +119,7 @@ function mountainInputFunc() {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
+    setSchematic()
     positionTiles()
     console.log('   \"loadFunc()\" finished')
 }
