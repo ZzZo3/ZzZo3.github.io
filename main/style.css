@@ -20,3 +20,10 @@
 .top {
     z-index: 100;
 }
+
+#spreadInput {
+    display: block;
+}
+#resetSpreadButton {
+    display: block;
+}
