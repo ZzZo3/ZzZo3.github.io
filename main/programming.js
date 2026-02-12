@@ -3,9 +3,9 @@ const mainBody = document.getElementById("mainBody")
 
 const isoScale = 2.0
 const tileScale = 2.0
+const mountainOffset = 4
 
 function positionTiles() {
-    console.log('\"positionTiles()\" began')
     console.log('\"positionTiles()\" began')
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
     isometricTilesQuery.forEach((element) => {
@@ -24,12 +24,13 @@ function positionTiles() {
         for(let step = 1; step <= xi; step++) {
             xf += 32*isoScale
             yf -= 11*isoScale
+            off -= mountainOffset
         }
         for(let step = 1; step <= yi; step++) {
             xf += 32*isoScale
             yf += 11*isoScale
+            off += mountainOffset
         }
-        //off = yf #mountain idea
         yf += off * tileScale
         tile.style.left = xf + "px"
         tile.style.top = yf + "px"
