@@ -13,26 +13,27 @@ const isometricParent = document.getElementById("isometricParent")
 let isoSpread = 1.6
 let tileScale = 1.6
 let mountainOffset = 4
-let position = [0,0]
+let positionOffsetX = 100
+let positionOffsetY = 100
 
 //KEY LISTENER
 document.addEventListener('keydown', function(event) {
   console.log('Key:', event.key);
   if (event.key == 'w') {
     console.log('   isometric render shifted up')
-    position[1] -= 32
+    positionOffsetY -= 32
   }
   if (event.key == 's') {
     console.log('   isometric render shifted down')
-    position[1] += 32
+    positionOffsetY += 32
   }
   if (event.key == 'a') {
     console.log('   isometric render shifted left')
-    position[0] -= 32
+    positionOffsetX -= 32
   }
   if (event.key == 'd') {
     console.log('   isometric render shifted right')
-    position[0] += 32
+    positionOffsetX += 32
   }
 });
 
@@ -72,8 +73,8 @@ function setSchematic() {
             off += mountainOffset
         }
         yf += off * tileScale
-        xf += position[0]
-        yf += position[1]
+        xf += positionOffsetX
+        yf += positionOffsetY
         schemTile.style.left = xf + "px"
         schemTile.style.top = yf + "px"
         schemTile.style.zIndex = yi - xi - 1
@@ -115,8 +116,8 @@ function renderIsometric() {
             off += mountainOffset
         }
         yf += off * tileScale
-        xf += position[0]
-        yf += position[1]
+        xf += positionOffsetX
+        yf += positionOffsetY
         tile.style.left = xf + "px"
         tile.style.top = yf + "px"
         tile.style.zIndex = yi - xi
