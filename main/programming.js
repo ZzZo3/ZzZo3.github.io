@@ -21,19 +21,23 @@ document.addEventListener('keydown', function(event) {
   console.log('Key:', event.key);
   if (event.key == 'w') {
     console.log('   isometric render shifted up')
-    positionOffsetY -= 32
+    positionOffsetY -= 11
+    renderIsometric()
   }
   if (event.key == 's') {
     console.log('   isometric render shifted down')
-    positionOffsetY += 32
+    positionOffsetY += 11
+    renderIsometric()
   }
   if (event.key == 'a') {
     console.log('   isometric render shifted left')
     positionOffsetX -= 32
+    renderIsometric()
   }
   if (event.key == 'd') {
     console.log('   isometric render shifted right')
     positionOffsetX += 32
+    renderIsometric()
   }
 });
 
