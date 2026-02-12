@@ -24,8 +24,8 @@ function setSchematic() {
     console.log('   schemDimensions: ('+Xdim+','+Ydim+')')
     console.log('   totalSchemTiles: '+totalSchemTiles)
     
-    for(let xi = 0; xi <= Xdim; xi++) {
-      for(let yi = 0; yi <= Ydim; yi++) {
+    for(let xi = 0; xi < Xdim; xi++) {
+      for(let yi = 0; yi < Ydim; yi++) {
         let schemTile = SchematicTile.cloneNode()
         let off = 0
         let xf = 0
