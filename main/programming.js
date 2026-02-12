@@ -275,9 +275,15 @@ function resetMountain() {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
+    isoSpread = 1.0
+    spreadInput.value = "1"
+    SpLabel.innerText = 'Spread: '+isoSpread
+    tileScale = 2.0
+    scaleInput.value = "2"
+    ScLabel.innerText = 'Scale: '+tileScale
+    mountainOffset = 0
+    mountainInput.value = "0"
+    MnLabel.innerText = 'Hill: '+mountainOffset
     renderIsometric()
-    resetSpread()
-    resetScale()
-    resetMountain()
     console.log('   \"loadFunc()\" finished')
 }
