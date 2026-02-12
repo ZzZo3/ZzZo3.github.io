@@ -20,6 +20,8 @@ let positionOffsetY = 0
 let POSITION = [0,0]
 
 //KEY LISTENER
+document.addEventListener('keydown', function(event) {
+  console.log('Key:', event.key);
   if (event.key =='w') {
     POSITION[1] -= 1
     walkUp() // -y(iso) -> -x -y (offset from top left)
