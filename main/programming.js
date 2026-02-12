@@ -18,23 +18,22 @@ let position = [0,0]
 //KEY LISTENER
 document.addEventListener('keydown', function(event) {
   console.log('Key:', event.key);
-  alert(event.key)
-  if (event.key == 'W') {
+  if (event.key == 'w') {
     alert('W')
     console.log('   isometric render shifted up')
     position[1] -= 25
   }
-  if (event.key == 'S') {
+  if (event.key == 's') {
     alert('S')
     console.log('   isometric render shifted down')
     position[1] += 25
   }
-  if (event.key == 'A') {
+  if (event.key == 'a') {
     alert('A')
     console.log('   isometric render shifted left')
     position[0] -= 25
   }
-  if (event.key == 'D') {
+  if (event.key == 'd') {
     alert('D')
     console.log('   isometric render shifted right')
     position[0] += 25
