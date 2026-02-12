@@ -22,58 +22,54 @@ let POSITION = [0,0]
 //KEY LISTENER
   if (event.key =='w') {
     POSITION[1] -= 1
-    shiftDownIso()
+    walkUp() // -y(iso) -> -x -y (offset from top left)
     console.log('   isometric render shifted -y')
   }
   if (event.key =='s') {
     POSITION[1] += 1
-    shiftUpIso()
+    walkDown() // +y(iso) -> +x +y (offset from top left)
     console.log('   isometric render shifted +y')
   }
   if (event.key =='a') {
-    POSITION[0] -= 1
-    shiftRightIso()
+    walkRight() // +x(iso) -> +x -y (offset from top left)
     console.log('   isometric render shifted -x')
   }
   if (event.key =='d') {
-    POSITION[0] += 1
-    shiftLeftIso()
+    walkLeft() // -x(iso) -> -x +y (offset from top left)
     console.log('   isometric render shifted +x')
   }
 });
 
 //POSITION & MOVEMENT
-function shiftUpIso() {
-    isometricContainer.style.top -= ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
-    isometricContainer.style.left -= ( 32 * tileScale * isoSpread ) + "px"
+function walkUp() {
+    POSITION[1] -= 1
+    shiftV(-1)
 }
-function shiftDownIso() {
-    isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
-    isometricContainer.style.left += ( 32 * tileScale * isoSpread ) + "px"
+function walkDown() {
+    POSITION[1] += 1
+    shiftV(1)
 }
-function shiftLeftIso() {
-    isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
-    isometricContainer.style.left -= ( 32 * tileScale * isoSpread ) + "px"
+function walkLeft() {
+    POSITION[0] += 1
+    shiftH(1)
 }
-function shiftRightIso() {
-    isometricContainer.style.top -= ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
-    isometricContainer.style.left += ( 32 * tileScale * isoSpread ) + "px"
+function walkRight() {
+    POSITION[0] -= 1
+    shiftH(-1)
+}
+function shiftH(i) {
+    // i <- iterations (+leftward, -rightward)
+    isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale * i ) + "px"
+    isometricContainer.style.left -= ( 32 * tileScale * isoSpread * i ) + "px"
+}
+function shiftV(i) {
+    // i <- iterations (+downward, -upward)isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale ) + "px"
+    isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale * i) + "px"
+    isometricContainer.style.left += ( 32 * tileScale * isoSpread * i) + "px"
 }
 function renderPosition() {
-    let xf = 0.0
-    let yf = 0.0
-    for(let step = 1; step <= POSITION[0]; step++) {
-        shiftRightIso()
-    }
-    if (POSITION[1] > 0) {
-        for(let step = 1; step <= POSITION[1]; step++) {
-            shiftUpIso()
-        }
-    } else (
-        for(let step = -1; step >= POSITION[1]; step-=1) {
-            shiftDownIso()
-        }
-    )
+    shiftH(POSITION[0])
+    shiftV(POSITION[1])
 }
 function jump(x,y) {
     POSITION[0] = x
