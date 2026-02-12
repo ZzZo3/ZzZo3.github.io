@@ -13,13 +13,16 @@
     width: 64px;
     height: 256px;
     border: 1px solid white;
-    pointer-events: none;
 }
-#SchematicTile {
-    visibility: hidden;
+#isometricTile {
+    pointer-events: none;
 }
 #isometricTile:hover {
     border: 2px solid white;
+}
+#SchematicTile {
+    visibility: hidden;
+    pointer-events: none;
 }
 #SchematicTile:hover {
     border: 2px solid white;
