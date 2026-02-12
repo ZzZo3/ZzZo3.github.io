@@ -11,9 +11,11 @@
 <body class="tileStarry slowSmoothStars" id="mainBody" onload="loadFunc()">
     <div id="isometricParent">
         <!--CLUBNINE TILES-->
-        <img class="isometricTile x3 y3" id="CLUBNINE" src="./assets/isometric/CLUBNINE.gif">
+        <img class="isometricTile x3 y3" id="CLUBNINE" usemap="#schemMap" src="./assets/isometric/CLUBNINE.gif">
         <!--SCHEMATIC GRID-->
-        <img id="SchematicTile" data-Xdim="7" data-Ydim="7" src="./assets/isometric/SCHEMATIC.png">
+        <img id="SchematicTile" data-Xdim="7" data-Ydim="7" usemap="#schemMap" src="./assets/isometric/SCHEMATIC.png">
+        
+        <area shape="poly" coords="0,256, 64,256, 64,218, 0,218" href="#">
     </div>
     <div class="relative top">
         <h3>n0n-sense.org</h3>
