@@ -38,7 +38,6 @@ function positionTiles() {
         tile.style.zIndex = yi - xi
         tile.style.width = 64*tileScale + "px"
         tile.style.height = 256*tileScale + "px"
-        console.log('   realized success')
         return tile
     })
     console.log('   \"positionTiles()\" finished')
