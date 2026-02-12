@@ -48,7 +48,7 @@ function positionTiles() {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    //positionTiles()
+    positionTiles()
     console.log('   \"loadFunc()\" finished')
 }
 
