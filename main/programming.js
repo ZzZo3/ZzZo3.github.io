@@ -47,15 +47,15 @@ function positionTiles() {
     console.log('   \"positionTiles()\" finished')
 }
 
-spreadInput.oninput = ()=>{
+function spreadInputFunc() {
     isoSpread = parseFloat(spreadInput)
     positionTiles()
 }
-scaleInput.oninput = ()=>{
+function scaleInputFunc() {
     tileScale = parseFloat(scaleInput)
     positionTiles()
 }
-mountainInput.oninput = ()=>{
+function mountainInputFunc() {
     mountainOffset = parseInt(mountainInput)
     positionTiles()
 }
