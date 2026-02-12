@@ -46,13 +46,13 @@ document.addEventListener('keydown', function(event) {
     console.log('   isometric render shifted +y')
   }
   if (event.key =='j') {
-    shiftDown()
-    shiftLeft()
+    shiftUp()
+    shiftRight()
     console.log('   isometric render shifted -x')
   }
   if (event.key =='l') {
-    shiftUp()
-    shiftRight()
+    shiftDown()
+    shiftLeft()
     console.log('   isometric render shifted +x')
   }
 });
