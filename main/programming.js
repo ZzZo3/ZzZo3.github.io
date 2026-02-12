@@ -141,7 +141,7 @@ function renderSelector() {
     let off = 175
     let offsets = Iso2Reg(POSITION[0],POSITION[1])
     Selection.style.left = offsets[0] + "px"
-    Selection.style.top = offsets[1] + off + "px"
+    Selection.style.top = offsets[1] - off + "px"
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 1
     Selection.style.width = 64*tileScale + "px"
     Selection.style.height = 64*tileScale + "px"
