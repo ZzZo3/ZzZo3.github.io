@@ -10,11 +10,11 @@ const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const isometricParent = document.getElementById("isometricParent")
 //RENDER VARIABLES
-let isoSpread = 1.6
-let tileScale = 1.6
-let mountainOffset = 4
-let positionOffsetX = 100
-let positionOffsetY = 100
+let isoSpread = 1.0
+let tileScale = 1.0
+let mountainOffset = 0
+let positionOffsetX = 0
+let positionOffsetY = 0
 
 //KEY LISTENER
 document.addEventListener('keydown', function(event) {
