@@ -16,8 +16,8 @@ mainBody {
 */
 #isometricParent {
     position: relative;
-    width: 32px;
-    height: 256px;
+    width: 100px;
+    height: 100px;
     border: 2px solid lime;
 }
 #isometricTile {
@@ -26,5 +26,15 @@ mainBody {
     height: 256px;
     top: 200px;
     bottom: 200px;
-    border: 2px solid red;
+    border: 2px solid white;
+}
+.CLUBNINE {
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+.CLUBNINE2 {
+    top: 100px;
+    left: 200px;
+    z-index: 1;
 }
