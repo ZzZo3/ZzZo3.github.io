@@ -2,7 +2,7 @@
 const mainBody = document.getElementById("mainBody")
 
 var CLUBNINE = document.getElementById("CLUBNINE");
-
+/*
 function positionTiles() {
     console.log('\"positionTiles()\" began')
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
@@ -23,12 +23,12 @@ function positionTiles() {
     })
     console.log('   \"positionTiles()\" finished')
 }
-
+*/
 //STUFF THAT RUNS ON LOAD
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    positionTiles()
+    //positionTiles()
     console.log('   \"loadFunc()\" finished')
 }
 

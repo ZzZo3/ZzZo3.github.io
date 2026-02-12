@@ -14,8 +14,17 @@ mainBody {
     min-height: 100vh;
 }
 */
-#isometricTile {
+#isometricParent {
+    position: relative;
     width: 32px;
     height: 256px;
+    border: 2px solid lime;
+}
+#isometricTile {
     position: absolute;
+    width: 32px;
+    height: 256px;
+    top: 200px;
+    bottom: 200px;
+    border: 2px solid red;
 }
