@@ -1,6 +1,9 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
 const spreadInput = document.getElementById("spreadInput")
+const ScLabel = document.getElementById("ScLabel")
+const SpLabel = document.getElementById("SpLabel")
+const MnLabel = document.getElementById("MnLabel")
 const scaleInput = document.getElementById("scaleInput")
 const mountainInput = document.getElementById("mountainInput")
 const gridXInput = document.getElementById("gridXInput")
@@ -142,17 +145,20 @@ function resetSpread() {
     console.log('isoSpread -> 1')
     isoSpread = 1.0
     spreadInput.value = "1"
+    SpLabel.value = 'Sp: '+isoSpread
     renderIsometric()
 }
 function resetScale() {
     console.log('tileScale -> 2')
     tileScale = 2.0
     scaleInput.value = "1"
+    ScLabel.value = 'Sp: '+tileScale
     renderIsometric()
 }
 function resetMountain() {
     console.log('mountainOffset -> 0')
     mountainInput.value = "1"
+    MnLabel.value = 'Sp: '+mountainOffset
     mountainOffset = 0
     renderIsometric()
 }
