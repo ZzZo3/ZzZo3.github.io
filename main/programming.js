@@ -9,6 +9,11 @@ const mountainInput = document.getElementById("mountainInput")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const isometricParent = document.getElementById("isometricParent")
+//RENDER VARIABLES
+let isoSpread = 1.6
+let tileScale = 1.6
+let mountainOffset = 4
+let position = [0,0]
 
 //KEY LISTENER
 document.addEventListener('keydown', function(event) {
@@ -32,10 +37,6 @@ document.addEventListener('keydown', function(event) {
 });
 
 //ISOMETRIC RENDER
-let isoSpread = 1.6
-let tileScale = 1.6
-let mountainOffset = 4
-let position = [0,0]
 
 function setSchematic() {
     let clonesToKill = document.querySelectorAll('.cloneSchemTile')
