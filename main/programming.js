@@ -122,6 +122,7 @@ function renderSchematic() {
     
     for(let xi = 0; xi < Xdim; xi++) {
       for(let yi = 0; yi < Ydim; yi++) {
+        console.log('   schematic cloned at ['+xi+','+yi+']')
         let offsets = Iso2Reg(xi,yi)
         let schemTile = SchematicTile.cloneNode()
         schemTile.classList.add('cloneSchemTile')
