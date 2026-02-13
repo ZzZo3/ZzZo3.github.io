@@ -167,8 +167,8 @@ function renderIsoWindow() {
     let winOffY = windowDimensions[1] / 2
     console.log('\"renderIsoWindow()\" began')
     let offsets = Iso2Reg(-POSITION[0], -POSITION[1])
-    isometricContainer.style.left = winOffX + offsets[0] + 'px'
-    isometricContainer.style.top = winOffY + offsets[1] + 'px'
+    isometricContainer.style.left = winOffX - 32 + offsets[0] + 'px'
+    isometricContainer.style.top = winOffY - 245 + offsets[1] + 'px'
     console.log('> \"renderIsoWindow()\" finished')
 }
 function renderIsometric() {
