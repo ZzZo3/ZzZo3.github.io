@@ -29,7 +29,7 @@ let POSITION = [0, 0]
 //BASE
     //KEY LISTENER
 document.addEventListener('keydown', function (event) {
-    console.log('Key:', event.key);
+    console.log('Key: \"', event.key+'\"');
     if (event.key == 'w') {
         walkUp() // -y(iso) -> -x -y (offset from top left)
     }
@@ -42,7 +42,7 @@ document.addEventListener('keydown', function (event) {
     if (event.key == 'd') {
         walkLeft() // -x(iso) -> -x +y (offset from top left)
     }
-    if (event.key == 'Space') {
+    if (event.key == ' ') {
         useTile()
     }
 });
@@ -303,8 +303,10 @@ function useTile() {
     var isometricTilesQuery = document.querySelectorAll(".isometricTile")
     let found = false
     let TILE
+    let xQ = 'x'+POSITION[0]
+    let yQ = 'y'+POSITION[1]
     isometricTilesQuery.forEach((element) => {
-        if (element.classList.includes('x'+POSITION[0]) && element.classList.includes('y'+POSITION[1])) {
+        if (element.classList.contains(xQ) & element.classList.contains(yQ)) {
             found = true
             TILE = element
         }
