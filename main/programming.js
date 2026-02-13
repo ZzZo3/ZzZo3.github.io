@@ -152,6 +152,7 @@ function renderSelector() {
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 1
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
+    renderIsoWindow()
     console.log('> \"renderSelector()\" finished')
 }
 function renderIsoWindow() {
