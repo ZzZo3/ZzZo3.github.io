@@ -66,23 +66,28 @@ function Iso2Reg(xi, yi) {
 function walkUp() {
     console.log('\"walkUp()\" called')
     POSITION[1] -= 1
-    shiftV(-1)
+    renderSelector()
+    //shiftV(-1)
 }
 function walkDown() {
     console.log('\"walkDown()\" called')
     POSITION[1] += 1
-    shiftV(1)
+    renderSelector()
+    //shiftV(1)
 }
 function walkLeft() {
     console.log('\"walkLeft()\" called')
     POSITION[0] += 1
-    shiftH(1)
+    renderSelector()
+    //shiftH(1)
 }
 function walkRight() {
     console.log('\"walkRight()\" called')
     POSITION[0] -= 1
-    shiftH(-1)
+    renderSelector()
+    //shiftH(-1)
 }
+/*
 function shiftH(i) {
     // i <- iterations (+leftward, -rightward)
     isometricContainer.style.top += ((11 + mountainOffset / isoSpread) * isoSpread * tileScale * i) + "px"
@@ -105,7 +110,7 @@ function shift(dx, dy) {
     POSITION[1] += dy
     renderIsoWindow()
 }
-
+*/
 
 //ISOMETRIC RENDER
 
