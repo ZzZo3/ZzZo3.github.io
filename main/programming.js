@@ -81,7 +81,6 @@ function origin() {
     alert('1:'+POSITION)
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
-    alert('2:'+Xdim+','+Ydim)
     let x = 0
     let y = 0
     if (Xdim % 2 == 0) {
@@ -94,9 +93,7 @@ function origin() {
     } else {
         y = Ydim / 2 - 0.5
     }
-    alert('3:'+x+','+y)
     POSITION = [x,y]
-    alert('4:'+POSITION)
     console.log('    POSITION: '+POSITION)
     renderSelector()
 }
@@ -318,7 +315,7 @@ function useTile() {
     if (found) {
         console.log('   found: '+TILE.id)
     } else {
-        console.log('   no tile found at [POSITION]')
+        console.log('   no tile found at '+[POSITION])
     }
     if (found) {
         if (TILE.hasAttribute("data-link")) {
