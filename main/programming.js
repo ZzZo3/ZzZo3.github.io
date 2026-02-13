@@ -57,7 +57,6 @@ function Iso2Reg(xi,yi) {
 }
 function renderPosition() {
     console.log('\"renderPosition()\" began')
-    console.log('   isometric coordinates: '+POSITION)
     let offsets = Iso2Reg(POSITION[0],POSITION[1])
     isometricContainer.style.top = offsets[1] + 'px'
     isometricContainer.style.left = offsets[0] + 'px'
