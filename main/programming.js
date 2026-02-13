@@ -55,12 +55,12 @@ function Iso2Reg(xi,yi) {
     console.log('   final: ['+xf+','+yf+']')
     return [xf,yf]
 }
-function renderPosition() {
-    console.log('\"renderPosition()\" began')
+function renderIsoWindow() {
+    console.log('\"renderIsoWindow()\" began')
     let offsets = Iso2Reg(POSITION[0],POSITION[1])
     isometricContainer.style.top = offsets[1] + 'px'
     isometricContainer.style.left = offsets[0] + 'px'
-    console.log('   \"renderPosition()\" finished')
+    console.log('   \"renderIsoWindow()\" finished')
 }
 
 //MOVEMENT
@@ -98,13 +98,13 @@ function jump(x,y) {
     console.log('\"jump()\" called')
     POSITION[0] = x
     POSITION[1] = y
-    renderPosition()
+    renderIsoWindow()
 }
 function shift(dx,dy) {
     console.log('\"shift()\" called')
     POSITION[0] += dx
     POSITION[1] += dy
-    renderPosition()
+    renderIsoWindow()
 }
 
 //ISOMETRIC RENDER
@@ -157,7 +157,7 @@ function renderIsometric() {
     console.log('\"renderIsometric()\" began')
     renderSchematic()
     renderSelector()
-    renderPosition()
+    renderIsoWindow()
     let isoScale = isoSpread * tileScale
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
     isometricTilesQuery.forEach((element) => {
