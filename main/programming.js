@@ -21,49 +21,48 @@ const scaleDefault = 1.0
 const hillDefault = 0
 let positionOffsetX = 0
 let positionOffsetY = 0
-let POSITION = [0,0]
+let POSITION = [0, 0]
+
 
 //KEY LISTENER
-document.addEventListener('keydown', function(event) {
-  console.log('Key:', event.key);
-  if (event.key =='w') {
-    walkUp() // -y(iso) -> -x -y (offset from top left)
-  }
-  if (event.key =='s') {
-    walkDown() // +y(iso) -> +x +y (offset from top left)
-  }
-  if (event.key =='a') {
-    walkRight() // +x(iso) -> +x -y (offset from top left)
-  }
-  if (event.key =='d') {
-    walkLeft() // -x(iso) -> -x +y (offset from top left)
-  }
+
+document.addEventListener('keydown', function (event) {
+    console.log('Key:', event.key);
+    if (event.key == 'w') {
+        walkUp() // -y(iso) -> -x -y (offset from top left)
+    }
+    if (event.key == 's') {
+        walkDown() // +y(iso) -> +x +y (offset from top left)
+    }
+    if (event.key == 'a') {
+        walkRight() // +x(iso) -> +x -y (offset from top left)
+    }
+    if (event.key == 'd') {
+        walkLeft() // -x(iso) -> -x +y (offset from top left)
+    }
 });
 
+
 //TRANSLATE ISOMETRIC COORDINATES TO SCREEN COORDINATES (from top left, where +y is down and +x is right)
-function Iso2Reg(xi,yi) {
+
+function Iso2Reg(xi, yi) {
     console.log('\"Iso2Reg()\" began')
-    console.log('   initial: ['+xi+','+yi+']')
+    console.log('   initial: [' + xi + ',' + yi + ']')
     let xf = 0
     let yf = 0
     // xi <- iterations (+leftward, -rightward)
-    yf += (11 + mountainOffset/isoSpread) * isoSpread * tileScale * xi
+    yf += (11 + mountainOffset / isoSpread) * isoSpread * tileScale * xi
     xf -= 32 * tileScale * isoSpread * xi
     // yi <- iterations (+downward, -upward)
-    yf += (11 + mountainOffset/isoSpread) * isoSpread * tileScale * yi
+    yf += (11 + mountainOffset / isoSpread) * isoSpread * tileScale * yi
     xf += 32 * tileScale * isoSpread * yi
-    console.log('   final: ['+xf+','+yf+']')
-    return [xf,yf]
-}
-function renderIsoWindow() {
-    console.log('\"renderIsoWindow()\" began')
-    let offsets = Iso2Reg(POSITION[0],POSITION[1])
-    isometricContainer.style.top = offsets[1] + 'px'
-    isometricContainer.style.left = offsets[0] + 'px'
-    console.log('> \"renderIsoWindow()\" finished')
+    console.log('   final: [' + xf + ',' + yf + ']')
+    return [xf, yf]
 }
 
+
 //MOVEMENT
+
 function walkUp() {
     console.log('\"walkUp()\" called')
     POSITION[1] -= 1
@@ -86,28 +85,30 @@ function walkRight() {
 }
 function shiftH(i) {
     // i <- iterations (+leftward, -rightward)
-    isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale * i ) + "px"
-    isometricContainer.style.left -= ( 32 * tileScale * isoSpread * i ) + "px"
+    isometricContainer.style.top += ((11 + mountainOffset / isoSpread) * isoSpread * tileScale * i) + "px"
+    isometricContainer.style.left -= (32 * tileScale * isoSpread * i) + "px"
 }
 function shiftV(i) {
     // i <- iterations (+downward, -upward)
-    isometricContainer.style.top += ( (11 + mountainOffset/isoSpread) * isoSpread * tileScale * i) + "px"
-    isometricContainer.style.left += ( 32 * tileScale * isoSpread * i) + "px"
+    isometricContainer.style.top += ((11 + mountainOffset / isoSpread) * isoSpread * tileScale * i) + "px"
+    isometricContainer.style.left += (32 * tileScale * isoSpread * i) + "px"
 }
-function jump(x,y) {
+function jump(x, y) {
     console.log('\"jump()\" called')
     POSITION[0] = x
     POSITION[1] = y
     renderIsoWindow()
 }
-function shift(dx,dy) {
+function shift(dx, dy) {
     console.log('\"shift()\" called')
     POSITION[0] += dx
     POSITION[1] += dy
     renderIsoWindow()
 }
 
+
 //ISOMETRIC RENDER
+
 function renderSchematic() {
     console.log('\"renderSchematic()\" began')
     let clonesToKill = document.querySelectorAll('.cloneSchemTile')
@@ -115,44 +116,46 @@ function renderSchematic() {
         node.remove()
     })
     let SchematicTile = document.getElementById('SchematicTile')
-    
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
     let totalSchemTiles = Xdim * Ydim
-    
-    console.log('   schemDimensions: ('+Xdim+','+Ydim+')')
-    console.log('   totalSchemTiles: '+totalSchemTiles)
-    
-    for(let xi = 0; xi < Xdim; xi++) {
-      for(let yi = 0; yi < Ydim; yi++) {
-        console.log('   schematic cloned at ['+xi+','+yi+']')
-        let offsets = Iso2Reg(xi,yi)
-        let schemTile = SchematicTile.cloneNode()
-        schemTile.classList.add('cloneSchemTile')
-        schemTile.style.zIndex = yi - xi - 1
-        schemTile.style.left = offsets[0] + "px"
-        schemTile.style.top = offsets[1] + "px"
-        schemTile.style.width = 64*tileScale + "px"
-        schemTile.style.height = 256*tileScale + "px"
-        schemTile.style.visibility = "visible"
-        isometricContainer.appendChild(schemTile)
-      }
+    console.log('   schemDimensions: (' + Xdim + ',' + Ydim + ')')
+    console.log('   totalSchemTiles: ' + totalSchemTiles)
+    for (let xi = 0; xi < Xdim; xi++) {
+        for (let yi = 0; yi < Ydim; yi++) {
+            console.log('   schematic cloned at [' + xi + ',' + yi + ']')
+            let offsets = Iso2Reg(xi, yi)
+            let schemTile = SchematicTile.cloneNode()
+            schemTile.classList.add('cloneSchemTile')
+            schemTile.style.zIndex = yi - xi - 1
+            schemTile.style.left = offsets[0] + "px"
+            schemTile.style.top = offsets[1] + "px"
+            schemTile.style.width = 64 * tileScale + "px"
+            schemTile.style.height = 256 * tileScale + "px"
+            schemTile.style.visibility = "visible"
+            isometricContainer.appendChild(schemTile)
+        }
     }
     console.log('> \"renderSchematic()\" finished')
 }
-
 function renderSelector() {
     console.log('\"renderSelector()\" began')
     let off = 175
-    let offsets = Iso2Reg(POSITION[0],POSITION[1])
+    let offsets = Iso2Reg(POSITION[0], POSITION[1])
     Selection.style.left = offsets[0] + "px"
     Selection.style.top = offsets[1] + off * tileScale + "px"
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 1
-    Selection.style.width = 64*tileScale + "px"
-    Selection.style.height = 64*tileScale + "px"
+    Selection.style.width = 64 * tileScale + "px"
+    Selection.style.height = 64 * tileScale + "px"
     console.log('> \"renderSelector()\" finished')
 }
-
+function renderIsoWindow() {
+    console.log('\"renderIsoWindow()\" began')
+    let offsets = Iso2Reg(POSITION[0], POSITION[1])
+    isometricContainer.style.top = offsets[1] + 'px'
+    isometricContainer.style.left = offsets[0] + 'px'
+    console.log('> \"renderIsoWindow()\" finished')
+}
 function renderIsometric() {
     console.log('\"renderIsometric()\" began')
     renderSchematic()
@@ -164,33 +167,20 @@ function renderIsometric() {
         let tile = element
         let off = 0
         if (tile.classList.length == 4) {
-          off = parseInt(tile.classList[3].slice(3))
+            off = parseInt(tile.classList[3].slice(3))
         }
         let xi = parseInt(tile.classList[1].slice(1))
         let yi = parseInt(tile.classList[2].slice(1))
-        //translate x's and y's to isometric tiles
-        //for x (+32,-11) ->^
-        //for y (+32,+11) ->v
-        let xf = 0
-        let yf = 0
-        for(let step = 1; step <= xi; step++) {
-            xf += 32*isoScale
-            yf -= 11*isoScale
-            off -= mountainOffset
-        }
-        for(let step = 1; step <= yi; step++) {
-            xf += 32*isoScale
-            yf += 11*isoScale
-            off += mountainOffset
-        }
+        console.log('   IsometricTile:')
+        let offsets = Iso2Reg(xi, yi)
+        let xf = offsets[0] + "px"
+        let yf = offsets[1]
         yf += off * tileScale
-        xf += positionOffsetX //remove
-        yf += positionOffsetY //remove
-        tile.style.left = xf + "px"
+        tile.style.left = xf
         tile.style.top = yf + "px"
         tile.style.zIndex = yi - xi
-        tile.style.width = 64*tileScale + "px"
-        tile.style.height = 256*tileScale + "px"
+        tile.style.width = 64 * tileScale + "px"
+        tile.style.height = 256 * tileScale + "px"
         return tile
     })
     console.log('> \"renderIsometric()\" finished')
@@ -203,8 +193,8 @@ function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
     isoSpread = parseFloat(spreadInput.value)
     isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
-    SpLabel.innerText = 'Spread: '+isoSpread
-    console.log('   '+isoSpread)
+    SpLabel.innerText = 'Spread: ' + isoSpread
+    console.log('   ' + isoSpread)
     renderIsometric()
     console.log('> \"spreadInputFunc()\" finished')
 }
@@ -212,8 +202,8 @@ function scaleInputFunc() {
     console.log('\"scaleInputFunc()\" began')
     tileScale = parseFloat(scaleInput.value)
     tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
-    ScLabel.innerText = 'Scale: '+tileScale
-    console.log('   '+tileScale)
+    ScLabel.innerText = 'Scale: ' + tileScale
+    console.log('   ' + tileScale)
     renderIsometric()
     console.log('> \"scaleInputFunc()\" finished')
 }
@@ -221,7 +211,7 @@ function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
     mountainOffset = parseInt(mountainInput.value)
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
-    MnLabel.innerText = 'Hill: '+mountainOffset
+    MnLabel.innerText = 'Hill: ' + mountainOffset
     renderIsometric()
     console.log('> \"mountainInputFunc()\" finished')
 }
@@ -229,7 +219,7 @@ function gridXFunc() {
     console.log('\"gridXFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
     let val = Number.isNaN(gridXInput.value) ? "7" : gridXInput.value
-    scheme.setAttribute('data-Xdim',val)
+    scheme.setAttribute('data-Xdim', val)
     console.log(scheme.getAttribute('data-Xdim'))
     renderIsometric()
     console.log('> \"gridXFunc()\" finished')
@@ -238,30 +228,30 @@ function gridYFunc() {
     console.log('\"gridYFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
     let val = Number.isNaN(gridYInput.value) ? "7" : gridYInput.value
-    scheme.setAttribute('data-Ydim',val)
+    scheme.setAttribute('data-Ydim', val)
     console.log(scheme.getAttribute('data-Ydim'))
     renderIsometric()
     console.log('> \"gridYFunc()\" finished')
 }
 function resetSpread() {
-    console.log('isoSpread -> '+spreadDefault)
+    console.log('isoSpread -> ' + spreadDefault)
     isoSpread = spreadDefault
     spreadInput.value = spreadDefault
-    SpLabel.innerText = 'Spread: '+isoSpread
+    SpLabel.innerText = 'Spread: ' + isoSpread
     renderIsometric()
 }
 function resetScale() {
-    console.log('tileScale -> '+scaleDefault)
+    console.log('tileScale -> ' + scaleDefault)
     tileScale = scaleDefault
     scaleInput.value = scaleDefault
-    ScLabel.innerText = 'Scale: '+tileScale
+    ScLabel.innerText = 'Scale: ' + tileScale
     renderIsometric()
 }
 function resetMountain() {
-    console.log('mountainOffset -> '+hillDefault)
+    console.log('mountainOffset -> ' + hillDefault)
     mountainOffset = hillDefault
     mountainInput.value = hillDefault
-    MnLabel.innerText = 'Hill: '+mountainOffset
+    MnLabel.innerText = 'Hill: ' + mountainOffset
     renderIsometric()
 }
 
@@ -271,13 +261,13 @@ function loadFunc() {
     console.log('\"loadFunc()\" began')
     isoSpread = spreadDefault
     spreadInput.value = spreadDefault
-    SpLabel.innerText = 'Spread: '+isoSpread
+    SpLabel.innerText = 'Spread: ' + isoSpread
     tileScale = scaleDefault
     scaleInput.value = scaleDefault
-    ScLabel.innerText = 'Scale: '+tileScale
+    ScLabel.innerText = 'Scale: ' + tileScale
     mountainOffset = hillDefault
     mountainInput.value = hillDefault
-    MnLabel.innerText = 'Hill: '+mountainOffset
+    MnLabel.innerText = 'Hill: ' + mountainOffset
     renderIsometric()
     console.log('> \"loadFunc()\" finished')
 }
