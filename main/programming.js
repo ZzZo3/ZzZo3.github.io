@@ -73,6 +73,22 @@ function Iso2Reg(xi, yi) {
 
 //MOVEMENT
 
+function origin() {
+    let Xdim = SchematicTile.getAttribute("data-Xdim")
+    let Ydim = SchematicTile.getAttribute("data-Ydim")
+    let x = 0
+    let y = 0
+    if (Xdim % 2 == 0) {
+        x = Xdim / 2 - 1
+    } else {
+        x = Xdim / 2 - 0.5
+    }
+    if (Ydim % 2 == 0) {
+        y = Ydim / 2
+    } else {
+        y = Ydim / 2 - 0.5
+    }
+}
 function walkUp() {
     console.log('\"walkUp()\" called')
     POSITION[1] -= 1
@@ -284,5 +300,6 @@ function loadFunc() {
     mountainInput.value = hillDefault
     MnLabel.innerText = 'Hill: ' + mountainOffset
     renderIsometric()
+    origin()
     console.log('> \"loadFunc()\" finished')
 }
