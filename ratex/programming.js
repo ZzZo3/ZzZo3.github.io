@@ -32,13 +32,24 @@ storage.textContent = Object.keys(localStorage)
 
 function setRF() {
     localStorage.setItem('RF+',
-'iterate type comps = [ n type ints , k type ints , [ e , n = n + 1 ] while k >=? n ]\n'+
-'sum type comps = iterate ( k type { ints >= n } , e = [ out = out + e ] )\n'+
-'prod type comps = iterate ( k type { ints >= n } , e = [ out = out * e ] )\n'+
-'derange type nats = iterate ( n = 2 , k type nats = x , e = [ out = n * out + -1 ^ n ] )\n'
+'iterate p( n type ints , k type ints , E type { out } , i type any p) type any = [ out = i , [ E , n = n + 1 ] while k >=? n ] # initial output value passed in as \'i\'\n'+
+'# n: starting step value\n'+
+'# k: ending step value\n'+
+'# E: expression vector to \iterate over\n'+
+'# i: starting value for output\n'+
+'sum p(  n type ints , k type { ints >= n } , E type { out } p) type comps = iterate ( n , k , E = [ out = out + E ] , 0 )\n'+
+'prod p(  n type ints , k type { ints >= n } , E type { out } p) type comps = iterate ( n , k , E = [ out = out * E ] , 0 )\n'+
+'derange p( x type nats p) type nats = iterate ( 2 , x , E = [ out = n * out + -1 ^ n ] , 0 )\n'+
+'\n'+
+'copol p( x type reals , z type reals p) type { 0 , 1 } =\n'+
+'    [ out = 0 ,\n'+
+'    [ out = 1 , z = z * -1 ] while x >? 0 + z >? 0 =? 2 ,\n'+
+'    [ out = 1 , z = z * -1 ] while x >? 0 + z >? 0 =? 0 ]\n'+
+'    [ theta = 1 , z = z + 1 ] while x =? 0 + z =? 0 =? 2 ]\n'+
+'# \' X copol Z \' ~ \' copol ( X , Z ) \'\n'+
+'# 0 copol 0 -> 1\n'
     )
 }
-setRF()
 
 function randomInt(max) {
     return Math.floor(Math.random() * max)
@@ -391,6 +402,7 @@ function loadFunc() {
     switchTab(event, 'Writing')
     output.textContent = translate(input.value,false)
     roundPrompt.textContent = 'rounding to ['+roundTo+']'
+    setRF()
     console.log('   \"loadFunc()\" finished')
 }
 
