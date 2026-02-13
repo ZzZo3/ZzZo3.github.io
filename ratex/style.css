@@ -1,7 +1,6 @@
 /* TABS */
 .tab {
-    overflow-y: hidden;
-    overflow-x: scroll;
+    overflow: auto;
     border: 1px solid white;
     border-radius: 5px;
     background-color: black;
