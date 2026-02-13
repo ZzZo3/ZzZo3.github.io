@@ -1,5 +1,7 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
+var windowDimensions = [window.innerWidth,window.innerHeight]
+//NODES
 const spreadInput = document.getElementById("spreadInput")
 const ScLabel = document.getElementById("ScLabel")
 const SpLabel = document.getElementById("SpLabel")
@@ -24,8 +26,8 @@ let positionOffsetY = 0
 let POSITION = [0, 0]
 
 
-//KEY LISTENER
-
+//BASE
+    //KEY LISTENER
 document.addEventListener('keydown', function (event) {
     console.log('Key:', event.key);
     if (event.key == 'w') {
@@ -41,6 +43,12 @@ document.addEventListener('keydown', function (event) {
         walkLeft() // -x(iso) -> -x +y (offset from top left)
     }
 });
+    //WINDOW SCALE LISTENER
+function grabWindowDim() {
+    windowDimensions = [window.innerWidth,window.innerHeight]
+    console.log('windowDimensions: '+windowDimensions)
+}
+window.onresize = grabWindowDim
 
 
 //TRANSLATE ISOMETRIC COORDINATES TO SCREEN COORDINATES (from top left, where +y is down and +x is right)
