@@ -321,7 +321,6 @@ function useTile() {
     }
 }
 function navigate(link) {
-    let link = "https://n0n-sense.org/" + element.SchematicTile.getAttribute("data-link")
     window.location.href = link
 }
 
