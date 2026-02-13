@@ -5,7 +5,7 @@
     border-radius: 5px;
     background-color: black;
     height: 44px;
-    width: 200px;
+    width: auto;
     align-content:start;
 }
 .tabcontent {
