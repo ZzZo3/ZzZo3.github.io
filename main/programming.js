@@ -157,7 +157,7 @@ function renderSelector() {
 }
 function renderIsoWindow() {
     console.log('\"renderIsoWindow()\" began')
-    let offsets = Iso2Reg(POSITION[0], POSITION[1])
+    let offsets = Iso2Reg(-POSITION[0], -POSITION[1])
     isometricContainer.style.top = offsets[1] + 'px'
     isometricContainer.style.left = offsets[0] + 'px'
     console.log('> \"renderIsoWindow()\" finished')
