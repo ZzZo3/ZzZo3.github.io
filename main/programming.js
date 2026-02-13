@@ -16,8 +16,8 @@ let isoSpread = 1.0
 let tileScale = 1.0
 let mountainOffset = 0
 //DEFAULT VALUES
-const spreadDefault = 2.0
-const scaleDefault = 1.0
+const spreadDefault = 1.0
+const scaleDefault = 2.0
 const hillDefault = 0
 let positionOffsetX = 0
 let positionOffsetY = 0
