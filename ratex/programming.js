@@ -244,8 +244,6 @@ copyOut.onclick = ()=>{
 simplify.onclick = ()=>{
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
-    useArith(1.0,"+",1.0)
-    useArith(4.3,"/",2.15)
 }
 erase.onclick = ()=>{
     input.value = ''
