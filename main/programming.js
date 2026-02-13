@@ -297,6 +297,7 @@ function resetMountain() {
 
 
 //USE TILE
+
 function useTile() {
     console.log('useTile() called at: '+POSITION)
     var isometricTilesQuery = document.querySelectorAll(".isometricTile")
