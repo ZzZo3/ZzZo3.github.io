@@ -257,6 +257,7 @@ function gridXFunc() {
     scheme.setAttribute('data-Xdim', val)
     console.log(scheme.getAttribute('data-Xdim'))
     renderIsometric()
+    origin()
     console.log('> \"gridXFunc()\" finished')
 }
 function gridYFunc() {
@@ -266,6 +267,7 @@ function gridYFunc() {
     scheme.setAttribute('data-Ydim', val)
     console.log(scheme.getAttribute('data-Ydim'))
     renderIsometric()
+    origin()
     console.log('> \"gridYFunc()\" finished')
 }
 function resetSpread() {
