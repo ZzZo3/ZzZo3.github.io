@@ -74,6 +74,7 @@ function Iso2Reg(xi, yi) {
 //MOVEMENT
 
 function origin() {
+    console.log('origin() called')
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
     let x = 0
@@ -88,6 +89,8 @@ function origin() {
     } else {
         y = Ydim / 2 - 0.5
     }
+    POSITION = [x,y]
+    console.log('    POSITION: '+POSITION)
 }
 function walkUp() {
     console.log('\"walkUp()\" called')
