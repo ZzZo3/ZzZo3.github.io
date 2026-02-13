@@ -91,6 +91,7 @@ function origin() {
     }
     POSITION = [x,y]
     console.log('    POSITION: '+POSITION)
+    renderSelector()
 }
 function walkUp() {
     console.log('\"walkUp()\" called')
