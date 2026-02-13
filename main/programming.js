@@ -1,6 +1,6 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
-var windowDimensions = [window.innerWidth,window.innerHeight]
+var windowDimensions = [window.innerWidth, window.innerHeight]
 //NODES
 const spreadInput = document.getElementById("spreadInput")
 const ScLabel = document.getElementById("ScLabel")
@@ -27,9 +27,9 @@ let POSITION = [0, 0]
 
 
 //BASE
-    //KEY LISTENER
+//KEY LISTENER
 document.addEventListener('keydown', function (event) {
-    console.log('Key: \"'+event.key+'\"');
+    console.log('Key: \"' + event.key + '\"');
     if (event.key === 'w') {
         walkUp() // -y(iso) -> -x -y (offset from top left)
     }
@@ -46,12 +46,12 @@ document.addEventListener('keydown', function (event) {
         useTile()
     }
 });
-    //WINDOW SCALE LISTENER
+//WINDOW SCALE LISTENER
 function grabWindowDim() {
-    windowDimensions = [window.innerWidth,window.innerHeight]
-    console.log('windowDimensions: '+windowDimensions)
+    windowDimensions = [window.innerWidth, window.innerHeight]
+    console.log('windowDimensions: ' + windowDimensions)
 }
-window.onresize = ()=>{
+window.onresize = () => {
     renderIsoWindow()
 }
 
@@ -78,7 +78,6 @@ function Iso2Reg(xi, yi) {
 
 function origin() {
     console.log('origin() called')
-    alert('1:'+POSITION)
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
     let x = 0
@@ -93,8 +92,8 @@ function origin() {
     } else {
         y = Ydim / 2 - 0.5
     }
-    POSITION = [x,y]
-    console.log('    POSITION: '+POSITION)
+    POSITION = [x, y]
+    console.log('    POSITION: ' + POSITION)
     renderSelector()
 }
 function walkUp() {
@@ -300,12 +299,12 @@ function resetMountain() {
 //USE TILE
 
 function useTile() {
-    console.log('useTile() called at: '+POSITION)
+    console.log('useTile() called at: ' + POSITION)
     var isometricTilesQuery = document.querySelectorAll(".isometricTile")
     let found = false
     let TILE
-    let xQ = 'x'+POSITION[0]
-    let yQ = 'y'+POSITION[1]
+    let xQ = 'x' + POSITION[0]
+    let yQ = 'y' + POSITION[1]
     isometricTilesQuery.forEach((element) => {
         if (element.classList.contains(xQ) & element.classList.contains(yQ)) {
             found = true
@@ -313,14 +312,14 @@ function useTile() {
         }
     })
     if (found) {
-        console.log('   found: '+TILE.id)
+        console.log('   found: ' + TILE.id)
     } else {
-        console.log('   no tile found at '+[POSITION])
+        console.log('   no tile found at ' + [POSITION])
     }
     if (found) {
         if (TILE.hasAttribute("data-link")) {
             let link = "https://n0n-sense.org/" + TILE.getAttribute("data-link")
-            console.log('   link found: '+link)
+            console.log('   link found: ' + link)
             navigate(link)
         }
     }
