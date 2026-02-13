@@ -21,8 +21,6 @@ let mountainOffset = 0
 const spreadDefault = 1.0
 const scaleDefault = 2.0
 const hillDefault = 0
-let positionOffsetX = 0
-let positionOffsetY = 0
 let POSITION = [0, 0]
 
 
@@ -200,7 +198,6 @@ function renderIsometric() {
     renderSchematic()
     renderSelector()
     renderIsoWindow()
-    let isoScale = isoSpread * tileScale
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
     isometricTilesQuery.forEach((element) => {
         let tile = element
