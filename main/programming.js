@@ -164,10 +164,13 @@ function renderSelector() {
     console.log('> \"renderSelector()\" finished')
 }
 function renderIsoWindow() {
+    grabWindowDim()
+    let winOffX = windowDimensions[0] / 2
+    let winOffY = windowDimensions[1] / 2
     console.log('\"renderIsoWindow()\" began')
     let offsets = Iso2Reg(-POSITION[0], -POSITION[1])
-    isometricContainer.style.top = offsets[1] + 'px'
-    isometricContainer.style.left = offsets[0] + 'px'
+    isometricContainer.style.left = winOffX + offsets[0] + 'px'
+    isometricContainer.style.top = winOffY + offsets[1] + 'px'
     console.log('> \"renderIsoWindow()\" finished')
 }
 function renderIsometric() {
