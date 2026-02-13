@@ -75,10 +75,13 @@ let exclusiveMappings = [
     ['∑','sum','summate','summation'],
     ['∏','prod','product','production'],
     ['𝔇','derange','derangement'],
+    ['⇈','copol','copolar','copolarity'],
 //OTHER
     ['θ','out','output','theta'],
     ['ω','while'],
-    ['⤓','import']
+    ['⤓','import'],
+    ['⦅','p('],
+    ['⦆','p)']
 ]
 
 let inclusiveMappings = [
