@@ -29,7 +29,7 @@ let POSITION = [0, 0]
 //BASE
     //KEY LISTENER
 document.addEventListener('keydown', function (event) {
-    console.log('Key: \"', event.key+'\"');
+    console.log('Key: \"'+event.key+'\"');
     if (event.key == 'w') {
         walkUp() // -y(iso) -> -x -y (offset from top left)
     }
