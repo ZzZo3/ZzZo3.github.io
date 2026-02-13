@@ -378,7 +378,9 @@ function loadFunc() {
     }
     renderIsometric()                                   //RENDER ISOMETRIC
     if (sessionStorage.getItem('POSITION') != null) {   //POSITION
+        console.log('stored POSITION detected')
         restorePosition()
+        console.log('   POSITION restored')
     } else {
         origin()
     }
