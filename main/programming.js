@@ -317,7 +317,7 @@ function useTile() {
         console.log('   no tile found at [POSITION]')
     }
     if (found) {
-        if (TILE.hadAttribute("data-link")) {
+        if (TILE.hasAttribute("data-link")) {
             let link = "https://n0n-sense.org/" + TILE.getAttribute("data-link")
             console.log('   link found: '+link)
             navigate(link)
