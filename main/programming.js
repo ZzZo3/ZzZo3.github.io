@@ -74,6 +74,15 @@ function Iso2Reg(xi, yi) {
 
 //MOVEMENT
 
+function savePosition() {
+    let savePos = POSITION[0]+','+POSITION[1]
+    sessionStorage.setItem('POSITION',savePos)
+}
+function restorePosition() {
+    let savedPos = sessionStorage.getItem('POSITION')
+    let POS = savedPos.split(',').map(Number)
+    POSITION = [POS[0],POS[1]]
+}
 function origin() {
     console.log('origin() called')
     let SchematicTile = document.getElementById('SchematicTile')
@@ -94,26 +103,31 @@ function origin() {
     POSITION = [x, y]
     console.log('    POSITION: ' + POSITION)
     renderSelector()
+    savePosition()
 }
 function walkUp() {
     console.log('\"walkUp()\" called')
     POSITION[1] -= 1
     renderSelector()
+    savePosition()
 }
 function walkDown() {
     console.log('\"walkDown()\" called')
     POSITION[1] += 1
     renderSelector()
+    savePosition()
 }
 function walkLeft() {
     console.log('\"walkLeft()\" called')
     POSITION[0] += 1
     renderSelector()
+    savePosition()
 }
 function walkRight() {
     console.log('\"walkRight()\" called')
     POSITION[0] -= 1
     renderSelector()
+    savePosition()
 }
 /*
 function shiftH(i) {
@@ -231,7 +245,7 @@ function spreadInputFunc() {
     isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
     SpLabel.innerText = 'Spread: ' + isoSpread
     console.log('   ' + isoSpread)
-    localStorage.setItem('Spread',isoSpread)
+    sessionStorage.setItem('Spread',isoSpread)
     renderIsometric()
     console.log('> \"spreadInputFunc()\" finished')
 }
@@ -241,7 +255,7 @@ function scaleInputFunc() {
     tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
     ScLabel.innerText = 'Scale: ' + tileScale
     console.log('   ' + tileScale)
-    localStorage.setItem('Scale',tileScale)
+    sessionStorage.setItem('Scale',tileScale)
     renderIsometric()
     console.log('> \"scaleInputFunc()\" finished')
 }
@@ -250,7 +264,7 @@ function mountainInputFunc() {
     mountainOffset = parseInt(mountainInput.value)
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
     MnLabel.innerText = 'Hill: ' + mountainOffset
-    localStorage.setItem('Hill',mountainOffset)
+    sessionStorage.setItem('Hill',mountainOffset)
     renderIsometric()
     console.log('> \"mountainInputFunc()\" finished')
 }
@@ -277,7 +291,7 @@ function gridYFunc() {
 function resetSpread() {
     console.log('isoSpread -> ' + spreadDefault)
     isoSpread = spreadDefault
-    localStorage.setItem('Spread',isoSpread)
+    sessionStorage.setItem('Spread',isoSpread)
     spreadInput.value = isoSpread
     SpLabel.innerText = 'Spread: ' + isoSpread
     renderIsometric()
@@ -335,34 +349,38 @@ function navigate(link) {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    if (localStorage.getItem('Spread') != null) {     //RESTORE STORED SPREAD
-        let storedSpread = localStorage.getItem('Spread')
+    if (sessionStorage.getItem('Spread') != null) {     //SPREAD
+        let storedSpread = sessionStorage.getItem('Spread')
         isoSpread = parseFloat(storedSpread)
         spreadInput.value = storedSpread
-} else {                                                //USE DEFAULT SPREAD
+    } else {
         isoSpread = spreadDefault
         spreadInput.value = isoSpread
         SpLabel.innerText = 'Spread: ' + isoSpread
     }
-    if (localStorage.getItem('Scale') != null) {      //RESTORE STORED SCALE
-        let storedScale = localStorage.getItem('Scale')
+    if (sessionStorage.getItem('Scale') != null) {      //SCALE
+        let storedScale = sessionStorage.getItem('Scale')
         tileScale = parseFloat(storedScale)
         scaleInput.value = storedScale
-} else {                                                //USE DEFAULT SCALE
+    } else {
         tileScale = scaleDefault
         scaleInput.value = tileScale
         ScLabel.innerText = 'Scale: ' + tileScale
     }
-    if (localStorage.getItem('Hill') != null) {       //RESTOR STORED HILL
-        let storedHill = localStorage.getItem('Hill')
+    if (sessionStorage.getItem('Hill') != null) {       //HILL
+        let storedHill = sessionStorage.getItem('Hill')
         mountainOffset = parseFloat(storedHill)
         mountainInput.value = storedHill
-} else {                                                //USE DEFAULT HILL
+    } else {
         mountainOffset = hillDefault
         mountainInput.value = mountainOffset
         MnLabel.innerText = 'Hill: ' + mountainOffset
     }
-    renderIsometric()
-    origin()
+    renderIsometric()                                   //RENDER ISOMETRIC
+    if (sessionStorage.getItem('POSITION') != null) {   //POSITION
+        restorePosition()
+    } else {
+        origin()
+    }
     console.log('> \"loadFunc()\" finished')
 }
