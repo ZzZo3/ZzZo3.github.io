@@ -316,10 +316,12 @@ function useTile() {
     } else {
         console.log('   no tile found at [POSITION]')
     }
-    if (element.SchematicTile.hadAttribute("data-link")) {
-        let link = "https://n0n-sense.org/" + element.SchematicTile.getAttribute("data-link")
-        console.log('   link found: '+link)
-        navigate(link)
+    if (found) {
+        if (TILE.SchematicTile.hadAttribute("data-link")) {
+            let link = "https://n0n-sense.org/" + TILE.SchematicTile.getAttribute("data-link")
+            console.log('   link found: '+link)
+            navigate(link)
+        }
     }
 }
 function navigate(link) {
