@@ -231,6 +231,7 @@ function spreadInputFunc() {
     isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
     SpLabel.innerText = 'Spread: ' + isoSpread
     console.log('   ' + isoSpread)
+    localStorage.setItem('Spread',isoSpread)
     renderIsometric()
     console.log('> \"spreadInputFunc()\" finished')
 }
@@ -240,6 +241,7 @@ function scaleInputFunc() {
     tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
     ScLabel.innerText = 'Scale: ' + tileScale
     console.log('   ' + tileScale)
+    localStorage.setItem('Scale',tileScale)
     renderIsometric()
     console.log('> \"scaleInputFunc()\" finished')
 }
@@ -248,6 +250,7 @@ function mountainInputFunc() {
     mountainOffset = parseInt(mountainInput.value)
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
     MnLabel.innerText = 'Hill: ' + mountainOffset
+    localStorage.setItem('Hill',mountainOffset)
     renderIsometric()
     console.log('> \"mountainInputFunc()\" finished')
 }
@@ -274,7 +277,8 @@ function gridYFunc() {
 function resetSpread() {
     console.log('isoSpread -> ' + spreadDefault)
     isoSpread = spreadDefault
-    spreadInput.value = spreadDefault
+    localStorage.setItem('Spread',isoSpread)
+    spreadInput.value = isoSpread
     SpLabel.innerText = 'Spread: ' + isoSpread
     renderIsometric()
 }
@@ -331,15 +335,33 @@ function navigate(link) {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    isoSpread = spreadDefault
-    spreadInput.value = spreadDefault
-    SpLabel.innerText = 'Spread: ' + isoSpread
-    tileScale = scaleDefault
-    scaleInput.value = scaleDefault
-    ScLabel.innerText = 'Scale: ' + tileScale
-    mountainOffset = hillDefault
-    mountainInput.value = hillDefault
-    MnLabel.innerText = 'Hill: ' + mountainOffset
+    if (Object.keys(localStorage).contains('Spread')) {     //RESTORE STORED SPREAD
+        let storedSpread = localStorage.getItem('Spread')
+        isoSpread = parseFloat(storedSpread)
+        spreadInput.value = storedSpread
+} else {                                                //USE DEFAULT SPREAD
+        isoSpread = spreadDefault
+        spreadInput.value = isoSpread
+        SpLabel.innerText = 'Spread: ' + isoSpread
+    }
+    if (Object.keys(localStorage).contains('Scale')) {      //RESTORE STORED SCALE
+        let storedScale = localStorage.getItem('Scale')
+        tileScale = parseFloat(storedScale)
+        scaleInput.value = storedScale
+} else {                                                //USE DEFAULT SCALE
+        tileScale = scaleDefault
+        scaleInput.value = tileScale
+        ScLabel.innerText = 'Scale: ' + tileScale
+    }
+    if (Object.keys(localStorage).contains('Hill')) {       //RESTOR STORED HILL
+        let storedHill = localStorage.getItem('Hill')
+        mountainOffset = parseFloat(storedHill)
+        mountainInput.value = storedHill
+} else {                                                //USE DEFAULT HILL
+        mountainOffset = hillDefault
+        mountainInput.value = mountainOffset
+        MnLabel.innerText = 'Hill: ' + mountainOffset
+    }
     renderIsometric()
     origin()
     console.log('> \"loadFunc()\" finished')
