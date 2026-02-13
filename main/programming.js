@@ -48,7 +48,9 @@ function grabWindowDim() {
     windowDimensions = [window.innerWidth,window.innerHeight]
     console.log('windowDimensions: '+windowDimensions)
 }
-window.onresize = grabWindowDim
+window.onresize = ()=>{
+    renderIsoWindow()
+}
 
 
 //TRANSLATE ISOMETRIC COORDINATES TO SCREEN COORDINATES (from top left, where +y is down and +x is right)
@@ -75,25 +77,21 @@ function walkUp() {
     console.log('\"walkUp()\" called')
     POSITION[1] -= 1
     renderSelector()
-    //shiftV(-1)
 }
 function walkDown() {
     console.log('\"walkDown()\" called')
     POSITION[1] += 1
     renderSelector()
-    //shiftV(1)
 }
 function walkLeft() {
     console.log('\"walkLeft()\" called')
     POSITION[0] += 1
     renderSelector()
-    //shiftH(1)
 }
 function walkRight() {
     console.log('\"walkRight()\" called')
     POSITION[0] -= 1
     renderSelector()
-    //shiftH(-1)
 }
 /*
 function shiftH(i) {
