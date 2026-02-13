@@ -60,7 +60,7 @@ function renderIsoWindow() {
     let offsets = Iso2Reg(POSITION[0],POSITION[1])
     isometricContainer.style.top = offsets[1] + 'px'
     isometricContainer.style.left = offsets[0] + 'px'
-    console.log('> \renderIsoWindow()\" finished')
+    console.log('> \"renderIsoWindow()\" finished')
 }
 
 //MOVEMENT
@@ -135,10 +135,10 @@ function renderSchematic() {
         schemTile.style.width = 64*tileScale + "px"
         schemTile.style.height = 256*tileScale + "px"
         schemTile.style.visibility = "visible"
-        isometricParent.appendChild(schemTile)
+        isometricContainer.appendChild(schemTile)
       }
     }
-    console.log('> \renderSchematic()\" finished')
+    console.log('> \"renderSchematic()\" finished')
 }
 
 function renderSelector() {
@@ -150,7 +150,7 @@ function renderSelector() {
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 1
     Selection.style.width = 64*tileScale + "px"
     Selection.style.height = 64*tileScale + "px"
-    console.log('> \renderSelector()\" finished')
+    console.log('> \"renderSelector()\" finished')
 }
 
 function renderIsometric() {
@@ -193,7 +193,7 @@ function renderIsometric() {
         tile.style.height = 256*tileScale + "px"
         return tile
     })
-    console.log('> \renderIsometric()\" finished')
+    console.log('> \"renderIsometric()\" finished')
 }
 
 
@@ -206,7 +206,7 @@ function spreadInputFunc() {
     SpLabel.innerText = 'Spread: '+isoSpread
     console.log('   '+isoSpread)
     renderIsometric()
-    console.log('> \spreadInputFunc()\" finished')
+    console.log('> \"spreadInputFunc()\" finished')
 }
 function scaleInputFunc() {
     console.log('\"scaleInputFunc()\" began')
@@ -215,7 +215,7 @@ function scaleInputFunc() {
     ScLabel.innerText = 'Scale: '+tileScale
     console.log('   '+tileScale)
     renderIsometric()
-    console.log('> \scaleInputFunc()\" finished')
+    console.log('> \"scaleInputFunc()\" finished')
 }
 function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
@@ -223,7 +223,7 @@ function mountainInputFunc() {
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
     MnLabel.innerText = 'Hill: '+mountainOffset
     renderIsometric()
-    console.log('> \mountainInputFunc()\" finished')
+    console.log('> \"mountainInputFunc()\" finished')
 }
 function gridXFunc() {
     console.log('\"gridXFunc()\" began')
@@ -232,7 +232,7 @@ function gridXFunc() {
     scheme.setAttribute('data-Xdim',val)
     console.log(scheme.getAttribute('data-Xdim'))
     renderIsometric()
-    console.log('> \gridXFunc()\" finished')
+    console.log('> \"gridXFunc()\" finished')
 }
 function gridYFunc() {
     console.log('\"gridYFunc()\" began')
@@ -241,7 +241,7 @@ function gridYFunc() {
     scheme.setAttribute('data-Ydim',val)
     console.log(scheme.getAttribute('data-Ydim'))
     renderIsometric()
-    console.log('> \gridYFunc()\" finished')
+    console.log('> \"gridYFunc()\" finished')
 }
 function resetSpread() {
     console.log('isoSpread -> '+spreadDefault)
@@ -279,5 +279,5 @@ function loadFunc() {
     mountainInput.value = hillDefault
     MnLabel.innerText = 'Hill: '+mountainOffset
     renderIsometric()
-    console.log('> \loadFunc()\" finished')
+    console.log('> \"loadFunc()\" finished')
 }
