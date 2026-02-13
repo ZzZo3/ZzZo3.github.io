@@ -335,7 +335,7 @@ function navigate(link) {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    if (Object.keys(localStorage).contains('Spread')) {     //RESTORE STORED SPREAD
+    if (localStorage.getItem('Spread') != null) {     //RESTORE STORED SPREAD
         let storedSpread = localStorage.getItem('Spread')
         isoSpread = parseFloat(storedSpread)
         spreadInput.value = storedSpread
@@ -344,7 +344,7 @@ function loadFunc() {
         spreadInput.value = isoSpread
         SpLabel.innerText = 'Spread: ' + isoSpread
     }
-    if (Object.keys(localStorage).contains('Scale')) {      //RESTORE STORED SCALE
+    if (localStorage.getItem('Scale') != null) {      //RESTORE STORED SCALE
         let storedScale = localStorage.getItem('Scale')
         tileScale = parseFloat(storedScale)
         scaleInput.value = storedScale
@@ -353,7 +353,7 @@ function loadFunc() {
         scaleInput.value = tileScale
         ScLabel.innerText = 'Scale: ' + tileScale
     }
-    if (Object.keys(localStorage).contains('Hill')) {       //RESTOR STORED HILL
+    if (localStorage.getItem('Hill') != null) {       //RESTOR STORED HILL
         let storedHill = localStorage.getItem('Hill')
         mountainOffset = parseFloat(storedHill)
         mountainInput.value = storedHill
