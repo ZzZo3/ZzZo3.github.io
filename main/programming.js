@@ -76,6 +76,7 @@ function Iso2Reg(xi, yi) {
 
 function origin() {
     console.log('origin() called')
+    let SchematicTile = document.getElementById('SchematicTile')
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
     alert(Xdim+':'+Ydim)
@@ -254,7 +255,7 @@ function mountainInputFunc() {
 function gridXFunc() {
     console.log('\"gridXFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
-    let val = Number.isNaN(gridXInput.value) ? "7" : gridXInput.value
+    let val = Number.isNaN(gridXInput.value) ? "0" : gridXInput.value
     scheme.setAttribute('data-Xdim', val)
     console.log(scheme.getAttribute('data-Xdim'))
     renderIsometric()
@@ -264,7 +265,7 @@ function gridXFunc() {
 function gridYFunc() {
     console.log('\"gridYFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
-    let val = Number.isNaN(gridYInput.value) ? "7" : gridYInput.value
+    let val = Number.isNaN(gridYInput.value) ? "0" : gridYInput.value
     scheme.setAttribute('data-Ydim', val)
     console.log(scheme.getAttribute('data-Ydim'))
     renderIsometric()
