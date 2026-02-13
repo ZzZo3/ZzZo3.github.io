@@ -80,6 +80,7 @@ function origin() {
     console.log('origin() called')
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
+    alert(Xdim+':'+Ydim)
     let x = 0
     let y = 0
     if (Xdim % 2 == 0) {
