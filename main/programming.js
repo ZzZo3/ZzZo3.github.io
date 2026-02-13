@@ -78,6 +78,7 @@ function Iso2Reg(xi, yi) {
 
 function origin() {
     console.log('origin() called')
+    alert(POSITION)
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
     let x = 0
@@ -93,6 +94,7 @@ function origin() {
         y = Ydim / 2 - 0.5
     }
     POSITION = [x,y]
+    alert(POSITION)
     console.log('    POSITION: '+POSITION)
     renderSelector()
 }
