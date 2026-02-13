@@ -15,6 +15,10 @@ const Selection = document.getElementById('Selection')
 let isoSpread = 1.0
 let tileScale = 1.0
 let mountainOffset = 0
+//DEFAULT VALUES
+const spreadDefault = 1.0
+const scaleDefault = 1.0
+const hillDefault = 0
 let positionOffsetX = 0
 let positionOffsetY = 0
 let POSITION = [0,0]
@@ -241,23 +245,23 @@ function gridYFunc() {
     console.log('   \"gridYFunc()\" finished')
 }
 function resetSpread() {
-    console.log('isoSpread -> 1')
-    isoSpread = 1.0
-    spreadInput.value = "1"
+    console.log('isoSpread -> '+spreadDefault)
+    isoSpread = spreadDefault
+    spreadInput.value = spreadDefault
     SpLabel.innerText = 'Spread: '+isoSpread
     renderIsometric()
 }
 function resetScale() {
-    console.log('tileScale -> 2')
-    tileScale = 2.0
-    scaleInput.value = "2"
+    console.log('tileScale -> '+scaleDefault)
+    tileScale = scaleDefault
+    scaleInput.value = scaleDefault
     ScLabel.innerText = 'Scale: '+tileScale
     renderIsometric()
 }
 function resetMountain() {
-    console.log('mountainOffset -> 0')
-    mountainOffset = 0
-    mountainInput.value = "0"
+    console.log('mountainOffset -> '+hillDefault)
+    mountainOffset = hillDefault
+    mountainInput.value = hillDefault
     MnLabel.innerText = 'Hill: '+mountainOffset
     renderIsometric()
 }
@@ -266,14 +270,14 @@ function resetMountain() {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    isoSpread = 1.0
-    spreadInput.value = "1"
+    isoSpread = spreadDefault
+    spreadInput.value = spreadDefault
     SpLabel.innerText = 'Spread: '+isoSpread
-    tileScale = 2.0
-    scaleInput.value = "2"
+    tileScale = scaleDefault
+    scaleInput.value = scaleDefault
     ScLabel.innerText = 'Scale: '+tileScale
-    mountainOffset = 0
-    mountainInput.value = "0"
+    mountainOffset = hillDefault
+    mountainInput.value = hillDefault
     MnLabel.innerText = 'Hill: '+mountainOffset
     renderIsometric()
     console.log('   \"loadFunc()\" finished')
