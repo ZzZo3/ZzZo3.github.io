@@ -30,19 +30,19 @@ let POSITION = [0, 0]
     //KEY LISTENER
 document.addEventListener('keydown', function (event) {
     console.log('Key: \"'+event.key+'\"');
-    if (event.key == 'w') {
+    if (event.key === 'w') {
         walkUp() // -y(iso) -> -x -y (offset from top left)
     }
-    if (event.key == 's') {
+    if (event.key === 's') {
         walkDown() // +y(iso) -> +x +y (offset from top left)
     }
-    if (event.key == 'a') {
+    if (event.key === 'a') {
         walkRight() // +x(iso) -> +x -y (offset from top left)
     }
-    if (event.key == 'd') {
+    if (event.key === 'd') {
         walkLeft() // -x(iso) -> -x +y (offset from top left)
     }
-    if (event.key == ' ') {
+    if (event.key === 'Enter') {
         useTile()
     }
 });
