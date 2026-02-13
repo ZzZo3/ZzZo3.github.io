@@ -42,6 +42,9 @@ document.addEventListener('keydown', function (event) {
     if (event.key == 'd') {
         walkLeft() // -x(iso) -> -x +y (offset from top left)
     }
+    if (event.key == 'Space') {
+        useTile()
+    }
 });
     //WINDOW SCALE LISTENER
 function grabWindowDim() {
@@ -75,7 +78,7 @@ function Iso2Reg(xi, yi) {
 
 function origin() {
     console.log('origin() called')
-    let Xdim = SchematicTile.getAttribute("data-Xdim")
+    let Xdim = c
     let Ydim = SchematicTile.getAttribute("data-Ydim")
     let x = 0
     let y = 0
@@ -291,6 +294,36 @@ function resetMountain() {
     MnLabel.innerText = 'Hill: ' + mountainOffset
     renderIsometric()
 }
+
+
+//USE TILE
+function useTile() {
+    console.log('useTile() called at: '+POSITION)
+    var isometricTilesQuery = document.querySelectorAll(".isometricTile")
+    let found = false
+    let TILE
+    isometricTilesQuery.forEach((element) => {
+        if (element.classList.includes('x'+POSITION[0]) && element.classList.includes('y'+POSITION[1])) {
+            found = true
+            TILE = element
+        }
+    })
+    if (found) {
+        console.log('   found: '+TILE.id)
+    } else {
+        console.log('   no tile found at [POSITION]')
+    }
+    if (element.SchematicTile.hadAttribute("data-link")) {
+        let link = "https://n0n-sense.org/" + element.SchematicTile.getAttribute("data-link")
+        console.log('   link found: '+link)
+        navigate(link)
+    }
+}
+function navigate(link) {
+    let link = "https://n0n-sense.org/" + element.SchematicTile.getAttribute("data-link")
+    window.location.href = link
+}
+
 
 //STUFF THAT RUNS ON LOAD
 
