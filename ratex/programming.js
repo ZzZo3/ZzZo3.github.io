@@ -90,6 +90,7 @@ let exclusiveMappings = [
 //OTHER
     ['θ','out','output','theta'],
     ['ω','while'],
+    ['λ','if'],
     ['⤓','import'],
     ['⦅','p('],
     ['⦆','p)']
