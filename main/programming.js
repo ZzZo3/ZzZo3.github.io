@@ -295,6 +295,7 @@ function resetSpread() {
     sessionStorage.setItem('Spread',isoSpread)
     spreadInput.value = isoSpread
     SpLabel.innerText = 'Spread: ' + isoSpread
+    sessionStorage.setItem('Spread',isoSpread)
     renderIsometric()
 }
 function resetScale() {
@@ -302,6 +303,7 @@ function resetScale() {
     tileScale = scaleDefault
     scaleInput.value = scaleDefault
     ScLabel.innerText = 'Scale: ' + tileScale
+    sessionStorage.setItem('Scale',tileScale)
     renderIsometric()
 }
 function resetMountain() {
@@ -309,6 +311,7 @@ function resetMountain() {
     mountainOffset = hillDefault
     mountainInput.value = hillDefault
     MnLabel.innerText = 'Hill: ' + mountainOffset
+    sessionStorage.setItem('Hill',mountainOffset)
     renderIsometric()
 }
 
