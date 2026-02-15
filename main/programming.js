@@ -354,6 +354,7 @@ function loadFunc() {
         let storedSpread = sessionStorage.getItem('Spread')
         isoSpread = parseFloat(storedSpread)
         spreadInput.value = storedSpread
+        SpLabel.innerText = 'Spread: ' + isoSpread
     } else {
         isoSpread = spreadDefault
         spreadInput.value = isoSpread
@@ -363,6 +364,7 @@ function loadFunc() {
         let storedScale = sessionStorage.getItem('Scale')
         tileScale = parseFloat(storedScale)
         scaleInput.value = storedScale
+        ScLabel.innerText = 'Scale: ' + tileScale
     } else {
         tileScale = scaleDefault
         scaleInput.value = tileScale
@@ -372,6 +374,7 @@ function loadFunc() {
         let storedHill = sessionStorage.getItem('Hill')
         mountainOffset = parseFloat(storedHill)
         mountainInput.value = storedHill
+        MnLabel.innerText = 'Hill: ' + mountainOffset
     } else {
         mountainOffset = hillDefault
         mountainInput.value = mountainOffset
