@@ -82,6 +82,7 @@ function restorePosition() {
     let savedPos = sessionStorage.getItem('POSITION')
     let POS = savedPos.split(',').map(Number)
     POSITION = [POS[0],POS[1]]
+    renderIsometric()
 }
 function origin() {
     console.log('origin() called')
