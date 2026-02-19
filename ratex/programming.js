@@ -73,20 +73,24 @@ let exclusiveMappings = [
     ['∈','elem','element'],
     ['∈?','elem?','elemq','elemquery','elemqueer','element','elementq','elementquery','elementqueer'],
 //SETS
-    ['𝕊','sets','setset','setsets'],
-    ['ℂ','comps','setcomp','setcomps','setcomplex'],
-    ['ℝ','reals','setreal','setreals'],
-    ['ℚ','rats','setrat','setrats','rationals','setrationals'],
-    ['ℤ','ints','setint','setints','integers','setintegers'],
-    ['ℕ','nats','setnat','setnats','naturals','setnaturals'],
+    ['𝕊','set','setset','sets'],
+    ['ℂ','comps','setcomp','complex'],
+    ['ℝ','reals','setreal'],
+    ['ℚ','rats','setrat','rationals'],
+    ['ℤ','ints','setint','integers'],
+    ['ℕ','nats','setnat','naturals'],
+    ['𝔹','bin','binary'],
 //CONSTANTS
     ['π','pi'],
 //FUNCTIONS
     ['ℑ','iterate','iteration'],
     ['∑','sum','summate','summation'],
     ['∏','prod','product','production'],
+    ['𝔉','fact','factorial'],
     ['𝔇','derange','derangement'],
+    ['↥','pol','polarity'],
     ['⇈','copol','copolar','copolarity'],
+    ['&','and'],
 //OTHER
     ['θ','out','output','theta'],
     ['ω','while'],
@@ -275,7 +279,7 @@ let queryOperators = ['=?','∴?','≥?','≤?','∈?']
 //evaluations
 let evaluations = ['→','∴→']
 //sets
-let sets = ['𝕊','ℂ','ℝ','ℚ','ℤ','ℕ']
+let sets = ['𝕊','ℂ','ℝ','ℚ','ℤ','ℕ','𝔹']
 //constants
 let constants = ['π']
 //RF+ variables
