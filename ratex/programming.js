@@ -32,7 +32,7 @@ storage.textContent = Object.keys(localStorage)
 
 function setRF() {
     localStorage.setItem('RF+','RF+ default value')
-    const RFplus = fs.readFileSync('RF+.txt').toString()
+    const RFplus = fs.readFileSync('./RF+.txt').toString()
     if (RFplus != null) {
         localStorage.setItem('RF+',RFplus)
     }
