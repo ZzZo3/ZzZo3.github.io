@@ -111,10 +111,10 @@ function translate(toTrans, simplify) {
     }
     text = text.split(/[\n]/) //chops String into array of lines
     text = text.map(line=>line.split(' ')) //changes each element of line array based on function to chop Strings into arrays of words
-    if (line[0] != '#') { //if not commented
+    if (true) { //if not commented
         text = text.map(word=>word.map(w=>{ //changes each element of word array based on function to translate shorthand into symbols
             let chars = w.split('')
-            if(chars[0] == '\\' && i==0) {
+            if(chars[0] == '\\' && !simplify) {
                 chars[0] = ''
                 w = chars.join('')
             } else {
