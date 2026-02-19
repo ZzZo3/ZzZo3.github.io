@@ -110,30 +110,32 @@ function translate(toTrans, simplify) {
     }
     text = text.split(/[\n]/) //chops String into array of lines
     text = text.map(line=>line.split(' ')) //changes each element of line array based on function to chop Strings into arrays of words
-    text = text.map(word=>word.map(w=>{ //changes each element of word array based on function to translate shorthand into symbols
-        let chars = w.split('')
-        if(chars[0] == '\\') {
-            chars[0] = ''
-            w = chars.join('')
-        } else {
-            exclusiveMappings.forEach((transMap)=>{ //for each 'transMap' in 'exclusiveMappings', run the function
-                if(transMap.includes(w.toLowerCase())) {
-                    w = transMap[i]
-                }
-            })
-            inclusiveMappings.forEach((transMap)=>{
-                if(w.includes(transMap[i])) {
-                    w = transMap[1-i]
-                }
-                if(simplify) {
-                    if(w == transMap[0]) {
-                        w = transMap[0]
+    if (line[0] != '#') { //if not commented
+        text = text.map(word=>word.map(w=>{ //changes each element of word array based on function to translate shorthand into symbols
+            let chars = w.split('')
+            if(chars[0] == '\\' && !simplify) {
+                chars[0] = ''
+                w = chars.join('')
+            } else {
+                exclusiveMappings.forEach((transMap)=>{ //for each 'transMap' in 'exclusiveMappings', run the function
+                    if(transMap.includes(w.toLowerCase())) {
+                        w = transMap[i]
                     }
-                }
-            })
-        }
-        return w
-    }))
+                })
+                inclusiveMappings.forEach((transMap)=>{
+                    if(w.includes(transMap[i])) {
+                        w = transMap[1-i]
+                    }
+                    if(simplify) {
+                        if(w == transMap[0]) {
+                            w = transMap[0]
+                        }
+                    }
+                })
+            }
+            return w
+        }))
+    }
     return text.map(k=>k.join(' ')).join('\n')
 }
 
