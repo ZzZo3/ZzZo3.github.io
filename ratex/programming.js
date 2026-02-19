@@ -113,7 +113,7 @@ function translate(toTrans, simplify) {
     if (line[0] != '#') { //if not commented
         text = text.map(word=>word.map(w=>{ //changes each element of word array based on function to translate shorthand into symbols
             let chars = w.split('')
-            if(chars[0] == '\\' && !simplify) {
+            if(chars[0] == '\\' && i==0) {
                 chars[0] = ''
                 w = chars.join('')
             } else {
