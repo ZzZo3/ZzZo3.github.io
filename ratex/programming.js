@@ -72,6 +72,11 @@ let exclusiveMappings = [
     ['≥?','>=?','>=q','>=query','>=queer'],
     ['∈','elem','element'],
     ['∈?','elem?','elemq','elemquery','elemqueer','element','elementq','elementquery','elementqueer'],
+//BINARY OPERATORS
+    ['&','and'],
+    ['//','or'],
+    ['⨈','xor'],
+    ['!','not'],
 //SETS
     ['𝕊','set','setset','sets'],
     ['ℂ','comps','setcomp','complex'],
@@ -90,7 +95,6 @@ let exclusiveMappings = [
     ['𝔇','derange','derangement'],
     ['↥','pol','polarity'],
     ['⇈','copol','copolar','copolarity'],
-    ['&','and'],
 //OTHER
     ['θ','out','output','theta'],
     ['ω','while'],
