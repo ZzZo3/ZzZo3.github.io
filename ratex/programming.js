@@ -27,12 +27,15 @@ const closeRound = document.getElementById('closeRound')
 let rounded = true
 let roundTo = 0.001
 //STORAGE
-const RFplus = fs.readFileSync('RF+.txt').toString()
 const storage = document.getElementById('storage')
 storage.textContent = Object.keys(localStorage)
 
 function setRF() {
-    localStorage.setItem('RF+',RFplus)
+    localStorage.setItem('RF+','RF+ default value')
+    const RFplus = fs.readFileSync('RF+.txt').toString()
+    if (RFplus != null) {
+        localStorage.setItem('RF+',RFplus)
+    }
 }
 
 function randomInt(max) {
