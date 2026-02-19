@@ -83,7 +83,7 @@ let exclusiveMappings = [
     ['↥','pol','polarity'],
     ['⇈','copol','copolar','copolarity'],
 //OTHER
-    ['{θ}','ev','expression','expressionvector'],
+    ['{θ}','EV','Expression','ExpressionVector'],
     ['θ','out','output','theta'],
     ['ω','while'],
     ['λ','if'],
@@ -119,12 +119,12 @@ function translate(toTrans, simplify) {
                 w = chars.join('')
             } else {
                 exclusiveMappings.forEach((transMap)=>{ //for each 'transMap' in 'exclusiveMappings', run the function
-                    if(transMap.includes(w.toLowerCase())) {
+                    if(transMap.toLowerCase().includes(w.toLowerCase())) {
                         w = transMap[i]
                     }
                 })
                 inclusiveMappings.forEach((transMap)=>{
-                    if(w.includes(transMap[i])) {
+                    if(w.toLowerCase().includes(transMap[i].toLowerCase())) {
                         w = transMap[1-i]
                     }
                     if(simplify) {
