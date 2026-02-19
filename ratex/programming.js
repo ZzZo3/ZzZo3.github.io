@@ -83,6 +83,7 @@ let exclusiveMappings = [
     ['↥','pol','polarity'],
     ['⇈','copol','copolar','copolarity'],
 //OTHER
+    ['{θ}','ev','expression','expressionvector'],
     ['θ','out','output','theta'],
     ['ω','while'],
     ['λ','if'],
