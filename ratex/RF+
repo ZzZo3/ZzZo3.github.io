@@ -1,3 +1,19 @@
+# \SETS
+bin type set = { 0 , 1 }
+  # \binary \set
+
+# LOGIC OPERATORS
+if p( E type { out } , C p) = [ c = 0 , [ E , c = c + 1 ] while C + c ]
+  # \if statement - \while loop that prevents further iterations
+and p( c1 type bin , c2 type bin p) type bin = [ out = 0 , out = 1 if c1 + c2 =? 2 ]
+  # \binary \and operator
+or p( c1 type bin , c2 type bin p) type bin = [ out = 0 , out = 1 if c1 + c2 >? 0 ]
+  # \binary \or operator
+xor p( c1 type bin , c2 type bin p) type bin = [ out = 0 , out = 1 if c1 + c2 ]
+  # \binary \xor operator
+not p( c type bin p) type bin = [ out = 1 , out = 0 if c ]
+  # \binary \not operator
+
 # ITERATIVE FUNCTIONS
 iterate p( n type ints , k type ints , E type { out } , i type any p) type any = [ out = i , [ E , n = n + 1 ] while k >=? n ]
   # n: starting step value
@@ -5,15 +21,16 @@ iterate p( n type ints , k type ints , E type { out } , i type any p) type any =
   # E: expression vector to iterate over
   # i: starting value for output
 sum p(  n type ints , k type { ints >= n } , E type { out } p) type comps = iterate ( n , k , E = [ out = out + E ] , 0 )
-  # summation
+  # \summation
 prod p(  n type ints , k type { ints >= n } , E type { out } p) type comps = iterate ( n , k , E = [ out = out * E ] , 0 )
-  # production
+  # \production
+fact p( x type ints p) type ints = [ out = 0 , [ out = out + n , n = pol ( n ) * -1 ] while not ( n =? 0 ) ]
+  # \factorialization
 derange p( x type nats p) type nats = iterate ( 2 , x , E = [ out = n * out + -1 ^ n ] , 0 )
-  # derangement
+  # \derangement
 
-# IF and OPERATOR FUNCTIONS
-if p( E type { out } , C p) = [ c = 0 , [ E , c = c + 1 ] while C + c ]
-  # if statement - while loop that prevents its own second iteration
-copol p( x type reals , z type reals p) type { 0 , 1 } = [ out = 0 , out = 1 if x * z >? 0 , out = 0 if x =? 0 + z =? 0 =? 2 ]
-  # copolarity - returns 0 unless inputs share polarity 
-  # 0 copol 0 -> 1 
+# \POLARITY FUNCTIONS
+pol p( n type reals p) type { -1 , 0 , 1 } = [ out = n / | n | if not ( n =? 0 ) ]
+  # \polarity - returns
+copol p( x type reals , z type reals p) type bin = [ out = 0 , out = 1 if x * z >? 0 , out = 0 if x =? 0 + z =? 0 =? 2 ]
+  # \copolarity - returns 0 unless inputs share \polarity
