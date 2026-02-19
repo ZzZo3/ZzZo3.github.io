@@ -71,7 +71,7 @@ let exclusiveMappings = [
     ['ℚ','rats','setrat','rationals'],
     ['ℤ','ints','setint','integers'],
     ['ℕ','nats','setnat','naturals'],
-    ['𝔹','bin','binary'],
+    ['𝔹','bin','binary','bool','boolean'],
 //CONSTANTS
     ['π','pi'],
 //FUNCTIONS
