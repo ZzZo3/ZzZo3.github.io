@@ -1,5 +1,5 @@
-//IMPORT
 import {Tween} from '@tweenjs/tween.js'
+
 //BASE
 const mainBody = document.getElementById("mainBody")
 var windowDimensions = [window.innerWidth, window.innerHeight]
