@@ -305,6 +305,10 @@ erase.onclick = ()=>{
 }
 doubleSlash.onclick = ()=>{
     console.log('doubleSlash clicked')
+    output.textContent = translate(input.value,false)
+}
+singleSlash.onclick = ()=>{
+    console.log('singleSlash clicked')
     let text = input.value
     text.split('\n').map(line=>{line.split('')}) //splits text into array of characters
     text.map((line, num)=>{
