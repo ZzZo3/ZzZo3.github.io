@@ -225,13 +225,16 @@ function confirmSaveAsFunc() {
     }
 }
 function confirmPullDataFunc() {
+    console.log('\"confirmPullDataFunc()\" called for: '+pullSavedBox.value)
     if(Object.keys(localStorage).includes(pullSavedBox.value)) {
+        console.log('   '+pullSavedBox.value+' found')
         input.value = localStorage[pullSavedBox.value]
         output.textContent = translate(input.value,false)
         pullSavedBox.value = ''
         pullSavedBox.style.display = 'none'
         confirmPullData.style.display = 'none'
         closePullData.style.display = 'none'
+        console.log('   \"confirmPullDataFunc()\" succeeded')
     }
 }
 function detectSaveEnter(event) {
@@ -374,20 +377,23 @@ closeRound.onclick = ()=>{
     roundBox.value = ''
 }
 function confirmRoundFunc() {
+    console.log('\"confirmRoundFunc()\" called for: '+roundBox.value)
     let roundInput = roundBox.value
     if (roundInput != '') {
         if( !isNaN(+roundInput)) {
             rounded = true
             roundTo = +roundInput
             roundPrompt.textContent = 'rounding to ['+roundBox.value+']'
+            console.log('   rounding to nearest: '+roundTo)
         } else if (roundInput=='raw') {
             rounded = false
             roundPrompt.textContent = 'rounding to ['+roundBox.value+']'
+            console.log('   not rounding')
         } else {
-            console.log('\"confirmRoundFunc()\" failed')
+            console.log('   \"confirmRoundFunc()\" failed')
         }
     } else {
-        console.log('\"confirmRoundFunc()\" failed')
+        console.log('   \"confirmRoundFunc()\" failed')
     }
     roundBox.style.display = 'none'
     confirmRound.style.display = 'none'
