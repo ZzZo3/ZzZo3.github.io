@@ -310,8 +310,10 @@ doubleSlash.onclick = ()=>{
 singleSlash.onclick = ()=>{
     console.log('singleSlash clicked')
     let text = input.value
-    text = text.split('\n').map(line=>{line.split('')}) //splits text into array of arrays characters
-    console.log('split map worked - text: \n'+text)
+    text = text.split('\n') //splits text into array of lines
+    console.log('   first split worked - text: \n'+text)
+    text = text.map(line=>{line.split('')}) //splits each line into array of characters
+    console.log('   first map worked - text: \n'+text)
     text = text.map((line, num)=>{
         console.log('map started')
         let indexedSlashes = []
