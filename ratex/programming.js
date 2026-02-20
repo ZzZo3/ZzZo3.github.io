@@ -439,7 +439,7 @@ function calculate(find) {
     calcOutput.textContent = text.map(k=>k.join(' ')).join('\n')
 }
 function useArith(A,op,B) {
-    console.log('\"useArith()\" began: '+A+' '+op+' '+B)   
+    console.log(+A+' '+op+' '+B)   
     A = Number(A)
     B = Number(B)
     let out
@@ -457,8 +457,6 @@ function useArith(A,op,B) {
     if(rounded) {
         out = Math.round(out / roundTo) * roundTo
     }
-    console.log('   \"useArith()\" finished: '+out)
-    alert(out)
     return out
 }
 
@@ -497,7 +495,6 @@ function confirmRoundFunc() {
     confirmRound.style.display = 'none'
     closeRound.style.display = 'none'
     roundBox.value = ''
-    useArith(2,'^',3.5)
 }
 function detectRoundEnter(event) {
     let key = event.key
