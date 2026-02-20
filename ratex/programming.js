@@ -303,6 +303,28 @@ erase.onclick = ()=>{
     input.value = ''
     output.textContent = ''
 }
+doubleSlash.onclick = ()=>{
+    console.log('doubleSlash clicked')
+    let text = input.value
+    text.split('\n').map(line=>{line.split('')}) //splits text into array of characters
+    text.map((line, num)=>{
+        let indexedSlashes = []
+        let indexedDoubleSlashes = []
+        line.forEach((char, index)=>{
+            if (char=='\\') {
+                indexedSlashes.push(index)
+            }
+        })
+        indexedSlashes.forEach(index=>{
+            if (line[index-1]=='\\') {
+                indexedDoubleSlashes.push(index)
+                console.log('double slash found at line '+num+', char '+index)
+            }
+        })
+        return line
+    })
+    output.textContent = translate(input.value,false)
+}
 
 //CALCULATOR
 //definition operators
