@@ -235,7 +235,7 @@ closePullData.onclick = ()=>{
     pullSavedBox.value = ''
 }
 function confirmSaveAsFunc() {
-    console.log('\"confirmSaveAsFunc()\" called for: '+saveAsBox.value)
+    console.log('attempting to write to: \"'+saveAsBox.value+'\"')
     if(saveAsBox.value == 'RF+') {
         console.log('   cannot write to RF+')
         let pickRand = randomInt(5)
@@ -255,37 +255,35 @@ function confirmSaveAsFunc() {
     } else if(saveAsBox.value != '') {
         localStorage.setItem(saveAsBox.value,input.value)
         displayData()
+        console.log('   \"'+saveAsBox.value+'\" write success')
         saveAsBox.value = ''
         saveAsBox.style.display = 'none'
         confirmSaveAs.style.display = 'none'
         closeSaveAs.style.display = 'none'
-        console.log('   \"confirmSaveAsFunc()\" succeeded')
     }
 }
 function confirmPullDataFunc() {
-    console.log('\"confirmPullDataFunc()\" called for: '+pullSavedBox.value)
+    console.log('attempting to read: \"'+pullSavedBox.value+'\"')
     if(Object.keys(localStorage).includes(pullSavedBox.value)) {
         console.log('   \"'+pullSavedBox.value+'\" found')
         input.value = localStorage[pullSavedBox.value]
         output.textContent = translate(input.value,false)
+        console.log('   \"'+pullSavedBox.value+'\" read success')
         pullSavedBox.value = ''
         pullSavedBox.style.display = 'none'
         confirmPullData.style.display = 'none'
         closePullData.style.display = 'none'
-        console.log('   \"confirmPullDataFunc()\" succeeded')
     }
 }
 function detectSaveEnter(event) {
     let key = event.key
     if(key == "Enter") {
-        console.log('\"Enter\" key pressed  in \"saveData\"')
         confirmSaveAsFunc()
     }
 }
 function detectPullEnter(event) {
     let key = event.key
     if(key == "Enter") {
-        console.log('\"Enter\" key pressed in \"pullData\"')
         confirmPullDataFunc()
     }
 }
@@ -304,7 +302,7 @@ erase.onclick = ()=>{
     output.textContent = ''
 }
 doubleSlash.onclick = ()=>{
-    console.log('doubleSlash clicked')
+    console.log('\\ -> \\\\')
     let text = input.value
     let changed = 0
     text = removeExtraBacks(text)
@@ -329,7 +327,7 @@ doubleSlash.onclick = ()=>{
     output.textContent = translate(input.value,false)
 }
 singleSlash.onclick = ()=>{
-    console.log('singleSlash clicked')
+    console.log('\\\\ -> \\')
     let text = input.value
     text = removeExtraBacks(text)
     input.value = text
