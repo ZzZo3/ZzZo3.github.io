@@ -110,33 +110,31 @@ function translate(toTrans, simplify) {
         i = 1
     }
     text = text.split(/[\n]/) //chops String into array of lines
-    text = text.map(line=>line.split(' ')) //changes each element of line array based on function to chop Strings into arrays of words
-    if (true) { //if not commented
-        text = text.map(word=>word.map(w=>{ //changes each element of word array based on function to translate shorthand into symbols
-            let chars = w.split('')
-            if(chars[0] == '\\' && !simplify) {
-                chars[0] = ''
-                w = chars.join('')
-            } else {
-                exclusiveMappings.forEach((transMap)=>{ //for each 'transMap' in 'exclusiveMappings', run the function
-                    if(transMap.toLowerCase().includes(w.toLowerCase())) {
-                        w = transMap[i]
+    text = text.map(line=>line.split(' ')) //changes each 'line' of [text] based on function to chop Strings into arrays of words
+    text = text.map(line=>line.map(word=>{ //changes each 'line' of [text] into array of 'word's
+        let chars = word.split('')
+        if(chars[0] == '\\' && !simplify) {
+            chars[0] = ''
+            word = chars.join('')
+        } else {
+            exclusiveMappings.forEach((transMap)=>{ //for each 'transMap' in 'exclusiveMappings', run the function
+                if(transMap.toLowerCase().includes(word.toLowerCase())) {
+                    word = transMap[i]
+                }
+            })
+            inclusiveMappings.forEach((transMap)=>{
+                if(word.toLowerCase().includes(transMap[i].toLowerCase())) {
+                    word = transMap[1-i]
+                }
+                if(simplify) {
+                    if(word == transMap[0]) {
+                        word = transMap[0]
                     }
-                })
-                inclusiveMappings.forEach((transMap)=>{
-                    if(w.toLowerCase().includes(transMap[i].toLowerCase())) {
-                        w = transMap[1-i]
-                    }
-                    if(simplify) {
-                        if(w == transMap[0]) {
-                            w = transMap[0]
-                        }
-                    }
-                })
-            }
-            return w
-        }))
-    }
+                }
+            })
+        }
+        return word
+    }))
     return text.map(k=>k.join(' ')).join('\n')
 }
 
@@ -291,7 +289,16 @@ function calculate(find) {
     console.log('calculation called for '+find)
     let text = calcInput.textContent
     text = text.split('\n')
-    text = text.map(line=>line.split(' '))
+    text = text.map(line=>{
+        if (line[0]=='#') {
+            return ['COMMENT']
+        } else {
+            return line.split(' ')
+        }
+    })
+    text = text.filter(line=>{
+        return line != ['COMMENT']
+    })
     console.log('input: \n'+text.map(k=>k.join(' ')).join('\n'))
     console.log('input split: \n'+JSON.stringify(text))
     //IDENTIFICATION
