@@ -335,7 +335,7 @@ singleSlash.onclick = ()=>{
         let indexedDoubleSlashes = []
         line.forEach((char, index)=>{
             if (char=='\\') {
-                console.log('   slash found at line '+num+', char '+index)
+                console.log('   backslash found at line '+num+', char '+index)
                 indexedSlashes.push(index)
             }
         })
@@ -343,7 +343,7 @@ singleSlash.onclick = ()=>{
         indexedSlashes.forEach(index=>{
             if (index > 0) {
                 if (line[index-1]=='\\') {
-                    console.log('   double slash found at line '+num+', char '+index)
+                    console.log('   extraneous backslash found at line '+num+', char '+index)
                     indexedDoubleSlashes.push(index)
                 }
             }
