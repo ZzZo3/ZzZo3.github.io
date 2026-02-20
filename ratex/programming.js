@@ -329,10 +329,7 @@ doubleSlash.onclick = ()=>{
 singleSlash.onclick = ()=>{
     console.log('singleSlash clicked')
     let text = input.value
-    text = text.split('\n') //splits text into array of lines
-    console.log('   first split worked - text: \n'+text)
-    text = text.map(line=>line.split('')) //splits each line into array of characters
-    console.log('   first map worked - text: \n'+text)
+    text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
     text = text.map((line, num)=>{
         let indexedSlashes = []
         let indexedDoubleSlashes = []
@@ -343,8 +340,8 @@ singleSlash.onclick = ()=>{
         })
         indexedSlashes.forEach(index=>{
             if (line[index-1]=='\\') {
-                indexedDoubleSlashes.push(index)
                 console.log('   double slash found at line '+num+', char '+index)
+                indexedDoubleSlashes.push(index)
             }
         })
         console.log('   line: '+num+', double slashes: '+indexedDoubleSlashes)
