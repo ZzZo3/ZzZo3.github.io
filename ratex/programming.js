@@ -104,7 +104,7 @@ input.addEventListener('input',()=>{
 })
 
 function translate(toTrans, simplify) {
-    console.log('translate() called - simplify: ',simplify)
+    console.log('\"translate()\" called - simplify: ',simplify)
     let text = toTrans
     let i = 0
     if(simplify) {
@@ -136,7 +136,7 @@ function translate(toTrans, simplify) {
         }
         return word
     }))
-    console.log('   translate() finished')
+    console.log('   \"translate()\" finished')
     return text.map(k=>k.join(' ')).join('\n')
 }
 
@@ -200,7 +200,9 @@ closePullData.onclick = ()=>{
     pullSavedBox.value = ''
 }
 function confirmSaveAsFunc() {
+    console.log('\"confirmSaveAsFunc()\" called for: '+saveAsBox.value)
     if(saveAsBox.value == 'RF+') {
+        console.log('   cannot write to RF+')
         let pickRand = randomInt(5)
         if(pickRand == 0) {
             alert('no :3')
@@ -222,6 +224,7 @@ function confirmSaveAsFunc() {
         saveAsBox.style.display = 'none'
         confirmSaveAs.style.display = 'none'
         closeSaveAs.style.display = 'none'
+        console.log('   \"confirmSaveAsFunc()\" succeeded')
     }
 }
 function confirmPullDataFunc() {
