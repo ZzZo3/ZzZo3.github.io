@@ -290,11 +290,14 @@ function calculate(find) {
     let text = calcInput.textContent
     text = text.split('\n')
     text = text.map(line=>{
-        if (line[0]=='#') {
-            return ['COMMENT']
-        } else {
-            return line.split(' ')
+        line = line.split(' ')
+        potentialComment = line.filter(potentialSpace=>{
+            return potentialSpace !== ' '
+        })
+        if (potentialComment[0]=='#') {
+            line = ['COMMENT']
         }
+        return line
     })
     text = text.filter(line=>{
         return line != ['COMMENT']
