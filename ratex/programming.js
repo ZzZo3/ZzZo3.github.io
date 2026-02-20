@@ -329,6 +329,7 @@ singleSlash.onclick = ()=>{
         })
         return line
     })
+    return text.map(k=>k.join('')).join('\n')
     output.textContent = translate(input.value,false)
 }
 
