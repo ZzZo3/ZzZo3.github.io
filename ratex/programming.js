@@ -230,7 +230,7 @@ function confirmSaveAsFunc() {
 function confirmPullDataFunc() {
     console.log('\"confirmPullDataFunc()\" called for: '+pullSavedBox.value)
     if(Object.keys(localStorage).includes(pullSavedBox.value)) {
-        console.log('   '+pullSavedBox.value+' found')
+        console.log('   \"'+pullSavedBox.value+'\" found')
         input.value = localStorage[pullSavedBox.value]
         output.textContent = translate(input.value,false)
         pullSavedBox.value = ''
