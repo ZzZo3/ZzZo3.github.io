@@ -475,7 +475,7 @@ closeRound.onclick = ()=>{
     roundBox.value = ''
 }
 function confirmRoundFunc() {
-    console.log('\"confirmRoundFunc()\" called for: '+roundBox.value)
+    console.log('attempting to round to: '+roundBox.value)
     let roundInput = roundBox.value
     if (roundInput != '') {
         if( !isNaN(+roundInput)) {
@@ -488,10 +488,10 @@ function confirmRoundFunc() {
             roundPrompt.textContent = 'rounding to ['+roundBox.value+']'
             console.log('   not rounding')
         } else {
-            console.log('   \"confirmRoundFunc()\" failed')
+            console.log('   rounding failed')
         }
     } else {
-        console.log('   \"confirmRoundFunc()\" failed')
+        console.log('   rounding failed')
     }
     roundBox.style.display = 'none'
     confirmRound.style.display = 'none'
@@ -502,7 +502,6 @@ function confirmRoundFunc() {
 function detectRoundEnter(event) {
     let key = event.key
     if(key == "Enter") {
-        console.log('\"Enter\" key pressed in \"roundPrompt\"')
         confirmRoundFunc()
     }
 }
