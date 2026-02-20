@@ -334,7 +334,8 @@ singleSlash.onclick = ()=>{
     input.value = text
     output.textContent = translate(input.value,false)
 }
-removeExtraBacks(text) {
+function removeExtraBacks(tempText) {
+    let text = tempText
     text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
     text = text.map((line, num)=>{
         let indexedSlashes = []
@@ -359,8 +360,8 @@ removeExtraBacks(text) {
         })
         return line
     })
-    text = text.map(k=>k.join('')).join('\n')
     console.log('   REMOVED EXTRANEOUS BACKSLASHES')
+    return text.map(k=>k.join('')).join('\n')
 }
 
 //CALCULATOR
