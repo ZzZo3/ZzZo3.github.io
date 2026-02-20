@@ -118,7 +118,7 @@ function translate(toTrans, simplify) {
             word = chars.join('')
         } else {
             exclusiveMappings.forEach((transMap)=>{ //for each 'transMap' in 'exclusiveMappings', run the function
-                if(transMap.toLowerCase().includes(word.toLowerCase())) {
+                if(transMap.map(trans=>trans.toLowerCase).includes(word.toLowerCase())) {
                     word = transMap[i]
                 }
             })
