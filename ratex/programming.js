@@ -31,11 +31,46 @@ const storage = document.getElementById('storage')
 storage.textContent = Object.keys(localStorage)
 
 function setRF() {
-    localStorage.setItem('RF+','RF+ default value')
-    const RFplus = fs.readFileSync('./RF+.txt').toString()
-    if (RFplus != null) {
-        localStorage.setItem('RF+',RFplus)
-    }
+localStorage.setItem('RF+',
+`# \\SETS
+bin type set = { 0 , 1 }
+  # \\binary \\set - also referred with 'bool','boolean'
+
+# LOGIC OPERATORS
+if p( E type EV , C type bin p) = [ c = 0 , [ E , c = c + 1 ] while C + c ]
+  # \\if statement - \\while loop that prevents further iterations
+and p( c1 type bin , c2 type bin p) type bin = [ out = 0 , out = 1 if c1 + c2 =? 2 ]
+  # \\binary \\and operator
+or p( c1 type bin , c2 type bin p) type bin = [ out = 0 , out = 1 if c1 + c2 >? 0 ]
+  # \\binary \\or operator
+xor p( c1 type bin , c2 type bin p) type bin = [ out = 0 , out = 1 if c1 + c2 ]
+  # \\binary \\xor operator
+not p( C type bin p) type bin = [ out = 1 , out = 0 if C ]
+  # \\binary \\not operator
+
+# ITERATIVE FUNCTIONS
+iterate p( n type ints , k type { ints >= n } , E type EV , i type any p) type any = [ out = i , s = n , [ E , s = s + 1 ] while k >=? s ]
+  # n: starting value for step 's'
+  # k: ending step value
+  # E: \\expression vector to \\iterate over
+  # i: starting value for out
+sum p( n type ints , k type { ints >= n } , E type EV p) type comps = iterate ( n , k , E = [ out = out + E ] , 0 )
+  # \\summation
+prod p( n type ints , k type { ints >= n } , E type EV p) type comps = iterate ( n , k , E = [ out = out * E ] , 0 )
+  # \\production
+fact p( n type ints p) type ints = [ out = 1 , [ out = out * n , n = pol ( n ) * -1 ] while not ( n =? 0 ) ]
+  # \\factorialization
+  # fact ( 0 ) -> 1
+derange p( x type nats p) type nats =  [ iterate ( 2 , x , [ out = s * out + -1 ^ s ] , 0 ) , out = 1 if x =? 0 ]
+  # \\derangement / subfactorialization
+  # derange ( 0 ) -> 1
+
+# \\POLARITY FUNCTIONS
+pol p( n type reals p) type { -1 , 0 , 1 } = [ out = n / | n | if not ( n =? 0 ) ]
+  # \\polarity - returns 0 for 0
+copol p( x type reals , z type reals p) type bin = [ out = pol ( x ) =? pol ( z ) ]
+  # \\copolarity - returns 1 \\if inputs share \\polarity
+`)
 }
 
 function randomInt(max) {
