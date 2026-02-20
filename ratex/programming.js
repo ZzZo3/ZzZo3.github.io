@@ -306,32 +306,10 @@ erase.onclick = ()=>{
 doubleSlash.onclick = ()=>{
     console.log('doubleSlash clicked')
     let text = input.value
+    text = removeExtraBacks(text)
     text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
     text = text.map((line, num)=>{
-        // FIRST REMOVE ALL EXTRANEOUS BACKSLASHES
         let indexedSlashes = []
-        let indexedDoubleSlashes = []
-        line.forEach((char, index)=>{
-            if (char=='\\') {
-                indexedSlashes.push(index)
-            }
-        })
-        indexedSlashes.forEach(index=>{
-            if (index > 0) {
-                if (line[index-1]=='\\') {
-                    indexedDoubleSlashes.push(index)
-                }
-            }
-        })
-        if (indexedDoubleSlashes.length > 0) {
-            console.log('   line: '+num+', extra backslashes at indexes: '+indexedDoubleSlashes)
-        }
-        line = line.filter((value, index)=>{
-            return !indexedDoubleSlashes.includes(index)
-        })
-        console.log('   REMOVED EXTRANEOUS BACKSLASHES')
-        // AFTER REMOVING ALL EXTRANEOUS BACKSLASHES PLACE NEW BACKSLASHES AFTER BACKSLASH INDEXES
-        indexedSlashes = []
         line.forEach((char, index)=>{
             if (char=='\\') {
                 indexedSlashes.push(index)
@@ -352,6 +330,11 @@ doubleSlash.onclick = ()=>{
 singleSlash.onclick = ()=>{
     console.log('singleSlash clicked')
     let text = input.value
+    text = removeExtraBacks(text)
+    input.value = text
+    output.textContent = translate(input.value,false)
+}
+removeExtraBacks(text) {
     text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
     text = text.map((line, num)=>{
         let indexedSlashes = []
@@ -376,9 +359,8 @@ singleSlash.onclick = ()=>{
         })
         return line
     })
+    text = text.map(k=>k.join('')).join('\n')
     console.log('   REMOVED EXTRANEOUS BACKSLASHES')
-    input.value = text.map(k=>k.join('')).join('\n')
-    output.textContent = translate(input.value,false)
 }
 
 //CALCULATOR
