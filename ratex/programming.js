@@ -315,7 +315,6 @@ singleSlash.onclick = ()=>{
     text = text.map(line=>line.split('')) //splits each line into array of characters
     console.log('   first map worked - text: \n'+text)
     text = text.map((line, num)=>{
-        console.log('map started')
         let indexedSlashes = []
         let indexedDoubleSlashes = []
         line.forEach((char, index)=>{
@@ -328,6 +327,9 @@ singleSlash.onclick = ()=>{
                 indexedDoubleSlashes.push(index)
                 console.log('double slash found at line '+num+', char '+index)
             }
+        })
+        line = line.filter((value, index)=>{
+            return indexedDoubleSlashes.includes(index)
         })
         return line
     })
