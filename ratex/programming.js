@@ -321,9 +321,9 @@ doubleSlash.onclick = ()=>{
         indexedSlashes.forEach(index=>{
             line[index] = '\\\\'
         })
-        console.log('   REDOUBLED BACKSLASHES')
         return line
     })
+    console.log('   REDOUBLED BACKSLASHES')
     input.value = text.map(k=>k.join('')).join('\n')
     output.textContent = translate(input.value,false)
 }
