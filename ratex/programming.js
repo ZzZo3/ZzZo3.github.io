@@ -306,6 +306,7 @@ erase.onclick = ()=>{
 doubleSlash.onclick = ()=>{
     console.log('doubleSlash clicked')
     let text = input.value
+    let changedLines = 0
     text = removeExtraBacks(text)
     text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
     text = text.map((line, num)=>{
@@ -320,10 +321,13 @@ doubleSlash.onclick = ()=>{
         }
         indexedSlashes.forEach(index=>{
             line[index] = '\\\\'
+            changedLines++
         })
         return line
     })
-    console.log('   REDOUBLED BACKSLASHES')
+    if (changedLines > 0) {
+        console.log('   REDOUBLED BACKSLASHES')
+    }
     input.value = text.map(k=>k.join('')).join('\n')
     output.textContent = translate(input.value,false)
 }
@@ -336,6 +340,7 @@ singleSlash.onclick = ()=>{
 }
 function removeExtraBacks(tempText) {
     let text = tempText
+    let changedLines = 0
     text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
     text = text.map((line, num)=>{
         let indexedSlashes = []
@@ -349,6 +354,7 @@ function removeExtraBacks(tempText) {
             if (index > 0) {
                 if (line[index-1]=='\\') {
                     indexedDoubleSlashes.push(index)
+                    changedLines++
                 }
             }
         })
@@ -360,7 +366,9 @@ function removeExtraBacks(tempText) {
         })
         return line
     })
-    console.log('   REMOVED EXTRANEOUS BACKSLASHES')
+    if (changedLines > 0) {
+        console.log('   REMOVED EXTRANEOUS BACKSLASHES')
+    }
     return text.map(k=>k.join('')).join('\n')
 }
 
