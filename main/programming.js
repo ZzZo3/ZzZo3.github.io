@@ -1,4 +1,4 @@
-import Tween from 'https://code.createjs.com/1.0.0/tweenjs.min.js'
+import { Tween } from 'https://code.createjs.com/1.0.0/tweenjs.min.js'
 
 //BASE
 const mainBody = document.getElementById("mainBody")
