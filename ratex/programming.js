@@ -306,7 +306,7 @@ erase.onclick = ()=>{
 doubleSlash.onclick = ()=>{
     console.log('doubleSlash clicked')
     let text = input.value
-    let changedLines = 0
+    let changed = 0
     text = removeExtraBacks(text)
     text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
     text = text.map((line, num)=>{
@@ -316,17 +316,14 @@ doubleSlash.onclick = ()=>{
                 indexedSlashes.push(index)
             }
         })
-        if (indexedSlashes.length > 0) {
-            console.log('   line: '+num+', backslashes at indexes: '+indexedSlashes)
-        }
         indexedSlashes.forEach(index=>{
             line[index] = '\\\\'
-            changedLines++
+            changed++
         })
         return line
     })
-    if (changedLines > 0) {
-        console.log('   REDOUBLED BACKSLASHES')
+    if (changed > 0) {
+        console.log('   REDOUBLED '+changed+' BACKSLASHES')
     }
     input.value = text.map(k=>k.join('')).join('\n')
     output.textContent = translate(input.value,false)
@@ -340,7 +337,7 @@ singleSlash.onclick = ()=>{
 }
 function removeExtraBacks(tempText) {
     let text = tempText
-    let changedLines = 0
+    let changed = 0
     text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
     text = text.map((line, num)=>{
         let indexedSlashes = []
@@ -354,20 +351,17 @@ function removeExtraBacks(tempText) {
             if (index > 0) {
                 if (line[index-1]=='\\') {
                     indexedDoubleSlashes.push(index)
-                    changedLines++
+                    changed++
                 }
             }
         })
-        if (indexedDoubleSlashes.length > 0) {
-            console.log('   line: '+num+', extra backslashes at indexes: '+indexedDoubleSlashes)
-        }
         line = line.filter((value, index)=>{
             return !indexedDoubleSlashes.includes(index)
         })
         return line
     })
-    if (changedLines > 0) {
-        console.log('   REMOVED EXTRANEOUS BACKSLASHES')
+    if (changed > 0) {
+        console.log('   REMOVED '+changed+' EXTRANEOUS BACKSLASHES')
     }
     return text.map(k=>k.join('')).join('\n')
 }
