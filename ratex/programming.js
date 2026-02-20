@@ -350,7 +350,7 @@ singleSlash.onclick = ()=>{
         })
         console.log('   line: '+num+', double slashes: '+indexedDoubleSlashes)
         line = line.filter((value, index)=>{
-            return indexedDoubleSlashes.includes(index)
+            return !indexedDoubleSlashes.includes(index)
         })
         return line
     })
