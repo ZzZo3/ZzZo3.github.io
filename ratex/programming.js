@@ -306,21 +306,44 @@ erase.onclick = ()=>{
 doubleSlash.onclick = ()=>{
     console.log('doubleSlash clicked')
     let text = input.value
-    text = text.split('\n') //splits text into array of lines
-    console.log('   first split worked - text: \n'+text)
-    text = text.map(line=>line.split('')) //splits each line into array of characters
-    console.log('   first map worked - text: \n'+text)
+    text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
     text = text.map((line, num)=>{
+        // FIRST REMOVE ALL EXTRANEOUS BACKSLASHES
         let indexedSlashes = []
         let indexedDoubleSlashes = []
         line.forEach((char, index)=>{
             if (char=='\\') {
+                console.log('   backslash found at line '+num+', char '+index)
                 indexedSlashes.push(index)
             }
         })
-        line = line.filter((value, index)=>{
-            return indexedDoubleSlashes.includes(index)
+        console.log('   line: '+num+', slashes: '+indexedSlashes)
+        indexedSlashes.forEach(index=>{
+            if (index > 0) {
+                if (line[index-1]=='\\') {
+                    console.log('   extraneous backslash found at line '+num+', char '+index)
+                    indexedDoubleSlashes.push(index)
+                }
+            }
         })
+        console.log('   line: '+num+', double slashes: '+indexedDoubleSlashes)
+        line = line.filter((value, index)=>{
+            return !indexedDoubleSlashes.includes(index)
+        })
+        console.log('   REMOVED EXTRANEOUS BACKSLASHES')
+        // AFTER REMOVING ALL EXTRANEOUS BACKSLASHES PLACE NEW BACKSLASHES AFTER BACKSLASH INDEXES
+        indexedSlashes = []
+        line.forEach((char, index)=>{
+            if (char=='\\') {
+                console.log('   backslash found at line '+num+', char '+index)
+                indexedSlashes.push(index)
+            }
+        })
+        console.log('   line: '+num+', slashes: '+indexedSlashes)
+        indexedSlashes.forEach(index=>{
+            line[index] = '\\\\'
+        })
+        console.log('   REDOUBLED BACKSLASHES')
         return line
     })
     input.value = text.map(k=>k.join('')).join('\n')
@@ -354,6 +377,7 @@ singleSlash.onclick = ()=>{
         })
         return line
     })
+    console.log('   REMOVED EXTRANEOUS BACKSLASHES')
     input.value = text.map(k=>k.join('')).join('\n')
     output.textContent = translate(input.value,false)
 }
