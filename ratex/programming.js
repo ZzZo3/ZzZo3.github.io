@@ -37,7 +37,7 @@ bin type set = { 0 , 1 }
   # \\binary \\set - also referred with 'bool','boolean'
 
 # LOGIC OPERATORS
-if p( E type EV , C type bin p) = [ c = 0 , [ E , c = c + 1 ] while C + c ]
+if p( E type EV , C type bin p) = [ c = 1 , [ E , c = 0 ] while C + c =? 2 ]
   # \\if statement - \\while loop that prevents further iterations
 and p( c1 type bin , c2 type bin p) type bin = [ out = 0 , out = 1 if c1 + c2 =? 2 ]
   # \\binary \\and operator
