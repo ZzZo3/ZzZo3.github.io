@@ -1,3 +1,5 @@
+//IMPORT
+import {Tween} from '@tweenjs/tween.js'
 //BASE
 const mainBody = document.getElementById("mainBody")
 var windowDimensions = [window.innerWidth, window.innerHeight]
@@ -21,7 +23,9 @@ let mountainOffset = 0
 const spreadDefault = 1.0
 const scaleDefault = 2.0
 const hillDefault = 0
-let POSITION = [0, 0]
+//POSITION
+let POSITION = [0,0]
+let POSITIONprevious = [0,0]
 
 
 //BASE
@@ -130,30 +134,7 @@ function walkRight() {
     renderSelector()
     savePosition()
 }
-/*
-function shiftH(i) {
-    // i <- iterations (+leftward, -rightward)
-    isometricContainer.style.top += ((11 + mountainOffset / isoSpread) * isoSpread * tileScale * i) + "px"
-    isometricContainer.style.left -= (32 * tileScale * isoSpread * i) + "px"
-}
-function shiftV(i) {
-    // i <- iterations (+downward, -upward)
-    isometricContainer.style.top += ((11 + mountainOffset / isoSpread) * isoSpread * tileScale * i) + "px"
-    isometricContainer.style.left += (32 * tileScale * isoSpread * i) + "px"
-}
-function jump(x, y) {
-    console.log('\"jump()\" called')
-    POSITION[0] = x
-    POSITION[1] = y
-    renderIsoWindow()
-}
-function shift(dx, dy) {
-    console.log('\"shift()\" called')
-    POSITION[0] += dx
-    POSITION[1] += dy
-    renderIsoWindow()
-}
-*/
+
 
 //ISOMETRIC RENDER
 
@@ -189,14 +170,52 @@ function renderSchematic() {
 function renderSelector() {
     console.log('\"renderSelector()\" began')
     let off = 175
+
+    // DEFINE OFFSETS FOR OLD POSITION
+    let offsetsprev = Iso2Reg(POSITIONprevious[0], POSITIONprevious[1])
+    const leftOffprev = offsetsprev[0]
+    const topOffprev = offsetsprev[1] + off * tileScale
+    console.log('moat 1')
+
+    // DEFINE OFFSETS FOR NEW POSITION
     let offsets = Iso2Reg(POSITION[0], POSITION[1])
-    Selection.style.left = offsets[0] + "px"
-    Selection.style.top = offsets[1] + off * tileScale + "px"
+    const leftOff = offsets[0]
+    const topOff = offsets[1] + off * tileScale
+    console.log('moat 2')
+    
+    // RENDER NODE WITH OLD OFFSETS
+    Selection.style.left = leftOffprev + "px"
+    Selection.style.top = topOffprev + "px"
+    console.log('moat 3')
+
+    // DEFINE TWEEN FOR OLD TO NEW OFFSET VALUES
+    const tweenSEL = new Tween({left: leftOffprev, right: topOffprev})
+    tweenSEL.to({left: leftOff, right: topOff}, 3000)
+    console.log('moat 4')
+
+    // (ON EACH UPDATE) RENDER NODE WITH INTERMEDIATE OFFSETS
+    tweenSEL.onUpdate((object)=>{
+        Selection.style.top = object.top + "px"
+        Selection.style.left = object.left + "px"
+    })
+    console.log('moat 5')
+    
+    // START ANIMATION
+    tweenSEL.start()
+    console.log('moat 6')
+
+    // RENDER NODE WITH NEW OFFSETS
+    Selection.style.left = leftOff
+    Selection.style.top = topOff
+    console.log('moat 7')
+
+    // SET OTHER THINGS AND FIT TO WINDOW
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
     renderIsoWindow()
     console.log('> \"renderSelector()\" finished')
+    POSITIONprevious = POSITION
 }
 function renderIsoWindow() {
     grabWindowDim()
