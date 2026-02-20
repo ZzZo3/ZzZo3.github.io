@@ -104,6 +104,7 @@ input.addEventListener('input',()=>{
 })
 
 function translate(toTrans, simplify) {
+    console.log('translate() called - simplify: ',simplify)
     let text = toTrans
     let i = 0
     if(simplify) {
@@ -135,6 +136,7 @@ function translate(toTrans, simplify) {
         }
         return word
     }))
+    console.log('   translate() finished')
     return text.map(k=>k.join(' ')).join('\n')
 }
 
