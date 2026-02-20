@@ -120,6 +120,7 @@ let exclusiveMappings = [
 //OTHER
     ['{θ}','EV','Expression','ExpressionVector'],
     ['θ','out','output','theta'],
+    ['θ\'','out\'','output\'','theta\''],
     ['ω','while'],
     ['λ','if'],
     ['⤓','import'],
