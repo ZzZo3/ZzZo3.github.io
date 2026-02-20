@@ -313,20 +313,19 @@ doubleSlash.onclick = ()=>{
         let indexedDoubleSlashes = []
         line.forEach((char, index)=>{
             if (char=='\\') {
-                console.log('   backslash found at line '+num+', char '+index)
                 indexedSlashes.push(index)
             }
         })
-        console.log('   line: '+num+', slashes: '+indexedSlashes)
         indexedSlashes.forEach(index=>{
             if (index > 0) {
                 if (line[index-1]=='\\') {
-                    console.log('   extraneous backslash found at line '+num+', char '+index)
                     indexedDoubleSlashes.push(index)
                 }
             }
         })
-        console.log('   line: '+num+', double slashes: '+indexedDoubleSlashes)
+        if (indexedDoubleSlashes.length > 0) {
+            console.log('   line: '+num+', extra backslashes at indexes: '+indexedDoubleSlashes)
+        }
         line = line.filter((value, index)=>{
             return !indexedDoubleSlashes.includes(index)
         })
@@ -335,11 +334,12 @@ doubleSlash.onclick = ()=>{
         indexedSlashes = []
         line.forEach((char, index)=>{
             if (char=='\\') {
-                console.log('   backslash found at line '+num+', char '+index)
                 indexedSlashes.push(index)
             }
         })
-        console.log('   line: '+num+', slashes: '+indexedSlashes)
+        if (indexedSlashes.length > 0) {
+            console.log('   line: '+num+', backslashes at indexes: '+indexedSlashes)
+        }
         indexedSlashes.forEach(index=>{
             line[index] = '\\\\'
         })
@@ -358,20 +358,19 @@ singleSlash.onclick = ()=>{
         let indexedDoubleSlashes = []
         line.forEach((char, index)=>{
             if (char=='\\') {
-                console.log('   backslash found at line '+num+', char '+index)
                 indexedSlashes.push(index)
             }
         })
-        console.log('   line: '+num+', slashes: '+indexedSlashes)
         indexedSlashes.forEach(index=>{
             if (index > 0) {
                 if (line[index-1]=='\\') {
-                    console.log('   extraneous backslash found at line '+num+', char '+index)
                     indexedDoubleSlashes.push(index)
                 }
             }
         })
-        console.log('   line: '+num+', double slashes: '+indexedDoubleSlashes)
+        if (indexedDoubleSlashes.length > 0) {
+            console.log('   line: '+num+', extra backslashes at indexes: '+indexedDoubleSlashes)
+        }
         line = line.filter((value, index)=>{
             return !indexedDoubleSlashes.includes(index)
         })
