@@ -438,7 +438,8 @@ function calculate(find) {
     console.log('identification: \n'+text.map(k=>k.join(' ')).join('\n'))
     calcOutput.textContent = text.map(k=>k.join(' ')).join('\n')
 }
-function useArith(A,op,B) {
+
+function arith(A,op,B) {
     console.log(+A+' '+op+' '+B)   
     A = Number(A)
     B = Number(B)
