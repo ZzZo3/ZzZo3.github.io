@@ -305,6 +305,25 @@ erase.onclick = ()=>{
 }
 doubleSlash.onclick = ()=>{
     console.log('doubleSlash clicked')
+    let text = input.value
+    text = text.split('\n') //splits text into array of lines
+    console.log('   first split worked - text: \n'+text)
+    text = text.map(line=>line.split('')) //splits each line into array of characters
+    console.log('   first map worked - text: \n'+text)
+    text = text.map((line, num)=>{
+        let indexedSlashes = []
+        let indexedDoubleSlashes = []
+        line.forEach((char, index)=>{
+            if (char=='\\') {
+                indexedSlashes.push(index)
+            }
+        })
+        line = line.filter((value, index)=>{
+            return indexedDoubleSlashes.includes(index)
+        })
+        return line
+    })
+    input.value = text.map(k=>k.join('')).join('\n')
     output.textContent = translate(input.value,false)
 }
 singleSlash.onclick = ()=>{
@@ -325,9 +344,10 @@ singleSlash.onclick = ()=>{
         indexedSlashes.forEach(index=>{
             if (line[index-1]=='\\') {
                 indexedDoubleSlashes.push(index)
-                console.log('double slash found at line '+num+', char '+index)
+                console.log('   double slash found at line '+num+', char '+index)
             }
         })
+        console.log('   line: '+num+', double slashes: '+indexedDoubleSlashes)
         line = line.filter((value, index)=>{
             return indexedDoubleSlashes.includes(index)
         })
