@@ -186,8 +186,8 @@ function renderSelector() {
     let maxY = document.getElementById('SchematicTile').getAttribute('data-Ydim')
     if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY ) { // if inside schematic grid:
         
-        let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + 2 // SELECTOR AT ORIGIN HAS z: 2
-        let newZ = POSITION[1] - POSITION[0] + 2
+        let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + 3 // SELECTOR AT ORIGIN HAS z: 3
+        let newZ = POSITION[1] - POSITION[0] + 3
 
         // v TWEEN v
         let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
@@ -270,7 +270,7 @@ function renderIsometric() {
         yf += off * tileScale
         tile.style.left = xf
         tile.style.top = yf + "px"
-        tile.style.zIndex = yi - xi + 3     // TILE AT ORIGIN HAS z: 3
+        tile.style.zIndex = yi - xi + 4     // TILE AT ORIGIN HAS z: 4
         tile.style.width = 64 * tileScale + "px"
         tile.style.height = 256 * tileScale + "px"
         return tile
