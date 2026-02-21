@@ -294,7 +294,7 @@ function mountainInputFunc() {
     renderIsometric()
     console.log('> \"mountainInputFunc()\" finished')
 }
-gridXInput.addEventListener('input',gridXFunc())
+gridXInput.addEventListener('input',gridXFunc)
 function gridXFunc() {
     console.log('\"gridXFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
