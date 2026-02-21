@@ -48,6 +48,7 @@
 }
 
 .tileTip {
+    margin: 6%;
     padding-top: 6%;
     padding-right: 2%;
     border: 2px solid gray;
