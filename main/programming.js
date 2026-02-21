@@ -175,13 +175,13 @@ function renderSchematic() {
 function renderSelector() {
     console.log('\"renderSelector()\" began')
     let off = 175
-    /*
+    
     // DEFINE OFFSETS FOR OLD POSITION
     let offsetsprev = Iso2Reg(POSITIONprevious[0], POSITIONprevious[1])
     const leftOffprev = offsetsprev[0]
     const topOffprev = offsetsprev[1] + off * tileScale
     console.log('moat 1')
-    */
+    
     // DEFINE OFFSETS FOR NEW POSITION
     let offsets = Iso2Reg(POSITION[0], POSITION[1])
     const leftOff = offsets[0]
