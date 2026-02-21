@@ -195,6 +195,7 @@ function renderSelector() {
             .onStart(()=>{
                 canMove = false
                 frame = 0
+                Selection.style.zIndex = POSITION[1] - POSITION[0] + 1
             })
             .onUpdate(()=>{
                 frame ++
@@ -213,7 +214,6 @@ function renderSelector() {
                 POSITIONprevious = [...POSITION]
                 canMove = true
                 frame = 0
-                Selection.style.zIndex = POSITION[1] - POSITION[0] + 1
             })
         tween.start()
         function animate(time) {
