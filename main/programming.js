@@ -410,7 +410,7 @@ tweenTestButton.addEventListener('click',testTween)
 function testTween() {
     alert('tween test initialized')
     let z = { property: 0 }
-    let tween = new c.Tween(z)
+    let tween = new TWEEN.Tween(z)
         .to({property: 10}, 1000) // 1000 ms -> 1 sec
         .onStart(()=>{
             console.log('TEST BEGAN: '+z.property)
