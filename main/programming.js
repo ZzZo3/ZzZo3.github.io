@@ -214,6 +214,7 @@ function renderSelector() {
                 POSITIONprevious = [...POSITION]
                 canMove = true
                 frame = 0
+                Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
             })
         tween.start()
         function animate(time) {
@@ -228,7 +229,6 @@ function renderSelector() {
         console.log('   sending back ...')
         POSITION = [...POSITIONprevious]
     }
-    Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
     console.log('> \"renderSelector()\" finished')
