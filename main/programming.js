@@ -1,3 +1,5 @@
+import { Tween } from './libs/tween.esm.js'
+
 //BASE
 const mainBody = document.getElementById("mainBody")
 var windowDimensions = [window.innerWidth, window.innerHeight]
@@ -188,15 +190,15 @@ function renderSelector() {
     
     // DEFINE TWEEN FOR OLD TO NEW OFFSET VALUES
     const tweenObj = { top: topOffprev, left: leftOffprev }
-    const tween = new createjs.Tween(tweenObj)
+    const tween = new Tween(tweenObj)
     tween.to({top: topOff, left: leftOff}, 3000) // 3000 ms -> 3 sec
     console.log('moat 4')
 
-    /* (ON EACH UPDATE) RENDER NODE WITH INTERMEDIATE OFFSETS
+    // (ON EACH UPDATE) RENDER NODE WITH INTERMEDIATE OFFSETS
     tween.onUpdate(function() {
         Selection.style.top = tweenObj.top + "px"
         Selection.style.left = tweenObj.left + "px"
-    })*/
+    })
     console.log('moat 5')
     
     // START ANIMATION
