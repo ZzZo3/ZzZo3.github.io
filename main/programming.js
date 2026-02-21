@@ -377,7 +377,7 @@ function navigate(link) {
 
 //STUFF THAT RUNS ON LOAD
 
-mainBody.addEventListener('load',loadFunc)
+mainBody.addEventListener('load',loadFunc())
 function loadFunc() {
     console.log('\"loadFunc()\" began')
     resetSpread()
