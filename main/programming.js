@@ -186,6 +186,9 @@ function renderSelector() {
     let maxY = document.getElementById('SchematicTile').getAttribute('data-Ydim')
     if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY ) { // if inside schematic grid:
         
+        let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + 2 // SELECTOR AT ORIGIN HAS z: 2
+        let newZ = POSITION[1] - POSITION[0] + 2
+
         // v TWEEN v
         let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
         let frame = 0
@@ -195,7 +198,9 @@ function renderSelector() {
             .onStart(()=>{
                 canMove = false
                 frame = 0
-                Selection.style.zIndex = POSITION[1] - POSITION[0] + 2 // SELECTOR AT ORIGIN HAS z: 2
+                if (newZ >= oldZ) { // if Z will increase, update Z immediately
+                    Selection.style.zIndex = newZ
+                }
             })
             .onUpdate(()=>{
                 frame ++
@@ -214,6 +219,9 @@ function renderSelector() {
                 POSITIONprevious = [...POSITION]
                 canMove = true
                 frame = 0
+                if (newZ < oldZ) { // if Z will decrease, wait to update Z
+                    Selection.style.zIndex = newZ
+                }
             })
         tween.start()
         function animate(time) {
