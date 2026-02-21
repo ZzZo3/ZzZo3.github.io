@@ -188,24 +188,33 @@ function renderSelector() {
         
         // v TWEEN v
         let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
+        let frame = 0
         let tween = new TWEEN.Tween(Obj)
             .to({ x: POSITION[0], y: POSITION[1] }, 200) // 200 ms -> 0.20 sec
             .easing(TWEEN.Easing.Cubic.InOut)
             .onStart(()=>{
-                console.log = function () {} // disable console.log() while tweening
                 canMove = false
+                frame = 0
             })
             .onUpdate(()=>{
-                let offsets = Iso2Reg(Obj.x,Obj.y)
-                let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
-                Selection.style.top = offsets[1] + off * tileScale + "px"
-                Selection.style.left = offsets[0] + "px"
-                renderIsoWindow(offsetsi)
+                frame ++
+                console.log('   frame: '+frame)
+                if (frame % 2 == 0) {
+                    console.log('   update frame')
+                    let offsets = Iso2Reg(Obj.x,Obj.y)
+                    let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
+                    Selection.style.top = offsets[1] + off * tileScale + "px"
+                    Selection.style.zIndex = Obj.y - Obj.x + 2
+                    Selection.style.left = offsets[0] + "px"
+                    console.log = function () {} // disable console.log() while tweening
+                    renderIsoWindow(offsetsi)
+                    console.log = consoleLogFunc // enable console.log() after tweening
+                }
             })
             .onComplete(()=>{
-                console.log = consoleLogFunc // enable console.log() after tweening
                 POSITIONprevious = [...POSITION]
                 canMove = true
+                frame = 0
             })
         tween.start()
         function animate(time) {
@@ -220,7 +229,6 @@ function renderSelector() {
         console.log('   sending back ...')
         POSITION = [...POSITIONprevious]
     }
-    Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
     console.log('> \"renderSelector()\" finished')
