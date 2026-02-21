@@ -410,12 +410,14 @@ tweenTestButton.addEventListener('click',testTween)
 function testTween() {
     alert('tween test initialized')
     let z = { property: 0 }
+    console.log('TWEEN TEST BEGAN: '+z.property)
     let tween = new Tween(z)
         .to({property: 10}, 1000) // 1000 ms -> 1 sec
         .onUpdate(function() {
-            console.log(z.property)
+            console.log('   '+z.property)
         })
     tween.start()
+    console.log('TWEEN TEST CONCLUDED: '+z.property)
 }
 /*
 const tweenObj = { top: topOffprev, left: leftOffprev }
