@@ -97,6 +97,7 @@ function restorePosition() {
 originButton.addEventListener('click',origin)
 function origin() {
     console.log('origin() called')
+    POSITIONprevious = POSITION
     let SchematicTile = document.getElementById('SchematicTile')
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
@@ -119,24 +120,28 @@ function origin() {
 }
 function walkUp() {
     console.log('\"walkUp()\" called')
+    POSITIONprevious = POSITION
     POSITION[1] -= 1
     renderSelector()
     savePosition()
 }
 function walkDown() {
     console.log('\"walkDown()\" called')
+    POSITIONprevious = POSITION
     POSITION[1] += 1
     renderSelector()
     savePosition()
 }
 function walkLeft() {
     console.log('\"walkLeft()\" called')
+    POSITIONprevious = POSITION
     POSITION[0] += 1
     renderSelector()
     savePosition()
 }
 function walkRight() {
     console.log('\"walkRight()\" called')
+    POSITIONprevious = POSITION
     POSITION[0] -= 1
     renderSelector()
     savePosition()
