@@ -177,7 +177,7 @@ function renderSchematic() {
 }
 function renderSelector() {
     console.log('\"renderSelector()\" began')
-    console.log('   POSIITON: '+POSITION)
+    console.log('   POSIITON: '+POSITIONprevious+'->'+POSITION)
     let off = 175
     let maxX = document.getElementById('SchematicTile').getAttribute('data-Xdim')
     let maxY = document.getElementById('SchematicTile').getAttribute('data-Ydim')
@@ -239,7 +239,7 @@ function renderSelector() {
         animate()
         POSITION = [...POSITIONprevious]
     }
-    console.log('   POSIITON: '+POSITION)
+    console.log('   POSIITON: '+POSITIONprevious+'->'+POSITION)
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
