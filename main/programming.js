@@ -177,22 +177,35 @@ function renderSchematic() {
 function renderSelector() {
     console.log('\"renderSelector()\" began')
     let off = 175
-    let offsets = Iso2Reg(POSITION[0], POSITION[1])
-    const leftOff = offsets[0]
-    const topOff = offsets[1] + off * tileScale
 
-    /*
-    const tweenObj = { top: topOffprev, left: leftOffprev }
-    const tween = new Tween(tweenObj)
-        .to({top: topOff, left: leftOff}, 250)
-        .onUpdate(function() {
-            Selection.style.top = tweenObj.top + "px"
-            Selection.style.left = tweenObj.left + "px"
+    // DEFINE OFFSETS FOR OLD POSITION
+    let offsetsI = Iso2Reg(POSITIONprevious[0], POSITIONprevious[1])
+    const topOffI = offsetsI[1] + off * tileScale
+    const leftOffI = offsetsI[0]
+
+    // DEFINE OFFSETS FOR NEW POSITION
+    let offsetsF = Iso2Reg(POSITION[0], POSITION[1])
+    const topOffF = offsetsF[1] + off * tileScale
+    const leftOffF = offsetsF[0]
+
+    let Obj = { top: topOffI, left: leftOffI }
+    let tween = new TWEEN.Tween(Obj)
+        .to({ top: topOffF, left: leftOffF }, 1000) // 1000 ms -> 1 sec
+        .onUpdate(()=>{
+            Selection.style.top = Obj.top + "px"
+            Selection.style.left = Obj.left + "px"
         })
-    */
+    tween.start()
+    function animate(time) {
+        requestAnimationFrame(animate)
+        tween.update(time)
+    }
+    animate()
 
-    Selection.style.top = topOff + "px"
-    Selection.style.left = leftOff + "px"
+    
+    //Selection.style.top = topOff + "px"
+    //Selection.style.left = leftOff + "px"
+
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
@@ -428,12 +441,3 @@ function testTween() {
     }
     animate()
 }
-/*
-const tweenObj = { top: topOffprev, left: leftOffprev }
-const tween = new Tween(tweenObj)
-    .to({top: topOff, left: leftOff}, 250)
-    .onUpdate(function() {
-        Selection.style.top = tweenObj.top + "px"
-        Selection.style.left = tweenObj.left + "px"
-    })
-*/
