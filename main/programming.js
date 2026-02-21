@@ -92,7 +92,7 @@ function restorePosition() {
     POSITION = [POS[0],POS[1]]
     renderIsometric()
 }
-originButton.addEventListener('click',origin())
+originButton.addEventListener('click',origin)
 function origin() {
     console.log('origin() called')
     let SchematicTile = document.getElementById('SchematicTile')
@@ -175,18 +175,18 @@ function renderSchematic() {
 function renderSelector() {
     console.log('\"renderSelector()\" began')
     let off = 175
-
+    /*
     // DEFINE OFFSETS FOR OLD POSITION
     let offsetsprev = Iso2Reg(POSITIONprevious[0], POSITIONprevious[1])
     const leftOffprev = offsetsprev[0]
     const topOffprev = offsetsprev[1] + off * tileScale
     console.log('moat 1')
-
+    */
     // DEFINE OFFSETS FOR NEW POSITION
     let offsets = Iso2Reg(POSITION[0], POSITION[1])
     const leftOff = offsets[0]
     const topOff = offsets[1] + off * tileScale
-    console.log('moat 2')
+    /*console.log('moat 2')
     
     // RENDER NODE WITH OLD OFFSETS
     Selection.style.top = topOffprev + "px"
@@ -209,11 +209,11 @@ function renderSelector() {
     // START ANIMATION
     tween.start()
     console.log('moat 6')
-    
+    */
     // RENDER NODE WITH NEW OFFSETS
     Selection.style.top = topOff + "px"
     Selection.style.left = leftOff + "px"
-    console.log('moat 7')
+    //console.log('moat 7')
 
     // SET OTHER THINGS AND FIT TO WINDOW
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
@@ -265,7 +265,7 @@ function renderIsometric() {
 
 //RENDER INPUTS
 
-spreadInput.addEventListener('input',spreadInputFunc())
+spreadInput.addEventListener('input',spreadInputFunc)
 function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
     isoSpread = parseFloat(spreadInput.value)
@@ -276,7 +276,7 @@ function spreadInputFunc() {
     renderIsometric()
     console.log('> \"spreadInputFunc()\" finished')
 }
-scaleInput.addEventListener('input',scaleInputFunc())
+scaleInput.addEventListener('input',scaleInputFunc)
 function scaleInputFunc() {
     console.log('\"scaleInputFunc()\" began')
     tileScale = parseFloat(scaleInput.value)
@@ -287,7 +287,7 @@ function scaleInputFunc() {
     renderIsometric()
     console.log('> \"scaleInputFunc()\" finished')
 }
-mountainInput.addEventListener('input',mountainInputFunc())
+mountainInput.addEventListener('input',mountainInputFunc)
 function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
     mountainOffset = parseInt(mountainInput.value)
@@ -308,7 +308,7 @@ function gridXFunc() {
     origin()
     console.log('> \"gridXFunc()\" finished')
 }
-gridYInput.addEventListener('input',gridYFunc())
+gridYInput.addEventListener('input',gridYFunc)
 function gridYFunc() {
     console.log('\"gridYFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
@@ -319,7 +319,7 @@ function gridYFunc() {
     origin()
     console.log('> \"gridYFunc()\" finished')
 }
-resetSpreadButton.addEventListener('click',resetSpread())
+resetSpreadButton.addEventListener('click',resetSpread)
 function resetSpread() {
     console.log('isoSpread -> ' + spreadDefault)
     isoSpread = spreadDefault
@@ -329,7 +329,7 @@ function resetSpread() {
     sessionStorage.setItem('Spread',isoSpread)
     renderIsometric()
 }
-resetScaleButton.addEventListener('click',resetScale())
+resetScaleButton.addEventListener('click',resetScale)
 function resetScale() {
     console.log('tileScale -> ' + scaleDefault)
     tileScale = scaleDefault
@@ -338,7 +338,7 @@ function resetScale() {
     sessionStorage.setItem('Scale',tileScale)
     renderIsometric()
 }
-resetMountainButton.addEventListener('click',resetMountain())
+resetMountainButton.addEventListener('click',resetMountain)
 function resetMountain() {
     console.log('mountainOffset -> ' + hillDefault)
     mountainOffset = hillDefault
@@ -384,7 +384,7 @@ function navigate(link) {
 
 //STUFF THAT RUNS ON LOAD
 
-mainBody.addEventListener('load',loadFunc())
+mainBody.addEventListener('load',loadFunc)
 function loadFunc() {
     console.log('\"loadFunc()\" began')
     if (sessionStorage.getItem('Spread') != null) {     //SPREAD
