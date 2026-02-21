@@ -90,6 +90,7 @@ function restorePosition() {
     let savedPos = sessionStorage.getItem('POSITION')
     let POS = savedPos.split(',').map(Number)
     POSITION = [POS[0],POS[1]]
+    POSITIONprevious = POSITION
     renderIsometric()
 }
 originButton.addEventListener('click',origin)
