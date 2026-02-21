@@ -272,7 +272,6 @@ function spreadInputFunc() {
     isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
     SpLabel.innerText = 'Spread: ' + isoSpread
     console.log('   ' + isoSpread)
-    sessionStorage.setItem('Spread',isoSpread)
     renderIsometric()
     console.log('> \"spreadInputFunc()\" finished')
 }
@@ -283,7 +282,6 @@ function scaleInputFunc() {
     tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
     ScLabel.innerText = 'Scale: ' + tileScale
     console.log('   ' + tileScale)
-    sessionStorage.setItem('Scale',tileScale)
     renderIsometric()
     console.log('> \"scaleInputFunc()\" finished')
 }
@@ -293,7 +291,6 @@ function mountainInputFunc() {
     mountainOffset = parseInt(mountainInput.value)
     mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
     MnLabel.innerText = 'Hill: ' + mountainOffset
-    sessionStorage.setItem('Hill',mountainOffset)
     renderIsometric()
     console.log('> \"mountainInputFunc()\" finished')
 }
@@ -323,10 +320,8 @@ resetSpreadButton.addEventListener('click',resetSpread)
 function resetSpread() {
     console.log('isoSpread -> ' + spreadDefault)
     isoSpread = spreadDefault
-    sessionStorage.setItem('Spread',isoSpread)
     spreadInput.value = isoSpread
     SpLabel.innerText = 'Spread: ' + isoSpread
-    sessionStorage.setItem('Spread',isoSpread)
     renderIsometric()
 }
 resetScaleButton.addEventListener('click',resetScale)
@@ -335,7 +330,6 @@ function resetScale() {
     tileScale = scaleDefault
     scaleInput.value = scaleDefault
     ScLabel.innerText = 'Scale: ' + tileScale
-    sessionStorage.setItem('Scale',tileScale)
     renderIsometric()
 }
 resetMountainButton.addEventListener('click',resetMountain)
@@ -344,7 +338,6 @@ function resetMountain() {
     mountainOffset = hillDefault
     mountainInput.value = hillDefault
     MnLabel.innerText = 'Hill: ' + mountainOffset
-    sessionStorage.setItem('Hill',mountainOffset)
     renderIsometric()
 }
 
@@ -387,38 +380,11 @@ function navigate(link) {
 mainBody.addEventListener('load',loadFunc)
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    if (sessionStorage.getItem('Spread') != null) {     //SPREAD
-        let storedSpread = sessionStorage.getItem('Spread')
-        isoSpread = parseFloat(storedSpread)
-        spreadInput.value = storedSpread
-        SpLabel.innerText = 'Spread: ' + isoSpread
-    } else {
-        isoSpread = spreadDefault
-        spreadInput.value = isoSpread
-        SpLabel.innerText = 'Spread: ' + isoSpread
-    }
-    if (sessionStorage.getItem('Scale') != null) {      //SCALE
-        let storedScale = sessionStorage.getItem('Scale')
-        tileScale = parseFloat(storedScale)
-        scaleInput.value = storedScale
-        ScLabel.innerText = 'Scale: ' + tileScale
-    } else {
-        tileScale = scaleDefault
-        scaleInput.value = tileScale
-        ScLabel.innerText = 'Scale: ' + tileScale
-    }
-    if (sessionStorage.getItem('Hill') != null) {       //HILL
-        let storedHill = sessionStorage.getItem('Hill')
-        mountainOffset = parseFloat(storedHill)
-        mountainInput.value = storedHill
-        MnLabel.innerText = 'Hill: ' + mountainOffset
-    } else {
-        mountainOffset = hillDefault
-        mountainInput.value = mountainOffset
-        MnLabel.innerText = 'Hill: ' + mountainOffset
-    }
-    renderIsometric()                                   //RENDER ISOMETRIC
-    if (sessionStorage.getItem('POSITION') != null) {   //POSITION
+    resetSpread()
+    resetScale()
+    resetMountain()
+    renderIsometric()
+    if (sessionStorage.getItem('POSITION') != null) {
         console.log('stored POSITION detected')
         restorePosition()
         console.log('   POSITION restored')
