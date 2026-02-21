@@ -27,7 +27,6 @@
 .Selection {
     height: 64px;
     z-index: 100;
-    opacity: 0.5;
 }
 .slider {
     display: flex;
