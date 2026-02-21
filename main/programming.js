@@ -31,23 +31,26 @@ const hillDefault = 0
 //POSITION
 let POSITION = [0,0]
 let POSITIONprevious = [0,0]
+let canMove = true
 
 
 //BASE
 //KEY LISTENER
 document.addEventListener('keydown', function (event) {
     console.log('Key: \"' + event.key + '\"');
-    if (event.key === 'w') {
-        walkUp() // -y(iso) -> -x -y (offset from top left)
-    }
-    if (event.key === 's') {
-        walkDown() // +y(iso) -> +x +y (offset from top left)
-    }
-    if (event.key === 'a') {
-        walkRight() // +x(iso) -> +x -y (offset from top left)
-    }
-    if (event.key === 'd') {
-        walkLeft() // -x(iso) -> -x +y (offset from top left)
+    if (canMove) {
+        if (event.key === 'w') {
+            walkUp() // -y(iso) -> -x -y (offset from top left)
+        }
+        if (event.key === 's') {
+            walkDown() // +y(iso) -> +x +y (offset from top left)
+        }
+        if (event.key === 'a') {
+            walkRight() // +x(iso) -> +x -y (offset from top left)
+        }
+        if (event.key === 'd') {
+            walkLeft() // -x(iso) -> -x +y (offset from top left)
+        }
     }
     if (event.key === 'Enter') {
         useTile()
@@ -190,6 +193,7 @@ function renderSelector() {
             .easing(TWEEN.Easing.Cubic.InOut)
             .onStart(()=>{
                 console.log = function () {} // disable console.log() while tweening
+                canMove = false
             })
             .onUpdate(()=>{
                 let offsets = Iso2Reg(Obj.x,Obj.y)
@@ -201,6 +205,7 @@ function renderSelector() {
             .onComplete(()=>{
                 console.log = consoleLogFunc // enable console.log() after tweening
                 POSITIONprevious = [...POSITION]
+                canMove = true
             })
         tween.start()
         function animate(time) {
