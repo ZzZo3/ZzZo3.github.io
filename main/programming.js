@@ -182,19 +182,20 @@ function renderSelector() {
     console.log('moat 2')
     
     // RENDER NODE WITH OLD OFFSETS
-    Selection.style.left = leftOffprev + "px"
     Selection.style.top = topOffprev + "px"
+    Selection.style.left = leftOffprev + "px"
     console.log('moat 3')
 
     // DEFINE TWEEN FOR OLD TO NEW OFFSET VALUES
-    const tweenSEL = new createjs.Tween({left: leftOffprev, right: topOffprev})
-    tweenSEL.to({left: leftOff, right: topOff}, 3000)
+    const tweenObj = { top: topOffprev, left: leftOffprev }
+    const tweenSEL = new TWEEN.Tween(tweenObj)
+    tweenSEL.to({top: topOff, left: leftOff}, 3000) // 3000 ms -> 3 sec
     console.log('moat 4')
 
     // (ON EACH UPDATE) RENDER NODE WITH INTERMEDIATE OFFSETS
-    tweenSEL.onUpdate((object)=>{
-        Selection.style.top = object.top + "px"
-        Selection.style.left = object.left + "px"
+    tweenSEL.onUpdate(function() {
+        Selection.style.top = tweenObj.top + "px"
+        Selection.style.left = tweenObj.left + "px"
     })
     console.log('moat 5')
     
@@ -203,8 +204,8 @@ function renderSelector() {
     console.log('moat 6')
 
     // RENDER NODE WITH NEW OFFSETS
-    Selection.style.left = leftOff
     Selection.style.top = topOff
+    Selection.style.left = leftOff
     console.log('moat 7')
 
     // SET OTHER THINGS AND FIT TO WINDOW
