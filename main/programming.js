@@ -91,13 +91,13 @@ function restorePosition() {
     let savedPos = sessionStorage.getItem('POSITION')
     let POS = savedPos.split(',').map(Number)
     POSITION = [POS[0],POS[1]]
-    POSITIONprevious = POSITION
+    POSITIONprevious = [...POSITION]
     renderIsometric()
 }
 originButton.addEventListener('click',origin)
 function origin() {
     console.log('origin() called')
-    POSITIONprevious = POSITION
+    POSITIONprevious = [...POSITION]
     let SchematicTile = document.getElementById('SchematicTile')
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
@@ -120,35 +120,24 @@ function origin() {
 }
 function walkUp() {
     console.log('\"walkUp()\" called')
-    console.log(POSITION)
-    console.log(POSITIONprevious)
-    POSITIONprevious = POSITION
-    console.log(POSITION)
-    console.log(POSITIONprevious)
     POSITION[1] -= 1
-    POSITIONprevious[1] += 1
-    console.log(POSITION)
-    console.log(POSITIONprevious)
     renderSelector()
     savePosition()
 }
 function walkDown() {
     console.log('\"walkDown()\" called')
-    POSITIONprevious = POSITION
     POSITION[1] += 1
     renderSelector()
     savePosition()
 }
 function walkLeft() {
     console.log('\"walkLeft()\" called')
-    POSITIONprevious = POSITION
     POSITION[0] += 1
     renderSelector()
     savePosition()
 }
 function walkRight() {
     console.log('\"walkRight()\" called')
-    POSITIONprevious = POSITION
     POSITION[0] -= 1
     renderSelector()
     savePosition()
@@ -220,6 +209,7 @@ function renderSelector() {
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
     renderIsoWindow()
+    POSITIONprevious = [...POSITION]
     console.log('> \"renderSelector()\" finished')
 }
 function renderIsoWindow() {
