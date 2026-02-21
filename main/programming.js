@@ -198,6 +198,8 @@ function renderSelector() {
         .onUpdate(()=>{
             Selection.style.top = Obj.top + "px"
             Selection.style.left = Obj.left + "px"
+            isometricContainer.style.top = -Obj.top + "px"
+            isometricContainer.style.left = -Obj.left + "px"
         })
     tween.start()
     function animate(time) {
