@@ -1,4 +1,4 @@
-import { Tween } from '../libs/tween.esm.js'
+import * as TWEEN from '../libs/tween.esm.js'
 
 //BASE
 const mainBody = document.getElementById("mainBody")
@@ -410,7 +410,7 @@ tweenTestButton.addEventListener('click',testTween)
 function testTween() {
     alert('tween test initialized')
     let z = { property: 0 }
-    let tween = new Tween(z)
+    let tween = new c.Tween(z)
         .to({property: 10}, 1000) // 1000 ms -> 1 sec
         .onStart(()=>{
             console.log('TEST BEGAN: '+z.property)
@@ -421,9 +421,13 @@ function testTween() {
         .onComplete(()=>{
             console.log('TEST CONCLUDED: '+z.property)
         })
-    console.log('   tween test allegedly staged')
+    console.log('   tween test staged')
     tween.start()
-    console.log('  tween test allegedly started')
+    animate()
+}
+function animate(time) {
+    requestAnimationFrame(animate)
+    TWEEN.update(time)
 }
 /*
 const tweenObj = { top: topOffprev, left: leftOffprev }
