@@ -126,6 +126,7 @@ function walkUp() {
     console.log(POSITION)
     console.log(POSITIONprevious)
     POSITION[1] -= 1
+    POSITIONprevious[1] += 1
     console.log(POSITION)
     console.log(POSITIONprevious)
     renderSelector()
