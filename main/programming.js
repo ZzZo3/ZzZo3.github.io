@@ -185,9 +185,9 @@ function renderSelector() {
     let maxX = document.getElementById('SCHEMATIC').getAttribute('data-Xdim')
     let maxY = document.getElementById('SCHEMATIC').getAttribute('data-Ydim')
     if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY ) { // if inside schematic grid:
-        
-        let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + 3 // SELECTOR AT ORIGIN HAS z: 3
-        let newZ = POSITION[1] - POSITION[0] + 3
+        let ZED = 2 // SELECTOR AT ORIGIN HAS z: 2
+        let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + ZED
+        let newZ = POSITION[1] - POSITION[0] + ZED
 
         // v TWEEN v
         let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
@@ -256,8 +256,8 @@ function renderIsometric() {
     renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
     var isometricTilesQuery = document.querySelectorAll(".isometricTile")
     var isometricBasesQuery = document.querySelectorAll(".isometricBase")
-    REND(isometricTilesQuery,4)     // TILE AT ORIGIN HAS z: 4
-    REND(isometricBasesQuery,2)     // BASE AT ORIGIN HAS z: 2
+    REND(isometricTilesQuery,3)     // TILE AT ORIGIN HAS z: 3
+    REND(isometricBasesQuery,1)     // BASE AT ORIGIN HAS z: 1
     function REND(CLASS,ZED) {
         CLASS.forEach((element) => {
             let tile = element
