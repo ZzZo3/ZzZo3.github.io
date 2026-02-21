@@ -205,10 +205,8 @@ function renderSelector() {
     } else {
         console.log('   POSITION outside grid')
         console.log('   sending back ...')
-        
         POSITION = [...POSITIONprevious]
     }
-
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
