@@ -167,7 +167,7 @@ function renderSchematic() {
             let offsets = Iso2Reg(xi, yi)
             let schemTile = SchematicTile.cloneNode()
             schemTile.classList.add('cloneSchemTile')
-            schemTile.style.zIndex = yi - xi - 1
+            schemTile.style.zIndex = yi - xi
             schemTile.style.left = offsets[0] + "px"
             schemTile.style.top = offsets[1] + "px"
             schemTile.style.width = 64 * tileScale + "px"
@@ -213,7 +213,7 @@ function renderSelector() {
                 POSITIONprevious = [...POSITION]
                 canMove = true
                 frame = 0
-                Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
+                Selection.style.zIndex = POSITION[1] - POSITION[0] + 1
             })
         tween.start()
         function animate(time) {
@@ -262,7 +262,7 @@ function renderIsometric() {
         yf += off * tileScale
         tile.style.left = xf
         tile.style.top = yf + "px"
-        tile.style.zIndex = yi - xi
+        tile.style.zIndex = yi - xi + 2
         tile.style.width = 64 * tileScale + "px"
         tile.style.height = 256 * tileScale + "px"
         return tile
