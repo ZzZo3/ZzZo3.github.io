@@ -113,7 +113,7 @@ function origin() {
     }
     POSITION = [x, y]
     console.log('    POSITION: ' + POSITION)
-    renderSelector()
+    renderIsometric()
     savePosition()
 }
 function walkUp() {
@@ -176,47 +176,22 @@ function renderSchematic() {
 function renderSelector() {
     console.log('\"renderSelector()\" began')
     let off = 175
-    
-    // DEFINE OFFSETS FOR OLD POSITION
-    let offsetsprev = Iso2Reg(POSITIONprevious[0], POSITIONprevious[1])
-    const leftOffprev = offsetsprev[0]
-    const topOffprev = offsetsprev[1] + off * tileScale
-    console.log('moat 1')
-    
-    // DEFINE OFFSETS FOR NEW POSITION
     let offsets = Iso2Reg(POSITION[0], POSITION[1])
     const leftOff = offsets[0]
     const topOff = offsets[1] + off * tileScale
-    console.log('moat 2')
-    
-    // RENDER NODE WITH OLD OFFSETS
-    Selection.style.top = topOffprev + "px"
-    Selection.style.left = leftOffprev + "px"
-    console.log('moat 3')
-    
-    // DEFINE TWEEN FOR OLD TO NEW OFFSET VALUES
+
+    /*
     const tweenObj = { top: topOffprev, left: leftOffprev }
     const tween = new Tween(tweenObj)
-    tween.to({top: topOff, left: leftOff}, 250) // 250 ms -> 1/4 sec
-    console.log('moat 4')
+        .to({top: topOff, left: leftOff}, 250)
+        .onUpdate(function() {
+            Selection.style.top = tweenObj.top + "px"
+            Selection.style.left = tweenObj.left + "px"
+        })
+    */
 
-    // (ON EACH UPDATE) RENDER NODE WITH INTERMEDIATE OFFSETS
-    tween.onUpdate(function() {
-        Selection.style.top = tweenObj.top + "px"
-        Selection.style.left = tweenObj.left + "px"
-    })
-    console.log('moat 5')
-    
-    // START ANIMATION
-    tween.start()
-    console.log('moat 6')
-    
-    // RENDER NODE WITH NEW OFFSETS
-    //Selection.style.top = topOff + "px"
-    //Selection.style.left = leftOff + "px"
-    //console.log('moat 7')
-
-    // SET OTHER THINGS AND FIT TO WINDOW
+    Selection.style.top = topOff + "px"
+    Selection.style.left = leftOff + "px"
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
@@ -427,3 +402,8 @@ function loadFunc() {
     }
     console.log('> \"loadFunc()\" finished')
 }
+
+// TWEEN TESTING
+
+
+function
