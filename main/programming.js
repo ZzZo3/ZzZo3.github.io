@@ -209,7 +209,6 @@ function renderSelector() {
     Selection.style.height = 64 * tileScale + "px"
     renderIsoWindow()
     console.log('> \"renderSelector()\" finished')
-    POSITIONprevious = POSITION
 }
 function renderIsoWindow() {
     grabWindowDim()
