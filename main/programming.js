@@ -177,6 +177,7 @@ function renderSchematic() {
 }
 function renderSelector() {
     console.log('\"renderSelector()\" began')
+    console.log('   POSIITON: '+POSITION)
     let off = 175
     let maxX = document.getElementById('SchematicTile').getAttribute('data-Xdim')
     let maxY = document.getElementById('SchematicTile').getAttribute('data-Ydim')
@@ -214,8 +215,9 @@ function renderSelector() {
         console.log('   sending back ...')
         let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
         let tween = new TWEEN.Tween(Obj)
+            .to({ x: POSITION[0] , y: POSITION[1] })
             .to({ x: POSITIONprevious[0] , y: POSITIONprevious[1] })
-            .easing(TWEEN.Easing.Elastic.Out)
+            .easing(TWEEN.Easing.Elastic.InOut)
             .onStart(()=>{
                 console.log = function () {} // disable console.log() while tweening
             })
@@ -237,6 +239,7 @@ function renderSelector() {
         animate()
         POSITION = [...POSITIONprevious]
     }
+    console.log('   POSIITON: '+POSITION)
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
