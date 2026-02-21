@@ -120,8 +120,14 @@ function origin() {
 }
 function walkUp() {
     console.log('\"walkUp()\" called')
+    console.log(POSITION)
+    console.log(POSITIONprevious)
     POSITIONprevious = POSITION
+    console.log(POSITION)
+    console.log(POSITIONprevious)
     POSITION[1] -= 1
+    console.log(POSITION)
+    console.log(POSITIONprevious)
     renderSelector()
     savePosition()
 }
