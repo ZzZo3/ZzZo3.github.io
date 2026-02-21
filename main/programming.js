@@ -192,11 +192,11 @@ function renderSelector() {
     tween.to({top: topOff, left: leftOff}, 3000) // 3000 ms -> 3 sec
     console.log('moat 4')
 
-    // (ON EACH UPDATE) RENDER NODE WITH INTERMEDIATE OFFSETS
+    /* (ON EACH UPDATE) RENDER NODE WITH INTERMEDIATE OFFSETS
     tween.onUpdate(function() {
         Selection.style.top = tweenObj.top + "px"
         Selection.style.left = tweenObj.left + "px"
-    })
+    })*/
     console.log('moat 5')
     
     // START ANIMATION
