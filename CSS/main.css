@@ -55,4 +55,5 @@
     border-radius: 10px;
     height: 100px;
     width: 60px;
+    box-sizing: border-box;
 }
