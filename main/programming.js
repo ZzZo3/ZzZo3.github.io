@@ -211,8 +211,8 @@ function renderSelector() {
     console.log('moat 6')
     */
     // RENDER NODE WITH NEW OFFSETS
-    Selection.style.top = topOff
-    Selection.style.left = leftOff
+    Selection.style.top = topOff + "px"
+    Selection.style.left = leftOff + "px"
     console.log('moat 7')
 
     // SET OTHER THINGS AND FIT TO WINDOW
