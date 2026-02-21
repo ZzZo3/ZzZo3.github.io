@@ -3,6 +3,7 @@ import * as TWEEN from '../libs/tween.esm.js'
 //BASE
 const mainBody = document.getElementById("mainBody")
 var windowDimensions = [window.innerWidth, window.innerHeight]
+const consoleLogFunc = console.log
 //NODES
 const spreadInput = document.getElementById("spreadInput")
 const scaleInput = document.getElementById("scaleInput")
@@ -186,12 +187,18 @@ function renderSelector() {
         let tween = new TWEEN.Tween(Obj)
             .to({ x: POSITION[0], y: POSITION[1] }, 150) // 150 ms -> 0.15 sec
             .easing(TWEEN.Easing.Cubic.InOut)
+            .onStart(()=>{
+                console.log = function () {} // disable console.log() while tweening
+            })
             .onUpdate(()=>{
                 let offsets = Iso2Reg(Obj.x,Obj.y)
                 let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
                 Selection.style.top = offsets[1] + off * tileScale + "px"
                 Selection.style.left = offsets[0] + "px"
                 renderIsoWindow(offsetsi)
+            })
+            .onComplete(()=>{
+                console.log = consoleLogFunc // enable console.log() after tweening
             })
         tween.start()
         function animate(time) {
