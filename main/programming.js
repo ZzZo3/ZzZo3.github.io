@@ -186,7 +186,7 @@ function renderSelector() {
     let offsets = Iso2Reg(POSITION[0], POSITION[1])
     const leftOff = offsets[0]
     const topOff = offsets[1] + off * tileScale
-    /*console.log('moat 2')
+    console.log('moat 2')
     
     // RENDER NODE WITH OLD OFFSETS
     Selection.style.top = topOffprev + "px"
@@ -209,11 +209,11 @@ function renderSelector() {
     // START ANIMATION
     tween.start()
     console.log('moat 6')
-    */
+    
     // RENDER NODE WITH NEW OFFSETS
     Selection.style.top = topOff + "px"
     Selection.style.left = leftOff + "px"
-    //console.log('moat 7')
+    console.log('moat 7')
 
     // SET OTHER THINGS AND FIT TO WINDOW
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
