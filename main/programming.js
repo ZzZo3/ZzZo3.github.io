@@ -16,6 +16,7 @@ const resetMountainButton = document.getElementById("resetMountainButton")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const originButton = document.getElementById("originButton")
+const tweenTestButton = document.getElementById("tweenTestButton")
 const isometricParent = document.getElementById("isometricParent")
 const isometricContainer = document.getElementById('isometricContainer')
 const Selection = document.getElementById('Selection')
@@ -405,13 +406,13 @@ function loadFunc() {
 
 // TWEEN TESTING
 
-originButton.addEventListener('click',testTween)
+tweenTestButton.addEventListener('click',testTween)
 function testTween() {
     alert('tween test initialized')
     let z = { property: 0 }
     let tween = new Tween(z)
         .to({property: 10}, 1000) // 1000 ms -> 1 sec
-        .onUpdate(()=>{
+        .onUpdate(function() {
             console.log(z.property)
         })
     tween.start()
