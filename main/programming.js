@@ -1,5 +1,3 @@
-import { Tween } from 'https://code.createjs.com/1.0.0/tweenjs.min.js'
-
 //BASE
 const mainBody = document.getElementById("mainBody")
 var windowDimensions = [window.innerWidth, window.innerHeight]
@@ -189,7 +187,7 @@ function renderSelector() {
     console.log('moat 3')
 
     // DEFINE TWEEN FOR OLD TO NEW OFFSET VALUES
-    const tweenSEL = new Tween({left: leftOffprev, right: topOffprev})
+    const tweenSEL = new createjs.Tween({left: leftOffprev, right: topOffprev})
     tweenSEL.to({left: leftOff, right: topOff}, 3000)
     console.log('moat 4')
 
