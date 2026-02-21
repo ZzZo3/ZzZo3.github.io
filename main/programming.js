@@ -189,7 +189,7 @@ function renderSelector() {
         // v TWEEN v
         let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
         let tween = new TWEEN.Tween(Obj)
-            .to({ x: POSITION[0], y: POSITION[1] }, 150) // 150 ms -> 0.15 sec
+            .to({ x: POSITION[0], y: POSITION[1] }, 3000) // 150 ms -> 0.15 sec
             .easing(TWEEN.Easing.Cubic.InOut)
             .onStart(()=>{
                 console.log = function () {} // disable console.log() while tweening
