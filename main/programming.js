@@ -248,7 +248,7 @@ function renderIsometric() {
     renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
     isometricTilesQuery.forEach((element) => {
-        let tile = element
+        let tile = element 
         let off = 0
         if (tile.classList.length == 4) {
             off = parseInt(tile.classList[3].slice(3))
