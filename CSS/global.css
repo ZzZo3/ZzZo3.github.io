@@ -39,19 +39,19 @@ html, body {
     background-position: top left;
 }
 .staticStars {
-    background-image: url("./assets/backgrounds/starryNight.png");
+    background-image: url("../assets/backgrounds/starryNight.png");
 }
 .fastStars {
-    background-image: url("./assets/backgrounds/starryNight.gif");
+    background-image: url("../assets/backgrounds/starryNight.gif");
 }
 .slowStars {
-    background-image: url("./assets/backgrounds/starryNightSlow.gif");
+    background-image: url("../assets/backgrounds/starryNightSlow.gif");
 }
 .fastSmoothStars {
-    background-image: url("./assets/backgrounds/starryNightFSmooth.gif");
+    background-image: url("../assets/backgrounds/starryNightFSmooth.gif");
 }
 .slowSmoothStars {
-    background-image: url("./assets/backgrounds/starryNightSSmooth.gif");
+    background-image: url("../assets/backgrounds/starryNightSSmooth.gif");
 }
 
 /* ZZZ1TY BUTTON */
