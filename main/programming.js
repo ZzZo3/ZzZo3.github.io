@@ -204,7 +204,6 @@ function renderSelector() {
                     let offsets = Iso2Reg(Obj.x,Obj.y)
                     let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
                     Selection.style.top = offsets[1] + off * tileScale + "px"
-                    Selection.style.zIndex = Obj.y - Obj.x + 2
                     Selection.style.left = offsets[0] + "px"
                     renderIsoWindow(offsetsi)
                     console.log = consoleLogFunc // enable console.log() after tweening
