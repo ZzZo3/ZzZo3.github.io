@@ -202,11 +202,6 @@ function renderSelector() {
                 console.log = consoleLogFunc // enable console.log() after tweening
             })
         tween.start()
-        function animate(time) {
-            requestAnimationFrame(animate)
-            tween.update(time)
-        }
-        animate()
         // ^ TWEEN ^
 
         POSITIONprevious = [...POSITION]
@@ -232,13 +227,13 @@ function renderSelector() {
                 console.log = consoleLogFunc // enable console.log() after tweening
             })
         tween.start()
-        function animate(time) {
-            requestAnimationFrame(animate)
-            tween.update(time)
-        }
-        animate()
         POSITION = [...POSITIONprevious]
     }
+    function animate(time) {
+        requestAnimationFrame(animate)
+        tween.update(time)
+    }
+    animate()
     console.log('   POSIITON: '+POSITION)
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
