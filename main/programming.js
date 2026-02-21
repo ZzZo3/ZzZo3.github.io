@@ -59,7 +59,7 @@ function grabWindowDim() {
     console.log('windowDimensions: ' + windowDimensions)
 }
 window.onresize = () => {
-    renderIsoWindow()
+    renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
 }
 
 
@@ -183,12 +183,12 @@ function renderSelector() {
 
     // DEFINE OFFSETS FOR OLD POSITION
     let offsetsI = Iso2Reg(POSITIONprevious[0], POSITIONprevious[1])
-    const topOffI = offsetsI[1] + off * tileScale
+    const topOffI = offsetsI[1]
     const leftOffI = offsetsI[0]
 
     // DEFINE OFFSETS FOR NEW POSITION
     let offsetsF = Iso2Reg(POSITION[0], POSITION[1])
-    const topOffF = offsetsF[1] + off * tileScale
+    const topOffF = offsetsF[1]
     const leftOffF = offsetsF[0]
 
     let Obj = { top: topOffI, left: leftOffI }
@@ -196,10 +196,9 @@ function renderSelector() {
         .to({ top: topOffF, left: leftOffF }, 150) // 150 ms -> 0.15 sec
         .easing(TWEEN.Easing.Cubic.InOut)
         .onUpdate(()=>{
-            Selection.style.top = Obj.top + "px"
+            Selection.style.top = Obj.top + off * tileScale + "px"
             Selection.style.left = Obj.left + "px"
-            isometricContainer.style.top = -Obj.top + "px"
-            isometricContainer.style.left = -Obj.left + "px"
+            renderIsoWindow([ -Obj.top , -Obj.left ])
         })
     tween.start()
     function animate(time) {
@@ -211,16 +210,14 @@ function renderSelector() {
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
-    renderIsoWindow()
     POSITIONprevious = [...POSITION]
     console.log('> \"renderSelector()\" finished')
 }
-function renderIsoWindow() {
-    grabWindowDim()
+function renderIsoWindow(offsets) {
+    grabWindowDim(offsets)
     let winOffX = windowDimensions[0] / 2
     let winOffY = windowDimensions[1] / 2
     console.log('\"renderIsoWindow()\" began')
-    let offsets = Iso2Reg(-POSITION[0], -POSITION[1])
     isometricContainer.style.left = winOffX - (32 * tileScale) + offsets[0] + 'px'
     isometricContainer.style.top = winOffY - (245 * tileScale) + offsets[1] + 'px'
     console.log('> \"renderIsoWindow()\" finished')
@@ -229,7 +226,7 @@ function renderIsometric() {
     console.log('\"renderIsometric()\" began')
     renderSchematic()
     renderSelector()
-    renderIsoWindow()
+    renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
     var isometricTilesQuery = document.querySelectorAll(".isometricTile");
     isometricTilesQuery.forEach((element) => {
         let tile = element
