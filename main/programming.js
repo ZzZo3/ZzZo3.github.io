@@ -410,14 +410,20 @@ tweenTestButton.addEventListener('click',testTween)
 function testTween() {
     alert('tween test initialized')
     let z = { property: 0 }
-    console.log('TWEEN TEST BEGAN: '+z.property)
     let tween = new Tween(z)
         .to({property: 10}, 1000) // 1000 ms -> 1 sec
-        .onUpdate(function() {
+        .onStart(()=>{
+            console.log('TEST BEGAN: '+z.property)
+        })
+        .onUpdate(()=>{
             console.log('   '+z.property)
         })
+        .onComplete(()=>{
+            console.log('TEST CONCLUDED: '+z.property)
+        })
+    console.log('   tween test allegedly staged')
     tween.start()
-    console.log('TWEEN TEST CONCLUDED: '+z.property)
+    console.log('  tween test allegedly started')
 }
 /*
 const tweenObj = { top: topOffprev, left: leftOffprev }
