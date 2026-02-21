@@ -167,7 +167,7 @@ function renderSchematic() {
             let offsets = Iso2Reg(xi, yi)
             let schemTile = SchematicTile.cloneNode()
             schemTile.classList.add('cloneSchemTile')
-            schemTile.style.zIndex = yi - xi
+            schemTile.style.zIndex = yi - xi    // SCHEMATIC TILE AT ORIGIN HAS z: 0
             schemTile.style.left = offsets[0] + "px"
             schemTile.style.top = offsets[1] + "px"
             schemTile.style.width = 64 * tileScale + "px"
@@ -195,7 +195,7 @@ function renderSelector() {
             .onStart(()=>{
                 canMove = false
                 frame = 0
-                Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
+                Selection.style.zIndex = POSITION[1] - POSITION[0] + 2 // SELECTOR AT ORIGIN HAS z: 2
             })
             .onUpdate(()=>{
                 frame ++
@@ -262,7 +262,7 @@ function renderIsometric() {
         yf += off * tileScale
         tile.style.left = xf
         tile.style.top = yf + "px"
-        tile.style.zIndex = yi - xi + 3
+        tile.style.zIndex = yi - xi + 3     // TILE AT ORIGIN HAS z: 3
         tile.style.width = 64 * tileScale + "px"
         tile.style.height = 256 * tileScale + "px"
         return tile
