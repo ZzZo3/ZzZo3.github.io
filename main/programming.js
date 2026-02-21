@@ -200,6 +200,8 @@ function renderSelector() {
             })
             .onComplete(()=>{
                 console.log = consoleLogFunc // enable console.log() after tweening
+                POSITIONprevious = [...POSITION]
+                console.log('   POSIITON: '+POSITIONprevious+'->'+POSITION)
             })
         tween.start()
         function animate(time) {
@@ -209,7 +211,6 @@ function renderSelector() {
         animate()
         // ^ TWEEN ^
 
-        POSITIONprevious = [...POSITION]
     } else {
         console.log('   POSITION outside grid')
         console.log('   sending back ...')
@@ -230,6 +231,8 @@ function renderSelector() {
             })
             .onComplete(()=>{
                 console.log = consoleLogFunc // enable console.log() after tweening
+                POSITION = [...POSITIONprevious]
+                console.log('   POSIITON: '+POSITIONprevious+'->'+POSITION)
             })
         tween.start()
         function animate(time) {
@@ -237,9 +240,7 @@ function renderSelector() {
             tween.update(time)
         }
         animate()
-        POSITION = [...POSITIONprevious]
     }
-    console.log('   POSIITON: '+POSITIONprevious+'->'+POSITION)
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
