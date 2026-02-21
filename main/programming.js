@@ -1,4 +1,4 @@
-import { Tween } from './libs/tween.esm.js'
+import { Tween } from '../libs/tween.esm.js'
 
 //BASE
 const mainBody = document.getElementById("mainBody")
