@@ -198,7 +198,7 @@ function renderSelector() {
         .onUpdate(()=>{
             Selection.style.top = Obj.top + off * tileScale + "px"
             Selection.style.left = Obj.left + "px"
-            renderIsoWindow([ -Obj.top , -Obj.left ])
+            renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
         })
     tween.start()
     function animate(time) {
