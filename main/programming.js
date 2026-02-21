@@ -201,7 +201,6 @@ function renderSelector() {
             .onComplete(()=>{
                 console.log = consoleLogFunc // enable console.log() after tweening
                 POSITIONprevious = [...POSITION]
-                console.log('   POSIITON: '+POSITIONprevious+'->'+POSITION)
             })
         tween.start()
         function animate(time) {
@@ -214,32 +213,7 @@ function renderSelector() {
     } else {
         console.log('   POSITION outside grid')
         console.log('   sending back ...')
-        let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
-        let tween = new TWEEN.Tween(Obj)
-            .to({ x: POSITION[0] , y: POSITION[1] })
-            .to({ x: POSITIONprevious[0] , y: POSITIONprevious[1] })
-            .easing(TWEEN.Easing.Elastic.InOut)
-            .onStart(()=>{
-                console.log = function () {} // disable console.log() while tweening
-            })
-            .onUpdate(()=>{
-                let offsets = Iso2Reg(Obj.x,Obj.y)
-                let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
-                Selection.style.top = offsets[1] + off * tileScale + "px"
-                Selection.style.left = offsets[0] + "px"
-                renderIsoWindow(offsetsi)
-            })
-            .onComplete(()=>{
-                console.log = consoleLogFunc // enable console.log() after tweening
-                POSITION = [...POSITIONprevious]
-                console.log('   POSIITON: '+POSITIONprevious+'->'+POSITION)
-            })
-        tween.start()
-        function animate(time) {
-            requestAnimationFrame(animate)
-            tween.update(time)
-        }
-        animate()
+        POSITION = [...POSITIONprevious]
     }
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
