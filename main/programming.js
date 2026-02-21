@@ -257,7 +257,7 @@ function renderIsometric() {
     var isometricTilesQuery = document.querySelectorAll(".isometricTile")
     var isometricBasesQuery = document.querySelectorAll(".isometricBase")
     REND(isometricTilesQuery,4)     // TILE AT ORIGIN HAS z: 4
-    REND(isometricBasesQuery,3)     // BASE AT ORIGIN HAS z: 2
+    REND(isometricBasesQuery,2)     // BASE AT ORIGIN HAS z: 2
     function REND(CLASS,ZED) {
         CLASS.forEach((element) => {
             let tile = element
