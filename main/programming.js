@@ -16,7 +16,6 @@ const resetMountainButton = document.getElementById("resetMountainButton")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const originButton = document.getElementById("originButton")
-const tweenTestButton = document.getElementById("tweenTestButton")
 const isometricParent = document.getElementById("isometricParent")
 const isometricContainer = document.getElementById('isometricContainer')
 const Selection = document.getElementById('Selection')
@@ -177,34 +176,42 @@ function renderSchematic() {
 }
 function renderSelector() {
     console.log('\"renderSelector()\" began')
-    console.log('   previous POSITION: '+POSITIONprevious)
-    console.log('   POSITION: '+POSITION)
     let off = 175
+    let maxX = document.getElementById('SchematicTile').getAttribute('data-Xdim')
+    let maxY = document.getElementById('SchematicTile').getAttribute('data-Ydim')
+    if (POSITION[0] <= 0 && POSITION[0] >= -(+maxX) && POSITION[1] <= 0 && POSITION[1] >= -(+maxY) ) { // if inside schematic grid:
+        
+        // v TWEEN v
+        let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
+        let tween = new TWEEN.Tween(Obj)
+            .to({ x: POSITION[0], y: POSITION[1] }, 150) // 150 ms -> 0.15 sec
+            .easing(TWEEN.Easing.Cubic.InOut)
+            .onUpdate(()=>{
+                let offsets = Iso2Reg(Obj.x,Obj.y)
+                let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
+                Selection.style.top = offsets[1] + off * tileScale + "px"
+                Selection.style.left = offsets[0] + "px"
+                renderIsoWindow(offsetsi)
+            })
+        tween.start()
+        function animate(time) {
+            requestAnimationFrame(animate)
+            tween.update(time)
+        }
+        animate()
+        // ^ TWEEN ^
 
-    // v TWEEN v
-    let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
-    let tween = new TWEEN.Tween(Obj)
-        .to({ x: POSITION[0], y: POSITION[1] }, 150) // 150 ms -> 0.15 sec
-        .easing(TWEEN.Easing.Cubic.InOut)
-        .onUpdate(()=>{
-            let offsets = Iso2Reg(Obj.x,Obj.y)
-            let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
-            Selection.style.top = offsets[1] + off * tileScale + "px"
-            Selection.style.left = offsets[0] + "px"
-            renderIsoWindow(offsetsi)
-        })
-    tween.start()
-    function animate(time) {
-        requestAnimationFrame(animate)
-        tween.update(time)
+        POSITIONprevious = [...POSITION]
+    } else {
+        console.log('   POSITION outside grid')
+        console.log('   sending back ...')
+        
+        POSITION = [...POSITIONprevious]
     }
-    animate()
-    // ^ TWEEN ^
 
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
-    POSITIONprevious = [...POSITION]
     console.log('> \"renderSelector()\" finished')
 }
 function renderIsoWindow(offsets) {
@@ -408,29 +415,4 @@ function loadFunc() {
         origin()
     }
     console.log('> \"loadFunc()\" finished')
-}
-
-// TWEEN TESTING
-
-tweenTestButton.addEventListener('click',testTween)
-function testTween() {
-    let z = { property: 1 }
-    let tween = new TWEEN.Tween(z)
-        .to({property: 60}, 1000) // 1000 ms -> 1 sec
-        .onStart(()=>{
-            console.log('TEST BEGAN: '+z.property)
-        })
-        .onUpdate(()=>{
-            console.log('   '+z.property)
-        })
-        .onComplete(()=>{
-            console.log('TEST CONCLUDED: '+z.property)
-        })
-    console.log('   tween test staged')
-    tween.start()
-    function animate(time) {
-        requestAnimationFrame(animate)
-        tween.update(time)
-    }
-    animate()
 }
