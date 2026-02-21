@@ -427,7 +427,7 @@ function testTween() {
 }
 function animate(time) {
     requestAnimationFrame(animate)
-    TWEEN.update(time)
+    new TWEEN.Group().update(time)
 }
 /*
 const tweenObj = { top: topOffprev, left: leftOffprev }
