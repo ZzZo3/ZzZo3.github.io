@@ -187,7 +187,7 @@ function renderSelector() {
     const leftOff = offsets[0]
     const topOff = offsets[1] + off * tileScale
     console.log('moat 2')
-    
+    /*
     // RENDER NODE WITH OLD OFFSETS
     Selection.style.top = topOffprev + "px"
     Selection.style.left = leftOffprev + "px"
@@ -209,7 +209,7 @@ function renderSelector() {
     // START ANIMATION
     tween.start()
     console.log('moat 6')
-
+    */
     // RENDER NODE WITH NEW OFFSETS
     Selection.style.top = topOff
     Selection.style.left = leftOff
