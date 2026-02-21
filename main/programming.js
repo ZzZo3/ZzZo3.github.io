@@ -181,24 +181,17 @@ function renderSelector() {
     console.log('   POSITION: '+POSITION)
     let off = 175
 
-    // DEFINE OFFSETS FOR OLD POSITION
-    let offsetsI = Iso2Reg(POSITIONprevious[0], POSITIONprevious[1])
-    const topOffI = offsetsI[1]
-    const leftOffI = offsetsI[0]
-
-    // DEFINE OFFSETS FOR NEW POSITION
-    let offsetsF = Iso2Reg(POSITION[0], POSITION[1])
-    const topOffF = offsetsF[1]
-    const leftOffF = offsetsF[0]
-
-    let Obj = { top: topOffI, left: leftOffI }
+    // v TWEEN v
+    let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
     let tween = new TWEEN.Tween(Obj)
-        .to({ top: topOffF, left: leftOffF }, 150) // 150 ms -> 0.15 sec
+        .to({ x: POSITION[0], y: POSITION[1] }, 150) // 150 ms -> 0.15 sec
         .easing(TWEEN.Easing.Cubic.InOut)
         .onUpdate(()=>{
-            Selection.style.top = Obj.top + off * tileScale + "px"
-            Selection.style.left = Obj.left + "px"
-            renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
+            let offsets = Iso2Reg(Obj.x,Obj.y)
+            let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
+            Selection.style.top = offsets[1] + off * tileScale + "px"
+            Selection.style.left = offsets[0] + "px"
+            renderIsoWindow(offsetsi)
         })
     tween.start()
     function animate(time) {
@@ -206,6 +199,7 @@ function renderSelector() {
         tween.update(time)
     }
     animate()
+    // ^ TWEEN ^
 
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
