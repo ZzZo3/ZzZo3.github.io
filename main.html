@@ -11,17 +11,19 @@
 <body class="tileStarry slowSmoothStars" id="mainBody">
     <div id="isometricParent">
         <div id="isometricContainer">
+            <!--SCHEMATIC GRID-->
+            <img class="SchematicTile" id="SCHEMATIC" data-Xdim="7" data-Ydim="7" usemap="#schemMap" src="./assets/isometric/bases/SCHEMATIC.png">
+            <map name="schemMap">
+                <area shape="poly" coords="0,256, 64,256, 64,218, 0,218" href="#">
+            </map>
             <!--TILES-->
             <img class="isometricTile x3 y3" id="CLUBNINE" data-link="ratex" src="./assets/isometric/CLUBNINE.gif">
             <img class="isometricTile x0 y0" id="CLUBNINE" src="./assets/isometric/COZYAPT.png">
             <img class="isometricTile x0 y6" id="CLUBNINE" src="./assets/isometric/COZYAPT.png">
             <img class="isometricTile x6 y0" id="CLUBNINE" src="./assets/isometric/COZYAPT.png">
             <img class="isometricTile x6 y6" id="CLUBNINE" src="./assets/isometric/COZYAPT.png">
-            <!--SCHEMATIC GRID-->
-            <img class="SchematicTile" id="SchematicTile" data-Xdim="7" data-Ydim="7" usemap="#schemMap" src="./assets/isometric/SCHEMATIC.png">
-            <map name="schemMap">
-                <area shape="poly" coords="0,256, 64,256, 64,218, 0,218" href="#">
-            </map>
+            <!--BASES-->
+            <img class="isometricBase x3 y3" id="DEFAULT" data-link="ratex" src="./assets/isometric/bases/DEFAULT.png">
             <!--SELECTION NODE-->
             <img id="Selection" src="./assets/isometric/Selection.png">
         </div>

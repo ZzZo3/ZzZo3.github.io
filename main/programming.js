@@ -101,7 +101,7 @@ originButton.addEventListener('click',origin)
 function origin() {
     console.log('origin() called')
     POSITIONprevious = [...POSITION]
-    let SchematicTile = document.getElementById('SchematicTile')
+    let SchematicTile = document.getElementById('SCHEMATIC')
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
     let x = 0
@@ -155,7 +155,7 @@ function renderSchematic() {
     clonesToKill.forEach((node) => {
         node.remove()
     })
-    let SchematicTile = document.getElementById('SchematicTile')
+    let SchematicTile = document.getElementById('SCHEMATIC')
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
     let totalSchemTiles = Xdim * Ydim
@@ -182,8 +182,8 @@ function renderSelector() {
     console.log('\"renderSelector()\" began')
     console.log('   POSIITON: '+POSITIONprevious+'->'+POSITION)
     let off = 175
-    let maxX = document.getElementById('SchematicTile').getAttribute('data-Xdim')
-    let maxY = document.getElementById('SchematicTile').getAttribute('data-Ydim')
+    let maxX = document.getElementById('SCHEMATIC').getAttribute('data-Xdim')
+    let maxY = document.getElementById('SCHEMATIC').getAttribute('data-Ydim')
     if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY ) { // if inside schematic grid:
         
         let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + 3 // SELECTOR AT ORIGIN HAS z: 3
@@ -254,27 +254,32 @@ function renderIsometric() {
     renderSchematic()
     renderSelector()
     renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
-    var isometricTilesQuery = document.querySelectorAll(".isometricTile");
-    isometricTilesQuery.forEach((element) => {
-        let tile = element
-        let off = 0
-        if (tile.classList.length == 4) {
-            off = parseInt(tile.classList[3].slice(3))
-        }
-        let xi = parseInt(tile.classList[1].slice(1))
-        let yi = parseInt(tile.classList[2].slice(1))
-        console.log('   IsometricTile:')
-        let offsets = Iso2Reg(xi, yi)
-        let xf = offsets[0] + "px"
-        let yf = offsets[1]
-        yf += off * tileScale
-        tile.style.left = xf
-        tile.style.top = yf + "px"
-        tile.style.zIndex = yi - xi + 4     // TILE AT ORIGIN HAS z: 4
-        tile.style.width = 64 * tileScale + "px"
-        tile.style.height = 256 * tileScale + "px"
-        return tile
-    })
+    var isometricTilesQuery = document.querySelectorAll(".isometricTile")
+    var isometricBasesQuery = document.querySelectorAll(".isometricBase")
+    REND(isometricTilesQuery,4)     // TILE AT ORIGIN HAS z: 4
+    REND(isometricBasesQuery,3)     // BASE AT ORIGIN HAS z: 2
+    function REND(CLASS,ZED) {
+        CLASS.forEach((element) => {
+            let tile = element
+            let off = 0
+            if (tile.classList.length == 4) {
+                off = parseInt(tile.classList[3].slice(3))
+            }
+            let xi = parseInt(tile.classList[1].slice(1))
+            let yi = parseInt(tile.classList[2].slice(1))
+            console.log('   IsometricTile:')
+            let offsets = Iso2Reg(xi, yi)
+            let xf = offsets[0] + "px"
+            let yf = offsets[1]
+            yf += off * tileScale
+            tile.style.left = xf
+            tile.style.top = yf + "px"
+            tile.style.zIndex = yi - xi + ZED
+            tile.style.width = 64 * tileScale + "px"
+            tile.style.height = 256 * tileScale + "px"
+            return tile
+        })
+    }
     console.log('> \"renderIsometric()\" finished')
 }
 
@@ -316,7 +321,7 @@ function mountainInputFunc() {
 gridXInput.addEventListener('input',gridXFunc)
 function gridXFunc() {
     console.log('\"gridXFunc()\" began')
-    let scheme = document.getElementById('SchematicTile')
+    let scheme = document.getElementById('SCHEMATIC')
     let val = Number.isNaN(gridXInput.value) ? "7" : gridXInput.value
     scheme.setAttribute('data-Xdim', val)
     console.log(scheme.getAttribute('data-Xdim'))
@@ -327,7 +332,7 @@ function gridXFunc() {
 gridYInput.addEventListener('input',gridYFunc)
 function gridYFunc() {
     console.log('\"gridYFunc()\" began')
-    let scheme = document.getElementById('SchematicTile')
+    let scheme = document.getElementById('SCHEMATIC')
     let val = Number.isNaN(gridYInput.value) ? "7" : gridYInput.value
     scheme.setAttribute('data-Ydim', val)
     console.log(scheme.getAttribute('data-Ydim'))
