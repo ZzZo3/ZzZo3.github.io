@@ -193,8 +193,8 @@ function renderSelector() {
 
     let Obj = { top: topOffI, left: leftOffI }
     let tween = new TWEEN.Tween(Obj)
-        .to({ top: topOffF, left: leftOffF }, 300) // 300 ms -> 0.3 sec
-        .easing(TWEEN.Easing.Elastic.In)
+        .to({ top: topOffF, left: leftOffF }, 150) // 150 ms -> 0.15 sec
+        .easing(TWEEN.Easing.Cubic.InOut)
         .onUpdate(()=>{
             Selection.style.top = Obj.top + "px"
             Selection.style.left = Obj.left + "px"
