@@ -180,7 +180,7 @@ function renderSelector() {
     let off = 175
     let maxX = document.getElementById('SchematicTile').getAttribute('data-Xdim')
     let maxY = document.getElementById('SchematicTile').getAttribute('data-Ydim')
-    if (POSITION[0] >= 0 && POSITION[0] <= +maxX && POSITION[1] >= 0 && POSITION[1] <= +maxY ) { // if inside schematic grid:
+    if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY ) { // if inside schematic grid:
         
         // v TWEEN v
         let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
