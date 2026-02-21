@@ -176,6 +176,8 @@ function renderSchematic() {
 }
 function renderSelector() {
     console.log('\"renderSelector()\" began')
+    console.log('   previous POSITION: '+POSITIONprevious)
+    console.log('   POSITION: '+POSITION)
     let off = 175
 
     // DEFINE OFFSETS FOR OLD POSITION
@@ -201,10 +203,6 @@ function renderSelector() {
         tween.update(time)
     }
     animate()
-
-    
-    //Selection.style.top = topOff + "px"
-    //Selection.style.left = leftOff + "px"
 
     Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
     Selection.style.width = 64 * tileScale + "px"
