@@ -195,7 +195,7 @@ function renderSelector() {
             .onStart(()=>{
                 canMove = false
                 frame = 0
-                Selection.style.zIndex = POSITION[1] - POSITION[0] + 1
+                Selection.style.zIndex = POSITION[1] - POSITION[0] + 2
             })
             .onUpdate(()=>{
                 frame ++
@@ -262,7 +262,7 @@ function renderIsometric() {
         yf += off * tileScale
         tile.style.left = xf
         tile.style.top = yf + "px"
-        tile.style.zIndex = yi - xi + 2
+        tile.style.zIndex = yi - xi + 3
         tile.style.width = 64 * tileScale + "px"
         tile.style.height = 256 * tileScale + "px"
         return tile
