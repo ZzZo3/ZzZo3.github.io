@@ -298,7 +298,7 @@ gridXInput.addEventListener('input',gridXFunc)
 function gridXFunc() {
     console.log('\"gridXFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
-    let val = Number.isNaN(gridXInput.value) ? "0" : gridXInput.value
+    let val = Number.isNaN(gridXInput.value) ? "7" : gridXInput.value
     scheme.setAttribute('data-Xdim', val)
     console.log(scheme.getAttribute('data-Xdim'))
     renderIsometric()
@@ -309,7 +309,7 @@ gridYInput.addEventListener('input',gridYFunc)
 function gridYFunc() {
     console.log('\"gridYFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
-    let val = Number.isNaN(gridYInput.value) ? "0" : gridYInput.value
+    let val = Number.isNaN(gridYInput.value) ? "7" : gridYInput.value
     scheme.setAttribute('data-Ydim', val)
     console.log(scheme.getAttribute('data-Ydim'))
     renderIsometric()
