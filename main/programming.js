@@ -405,5 +405,23 @@ function loadFunc() {
 
 // TWEEN TESTING
 
-
-function
+originButton.addEventListener('click',testTween)
+function testTween() {
+    alert('tween test initialized')
+    let z = { property: 0 }
+    let tween = new Tween(z)
+        .to({property: 10}, 1000) // 1000 ms -> 1 sec
+        .onUpdate(()=>{
+            console.log(z.property)
+        })
+    tween.start()
+}
+/*
+const tweenObj = { top: topOffprev, left: leftOffprev }
+const tween = new Tween(tweenObj)
+    .to({top: topOff, left: leftOff}, 250)
+    .onUpdate(function() {
+        Selection.style.top = tweenObj.top + "px"
+        Selection.style.left = tweenObj.left + "px"
+    })
+*/
