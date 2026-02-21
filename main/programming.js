@@ -423,11 +423,11 @@ function testTween() {
         })
     console.log('   tween test staged')
     tween.start()
+    function animate(time) {
+        requestAnimationFrame(animate)
+        tween.update(time)
+    }
     animate()
-}
-function animate(time) {
-    requestAnimationFrame(animate)
-    new TWEEN.Group().update(time)
 }
 /*
 const tweenObj = { top: topOffprev, left: leftOffprev }
