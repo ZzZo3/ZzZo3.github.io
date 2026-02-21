@@ -8,7 +8,7 @@
     <title class="pageTitle">ZzZ1ty</title>
     <link rel="icon" type="image/gif" href="./assets/icons/catspin.gif">
 </head>
-<body class="tileStarry slowSmoothStars" id="mainBody" onload="loadFunc()">
+<body class="tileStarry slowSmoothStars" id="mainBody">
     <div id="isometricParent">
         <div id="isometricContainer">
             <!--CLUBNINE TILES-->
@@ -38,27 +38,27 @@
         <div class="inputResetPair top">
             <div class="slider">
                 <label id="SpLabel" for="spreadInput">Spread: []</label>
-                <input type="range" min="0.02" max="3" step="0.02" value="1" id="spreadInput" oninput="spreadInputFunc()">
+                <input type="range" min="0.02" max="3" step="0.02" value="1" id="spreadInput">
             </div>
-            <button class="dataButton amberButton resetButton" id="resetSpreadButton" onclick="resetSpread()">reset spread</button>
+            <button class="dataButton amberButton resetButton" id="resetSpreadButton">reset spread</button>
         </div>
         <div class="inputResetPair">
             <div class="slider">
                 <label id="ScLabel" for="scaleInput">Scale: []</label>
-                <input type="range" min="0" max="4" step="0.02" value="2" id="scaleInput" oninput="scaleInputFunc()">
+                <input type="range" min="0" max="4" step="0.02" value="2" id="scaleInput">
             </div>
-            <button class="dataButton amberButton resetButton" id="resetScaleButton" onclick="resetScale()">reset scale</button>
+            <button class="dataButton amberButton resetButton" id="resetScaleButton">reset scale</button>
         </div>
         <div class="inputResetPair">
             <div class="slider">
                 <label id="MnLabel" for="mountainInput">Hill: []</label>
-                <input type="range" min="-38" max="38" step="1" value="0" id="mountainInput" oninput="mountainInputFunc()">
+                <input type="range" min="-38" max="38" step="1" value="0" id="mountainInput">
             </div>
-            <button class="dataButton amberButton resetButton" id="resetMountainButton" onclick="resetMountain()">reset mountain</button>
+            <button class="dataButton amberButton resetButton" id="resetMountainButton">reset mountain</button>
         </div>
-        <input type="text" id="gridXInput" placeholder="X dimension: Int (tiles)" oninput="gridXFunc()">
-        <input type="text" id="gridYInput" placeholder="Y dimension: Int (tiles)" oninput="gridYFunc()">
-        <button class="dataButton amberButton" id="originButton" onclick="origin()">origin</button>
+        <input type="text" id="gridXInput" placeholder="X dimension: Int (tiles)">
+        <input type="text" id="gridYInput" placeholder="Y dimension: Int (tiles)">
+        <button class="dataButton amberButton" id="originButton">origin</button>
     </div>
     <script type="module" src="./libs/tween.esm.js"></script>
     <script type="module" src="./main/programming.js"></script>

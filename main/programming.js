@@ -5,13 +5,17 @@ const mainBody = document.getElementById("mainBody")
 var windowDimensions = [window.innerWidth, window.innerHeight]
 //NODES
 const spreadInput = document.getElementById("spreadInput")
-const ScLabel = document.getElementById("ScLabel")
-const SpLabel = document.getElementById("SpLabel")
-const MnLabel = document.getElementById("MnLabel")
 const scaleInput = document.getElementById("scaleInput")
 const mountainInput = document.getElementById("mountainInput")
+const SpLabel = document.getElementById("SpLabel")
+const ScLabel = document.getElementById("ScLabel")
+const MnLabel = document.getElementById("MnLabel")
+const resetSpreadButton = document.getElementById("resetSpreadButton")
+const resetScaleButton = document.getElementById("resetScaleButton")
+const resetMountainButton = document.getElementById("resetMountainButton")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
+const originButton = document.getElementById("originButton")
 const isometricParent = document.getElementById("isometricParent")
 const isometricContainer = document.getElementById('isometricContainer')
 const Selection = document.getElementById('Selection')
@@ -88,6 +92,7 @@ function restorePosition() {
     POSITION = [POS[0],POS[1]]
     renderIsometric()
 }
+originButton.addEventListener('click',origin())
 function origin() {
     console.log('origin() called')
     let SchematicTile = document.getElementById('SchematicTile')
@@ -260,6 +265,7 @@ function renderIsometric() {
 
 //RENDER INPUTS
 
+spreadInput.addEventListener('input',spreadInputFunc())
 function spreadInputFunc() {
     console.log('\"spreadInputFunc()\" began')
     isoSpread = parseFloat(spreadInput.value)
@@ -270,6 +276,7 @@ function spreadInputFunc() {
     renderIsometric()
     console.log('> \"spreadInputFunc()\" finished')
 }
+scaleInput.addEventListener('input',scaleInputFunc())
 function scaleInputFunc() {
     console.log('\"scaleInputFunc()\" began')
     tileScale = parseFloat(scaleInput.value)
@@ -280,6 +287,7 @@ function scaleInputFunc() {
     renderIsometric()
     console.log('> \"scaleInputFunc()\" finished')
 }
+mountainInput.addEventListener('input',mountainInputFunc())
 function mountainInputFunc() {
     console.log('\"mountainInputFunc()\" began')
     mountainOffset = parseInt(mountainInput.value)
@@ -289,6 +297,7 @@ function mountainInputFunc() {
     renderIsometric()
     console.log('> \"mountainInputFunc()\" finished')
 }
+gridXInput.addEventListener('input',gridXFunc())
 function gridXFunc() {
     console.log('\"gridXFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
@@ -299,6 +308,7 @@ function gridXFunc() {
     origin()
     console.log('> \"gridXFunc()\" finished')
 }
+gridYInput.addEventListener('input',gridYFunc())
 function gridYFunc() {
     console.log('\"gridYFunc()\" began')
     let scheme = document.getElementById('SchematicTile')
@@ -309,6 +319,7 @@ function gridYFunc() {
     origin()
     console.log('> \"gridYFunc()\" finished')
 }
+resetSpreadButton.addEventListener('click',resetSpread())
 function resetSpread() {
     console.log('isoSpread -> ' + spreadDefault)
     isoSpread = spreadDefault
@@ -318,6 +329,7 @@ function resetSpread() {
     sessionStorage.setItem('Spread',isoSpread)
     renderIsometric()
 }
+resetScaleButton.addEventListener('click',resetScale())
 function resetScale() {
     console.log('tileScale -> ' + scaleDefault)
     tileScale = scaleDefault
@@ -326,6 +338,7 @@ function resetScale() {
     sessionStorage.setItem('Scale',tileScale)
     renderIsometric()
 }
+resetMountainButton.addEventListener('click',resetMountain())
 function resetMountain() {
     console.log('mountainOffset -> ' + hillDefault)
     mountainOffset = hillDefault
@@ -371,6 +384,7 @@ function navigate(link) {
 
 //STUFF THAT RUNS ON LOAD
 
+mainBody.addEventListener('load',loadFunc())
 function loadFunc() {
     console.log('\"loadFunc()\" began')
     if (sessionStorage.getItem('Spread') != null) {     //SPREAD
