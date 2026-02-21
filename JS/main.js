@@ -1,4 +1,4 @@
-import * as TWEEN from '../libs/tween.esm.js'
+import * as TWEEN from '../libraries/tween.esm.js'
 
 //BASE
 const mainBody = document.getElementById("mainBody")
