@@ -197,7 +197,7 @@ function renderSelector() {
         let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
         let frame = 0
         let tween = new TWEEN.Tween(Obj)
-            .to({ x: POSITION[0], y: POSITION[1] }, 200) // 200 ms -> 0.20 sec
+            .to({ x: POSITION[0], y: POSITION[1] }, 100*isoSpread) // 100 ms (at no spread) -> 0.10 sec
             .easing(TWEEN.Easing.Cubic.InOut)
             .onStart(()=>{
                 canMove = false
