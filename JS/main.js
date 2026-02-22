@@ -400,6 +400,7 @@ function getTile() {
         }
     } else {
         console.log('   no tile found at ' + [POSITION])
+        link = '[ no link found ]'
     }
     posDisplay.innerText = '['+POSITION[0]+','+POSITION[1]+']'
 }
