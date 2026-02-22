@@ -225,6 +225,7 @@ function renderSelector() {
                 if (newZ < oldZ) { // if Z will decrease, wait to update Z
                     Selection.style.zIndex = newZ
                 }
+                getTile()
             })
         tween.start()
         function animate(time) {
@@ -238,10 +239,10 @@ function renderSelector() {
         console.log('   POSITION outside grid')
         console.log('   sending back ...')
         POSITION = [...POSITIONprevious]
+        getTile()
     }
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
-    getTile()
     console.log('> \"renderSelector()\" finished')
 }
 function renderIsoWindow(offsets) {
@@ -398,9 +399,9 @@ function getTile() {
             link = "https://n0n-sense.org/" + TILE.getAttribute("data-link")
             console.log('   link found: ' + link)
             linkDisplay.innerText = link
-            posDisplay.innerText = '['+POSITION[0]+','+POSITION[1]+']'
         }
     }
+    posDisplay.innerText = '['+POSITION[0]+','+POSITION[1]+']'
 }
 function useTile() {
     console.log('useTile() called at: ' + POSITION)
