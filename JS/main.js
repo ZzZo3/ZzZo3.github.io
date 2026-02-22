@@ -204,7 +204,7 @@ function renderSelector() {
                 frame = 0
                 if (newZ >= oldZ) { // if Z will increase, update Z immediately
                     Selection.style.zIndex = newZ
-                    SelectionZ.style.zIndex = newZ
+                    SelectionZ.style.zIndex = newZ + 1
                 }
             })
             .onUpdate(()=>{
