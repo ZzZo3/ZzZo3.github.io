@@ -20,6 +20,7 @@ const originButton = document.getElementById("originButton")
 const isometricParent = document.getElementById("isometricParent")
 const isometricContainer = document.getElementById('isometricContainer')
 const Selection = document.getElementById('Selection')
+const SelectionZ = document.getElementById('SelectionZ')
 const linkDisplay = document.getElementById('linkDisplay')
 const posDisplay = document.getElementById('posDisplay')
 //RENDER VARIABLES
@@ -203,6 +204,7 @@ function renderSelector() {
                 frame = 0
                 if (newZ >= oldZ) { // if Z will increase, update Z immediately
                     Selection.style.zIndex = newZ
+                    SelectionZ.style.zIndex = newZ
                 }
             })
             .onUpdate(()=>{
@@ -214,6 +216,8 @@ function renderSelector() {
                     let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
                     Selection.style.top = offsets[1] + off * tileScale + "px"
                     Selection.style.left = offsets[0] + "px"
+                    SelectionZ.style.top = offsets[1] + off * tileScale + "px"
+                    SelectionZ.style.left = offsets[0] + "px"
                     renderIsoWindow(offsetsi)
                     console.log = consoleLogFunc // enable console.log() after tweening
                 }
@@ -224,6 +228,7 @@ function renderSelector() {
                 frame = 0
                 if (newZ < oldZ) { // if Z will decrease, wait to update Z
                     Selection.style.zIndex = newZ
+                    SelectionZ.style.zIndex = newZ + 1
                 }
                 getTile()
             })
@@ -243,6 +248,8 @@ function renderSelector() {
     }
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
+    SelectionZ.style.width = 64 * tileScale + "px"
+    SelectionZ.style.height = 64 * tileScale + "px"
     console.log('> \"renderSelector()\" finished')
 }
 function renderIsoWindow(offsets) {
