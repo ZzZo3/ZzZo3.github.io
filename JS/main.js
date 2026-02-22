@@ -283,7 +283,7 @@ function renderIsometric() {
             return tile
         })
     }
-    linkDisplay
+    getTile()
     console.log('> \"renderIsometric()\" finished')
 }
 
