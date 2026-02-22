@@ -391,21 +391,21 @@ function getTile() {
     })
     if (found) {
         console.log('   found: ' + TILE.id)
-    } else {
-        console.log('   no tile found at ' + [POSITION])
-    }
-    if (found) {
         if (TILE.hasAttribute("data-link")) {
             link = "https://n0n-sense.org/" + TILE.getAttribute("data-link")
             console.log('   link found: ' + link)
-            linkDisplay.innerText = link
+            linkDisplay.innerText = '[ '+link+' ]'
+        } else {
+            link = '[ no link found ]'
         }
+    } else {
+        console.log('   no tile found at ' + [POSITION])
     }
     posDisplay.innerText = '['+POSITION[0]+','+POSITION[1]+']'
 }
 function useTile() {
     console.log('useTile() called at: ' + POSITION)
-    if (link != '') {
+    if (link != '[ no link found ]') {
         window.location.href = link
     }
 }
