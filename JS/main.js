@@ -20,6 +20,8 @@ const originButton = document.getElementById("originButton")
 const isometricParent = document.getElementById("isometricParent")
 const isometricContainer = document.getElementById('isometricContainer')
 const Selection = document.getElementById('Selection')
+const linkDisplay = document.getElementById('linkDisplay')
+const posDisplay = document.getElementById('posDisplay')
 //RENDER VARIABLES
 let isoSpread = 1.0
 let tileScale = 1.0
@@ -28,10 +30,11 @@ let mountainOffset = 0
 const spreadDefault = 1.0
 const scaleDefault = 2.0
 const hillDefault = 0
-//POSITION
+//POSITION / TILE DATA
 let POSITION = [0,0]
 let POSITIONprevious = [0,0]
 let canMove = true
+let link = ''
 
 
 //BASE
@@ -280,6 +283,7 @@ function renderIsometric() {
             return tile
         })
     }
+    linkDisplay
     console.log('> \"renderIsometric()\" finished')
 }
 
@@ -369,10 +373,10 @@ function resetMountain() {
 }
 
 
-//USE TILE
+//GET and USE TILE
 
-function useTile() {
-    console.log('useTile() called at: ' + POSITION)
+function getTile() {
+    console.log('getTile() called at: ' + POSITION)
     var isometricTilesQuery = document.querySelectorAll(".isometricTile")
     let found = false
     let TILE
@@ -391,14 +395,18 @@ function useTile() {
     }
     if (found) {
         if (TILE.hasAttribute("data-link")) {
-            let link = "https://n0n-sense.org/" + TILE.getAttribute("data-link")
+            link = "https://n0n-sense.org/" + TILE.getAttribute("data-link")
             console.log('   link found: ' + link)
-            navigate(link)
+            linkDisplay.innerText = link
+            posDisplay.innerText = '['+POSITION[0]+','+POSITION[1]+']'
         }
     }
 }
-function navigate(link) {
-    window.location.href = link
+function useTile() {
+    console.log('useTile() called at: ' + POSITION)
+    if (link != '') {
+        window.location.href = link
+    }
 }
 
 
