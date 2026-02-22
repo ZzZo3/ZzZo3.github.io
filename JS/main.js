@@ -241,6 +241,7 @@ function renderSelector() {
     }
     Selection.style.width = 64 * tileScale + "px"
     Selection.style.height = 64 * tileScale + "px"
+    getTile()
     console.log('> \"renderSelector()\" finished')
 }
 function renderIsoWindow(offsets) {
@@ -283,7 +284,6 @@ function renderIsometric() {
             return tile
         })
     }
-    getTile()
     console.log('> \"renderIsometric()\" finished')
 }
 
