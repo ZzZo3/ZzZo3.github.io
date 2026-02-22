@@ -396,17 +396,19 @@ function getTile() {
             console.log('   link found: ' + link)
             linkDisplay.innerText = '[ '+link+' ]'
         } else {
-            link = '[ no link found ]'
+            link = ''
+            linkDisplay.innerText = '[ no link found ]'
         }
     } else {
         console.log('   no tile found at ' + [POSITION])
-        link = '[ no link found ]'
+            link = ''
+            linkDisplay.innerText = '[ no link found ]'
     }
     posDisplay.innerText = '['+POSITION[0]+','+POSITION[1]+']'
 }
 function useTile() {
     console.log('useTile() called at: ' + POSITION)
-    if (link != '[ no link found ]') {
+    if (link != '') {
         window.location.href = link
     }
 }
