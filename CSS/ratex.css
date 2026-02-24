@@ -48,6 +48,9 @@
     gap: 1;
     justify-content: space-around;
 }
+#termCont{
+    height: 212px;
+}
 .container >* {
     width: 100%;
     height: 288px;
