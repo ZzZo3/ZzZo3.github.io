@@ -144,7 +144,8 @@ html, body {
     flex-grow: 1;
     box-sizing: border-box;
     white-space: pre;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: visible;
     outline: none;
     background: none;
 }
