@@ -134,10 +134,14 @@ html, body {
     color: rgb(255, 216, 132);
 }
 .terminalInput {
-    padding-top: 18px;
+    margin-top: 18px;
+    height: 18px;
     flex-grow: 1;
     box-sizing: border-box;
     white-space: pre;
     overflow: auto;
     overflow:-moz-scrollbars-vertical;
+    border: none;
+    outline: none;
+    background: none;
 }
