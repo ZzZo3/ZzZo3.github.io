@@ -138,11 +138,12 @@ html, body {
 .terminalInput {
     resize: none;
     margin-top: 18px;
+    padding: 0px 0px;
     height: 18px;
     flex-grow: 1;
     box-sizing: border-box;
     white-space: pre;
-    overflow: auto;
+    overflow: none;
     outline: none;
     background: none;
 }
