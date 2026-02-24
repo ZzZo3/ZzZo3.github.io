@@ -42,9 +42,9 @@
 }
 .container{
     display: flex;
-    min-height: 30%;
-    width: 100;
-    flex-direction: column;
+    width: 50%;
+    height: 300px
+    flex-direction: row;
     gap: 1;
     justify-content: space-around;
 }
