@@ -49,11 +49,9 @@
 }
 .container >* {
     flex-grow: 1;
-    width: 50%;
     box-sizing: border-box;
     margin: 1%;
     padding: 1%;
-    display: inline-block;
     line-height: 18px;
     background-size: 100% 36px;
     background-position-y: -2px;
@@ -75,6 +73,8 @@
     outline: 1px solid white;
 }
 #input{
+    width: 50%;
+    display: inline-block;
     resize: none;
     field-sizing: 16px;
     font-family:'Courier New', Courier, monospace;
@@ -83,6 +83,8 @@
     outline: 1px solid white;
 }
 .annot{
+    width: 50%;
+    display: inline-block;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     background-image: linear-gradient(#212121 50%, #2f2f2f 50%);
