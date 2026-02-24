@@ -137,10 +137,10 @@ html, body {
 }
 .terminalInput {
     width: 96%-64px;
-    resize: none;
+    height: 18px;
+    resize: auto;
     margin-top: 18px;
     padding: 0px 0px;
-    height: 18px;
     flex-grow: 1;
     box-sizing: border-box;
     white-space: pre;
