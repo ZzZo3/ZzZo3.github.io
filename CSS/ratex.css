@@ -49,7 +49,7 @@
     justify-content: space-around;
 }
 .container >* {
-    width: 50%;
+    width: 100%;
     height: 288px;
     display: inline;
     flex-grow: 1;
