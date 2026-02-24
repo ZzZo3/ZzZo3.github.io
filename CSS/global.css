@@ -134,6 +134,13 @@ html, body {
     color: rgb(255, 216, 132);
 }
 .terminalInput {
+    display: block;
+    resize: none;
+    field-sizing: 16px;
+    line-height: 18px;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(255, 216, 132);
+    
     margin-top: 18px;
     height: 18px;
     flex-grow: 1;
