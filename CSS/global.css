@@ -111,3 +111,27 @@ html, body {
 .hyperlink:active {
     color: red;
 }
+
+/* TERMINAL */
+.terminal {
+    width: 100%;
+    height: 180px;
+    margin: 1%;
+    padding: 2px;
+    resize: none;
+    field-sizing: 16px;
+    font-family:'Courier New', Courier, monospace;
+    background-image: linear-gradient(#212121 50%, #2f2f2f 50%);
+    color: rgb(150, 245, 113);
+    border: 1px solid white;
+    background-size: 100% 36px;
+    background-position-y: -2px;
+    background-attachment: scroll;
+    border-radius: 5px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    line-height: 18px;
+    white-space: pre;
+    overflow: auto;
+    overflow:-moz-scrollbars-vertical;
+}
