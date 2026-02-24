@@ -120,6 +120,7 @@ html, body {
     height: 180px;
     margin: 1% 1%+32px;
     padding-left: 1%;
+    padding-right: 1%;
     resize: none;
     background-image: linear-gradient(#212121 50%, #2f2f2f 50%);
     background-size: 100% 36px;
