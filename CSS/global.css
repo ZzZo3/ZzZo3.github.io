@@ -135,15 +135,13 @@ html, body {
     border: 1px solid white;
 }
 .terminalInput {
-    resize: none;
+    resize: auto;
     margin-top: 18px;
     height: 18px;
     flex-grow: 1;
     box-sizing: border-box;
     white-space: pre;
     overflow: auto;
-    overflow:-moz-scrollbars-vertical;
     border: none;
-    outline: none;
     background: none;
 }
