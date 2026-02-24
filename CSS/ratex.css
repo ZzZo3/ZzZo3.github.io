@@ -64,6 +64,16 @@
     overflow: auto; 
     overflow:-moz-scrollbars-vertical;
 }
+#terminal {
+    width: 100%;
+    display: block;
+    resize: none;
+    field-sizing: 16px;
+    font-family:'Courier New', Courier, monospace;
+    background-image: linear-gradient(#212121 50%, #2f2f2f 50%);
+    color: rgb(150, 245, 113);
+    outline: 1px solid white;
+}
 #input{
     resize: none;
     field-sizing: 16px;
