@@ -62,7 +62,7 @@
     line-height: 18px;
     background-size: 100% 36px;
     background-position-y: -2px;
-    background-attachment: scroll;
+    background-attachment: local;
     border: 1px solid black;
     border-radius: 5px;
     white-space: pre;
