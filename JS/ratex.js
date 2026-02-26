@@ -40,6 +40,10 @@ document.addEventListener('keydown', function (event) {
                 alert('enter in terminal')
             } else {
                 alert('shift+enter in terminal')
+                var height = terminalInput.style.height
+                height -= 'px'
+                var newHeight = +height + 18
+                terminalInput.style.height = newHeight+'px'
             }
         }
     }
