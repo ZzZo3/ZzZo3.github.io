@@ -38,14 +38,14 @@ document.addEventListener('keydown', function (event) {
         if (event.key === "Enter") {
             if (!event.shiftKey) {
             } else {
-                var height = terminalInput.style.height
+                var height = window.getComputedStyle(terminalInput).height
                 alert('height: '+height)
                 height -= 'px'
                 alert('height: '+height)
                 var newHeight = +height + 18
                 alert('newHeight: '+newHeight)
                 terminalInput.style.height = newHeight+'px'
-                alert('height: '+terminalInput.style.height)
+                alert('height: '+height)
 
             }
         }
