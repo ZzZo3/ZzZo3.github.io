@@ -37,13 +37,16 @@ document.addEventListener('keydown', function (event) {
     if (document.activeElement === terminalInput) { // detect Enter / shift+Enter in terminalInput
         if (event.key === "Enter") {
             if (!event.shiftKey) {
-                alert('enter in terminal')
             } else {
-                alert('shift+enter in terminal')
                 var height = terminalInput.style.height
+                alert('height: '+height)
                 height -= 'px'
+                alert('height: '+height)
                 var newHeight = +height + 18
+                alert('newHeight: '+newHeight)
                 terminalInput.style.height = newHeight+'px'
+                alert('height: '+terminalInput.style.height)
+
             }
         }
     }
