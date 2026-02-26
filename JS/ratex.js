@@ -535,6 +535,7 @@ function loadFunc() {
     output.textContent = translate(input.value,false)
     roundPrompt.textContent = 'rounding to ['+roundTo+']'
     setRF()
+    terminalInput.value = ''
     console.log('   \"loadFunc()\" finished')
 }
 
