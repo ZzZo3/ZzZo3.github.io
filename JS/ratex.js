@@ -35,8 +35,12 @@ storage.textContent = Object.keys(localStorage)
 document.addEventListener('keydown', function (event) {
     console.log('Key: \"' + event.key + '\"');
     if (document.activeElement === terminalInput) {
-        if(event.key === "Enter") {
-            alert('terminal enter pressed')
+        if (event.key === "Enter") {
+            if (!event.shiftKey) {
+                alert('enter in terminal')
+            } else {
+                alert('shift+enter in terminal')
+            }
         }
     }
 });
