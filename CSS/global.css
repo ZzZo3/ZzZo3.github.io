@@ -119,8 +119,8 @@ html, body {
     width: 98%;
     height: 180px;
     margin: 1% 1%+32px;
-    padding-left: 1%;
     padding-right: 1%;
+    padding-top: 18px;
     resize: none;
     background-image: linear-gradient(#212121 50%, #2f2f2f 50%);
     background-size: 100% 36px;
@@ -130,6 +130,8 @@ html, body {
     overflow-y: scroll;
 }
 .terminal >* {
+    margin: none;
+    padding: none;
     width: 96%-64px;
     display: block;
     resize: none;
@@ -142,8 +144,6 @@ html, body {
 .terminalInput {
     width: 96%-64px;
     height: 18px;
-    margin-top: 18px;
-    padding: 0px 0px;
     resize: none;
     flex-grow: 1;
     box-sizing: border-box;
