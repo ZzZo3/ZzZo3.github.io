@@ -40,7 +40,7 @@ document.addEventListener('keydown', function (event) {
             } else {
                 var height = window.getComputedStyle(terminalInput).height
                 alert('height: '+height)
-                height -= 'px'
+                height = height-'px'
                 alert('height: '+height)
                 var newHeight = +height + 18
                 alert('newHeight: '+newHeight)
