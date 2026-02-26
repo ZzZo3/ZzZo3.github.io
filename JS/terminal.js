@@ -10,8 +10,6 @@ document.addEventListener('keydown', (event)=>{
             if (!event.shiftKey) {
                 event.preventDefault()
                 terminalParse()
-            } else {
-                alert('shift+enter')
             }
         }
     }
@@ -24,6 +22,7 @@ terminalInput.addEventListener('input', ()=>{
 });
 
 function terminalParse() {
+    alert('terminal parse called')
     console.log('TERMINAL: parsing')
     var text = terminalInput.value
     command = text.split('\n').map((line)=>line.split(' '))
