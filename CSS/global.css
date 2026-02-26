@@ -119,6 +119,7 @@ html, body {
     width: 98%;
     height: 180px;
     margin: 1% 1%+32px;
+    padding-left: 1%;
     padding-right: 1%;
     padding-top: 18px;
     resize: none;
