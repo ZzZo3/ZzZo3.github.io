@@ -132,6 +132,7 @@ html, body {
     border: 1px solid white;
     border-radius: 5px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .terminal >* {
     display: flex;
@@ -151,11 +152,11 @@ html, body {
 }
 #terminalOutput {
     overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: visible;
 }
 #terminalInput {
     flex-grow: 1;
     overflow-y: hidden;
     overflow-x: visible;
-    height: 18px;
-    width: 96%-64px;
 }
