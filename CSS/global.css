@@ -142,7 +142,7 @@ html, body {
     box-sizing: border-box;
     width: 96%-64px;
     height: 18px;
-    display: block;
+    display: inline-block;
     field-sizing: 16px;
     line-height: 18px;
     font-family:'Courier New', Courier, monospace;
