@@ -1,5 +1,6 @@
 //BASE
 const terminalInput = document.getElementById('terminalInput')
+//
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
@@ -7,22 +8,25 @@ document.addEventListener('keydown', (event)=>{
     if (document.activeElement === terminalInput) { // detect Enter / shift+Enter in terminalInput
         if (event.key === "Enter") {
             if (!event.shiftKey) {
-                terminalReturn()
+                event.preventDefault()
+                terminalParse()
             } else {
-                var height = window.getComputedStyle(terminalInput).height
-                var pixels = parseInt(height.replace('px',''))
-                height = (pixels + 18)+'px'
-                terminalInput.style.height = height
+                alert('shift+enter')
             }
         }
     }
 });
 
 terminalInput.addEventListener('input', ()=>{
-    alert('input')
+    var text = terminalInput.value
+    text = text.split('\n')
+    terminalInput.style.height = (18 * text.length)+'px'
 });
 
-function terminalReturn() {
-    console.log('TERMINAL: returning')
-    console.log('TERMINAL: returned')
+function terminalParse() {
+    console.log('TERMINAL: parsing')
+    var text = terminalInput.value
+    command = text.split('\n').map((line)=>line.split(' '))
+    terminalInput.value = ''
+    console.log('TERMINAL: parsed')
 }
