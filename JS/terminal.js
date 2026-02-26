@@ -37,9 +37,9 @@ function terminalParse() {
 }
 
 class terminalCommand {
-    constructor(name,args,executable) {
+    constructor(name,args,func) {
         this.name = ''
         this.args = []
-        this.execuatable = function() {}
+        this.func = function() {}
     }
 }
