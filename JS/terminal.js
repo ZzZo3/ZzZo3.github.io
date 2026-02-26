@@ -1,5 +1,6 @@
 //BASE
 const terminalInput = document.getElementById('terminalInput')
+const terminalOutput = document.getElementById('terminalOutput')
 //
 
 //KEY LISTENER
