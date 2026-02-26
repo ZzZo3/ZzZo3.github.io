@@ -29,8 +29,6 @@ function terminalParse() {
     terminalInput.value = ''
     terminalInput.style.height = '18px'
     command = text.split('\n').map((line)=>line.split(' '))
-    var inputOffset = parseInt(terminalInput.getAttribute('style:padding-top'))
-    terminalInput.style.paddingTop = (command.length * 18 + inputOffset)+'px'
     command.forEach((line)=>{
         line.forEach((word)=>{
             
