@@ -17,6 +17,7 @@ const copyIn = document.getElementById('copyIn')
 const copyOut = document.getElementById('copyOut')
 const simplify = document.getElementById('simplify')
 const erase = document.getElementById('erase')
+const terminalInput = document.getElementById('terminalInput')
 //CALCULATION
 const calcInput = document.getElementById('calcInput')
 const calcOutput = document.getElementById('calcOutput')
