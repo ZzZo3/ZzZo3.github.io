@@ -154,7 +154,8 @@ html, body {
 }
 #terminalInput {
     flex-grow: 1;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: visible;
     height: 18px;
     width: 96%-64px;
 }
