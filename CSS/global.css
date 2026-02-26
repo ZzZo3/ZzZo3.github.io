@@ -134,7 +134,7 @@ html, body {
     overflow-y: scroll;
 }
 .terminal >* {
-    display: block;
+    display: flex;
     margin: none;
     padding: none;
     background: none;
