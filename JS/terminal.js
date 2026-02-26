@@ -35,3 +35,11 @@ function terminalParse() {
     })
     console.log('TERMINAL: parsed')
 }
+
+class terminalCommand {
+    constructor(name,args,executable) {
+        this.name = ''
+        this.args = []
+        this.execuatable = function() {}
+    }
+}
