@@ -20,9 +20,9 @@ document.addEventListener('keydown', (event)=>{
 
 terminalInput.addEventListener('input', ()=>{
     alert('input')
-})
+});
 
-terminalReturn() {
+function terminalReturn() {
     console.log('TERMINAL: returning')
     console.log('TERMINAL: returned')
 }
