@@ -150,8 +150,10 @@ html, body {
     outline: none;
 }
 #terminalOutput {
-    margin: none;
+    overflow: hidden;
 }
 #terminalInput {
     overflow: hidden;
+    height: 18px;
+    width: 96%-64px;
 }
