@@ -17,7 +17,6 @@ const copyIn = document.getElementById('copyIn')
 const copyOut = document.getElementById('copyOut')
 const simplify = document.getElementById('simplify')
 const erase = document.getElementById('erase')
-const terminalInput = document.getElementById('terminalInput')
 //CALCULATION
 const calcInput = document.getElementById('calcInput')
 const calcOutput = document.getElementById('calcOutput')
@@ -34,18 +33,6 @@ storage.textContent = Object.keys(localStorage)
 //KEY LISTENER
 document.addEventListener('keydown', function (event) {
     console.log('Key: \"' + event.key + '\"');
-    if (document.activeElement === terminalInput) { // detect Enter / shift+Enter in terminalInput
-        if (event.key === "Enter") {
-            if (!event.shiftKey) {
-                alert('terminal enter')
-            } else {
-                var height = window.getComputedStyle(terminalInput).height
-                var pixels = parseInt(height.replace('px',''))
-                height = (pixels + 18)+'px'
-                terminalInput.style.height = height
-            }
-        }
-    }
 });
 
 function setRF() {
