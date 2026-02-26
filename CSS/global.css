@@ -119,7 +119,7 @@ html, body {
 </div>
 */
 .terminal{
-    display: flex;
+    display: block;
     flex-direction: row;
     width: 98%;
     height: 180px;
@@ -142,7 +142,7 @@ html, body {
     box-sizing: border-box;
     width: 96%-64px;
     height: 18px;
-    display: inline-block;
+    display: block;
     field-sizing: 16px;
     line-height: 18px;
     font-family:'Courier New', Courier, monospace;
