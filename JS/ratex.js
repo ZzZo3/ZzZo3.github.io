@@ -40,11 +40,11 @@ document.addEventListener('keydown', function (event) {
             } else {
                 var height = window.getComputedStyle(terminalInput).height
                 alert('height: '+height)
-                height = height-'px'
+                pixels = height.replace('px','')
+                alert('pixels: '+pixels)
+                height = (pixels + 18)+'px'
                 alert('height: '+height)
-                var newHeight = +height + 18
-                alert('newHeight: '+newHeight)
-                terminalInput.style.height = newHeight+'px'
+                terminalInput.style.height = height
                 alert('height: '+height)
 
             }
