@@ -34,7 +34,7 @@ storage.textContent = Object.keys(localStorage)
 //KEY LISTENER
 document.addEventListener('keydown', function (event) {
     console.log('Key: \"' + event.key + '\"');
-    if (document.activeElement === terminalInput) {
+    if (document.activeElement === terminalInput) { // detect Enter / shift+Enter in terminalInput
         if (event.key === "Enter") {
             if (!event.shiftKey) {
                 alert('enter in terminal')
