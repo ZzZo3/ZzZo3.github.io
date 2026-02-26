@@ -127,6 +127,7 @@ html, body {
     background-attachment: local;
     border: 1px solid white;
     border-radius: 5px;
+    overflow-y: scroll;
 }
 .terminal >* {
     width: 96%-64px;
