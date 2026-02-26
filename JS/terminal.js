@@ -30,7 +30,7 @@ function terminalParse() {
     command = text.split('\n').map((line)=>line.split(' '))
     command.forEach((line)=>{
         line.forEach((word)=>{
-            alert(word)
+            
         })
     })
     console.log('TERMINAL: parsed')
