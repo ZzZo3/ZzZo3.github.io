@@ -26,6 +26,7 @@ function terminalParse() {
     var text = terminalInput.value
     console.log(text)
     terminalInput.value = ''
+    terminalInput.style.height = '18px'
     command = text.split('\n').map((line)=>line.split(' '))
     command.forEach((line)=>{
         line.forEach((word)=>{
