@@ -133,7 +133,7 @@ html, body {
     border-radius: 5px;
     overflow-y: scroll;
 }
-.terminal >* {
+.terminal >* { 
     display: block;
     margin: none;
     padding: none;
