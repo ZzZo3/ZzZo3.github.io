@@ -22,10 +22,14 @@ terminalInput.addEventListener('input', ()=>{
 });
 
 function terminalParse() {
-    alert('terminal parse called')
     console.log('TERMINAL: parsing')
     var text = terminalInput.value
-    command = text.split('\n').map((line)=>line.split(' '))
     terminalInput.value = ''
+    command = text.split('\n').map((line)=>line.split(' '))
+    command.forEach((line)=>{
+        line.forEach((word)=>{
+            alert(word)
+        })
+    })
     console.log('TERMINAL: parsed')
 }
