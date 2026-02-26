@@ -153,8 +153,5 @@ html, body {
     margin: none;
 }
 #terminalInput {
-    flex-grow: 1;
-    white-space: pre;
-    overflow-y: hidden;
-    overflow-x: visible;
+    overflow: hidden;
 }
