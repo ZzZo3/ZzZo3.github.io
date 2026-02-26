@@ -136,6 +136,7 @@ html, body {
 }
 .terminal >* {
     margin: none;
+    padding: none;
     background: none;
     resize: none;
     box-sizing: border-box;
@@ -150,12 +151,12 @@ html, body {
     outline: none;
 }
 #terminalInput {
-    padding-top: 18px;
+    margin-top: 18px;
     flex-grow: 1;
     white-space: pre;
     overflow-y: hidden;
     overflow-x: visible;
 }
 #terminalOutput {
-    padding: none;
+    margin: none;
 }
