@@ -563,5 +563,9 @@ TERMINALCOMMANDS.push(
 {name:'simplify', execute:(line)=>{
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
+}},
+{name:'erase', execute:(line)=>{
+    input.value = ''
+    output.textContent = ''
 }}
 )
