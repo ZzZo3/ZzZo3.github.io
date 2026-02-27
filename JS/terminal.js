@@ -70,14 +70,14 @@ function terminalRead() {
         var validCommand = false
         terminalInput.value = ''
         terminalInput.style.height = '18px'
-        command = text.split('\n').map((line)=>line.split(' '))
-        command.forEach((line)=>{
+        text = text.split('\n').map((line)=>line.split(' '))
+        text.forEach((line)=>{
             TERMINALCOMMANDS.forEach((COMMAND)=>{
                 if (COMMAND.name == line[0]) {
+                    validCommand = true
                     console.log('TERMINAL: '+line) //log
                     terminalWrite(line.join(' '))
                     COMMAND.execute(line)
-                    validCommand = true
                 }
             })
             if (!validCommand) {
