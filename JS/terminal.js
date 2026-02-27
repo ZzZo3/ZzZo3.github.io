@@ -62,9 +62,9 @@ function terminalRead() {
         previousCommands.push(terminalInput.value)
         previousCommandsNav = 0
         if (previousCommandToRemove != 0) {
-            previousCommand.splice(previousCommandToRemove,1)
+            previousCommands = previousCommand.splice(previousCommandToRemove,1)
         }
-        previousCommands.filter((value)=>value != '')
+        previousCommands = previousCommands.filter((value)=>value != '')
         var text = terminalInput.value
         var validCommand = false
         terminalInput.value = ''
