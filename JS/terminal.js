@@ -85,11 +85,11 @@ function terminalRead() {
             if (!validCommand) {
                 terminalWrite('ERROR: unknown command: '+line[0])
             }
+            terminal.scrollIntoView({
+                behavior: 'smooth',
+                block: 'end'
+            });
         })
-        terminal.scrollIntoView({
-            behavior: 'smooth',
-            block: 'end'
-        });
         console.log('TERMINAL: parsed') //log
     }
 }
