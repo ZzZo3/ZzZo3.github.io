@@ -88,7 +88,7 @@ function terminalRead() {
             terminal.scrollIntoView({
                 behavior: 'smooth',
                 block: 'end'
-            });
+            })
         })
         console.log('TERMINAL: parsed') //log
     }
