@@ -52,17 +52,15 @@ terminalInput.addEventListener('input', ()=>{
 function terminalRead() {
     previousCommands.push(terminalInput.value)
     if (terminalInput.value != '') {
-        console.log('TERMINAL: parsing') //log
         var text = terminalInput.value
         var validCommand = false
-        console.log(text) //log
         terminalInput.value = ''
         terminalInput.style.height = '18px'
         command = text.split('\n').map((line)=>line.split(' '))
         command.forEach((line)=>{
             TERMINALCOMMANDS.forEach((COMMAND)=>{
                 if (COMMAND.name == line[0]) {
-                    console.log('TERMINAL: '+COMMAND.name+': '+line) //log
+                    console.log('TERMINAL: '+line) //log
                     terminalWrite(line.join(' '))
                     COMMAND.execute(line)
                     validCommand = true
