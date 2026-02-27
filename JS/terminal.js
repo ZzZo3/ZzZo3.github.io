@@ -120,7 +120,7 @@ class TerminalCMND {
             return
         }
         for (let i=0; i < this.args.length; i++) {
-            if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line[i]=='-' || this.args[i].takes==[]) {
+            if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line[i]=='-' || this.args[i].takes.length==0) {
                 vettedArgs.push(line[i])
                 validArgs++
             } else if (this.args[i].isOptional) {
