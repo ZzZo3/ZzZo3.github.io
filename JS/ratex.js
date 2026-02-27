@@ -536,7 +536,7 @@ function loadFunc() {
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-TerminalCMND('slash', ['direction:(ex,cd)'], (line)=>{
+new TerminalCMND('slash', ['direction:(ex,cd)'], (line)=>{ // SLASH
     let direction = line[1]
     if (line[1]=='ex') {
         backslashFunc('expand')
@@ -546,7 +546,7 @@ TerminalCMND('slash', ['direction:(ex,cd)'], (line)=>{
         terminalWrite('>  condensed slashes')
     }
 }),
-TerminalCMND('pull', ['from:any'], (line)=>{
+new TerminalCMND('pull', ['from:any'], (line)=>{ // PULL
     if (line[1] != '') {
         if(Object.keys(localStorage).includes(line[1])) {
             confirmPullDataFunc(line[1])
@@ -556,7 +556,7 @@ TerminalCMND('pull', ['from:any'], (line)=>{
         }
     }
 }),
-TerminalCMND('push', ['to:any'], (line)=>{
+new TerminalCMND('push', ['to:any'], (line)=>{ // PUSH
     if (line[1] == 'RF+') {
         terminalWrite('>  cannot write to RF+')
     } else if (line[1] != '') {
@@ -564,20 +564,20 @@ TerminalCMND('push', ['to:any'], (line)=>{
         terminalWrite('>  wrote to document: '+line[1])
     }
 }),
-TerminalCMND('list', ['none'], (line)=>{
+new TerminalCMND('list', ['none'], (line)=>{ // LIST
     terminalWrite('>  saved documents: '+Object.keys(localStorage))
 }),
-TerminalCMND('simplify', ['none'], (line)=>{
+new TerminalCMND('simplify', ['none'], (line)=>{ // SIMPLIFY
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
     terminalWrite('>  simplified document')
 }),
-TerminalCMND('erase', ['none'], (line)=>{
+new TerminalCMND('erase', ['none'], (line)=>{ // ERASE
     input.value = ''
     output.textContent = ''
     terminalWrite('>  cleared document')
 }),
-TerminalCMND('clear', ['none'], (line)=>{
+new TerminalCMND('clear', ['none'], (line)=>{ // CLEAR
     localStorage.clear()
     setRF()
     terminalWrite('>  cleared saved documents')
