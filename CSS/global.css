@@ -164,4 +164,5 @@ html, body {
     overflow-y: hidden;
     overflow-x: visible;
     height: 180px;
+    background-color: blue;
 }
