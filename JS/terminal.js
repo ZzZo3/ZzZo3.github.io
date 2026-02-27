@@ -53,7 +53,7 @@ class terminalCommand {
 }
 
 // COMMANDS
-const terminalHelp = new terminalCommand('help',[],()=>{
+const terminalHelp = { name:'help', args:[], execute:()=>{
     console.log('terminal help command called')
-})
+} }
 const TERMINALCOMMANDS = [terminalHelp]
