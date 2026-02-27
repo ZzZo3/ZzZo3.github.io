@@ -4,7 +4,7 @@ const terminalInput = document.getElementById('terminalInput')
 const terminalOutput = document.getElementById('terminalOutput')
 //
 var previousCommands = []
-var previousCommandsNav = 0
+var previousCommandsNav = 1
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
@@ -54,6 +54,7 @@ terminalInput.addEventListener('input', ()=>{
 function terminalRead() {
     if (terminalInput.value != '') {
         previousCommands.push(terminalInput.value)
+        var previousCommandsNav = 0
         var text = terminalInput.value
         var validCommand = false
         terminalInput.value = ''
