@@ -105,13 +105,13 @@ class TerminalCMND {
         this.does = does // (line)=>{} after vetting parameters
     }
     execute(text) {
-        if (typeof text != 'string') {
+        if (typeof text[0] != 'string') {
             terminalWrite('>  failed to parse')
             console.log('terminal failed to parse text as string')
             console.log(text)
             return
         }
-        let line = text.split(' ').shift()
+        let line = text.shift() // removes command name from line[]
         var validArgs = 1
         var vettedArgs = []
         if (line.length != args.length) { // check # args
