@@ -220,7 +220,7 @@ var terminalHelp = new TerminalCMND(['help'],
 
 var TERMINALCOMMANDS = [terminalHelp,terminalEcho,
 new TerminalCMND(['list','ls'], // LIST
-    [new TerminalARG('type',['local','l','session','s']),false],
+    [new TerminalARG('type',['local','l','session','s'],false)],
 (argList)=>{
     if (argList[0]=='local' || argList[0]=='l') {
         terminalWrite('>  localStorage: '+Object.keys(localStorage))
