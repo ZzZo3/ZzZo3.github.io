@@ -16,22 +16,22 @@ document.addEventListener('keydown', (event)=>{
             }
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
-            console.log(previousCommands)
-            console.log(previousCommandsNav)
             if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
-                if (previousCommandsNav == 1) {
+                if (previousCommands[previousCommands.length] != terminalInput.value) {
                     previousCommands.push(terminalInput.value)
                 }
                 previousCommandsNav += 1
                 terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
+                console.log(previousCommands)
+                console.log(previousCommandsNav)
             }
         } else if (event.key === "ArrowDown") {
             event.preventDefault()
-            console.log(previousCommands)
-            console.log(previousCommandsNav)
             if (previousCommands.length > 0 && previousCommandsNav > 0) {
                 previousCommandsNav -= 1
                 terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
+                console.log(previousCommands)
+                console.log(previousCommandsNav)
             }
         }
     }
