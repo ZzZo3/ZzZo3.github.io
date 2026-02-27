@@ -1,5 +1,5 @@
 //BASE
-const vNum = '0.8.a'
+const vNum = '0.8.b'
 const pageTitle = document.getElementsByClassName('pageTitle')
 //WRITING
 const input = document.getElementById('input')
@@ -547,8 +547,12 @@ TERMINALCOMMANDS.push(
 }},
 {name:'pull', execute:(line)=>{
     if (line[1] != '') {
-        confirmPullDataFunc(line[1])
-        terminalWrite('>  pulled from '+line[1])
+        if(Object.keys(localStorage).includes(line[1])) {
+            confirmPullDataFunc(line[1])
+            terminalWrite('>  pulled from document: '+line[1])
+        } else {
+            terminalWrite('>  could not find document: '+line[1])
+        }
     }
 }},
 {name:'push', execute:(line)=>{
@@ -556,7 +560,7 @@ TERMINALCOMMANDS.push(
         terminalWrite('>  cannot write to RF+')
     } else if (line[1] != '') {
         confirmSaveAsFunc(line[1])
-        terminalWrite('>  wrote to '+line[1])
+        terminalWrite('>  wrote to document: '+line[1])
     }
 }},
 {name:'list', execute:(line)=>{
