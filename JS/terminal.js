@@ -18,7 +18,11 @@ document.addEventListener('keydown', (event)=>{
             event.preventDefault()
             if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
                 if (previousCommands[previousCommands.length - 1] != terminalInput.value && previousCommandsNav==0) {
-                    previousCommands.push(terminalInput.value)
+                    if (terminalInput.value=='') {
+                        previousCommands.push('')
+                    } else {
+                        previousCommands.push(terminalInput.value)
+                    }
                 }
                 previousCommandsNav += 1
                 terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
