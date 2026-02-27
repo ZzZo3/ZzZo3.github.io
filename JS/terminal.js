@@ -101,7 +101,7 @@ function terminalWrite(text) {
 
 // COMMANDS
 
-const TERMINALCOMMANDS = [
+var TERMINALCOMMANDS = [
 { name:'help', execute:(line)=>{
     terminalWrite('help called')
 } }
