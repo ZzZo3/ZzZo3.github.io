@@ -103,7 +103,6 @@ class TerminalCMND {
         this.does = does // (line)=>{} after vetting parameters
     }
     execute(text) {
-        console.log(this.args)
         if (typeof text[0] != 'string') {
             terminalWrite('>  failed to parse')
             console.log('terminal failed to parse text as string')
@@ -115,6 +114,8 @@ class TerminalCMND {
         var vettedArgs = []
         if (line.length != this.args.length) { // check # args
             terminalWrite('wrong num of args')
+            console.log(this.args)
+            console.log(line)
             return
         }
         for (let i=0; i < this.args.length; i++) {
