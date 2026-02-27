@@ -88,15 +88,15 @@ function terminalRead() {
         })
         console.log('TERMINAL: parsed') //log
     }
-    terminal.scrollIntoView({
-        behavior: 'smooth',
-        block: 'end'
-    })
 }
 function terminalWrite(text) {
     console.log('terminal write: '+text)
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
     terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
+    terminal.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end'
+    })
 }
 
 // COMMANDS
