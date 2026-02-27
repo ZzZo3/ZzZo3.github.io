@@ -132,11 +132,10 @@ class TerminalCMND {
         for (let i=0; i < this.args.length; i++) {
             if (line.length < i+1 && this.args[i].isOptional) {
                 vettedArgs.push('-')
-            }
-            if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line[i]=='-' || this.args[i].takes.length==0) {
+            } else if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line[i]=='-' || this.args[i].takes.length==0) {
                 vettedArgs.push(line[i])
                 validArgs++
-            } else if (this.args[i].isOptional || this.args[i].isOptional && line[i]==) {
+            } else if (this.args[i].isOptional || this.args[i].isOptional) {
                 terminalWrite('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
             } else {
                 terminalWrite('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line[i])
