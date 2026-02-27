@@ -525,3 +525,41 @@ function loadFunc() {
     console.log('   \"loadFunc()\" finished')
 }
 
+// TERMINAL COMMANDS
+
+TERMINALCOMMANDS.push(
+{name:'backslash', execute:(argList)=>{
+    let direction = argList[0]
+    if (direction=='condense') {
+        console.log('\\\\ -> \\')
+        let text = input.value
+        text = removeExtraBacks(text)
+        input.value = text
+        output.textContent = translate(input.value,false)
+    } else if (direction=='expand') {
+        console.log('\\ -> \\\\')
+        let text = input.value
+        let changed = 0
+        text = removeExtraBacks(text)
+        text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
+        text = text.map((line, num)=>{
+            let indexedSlashes = []
+            line.forEach((char, index)=>{
+                if (char=='\\') {
+                    indexedSlashes.push(index)
+                }
+            })
+            indexedSlashes.forEach(index=>{
+                line[index] = '\\\\'
+                changed++
+            })
+            return line
+        })
+        if (changed > 0) {
+            console.log('   REDOUBLED '+changed+' BACKSLASHES')
+        }
+        input.value = text.map(k=>k.join('')).join('\n')
+        output.textContent = translate(input.value,false)
+    }
+    }}
+)
