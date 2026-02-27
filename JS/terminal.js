@@ -4,7 +4,7 @@ const terminalInput = document.getElementById('terminalInput')
 const terminalOutput = document.getElementById('terminalOutput')
 //
 var previousCommands = []
-var previousCommandsNav = 0
+var previousCommandsNav = 1
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
