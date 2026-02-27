@@ -44,3 +44,7 @@ class terminalCommand {
         this.does = function() {}
     }
 }
+
+const terminalHelp = new terminalCommand('help',[],()=>{
+    console.log('terminal help command called')
+})
