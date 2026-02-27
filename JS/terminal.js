@@ -88,6 +88,10 @@ function terminalRead() {
         })
         console.log('TERMINAL: parsed') //log
     }
+    terminal.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end'
+    })
 }
 function terminalWrite(text) {
     console.log('terminal write: '+text)
