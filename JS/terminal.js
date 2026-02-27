@@ -52,8 +52,8 @@ terminalInput.addEventListener('input', ()=>{
 })
 
 function terminalRead() {
-    previousCommands.push(terminalInput.value)
     if (terminalInput.value != '') {
+        previousCommands.push(terminalInput.value)
         var text = terminalInput.value
         var validCommand = false
         terminalInput.value = ''
@@ -77,6 +77,8 @@ function terminalRead() {
             block: 'end'
         });
         console.log('TERMINAL: parsed') //log
+    } else {
+        previousCommands.push('')
     }
 }
 function terminalWrite(text) {
