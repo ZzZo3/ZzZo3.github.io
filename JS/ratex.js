@@ -528,8 +528,8 @@ function loadFunc() {
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-{name:'backslash', execute:(argList)=>{
-    let direction = argList[1]
+{name:'backslash', execute:(line)=>{
+    let direction = line[1]
     if (direction=='condense') {
         console.log('\\\\ -> \\')
         let text = input.value

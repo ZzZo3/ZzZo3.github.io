@@ -33,7 +33,7 @@ function terminalParse() {
             TERMINALCOMMANDS.forEach((COMMAND)=>{
                 if (COMMAND.name == line[0]) {
                     console.log('TERMINAL: '+COMMAND.name+': '+line) //log
-                    COMMAND.execute(argList)
+                    COMMAND.execute(line)
                 }
             })
         })
@@ -45,7 +45,7 @@ function terminalParse() {
 // COMMANDS
 
 const TERMINALCOMMANDS = [
-{ name:'help', execute:(argList)=>{
+{ name:'help', execute:(line)=>{
     console.log('terminal help command called')
 } }
 ]
