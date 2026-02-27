@@ -59,8 +59,8 @@ terminalInput.addEventListener('input', ()=>{
 })
 
 function terminalRead() {
+    console.log(TERMINALCOMMANDS)
     if (terminalInput.value != '') {
-        alert(TERMINALCOMMANDS)
         previousCommands.push(terminalInput.value)
         previousCommandsNav = 0
         if (previousCommandToRemove != 0) {
