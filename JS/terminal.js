@@ -223,8 +223,12 @@ new TerminalCMND(['list','ls'], // LIST
     [new TerminalARG('type',['local','l','session','s'],false)],
 (argList)=>{
     if (argList[0]=='local' || argList[0]=='l') {
-        terminalWrite('>  localStorage: '+Object.keys(localStorage))
+        Object.keys(localStorage).forEach((datum)=>{
+        terminalWrite('>  '+datum)
+        })
     } else {
-        terminalWrite('>  sessionStorage: '+Object.keys(sessionStorage))
+        Object.keys(sessionStorage).forEach((datum)=>{
+        terminalWrite('>  '+datum)
+        })
     }
 }),]
