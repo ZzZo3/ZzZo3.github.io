@@ -4,7 +4,7 @@ const terminalInput = document.getElementById('terminalInput')
 const terminalOutput = document.getElementById('terminalOutput')
 //
 var previousCommands = []
-var previousCommandsNav = 1
+var previousCommandsNav = 0
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
@@ -22,16 +22,16 @@ document.addEventListener('keydown', (event)=>{
                 if (previousCommandsNav == 0) {
                     previousCommands.push(terminalInput.value)
                 }
-                terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
                 previousCommandsNav += 1
+                terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
             }
         } else if (event.key === "ArrowDown") {
             event.preventDefault()
             console.log(previousCommands)
             console.log(previousCommandsNav)
             if (previousCommands.length > 0 && previousCommandsNav > 0) {
-                terminalInput.value = previousCommands[previousCommands.length - 1]
                 previousCommandsNav -= 1
+                terminalInput.value = previousCommands[previousCommands.length - 1]
             }
         }
     }
