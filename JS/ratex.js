@@ -587,7 +587,7 @@ new TerminalCMND(['erase','er'], // ERASE
     } else if (argList[0]=='all') {
         localStorage.clear()
         setRF()
-        terminalWrite('>  cleared saved documents')
+        terminalWrite('>  cleared localStorage')
     } else if(Object.keys(localStorage).includes(argList[0])) {
         if(argList[0]=='RF+') {
             terminalWrite('>  cannot erase RF+')
