@@ -110,7 +110,7 @@ class TerminalCMND {
             return
         }
         line.shift() // removes command name from line[]
-        var validArgs = 1
+        var validArgs = 0
         var vettedArgs = []
         if (line.length != this.args.length) { // check # args
             terminalWrite('ERROR: incorrect argument count')
