@@ -30,6 +30,7 @@ function terminalRead() {
     if (terminalInput.value != '') {
         console.log('TERMINAL: parsing') //log
         var text = terminalInput.value
+        var validCommand = false
         console.log(text) //log
         terminalInput.value = ''
         terminalInput.style.height = '18px'
@@ -40,8 +41,12 @@ function terminalRead() {
                     console.log('TERMINAL: '+COMMAND.name+': '+line) //log
                     terminalWrite(line.join(' '))
                     COMMAND.execute(line)
+                    validCommand = true
                 }
             })
+            if (!validCommand) {
+                terminalOutput('ERROR: unknown command: '+line[0])
+            }
         })
         console.log('TERMINAL: parsed') //log
     }
