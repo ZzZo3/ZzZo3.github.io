@@ -107,8 +107,8 @@ class TERMINALCOMMAND {
     }
 }
 
-let newCommand = new TERMINALCOMMAND('short',['one','two','three'],(x)=>{x+1})
-let newCommand2 = new TERMINALCOMMAND('short',['one','two','three'])
+const newCommand = new TERMINALCOMMAND('short',['one','two','three'],(x)=>{x+1})
+const newCommand2 = new TERMINALCOMMAND('short',['one','two','three'])
 console.log(TERMINALCOMMAND)
 console.log(newCommand)
 console.log(newCommand2)
