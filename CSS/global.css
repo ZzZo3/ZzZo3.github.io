@@ -142,7 +142,6 @@ html, body {
     display: block;
     flex-grow: 1;
     margin: none;
-    padding: none;
     background: none;
     resize: none;
     box-sizing: border-box;
@@ -159,9 +158,13 @@ html, body {
     overflow-y: hidden;
     overflow-x: visible;
     white-space: pre-line;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 #terminalInput {
     overflow-y: hidden;
     overflow-x: visible;
     background-color: blue;
+    padding-right: 11px;
+    padding-left: 11px;
 }
