@@ -568,7 +568,7 @@ new TerminalCMND(['push'], // PUSH
         terminalWrite('>  cannot push to RF+')
     } else {
         localStorage.setItem(argList[0],input.value)
-        terminalWrite('>  cannot push to RF+')
+        terminalWrite('>  pushed to: \"'+argList[0]+'\"')
     }
 }),
 new TerminalCMND(['list','ls'],[], // LIST
