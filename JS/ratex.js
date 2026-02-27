@@ -535,7 +535,7 @@ function loadFunc() {
 
 // TERMINAL COMMANDS
 
-TERMINALCOMMANDS.push(
+/*TERMINALCOMMANDS.push(
 new TerminalCMND('slash', ['direction:(ex,cd)'], (line)=>{ // SLASH
     let direction = line[1]
     if (line[1]=='ex') {
@@ -591,4 +591,4 @@ new TerminalCMND('copy', ['element:(in,out)'], (line)=>{ // CLEAR
         terminalWrite('>  copied translated document to clipboard')
     }
 })
-)
+)*/
