@@ -1,7 +1,6 @@
 //BASE
 const terminalInput = document.getElementById('terminalInput')
 const terminalOutput = document.getElementById('terminalOutput')
-let terminal = {}
 
 
 //KEY LISTENER
@@ -10,7 +9,7 @@ document.addEventListener('keydown', (event)=>{
         if (event.key === "Enter") {
             if (!event.shiftKey) {
                 event.preventDefault()
-                terminal.read()
+                terminalRead()
             }
         }
     }
@@ -22,7 +21,7 @@ terminalInput.addEventListener('input', ()=>{
     terminalInput.style.height = (18 * text.length)+'px'
 });
 
-terminal.read() = ()=>{
+function terminalRead() {
     if (terminalInput.value != '') {
         console.log('TERMINAL: parsing') //log
         var text = terminalInput.value
@@ -34,7 +33,7 @@ terminal.read() = ()=>{
             TERMINALCOMMANDS.forEach((COMMAND)=>{
                 if (COMMAND.name == line[0]) {
                     console.log('TERMINAL: '+COMMAND.name+': '+line) //log
-                    terminal.write(line)
+                    terminalWrite(line)
                     COMMAND.execute(line)
                 }
             })
@@ -42,7 +41,7 @@ terminal.read() = ()=>{
         console.log('TERMINAL: parsed') //log
     }
 }
-terminal.write(text) = (text)=>{
+function terminalWrite(text) {
     terminalInput.style.height = (18 * terminalInput.value.split('\n').length)+'px'
     terminalOutput.value = terminalInput.value+'\n'+text
 }
