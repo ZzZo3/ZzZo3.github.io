@@ -162,8 +162,11 @@ html, body {
 #terminalInput {
     overflow-y: hidden;
     overflow-x: visible;
-    background-color: blue;
+    background-color: none;
     line-height: 16px;
     margin-right: 10px;
     margin-left: 10px;
+}
+#terminalInput:focus {
+    background-color: blue;
 }
