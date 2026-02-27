@@ -107,6 +107,8 @@ class TerminalCMND {
     execute(text) {
         if (typeof text != 'string') {
             terminalWrite('>  failed to parse')
+            console.log('terminal failed to parse text as string')
+            console.log(text)
             return
         }
         let line = text.split(' ').shift()
