@@ -219,7 +219,12 @@ var terminalHelp = new TerminalCMND(['help'],
 
 
 var TERMINALCOMMANDS = [terminalHelp,terminalEcho,
-new TerminalCMND(['list','ls'],[], // LIST
+new TerminalCMND(['list','ls'], // LIST
+    [new TerminalARG('type',['local','l','session','s']),false],
 (argList)=>{
-    terminalWrite('>  saved documents: '+Object.keys(localStorage))
+    if (argList[0]=='local' || argList[0]=='l') {
+        terminalWrite('>  localStorage: '+Object.keys(localStorage))
+    } else {
+        terminalWrite('>  sessionStorage: '+Object.keys(sessionStorage))
+    }
 }),]
