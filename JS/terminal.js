@@ -14,17 +14,23 @@ document.addEventListener('keydown', (event)=>{
                 event.preventDefault()
                 terminalRead()
             }
-        } else if (event.key === "ArrowUp" && previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
-            previousCommands.push(terminalInput.value)
-            terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
-            previousCommandsNav += 1
-            console.log(previousCommands)
-            console.log(previousCommandsNav)
-        } else if (event.key === "ArrowDown" && previousCommandsNav > 0) {
-            terminalInput.value = previousCommands[previousCommands.length - 1]
-            previousCommandsNav -= 1
-            console.log(previousCommands)
-            console.log(previousCommandsNav)
+        } else if (event.key === "ArrowUp") {
+            event.preventDefault()
+            if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
+                console.log(previousCommands)
+                console.log(previousCommandsNav)
+                previousCommands.push(terminalInput.value)
+                terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
+                previousCommandsNav += 1
+            }
+        } else if (event.key === "ArrowDown") {
+            event.preventDefault()
+            if (previousCommandsNav > 0) {
+                console.log(previousCommands)
+                console.log(previousCommandsNav)
+                terminalInput.value = previousCommands[previousCommands.length - 1]
+                previousCommandsNav -= 1
+            }
         }
     }
 });
