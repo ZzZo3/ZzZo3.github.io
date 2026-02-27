@@ -170,7 +170,7 @@ const terminalEcho = new TerminalCMND(['echo'],
 })
 
 var terminalHelp = new TerminalCMND(['help'],
-    [new TerminalARG('cmnd',[],false),
+    [new TerminalARG('cmnd',[],true),
     new TerminalARG('arg',[],true)],
 (argList)=>{
     let cmnd = argList[0]
