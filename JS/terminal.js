@@ -24,6 +24,10 @@ terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('\n')
     terminalInput.style.height = (18 * text.length)+'px'
+    terminal.scrollIntoView({
+    behavior: 'smooth',
+    block: 'end'
+});
 })
 
 function terminalRead() {
