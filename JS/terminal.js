@@ -31,7 +31,7 @@ document.addEventListener('keydown', (event)=>{
             console.log(previousCommandsNav)
             if (previousCommands.length > 0 && previousCommandsNav > 0) {
                 previousCommandsNav -= 1
-                terminalInput.value = previousCommands[previousCommands.length - 1]
+                terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
             }
         }
     }
