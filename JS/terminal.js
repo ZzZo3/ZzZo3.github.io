@@ -107,7 +107,7 @@ class TERMINALCOMMAND {
     }
 }
 
-terminalHelpCommand = new TERMINALCOMMAND
+const terminalHelpCommand = new TERMINALCOMMAND
 terminalHelpCommand.name = 'help'
 terminalHelpCommand.args = ['command']
 terminalHelpCommand.execute = (line)=>{
