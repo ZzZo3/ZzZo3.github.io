@@ -536,7 +536,7 @@ function loadFunc() {
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-new TerminalCMND(['slash','bs'],
+new TerminalCMND(['backslash','bs'], // BACKSLASH
     [new TerminalARG('dirn',['ex','cd'],false)],
 (argList)=>{
     if (argList[0]=='ex') {
@@ -547,7 +547,7 @@ new TerminalCMND(['slash','bs'],
         terminalWrite('>  condensed slashes')
     }
 }),
-new TerminalCMND(['pull'],
+new TerminalCMND(['pull'], // PULL
     [new TerminalARG('from',[],false)],
 (argList)=>{
     if(Object.keys(localStorage).includes(argList[0])) {
@@ -556,50 +556,47 @@ new TerminalCMND(['pull'],
     } else {
         terminalWrite('>  could not find document: '+argList[0])
     }
-}),/*,
-new TerminalCMND('pull', ['from:any'], (line)=>{ // PULL
-    if (line[1] != '') {
-        if(Object.keys(localStorage).includes(line[1])) {
-            confirmPullDataFunc(line[1])
-            terminalWrite('>  pulled from document: '+line[1])
-        } else {
-            terminalWrite('>  could not find document: '+line[1])
-        }
+}),
+new TerminalCMND(['push'], // PUSH
+    [new TerminalARG('to',[],false)],
+(argList)=>{
+    if(argList[0]=='RF+') {
+        terminalWrite('>  cannt push to RF+')
+    } else {
+        confirmSaveAsFunc(argList[0])
     }
 }),
-new TerminalCMND('push', ['to:any'], (line)=>{ // PUSH
-    if (line[1] == 'RF+') {
-        terminalWrite('>  cannot write to RF+')
-    } else if (line[1] != '') {
-        confirmSaveAsFunc(line[1])
-        terminalWrite('>  wrote to document: '+line[1])
-    }
-}),
-new TerminalCMND('list', ['none'], (line)=>{ // LIST
+new TerminalCMND(['list','ls'],[], // LIST
+(argList)=>{
     terminalWrite('>  saved documents: '+Object.keys(localStorage))
 }),
-new TerminalCMND('simplify', ['none'], (line)=>{ // SIMPLIFY
+new TerminalCMND(['simplify','smpf'],[], // SIMPLIFY
+(argList)=>{
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
     terminalWrite('>  simplified document')
 }),
-new TerminalCMND('erase', ['none'], (line)=>{ // ERASE
+new TerminalCMND(['erase','er'],[], // ERASE
+(argList)=>{
     input.value = ''
     output.textContent = ''
-    terminalWrite('>  cleared document')
+    terminalWrite('>  erased document')
 }),
-new TerminalCMND('clear', ['none'], (line)=>{ // CLEAR
+new TerminalCMND(['clear'],[], // CLEAR
+(argList)=>{
     localStorage.clear()
     setRF()
     terminalWrite('>  cleared saved documents')
 }),
-new TerminalCMND('copy', ['element:(in,out)'], (line)=>{ // CLEAR
-    if (line[1]=='in') {
+new TerminalCMND(['copy'], // COPY
+    [new TerminalARG('from',['in','out'])],
+(argList)=>{
+    if (argList[0]=='in') {
         navigator.clipboard.writeText(input.value)
         terminalWrite('>  copied raw document to clipboard')
-    } else if (line[1]=='out') {
+    } else if (argList[0]=='out') {
         navigator.clipboard.writeText(output.textContent)
         terminalWrite('>  copied translated document to clipboard')
     }
 })
-*/)
+)
