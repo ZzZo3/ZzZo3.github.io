@@ -17,7 +17,7 @@ document.addEventListener('keydown', (event)=>{
             }
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
-            if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length-1) {
+            if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
                 if (previousCommands[previousCommands.length - 1] != terminalInput.value && previousCommandsNav==0) {
                     if (terminalInput.value=='') {
                         previousCommands.push('')
@@ -27,6 +27,9 @@ document.addEventListener('keydown', (event)=>{
                     }
                 }
                 previousCommandsNav += 1
+                if (previousCommandsNav==previousCommands.length) {
+                    previousCommandsNav -= 1
+                }
                 terminalInput.value = previousCommands[previousCommands.length - 1 - previousCommandsNav]
                 console.log(previousCommands)
                 console.log(previousCommandsNav)
