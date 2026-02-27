@@ -60,6 +60,7 @@ terminalInput.addEventListener('input', ()=>{
 
 function terminalRead() {
     if (terminalInput.value != '') {
+        alert(TERMINALCOMMANDS)
         previousCommands.push(terminalInput.value)
         previousCommandsNav = 0
         if (previousCommandToRemove != 0) {
@@ -72,9 +73,7 @@ function terminalRead() {
         terminalInput.style.height = '18px'
         text = text.split('\n').map((line)=>line.split(' '))
         text.forEach((line)=>{
-                alert(line[0])
             TERMINALCOMMANDS.forEach((COMMAND)=>{
-                alert(COMMAND.name)
                 if (COMMAND.name == line[0]) {
                     validCommand = true
                     console.log('TERMINAL: '+line) //log
