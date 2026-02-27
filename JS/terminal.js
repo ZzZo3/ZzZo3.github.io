@@ -133,7 +133,7 @@ class TerminalARG {
     }
 }
 
-const echo = new TerminalCMND('echo',
+const terminalEcho = new TerminalCMND('echo',
     [new TerminalARG('package',[],false),
     new TerminalARG('to',[],true),
     new TerminalARG('append',['+','force'],true)],
@@ -211,4 +211,4 @@ var terminalHelp = new TerminalCMND('help',['command'],
     }
 })
 */
-var TERMINALCOMMANDS = [terminalHelp]
+var TERMINALCOMMANDS = [terminalHelp,terminalEcho]
