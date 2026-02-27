@@ -18,7 +18,11 @@ document.addEventListener('keydown', (event)=>{
 terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('\n')
-    terminalInput.style.height = (18 * text.length + 18)+'px'
+    var k = 0
+    if (144 > 18 * text.length) {
+        k = 144 - 18 * text.length
+    }
+    terminalInput.style.height = (18 * text.length + k)+'px'
 });
 
 function terminalRead() {
@@ -27,7 +31,7 @@ function terminalRead() {
         var text = terminalInput.value
         console.log(text) //log
         terminalInput.value = ''
-        terminalInput.style.height = '180px'
+        terminalInput.style.height = '144px'
         command = text.split('\n').map((line)=>line.split(' '))
         command.forEach((line)=>{
             TERMINALCOMMANDS.forEach((COMMAND)=>{
