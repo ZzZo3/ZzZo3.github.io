@@ -36,7 +36,8 @@ function terminalParse() {
                 console.log('checking match to: '+COMMAND.name) //log
                 if (COMMAND.name == line[0]) {
                     console.log('command detected: '+COMMAND.name) //log
-                    COMMAND.execute()
+                    let argList = line.splice(0, 1)
+                    COMMAND.execute(argList)
                 }
             })
         })
@@ -48,7 +49,7 @@ function terminalParse() {
 // COMMANDS
 
 const TERMINALCOMMANDS = [
-{ name:'help', args:[], execute:()=>{
+{ name:'help', execute:(argList)=>{
     console.log('terminal help command called')
 } }
 ]
