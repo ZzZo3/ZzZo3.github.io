@@ -125,7 +125,7 @@ html, body {
     width: 96%;
     height: 180px;
     margin-top: 1%;
-    margin-top: 1%+32px;
+    margin-left: 2%;
     padding-left: 1%;
     padding-right: 1%;
     resize: none;
@@ -146,7 +146,7 @@ html, body {
     resize: none;
     box-sizing: border-box;
     height: 18px;
-    width: 96%+64px;
+    width: 96%;
     field-sizing: 16px;
     line-height: 18px;
     font-family:'Courier New', Courier, monospace;
