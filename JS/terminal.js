@@ -17,9 +17,7 @@ document.addEventListener('keydown', (event)=>{
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
             if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
-                if (previousCommands[previousCommands.length - 1] != terminalInput.value) {
-                    previousCommands.push(terminalInput.value)
-                }
+                
                 previousCommandsNav += 1
                 terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
                 console.log(previousCommands)
