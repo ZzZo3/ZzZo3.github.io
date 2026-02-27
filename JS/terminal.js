@@ -99,10 +99,10 @@ function terminalWrite(text) {
 // COMMANDS
 
 class TerminalCMND {
-    constructor(namei,argsi,doesi) {
-        var name = namei // [String]
-        var args = argsi // [TerminalARG(name,takes,isOptional)]
-        var does = doesi // (line)=>{} after vetting parameters
+    constructor(name,args,does) {
+        this.name = name // [String]
+        this.args = args // [TerminalARG(name,takes,isOptional)]
+        this.does = does // (line)=>{} after vetting parameters
     }
     execute(text) {
         let line = text.split(' ').shift()
@@ -127,10 +127,10 @@ class TerminalCMND {
     }
 }
 class TerminalARG {
-    constructor(namei,takesi,isOptionali) {
-        var name = namei // String
-        var takes = takesi // [String]
-        var isOptional = isOptionali // Bool
+    constructor(name,takes,isOptional) {
+        this.name = name // String
+        this.takes = takes // [String]
+        this.isOptional = isOptional // Bool
     }
 }
 
