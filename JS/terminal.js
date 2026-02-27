@@ -103,6 +103,6 @@ function terminalWrite(text) {
 
 const TERMINALCOMMANDS = [
 { name:'help', execute:(line)=>{
-    console.log('terminal help command called')
+    terminalWrite('help called')
 } }
 ]
