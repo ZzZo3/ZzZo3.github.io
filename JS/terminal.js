@@ -84,6 +84,7 @@ function terminalRead() {
                 terminalWrite('ERROR: unknown command: '+line[0])
             }
         })
+        terminalInput.focus()
         console.log('TERMINAL: parsed') //log
     }
 }
@@ -91,10 +92,7 @@ function terminalWrite(text) {
     console.log('terminal write: '+text)
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
     terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
-    terminal.scrollIntoView({
-        behavior: 'smooth',
-        block: 'end'
-    })
+    terminalInput.focus()
 }
 
 // COMMANDS
