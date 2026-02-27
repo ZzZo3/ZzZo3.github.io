@@ -32,7 +32,7 @@ function terminalParse() {
     command.forEach((line)=>{
         TERMINALCOMMANDS.forEach((COMMAND)=>{
             if (COMMAND.name === line[0]) {
-                COMMAND.execute
+                COMMAND.execute()
             }
         })
     })
