@@ -502,10 +502,12 @@ function loadFunc() {
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-{name:'backslash', execute:(line)=>{
+{name:'bs', execute:(line)=>{
     let direction = line[1]
-    if (line[1]=='expand' || line[1]=='condense') {
-        backslashFunc(line[1])
+    if (line[1]=='-ex') {
+        backslashFunc('expand')
+    } else if (line[1]=='-cd') {
+        backslashFunc('condense')
     }
     }}
 )
