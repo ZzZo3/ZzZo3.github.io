@@ -163,6 +163,6 @@ html, body {
 #terminalInput {
     overflow-y: hidden;
     overflow-x: visible;
-    height: 144px;
+    height: 54px;
     background-color: blue;
 }

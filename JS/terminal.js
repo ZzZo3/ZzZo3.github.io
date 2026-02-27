@@ -19,8 +19,8 @@ terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('\n')
     var k = 0
-    if (144 > 18 * text.length) {
-        k = 144 - 18 * text.length
+    if (54 > 18 * text.length) {
+        k = 54 - 18 * text.length
     }
     terminalInput.style.height = (18 * text.length + k)+'px'
 });
@@ -31,7 +31,7 @@ function terminalRead() {
         var text = terminalInput.value
         console.log(text) //log
         terminalInput.value = ''
-        terminalInput.style.height = '144px'
+        terminalInput.style.height = '54px'
         command = text.split('\n').map((line)=>line.split(' '))
         command.forEach((line)=>{
             TERMINALCOMMANDS.forEach((COMMAND)=>{
