@@ -31,16 +31,14 @@ document.addEventListener('keydown', (event)=>{
                     previousCommandsNav -= 1
                 }
                 terminalInput.value = previousCommands[previousCommands.length - 1 - previousCommandsNav]
-                console.log(previousCommands)
-                console.log(previousCommandsNav)
+                terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
             }
         } else if (event.key === "ArrowDown") {
             event.preventDefault()
             if (previousCommands.length > 0 && previousCommandsNav > 0) {
                 previousCommandsNav -= 1
                 terminalInput.value = previousCommands[previousCommands.length - 1 - previousCommandsNav]
-                console.log(previousCommands)
-                console.log(previousCommandsNav)
+                terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
             }
         }
     }
