@@ -118,18 +118,18 @@ class TerminalCMND {
             terminalWrite('wrong num of args')
             return
         }
-        for (let i=0; i < args.length; i++) {
-            if (arg[i].takes.includes(line[i]) || arg[i].isOptional && line[i]=='-' || args[i].takes==[]) {
+        for (let i=0; i < this.args.length; i++) {
+            if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line[i]=='-' || this.args[i].takes==[]) {
                 vettedArgs.push(line[i])
                 validArgs++
-            } else if (arg[i].isOptional) {
-                terminalWrite('ERROR: optional arg \"'+arg[i].name+'\" ')
+            } else if (this.args[i].isOptional) {
+                terminalWrite('ERROR: optional arg \"'+this.args[i].name+'\" ')
             } else {
-                terminalWrite('ERROR: compulsory arg \"'+arg[i].name+'\" does not take: '+line[i])
-                terminalWrite('>  \'help '+arg[i].name+'\' for a detailed description.')
+                terminalWrite('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line[i])
+                terminalWrite('>  \'help '+this.args[i].name+'\' for a detailed description.')
             }
         }
-        if (validArgs==args.length) {this.does(vettedArgs)}
+        if (validArgs==this.args.length) {this.does(vettedArgs)}
     }
 }
 class TerminalARG {
