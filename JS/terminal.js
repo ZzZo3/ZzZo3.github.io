@@ -5,6 +5,7 @@ const terminalOutput = document.getElementById('terminalOutput')
 //
 var previousCommands = []
 var previousCommandsNav = 0
+var previousCommandToRemove = 0
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
@@ -22,6 +23,7 @@ document.addEventListener('keydown', (event)=>{
                         previousCommands.push('')
                     } else {
                         previousCommands.push(terminalInput.value)
+                        previousCommandToRemove = previousCommands.length - 1
                     }
                 }
                 previousCommandsNav += 1
@@ -58,7 +60,9 @@ terminalInput.addEventListener('input', ()=>{
 function terminalRead() {
     if (terminalInput.value != '') {
         previousCommands.push(terminalInput.value)
-        var previousCommandsNav = 0
+        previousCommandsNav = 0
+        previousCommand.splice(previousCommandToRemove,1)
+        previousCommands.filter((value)=>value != '')
         var text = terminalInput.value
         var validCommand = false
         terminalInput.value = ''
