@@ -5,12 +5,10 @@ const terminalOutput = document.getElementById('terminalOutput')
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
-    console.log('Key: \"' + event.key + '\"');
     if (document.activeElement === terminalInput) { // detect Enter / shift+Enter in terminalInput
         if (event.key === "Enter") {
             if (!event.shiftKey) {
                 event.preventDefault()
-                console.log('terminal enter')
                 terminalParse()
             }
         }
