@@ -27,7 +27,7 @@ function terminalRead() {
         var text = terminalInput.value
         console.log(text) //log
         terminalInput.value = ''
-        terminalInput.style.height = '36px'
+        terminalInput.style.height = '180px'
         command = text.split('\n').map((line)=>line.split(' '))
         command.forEach((line)=>{
             TERMINALCOMMANDS.forEach((COMMAND)=>{
