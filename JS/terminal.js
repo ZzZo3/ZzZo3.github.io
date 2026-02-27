@@ -218,7 +218,7 @@ var terminalHelp = new TerminalCMND(['help'],
 )
 
 
-var TERMINALCOMMANDS = [terminalHelp,terminalEcho
+var TERMINALCOMMANDS = [terminalHelp,terminalEcho,
 new TerminalCMND(['list','ls'],[], // LIST
 (argList)=>{
     terminalWrite('>  saved documents: '+Object.keys(localStorage))
