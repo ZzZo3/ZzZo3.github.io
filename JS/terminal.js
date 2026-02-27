@@ -114,6 +114,7 @@ class TerminalCMND {
         var vettedArgs = []
         if (line.length != this.args.length) { // check # args
             terminalWrite('ERROR: incorrect argument count')
+            console.log('terminal incorrect argument count')
             console.log(this.args)
             console.log(line)
             return
