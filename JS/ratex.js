@@ -529,6 +529,8 @@ function loadFunc() {
 
 TERMINALCOMMANDS.push(
 {name:'backslash', execute:(argList)=>{
+    console.log('terminal backslash command called')
+    /*
     let direction = argList[0]
     if (direction=='condense') {
         console.log('\\\\ -> \\')
@@ -560,6 +562,6 @@ TERMINALCOMMANDS.push(
         }
         input.value = text.map(k=>k.join('')).join('\n')
         output.textContent = translate(input.value,false)
-    }
+    }*/
     }}
 )
