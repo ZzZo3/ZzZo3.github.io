@@ -1,5 +1,5 @@
 //BASE
-const vNum = '0.8.c'
+const vNum = '0.8.d'
 const pageTitle = document.getElementsByClassName('pageTitle')
 //WRITING
 const input = document.getElementById('input')
@@ -581,5 +581,14 @@ new TerminalCMND('clear', ['none'], (line)=>{ // CLEAR
     localStorage.clear()
     setRF()
     terminalWrite('>  cleared saved documents')
+}),
+new TerminalCMND('copy', ['element:(in,out)'], (line)=>{ // CLEAR
+    if (line[1]=='in') {
+        navigator.clipboard.writeText(input.value)
+        terminalWrite('>  copied raw document to clipboard')
+    } else if (line[1]=='out') {
+        navigator.clipboard.writeText(output.textContent)
+        terminalWrite('>  copied translated document to clipboard')
+    }
 })
 )
