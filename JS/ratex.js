@@ -535,7 +535,7 @@ function loadFunc() {
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-{name:'slash', args:['direction:ex,cd'], execute:(line)=>{
+{name:'slash', args:['direction:(ex,cd)'], execute:(line)=>{
     let direction = line[1]
     if (line[1]=='ex') {
         backslashFunc('expand')

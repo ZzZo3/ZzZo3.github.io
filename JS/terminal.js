@@ -108,7 +108,7 @@ var TERMINALCOMMANDS = [
     } else {
         TERMINALCOMMANDS.forEach((c)=>{
             if (c.name==line[1]) {
-                terminalWrite(c.name+' '+c.args)
+                terminalWrite('> '+c.name+' '+c.args)
             }
         })
     }
