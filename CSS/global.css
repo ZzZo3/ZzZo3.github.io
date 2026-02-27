@@ -119,7 +119,7 @@ html, body {
     <textarea id="terminalInput" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
 </div>
 */
-.terminal{
+#terminal{
     display: block;
     flex-direction: column;
     justify-content: space-around;
@@ -136,7 +136,7 @@ html, body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.terminal >* {
+#terminal >* {
     display: block;
     flex-grow: 1;
     margin: none;

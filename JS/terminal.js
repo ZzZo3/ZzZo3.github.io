@@ -1,4 +1,5 @@
 //BASE
+const terminal = document.getElementById('terminal')
 const terminalInput = document.getElementById('terminalInput')
 const terminalOutput = document.getElementById('terminalOutput')
 
@@ -15,11 +16,15 @@ document.addEventListener('keydown', (event)=>{
     }
 });
 
+terminal.addEventListener('click', ()=>{
+    terminalInput.focus()
+})
+
 terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('\n')
     terminalInput.style.height = (18 * text.length - 2)+'px'
-});
+})
 
 function terminalRead() {
     if (terminalInput.value != '') {
