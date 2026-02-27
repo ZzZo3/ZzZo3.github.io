@@ -82,8 +82,6 @@ function terminalRead() {
             block: 'end'
         });
         console.log('TERMINAL: parsed') //log
-    } else {
-        previousCommands.push('')
     }
 }
 function terminalWrite(text) {
