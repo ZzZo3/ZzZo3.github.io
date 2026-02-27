@@ -23,22 +23,23 @@ terminalInput.addEventListener('input', ()=>{
 
 function terminalParse() {
     if (terminalInput.value != '') {
-        console.log('TERMINAL: parsing')
+        console.log('TERMINAL: parsing') //log
         var text = terminalInput.value
-        console.log(text)
+        console.log(text) //log
         terminalInput.value = ''
         terminalInput.style.height = '18px'
         command = text.split('\n').map((line)=>line.split(' '))
         command.forEach((line)=>{
-            console.log('parsing line')
+            console.log('line[0]: '+line[0]) //log
             TERMINALCOMMANDS.forEach((COMMAND)=>{
+                console.log('checking match to: '+COMMAND.name) //log
                 if (COMMAND.name == line[0]) {
-                    console.log('command detected: '+COMMAND.name)
+                    console.log('command detected: '+COMMAND.name) //log
                     COMMAND.execute()
                 }
             })
         })
-        console.log('TERMINAL: parsed')
+        console.log('TERMINAL: parsed') //log
     }
 }
 
