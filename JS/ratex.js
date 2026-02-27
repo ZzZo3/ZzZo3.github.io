@@ -553,7 +553,10 @@ TERMINALCOMMANDS.push(
     }
 }},
 {name:'push', execute:(line)=>{
-    if (line[1] != '') {
+    if (line[1] == 'RF+') {
+        terminalWrite('  cannot write to RF+')
+        confirmSaveAsFunc(line[1])
+    } else if (line[1] != '') {
         confirmSaveAsFunc(line[1])
     }
 }},
