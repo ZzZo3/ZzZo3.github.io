@@ -44,16 +44,11 @@ function terminalParse() {
     }
 }
 
-class terminalCommand {
-    constructor(name,args,does) {
-        this.name = ''
-        this.args = []
-        this.execute = function() {}
-    }
-}
 
 // COMMANDS
-const terminalHelp = new terminalCommand('help', [], ()=>{
+
+const TERMINALCOMMANDS = [
+{ name:'help', args:[], execute:()=>{
     console.log('terminal help command called')
-} )
-const TERMINALCOMMANDS = [terminalHelp]
+} }
+]
