@@ -199,7 +199,7 @@ var terminalHelp = new TerminalCMND(['help'],
         })
     } else if (param=='-') {
         TERMINALCOMMANDS.forEach((c)=>{
-            if (c.name==cmnd) {
+            if (c.name[0]==cmnd) {
                 terminalWrite('>  \"help '+cmnd+'\" [arg]')
                 terminalWrite('>  [arg]:')
                 if (c.args==[]) {
@@ -210,7 +210,11 @@ var terminalHelp = new TerminalCMND(['help'],
             }
         })
     } else if (argList.length==2) {
-        terminalWrite('ERROR: help: unknown')
+        TERMINALCOMMANDS.forEach((c)=>{
+            if (c.name[0]==cmnd) {
+                terminalWrite('>  param: '+param)
+            }
+        })
     } else {
         terminalWrite('ERROR: help: unknown')
     }
