@@ -575,5 +575,10 @@ TERMINALCOMMANDS.push(
     input.value = ''
     output.textContent = ''
     terminalWrite('>  cleared document')
+}},
+{name:'clear', execute:(line)=>{
+    localStorage.clear()
+    setRF()
+    terminalWrite('>  cleared saved documents')
 }}
 )
