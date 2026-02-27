@@ -558,6 +558,10 @@ TERMINALCOMMANDS.push(
     }
 }},
 {name:'list', execute:(line)=>{
-    terminalWrite(localStorage.keys)
+    terminalWrite(Object.keys(localStorage))
+}},
+{name:'simplify', execute:(line)=>{
+    input.value = translate(input.value,true)
+    output.textContent = translate(input.value,false)
 }}
 )
