@@ -135,7 +135,7 @@ html, body {
     overflow-x: hidden;
 }
 .terminal >* {
-    display: flex;
+    display: block;
     margin: none;
     padding: none;
     background: none;
