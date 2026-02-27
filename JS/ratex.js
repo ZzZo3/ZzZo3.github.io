@@ -541,9 +541,9 @@ function loadFunc() {
 TERMINALCOMMANDS.push(
 {name:'bs', execute:(line)=>{
     let direction = line[1]
-    if (line[1]=='-ex') {
+    if (line[1]=='ex') {
         backslashFunc('expand')
-    } else if (line[1]=='-cd') {
+    } else if (line[1]=='cd') {
         backslashFunc('condense')
     }
 }},
