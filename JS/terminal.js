@@ -30,8 +30,10 @@ function terminalParse() {
     terminalInput.style.height = '18px'
     command = text.split('\n').map((line)=>line.split(' '))
     command.forEach((line)=>{
-        line.forEach((word)=>{
-            
+        TERMINALCOMMANDS.forEach((COMMAND)=>{
+            if (COMMAND.name === line[0]) {
+                COMMAND.execute
+            }
         })
     })
     console.log('TERMINAL: parsed')
@@ -44,6 +46,9 @@ class terminalCommand {
         this.execute = function() {}
     }
 }
+
+// COMMANDS
+const TERMINALCOMMANDS = [terminalHelp]
 
 const terminalHelp = new terminalCommand('help',[],()=>{
     console.log('terminal help command called')
