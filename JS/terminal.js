@@ -24,6 +24,7 @@ terminalInput.addEventListener('input', ()=>{
 function terminalParse() {
     if (terminalInput.value != '') {
         console.log('TERMINAL: parsing') //log
+        console.log(TERMINALCOMMANDS) //log
         var text = terminalInput.value
         console.log(text) //log
         terminalInput.value = ''
@@ -52,9 +53,7 @@ class terminalCommand {
 }
 
 // COMMANDS
-
-const TERMINALCOMMANDS = [
-    new terminalCommand('help',[],()=>{
-        console.log('terminal help command called')
-    })
-]
+const terminalHelp = new terminalCommand('help',[],()=>{
+    console.log('terminal help command called')
+})
+const TERMINALCOMMANDS = [terminalHelp]
