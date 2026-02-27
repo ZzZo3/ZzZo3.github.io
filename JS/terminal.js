@@ -17,7 +17,7 @@ document.addEventListener('keydown', (event)=>{
             }
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
-            if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
+            if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length-1) {
                 if (previousCommands[previousCommands.length - 1] != terminalInput.value && previousCommandsNav==0) {
                     if (terminalInput.value=='') {
                         previousCommands.push('')
