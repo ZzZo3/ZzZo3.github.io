@@ -48,10 +48,14 @@ function terminalRead() {
                     validCommand = true
                 }
             })
-            if (validCommand==false) {
+            if (!validCommand) {
                 terminalOutput('ERROR: unknown command: '+line[0])
             }
         })
+        terminal.scrollIntoView({
+            behavior: 'smooth',
+            block: 'end'
+        });
         console.log('TERMINAL: parsed') //log
     }
 }
