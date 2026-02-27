@@ -1,5 +1,5 @@
 //BASE
-const vNum = '0.7.f'
+const vNum = '0.7.g'
 const pageTitle = document.getElementsByClassName('pageTitle')
 //WRITING
 const input = document.getElementById('input')
