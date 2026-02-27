@@ -240,9 +240,9 @@ closePullData.onclick = ()=>{
     closePullData.style.display = 'none'
     pullSavedBox.value = ''
 }
-function confirmSaveAsFunc() {
-    console.log('attempting to write to: \"'+saveAsBox.value+'\"')
-    if(saveAsBox.value == 'RF+') {
+function confirmSaveAsFunc(saveAs) {
+    console.log('attempting to write to: \"'+saveAs+'\"')
+    if(saveAs == 'RF+') {
         console.log('   cannot write to RF+')
         let pickRand = randomInt(5)
         if(pickRand == 0) {
@@ -258,23 +258,23 @@ function confirmSaveAsFunc() {
         } else {
             alert('deceitful.')
         }
-    } else if(saveAsBox.value != '') {
-        localStorage.setItem(saveAsBox.value,input.value)
+    } else if(saveAs != '') {
+        localStorage.setItem(saveAs,input.value)
         displayData()
-        console.log('   \"'+saveAsBox.value+'\" write success')
+        console.log('   \"'+saveAs+'\" write success')
         saveAsBox.value = ''
         saveAsBox.style.display = 'none'
         confirmSaveAs.style.display = 'none'
         closeSaveAs.style.display = 'none'
     }
 }
-function confirmPullDataFunc() {
-    console.log('attempting to read: \"'+pullSavedBox.value+'\"')
-    if(Object.keys(localStorage).includes(pullSavedBox.value)) {
-        console.log('   \"'+pullSavedBox.value+'\" found')
-        input.value = localStorage[pullSavedBox.value]
+function confirmPullDataFunc(data) {
+    console.log('attempting to read: \"'+data+'\"')
+    if(Object.keys(localStorage).includes(data)) {
+        console.log('   \"'+data+'\" found')
+        input.value = localStorage[data]
         output.textContent = translate(input.value,false)
-        console.log('   \"'+pullSavedBox.value+'\" read success')
+        console.log('   \"'+data+'\" read success')
         pullSavedBox.value = ''
         pullSavedBox.style.display = 'none'
         confirmPullData.style.display = 'none'
@@ -284,13 +284,13 @@ function confirmPullDataFunc() {
 function detectSaveEnter(event) {
     let key = event.key
     if(key == "Enter") {
-        confirmSaveAsFunc()
+        confirmSaveAsFunc(saveAsBox.value)
     }
 }
 function detectPullEnter(event) {
     let key = event.key
     if(key == "Enter") {
-        confirmPullDataFunc()
+        confirmPullDataFunc(pullSavedBox.value)
     }
 }
 copyIn.onclick = ()=>{
@@ -313,6 +313,9 @@ doubleSlash.onclick = ()=>{
 singleSlash.onclick = ()=>{
     backslashFunc('condense')
 }
+
+// BACKSLASHES
+
 function removeExtraBacks(tempText) {
     let text = tempText
     let changed = 0
@@ -342,6 +345,40 @@ function removeExtraBacks(tempText) {
         console.log('   REMOVED '+changed+' EXTRANEOUS BACKSLASHES')
     }
     return text.map(k=>k.join('')).join('\n')
+}
+
+function backslashFunc(direction) {
+    if (direction=='condense') {
+        console.log('\\\\ -> \\')
+        let text = input.value
+        text = removeExtraBacks(text)
+        input.value = text
+        output.textContent = translate(input.value,false)
+    } else if (direction=='expand') {
+        console.log('\\ -> \\\\')
+        let text = input.value
+        let changed = 0
+        text = removeExtraBacks(text)
+        text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
+        text = text.map((line, num)=>{
+            let indexedSlashes = []
+            line.forEach((char, index)=>{
+                if (char=='\\') {
+                    indexedSlashes.push(index)
+                }
+            })
+            indexedSlashes.forEach(index=>{
+                line[index] = '\\\\'
+                changed++
+            })
+            return line
+        })
+        if (changed > 0) {
+            console.log('   REDOUBLED '+changed+' BACKSLASHES')
+        }
+        input.value = text.map(k=>k.join('')).join('\n')
+        output.textContent = translate(input.value,false)
+    }
 }
 
 //CALCULATOR
@@ -509,38 +546,15 @@ TERMINALCOMMANDS.push(
     } else if (line[1]=='-cd') {
         backslashFunc('condense')
     }
-    }}
-)
-function backslashFunc(direction) {
-    if (direction=='condense') {
-        console.log('\\\\ -> \\')
-        let text = input.value
-        text = removeExtraBacks(text)
-        input.value = text
-        output.textContent = translate(input.value,false)
-    } else if (direction=='expand') {
-        console.log('\\ -> \\\\')
-        let text = input.value
-        let changed = 0
-        text = removeExtraBacks(text)
-        text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
-        text = text.map((line, num)=>{
-            let indexedSlashes = []
-            line.forEach((char, index)=>{
-                if (char=='\\') {
-                    indexedSlashes.push(index)
-                }
-            })
-            indexedSlashes.forEach(index=>{
-                line[index] = '\\\\'
-                changed++
-            })
-            return line
-        })
-        if (changed > 0) {
-            console.log('   REDOUBLED '+changed+' BACKSLASHES')
-        }
-        input.value = text.map(k=>k.join('')).join('\n')
-        output.textContent = translate(input.value,false)
+}},
+{name:'save', execute:(line)=>{
+    if (line[1] != '') {
+        confirmSaveAsFunc(line[1])
     }
-}
+}},
+{name:'pull', execute:(line)=>{
+    if (line[1] != '') {
+        confirmPullDataFunc(line[1])
+    }
+}}
+)
