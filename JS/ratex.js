@@ -532,10 +532,11 @@ function loadFunc() {
     console.log('   \"loadFunc()\" finished')
 }
 
+
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-{name:'slash', args:['direction:(ex,cd)'], execute:(line)=>{
+TerminalCMND('slash', ['direction:(ex,cd)'], (line)=>{
     let direction = line[1]
     if (line[1]=='ex') {
         backslashFunc('expand')
@@ -544,8 +545,8 @@ TERMINALCOMMANDS.push(
         backslashFunc('condense')
         terminalWrite('>  condensed slashes')
     }
-}},
-{name:'pull', args:['from:any'], execute:(line)=>{
+}),
+TerminalCMND('pull', ['from:any'], (line)=>{
     if (line[1] != '') {
         if(Object.keys(localStorage).includes(line[1])) {
             confirmPullDataFunc(line[1])
@@ -554,31 +555,31 @@ TERMINALCOMMANDS.push(
             terminalWrite('>  could not find document: '+line[1])
         }
     }
-}},
-{name:'push', args:['to:any'], execute:(line)=>{
+}),
+TerminalCMND('push', ['to:any'], (line)=>{
     if (line[1] == 'RF+') {
         terminalWrite('>  cannot write to RF+')
     } else if (line[1] != '') {
         confirmSaveAsFunc(line[1])
         terminalWrite('>  wrote to document: '+line[1])
     }
-}},
-{name:'list', args:['none'], execute:(line)=>{
+}),
+TerminalCMND('list', ['none'], (line)=>{
     terminalWrite('>  saved documents: '+Object.keys(localStorage))
-}},
-{name:'simplify', args:['none'], execute:(line)=>{
+}),
+TerminalCMND('simplify', ['none'], (line)=>{
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
     terminalWrite('>  simplified document')
-}},
-{name:'erase', args:['none'], execute:(line)=>{
+}),
+TerminalCMND('erase', ['none'], (line)=>{
     input.value = ''
     output.textContent = ''
     terminalWrite('>  cleared document')
-}},
-{name:'clear', args:['none'], execute:(line)=>{
+}),
+TerminalCMND('clear', ['none'], (line)=>{
     localStorage.clear()
     setRF()
     terminalWrite('>  cleared saved documents')
-}}
+})
 )
