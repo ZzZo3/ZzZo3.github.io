@@ -22,7 +22,7 @@
     font-size: 14px;
 }
 #saveData{
-    margin-left: 2%;
+    margin-left: 1%;
 }
 .mark{
     display: inline;
@@ -42,7 +42,7 @@
 }
 .container{
     margin: none;
-    padding: 1%;
+    padding: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
