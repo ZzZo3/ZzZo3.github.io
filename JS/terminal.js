@@ -27,7 +27,7 @@ document.addEventListener('keydown', (event)=>{
             event.preventDefault()
             console.log(previousCommands)
             console.log(previousCommandsNav)
-            if (previousCommandsNav > 0) {
+            if (previousCommands.length > 0 && previousCommandsNav > 0) {
                 terminalInput.value = previousCommands[previousCommands.length - 1]
                 previousCommandsNav -= 1
             }
