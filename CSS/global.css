@@ -158,6 +158,7 @@ html, body {
     overflow-y: hidden;
     overflow-x: visible;
     white-space: pre-line;
+    height: 36px;
 }
 #terminalInput {
     overflow-y: hidden;
