@@ -145,7 +145,6 @@ html, body {
     box-sizing: border-box;
     width: 100%;
     field-sizing: 16px;
-    line-height: 18px;
     height: 18px;
     font-family:'Courier New', Courier, monospace;
     color: rgb(255, 216, 132);
@@ -156,6 +155,7 @@ html, body {
     overflow-y: hidden;
     overflow-x: visible;
     white-space: pre-line;
+    line-height: 18px;
     margin-right: 12px;
     margin-left: 12px;
 }
@@ -163,6 +163,7 @@ html, body {
     overflow-y: hidden;
     overflow-x: visible;
     background-color: blue;
+    line-height: 16px;
     margin-right: 10px;
     margin-left: 10px;
 }
