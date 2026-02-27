@@ -556,5 +556,8 @@ TERMINALCOMMANDS.push(
     if (line[1] != '') {
         confirmPullDataFunc(line[1])
     }
+}},
+{name:'list', execute:(line)=>{
+    terminalWrite(localStorage.keys)
 }}
 )
