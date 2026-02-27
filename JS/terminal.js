@@ -59,7 +59,6 @@ terminalInput.addEventListener('input', ()=>{
 })
 
 function terminalRead() {
-    console.log(TERMINALCOMMANDS)
     if (terminalInput.value != '') {
         previousCommands.push(terminalInput.value)
         previousCommandsNav = 0
@@ -90,7 +89,6 @@ function terminalRead() {
     }
 }
 function terminalWrite(text) {
-    console.log('terminal write: '+text)
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
     terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
     terminal.scrollBy(0,999999)
