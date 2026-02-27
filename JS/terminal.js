@@ -99,7 +99,7 @@ function terminalWrite(text) {
 
 // COMMANDS
 
-class TCMND {
+class TerminalCMND {
     constructor(name,args,execute) {
         this.name = name
         this.args = args
@@ -107,10 +107,8 @@ class TCMND {
     }
 }
 
-var TERMINALCOMMANDS = [
-TCMND('help', // HELP
-    ['command'],
-    (line)=>{
+var terminalHelp = new TerminalCMND('help',['command'],
+(line)=>{
     if (line.length==1) {
         TERMINALCOMMANDS.forEach((c)=>{
             terminalWrite('> '+c.name)
@@ -123,4 +121,5 @@ TCMND('help', // HELP
         })
     }
 })
-]
+
+var TERMINALCOMMANDS = [terminalHelp]
