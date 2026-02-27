@@ -218,20 +218,8 @@ var terminalHelp = new TerminalCMND(['help'],
 )
 
 
-/*
-var terminalHelp = new TerminalCMND('help',['command'],
-(line)=>{
-    if (line.length==1) {
-        TERMINALCOMMANDS.forEach((c)=>{
-            terminalWrite('> '+c.name)
-        })
-    } else {
-        TERMINALCOMMANDS.forEach((c)=>{
-            if (c.name==line[1]) {
-                terminalWrite('> '+c.name+' '+c.args)
-            }
-        })
-    }
-})
-*/
-var TERMINALCOMMANDS = [terminalHelp,terminalEcho]
+var TERMINALCOMMANDS = [terminalHelp,terminalEcho
+new TerminalCMND(['list','ls'],[], // LIST
+(argList)=>{
+    terminalWrite('>  saved documents: '+Object.keys(localStorage))
+}),]

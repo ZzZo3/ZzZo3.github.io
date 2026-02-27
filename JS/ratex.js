@@ -571,10 +571,6 @@ new TerminalCMND(['push'], // PUSH
         terminalWrite('>  pushed to: \"'+argList[0]+'\"')
     }
 }),
-new TerminalCMND(['list','ls'],[], // LIST
-(argList)=>{
-    terminalWrite('>  saved documents: '+Object.keys(localStorage))
-}),
 new TerminalCMND(['simplify','smpf'],[], // SIMPLIFY
 (argList)=>{
     input.value = translate(input.value,true)
