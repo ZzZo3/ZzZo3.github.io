@@ -10,6 +10,7 @@ document.addEventListener('keydown', (event)=>{
         if (event.key === "Enter") {
             if (!event.shiftKey) {
                 event.preventDefault()
+                console.log('terminal enter')
                 terminalParse()
             }
         }
