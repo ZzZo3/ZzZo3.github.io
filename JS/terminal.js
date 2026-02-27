@@ -101,16 +101,16 @@ function terminalWrite(text) {
 
 class TERMINALCOMMAND {
     constructor(name,args,execute) {
-        this.name = ''
-        this.args = []
-        this.execute = function () {}
+        this.name = name
+        this.args = args
+        this.execute = execute
     }
 }
 
-const terminalHelpCommand = new TERMINALCOMMAND
-terminalHelpCommand.name = 'help'
-terminalHelpCommand.args = ['command']
-terminalHelpCommand.execute = (line)=>{
+var TERMINALCOMMANDS = [
+TERMINALCOMMAND('help', // HELP
+    ['command'],
+    (line)=>{
     if (line.length==1) {
         TERMINALCOMMANDS.forEach((c)=>{
             terminalWrite('> '+c.name)
@@ -122,5 +122,5 @@ terminalHelpCommand.execute = (line)=>{
             }
         })
     }
-}
-var TERMINALCOMMANDS = [ terminalHelpCommand ]
+})
+]
