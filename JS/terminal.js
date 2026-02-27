@@ -18,11 +18,7 @@ document.addEventListener('keydown', (event)=>{
 terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('\n')
-    var k = 0
-    if (54 > 18 * text.length) {
-        k = 54 - 18 * text.length
-    }
-    terminalInput.style.height = (18 * text.length + k)+'px'
+    terminalInput.style.height = (18 * text.length)+'px'
 });
 
 function terminalRead() {

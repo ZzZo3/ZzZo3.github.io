@@ -149,6 +149,7 @@ html, body {
     width: 100%;
     field-sizing: 16px;
     line-height: 18px;
+    height: 18px;
     font-family:'Courier New', Courier, monospace;
     color: rgb(255, 216, 132);
     border: none;
@@ -158,11 +159,9 @@ html, body {
     overflow-y: hidden;
     overflow-x: visible;
     white-space: pre-line;
-    height: 18px;
 }
 #terminalInput {
     overflow-y: hidden;
     overflow-x: visible;
-    height: 54px;
     background-color: blue;
 }
