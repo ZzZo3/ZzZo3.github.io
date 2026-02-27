@@ -45,7 +45,7 @@ function terminalParse() {
 // COMMANDS
 
 const TERMINALCOMMANDS = [
-{ name:'help', execute:(line)=>{
+{ name:'help', args=[], execute:(line)=>{
     console.log('terminal help command called')
 } }
 ]

@@ -308,36 +308,10 @@ erase.onclick = ()=>{
     output.textContent = ''
 }
 doubleSlash.onclick = ()=>{
-    console.log('\\ -> \\\\')
-    let text = input.value
-    let changed = 0
-    text = removeExtraBacks(text)
-    text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
-    text = text.map((line, num)=>{
-        let indexedSlashes = []
-        line.forEach((char, index)=>{
-            if (char=='\\') {
-                indexedSlashes.push(index)
-            }
-        })
-        indexedSlashes.forEach(index=>{
-            line[index] = '\\\\'
-            changed++
-        })
-        return line
-    })
-    if (changed > 0) {
-        console.log('   REDOUBLED '+changed+' BACKSLASHES')
-    }
-    input.value = text.map(k=>k.join('')).join('\n')
-    output.textContent = translate(input.value,false)
+    backslashFunc('expand')
 }
 singleSlash.onclick = ()=>{
-    console.log('\\\\ -> \\')
-    let text = input.value
-    text = removeExtraBacks(text)
-    input.value = text
-    output.textContent = translate(input.value,false)
+    backslashFunc('condense')
 }
 function removeExtraBacks(tempText) {
     let text = tempText
@@ -528,8 +502,16 @@ function loadFunc() {
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-{name:'backslash', execute:(line)=>{
+{name:'backslash', args:[['expand','condense']], execute:(line)=>{
     let direction = line[1]
+    if (args[0].includes(line[1])) {
+        backslashFunc(line[1])
+    } else {
+        
+    }
+    }}
+)
+function backslashFunc(direction) {
     if (direction=='condense') {
         console.log('\\\\ -> \\')
         let text = input.value
@@ -561,5 +543,4 @@ TERMINALCOMMANDS.push(
         input.value = text.map(k=>k.join('')).join('\n')
         output.textContent = translate(input.value,false)
     }
-    }}
-)
+}
