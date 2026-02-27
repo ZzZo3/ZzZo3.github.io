@@ -107,16 +107,10 @@ class TERMINALCOMMAND {
     }
 }
 
-const newCommand = new TERMINALCOMMAND('short',['one','two','three'],(x)=>{x+1})
-console.log(TERMINALCOMMAND)
-console.log(newCommand)
-newCommand.name = 'short'
-newCommand.args = ['one','two','three']
-newCommand.execute = (x)=>{x+1}
-console.log(newCommand)
-
-var TERMINALCOMMANDS = [
-{ name:'help', args:['command'], execute:(line)=>{
+terminalHelpCommand = new TERMINALCOMMAND
+terminalHelpCommand.name = 'help'
+terminalHelpCommand.args = ['command']
+terminalHelpCommand.execute = (line)=>{
     if (line.length==1) {
         TERMINALCOMMANDS.forEach((c)=>{
             terminalWrite('> '+c.name)
@@ -128,5 +122,5 @@ var TERMINALCOMMANDS = [
             }
         })
     }
-} }
-]
+}
+var TERMINALCOMMANDS = [ terminalHelpCommand ]
