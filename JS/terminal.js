@@ -32,8 +32,7 @@ function terminalParse() {
         command.forEach((line)=>{
             TERMINALCOMMANDS.forEach((COMMAND)=>{
                 if (COMMAND.name == line[0]) {
-                    let argList = line.shift()
-                    console.log('TERMINAL: '+COMMAND.name+': '+argList) //log
+                    console.log('TERMINAL: '+COMMAND.name+': '+line) //log
                     COMMAND.execute(argList)
                 }
             })
