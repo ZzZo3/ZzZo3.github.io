@@ -97,6 +97,8 @@ html, body {
 .dataButton {
     padding: 2px 6px;
     border-radius: 5px;
+    margin-top: 1%;
+    margin-left: 2%;
 }
 /*HYPERLINKS*/
 .hyperlink:link {
@@ -146,7 +148,7 @@ html, body {
     resize: none;
     box-sizing: border-box;
     height: 18px;
-    width: 96%;
+    width: 100%;
     field-sizing: 16px;
     line-height: 18px;
     font-family:'Courier New', Courier, monospace;
