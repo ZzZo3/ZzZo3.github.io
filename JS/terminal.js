@@ -18,9 +18,13 @@ document.addEventListener('keydown', (event)=>{
             previousCommands.push(terminalInput.value)
             terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
             previousCommandsNav += 1
+            console.log(previousCommands)
+            console.log(previousCommandsNav)
         } else if (event.key === "ArrowDown" && previousCommandsNav > 0) {
             terminalInput.value = previousCommands[previousCommands.length - 1]
             previousCommandsNav -= 1
+            console.log(previousCommands)
+            console.log(previousCommandsNav)
         }
     }
 });
