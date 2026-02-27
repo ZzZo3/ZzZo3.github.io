@@ -1,5 +1,5 @@
 //BASE
-const vNum = '0.8.f'
+const vNum = '0.8.g'
 const pageTitle = document.getElementsByClassName('pageTitle')
 //WRITING
 const input = document.getElementById('input')
@@ -536,17 +536,6 @@ function loadFunc() {
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-/*
-new TerminalCMND('slash', ['direction:(ex,cd)'], (line)=>{ // SLASH
-    let direction = line[1]
-    if (line[1]=='ex') {
-        backslashFunc('expand')
-        terminalWrite('>  expanded slashes')
-    } else if (line[1]=='cd') {
-        backslashFunc('condense')
-        terminalWrite('>  condensed slashes')
-    }
-}),*/
 new TerminalCMND(['slash','bs'],
     [new TerminalARG('dirn',['ex','cd'],false)],
 (argList)=>{
@@ -557,7 +546,17 @@ new TerminalCMND(['slash','bs'],
         backslashFunc('condense')
         terminalWrite('>  condensed slashes')
     }
-})/*,
+}),
+new TerminalCMND(['pull'],
+    [new TerminalARG('from',[],false)],
+(argList)=>{
+    if(Object.keys(localStorage).includes(argList[0])) {
+        confirmPullDataFunc(argList[0])
+        terminalWrite('>  pulled from document: '+argList[0])
+    } else {
+        terminalWrite('>  could not find document: '+argList[0])
+    }
+}),/*,
 new TerminalCMND('pull', ['from:any'], (line)=>{ // PULL
     if (line[1] != '') {
         if(Object.keys(localStorage).includes(line[1])) {
