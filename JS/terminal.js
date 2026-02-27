@@ -105,6 +105,9 @@ class TerminalCMND {
         this.does = does // (line)=>{} after vetting parameters
     }
     execute(text) {
+        if (typeof text != 'string') {
+            terminalWrite('>  failed to parse')
+        }
         let line = text.split(' ').shift()
         var validArgs = 1
         var vettedArgs = []
