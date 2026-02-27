@@ -22,22 +22,24 @@ terminalInput.addEventListener('input', ()=>{
 });
 
 function terminalParse() {
-    console.log('TERMINAL: parsing')
-    var text = terminalInput.value
-    console.log(text)
-    terminalInput.value = ''
-    terminalInput.style.height = '18px'
-    command = text.split('\n').map((line)=>line.split(' '))
-    command.forEach((line)=>{
-        console.log('parsing line')
-        TERMINALCOMMANDS.forEach((COMMAND)=>{
-            if (COMMAND.name === line[0]) {
-                console.log('command detected: '+COMMAND.name)
-                COMMAND.execute()
-            }
+    if (terminalInput.value != '') {
+        console.log('TERMINAL: parsing')
+        var text = terminalInput.value
+        console.log(text)
+        terminalInput.value = ''
+        terminalInput.style.height = '18px'
+        command = text.split('\n').map((line)=>line.split(' '))
+        command.forEach((line)=>{
+            console.log('parsing line')
+            TERMINALCOMMANDS.forEach((COMMAND)=>{
+                if (COMMAND.name === line[0]) {
+                    console.log('command detected: '+COMMAND.name)
+                    COMMAND.execute()
+                }
+            })
         })
-    })
-    console.log('TERMINAL: parsed')
+        console.log('TERMINAL: parsed')
+    }
 }
 
 class terminalCommand {
