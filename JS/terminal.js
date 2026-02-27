@@ -104,7 +104,7 @@ class TerminalCMND {
     }
     execute(text) {
         if (typeof text[0] != 'string') {
-            terminalWrite('>  failed to parse')
+            terminalWrite('ERROR: failed to parse')
             console.log('terminal failed to parse text as string')
             console.log(text)
             return
@@ -113,7 +113,7 @@ class TerminalCMND {
         var validArgs = 1
         var vettedArgs = []
         if (line.length != this.args.length) { // check # args
-            terminalWrite('wrong num of args')
+            terminalWrite('ERROR: incorrect argument count')
             console.log(this.args)
             console.log(line)
             return
