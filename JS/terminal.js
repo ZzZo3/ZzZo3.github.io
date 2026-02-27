@@ -49,7 +49,7 @@ function terminalRead() {
                 }
             })
             if (!validCommand) {
-                terminalOutput('ERROR: unknown command: '+line[0])
+                terminalWrite('ERROR: unknown command: '+line[0])
             }
         })
         terminal.scrollIntoView({
