@@ -74,7 +74,7 @@ function terminalRead() {
         text = text.split('\n').map((line)=>line.split(' '))
         text.forEach((line)=>{
             TERMINALCOMMANDS.forEach((COMMAND)=>{
-                if (COMMAND.name == line[0]) {
+                if (COMMAND.name.includes(line[0])) {
                     validCommand = true
                     console.log('TERMINAL: '+line) //log
                     terminalWrite(line.join(' '))
@@ -134,7 +134,7 @@ class TerminalARG {
     }
 }
 
-const terminalEcho = new TerminalCMND('echo',
+const terminalEcho = new TerminalCMND(['echo'],
     [new TerminalARG('package',[],false),
     new TerminalARG('to',[],true),
     new TerminalARG('append',['+','force'],true)],
@@ -163,7 +163,7 @@ const terminalEcho = new TerminalCMND('echo',
     }
 })
 
-var terminalHelp = new TerminalCMND('help',
+var terminalHelp = new TerminalCMND(['help'],
     [new TerminalARG('cmnd',[],false),
     new TerminalARG('arg',[],true)],
 (argList)=>{
