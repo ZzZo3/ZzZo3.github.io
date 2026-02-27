@@ -99,6 +99,18 @@ function terminalWrite(text) {
 
 // COMMANDS
 
+class TERMINALCOMMAND {
+    constructor(name,args,execute) {
+        this.name = ''
+        this.args = []
+        this.execute = function () {}
+    }
+}
+
+let newCommand = new TERMINALCOMMAND('short',['one','two','three'],(x)=>{x+1})
+console.log(TERMINALCOMMAND)
+console.log(newCommand)
+
 var TERMINALCOMMANDS = [
 { name:'help', args:['command'], execute:(line)=>{
     if (line.length==1) {
