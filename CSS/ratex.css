@@ -41,6 +41,8 @@
     font-family:'Courier New', Courier, monospace;
 }
 .container{
+    margin: none;
+    padding: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

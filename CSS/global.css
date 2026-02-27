@@ -120,7 +120,7 @@ html, body {
 */
 .terminal{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     width: 96%;
     height: 180px;
@@ -145,7 +145,7 @@ html, body {
     resize: none;
     box-sizing: border-box;
     height: 18px;
-    width: 96%;
+    width: 94%;
     field-sizing: 16px;
     line-height: 18px;
     font-family:'Courier New', Courier, monospace;
