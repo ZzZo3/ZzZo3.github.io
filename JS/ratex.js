@@ -540,9 +540,17 @@ TERMINALCOMMANDS.push(
     if (line[1]=='ex') {
         backslashFunc('expand')
         terminalWrite('>  expanded slashes')
+        terminal.scrollIntoView({
+            behavior: 'smooth',
+            block: 'end'
+        })
     } else if (line[1]=='cd') {
         backslashFunc('condense')
         terminalWrite('>  condensed slashes')
+        terminal.scrollIntoView({
+            behavior: 'smooth',
+            block: 'end'
+        })
     }
 }},
 {name:'pull', execute:(line)=>{
@@ -550,35 +558,67 @@ TERMINALCOMMANDS.push(
         if(Object.keys(localStorage).includes(line[1])) {
             confirmPullDataFunc(line[1])
             terminalWrite('>  pulled from document: '+line[1])
+            terminal.scrollIntoView({
+                behavior: 'smooth',
+                block: 'end'
+            })
         } else {
             terminalWrite('>  could not find document: '+line[1])
+            terminal.scrollIntoView({
+                behavior: 'smooth',
+                block: 'end'
+            })
         }
     }
 }},
 {name:'push', execute:(line)=>{
     if (line[1] == 'RF+') {
         terminalWrite('>  cannot write to RF+')
+        terminal.scrollIntoView({
+            behavior: 'smooth',
+            block: 'end'
+        })
     } else if (line[1] != '') {
         confirmSaveAsFunc(line[1])
         terminalWrite('>  wrote to document: '+line[1])
+        terminal.scrollIntoView({
+            behavior: 'smooth',
+            block: 'end'
+        })
     }
 }},
 {name:'list', execute:(line)=>{
     terminalWrite('>  saved documents: '+Object.keys(localStorage))
+    terminal.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end'
+    })
 }},
 {name:'simplify', execute:(line)=>{
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
     terminalWrite('>  simplified document')
+    terminal.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end'
+    })
 }},
 {name:'erase', execute:(line)=>{
     input.value = ''
     output.textContent = ''
     terminalWrite('>  cleared document')
+    terminal.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end'
+    })
 }},
 {name:'clear', execute:(line)=>{
     localStorage.clear()
     setRF()
     terminalWrite('>  cleared saved documents')
+    terminal.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end'
+    })
 }}
 )
