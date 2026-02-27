@@ -152,7 +152,7 @@ html, body {
     line-height: 18px;
     font-family:'Courier New', Courier, monospace;
     color: rgb(255, 216, 132);
-    border: solid white 1px;
+    border: none;
     outline: none;
 }
 #terminalOutput {
