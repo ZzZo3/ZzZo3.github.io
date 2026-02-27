@@ -535,7 +535,8 @@ function loadFunc() {
 
 // TERMINAL COMMANDS
 
-/*TERMINALCOMMANDS.push(
+TERMINALCOMMANDS.push(
+/*
 new TerminalCMND('slash', ['direction:(ex,cd)'], (line)=>{ // SLASH
     let direction = line[1]
     if (line[1]=='ex') {
@@ -545,7 +546,18 @@ new TerminalCMND('slash', ['direction:(ex,cd)'], (line)=>{ // SLASH
         backslashFunc('condense')
         terminalWrite('>  condensed slashes')
     }
-}),
+}),*/
+new TerminalCMND(['slash','bs'],
+    [new TerminalARG('dirn',['ex','cd'],false)],
+(argList)=>{
+    if (argList[0]=='ex') {
+        backslashFunc('expand')
+        terminalWrite('>  expanded slashes')
+    } else if (argList[0]=='cd') {
+        backslashFunc('condense')
+        terminalWrite('>  condensed slashes')
+    }
+})/*,
 new TerminalCMND('pull', ['from:any'], (line)=>{ // PULL
     if (line[1] != '') {
         if(Object.keys(localStorage).includes(line[1])) {
@@ -591,4 +603,4 @@ new TerminalCMND('copy', ['element:(in,out)'], (line)=>{ // CLEAR
         terminalWrite('>  copied translated document to clipboard')
     }
 })
-)*/
+*/)

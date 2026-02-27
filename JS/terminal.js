@@ -119,6 +119,10 @@ class TerminalCMND {
             console.log(line)
             return
         }
+        if (this.args.length==0) {
+            this.does(line)
+            return
+        }
         for (let i=0; i < this.args.length; i++) {
             if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line[i]=='-' || this.args[i].takes.length==0) {
                 vettedArgs.push(line[i])
@@ -140,6 +144,17 @@ class TerminalARG {
         this.isOptional = isOptional // Bool
     }
 }
+
+/* COMMAND FORMAT
+
+new TerminalCMND([''],
+    [new TerminalARG('',[],false),
+    new TerminalARG('',[],true),
+    new TerminalARG('',['',''],true)],
+(argList)=>{}
+)
+
+*/
 
 const terminalEcho = new TerminalCMND(['echo'],
     [new TerminalARG('package',[],false),
