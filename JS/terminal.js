@@ -4,7 +4,7 @@ const terminalInput = document.getElementById('terminalInput')
 const terminalOutput = document.getElementById('terminalOutput')
 //
 var previousCommands = []
-var previousCommandsNav = 1
+var previousCommandsNav = 0
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
@@ -25,7 +25,7 @@ document.addEventListener('keydown', (event)=>{
                     }
                 }
                 previousCommandsNav += 1
-                terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
+                terminalInput.value = previousCommands[previousCommands.length - 1 - previousCommandsNav]
                 console.log(previousCommands)
                 console.log(previousCommandsNav)
             }
@@ -33,7 +33,7 @@ document.addEventListener('keydown', (event)=>{
             event.preventDefault()
             if (previousCommands.length > 0 && previousCommandsNav > 0) {
                 previousCommandsNav -= 1
-                terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
+                terminalInput.value = previousCommands[previousCommands.length - 1 - previousCommandsNav]
                 console.log(previousCommands)
                 console.log(previousCommandsNav)
             }
