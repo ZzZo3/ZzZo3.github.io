@@ -124,7 +124,8 @@ html, body {
     justify-content: space-around;
     width: 96%;
     height: 180px;
-    margin: 1%;
+    margin-top: 1%;
+    margin-top: 1%+32px;
     padding-left: 1%;
     padding-right: 1%;
     resize: none;
@@ -145,7 +146,7 @@ html, body {
     resize: none;
     box-sizing: border-box;
     height: 18px;
-    width: 96%;
+    width: 96%+64px;
     field-sizing: 16px;
     line-height: 18px;
     font-family:'Courier New', Courier, monospace;
