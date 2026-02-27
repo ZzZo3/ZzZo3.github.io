@@ -119,7 +119,7 @@ html, body {
 </div>
 */
 .terminal{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-around;
     width: 96%;
@@ -154,12 +154,10 @@ html, body {
     outline: none;
 }
 #terminalOutput {
-    overflow: hidden;
     overflow-y: hidden;
     overflow-x: visible;
 }
 #terminalInput {
-    flex-grow: 1;
     overflow-y: hidden;
     overflow-x: visible;
 }
