@@ -44,7 +44,7 @@ function terminalRead() {
                     validCommand = true
                 }
             })
-            if (!validCommand) {
+            if (validCommand==false) {
                 terminalOutput('ERROR: unknown command: '+line[0])
             }
         })
