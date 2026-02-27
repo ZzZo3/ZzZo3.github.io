@@ -2,7 +2,9 @@
 const terminal = document.getElementById('terminal')
 const terminalInput = document.getElementById('terminalInput')
 const terminalOutput = document.getElementById('terminalOutput')
-
+//
+var previousCommands = []
+var previousCommandsNav = 1
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
@@ -12,6 +14,13 @@ document.addEventListener('keydown', (event)=>{
                 event.preventDefault()
                 terminalRead()
             }
+        } else if (event.key === "ArrowUp" && previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
+            previousCommands.push(terminalInput.value)
+            terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
+            previousCommandsNav += 1
+        } else if (event.key === "ArrowDown" && previousCommandsNav > 0) {
+            terminalInput.value = previousCommands[previousCommands.length - 1]
+            previousCommandsNav -= 1
         }
     }
 });
@@ -31,6 +40,7 @@ terminalInput.addEventListener('input', ()=>{
 })
 
 function terminalRead() {
+    previousCommands.push(terminalInput.value)
     if (terminalInput.value != '') {
         console.log('TERMINAL: parsing') //log
         var text = terminalInput.value
