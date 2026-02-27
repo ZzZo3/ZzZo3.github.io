@@ -124,7 +124,7 @@ class TerminalCMND {
                 vettedArgs.push(line[i])
                 validArgs++
             } else if (this.args[i].isOptional) {
-                terminalWrite('ERROR: optional arg \"'+this.args[i].name+'\" ')
+                terminalWrite('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
             } else {
                 terminalWrite('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line[i])
                 terminalWrite('>  \'help '+this.args[i].name+'\' for a detailed description.')
