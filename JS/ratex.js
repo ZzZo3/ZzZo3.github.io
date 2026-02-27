@@ -564,7 +564,7 @@ new TerminalCMND(['push'], // PUSH
         terminalWrite('>  cannot push to RF+')
     } else if(Object.keys(localStorage).includes(argList[0])) {
         let currentData = localStorage.getItem(argList[0])
-        localStorage.setItem(argList[0],(currentData+'\n'+argList[0]))
+        localStorage.setItem(argList[0],(currentData+'\n'+input.value))
         terminalWrite('>  cannot push to RF+')
     } else {
         localStorage.setItem(argList[0],input.value)
