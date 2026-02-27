@@ -99,7 +99,7 @@ function terminalWrite(text) {
 
 // COMMANDS
 
-class TERMINALCOMMAND {
+class TCMND {
     constructor(name,args,execute) {
         this.name = name
         this.args = args
@@ -108,7 +108,7 @@ class TERMINALCOMMAND {
 }
 
 var TERMINALCOMMANDS = [
-TERMINALCOMMAND('help', // HELP
+TCMND('help', // HELP
     ['command'],
     (line)=>{
     if (line.length==1) {
