@@ -539,7 +539,7 @@ function loadFunc() {
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-{name:'bs', execute:(line)=>{
+{name:'slash', execute:(line)=>{
     let direction = line[1]
     if (line[1]=='ex') {
         backslashFunc('expand')
@@ -547,14 +547,14 @@ TERMINALCOMMANDS.push(
         backslashFunc('condense')
     }
 }},
-{name:'save', execute:(line)=>{
-    if (line[1] != '') {
-        confirmSaveAsFunc(line[1])
-    }
-}},
 {name:'pull', execute:(line)=>{
     if (line[1] != '') {
         confirmPullDataFunc(line[1])
+    }
+}},
+{name:'push', execute:(line)=>{
+    if (line[1] != '') {
+        confirmSaveAsFunc(line[1])
     }
 }},
 {name:'list', execute:(line)=>{
