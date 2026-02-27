@@ -30,10 +30,6 @@ let roundTo = 0.001
 const storage = document.getElementById('storage')
 storage.textContent = Object.keys(localStorage)
 
-//KEY LISTENER
-document.addEventListener('keydown', function (event) {
-    console.log('Key: \"' + event.key + '\"');
-});
 
 function setRF() {
 localStorage.setItem('RF+',
