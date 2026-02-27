@@ -535,7 +535,7 @@ function loadFunc() {
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-{name:'slash', execute:(line)=>{
+{name:'slash', args:['direction:ex,cd'], execute:(line)=>{
     let direction = line[1]
     if (line[1]=='ex') {
         backslashFunc('expand')
@@ -545,7 +545,7 @@ TERMINALCOMMANDS.push(
         terminalWrite('>  condensed slashes')
     }
 }},
-{name:'pull', execute:(line)=>{
+{name:'pull', args:['from:any'], execute:(line)=>{
     if (line[1] != '') {
         if(Object.keys(localStorage).includes(line[1])) {
             confirmPullDataFunc(line[1])
@@ -555,7 +555,7 @@ TERMINALCOMMANDS.push(
         }
     }
 }},
-{name:'push', execute:(line)=>{
+{name:'push', args:['to:any'], execute:(line)=>{
     if (line[1] == 'RF+') {
         terminalWrite('>  cannot write to RF+')
     } else if (line[1] != '') {
@@ -563,20 +563,20 @@ TERMINALCOMMANDS.push(
         terminalWrite('>  wrote to document: '+line[1])
     }
 }},
-{name:'list', execute:(line)=>{
+{name:'list', args:['none'], execute:(line)=>{
     terminalWrite('>  saved documents: '+Object.keys(localStorage))
 }},
-{name:'simplify', execute:(line)=>{
+{name:'simplify', args:['none'], execute:(line)=>{
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
     terminalWrite('>  simplified document')
 }},
-{name:'erase', execute:(line)=>{
+{name:'erase', args:['none'], execute:(line)=>{
     input.value = ''
     output.textContent = ''
     terminalWrite('>  cleared document')
 }},
-{name:'clear', execute:(line)=>{
+{name:'clear', args:['none'], execute:(line)=>{
     localStorage.clear()
     setRF()
     terminalWrite('>  cleared saved documents')

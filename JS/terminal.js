@@ -100,9 +100,17 @@ function terminalWrite(text) {
 // COMMANDS
 
 var TERMINALCOMMANDS = [
-{ name:'help', execute:(line)=>{
-    TERMINALCOMMANDS.forEach((c)=>{
-        terminalWrite('> '+c.name)
-    })
+{ name:'help', args:['command'], execute:(line)=>{
+    if (line.length==1) {
+        TERMINALCOMMANDS.forEach((c)=>{
+            terminalWrite('> '+c.name)
+        })
+    } else {
+        TERMINALCOMMANDS.forEach((c)=>{
+            if (c.name==line[1]) {
+                terminalWrite(c.name+' '+c.args)
+            }
+        })
+    }
 } }
 ]
