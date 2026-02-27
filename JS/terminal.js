@@ -42,8 +42,9 @@ function terminalRead() {
     }
 }
 function terminalWrite(text) {
-    terminalInput.style.height = (18 * terminalInput.value.split('\n').length)+'px'
-    terminalOutput.value = terminalInput.value+'\n'+text
+    console.log('terminal write called')
+    terminalOnput.style.height = (18 * terminalInput.value.split('\n').length)+'px'
+    terminalOutput.value = terminalOnput.value+'\n'+text
 }
 
 // COMMANDS
