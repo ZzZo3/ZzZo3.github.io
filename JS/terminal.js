@@ -23,7 +23,7 @@ terminal.addEventListener('click', ()=>{
 terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('\n')
-    terminalInput.style.height = (18 * text.length - 2)+'px'
+    terminalInput.style.height = (18 * text.length)+'px'
 })
 
 function terminalRead() {
@@ -32,7 +32,7 @@ function terminalRead() {
         var text = terminalInput.value
         console.log(text) //log
         terminalInput.value = ''
-        terminalInput.style.height = '16px'
+        terminalInput.style.height = '18px'
         command = text.split('\n').map((line)=>line.split(' '))
         command.forEach((line)=>{
             TERMINALCOMMANDS.forEach((COMMAND)=>{

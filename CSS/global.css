@@ -144,8 +144,8 @@ html, body {
     resize: none;
     box-sizing: border-box;
     width: 100%;
-    field-sizing: 16px;
     height: 18px;
+    field-sizing: 16px;
     font-family:'Courier New', Courier, monospace;
     color: rgb(255, 216, 132);
     border: none;
