@@ -33,7 +33,7 @@ function terminalRead() {
             TERMINALCOMMANDS.forEach((COMMAND)=>{
                 if (COMMAND.name == line[0]) {
                     console.log('TERMINAL: '+COMMAND.name+': '+line) //log
-                    terminalWrite(line)
+                    terminalWrite(line.join(' '))
                     COMMAND.execute(line)
                 }
             })
@@ -42,7 +42,7 @@ function terminalRead() {
     }
 }
 function terminalWrite(text) {
-    console.log('terminal write called')
+    console.log('terminal write: '+text)
     terminalOutput.value = terminalOutput.value+'\n'+text
     terminalOutput.style.height = (18 * terminalOutput.value.split('\n').length)+'px'
 }
