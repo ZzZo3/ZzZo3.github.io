@@ -41,7 +41,7 @@ class terminalCommand {
     constructor(name,args,does) {
         this.name = ''
         this.args = []
-        this.does = function() {}
+        this.execute = function() {}
     }
 }
 
