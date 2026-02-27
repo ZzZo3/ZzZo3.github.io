@@ -43,14 +43,12 @@ function terminalRead() {
 }
 function terminalWrite(text) {
     console.log('terminal write: '+text)
-    console.log(terminalOutput.textContent)
     var n=''
     if (terminalOutput.textContent != '') {
         n='\n'
     }
     terminalOutput.textContent = terminalOutput.textContent+n+text
     terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
-    alert(terminalOutput.textContent)
 }
 
 // COMMANDS
