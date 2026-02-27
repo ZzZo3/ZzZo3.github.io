@@ -103,6 +103,8 @@ function terminalWrite(text) {
 
 var TERMINALCOMMANDS = [
 { name:'help', execute:(line)=>{
-    terminalWrite('help called')
+    TERMINALCOMMANDS.forEach((c)=>{
+        terminalWrite(c.name)
+    })
 } }
 ]
