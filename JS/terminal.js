@@ -24,19 +24,16 @@ terminalInput.addEventListener('input', ()=>{
 function terminalParse() {
     if (terminalInput.value != '') {
         console.log('TERMINAL: parsing') //log
-        console.log(TERMINALCOMMANDS) //log
         var text = terminalInput.value
         console.log(text) //log
         terminalInput.value = ''
         terminalInput.style.height = '18px'
         command = text.split('\n').map((line)=>line.split(' '))
         command.forEach((line)=>{
-            console.log('line[0]: '+line[0]) //log
             TERMINALCOMMANDS.forEach((COMMAND)=>{
-                console.log('checking match to: '+COMMAND.name) //log
                 if (COMMAND.name == line[0]) {
-                    console.log('command detected: '+COMMAND.name) //log
                     let argList = line.splice(0, 1)
+                    console.log('TERMINAL: '+COMMAND.name+': '+argList) //log
                     COMMAND.execute(argList)
                 }
             })

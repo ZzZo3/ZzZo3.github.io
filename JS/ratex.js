@@ -529,7 +529,6 @@ function loadFunc() {
 
 TERMINALCOMMANDS.push(
 {name:'backslash', execute:(argList)=>{
-    console.log('terminal backslash command called')
     /*
     let direction = argList[0]
     if (direction=='condense') {
