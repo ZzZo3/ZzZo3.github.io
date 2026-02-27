@@ -597,6 +597,7 @@ new TerminalCMND(['erase','er'], // ERASE
             terminalWrite('>  cannot erase RF+')
         } else if(Object.keys(localStorage).includes(argList[0])) {
             localStorage.removeItem(argList[0])
+            terminalWrite('>  erased: '+argList[0])
         }
     } else {
         terminalWrite('>  could not find document: '+argList[0])
