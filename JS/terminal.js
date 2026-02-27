@@ -16,18 +16,18 @@ document.addEventListener('keydown', (event)=>{
             }
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
+            console.log(previousCommands)
+            console.log(previousCommandsNav)
             if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
-                console.log(previousCommands)
-                console.log(previousCommandsNav)
                 previousCommands.push(terminalInput.value)
                 terminalInput.value = previousCommands[previousCommands.length - previousCommandsNav]
                 previousCommandsNav += 1
             }
         } else if (event.key === "ArrowDown") {
             event.preventDefault()
+            console.log(previousCommands)
+            console.log(previousCommandsNav)
             if (previousCommandsNav > 0) {
-                console.log(previousCommands)
-                console.log(previousCommandsNav)
                 terminalInput.value = previousCommands[previousCommands.length - 1]
                 previousCommandsNav -= 1
             }
