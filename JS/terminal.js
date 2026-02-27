@@ -63,7 +63,7 @@ function terminalRead() {
         previousCommands.push(terminalInput.value)
         previousCommandsNav = 0
         if (previousCommandToRemove != 0) {
-            previousCommands = previousCommand.splice(previousCommandToRemove,1)
+            previousCommands = previousCommands.splice(previousCommandToRemove,1)
         }
         previousCommands = previousCommands.filter((value)=>value != '')
         var text = terminalInput.value
@@ -112,7 +112,13 @@ class TerminalCMND {
         line.shift() // removes command name from line[]
         var validArgs = 0
         var vettedArgs = []
-        if (line.length != this.args.length) { // check # args
+        var optionals = 0
+        this.args.forEach((arg)=>{
+            if (arg.isOptional) {
+                optionals++
+            }
+        })
+        if (line.length < this.args.length - optionals) { // check # args
             terminalWrite('ERROR: incorrect argument count')
             console.log('terminal incorrect argument count')
             console.log(this.args)
@@ -124,10 +130,13 @@ class TerminalCMND {
             return
         }
         for (let i=0; i < this.args.length; i++) {
+            if (line.length < i+1 && this.args[i].isOptional) {
+                vettedArgs.push('-')
+            }
             if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line[i]=='-' || this.args[i].takes.length==0) {
                 vettedArgs.push(line[i])
                 validArgs++
-            } else if (this.args[i].isOptional) {
+            } else if (this.args[i].isOptional || this.args[i].isOptional && line[i]==) {
                 terminalWrite('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
             } else {
                 terminalWrite('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line[i])
