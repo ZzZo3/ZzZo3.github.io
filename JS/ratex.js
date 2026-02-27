@@ -561,9 +561,14 @@ new TerminalCMND(['push'], // PUSH
     [new TerminalARG('to',[],false)],
 (argList)=>{
     if(argList[0]=='RF+') {
-        terminalWrite('>  cannt push to RF+')
+        terminalWrite('>  cannot push to RF+')
+    } else if(Object.keys(localStorage).includes(argList[0])) {
+        let currentData = localStorage.getItem(argList[0])
+        localStorage.setItem(argList[0],(currentData+'\n'+argList[0]))
+        terminalWrite('>  cannot push to RF+')
     } else {
-        confirmSaveAsFunc(argList[0])
+        localStorage.setItem(argList[0],input.value)
+        terminalWrite('>  cannot push to RF+')
     }
 }),
 new TerminalCMND(['list','ls'],[], // LIST
@@ -576,17 +581,26 @@ new TerminalCMND(['simplify','smpf'],[], // SIMPLIFY
     output.textContent = translate(input.value,false)
     terminalWrite('>  simplified document')
 }),
-new TerminalCMND(['erase','er'],[], // ERASE
+new TerminalCMND(['erase','er'], // ERASE
+    [new TerminalARG('doc',[],true)],
 (argList)=>{
-    input.value = ''
-    output.textContent = ''
-    terminalWrite('>  erased document')
-}),
-new TerminalCMND(['clear'],[], // CLEAR
-(argList)=>{
-    localStorage.clear()
-    setRF()
-    terminalWrite('>  cleared saved documents')
+    if (argList[0]=='-') {
+        input.value = ''
+        output.textContent = ''
+        terminalWrite('>  erased current document')
+    } else if (argList[0]=='all') {
+        localStorage.clear()
+        setRF()
+        terminalWrite('>  cleared saved documents')
+    } else if(Object.keys(localStorage).indludes(argList[0])) {
+        if(argList[0]=='RF+') {
+            terminalWrite('>  cannot erase RF+')
+        } else if(Object.keys(localStorage).includes(argList[0])) {
+            localStorage.removeItem(argList[0])
+        }
+    } else {
+        terminalWrite('>  could not find document: '+argList[0])
+    }
 }),
 new TerminalCMND(['copy'], // COPY
     [new TerminalARG('from',['in','out'])],
