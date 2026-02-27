@@ -55,7 +55,7 @@ terminalInput.addEventListener('input', ()=>{
     terminal.scrollIntoView({
         behavior: 'smooth',
         block: 'end'
-    });
+    })
 })
 
 function terminalRead() {
