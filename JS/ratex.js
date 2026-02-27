@@ -543,37 +543,37 @@ TERMINALCOMMANDS.push(
     let direction = line[1]
     if (line[1]=='ex') {
         backslashFunc('expand')
-        terminalWrite('  expanded slashes')
+        terminalWrite('>  expanded slashes')
     } else if (line[1]=='cd') {
         backslashFunc('condense')
-        terminalWrite('  condensed slashes')
+        terminalWrite('>  condensed slashes')
     }
 }},
 {name:'pull', execute:(line)=>{
     if (line[1] != '') {
         confirmPullDataFunc(line[1])
-        terminalWrite('  pulled from '+line[1])
+        terminalWrite('>  pulled from '+line[1])
     }
 }},
 {name:'push', execute:(line)=>{
     if (line[1] == 'RF+') {
-        terminalWrite('  cannot write to RF+')
+        terminalWrite('>  cannot write to RF+')
     } else if (line[1] != '') {
         confirmSaveAsFunc(line[1])
-        terminalWrite('  wrote to '+line[1])
+        terminalWrite('>  wrote to '+line[1])
     }
 }},
 {name:'list', execute:(line)=>{
-    terminalWrite('   saved documents: '+Object.keys(localStorage))
+    terminalWrite('>  saved documents: '+Object.keys(localStorage))
 }},
 {name:'simplify', execute:(line)=>{
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
-    terminalWrite('  simplified document')
+    terminalWrite('>  simplified document')
 }},
 {name:'erase', execute:(line)=>{
     input.value = ''
     output.textContent = ''
-    terminalWrite('  cleared document')
+    terminalWrite('>  cleared document')
 }}
 )
