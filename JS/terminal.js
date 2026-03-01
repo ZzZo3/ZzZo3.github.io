@@ -102,7 +102,7 @@ class TerminalCMND {
         this.args = args // [TerminalARG(name,takes,isOptional)]
         this.does = does // (line)=>{} after vetting parameters
     }
-    execute(line) {
+    execute(line) { // takes array of words in command
         if (typeof line[0] != 'string') {
             terminalWrite('ERROR: failed to parse')
             console.log('terminal failed to parse line as string')
@@ -131,13 +131,18 @@ class TerminalCMND {
         }
         for (let i=0; i < this.args.length; i++) {
             if (line.length < i+1 && this.args[i].isOptional) {
+                console.log('terminal arg case 1')
                 vettedArgs.push('-')
+                validArgs++
             } else if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line[i]=='-' || this.args[i].takes.length==0) {
+                console.log('terminal arg case 2')
                 vettedArgs.push(line[i])
                 validArgs++
             } else if (this.args[i].isOptional || this.args[i].isOptional) {
+                console.log('terminal arg case 3')
                 terminalWrite('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
             } else {
+                console.log('terminal arg case 4')
                 terminalWrite('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line[i])
                 terminalWrite('>  \'help '+this.args[i].name+'\' for a detailed description.')
             }
@@ -193,7 +198,7 @@ const terminalEcho = new TerminalCMND(['echo'],
     }
 })
 
-var terminalHelp = new TerminalCMND(['help'],
+const terminalHelp = new TerminalCMND(['help'],
     [new TerminalARG('cmnd',[],true),
     new TerminalARG('arg',[],true)],
 (argList)=>{
