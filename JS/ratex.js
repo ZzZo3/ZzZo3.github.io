@@ -238,8 +238,8 @@ closePullData.onclick = ()=>{
 }
 function confirmSaveAsFunc(saveAs) {
     console.log('attempting to write to: \"'+saveAs+'\"')
-    if(saveAs == 'RF+') {
-        console.log('   cannot write to RF+')
+    if(saveAs == 'RaTeX:RF+') {
+        console.log('   cannot write to RaTeX:RF+')
         let pickRand = randomInt(5)
         if(pickRand == 0) {
             alert('no :3')
