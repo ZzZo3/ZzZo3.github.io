@@ -169,36 +169,7 @@ new TerminalCMND([''],
 
 */
 
-const terminalEcho = new TerminalCMND(['echo'], // ECHO
-    [new TerminalARG('package',[],false),
-    new TerminalARG('to',[],true),
-    new TerminalARG('append',['+','force'],true)],
-(argList)=>{
-    let package = argList[0]
-    let to = argList[1]
-    let append = argList[2]
-    if (to=='-') {
-        terminalWrite(package)
-    } else if (append=='+') {
-        if (Object.keys(localStorage).includes(to)) {
-            if (to=='RF+') {
-                terminalWrite('>  cannot write to RF+')
-            } else {
-                localStorage.setItem(to,(package+'\n'+localStorage.getItem(to)))
-            }
-        } else {
-            terminalWrite('>  document \"'+to+'\" not found')
-        }
-    } else if (append=='force') {
-        if (to=='RF+') {
-            terminalWrite('>  cannot write to RF+')
-        } else {
-            localStorage.setItem(to,package)
-        }
-    }
-})
-
-const terminalHelp = new TerminalCMND(['help'], // HELP
+var TERMINALCOMMANDS = [new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true),
     new TerminalARG('arg',[],true)],
 (argList)=>{
@@ -231,9 +202,8 @@ const terminalHelp = new TerminalCMND(['help'], // HELP
     } else {
         terminalWrite('ERROR: help: unknown')
     }
-})
-
-const terminalOptions = new TerminalCMND(['options'], // OPTIONS
+}),
+new TerminalCMND(['options'], // OPTIONS
     [new TerminalARG('option',['height'],false),
     new TerminalARG('value',[],false)],
 (argList)=>{
@@ -242,10 +212,7 @@ const terminalOptions = new TerminalCMND(['options'], // OPTIONS
     if (option=='height') {
         terminal.style.height = 18 * parseInt(value)
     }
-})
-
-
-var TERMINALCOMMANDS = [terminalHelp,terminalEcho,
+}),
 new TerminalCMND(['list','ls'], // LIST
     [new TerminalARG('type',['local','l','session','s'],false)],
 (argList)=>{
@@ -258,4 +225,32 @@ new TerminalCMND(['list','ls'], // LIST
         terminalWrite('>  '+datum)
         })
     }
-}),]
+}),
+new TerminalCMND(['echo'], // ECHO
+    [new TerminalARG('package',[],false),
+    new TerminalARG('to',[],true),
+    new TerminalARG('append',['+','force'],true)],
+(argList)=>{
+    let package = argList[0]
+    let to = argList[1]
+    let append = argList[2]
+    if (to=='-') {
+        terminalWrite(package)
+    } else if (append=='+') {
+        if (Object.keys(localStorage).includes(to)) {
+            if (to=='RF+') {
+                terminalWrite('>  cannot write to RF+')
+            } else {
+                localStorage.setItem(to,(package+'\n'+localStorage.getItem(to)))
+            }
+        } else {
+            terminalWrite('>  document \"'+to+'\" not found')
+        }
+    } else if (append=='force') {
+        if (to=='RF+') {
+            terminalWrite('>  cannot write to RF+')
+        } else {
+            localStorage.setItem(to,package)
+        }
+    }
+})]
