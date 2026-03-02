@@ -210,7 +210,7 @@ new TerminalCMND(['options'], // OPTIONS
     let option = argList[0]
     let value = argList[1]
     if (option=='height') {
-        terminal.style.height = 18 * parseInt(value)
+        terminal.style.height = (18 * parseInt(value))+'px'
     }
 }),
 new TerminalCMND(['list','ls'], // LIST
