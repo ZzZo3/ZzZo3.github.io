@@ -32,7 +32,7 @@ storage.textContent = Object.keys(localStorage)
 
 
 function setRF() {
-localStorage.setItem('RF+',
+localStorage.setItem('RaTeX:RF+',
 `# \\SETS
 bin type set = { 0 , 1 }
   # \\binary \\set - also referred with 'bool','boolean'
@@ -255,7 +255,7 @@ function confirmSaveAsFunc(saveAs) {
             alert('deceitful.')
         }
     } else if(saveAs != '') {
-        localStorage.setItem('RaTeX'+saveAs,input.value)
+        localStorage.setItem('RaTeX:'+saveAs,input.value)
         displayData()
         console.log('   \"'+saveAs+'\" write success')
         saveAsBox.value = ''
@@ -266,7 +266,7 @@ function confirmSaveAsFunc(saveAs) {
 }
 function confirmPullDataFunc(data) {
     console.log('attempting to read: \"'+data+'\"')
-    if(Object.keys(localStorage).includes('RaTeX'+data)) {
+    if(Object.keys(localStorage).includes('RaTeX:'+data)) {
         console.log('   \"'+data+'\" found')
         input.value = localStorage[data]
         output.textContent = translate(input.value,false)

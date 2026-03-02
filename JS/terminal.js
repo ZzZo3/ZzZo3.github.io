@@ -214,15 +214,21 @@ new TerminalCMND(['options'], // OPTIONS
     }
 }),
 new TerminalCMND(['list','ls'], // LIST
-    [new TerminalARG('type',['local','l','session','s'],false)],
+    [new TerminalARG('type',[],false)],
 (argList)=>{
     if (argList[0]=='local' || argList[0]=='l') {
         Object.keys(localStorage).forEach((datum)=>{
         terminalWrite('>  '+datum)
         })
-    } else {
+    } else if (argList[0]=='session' || argList[0]=='s') {
         Object.keys(sessionStorage).forEach((datum)=>{
         terminalWrite('>  '+datum)
+        })
+    } else {
+        Object.keys(localStorage).forEach((datum)=>{
+            let datumSplit = datum.split(':')
+            if (datumSplit[0]==argList[0])
+        terminalWrite('>  '+datumSplit[1])
         })
     }
 }),
