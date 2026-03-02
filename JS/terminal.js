@@ -206,7 +206,7 @@ var TERMINALCOMMANDS = [/*new TerminalCMND(['help'], // HELP
 new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
-    if (cmnd='-') {
+    if (argList[0]='-') {
         terminalWrite('>  \"help [cmnd] [arg]\"')
         terminalWrite('>  [cmnd]:')
         TERMINALCOMMANDS.forEach((c)=>{
