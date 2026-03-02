@@ -550,25 +550,25 @@ new TerminalCMND(['backslash','bs'], // BACKSLASH
 new TerminalCMND(['pull'], // PULL
     [new TerminalARG('from',[],false)],
 (argList)=>{
-    if(Object.keys(localStorage).includes(argList[0])) {
-        confirmPullDataFunc(argList[0])
-        terminalWrite('>  pulled from document: '+argList[0])
+    if(Object.keys(localStorage).includes('RaTeX:'+argList[0])) {
+        confirmPullDataFunc('RaTeX:'+argList[0])
+        terminalWrite('>  pulled from document: \"RaTeX:'+argList[0]+'\"')
     } else {
-        terminalWrite('>  could not find document: '+argList[0])
+        terminalWrite('>  could not find document: \"RaTeX:'+argList[0]+'\"')
     }
 }),
 new TerminalCMND(['push'], // PUSH
     [new TerminalARG('to',[],false)],
 (argList)=>{
     if(argList[0]=='RF+') {
-        terminalWrite('>  cannot push to RF+')
-    } else if(Object.keys(localStorage).includes(argList[0])) {
-        let currentData = localStorage.getItem(argList[0])
-        localStorage.setItem(argList[0],(currentData+'\n'+input.value))
-        terminalWrite('>  appended to: \"'+argList[0]+'\"')
+        terminalWrite('>  cannot push to RaTeX:RF+')
+    } else if(Object.keys(localStorage).includes('RaTeX:'+argList[0])) {
+        let currentData = localStorage.getItem('RaTeX:'+argList[0])
+        localStorage.setItem('RaTeX:'+argList[0],(currentData+'\n'+input.value))
+        terminalWrite('>  appended to: \"RaTeX:'+argList[0]+'\"')
     } else {
-        localStorage.setItem(argList[0],input.value)
-        terminalWrite('>  pushed to: \"'+argList[0]+'\"')
+        localStorage.setItem('RaTeX:'+argList[0],input.value)
+        terminalWrite('>  pushed to: \"RaTeX:'+argList[0]+'\"')
     }
 }),
 new TerminalCMND(['simplify','smpf'],[], // SIMPLIFY
