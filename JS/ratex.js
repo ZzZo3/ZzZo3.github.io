@@ -266,7 +266,7 @@ function confirmSaveAsFunc(saveAs) {
 }
 function confirmPullDataFunc(data) {
     console.log('attempting to read: \"'+data+'\"')
-    if(Object.keys(localStorage).includes('RaTeX:'+data)) {
+    if(Object.keys(localStorage).includes(data)) {
         console.log('   \"'+data+'\" found')
         input.value = localStorage[data]
         output.textContent = translate(input.value,false)
