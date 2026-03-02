@@ -203,6 +203,16 @@ var TERMINALCOMMANDS = [/*new TerminalCMND(['help'], // HELP
         terminalWrite('ERROR: help: unknown')
     }
 }),*/
+new TerminalCMND(['options'], // OPTIONS
+    [new TerminalARG('option',['height'],false),
+    new TerminalARG('value',[],false)],
+(argList)=>{
+    let option = argList[0]
+    let value = argList[1]
+    if (option=='height') {
+        terminal.style.height = (18 * parseInt(value))+'px'
+    }
+}),
 new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
@@ -232,16 +242,6 @@ new TerminalCMND(['help'], // HELP
                 })
             }
         })
-    }
-}),
-new TerminalCMND(['options'], // OPTIONS
-    [new TerminalARG('option',['height'],false),
-    new TerminalARG('value',[],false)],
-(argList)=>{
-    let option = argList[0]
-    let value = argList[1]
-    if (option=='height') {
-        terminal.style.height = (18 * parseInt(value))+'px'
     }
 }),
 new TerminalCMND(['list','ls'], // LIST
