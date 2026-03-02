@@ -207,7 +207,11 @@ new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
     if (cmnd='-') {
-
+        terminalWrite('>  \"help [cmnd] [arg]\"')
+        terminalWrite('>  [cmnd]:')
+        TERMINALCOMMANDS.forEach((c)=>{
+            terminalWrite('>  '+c.name[0])
+        })
     } else {
         TERMINALCOMMANDS.forEach((CMND)=>{
             if (CMND.name==argList[0]) {
