@@ -169,7 +169,7 @@ new TerminalCMND([''],
 
 */
 
-var TERMINALCOMMANDS = [new TerminalCMND(['help'], // HELP
+var TERMINALCOMMANDS = [/*new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true),
     new TerminalARG('arg',[],true)],
 (argList)=>{
@@ -201,6 +201,33 @@ var TERMINALCOMMANDS = [new TerminalCMND(['help'], // HELP
         })
     } else {
         terminalWrite('ERROR: help: unknown')
+    }
+}),*/
+new TerminalCMND(['help'], // HELP
+    [new TerminalARG('cmnd',[],true)],
+(argList)=>{
+    if (cmnd='-') {
+
+    } else {
+        TERMINALCOMMANDS.forEach((CMND)=>{
+            if (CMND.name==argList[0]) {
+                helpedArgsS=''
+                CMND.args.forEach((ARG)=>{
+                    helpedArgs += (' ['+ARG.name+']')
+                })
+                terminalWrite('>  '+CMND.name+helpedArgs)
+                CMND.args.forEach((ARG)=>{
+                    if (ARG.takes.length > 0) {
+                        terminalWrite('>  ['+ARG.name+'] takes:')
+                        ARG.takes.forEach((take)=>{
+                            terminalWrite('>  '+take)
+                        })
+                    } else {
+                        terminalWrite('>  ['+ARG.name+'] takes any/unknown')
+                    }
+                })
+            }
+        })
     }
 }),
 new TerminalCMND(['options'], // OPTIONS
