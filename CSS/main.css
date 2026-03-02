@@ -54,11 +54,4 @@
     border-radius: 10px;
     height: 200px;
     width: 400px;
-    background: 
-      conic-gradient(
-          rgba(8 8 8 0.6) 90deg,
-          rgba(10 10 10 0.6) 90deg 180deg,
-          rgba(8 8 8 0.6) 180deg 270deg,
-          rgba(10 10 10 0.6) 270deg 360deg
-      );
 }
