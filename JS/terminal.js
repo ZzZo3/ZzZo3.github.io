@@ -215,7 +215,7 @@ new TerminalCMND(['help'], // HELP
     } else {
         TERMINALCOMMANDS.forEach((CMND)=>{
             if (CMND.name==argList[0]) {
-                helpedArgsS=''
+                var helpedArgs = ''
                 CMND.args.forEach((ARG)=>{
                     helpedArgs += (' ['+ARG.name+']')
                 })
