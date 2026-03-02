@@ -204,7 +204,7 @@ var TERMINALCOMMANDS = [/*new TerminalCMND(['help'], // HELP
     }
 }),*/
 new TerminalCMND(['help'], // HELP
-    [new TerminalARG('cmnd',[],false)],
+    [new TerminalARG('cmnd',[],true)],
 (argList)=>{
     if (argList[0]='-') {
         terminalWrite('>  \"help [cmnd]\"')
