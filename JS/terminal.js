@@ -227,7 +227,7 @@ new TerminalCMND(['list','ls'], // LIST
     } else {
         Object.keys(localStorage).forEach((datum)=>{
             let datumSplit = datum.split(':')
-            if (datumSplit[0]==argList[0])
+            if (datumSplit[0].toLowerCase()==argList[0].toLowerCase())
         terminalWrite('>  '+datumSplit[1])
         })
     }
