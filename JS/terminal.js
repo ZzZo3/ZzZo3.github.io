@@ -169,7 +169,7 @@ new TerminalCMND([''],
 
 */
 
-const terminalEcho = new TerminalCMND(['echo'],
+const terminalEcho = new TerminalCMND(['echo'], // ECHO
     [new TerminalARG('package',[],false),
     new TerminalARG('to',[],true),
     new TerminalARG('append',['+','force'],true)],
@@ -198,7 +198,7 @@ const terminalEcho = new TerminalCMND(['echo'],
     }
 })
 
-const terminalHelp = new TerminalCMND(['help'],
+const terminalHelp = new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true),
     new TerminalARG('arg',[],true)],
 (argList)=>{
@@ -231,8 +231,18 @@ const terminalHelp = new TerminalCMND(['help'],
     } else {
         terminalWrite('ERROR: help: unknown')
     }
-}
-)
+})
+
+const terminalOptions = new TerminalCMND(['options'], // OPTIONS
+    [new TerminalARG('option',['height'],false),
+    new TerminalARG('value',[],false)],
+(argList)=>{
+    let option = argList[0]
+    let value = argList[1]
+    if (option=='height') {
+        terminal.style.height = 18 * parseInt(value)
+    }
+})
 
 
 var TERMINALCOMMANDS = [terminalHelp,terminalEcho,
