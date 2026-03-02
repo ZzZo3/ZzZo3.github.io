@@ -207,7 +207,7 @@ new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
     if (argList[0]='-') {
-        terminalWrite('>  \"help [cmnd] [arg]\"')
+        terminalWrite('>  \"help [cmnd]\"')
         terminalWrite('>  [cmnd]:')
         TERMINALCOMMANDS.forEach((c)=>{
             terminalWrite('>  '+c.name[0])
@@ -222,7 +222,7 @@ new TerminalCMND(['help'], // HELP
                 terminalWrite('>  '+CMND.name+helpedArgs)
                 CMND.args.forEach((ARG)=>{
                     if (ARG.takes.length > 0) {
-                        terminalWrite('>  ['+ARG.name+'] takes:')
+                        terminalWrite('>  \"'+ARG.name+'\" takes:')
                         ARG.takes.forEach((take)=>{
                             terminalWrite('>  '+take)
                         })
