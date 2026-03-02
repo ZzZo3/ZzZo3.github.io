@@ -21,6 +21,7 @@ const isometricParent = document.getElementById("isometricParent")
 const isometricContainer = document.getElementById('isometricContainer')
 const Selection = document.getElementById('Selection')
 const SelectionZ = document.getElementById('SelectionZ')
+const tileTip = document.getElementById('tileTip')
 const linkDisplay = document.getElementById('linkDisplay')
 const posDisplay = document.getElementById('posDisplay')
 //RENDER VARIABLES
@@ -402,14 +403,17 @@ function getTile() {
             link = "https://n0n-sense.org/" + TILE.getAttribute("data-link")
             console.log('   link found: ' + link)
             linkDisplay.innerText = '[ '+link+' ]'
+            tileTip.style.opacity = 1.0
         } else {
             link = ''
             linkDisplay.innerText = '[ no link found ]'
+            tileTip.style.opacity = 0.0
         }
     } else {
         console.log('   no tile found at ' + [POSITION])
-            link = ''
-            linkDisplay.innerText = '[ no link found ]'
+        link = ''
+        linkDisplay.innerText = '[ no link found ]'
+        tileTip.style.opacity = 0.0
     }
     posDisplay.innerText = '['+POSITION[0]+','+POSITION[1]+']'
 }
