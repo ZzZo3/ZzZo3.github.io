@@ -541,10 +541,10 @@ new TerminalCMND(['backslash','bs'], // BACKSLASH
 (argList)=>{
     if (argList[0]=='ex') {
         backslashFunc('expand')
-        terminalWrite('>  expanded slashes')
+        TERMINAL.write('>  expanded slashes')
     } else if (argList[0]=='cd') {
         backslashFunc('condense')
-        terminalWrite('>  condensed slashes')
+        TERMINAL.write('>  condensed slashes')
     }
 }),
 new TerminalCMND(['pull'], // PULL
@@ -552,30 +552,30 @@ new TerminalCMND(['pull'], // PULL
 (argList)=>{
     if(Object.keys(localStorage).includes('RaTeX:'+argList[0])) {
         confirmPullDataFunc('RaTeX:'+argList[0])
-        terminalWrite('>  pulled from document: \"RaTeX:'+argList[0]+'\"')
+        TERMINAL.write('>  pulled from document: \"RaTeX:'+argList[0]+'\"')
     } else {
-        terminalWrite('>  could not find document: \"RaTeX:'+argList[0]+'\"')
+        TERMINAL.write('>  could not find document: \"RaTeX:'+argList[0]+'\"')
     }
 }),
 new TerminalCMND(['push'], // PUSH
     [new TerminalARG('to',[],false)],
 (argList)=>{
     if(argList[0]=='RF+') {
-        terminalWrite('>  cannot push to RaTeX:RF+')
+        TERMINAL.write('>  cannot push to RaTeX:RF+')
     } else if(Object.keys(localStorage).includes('RaTeX:'+argList[0])) {
         let currentData = localStorage.getItem('RaTeX:'+argList[0])
         localStorage.setItem('RaTeX:'+argList[0],(currentData+'\n'+input.value))
-        terminalWrite('>  appended to: \"RaTeX:'+argList[0]+'\"')
+        TERMINAL.write('>  appended to: \"RaTeX:'+argList[0]+'\"')
     } else {
         localStorage.setItem('RaTeX:'+argList[0],input.value)
-        terminalWrite('>  pushed to: \"RaTeX:'+argList[0]+'\"')
+        TERMINAL.write('>  pushed to: \"RaTeX:'+argList[0]+'\"')
     }
 }),
 new TerminalCMND(['simplify','smpf'],[], // SIMPLIFY
 (argList)=>{
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
-    terminalWrite('>  simplified document')
+    TERMINAL.write('>  simplified document')
 }),
 new TerminalCMND(['erase','er'], // ERASE
     [new TerminalARG('doc',[],true)],
@@ -583,20 +583,20 @@ new TerminalCMND(['erase','er'], // ERASE
     if (argList[0]=='-') {
         input.value = ''
         output.textContent = ''
-        terminalWrite('>  erased current document')
+        TERMINAL.write('>  erased current document')
     } else if (argList[0]=='all') {
         localStorage.clear()
         setRF()
-        terminalWrite('>  cleared localStorage')
+        TERMINAL.write('>  cleared localStorage')
     } else if(Object.keys(localStorage).includes(argList[0])) {
         if(argList[0]=='RF+') {
-            terminalWrite('>  cannot erase RF+')
+            TERMINAL.write('>  cannot erase RF+')
         } else if(Object.keys(localStorage).includes(argList[0])) {
             localStorage.removeItem(argList[0])
-            terminalWrite('>  erased: '+argList[0])
+            TERMINAL.write('>  erased: '+argList[0])
         }
     } else {
-        terminalWrite('>  could not find document: '+argList[0])
+        TERMINAL.write('>  could not find document: '+argList[0])
     }
 }),
 new TerminalCMND(['copy'], // COPY
@@ -604,10 +604,10 @@ new TerminalCMND(['copy'], // COPY
 (argList)=>{
     if (argList[0]=='in') {
         navigator.clipboard.writeText(input.value)
-        terminalWrite('>  copied raw document to clipboard')
+        TERMINAL.write('>  copied raw document to clipboard')
     } else if (argList[0]=='out') {
         navigator.clipboard.writeText(output.textContent)
-        terminalWrite('>  copied translated document to clipboard')
+        TERMINAL.write('>  copied translated document to clipboard')
     }
 })
 )

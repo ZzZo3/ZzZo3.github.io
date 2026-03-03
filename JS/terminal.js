@@ -13,7 +13,7 @@ document.addEventListener('keydown', (event)=>{
         if (event.key === "Enter") {
             if (!event.shiftKey) {
                 event.preventDefault()
-                terminalRead()
+                TERMINAL.read()
             }
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
@@ -48,6 +48,10 @@ terminal.addEventListener('click', ()=>{
     terminalInput.focus()
 })
 
+// TERMINAL OBJECT
+
+var TERMINAL = {}
+
 terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('\n')
@@ -58,7 +62,7 @@ terminalInput.addEventListener('input', ()=>{
     })
 })
 
-function terminalRead() {
+TERMINAL.read(text) = (text)=>{
     if (terminalInput.value != '') {
         previousCommands.push(terminalInput.value)
         previousCommandsNav = 0
@@ -76,20 +80,20 @@ function terminalRead() {
                 if (COMMAND.name.includes(line[0])) {
                     validCommand = true
                     console.log('TERMINAL: '+line) //log
-                    terminalWrite(line.join(' '))
+                    TERMINAL.write(line.join(' '))
                     COMMAND.execute(line)
                 }
             })
             if (!validCommand) {
-                terminalWrite(line.join(' '))
-                terminalWrite('ERROR: unknown command: '+line[0])
+                TERMINAL.write(line.join(' '))
+                TERMINAL.write('ERROR: unknown command: '+line[0])
             }
         })
         terminal.scrollBy(0,999999)
         console.log('TERMINAL: parsed') //log
     }
 }
-function terminalWrite(text) {
+TERMINAL.write(text) = (text)=>{
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
     terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
     terminal.scrollBy(0,999999)
@@ -105,7 +109,7 @@ class TerminalCMND {
     }
     execute(line) { // takes array of words in command
         if (typeof line[0] != 'string') {
-            terminalWrite('ERROR: failed to parse')
+            TERMINAL.write('ERROR: failed to parse')
             console.log('terminal failed to parse line as string')
             console.log(line)
             return
@@ -120,7 +124,7 @@ class TerminalCMND {
             }
         })
         if (line.length < this.args.length - optionals) { // check # args
-            terminalWrite('ERROR: incorrect argument count')
+            TERMINAL.write('ERROR: incorrect argument count')
             console.log('terminal incorrect argument count')
             console.log(this.args)
             console.log(line)
@@ -141,11 +145,11 @@ class TerminalCMND {
                 validArgs++
             } else if (this.args[i].isOptional || this.args[i].isOptional) {
                 console.log('terminal arg case 3')
-                terminalWrite('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
+                TERMINAL.write('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
             } else {
                 console.log('terminal arg case 4')
-                terminalWrite('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line[i])
-                terminalWrite('>  \'help '+this.args[i].name+'\' for a detailed description.')
+                TERMINAL.write('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line[i])
+                TERMINAL.write('>  \'help '+this.args[i].name+'\' for a detailed description.')
             }
         }
         if (validArgs==this.args.length) {this.does(vettedArgs)}
@@ -177,41 +181,41 @@ var TERMINALCOMMANDS = [/*new TerminalCMND(['help'], // HELP
     let cmnd = argList[0]
     let param = argList[1]
     if (cmnd=='-' && param=='-') {
-        terminalWrite('>  \"help [cmnd] [arg]\"')
-        terminalWrite('>  [cmnd]:')
+        TERMINAL.write('>  \"help [cmnd] [arg]\"')
+        TERMINAL.write('>  [cmnd]:')
         TERMINALCOMMANDS.forEach((c)=>{
-            terminalWrite('>  '+c.name[0])
+            TERMINAL.write('>  '+c.name[0])
         })
     } else if (param=='-') {
         TERMINALCOMMANDS.forEach((c)=>{
             if (c.name[0]==cmnd) {
-                terminalWrite('>  \"help '+cmnd+'\" [arg]')
-                terminalWrite('>  [arg]:')
+                TERMINAL.write('>  \"help '+cmnd+'\" [arg]')
+                TERMINAL.write('>  [arg]:')
                 if (c.args==[]) {
-                    terminalWrite('>   any')
+                    TERMINAL.write('>   any')
                 } else {
-                    terminalWrite('>   '+c.args)
+                    TERMINAL.write('>   '+c.args)
                 }
             }
         })
     } else if (argList.length==2) {
         TERMINALCOMMANDS.forEach((c)=>{
             if (c.name[0]==cmnd) {
-                terminalWrite('>  param: '+param)
+                TERMINAL.write('>  param: '+param)
             }
         })
     } else {
-        terminalWrite('ERROR: help: unknown')
+        TERMINAL.write('ERROR: help: unknown')
     }
 }),*/
 new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
     if (argList[0]='-') {
-        terminalWrite('>  \"help [cmnd]\"')
-        terminalWrite('>  [cmnd]:')
+        TERMINAL.write('>  \"help [cmnd]\"')
+        TERMINAL.write('>  [cmnd]:')
         TERMINALCOMMANDS.forEach((c)=>{
-            terminalWrite('>  '+c.name[0])
+            TERMINAL.write('>  '+c.name[0])
         })
     } else {
         TERMINALCOMMANDS.forEach((CMND)=>{
@@ -220,15 +224,15 @@ new TerminalCMND(['help'], // HELP
                 CMND.args.forEach((ARG)=>{
                     helpedArgs += (' ['+ARG.name+']')
                 })
-                terminalWrite('>  '+CMND.name+helpedArgs)
+                TERMINAL.write('>  '+CMND.name+helpedArgs)
                 CMND.args.forEach((ARG)=>{
                     if (ARG.takes.length > 0) {
-                        terminalWrite('>  \"'+ARG.name+'\" takes:')
+                        TERMINAL.write('>  \"'+ARG.name+'\" takes:')
                         ARG.takes.forEach((take)=>{
-                            terminalWrite('>  '+take)
+                            TERMINAL.write('>  '+take)
                         })
                     } else {
-                        terminalWrite('>  ['+ARG.name+'] takes any/unknown')
+                        TERMINAL.write('>  ['+ARG.name+'] takes any/unknown')
                     }
                 })
             }
@@ -250,17 +254,17 @@ new TerminalCMND(['list','ls'], // LIST
 (argList)=>{
     if (argList[0]=='local' || argList[0]=='l') {
         Object.keys(localStorage).forEach((datum)=>{
-        terminalWrite('>  '+datum)
+        TERMINAL.write('>  '+datum)
         })
     } else if (argList[0]=='session' || argList[0]=='s') {
         Object.keys(sessionStorage).forEach((datum)=>{
-        terminalWrite('>  '+datum)
+        TERMINAL.write('>  '+datum)
         })
     } else {
         Object.keys(localStorage).forEach((datum)=>{
             let datumSplit = datum.split(':')
             if (datumSplit[0].toLowerCase()==argList[0].toLowerCase())
-        terminalWrite('>  '+datumSplit[1])
+        TERMINAL.write('>  '+datumSplit[1])
         })
     }
 }),
@@ -273,20 +277,20 @@ new TerminalCMND(['echo'], // ECHO
     let to = argList[1]
     let append = argList[2]
     if (to=='-') {
-        terminalWrite(package)
+        TERMINAL.write(package)
     } else if (append=='+') {
         if (Object.keys(localStorage).includes(to)) {
             if (to=='RF+') {
-                terminalWrite('>  cannot write to RF+')
+                TERMINAL.write('>  cannot write to RF+')
             } else {
                 localStorage.setItem(to,(package+'\n'+localStorage.getItem(to)))
             }
         } else {
-            terminalWrite('>  document \"'+to+'\" not found')
+            TERMINAL.write('>  document \"'+to+'\" not found')
         }
     } else if (append=='force') {
         if (to=='RF+') {
-            terminalWrite('>  cannot write to RF+')
+            TERMINAL.write('>  cannot write to RF+')
         } else {
             localStorage.setItem(to,package)
         }
