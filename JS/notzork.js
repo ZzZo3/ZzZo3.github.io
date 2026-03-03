@@ -17,6 +17,6 @@ function loadFunc() {
     for(let i = 0; i<pageTitle.length; i++) {
         pageTitle[i].textContent = 'ZzZ0rk! '+vNum
     }
-    document.getElementById('terminal').style.height = (6*18)+'%'
+    document.getElementById('terminal').style.height = (6*12)+'%'
     console.log('   \"loadFunc()\" finished')
 }
