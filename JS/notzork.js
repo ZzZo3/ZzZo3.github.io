@@ -1,5 +1,5 @@
 //BASE
-const vNum = '0.0.b'
+const vNum = '0.0.c'
 const pageTitle = document.getElementsByClassName('pageTitle')
 
 TERMINALCOMMANDS.push(
