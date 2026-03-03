@@ -35,7 +35,7 @@ document.addEventListener('keydown', (event)=>{
             if (TERMINAL.previousCommands.length > 0 && TERMINAL.previousCommandsNav > 0) {
                 TERMINAL.previousCommandsNav -= 1
                 terminalInput.value = TERMINAL.previousCommands[TERMINAL.previousCommands.length - 1 - TERMINAL.previousCommandsNav]
-                 terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
+                terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
             }
         }
     }
