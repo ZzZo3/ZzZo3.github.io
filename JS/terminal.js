@@ -62,6 +62,11 @@ terminalInput.addEventListener('input', ()=>{
 // TERMINAL OBJECT
 
 var TERMINAL = {
+write(text) {
+    terminalOutput.textContent = terminalOutput.textContent+'\n'+text
+    terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
+    terminal.scrollBy(0,999999)
+},
 read(text) {
     if (terminalInput.value != '') {
         previousCommands.push(terminalInput.value)
@@ -80,23 +85,19 @@ read(text) {
                 if (COMMAND.name.includes(line[0])) {
                     validCommand = true
                     console.log('TERMINAL: '+line) //log
-                    TERMINAL.write(line.join(' '))
+                    this.write(line.join(' '))
                     COMMAND.execute(line)
                 }
             })
             if (!validCommand) {
-                TERMINAL.write(line.join(' '))
-                TERMINAL.write('ERROR: unknown command: '+line[0])
+                this.write(line.join(' '))
+                this.write('ERROR: unknown command: '+line[0])
             }
         })
         terminal.scrollBy(0,999999)
         console.log('TERMINAL: parsed') //log
     }
 }
-write(text) {
-    terminalOutput.textContent = terminalOutput.textContent+'\n'+text
-    terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
-    terminal.scrollBy(0,999999)
 }
 
 // COMMANDS
