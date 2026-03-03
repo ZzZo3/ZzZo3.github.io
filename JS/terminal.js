@@ -10,12 +10,7 @@ document.addEventListener('keydown', (event)=>{
         if (event.key === "Enter") {
             if (!event.shiftKey) {
                 event.preventDefault()
-                if (!TERMINAL.waiting) {
-                    TERMINAL.read(terminalInput.value)
-                } else {
-                    TERMINAL.waitList += ' '+terminalInput.value
-                    TERMINAL.read(waitList)
-                }
+                TERMINAL.read(terminalInput.value)
             }
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
@@ -70,6 +65,7 @@ var TERMINAL = {
     queue: [],
     waiting: false,
     waitList: '',
+    acceptableReplies: [],
 write(text) {
     console.log('TERMINAL: writing') //log
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
@@ -93,6 +89,7 @@ fire() {
 await(replyArr) {
     console.log('TERMINAL: awaiting') //log
     waiting = true
+    acceptableReplies = replyArr
     console.log('TERMINAL: awaited') //log
 },
 read(text) {
@@ -113,7 +110,8 @@ read(text) {
                 this.parse(line)
             })
         } else {
-            text = text.split('\n').join(' ')
+            TERMINAL.waitList += ' '+text
+            waitList = waitList.split('\n').join(' ')
             this.write(waitList)
             this.parse(waitList)
         }
