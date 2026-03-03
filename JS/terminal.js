@@ -6,6 +6,7 @@ const terminalOutput = document.getElementById('terminalOutput')
 var previousCommands = []
 var previousCommandsNav = 0
 var previousCommandToRemove = 0
+var terminalQueue = []
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
@@ -68,6 +69,11 @@ write(text) {
     terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
     terminal.scrollBy(0,999999)
     console.log('TERMINAL: wrote') //log
+},
+queue(text) = {
+    console.log('TERMINAL: queueing')
+    
+    console.log('TERMINAL: queued')
 },
 read() {
     console.log('TERMINAL: reading') //log
