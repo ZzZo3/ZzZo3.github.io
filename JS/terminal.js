@@ -81,6 +81,7 @@ function terminalRead() {
                 }
             })
             if (!validCommand) {
+                terminalWrite(line.join(' '))
                 terminalWrite('ERROR: unknown command: '+line[0])
             }
         })
