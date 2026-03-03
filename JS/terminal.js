@@ -2,11 +2,7 @@
 const terminal = document.getElementById('terminal')
 const terminalInput = document.getElementById('terminalInput')
 const terminalOutput = document.getElementById('terminalOutput')
-//
-var previousCommands = []
-var previousCommandsNav = 0
-var previousCommandToRemove = 0
-var terminalQueue = []
+
 
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
@@ -18,28 +14,28 @@ document.addEventListener('keydown', (event)=>{
             }
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
-            if (previousCommands.length > 0 && previousCommandsNav < previousCommands.length) {
-                if (previousCommands[previousCommands.length - 1] != terminalInput.value && previousCommandsNav==0) {
+            if (TERMINAL.previousCommands.length > 0 && TERMINAL.previousCommandsNav < TERMINAL.previousCommands.length) {
+                if (TERMINAL.previousCommands[TERMINAL.previousCommands.length - 1] != terminalInput.value && TERMINAL.previousCommandsNav==0) {
                     if (terminalInput.value=='') {
-                        previousCommands.push('')
+                        TERMINAL.previousCommands.push('')
                     } else {
-                        previousCommands.push(terminalInput.value)
-                        previousCommandToRemove = previousCommands.length - 1
+                        TERMINAL.previousCommands.push(terminalInput.value)
+                        TERMINAL.previousCommandToRemove = TERMINAL.previousCommands.length - 1
                     }
                 }
-                previousCommandsNav += 1
-                if (previousCommandsNav==previousCommands.length) {
-                    previousCommandsNav -= 1
+                TERMINAL.previousCommandsNav += 1
+                if (TERMINAL.previousCommandsNav==TERMINAL.previousCommands.length) {
+                    TERMINAL.previousCommandsNav -= 1
                 }
-                terminalInput.value = previousCommands[previousCommands.length - 1 - previousCommandsNav]
+                terminalInput.value = TERMINAL.previousCommands[TERMINAL.previousCommands.length - 1 - TERMINAL.previousCommandsNav]
                 terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
             }
         } else if (event.key === "ArrowDown") {
             event.preventDefault()
-            if (previousCommands.length > 0 && previousCommandsNav > 0) {
-                previousCommandsNav -= 1
-                terminalInput.value = previousCommands[previousCommands.length - 1 - previousCommandsNav]
-                terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
+            if (TERMINAL.previousCommands.length > 0 && TERMINAL.previousCommandsNav > 0) {
+                TERMINAL.previousCommandsNav -= 1
+                terminalInput.value = TERMINAL.previousCommands[TERMINAL.previousCommands.length - 1 - TERMINAL.previousCommandsNav]
+                 terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
             }
         }
     }
@@ -63,6 +59,10 @@ terminalInput.addEventListener('input', ()=>{
 // TERMINAL OBJECT
 
 var TERMINAL = {
+    previousCommands: [],
+    previousCommandsNav: 0,
+    previousCommandToRemove: 0,
+    queue: [],
 write(text) {
     console.log('TERMINAL: writing') //log
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
@@ -72,12 +72,12 @@ write(text) {
 },
 aim(text) = {
     console.log('TERMINAL: queueing')
-    terminalQueue.push(text)
+    this.queue.push(text)
     console.log('TERMINAL: queued')
 },
 fire() = {
     console.log('TERMINAL: firing')
-    terminalQueue.forEach((item)=>{
+    this.queue.forEach((item)=>{
         this.write(item)
     })
     terminalQueue = []
@@ -86,12 +86,12 @@ fire() = {
 read() {
     console.log('TERMINAL: reading') //log
     if (terminalInput.value != '') {
-        previousCommands.push(terminalInput.value)
-        previousCommandsNav = 0
-        if (previousCommandToRemove != 0) {
-            previousCommands = previousCommands.splice(previousCommandToRemove,1)
+        this.previousCommands.push(terminalInput.value)
+        this.previousCommandsNav = 0
+        if (this.previousCommandToRemove != 0) {
+            this.previousCommands = this.previousCommands.splice(this.previousCommandToRemove,1)
         }
-        previousCommands = previousCommands.filter((value)=>value != '')
+        this.previousCommands = this.previousCommands.filter((value)=>value != '')
         var text = terminalInput.value
         terminalInput.value = ''
         terminalInput.style.height = '3vh'
