@@ -97,7 +97,7 @@ read() {
         terminalInput.style.height = '3vh'
         text = text.split('\n')
         text.forEach((line)=>{
-            this.write(line.join(' '))
+            this.write(line)
             this.parse(line)
         })
     }
