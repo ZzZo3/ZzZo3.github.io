@@ -63,11 +63,14 @@ terminalInput.addEventListener('input', ()=>{
 
 var TERMINAL = {
 write(text) {
+    console.log('TERMINAL: writing') //log
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
     terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
     terminal.scrollBy(0,999999)
+    console.log('TERMINAL: wrote') //log
 },
-read(text) {
+read() {
+    console.log('TERMINAL: reading') //log
     if (terminalInput.value != '') {
         previousCommands.push(terminalInput.value)
         previousCommandsNav = 0
@@ -79,24 +82,29 @@ read(text) {
         var validCommand = false
         terminalInput.value = ''
         terminalInput.style.height = '18px'
-        text = text.split('\n').map((line)=>line.split(' '))
-        text.forEach((line)=>{
-            TERMINALCOMMANDS.forEach((COMMAND)=>{
-                if (COMMAND.name.includes(line[0])) {
-                    validCommand = true
-                    console.log('TERMINAL: '+line) //log
-                    this.write(line.join(' '))
-                    COMMAND.execute(line)
-                }
-            })
-            if (!validCommand) {
+        this.parse(text)
+    }
+    console.log('TERMINAL: read') //log
+},
+parse(texti) {
+    console.log('TERMINAL: parsing') //log
+    text = texti.split('\n').map((line)=>line.split(' '))
+    text.forEach((line)=>{
+        TERMINALCOMMANDS.forEach((COMMAND)=>{
+            if (COMMAND.name.includes(line[0])) {
+                validCommand = true
+                console.log('TERMINAL: '+line) //log
                 this.write(line.join(' '))
-                this.write('ERROR: unknown command: '+line[0])
+                COMMAND.execute(line)
             }
         })
-        terminal.scrollBy(0,999999)
-        console.log('TERMINAL: parsed') //log
-    }
+        if (!validCommand) {
+            this.write(line.join(' '))
+            this.write('ERROR: unknown command: '+line[0])
+        }
+    })
+    terminal.scrollBy(0,999999)
+    console.log('TERMINAL: parsed') //log
 }
 }
 
