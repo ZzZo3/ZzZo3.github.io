@@ -115,10 +115,10 @@ read(text) {
             if (this.acceptableReplies.includes(text)) {
                 console.log('TERMINAL: ACCEPTABLE INPUT')
                 this.waitList += ' '+text
-                waitList = waitList.split('\n').join(' ')
+                this.waitList = this.waitList.split('\n').join(' ')
                 console.log(this.waitList)
-                this.write(waitList)
-                this.parse(waitList)
+                this.write(this.waitList)
+                this.parse(this.waitList)
             } else {
                 this.write('ERROR: \"'+text+'\" not acceptable reply')
             }
