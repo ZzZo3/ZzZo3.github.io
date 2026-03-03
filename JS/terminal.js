@@ -82,6 +82,7 @@ read() {
         var validCommand = false
         terminalInput.value = ''
         terminalInput.style.height = '18px'
+        this.write(line.join(' '))
         this.parse(text)
     }
     console.log('TERMINAL: read') //log
@@ -94,12 +95,10 @@ parse(texti) {
             if (COMMAND.name.includes(line[0])) {
                 validCommand = true
                 console.log('TERMINAL: '+line) //log
-                this.write(line.join(' '))
                 COMMAND.execute(line)
             }
         })
         if (!validCommand) {
-            this.write(line.join(' '))
             this.write('ERROR: unknown command: '+line[0])
         }
     })
