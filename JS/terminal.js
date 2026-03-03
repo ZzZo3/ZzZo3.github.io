@@ -10,7 +10,12 @@ document.addEventListener('keydown', (event)=>{
         if (event.key === "Enter") {
             if (!event.shiftKey) {
                 event.preventDefault()
-                TERMINAL.read()
+                if (!TERMINAL.waiting) {
+                    TERMINAL.read(terminalInput.value)
+                } else {
+                    TERMINAL.waitList += ' '+terminalInput.value
+                    TERMINAL.read(waitList)
+                }
             }
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
@@ -63,6 +68,8 @@ var TERMINAL = {
     previousCommandsNav: 0,
     previousCommandToRemove: 0,
     queue: [],
+    waiting: false,
+    waitList: '',
 write(text) {
     console.log('TERMINAL: writing') //log
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
@@ -83,7 +90,12 @@ fire() {
     this.queue = []
     console.log('TERMINAL: fired')
 },
-read() {
+await(replyArr) {
+    console.log('TERMINAL: awaiting') //log
+    waiting = true
+    console.log('TERMINAL: awaited') //log
+},
+read(text) {
     console.log('TERMINAL: reading') //log
     if (terminalInput.value != '') {
         this.previousCommands.push(terminalInput.value)
@@ -92,14 +104,19 @@ read() {
             this.previousCommands = this.previousCommands.splice(this.previousCommandToRemove,1)
         }
         this.previousCommands = this.previousCommands.filter((value)=>value != '')
-        var text = terminalInput.value
         terminalInput.value = ''
         terminalInput.style.height = '3vh'
-        text = text.split('\n')
-        text.forEach((line)=>{
-            this.write(line)
-            this.parse(line)
-        })
+        if (!this.waiting) {
+            text = text.split('\n')
+            text.forEach((line)=>{
+                this.write(line)
+                this.parse(line)
+            })
+        } else {
+            text = text.split('\n').join(' ')
+            this.write(waitList)
+            this.parse(waitList)
+        }
     }
     console.log('TERMINAL: read') //log
 },
@@ -186,17 +203,6 @@ class TerminalARG {
         this.isOptional = isOptional // Bool
     }
 }
-
-/* COMMAND FORMAT
-
-new TerminalCMND([''],
-    [new TerminalARG('',[],false),
-    new TerminalARG('',[],true),
-    new TerminalARG('',['',''],true)],
-(argList)=>{}
-)
-
-*/
 
 var TERMINALCOMMANDS = [/*new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true),
