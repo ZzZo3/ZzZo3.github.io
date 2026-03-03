@@ -70,12 +70,12 @@ write(text) {
     terminal.scrollBy(0,999999)
     console.log('TERMINAL: wrote') //log
 },
-aim(text) = {
+aim(text) {
     console.log('TERMINAL: queueing')
     this.queue.push(text)
     console.log('TERMINAL: queued')
 },
-fire() = {
+fire() {
     console.log('TERMINAL: firing')
     this.queue.forEach((item)=>{
         this.write(item)
