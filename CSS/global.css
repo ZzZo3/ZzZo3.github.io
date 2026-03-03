@@ -156,8 +156,8 @@ html, body {
     overflow-x: hidden;
     white-space: pre-line;
     line-height: 18px;
-    margin-right: 12px;
-    margin-left: 12px;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 #terminalInput {
     overflow-y: hidden;
