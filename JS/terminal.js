@@ -81,14 +81,14 @@ read() {
         var text = terminalInput.value
         terminalInput.value = ''
         terminalInput.style.height = '18px'
+        let line = text.split('\n').map((line)=>line.split(' '))
         this.write(line.join(' '))
-        this.parse(text)
+        this.parse(line)
     }
     console.log('TERMINAL: read') //log
 },
-parse(texti) {
+parse(line) {
     console.log('TERMINAL: parsing') //log
-    text = texti.split('\n').map((line)=>line.split(' '))
     var validCommand = false
     text.forEach((line)=>{
         TERMINALCOMMANDS.forEach((COMMAND)=>{
