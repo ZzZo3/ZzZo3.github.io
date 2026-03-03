@@ -31,14 +31,14 @@ document.addEventListener('keydown', (event)=>{
                     previousCommandsNav -= 1
                 }
                 terminalInput.value = previousCommands[previousCommands.length - 1 - previousCommandsNav]
-                terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
+                terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'%'
             }
         } else if (event.key === "ArrowDown") {
             event.preventDefault()
             if (previousCommands.length > 0 && previousCommandsNav > 0) {
                 previousCommandsNav -= 1
                 terminalInput.value = previousCommands[previousCommands.length - 1 - previousCommandsNav]
-                terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
+                terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'%'
             }
         }
     }
@@ -51,7 +51,7 @@ terminal.addEventListener('click', ()=>{
 terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('\n')
-    terminalInput.style.height = (18 * text.length)+'px'
+    terminalInput.style.height = (3 * text.length)+'%'
     terminal.scrollIntoView({
         behavior: 'smooth',
         block: 'end'
@@ -65,7 +65,7 @@ var TERMINAL = {
 write(text) {
     console.log('TERMINAL: writing') //log
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
-    terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
+    terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'%'
     terminal.scrollBy(0,999999)
     console.log('TERMINAL: wrote') //log
 },
@@ -80,7 +80,7 @@ read() {
         previousCommands = previousCommands.filter((value)=>value != '')
         var text = terminalInput.value
         terminalInput.value = ''
-        terminalInput.style.height = '18px'
+        terminalInput.style.height = '3%'
         text = text.split('\n').map((line)=>line.split(' '))
         text.forEach((line)=>{
             this.write(line.join(' '))
@@ -255,7 +255,7 @@ new TerminalCMND(['options'], // OPTIONS
     let option = argList[0]
     let value = argList[1]
     if (option=='height') {
-        terminal.style.height = (18 * parseInt(value))+'px'
+        terminal.style.height = (3 * parseInt(value))+'%'
     }
 }),
 new TerminalCMND(['list','ls'], // LIST
