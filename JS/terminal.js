@@ -48,10 +48,6 @@ terminal.addEventListener('click', ()=>{
     terminalInput.focus()
 })
 
-// TERMINAL OBJECT
-
-var TERMINAL = {}
-
 terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('\n')
@@ -62,7 +58,11 @@ terminalInput.addEventListener('input', ()=>{
     })
 })
 
-TERMINAL.read(text) = (text)=>{
+
+// TERMINAL OBJECT
+
+var TERMINAL = {
+read(text) {
     if (terminalInput.value != '') {
         previousCommands.push(terminalInput.value)
         previousCommandsNav = 0
@@ -93,7 +93,7 @@ TERMINAL.read(text) = (text)=>{
         console.log('TERMINAL: parsed') //log
     }
 }
-TERMINAL.write(text) = (text)=>{
+write(text) {
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
     terminalOutput.style.height = (18 * terminalOutput.textContent.split('\n').length)+'px'
     terminal.scrollBy(0,999999)
@@ -154,6 +154,7 @@ class TerminalCMND {
         }
         if (validArgs==this.args.length) {this.does(vettedArgs)}
     }
+}
 }
 class TerminalARG {
     constructor(name,takes,isOptional) {
