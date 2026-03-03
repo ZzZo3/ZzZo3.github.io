@@ -164,8 +164,8 @@ html, body {
     overflow-x: visible;
     background-color: none;
     line-height: 16px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 #terminalInput:focus {
     background-color: blue;
