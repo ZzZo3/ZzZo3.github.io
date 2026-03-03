@@ -119,6 +119,7 @@ read(text) {
                 console.log(this.waitList)
                 this.write(this.waitList)
                 this.parse(this.waitList)
+                this.waitList = []
             } else {
                 this.write('ERROR: \"'+text+'\" not acceptable reply')
             }
@@ -248,15 +249,18 @@ new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
     if (argList[0]='-') {
-        TERMINAL.write('>  \"help [cmnd]\"')
-        TERMINAL.write('>  [cmnd]:')
+        TERMINAL.write('>  reply with one of the following commands')
+        var acceptables = []
         TERMINALCOMMANDS.forEach((c)=>{
             TERMINAL.write('>  '+c.name[0])
+            acceptables.push(c.name)
         })
+        TERMINAL.await(acceptables)
     } else {
         TERMINALCOMMANDS.forEach((CMND)=>{
             if (CMND.name==argList[0]) {
-                var helpedArgs = ''
+                TERMINAL.write('bingo')
+                /*var helpedArgs = ''
                 CMND.args.forEach((ARG)=>{
                     helpedArgs += (' ['+ARG.name+']')
                 })
@@ -270,7 +274,7 @@ new TerminalCMND(['help'], // HELP
                     } else {
                         TERMINAL.write('>  ['+ARG.name+'] takes any/unknown')
                     }
-                })
+                })*/
             }
         })
     }
