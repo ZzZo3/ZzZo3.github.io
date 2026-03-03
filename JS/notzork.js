@@ -2,13 +2,13 @@
 const vNum = '0.0.b'
 const pageTitle = document.getElementsByClassName('pageTitle')
 
-TERMINALCOMMANDS.push[
+TERMINALCOMMANDS.push(
 new TerminalCMND(['line','nl'], // LINE
     [],
 (argList)=>{
     terminalWrite('===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===')
 })
-]
+)
 
 
 //STUFF THAT RUNS ON LOAD
