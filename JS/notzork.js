@@ -1,11 +1,13 @@
 //BASE
-const vNum = '0.0.a'
+const vNum = '0.0.b'
 const pageTitle = document.getElementsByClassName('pageTitle')
 
 TERMINALCOMMANDS.push[
-    new TerminalCMND(['line','nl'],[],
-        terminalWrite('echo ===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===')
-    )
+    new TerminalCMND(['line','nl'], // LINE
+    [],
+(argList)=>{
+    terminalWrite('===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===')
+})
 ]
 
 
