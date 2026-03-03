@@ -81,27 +81,27 @@ read() {
         var text = terminalInput.value
         terminalInput.value = ''
         terminalInput.style.height = '18px'
-        let line = text.split('\n').map((line)=>line.split(' '))
-        this.write(line.join(' '))
-        this.parse(line)
+        text = text.split('\n').map((line)=>line.split(' '))
+        text.forEach((line)=>{
+            this.write(line.join(' '))
+            this.parse(line)
+        })
     }
     console.log('TERMINAL: read') //log
 },
 parse(line) {
     console.log('TERMINAL: parsing') //log
     var validCommand = false
-    text.forEach((line)=>{
-        TERMINALCOMMANDS.forEach((COMMAND)=>{
-            if (COMMAND.name.includes(line[0])) {
-                validCommand = true
-                console.log('TERMINAL: '+line) //log
-                COMMAND.execute(line)
-            }
-        })
-        if (!validCommand) {
-            this.write('ERROR: unknown command: '+line[0])
+    TERMINALCOMMANDS.forEach((COMMAND)=>{
+        if (COMMAND.name.includes(line[0])) {
+            validCommand = true
+            console.log('TERMINAL: '+line) //log
+            COMMAND.execute(line)
         }
     })
+    if (!validCommand) {
+        this.write('ERROR: unknown command: '+line[0])
+    }
     terminal.scrollBy(0,999999)
     console.log('TERMINAL: parsed') //log
 }
