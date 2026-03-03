@@ -88,8 +88,8 @@ fire() {
 },
 await(replyArr) {
     console.log('TERMINAL: awaiting') //log
-    waiting = true
-    acceptableReplies = replyArr
+    this.waiting = true
+    this.acceptableReplies = replyArr
     console.log('TERMINAL: awaited') //log
 },
 read(text) {
@@ -112,7 +112,7 @@ read(text) {
             })
         } else {
             console.log('TERMINAL: WAITING')
-            if (acceptableReplies.includes(text)) {
+            if (this.acceptableReplies.includes(text)) {
                 console.log('TERMINAL: ACCEPTABLE INPUT')
                 this.waitList += ' '+text
                 waitList = waitList.split('\n').join(' ')
