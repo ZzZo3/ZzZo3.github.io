@@ -3,7 +3,7 @@ const vNum = '0.0.b'
 const pageTitle = document.getElementsByClassName('pageTitle')
 
 TERMINALCOMMANDS.push[
-    new TerminalCMND(['line','nl'], // LINE
+new TerminalCMND(['line','nl'], // LINE
     [],
 (argList)=>{
     terminalWrite('===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===--===')
