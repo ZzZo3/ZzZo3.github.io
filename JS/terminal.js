@@ -156,7 +156,7 @@ class TerminalCMND {
         if (validArgs==this.args.length) {this.does(vettedArgs)}
     }
 }
-}
+
 class TerminalARG {
     constructor(name,takes,isOptional) {
         this.name = name // String
