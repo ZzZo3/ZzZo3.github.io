@@ -242,6 +242,7 @@ var TERMINALCOMMANDS = [/*new TerminalCMND(['help'], // HELP
 new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
+    console.log('help argList: '+argList)
     if (argList[0]='-') {
         TERMINAL.write('>  reply with one of the following commands')
         var acceptables = []
