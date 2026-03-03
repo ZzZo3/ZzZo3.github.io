@@ -110,10 +110,14 @@ read(text) {
                 this.parse(line)
             })
         } else {
-            TERMINAL.waitList += ' '+text
-            waitList = waitList.split('\n').join(' ')
-            this.write(waitList)
-            this.parse(waitList)
+            if (acceptableReplies.includes(text)) {
+                TERMINAL.waitList += ' '+text
+                waitList = waitList.split('\n').join(' ')
+                this.write(waitList)
+                this.parse(waitList)
+            } else {
+                this.write('ERROR: \"'+text+'\" not acceptable reply')
+            }
         }
     }
     console.log('TERMINAL: read') //log
