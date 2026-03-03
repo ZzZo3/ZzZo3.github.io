@@ -71,12 +71,10 @@ write(text) {
     terminalOutput.textContent = terminalOutput.textContent+'\n'+text
     terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
     terminal.scrollBy(0,999999)
-    console.log('TERMINAL: wrote') //log
 },
 aim(text) {
     console.log('TERMINAL: queueing')
     this.queue.push(text)
-    console.log('TERMINAL: queued')
 },
 fire() {
     console.log('TERMINAL: firing')
@@ -84,13 +82,11 @@ fire() {
         this.write(item)
     })
     this.queue = []
-    console.log('TERMINAL: fired')
 },
 await(replyArr) {
     console.log('TERMINAL: awaiting') //log
     this.waiting = true
     this.acceptableReplies = replyArr
-    console.log('TERMINAL: awaited') //log
 },
 read(text) {
     console.log('TERMINAL: reading') //log
@@ -125,7 +121,6 @@ read(text) {
             }
         }
     }
-    console.log('TERMINAL: read') //log
 },
 parse(line) {
     console.log('TERMINAL: parsing') //log
@@ -142,7 +137,6 @@ parse(line) {
         this.write('ERROR: unknown command: '+line[0])
     }
     terminal.scrollBy(0,999999)
-    console.log('TERMINAL: parsed') //log
 }
 }
 
@@ -256,6 +250,7 @@ new TerminalCMND(['help'], // HELP
             acceptables.push(c.name)
         })
         TERMINAL.await(acceptables)
+        console.log(acceptables)
     } else {
         TERMINALCOMMANDS.forEach((CMND)=>{
             if (CMND.name==argList[0]) {
