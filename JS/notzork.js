@@ -10,7 +10,6 @@ new TerminalCMND(['line'], // LINE
 })
 )
 
-
 //STUFF THAT RUNS ON LOAD
 
 function loadFunc() {

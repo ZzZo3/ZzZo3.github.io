@@ -517,21 +517,6 @@ function detectRoundEnter(event) {
     }
 }
 
-//STUFF THAT RUNS ON LOAD
-
-function loadFunc() {
-    console.log('\"loadFunc()\" began')
-    for(let i = 0; i<pageTitle.length; i++) {
-        pageTitle[i].textContent = 'RaTeX! '+vNum
-    }
-    switchTab(event, 'Writing')
-    output.textContent = translate(input.value,false)
-    roundPrompt.textContent = 'rounding to ['+roundTo+']'
-    setRF()
-    terminalInput.value = ''
-    console.log('   \"loadFunc()\" finished')
-}
-
 
 // TERMINAL COMMANDS
 
@@ -611,3 +596,20 @@ new TerminalCMND(['copy'], // COPY
     }
 })
 )
+
+
+// STUFF THAT RUNS ON LOAD
+
+function loadFunc() {
+    console.log('\"loadFunc()\" began')
+    for(let i = 0; i<pageTitle.length; i++) {
+        pageTitle[i].textContent = 'RaTeX! '+vNum
+    }
+    switchTab(event, 'Writing')
+    output.textContent = translate(input.value,false)
+    roundPrompt.textContent = 'rounding to ['+roundTo+']'
+    setRF()
+    terminalInput.value = ''
+    document.getElementById('terminal').style.height = (36*12)+'px'
+    console.log('   \"loadFunc()\" finished')
+}
