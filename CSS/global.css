@@ -153,7 +153,7 @@ html, body {
 }
 #terminalOutput {
     overflow-y: hidden;
-    overflow-x: visible;
+    overflow-x: hidden;
     white-space: pre-line;
     line-height: 18px;
     margin-right: 12px;
