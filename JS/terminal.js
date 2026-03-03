@@ -79,7 +79,6 @@ read() {
         }
         previousCommands = previousCommands.filter((value)=>value != '')
         var text = terminalInput.value
-        var validCommand = false
         terminalInput.value = ''
         terminalInput.style.height = '18px'
         this.write(line.join(' '))
@@ -90,6 +89,7 @@ read() {
 parse(texti) {
     console.log('TERMINAL: parsing') //log
     text = texti.split('\n').map((line)=>line.split(' '))
+    var validCommand = false
     text.forEach((line)=>{
         TERMINALCOMMANDS.forEach((COMMAND)=>{
             if (COMMAND.name.includes(line[0])) {
