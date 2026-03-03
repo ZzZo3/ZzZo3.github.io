@@ -100,14 +100,14 @@ read(text) {
         terminalInput.value = ''
         terminalInput.style.height = '3vh'
         if (!this.waiting) {
-            console.log('TERMINAL: NOT WAITING')
+            console.log('TERMINAL IS NOT WAITING')
             text = text.split('\n')
             text.forEach((line)=>{
                 this.write(line)
                 this.parse(line)
             })
         } else {
-            console.log('TERMINAL: WAITING')
+            console.log('TERMINAL IS WAITING')
             if (this.acceptableReplies.includes(text)) {
                 console.log('TERMINAL: ACCEPTABLE INPUT')
                 this.waitList += ' '+text
