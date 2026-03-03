@@ -80,7 +80,7 @@ fire() {
     this.queue.forEach((item)=>{
         this.write(item)
     })
-    terminalQueue = []
+    this.queue = []
     console.log('TERMINAL: fired')
 },
 read() {
