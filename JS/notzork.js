@@ -1,5 +1,5 @@
 //BASE
-const vNum = '0.0'
+const vNum = '0.0.a'
 const pageTitle = document.getElementsByClassName('pageTitle')
 
 //STUFF THAT RUNS ON LOAD
