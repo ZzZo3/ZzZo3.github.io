@@ -247,7 +247,7 @@ new TerminalCMND(['help'], // HELP
         var acceptables = []
         TERMINALCOMMANDS.forEach((c)=>{
             TERMINAL.write('>  '+c.name[0])
-            acceptables.push(c.name)
+            acceptables.push(c.name[0])
         })
         TERMINAL.await(acceptables)
         console.log(acceptables)
