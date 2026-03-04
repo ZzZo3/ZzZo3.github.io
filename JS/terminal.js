@@ -120,21 +120,21 @@ read(text) {
         }
     } 
 },
-parse(line1) {
+parse(line) {
     console.log('TERMINAL: parsing') //log
-    line1 = line1.split(' ')
-    alert('parsing: '+line1)
+    line = line.split(' ')
+    alert('parsing: '+line)
     var validCommand = false
     TERMINALCOMMANDS.forEach((COMMAND)=>{
-        if (COMMAND.name.includes(line1[0])) {
-            alert('COMMAND.name: '+COMMAND.name+' includes [0] of: '+line1)
+        if (COMMAND.name.includes(line[0])) {
+            alert('COMMAND.name: '+COMMAND.name+' includes [0] of: '+line)
             validCommand = true
-            COMMAND.execute(line1)
-            alert('after executing, line1: '+line1)
+            COMMAND.execute(line)
+            alert('after executing, line: '+line)
         }
     })
     if (!validCommand) {
-        this.write('ERROR: unknown command: '+line1[0])
+        this.write('ERROR: unknown command: '+line[0])
     }
     terminal.scrollBy(0,999999)
 }
@@ -148,15 +148,16 @@ class TerminalCMND {
         this.args = args // [TerminalARG(name,takes,isOptional)]
         this.does = does // (line)=>{} after vetting parameters
     }
-    execute(line2) { // takes array of words in command
+    execute(line) { // takes array of words in command
         alert('executing: '+this.name[0])
-        if (typeof line2[0] != 'string') {
+        if (typeof line[0] != 'string') {
             TERMINAL.write('ERROR: failed to parse')
             console.log('terminal failed to parse line as string')
-            console.log(line2)
+            console.log(line)
             return
         }
-        let lineNotFirst = line2.shift() // removes command name from line2[]
+        let lineNotFirst = [...line]
+        lineNotFirst.shift() // removes command name from line2[]
         var validArgs = 0
         var vettedArgs = []
         var optionals = 0
