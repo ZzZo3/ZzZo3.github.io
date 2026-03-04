@@ -244,7 +244,7 @@ new TerminalCMND(['help'], // HELP
 (argList)=>{
     alert(argList)
     console.log('help argList: '+argList)
-    if (argList[0]='-') {
+    if (argList[0]=='-') {
         TERMINAL.write('>  reply with one of the following commands')
         var acceptables = []
         TERMINALCOMMANDS.forEach((c)=>{
