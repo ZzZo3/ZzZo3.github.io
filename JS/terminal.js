@@ -127,12 +127,10 @@ parse(line) {
     console.log('TERMINAL: parsing') //log
     line = line.split(' ')
     alert('parsing: '+line)
-    alert('line[0]: '+line[0])
     var validCommand = false
     TERMINALCOMMANDS.forEach((COMMAND)=>{
-        alert('COMMAND.name: '+COMMAND.name)
         if (COMMAND.name.includes(line[0])) {
-            alert('COMMAND.name includes line[0]')
+            alert(COMMAND.name+'includes'+line[0])
             validCommand = true
             console.log('TERMINAL: '+line) //log
             COMMAND.execute(line)
