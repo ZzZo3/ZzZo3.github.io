@@ -139,9 +139,9 @@ parse(line) {
 // COMMANDS
 
 class TerminalCMND {
-    constructor(name,help,args,does) {
+    constructor(name,helpMsg,args,does) {
         this.name = name // [String]
-        this.help = help // long ass string to be printed on help query
+        this.helpMsg = helpMsg // long ass string to be printed on help query
         this.args = args // [TerminalARG(name,takes,isOptional)]
         this.does = does // (line)=>{} after vetting parameters
     }
@@ -218,7 +218,7 @@ HELP: \'help\'
         TERMINALCOMMANDS.forEach((CMND)=>{
             if (CMND.name==argList[0]) {
                 TERMINAL.parse('line')
-                TERMINAL.write(CMND.help)
+                TERMINAL.write(CMND.helpMsg)
                 TERMINAL.parse('line')
             }
         })
