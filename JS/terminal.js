@@ -112,7 +112,7 @@ read(text) {
                 console.log('TERMINAL: ACCEPTABLE INPUT')
                 this.waitList += ' '+text
                 this.waitList = this.waitList.split('\n').join(' ')
-                console.log(this.waitList)
+                console.log('TERMINAL.waitList: '+this.waitList)
                 this.write(this.waitList)
                 this.parse(this.waitList)
                 this.waitList = []
