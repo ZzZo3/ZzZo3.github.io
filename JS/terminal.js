@@ -123,22 +123,22 @@ read(text) {
         }
     }
 },
-parse(line) {
+parse(line1) {
     console.log('TERMINAL: parsing') //log
-    line = line.split(' ')
-    alert('parsing: '+line)
+    line1 = line1.split(' ')
+    alert('parsing: '+line1)
     var validCommand = false
     TERMINALCOMMANDS.forEach((COMMAND)=>{
-        alert('COMMAND.name: '+COMMAND.name+', line[0]: '+line[0])
-        if (COMMAND.name.includes(line[0])) {
+        alert('COMMAND.name: '+COMMAND.name+', line[0]: '+line1[0])
+        if (COMMAND.name.includes(line1[0])) {
             alert('COMMAND.name includes line[0]')
             validCommand = true
-            console.log('TERMINAL: '+line) //log
-            COMMAND.execute(line)
+            console.log('TERMINAL: '+line1) //log
+            COMMAND.execute(line1)
         }
     })
     if (!validCommand) {
-        this.write('ERROR: unknown command: '+line[0])
+        this.write('ERROR: unknown command: '+line1[0])
     }
     terminal.scrollBy(0,999999)
 }
