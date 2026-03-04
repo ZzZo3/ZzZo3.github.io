@@ -118,7 +118,7 @@ read(text) {
                 this.write('ERROR: \"'+text+'\" not acceptable reply')
             }
         }
-    }
+    } 
 },
 parse(line1) {
     console.log('TERMINAL: parsing') //log
