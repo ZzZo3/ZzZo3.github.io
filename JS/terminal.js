@@ -116,6 +116,7 @@ read(text) {
                 this.write(this.waitList)
                 this.parse(this.waitList)
                 this.waitList = []
+                this.waiting = false
             } else {
                 this.write('ERROR: \"'+text+'\" not acceptable reply')
             }
