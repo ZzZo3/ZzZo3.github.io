@@ -205,7 +205,7 @@ HELP: \'help\'
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
     if (argList[0]=='-') {
-        TERMINAL.write('>  reply with one of the following commands')
+        TERMINAL.write('AWAIT: Choose a command to elaborate, or \'cancel\'')
         var acceptables = ['cancel']
         TERMINALCOMMANDS.forEach((c)=>{
             TERMINAL.write('>  '+c.name[0])
@@ -222,7 +222,7 @@ HELP: \'help\'
             }
         })
     } else {
-        TERMINAL.write('>   cancelled help query')
+        TERMINAL.write('AWAIT: cancelled')
     }
 }),
 new TerminalCMND(['list','ls'], // LIST
