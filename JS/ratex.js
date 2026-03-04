@@ -522,6 +522,9 @@ function detectRoundEnter(event) {
 
 TERMINALCOMMANDS.push(
 new TerminalCMND(['backslash','bs'], // BACKSLASH
+`
+HELP: \'backslash\'
+`,
     [new TerminalARG('dirn',['ex','cd'],false)],
 (argList)=>{
     if (argList[0]=='ex') {
@@ -533,6 +536,9 @@ new TerminalCMND(['backslash','bs'], // BACKSLASH
     }
 }),
 new TerminalCMND(['pull'], // PULL
+`
+HELP: \'pull\'
+`,
     [new TerminalARG('from',[],false)],
 (argList)=>{
     if(Object.keys(localStorage).includes('RaTeX:'+argList[0])) {
@@ -543,6 +549,9 @@ new TerminalCMND(['pull'], // PULL
     }
 }),
 new TerminalCMND(['push'], // PUSH
+`
+HELP: \'push\'
+`,
     [new TerminalARG('to',[],false)],
 (argList)=>{
     if(argList[0]=='RF+') {
@@ -557,12 +566,18 @@ new TerminalCMND(['push'], // PUSH
     }
 }),
 new TerminalCMND(['simplify','smpf'],[], // SIMPLIFY
+`
+HELP: \'simplify\'
+`,
 (argList)=>{
     input.value = translate(input.value,true)
     output.textContent = translate(input.value,false)
     TERMINAL.write('>  simplified document')
 }),
 new TerminalCMND(['erase','er'], // ERASE
+`
+HELP: \'erase\'
+`,
     [new TerminalARG('doc',[],true)],
 (argList)=>{
     if (argList[0]=='-') {
@@ -585,6 +600,9 @@ new TerminalCMND(['erase','er'], // ERASE
     }
 }),
 new TerminalCMND(['copy'], // COPY
+`
+HELP: \'copy\'
+`,
     [new TerminalARG('from',['in','out'])],
 (argList)=>{
     if (argList[0]=='in') {

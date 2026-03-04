@@ -105,7 +105,7 @@ read(text) {
                 this.write(line)
                 this.parse(line)
             })
-        } else {
+        } else if (text.lowercased() != 'cancel') {
             if (this.acceptableReplies.includes(text)) {
                 this.waitList += ' '+text
                 this.waitList = this.waitList.split('\n').join(' ')
@@ -143,8 +143,9 @@ parse(line) {
 // COMMANDS
 
 class TerminalCMND {
-    constructor(name,args,does) {
+    constructor(name,help,args,does) {
         this.name = name // [String]
+        this.help = help // long ass string to be printed on help query
         this.args = args // [TerminalARG(name,takes,isOptional)]
         this.does = does // (line)=>{} after vetting parameters
     }
@@ -203,41 +204,36 @@ class TerminalARG {
 
 var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
+`
+HELP: \'help\'
+`,
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
     if (argList[0]=='-') {
         TERMINAL.write('>  reply with one of the following commands')
-        var acceptables = []
+        var acceptables = ['cancel']
         TERMINALCOMMANDS.forEach((c)=>{
             TERMINAL.write('>  '+c.name[0])
             acceptables.push(c.name[0])
         })
         TERMINAL.waitList = 'help'
         TERMINAL.await(acceptables)
-    } else {
+    } else if (argList[0] != 'cancel') {
         TERMINALCOMMANDS.forEach((CMND)=>{
             if (CMND.name==argList[0]) {
-                TERMINAL.write('bingo')
+                TERMINAL.parse('line')
+                TERMINAL.write(CMND.help)
+                TERMINAL.parse('line')
             }
         })
-    }
-}),
-new TerminalCMND(['test'],
-    [new TerminalARG('testArg',['line'])],
-(argList)=>{
-    TERMINAL.write('test')
-}),
-new TerminalCMND(['options'], // OPTIONS
-    [new TerminalARG('option',['height'],false),
-    new TerminalARG('value',[],false)],
-(argList)=>{
-    let option = argList[0]
-    let value = argList[1]
-    if (option=='height') {
-        terminal.style.height = (3 * parseInt(value))+'vh'
+    } else {
+        TERMINAL.write('>   cancelled help query')
     }
 }),
 new TerminalCMND(['list','ls'], // LIST
+`
+HELP: \'list\'
+`,
     [new TerminalARG('type',[],false)],
 (argList)=>{
     if (argList[0]=='local' || argList[0]=='l') {
@@ -257,6 +253,9 @@ new TerminalCMND(['list','ls'], // LIST
     }
 }),
 new TerminalCMND(['echo'], // ECHO
+`
+HELP: \'echo\'
+`,
     [new TerminalARG('package',[],false),
     new TerminalARG('to',[],true),
     new TerminalARG('append',['+','force'],true)],
