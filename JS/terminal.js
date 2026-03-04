@@ -133,8 +133,7 @@ parse(line1) {
             alert('COMMAND.name: '+COMMAND.name+' includes [0] of: '+line1)
             validCommand = true
             console.log('TERMINAL: '+line1) //log
-            //COMMAND.execute(line1)
-            this.write('execute(line1)')
+            COMMAND.execute(line1)
         }
     })
     if (!validCommand) {
