@@ -156,7 +156,7 @@ class TerminalCMND {
             console.log(line2)
             return
         }
-        line2.shift() // removes command name from line2[]
+        let lineNotFirst = line2.shift() // removes command name from line2[]
         var validArgs = 0
         var vettedArgs = []
         var optionals = 0
@@ -165,26 +165,26 @@ class TerminalCMND {
                 optionals++
             }
         })
-        if (line2.length < this.args.length - optionals) { // check # args
+        if (lineNotFirst.length < this.args.length - optionals) { // check # args
             TERMINAL.write('ERROR: incorrect argument count')
             console.log('terminal incorrect argument count')
             return
         }
         if (this.args.length==0) {
-            this.does(line2)
+            this.does(lineNotFirst)
             return
         }
         for (let i=0; i < this.args.length; i++) {
-            if (line2.length < i+1 && this.args[i].isOptional) {
+            if (lineNotFirst.length < i+1 && this.args[i].isOptional) {
                 vettedArgs.push('-')
                 validArgs++
-            } else if (this.args[i].takes.includes(line2[i]) || this.args[i].isOptional && line2[i]=='-' || this.args[i].takes.length==0) {
-                vettedArgs.push(line2[i])
+            } else if (this.args[i].takes.includes(lineNotFirst[i]) || this.args[i].isOptional && lineNotFirst[i]=='-' || this.args[i].takes.length==0) {
+                vettedArgs.push(lineNotFirst[i])
                 validArgs++
             } else if (this.args[i].isOptional || this.args[i].isOptional) {
                 TERMINAL.write('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
             } else {
-                TERMINAL.write('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line2[i])
+                TERMINAL.write('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+lineNotFirst[i])
                 TERMINAL.write('>  \'help '+this.args[i].name+'\' for a detailed description.')
             }
         }
