@@ -123,14 +123,10 @@ read(text) {
 parse(line) {
     console.log('TERMINAL: parsing') //log
     line = line.split(' ')
-    alert('parsing: '+line)
     var validCommand = false
     TERMINALCOMMANDS.forEach((COMMAND)=>{
         if (COMMAND.name.includes(line[0])) {
-            alert('COMMAND.name: '+COMMAND.name+' includes [0] of: '+line)
             validCommand = true
-            COMMAND.execute(line)
-            alert('after executing, line: '+line)
         }
     })
     if (!validCommand) {
@@ -150,7 +146,6 @@ class TerminalCMND {
         this.does = does // (line)=>{} after vetting parameters
     }
     execute(line) { // takes array of words in command
-        alert('executing: '+this.name[0])
         if (typeof line[0] != 'string') {
             TERMINAL.write('ERROR: failed to parse')
             console.log('terminal failed to parse line as string')
