@@ -125,6 +125,7 @@ read(text) {
 },
 parse(line) {
     console.log('TERMINAL: parsing') //log
+    alert('parsing: '+line)
     line = line.split(' ')
     var validCommand = false
     TERMINALCOMMANDS.forEach((COMMAND)=>{
@@ -243,7 +244,6 @@ var TERMINALCOMMANDS = [/*new TerminalCMND(['help'], // HELP
 new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
-    alert(argList)
     console.log('help argList: '+argList)
     if (argList[0]=='-') {
         TERMINAL.write('>  reply with one of the following commands')
