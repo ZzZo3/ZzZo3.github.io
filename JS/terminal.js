@@ -100,16 +100,13 @@ read(text) {
         terminalInput.value = ''
         terminalInput.style.height = '3vh'
         if (!this.waiting) {
-            console.log('TERMINAL IS NOT WAITING')
             text = text.split('\n')
             text.forEach((line)=>{
                 this.write(line)
                 this.parse(line)
             })
         } else {
-            console.log('TERMINAL IS WAITING')
             if (this.acceptableReplies.includes(text)) {
-                console.log('TERMINAL: ACCEPTABLE INPUT')
                 this.waitList += ' '+text
                 this.waitList = this.waitList.split('\n').join(' ')
                 console.log('TERMINAL.waitList: '+this.waitList)
@@ -132,7 +129,6 @@ parse(line1) {
         if (COMMAND.name.includes(line1[0])) {
             alert('COMMAND.name: '+COMMAND.name+' includes [0] of: '+line1)
             validCommand = true
-            console.log('TERMINAL: '+line1) //log
             COMMAND.execute(line1)
         }
     })
@@ -171,8 +167,6 @@ class TerminalCMND {
         if (line2.length < this.args.length - optionals) { // check # args
             TERMINAL.write('ERROR: incorrect argument count')
             console.log('terminal incorrect argument count')
-            console.log(this.args)
-            console.log(line2)
             return
         }
         if (this.args.length==0) {
@@ -181,18 +175,14 @@ class TerminalCMND {
         }
         for (let i=0; i < this.args.length; i++) {
             if (line2.length < i+1 && this.args[i].isOptional) {
-                console.log('terminal arg case 1')
                 vettedArgs.push('-')
                 validArgs++
             } else if (this.args[i].takes.includes(line2[i]) || this.args[i].isOptional && line2[i]=='-' || this.args[i].takes.length==0) {
-                console.log('terminal arg case 2')
                 vettedArgs.push(line2[i])
                 validArgs++
             } else if (this.args[i].isOptional || this.args[i].isOptional) {
-                console.log('terminal arg case 3')
                 TERMINAL.write('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
             } else {
-                console.log('terminal arg case 4')
                 TERMINAL.write('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line2[i])
                 TERMINAL.write('>  \'help '+this.args[i].name+'\' for a detailed description.')
             }
@@ -209,44 +199,10 @@ class TerminalARG {
     }
 }
 
-var TERMINALCOMMANDS = [/*new TerminalCMND(['help'], // HELP
-    [new TerminalARG('cmnd',[],true),
-    new TerminalARG('arg',[],true)],
-(argList)=>{
-    let cmnd = argList[0]
-    let param = argList[1]
-    if (cmnd=='-' && param=='-') {
-        TERMINAL.write('>  \"help [cmnd] [arg]\"')
-        TERMINAL.write('>  [cmnd]:')
-        TERMINALCOMMANDS.forEach((c)=>{
-            TERMINAL.write('>  '+c.name[0])
-        })
-    } else if (param=='-') {
-        TERMINALCOMMANDS.forEach((c)=>{
-            if (c.name[0]==cmnd) {
-                TERMINAL.write('>  \"help '+cmnd+'\" [arg]')
-                TERMINAL.write('>  [arg]:')
-                if (c.args==[]) {
-                    TERMINAL.write('>   any')
-                } else {
-                    TERMINAL.write('>   '+c.args)
-                }
-            }
-        })
-    } else if (argList.length==2) {
-        TERMINALCOMMANDS.forEach((c)=>{
-            if (c.name[0]==cmnd) {
-                TERMINAL.write('>  param: '+param)
-            }
-        })
-    } else {
-        TERMINAL.write('ERROR: help: unknown')
-    }
-}),*/
+var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
-    console.log('help argList: '+argList)
     if (argList[0]=='-') {
         TERMINAL.write('>  reply with one of the following commands')
         var acceptables = []
@@ -256,26 +212,10 @@ new TerminalCMND(['help'], // HELP
         })
         TERMINAL.waitList = 'help'
         TERMINAL.await(acceptables)
-        console.log(acceptables)
     } else {
         TERMINALCOMMANDS.forEach((CMND)=>{
             if (CMND.name==argList[0]) {
                 TERMINAL.write('bingo')
-                /*var helpedArgs = ''
-                CMND.args.forEach((ARG)=>{
-                    helpedArgs += (' ['+ARG.name+']')
-                })
-                TERMINAL.write('>  '+CMND.name+helpedArgs)
-                CMND.args.forEach((ARG)=>{
-                    if (ARG.takes.length > 0) {
-                        TERMINAL.write('>  \"'+ARG.name+'\" takes:')
-                        ARG.takes.forEach((take)=>{
-                            TERMINAL.write('>  '+take)
-                        })
-                    } else {
-                        TERMINAL.write('>  ['+ARG.name+'] takes any/unknown')
-                    }
-                })*/
             }
         })
     }
