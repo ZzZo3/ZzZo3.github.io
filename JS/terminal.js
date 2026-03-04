@@ -130,6 +130,7 @@ parse(line1) {
             alert('COMMAND.name: '+COMMAND.name+' includes [0] of: '+line1)
             validCommand = true
             COMMAND.execute(line1)
+            alert('after executing, line1: '+line1)
         }
     })
     if (!validCommand) {
