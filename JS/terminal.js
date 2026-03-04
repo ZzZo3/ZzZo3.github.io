@@ -280,6 +280,11 @@ new TerminalCMND(['help'], // HELP
         })
     }
 }),
+new TerminalCMND(['test'],
+    [new TerminalARG('testArg',['line'])],
+(argList)=>{
+    TERMINAL.write('test')
+}),
 new TerminalCMND(['options'], // OPTIONS
     [new TerminalARG('option',['height'],false),
     new TerminalARG('value',[],false)],
