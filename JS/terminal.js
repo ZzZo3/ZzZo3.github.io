@@ -113,7 +113,6 @@ read(text) {
                 this.waitList += ' '+text
                 this.waitList = this.waitList.split('\n').join(' ')
                 console.log('TERMINAL.waitList: '+this.waitList)
-                alert('TERMINAL.waitList: '+this.waitList)
                 this.write(this.waitList)
                 this.parse(this.waitList)
                 this.waitList = []
@@ -152,15 +151,15 @@ class TerminalCMND {
         this.args = args // [TerminalARG(name,takes,isOptional)]
         this.does = does // (line)=>{} after vetting parameters
     }
-    execute(line) { // takes array of words in command
+    execute(line2) { // takes array of words in command
         alert('executing: '+this.name[0])
-        if (typeof line[0] != 'string') {
+        if (typeof line2[0] != 'string') {
             TERMINAL.write('ERROR: failed to parse')
             console.log('terminal failed to parse line as string')
-            console.log(line)
+            console.log(line2)
             return
         }
-        line.shift() // removes command name from line[]
+        line2.shift() // removes command name from line[]
         var validArgs = 0
         var vettedArgs = []
         var optionals = 0
@@ -169,23 +168,23 @@ class TerminalCMND {
                 optionals++
             }
         })
-        if (line.length < this.args.length - optionals) { // check # args
+        if (line2.length < this.args.length - optionals) { // check # args
             TERMINAL.write('ERROR: incorrect argument count')
             console.log('terminal incorrect argument count')
             console.log(this.args)
-            console.log(line)
+            console.log(line2)
             return
         }
         if (this.args.length==0) {
-            this.does(line)
+            this.does(line2)
             return
         }
         for (let i=0; i < this.args.length; i++) {
-            if (line.length < i+1 && this.args[i].isOptional) {
+            if (line2.length < i+1 && this.args[i].isOptional) {
                 console.log('terminal arg case 1')
                 vettedArgs.push('-')
                 validArgs++
-            } else if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line[i]=='-' || this.args[i].takes.length==0) {
+            } else if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line2[i]=='-' || this.args[i].takes.length==0) {
                 console.log('terminal arg case 2')
                 vettedArgs.push(line[i])
                 validArgs++
@@ -194,7 +193,7 @@ class TerminalCMND {
                 TERMINAL.write('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
             } else {
                 console.log('terminal arg case 4')
-                TERMINAL.write('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line[i])
+                TERMINAL.write('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+line2[i])
                 TERMINAL.write('>  \'help '+this.args[i].name+'\' for a detailed description.')
             }
         }
