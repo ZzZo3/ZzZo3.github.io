@@ -250,6 +250,7 @@ new TerminalCMND(['help'], // HELP
             TERMINAL.write('>  '+c.name[0])
             acceptables.push(c.name[0])
         })
+        TERMINAL.waitList = 'help'
         TERMINAL.await(acceptables)
         console.log(acceptables)
     } else {
