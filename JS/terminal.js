@@ -159,7 +159,7 @@ class TerminalCMND {
             console.log(line2)
             return
         }
-        line2.shift() // removes command name from line[]
+        line2.shift() // removes command name from line2[]
         var validArgs = 0
         var vettedArgs = []
         var optionals = 0
@@ -184,9 +184,9 @@ class TerminalCMND {
                 console.log('terminal arg case 1')
                 vettedArgs.push('-')
                 validArgs++
-            } else if (this.args[i].takes.includes(line[i]) || this.args[i].isOptional && line2[i]=='-' || this.args[i].takes.length==0) {
+            } else if (this.args[i].takes.includes(line2[i]) || this.args[i].isOptional && line2[i]=='-' || this.args[i].takes.length==0) {
                 console.log('terminal arg case 2')
-                vettedArgs.push(line[i])
+                vettedArgs.push(line2[i])
                 validArgs++
             } else if (this.args[i].isOptional || this.args[i].isOptional) {
                 console.log('terminal arg case 3')
