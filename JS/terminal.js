@@ -126,6 +126,8 @@ read(text) {
 parse(line) {
     console.log('TERMINAL: parsing') //log
     line = line.split(' ')
+    alert('parsing: '+line)
+    alert('line[0]: '+line[0])
     var validCommand = false
     TERMINALCOMMANDS.forEach((COMMAND)=>{
         if (COMMAND.name.includes(line[0])) {
