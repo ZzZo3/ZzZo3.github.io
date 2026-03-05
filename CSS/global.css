@@ -135,7 +135,6 @@ html, body {
     border-radius: 5px;
     overflow-y: scroll;
     overflow-x: hidden;
-    white-space-collapse: preserve;
 }
 #terminal >* {
     display: block;
