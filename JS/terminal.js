@@ -255,7 +255,7 @@ ARGUMENTS:
 }),
 new TerminalCMND(['list','ls'], // LIST
 `
-SYNTAX: \'[name] [key]\'
+SYNTAX: \'[name] [type] [key]\'
 ⠀⠀⠀Names: \'list\', \'ls\'
 PURPOSES:
 ⠀⠀⠀\'list\' displays a list of all keys stored in either {localStorage} or {sessionStorage}.
@@ -287,7 +287,7 @@ ARGUMENTS:
         if (argList[0]=='local' || argList[0]=='l') {
             var keys = [...Object.keys(localStorage)]
             keys.map((key)=>{
-                key.split(:)
+                key.split(':')
             })
             var keyTitles = []
             keys.forEach((key)=>{
@@ -308,7 +308,7 @@ ARGUMENTS:
         } else {
             var keys = [...Object.keys(sessionStorage)]
             keys.map((key)=>{
-                key.split(:)
+                key.split(':')
             })
             var keyTitles = []
             keys.forEach((key)=>{
