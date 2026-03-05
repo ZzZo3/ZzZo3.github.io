@@ -304,7 +304,7 @@ ARGUMENTS:
                 validKeyTitle = true
             }
         })
-        if (validKeyTitle)) {
+        if (validKeyTitle) {
             alert('moat 2')
             validKey = true
             TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
