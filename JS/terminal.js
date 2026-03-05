@@ -266,33 +266,70 @@ ARGUMENTS:
 ⠀⠀⠀- \'session\'/\'s\' lists all keys in dictionary {sessionStorage}.
 ⠀⠀⠀  These data are stored in local browser files and are cleared upon tab close or hard refresh.
 `,
-    [new TerminalARG('type',[],false)],
+    [new TerminalARG('type',['local','l','session','s'],false),
+    new TerminalARG('key',[],true)],
 (argList)=>{
-    TERMINAL.parse('line')
-    TERMINAL.write('')
     var validKey = false
-    if (argList[0]=='local' || argList[0]=='l') {
-        validKey = true
-        Object.keys(localStorage).forEach((datum)=>{
-            TERMINAL.aim('>  '+datum)
-        })
-    } else if (argList[0]=='session' || argList[0]=='s') {
-        validKey = true
-        Object.keys(sessionStorage).forEach((datum)=>{
-            TERMINAL.aim('>  '+datum)
-        })
+    if (argList[1]=='-') {
+        if (argList[0]=='local' || argList[0]=='l') {
+            validKey = true
+            Object.keys(localStorage).forEach((datum)=>{
+                TERMINAL.aim('>  '+datum)
+            })
+        } else {
+            validKey = true
+                TERMINAL.aim('sessionStorage data:')
+            Object.keys(sessionStorage).forEach((datum)=>{
+                TERMINAL.aim('>  '+datum)
+            })
+        }
     } else {
-        Object.keys(localStorage).forEach((datum)=>{
-            let datumSplit = datum.split(':')
-            if (datumSplit[0].toLowerCase()==argList[0].toLowerCase()) {
-                TERMINAL.aim('>  '+datumSplit[1])
-                validKey = true
+        if (argList[0]=='local' || argList[0]=='l') {
+            var keys = [...Object.keys(localStorage)]
+            keys.map((key)=>{
+                key.split(:)
+            })
+            var keyTitles = []
+            keys.forEach((key)=>{
+                keyTitles.push(key[0])
+            })
+            if (keyTitles.includes(argList[1])) {
+                TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
+                Object.keys(localStorage).forEach((datum)=>{
+                    let datumSplit = datum.split(':')
+                    if (datumSplit[0].toLowerCase()==argList[0].toLowerCase()) {
+                        TERMINAL.aim('>  '+datumSplit[1])
+                        validKey = true
+                    }
+                })
+            } else {
+                TERMINAL.write('ERROR: no data of key \"'+argList[1]+'\" found.')
             }
-        })
+        } else {
+            var keys = [...Object.keys(sessionStorage)]
+            keys.map((key)=>{
+                key.split(:)
+            })
+            var keyTitles = []
+            keys.forEach((key)=>{
+                keyTitles.push(key[0])
+            })
+            if (keyTitles.includes(argList[1])) {
+                TERMINAL.aim('sessionStorage data of key \"'+argList[1]+':...\":')
+                Object.keys(sessionStorage).forEach((datum)=>{
+                    let datumSplit = datum.split(':')
+                    if (datumSplit[0].toLowerCase()==argList[0].toLowerCase()) {
+                        TERMINAL.aim('>  '+datumSplit[1])
+                        validKey = true
+                    }
+                })
+            } else {
+                TERMINAL.write('ERROR: no data of key \"'+argList[1]+'\" found.')
+            }
+        }
     }
     if (validKey) {
         TERMINAL.parse('line')
-        TERMINAL.write('')
         TERMINAL.fire()
         TERMINAL.write('')
         TERMINAL.parse('line')
