@@ -248,9 +248,10 @@ ARGUMENTS:
 }),
 new TerminalCMND(['list','ls'], // LIST
 `
-SYNTAX: \'list [type]\'
+SYNTAX: \'[name] [type]\'
+    Names: \'list\', \'ls\'
 PURPOSES:
-    
+    \'list\'
 ARGUMENTS:
     [type] takes \'local\'/\'l\' or \'session\'/\'s\'.
     - \'local\'/\'l\' lists all keys in dictionary {localStorage}.
