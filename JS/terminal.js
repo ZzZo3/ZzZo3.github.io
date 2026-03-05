@@ -273,12 +273,13 @@ ARGUMENTS:
     if (argList[1]=='-') {
         if (argList[0]=='local' || argList[0]=='l') {
             validKey = true
+            TERMINAL.aim('localStorage data:')
             Object.keys(localStorage).forEach((datum)=>{
                 TERMINAL.aim('>  '+datum)
             })
         } else {
             validKey = true
-                TERMINAL.aim('sessionStorage data:')
+            TERMINAL.aim('sessionStorage data:')
             Object.keys(sessionStorage).forEach((datum)=>{
                 TERMINAL.aim('>  '+datum)
             })
@@ -334,7 +335,7 @@ ARGUMENTS:
         TERMINAL.write('')
         TERMINAL.parse('line')
     } else {
-        TERMINAL.write('ERROR: key \''+argList[0]+'\' not found.')
+        TERMINAL.write('ERROR: type \''+argList[0]+'\' not found.')
     }
 }),
 new TerminalCMND(['echo'], // ECHO
