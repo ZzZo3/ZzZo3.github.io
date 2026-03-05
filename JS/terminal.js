@@ -291,7 +291,7 @@ ARGUMENTS:
         } else {
             keys = [...Object.keys(sessionStorage)]
         }
-        keys.map((key)=>{return key.split(':')})
+        keys.map(key=>key.split(':'))
         keys.forEach((key)=>{
             keyTitles.push(key[0])
         })
