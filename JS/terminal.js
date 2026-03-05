@@ -195,7 +195,7 @@ class TerminalCMND {
                 TERMINAL.write('ERROR: optional arg ['+this.args[i].name+'] is ignored with -')
             } else {
                 TERMINAL.write('ERROR: compulsory arg ['+this.args[i].name+'] does not take: '+lineNotFirst[i])
-                TERMINAL.write('>  \'help '+this.args[i].name+'\' for a detailed description.')
+                TERMINAL.write('>  \'help '+this.name[0]+'\' for a detailed description.')
             }
         }
         if (validArgs==this.args.length) {this.does(vettedArgs)}
