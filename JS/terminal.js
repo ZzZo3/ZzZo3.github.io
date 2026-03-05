@@ -271,6 +271,7 @@ ARGUMENTS:
 (argList)=>{
     var validKey = false
     if (argList[1]=='-') {
+        validKey = true
         if (argList[0]=='local' || argList[0]=='l') {
             TERMINAL.aim('localStorage data:')
             Object.keys(localStorage).forEach((datum)=>{
@@ -282,10 +283,6 @@ ARGUMENTS:
                 TERMINAL.aim('>  '+datum)
             })
         }
-        TERMINAL.parse('line')
-        TERMINAL.fire()
-        TERMINAL.write('')
-        TERMINAL.parse('line')
     } else {
         var keys = []
         var keyTitles = []
