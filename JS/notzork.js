@@ -2,16 +2,8 @@
 const vNum = '0.0.d'
 const pageTitle = document.getElementsByClassName('pageTitle')
 
-TERMINALCOMMANDS.push(
-new TerminalCMND(['line'], // LINE
-`
-HELP: \'line\'
-`,
-    [],
-(argList)=>{
-    TERMINAL.write('========================================================================================================================================================================================================================================================================')
-})
-)
+/*TERMINALCOMMANDS.push(
+)*/
 
 //STUFF THAT RUNS ON LOAD
 

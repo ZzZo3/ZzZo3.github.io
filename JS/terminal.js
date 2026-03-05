@@ -360,4 +360,14 @@ ARGUMENTS:
             localStorage.setItem(to,package)
         }
     }
+}),
+new TerminalCMND(['line'], // LINE
+`
+SYNTAX: \'line\'
+PURPOSES:
+⠀⠀⠀\'line\' calls TERMINAL.write() with a long sequence of equal signs. See ^ or v for examples.
+`,
+    [],
+(argList)=>{
+    TERMINAL.write('===================================================================================================================================================')
 })]
