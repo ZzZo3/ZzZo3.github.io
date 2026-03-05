@@ -19,7 +19,11 @@ document.addEventListener('keydown', (event)=>{
                     if (terminalInput.value=='') {
                         TERMINAL.previousCommands.push('')
                     } else {
-                        TERMINAL.previousCommands.push(terminalInput.value)
+                        if (!waiting) {
+                            TERMINAL.previousCommands.push(terminalInput.value)
+                        } else {
+                            TERMINAL.previousCommands.push(TERMINAL.waitList)
+                        }
                         TERMINAL.previousCommandToRemove = TERMINAL.previousCommands.length - 1
                     }
                 }
