@@ -296,11 +296,10 @@ ARGUMENTS:
             keyTitles.push(key[0])
         })
         if (keyTitles.includes(argList[1])) {
+            validKey = true
             TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
-            keys.map((key)=>key.split(':'))
             keys.forEach((key)=>{
                 if (key[0].toLowerCase()==argList[1].toLowerCase()) {
-                    validKey = true
                     TERMINAL.aim('>  '+key.join(':'))
                 }
             })
