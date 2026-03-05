@@ -209,8 +209,14 @@ class TerminalARG {
 var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
-HELP: \'help [cmnd]\'
-Optional argument: [cmnd] takes name of any command
+SYNTAX: \'help [cmnd]\'
+PURPOSES:
+    \'help\' explains syntax and purpose of a named locally available command.
+    * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the n0n-sense.org domain.
+ARGUMENTS:
+    [cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are listed as an AWAIT statement*.
+    * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank. They may be manually ignored with \'-\'.
+    * An AWAIT statement is a query, called with acceptable replies for the user to pick from. Any AWAIT statemnet may also be cancelled with \'cancel\'.
 `,
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
@@ -242,7 +248,15 @@ Optional argument: [cmnd] takes name of any command
 }),
 new TerminalCMND(['list','ls'], // LIST
 `
-HELP: \'list\'
+SYNTAX: \'list [type]\'
+PURPOSES:
+    
+ARGUMENTS:
+    [type] takes \'local\'/\'l\' or \'session\'/\'s\'.
+    - \'local\'/\'l\' lists all keys in dictionary {localStorage}.
+      These data are stored in local browser files persists between sessions.
+    - \'session\'/\'s\' lists all keys in dictionary {sessionStorage}.
+      These data are stored in local browser files and are cleared upon tab close or hard refresh.
 `,
     [new TerminalARG('type',[],false)],
 (argList)=>{
