@@ -295,7 +295,7 @@ ARGUMENTS:
         keys.forEach((key)=>{
             keyTitles.push(key[0])
         })
-        alert('keys:'+keys)
+        alert('keys: '+keys)
         alert('keyTitles: '+keyTitles)
         alert('argList[1]: '+argList[1])
         if (keyTitles.includes(argList[1])) {
