@@ -299,9 +299,6 @@ ARGUMENTS:
         keys.forEach((key)=>{
             keyTitles.push(key[0])
         })
-        alert('keys: '+keys)
-        alert('keyTitles: '+keyTitles)
-        alert('argList[1]: '+argList[1])
         var validKeyTitle = false
         keyTitles.forEach((title)=>{
             if (title.toLowerCase()==argList[1].toLowerCase()) {
@@ -309,7 +306,6 @@ ARGUMENTS:
             }
         })
         if (validKeyTitle) {
-            alert('moat 2')
             validKey = true
             TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
             keys.forEach((key)=>{
@@ -317,9 +313,7 @@ ARGUMENTS:
                     TERMINAL.aim('>  '+key.join(':'))
                 }
             })
-            alert('moat 3')
         } else {
-            alert('moat 4')
             TERMINAL.write('ERROR: no data of key \"'+argList[1]+'\" found.')
         }
     }
