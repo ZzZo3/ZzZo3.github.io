@@ -284,9 +284,10 @@ ARGUMENTS:
     } else {
         Object.keys(localStorage).forEach((datum)=>{
             let datumSplit = datum.split(':')
-            if (datumSplit[0].toLowerCase()==argList[0].toLowerCase())
-            TERMINAL.aim('>  '+datumSplit[1])
-            validKey = true
+            if (datumSplit[0].toLowerCase()==argList[0].toLowerCase()) {
+                TERMINAL.aim('>  '+datumSplit[1])
+                validKey = true
+            }
         })
         if (validKey) {
             TERMINAL.parse('line')
