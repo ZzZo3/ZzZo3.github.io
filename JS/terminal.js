@@ -105,8 +105,15 @@ read(text) {
                 this.write(line)
                 this.parse(line)
             })
-        } else if (text.lowercased() != 'cancel') {
+        } else if (text == 'cancel') {
+            alert('read case 1')
+            this.write('AWAIT: cancelled')
+            this.waitList = []
+            this.waiting = false
+        } else {
+            alert('read case 2')
             if (this.acceptableReplies.includes(text)) {
+                alert('read case 2.1')
                 this.waitList += ' '+text
                 this.waitList = this.waitList.split('\n').join(' ')
                 console.log('TERMINAL.waitList: '+this.waitList)
@@ -115,6 +122,7 @@ read(text) {
                 this.waitList = []
                 this.waiting = false
             } else {
+                alert('read case 2.2')
                 this.write('ERROR: \"'+text+'\" not acceptable reply')
             }
         }
@@ -148,7 +156,6 @@ class TerminalCMND {
         this.does = does // (line)=>{} after vetting parameters
     }
     execute(line) { // takes array of words in command
-        alert('CMND: execute()') //log
         if (typeof line[0] != 'string') {
             TERMINAL.write('ERROR: failed to parse')
             console.log('terminal failed to parse line as string')
@@ -207,7 +214,6 @@ HELP: \'help\'
 `,
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
-    alert('help: does()') //log
     if (argList[0]=='-') {
         TERMINAL.write('AWAIT: Choose a command to elaborate, or \'cancel\'')
         var acceptables = ['cancel']
