@@ -284,23 +284,21 @@ ARGUMENTS:
             })
         }
     } else {
-        alert('moat 1')
         var keys = []
         var keyTitles = []
         if (argList[0]=='local' || argList[0]=='l') {
-            alert('moat 2')
             keys = [...Object.keys(localStorage)]
         } else {
-            alert('moat 3')
             keys = [...Object.keys(sessionStorage)]
         }
         keys.map((key)=>key.split(':'))
         keys.forEach((key)=>{
             keyTitles.push(key[0])
         })
-        alert('moat 4')
+        alert('keyTitles: '+keyTitles)
+        alert('argList[1]: '+argList[1])
         if (keyTitles.includes(argList[1])) {
-            alert('moat 5')
+            alert('moat 2')
             validKey = true
             TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
             keys.forEach((key)=>{
@@ -308,8 +306,9 @@ ARGUMENTS:
                     TERMINAL.aim('>  '+key.join(':'))
                 }
             })
-            alert('moat 6')
+            alert('moat 3')
         } else {
+            alert('moat 4')
             TERMINAL.write('ERROR: no data of key \"'+argList[1]+'\" found.')
         }
     }
