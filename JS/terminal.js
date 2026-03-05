@@ -291,7 +291,7 @@ ARGUMENTS:
         })
     }
     if (validKey) {
-        TERMINAL.parse('line')
+        TERMINAL.parse('line')\\remove
         TERMINAL.write('')
         TERMINAL.fire()
         TERMINAL.write('')
