@@ -32,14 +32,14 @@ document.addEventListener('keydown', (event)=>{
                     TERMINAL.previousCommandsNav -= 1
                 }
                 terminalInput.value = TERMINAL.previousCommands[TERMINAL.previousCommands.length - 1 - TERMINAL.previousCommandsNav]
-                terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
+                terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length)+'vh'
             }
         } else if (event.key === "ArrowDown") {
             event.preventDefault()
             if (TERMINAL.previousCommands.length > 0 && TERMINAL.previousCommandsNav > 0) {
                 TERMINAL.previousCommandsNav -= 1
                 terminalInput.value = TERMINAL.previousCommands[TERMINAL.previousCommands.length - 1 - TERMINAL.previousCommandsNav]
-                terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
+                terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length)+'vh'
             }
         }
     }
@@ -51,7 +51,7 @@ terminal.addEventListener('click', ()=>{
 
 terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
-    text = text.split('\n')
+    text = text.split('<br>')
     terminalInput.style.height = (3 * text.length)+'vh'
     terminal.scrollIntoView({
         behavior: 'smooth',
@@ -72,8 +72,19 @@ var TERMINAL = {
     acceptableReplies: [],
 write(text) {
     console.log('TERMINAL: writing') //log
-    terminalOutput.textContent = terminalOutput.textContent+'\n'+text
-    terminalOutput.style.height = (3 * terminalOutput.textContent.split('\n').length)+'vh'
+    text = text.split(' ')
+    text = text.map((word)=>{
+        if (word.includes('%c')) {
+            word = word.split('%c')
+            word[1] = '<span style=\"color:'+word[0]+'\">'+word[1]+'</span>'
+            return word[1]
+        } else {
+            return word
+        }
+    })
+    text = text.join(' ')
+    terminalOutput.innerHTML = terminalOutput.innerHTML+'<br>'+text
+    terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length)+'vh'
     terminal.scrollBy(0,999999)
 },
 aim(text) {
@@ -108,7 +119,7 @@ read(text) {
         terminalInput.value = ''
         terminalInput.style.height = '3vh'
         if (!this.waiting) {
-            text = text.split('\n')
+            text = text.split('<br>')
             text.forEach((line)=>{
                 this.write(line)
                 this.parse(line)
@@ -120,7 +131,7 @@ read(text) {
         } else {
             if (this.acceptableReplies.includes(text)) {
                 this.waitList += ' '+text
-                this.waitList = this.waitList.split('\n').join(' ')
+                this.waitList = this.waitList.split('<br>').join(' ')
                 console.log('TERMINAL.waitList: '+this.waitList)
                 this.write(this.waitList)
                 this.parse(this.waitList)
@@ -349,7 +360,7 @@ ARGUMENTS:
             if (to=='RF+') {
                 TERMINAL.write('>  cannot write to RF+')
             } else {
-                localStorage.setItem(to,(package+'\n'+localStorage.getItem(to)))
+                localStorage.setItem(to,(package+'<br>'+localStorage.getItem(to)))
             }
         } else {
             TERMINAL.write('>  document \"'+to+'\" not found')
