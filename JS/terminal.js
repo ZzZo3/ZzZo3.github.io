@@ -298,7 +298,13 @@ ARGUMENTS:
         alert('keys: '+keys)
         alert('keyTitles: '+keyTitles)
         alert('argList[1]: '+argList[1])
-        if (keyTitles.includes(argList[1])) {
+        var validKeyTitle = false
+        keyTitles.forEach((title)=>{
+            if (title.toLowerCase()==argList[1].toLowerCase()) {
+                validKeyTitle = true
+            }
+        })
+        if (validKeyTitle)) {
             alert('moat 2')
             validKey = true
             TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
