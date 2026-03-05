@@ -106,14 +106,11 @@ read(text) {
                 this.parse(line)
             })
         } else if (text == 'cancel') {
-            alert('read case 1')
             this.write('AWAIT: cancelled')
             this.waitList = []
             this.waiting = false
         } else {
-            alert('read case 2')
             if (this.acceptableReplies.includes(text)) {
-                alert('read case 2.1')
                 this.waitList += ' '+text
                 this.waitList = this.waitList.split('\n').join(' ')
                 console.log('TERMINAL.waitList: '+this.waitList)
@@ -122,7 +119,6 @@ read(text) {
                 this.waitList = []
                 this.waiting = false
             } else {
-                alert('read case 2.2')
                 this.write('ERROR: \"'+text+'\" not acceptable reply')
             }
         }
@@ -130,7 +126,6 @@ read(text) {
 },
 parse(line) {
     console.log('TERMINAL: parsing') //log
-    alert('TERMINAL: parse()') //log
     line = line.split(' ')
     var validCommand = false
     TERMINALCOMMANDS.forEach((COMMAND)=>{
