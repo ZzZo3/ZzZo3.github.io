@@ -225,8 +225,8 @@ var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
 SYNTAX: \'help [cmnd]\'
-PURPOSES:
-⠀⠀⠀\'help\' explains syntax and purpose of a named locally available command.
+white%cPURPOSES:
+⠀⠀⠀\'help\' red%cexplains syntax and purpose of a named locally available command.
 ⠀⠀⠀\'help\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
