@@ -188,9 +188,9 @@ class TerminalCMND {
                 vettedArgs.push(lineNotFirst[i])
                 validArgs++
             } else if (this.args[i].isOptional || this.args[i].isOptional) {
-                TERMINAL.write('ERROR: optional arg \"'+this.args[i].name+'\" is ignored with -')
+                TERMINAL.write('ERROR: optional arg ['+this.args[i].name+'] is ignored with -')
             } else {
-                TERMINAL.write('ERROR: compulsory arg \"'+this.args[i].name+'\" does not take: '+lineNotFirst[i])
+                TERMINAL.write('ERROR: compulsory arg ['+this.args[i].name+'] does not take: '+lineNotFirst[i])
                 TERMINAL.write('>  \'help '+this.args[i].name+'\' for a detailed description.')
             }
         }
@@ -210,7 +210,7 @@ var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
 HELP: \'help [cmnd]\'
-Optional argument: [cmnd] takes name of any command 
+Optional argument: [cmnd] takes name of any command
 `,
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
@@ -224,13 +224,18 @@ Optional argument: [cmnd] takes name of any command
         TERMINAL.waitList = 'help'
         TERMINAL.await(acceptables)
     } else if (argList[0] != 'cancel') {
+        var validHelp = false
         TERMINALCOMMANDS.forEach((CMND)=>{
             if (CMND.name.includes(argList[0])) {
+                validHelp = true
                 TERMINAL.parse('line')
                 TERMINAL.write(CMND.helpMsg)
                 TERMINAL.parse('line')
             }
         })
+        if (!validHelp) {
+            TERMINAL.write('ERROR: optional arg [cmnd] does not take: '+argList[i])
+        }
     } else {
         TERMINAL.write('AWAIT: cancelled')
     }
