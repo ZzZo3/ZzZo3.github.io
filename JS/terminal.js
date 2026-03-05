@@ -272,61 +272,44 @@ ARGUMENTS:
     var validKey = false
     if (argList[1]=='-') {
         if (argList[0]=='local' || argList[0]=='l') {
-            validKey = true
             TERMINAL.aim('localStorage data:')
             Object.keys(localStorage).forEach((datum)=>{
                 TERMINAL.aim('>  '+datum)
             })
         } else {
-            validKey = true
             TERMINAL.aim('sessionStorage data:')
             Object.keys(sessionStorage).forEach((datum)=>{
                 TERMINAL.aim('>  '+datum)
             })
         }
+        TERMINAL.parse('line')
+        TERMINAL.fire()
+        TERMINAL.write('')
+        TERMINAL.parse('line')
     } else {
+        var keys = []
+        var keyTitles = []
+        var validKey = false
         if (argList[0]=='local' || argList[0]=='l') {
-            var keys = [...Object.keys(localStorage)]
-            keys.map((key)=>{
-                key.split(':')
-            })
-            var keyTitles = []
-            keys.forEach((key)=>{
-                keyTitles.push(key[0])
-            })
-            if (keyTitles.includes(argList[1])) {
-                TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
-                Object.keys(localStorage).forEach((datum)=>{
-                    let datumSplit = datum.split(':')
-                    if (datumSplit[0].toLowerCase()==argList[1].toLowerCase()) {
-                        TERMINAL.aim('>  '+datumSplit[1])
-                        validKey = true
-                    }
-                })
-            } else {
-                TERMINAL.write('ERROR: no data of key \"'+argList[1]+'\" found.')
-            }
+            keys = [...Object.keys(localStorage)]
         } else {
-            var keys = [...Object.keys(sessionStorage)]
-            keys.map((key)=>{
-                key.split(':')
-            })
-            var keyTitles = []
+            keys = [...Object.keys(sessionStorage)]
+        }
+        keys.map((key)=>{
+            key = key.split(':')
+            keyTitles.push(key[0])
+        })
+        if (keyTitles.includes(argList[1])) {
+            TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
             keys.forEach((key)=>{
-                keyTitles.push(key[0])
+                key.split(':')
+                if (key[0].toLowerCase()==argList[1].toLowerCase()) {
+                    validKey = true
+                    TERMINAL.aim('>  '+key.join(':'))
+                }
             })
-            if (keyTitles.includes(argList[1])) {
-                TERMINAL.aim('sessionStorage data of key \"'+argList[1]+':...\":')
-                Object.keys(sessionStorage).forEach((datum)=>{
-                    let datumSplit = datum.split(':')
-                    if (datumSplit[0].toLowerCase()==argList[1].toLowerCase()) {
-                        TERMINAL.aim('>  '+datumSplit[1])
-                        validKey = true
-                    }
-                })
-            } else {
-                TERMINAL.write('ERROR: no data of key \"'+argList[1]+'\" found.')
-            }
+        } else {
+            TERMINAL.write('ERROR: no data of key \"'+argList[1]+'\" found.')
         }
     }
     if (validKey) {
