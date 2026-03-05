@@ -255,12 +255,12 @@ ARGUMENTS:
 }),
 new TerminalCMND(['list','ls'], // LIST
 `
-SYNTAX: \'[name] [type]\'
+SYNTAX: \'[name] [key]\'
 ⠀⠀⠀Names: \'list\', \'ls\'
 PURPOSES:
 ⠀⠀⠀\'list\' displays a list of all keys stored in either {localStorage} or {sessionStorage}.
 ARGUMENTS:
-⠀⠀⠀[type] takes \'local\'/\'l\' or \'session\'/\'s\'.
+⠀⠀⠀[key] takes \'local\'/\'l\' or \'session\'/\'s\'.
 ⠀⠀⠀- \'local\'/\'l\' lists all keys in dictionary {localStorage}.
 ⠀⠀⠀  These data are stored in local browser files persists between sessions.
 ⠀⠀⠀- \'session\'/\'s\' lists all keys in dictionary {sessionStorage}.
@@ -289,15 +289,15 @@ ARGUMENTS:
                 validKey = true
             }
         })
-        if (validKey) {
-            TERMINAL.parse('line')
-            TERMINAL.write('')
-            TERMINAL.fire()
-            TERMINAL.write('')
-            TERMINAL.parse('line')
-        } else {
-            TERMINAL.write('ERROR: key \''+argList[0]+'\' not found.')
-        }
+    }
+    if (validKey) {
+        TERMINAL.parse('line')
+        TERMINAL.write('')
+        TERMINAL.fire()
+        TERMINAL.write('')
+        TERMINAL.parse('line')
+    } else {
+        TERMINAL.write('ERROR: key \''+argList[0]+'\' not found.')
     }
 }),
 new TerminalCMND(['echo'], // ECHO
