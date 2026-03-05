@@ -258,7 +258,7 @@ new TerminalCMND(['list','ls'], // LIST
 SYNTAX: \'[name] [type]\'
 ⠀⠀⠀Names: \'list\', \'ls\'
 PURPOSES:
-⠀⠀⠀\'list\' displays a list of all
+⠀⠀⠀\'list\' displays a list of all keys stored in either {localStorage} or {sessionStorage}.
 ARGUMENTS:
 ⠀⠀⠀[type] takes \'local\'/\'l\' or \'session\'/\'s\'.
 ⠀⠀⠀- \'local\'/\'l\' lists all keys in dictionary {localStorage}.
@@ -270,16 +270,18 @@ ARGUMENTS:
 (argList)=>{
     TERMINAL.parse('line')
     TERMINAL.write('')
+    var validKey = false
     if (argList[0]=='local' || argList[0]=='l') {
+        validKey = true
         Object.keys(localStorage).forEach((datum)=>{
             TERMINAL.aim('>  '+datum)
         })
     } else if (argList[0]=='session' || argList[0]=='s') {
+        validKey = true
         Object.keys(sessionStorage).forEach((datum)=>{
             TERMINAL.aim('>  '+datum)
         })
     } else {
-        var validKey = false
         Object.keys(localStorage).forEach((datum)=>{
             let datumSplit = datum.split(':')
             if (datumSplit[0].toLowerCase()==argList[0].toLowerCase())
