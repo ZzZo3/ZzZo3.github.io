@@ -128,6 +128,7 @@ parse(line) {
     TERMINALCOMMANDS.forEach((COMMAND)=>{
         if (COMMAND.name.includes(line[0])) {
             validCommand = true
+            COMMAND.execute(line)
         }
     })
     if (!validCommand) {
