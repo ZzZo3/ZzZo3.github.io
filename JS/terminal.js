@@ -298,7 +298,7 @@ ARGUMENTS:
                 TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
                 Object.keys(localStorage).forEach((datum)=>{
                     let datumSplit = datum.split(':')
-                    if (datumSplit[0].toLowerCase()==argList[0].toLowerCase()) {
+                    if (datumSplit[0].toLowerCase()==argList[1].toLowerCase()) {
                         TERMINAL.aim('>  '+datumSplit[1])
                         validKey = true
                     }
@@ -319,7 +319,7 @@ ARGUMENTS:
                 TERMINAL.aim('sessionStorage data of key \"'+argList[1]+':...\":')
                 Object.keys(sessionStorage).forEach((datum)=>{
                     let datumSplit = datum.split(':')
-                    if (datumSplit[0].toLowerCase()==argList[0].toLowerCase()) {
+                    if (datumSplit[0].toLowerCase()==argList[1].toLowerCase()) {
                         TERMINAL.aim('>  '+datumSplit[1])
                         validKey = true
                     }
