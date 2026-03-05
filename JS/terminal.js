@@ -87,6 +87,10 @@ fire() {
     })
     this.queue = []
 },
+unaim() {
+    console.log('TERMINAL: cleared queue')
+    this.queue = []
+},
 await(replyArr) {
     console.log('TERMINAL: awaiting') //log
     this.waiting = true
@@ -215,7 +219,7 @@ PURPOSES:
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:
-⠀⠀⠀[cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are listed as an AWAIT statement*.
+⠀⠀⠀[cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT statement*.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
 ⠀⠀⠀   They may be manually ignored with \'-\'.
 ⠀⠀⠀ * An AWAIT statement is a query, called with acceptable replies for the user to pick from. Any AWAIT statemnet may also be cancelled
@@ -254,7 +258,7 @@ new TerminalCMND(['list','ls'], // LIST
 SYNTAX: \'[name] [type]\'
 ⠀⠀⠀Names: \'list\', \'ls\'
 PURPOSES:
-⠀⠀⠀\'list\'
+⠀⠀⠀\'list\' displays a list of all
 ARGUMENTS:
 ⠀⠀⠀[type] takes \'local\'/\'l\' or \'session\'/\'s\'.
 ⠀⠀⠀- \'local\'/\'l\' lists all keys in dictionary {localStorage}.
@@ -264,25 +268,42 @@ ARGUMENTS:
 `,
     [new TerminalARG('type',[],false)],
 (argList)=>{
+    TERMINAL.parse('line')
+    TERMINAL.write('')
     if (argList[0]=='local' || argList[0]=='l') {
         Object.keys(localStorage).forEach((datum)=>{
-        TERMINAL.write('>  '+datum)
+            TERMINAL.aim('>  '+datum)
         })
     } else if (argList[0]=='session' || argList[0]=='s') {
         Object.keys(sessionStorage).forEach((datum)=>{
-        TERMINAL.write('>  '+datum)
+            TERMINAL.aim('>  '+datum)
         })
     } else {
+        var validKey = false
         Object.keys(localStorage).forEach((datum)=>{
             let datumSplit = datum.split(':')
             if (datumSplit[0].toLowerCase()==argList[0].toLowerCase())
-        TERMINAL.write('>  '+datumSplit[1])
+            TERMINAL.aim('>  '+datumSplit[1])
+            validKey = true
         })
+        if (validKey) {
+            TERMINAL.parse('line')
+            TERMINAL.write('')
+            TERMINAL.fire()
+            TERMINAL.write('')
+            TERMINAL.parse('line')
+        } else {
+            TERMINAL.write('ERROR: key \''+argList[0]+'\' not found.')
+        }
     }
 }),
 new TerminalCMND(['echo'], // ECHO
 `
-HELP: \'echo\'
+SYNTAX: \'echo [package] [to] [append]\'
+PURPOSES:
+⠀⠀⠀
+ARGUMENTS:
+⠀⠀⠀
 `,
     [new TerminalARG('package',[],false),
     new TerminalARG('to',[],true),
