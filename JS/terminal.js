@@ -210,7 +210,8 @@ class TerminalARG {
 var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
-HELP: \'help\'
+HELP: \'help [cmnd]\'
+Optional argument: [cmnd] take the name of any 
 `,
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
@@ -225,7 +226,7 @@ HELP: \'help\'
         TERMINAL.await(acceptables)
     } else if (argList[0] != 'cancel') {
         TERMINALCOMMANDS.forEach((CMND)=>{
-            if (CMND.name==argList[0]) {
+            if (CMND.name.includes(argList[0])) {
                 TERMINAL.parse('line')
                 TERMINAL.write(CMND.helpMsg)
                 TERMINAL.parse('line')
