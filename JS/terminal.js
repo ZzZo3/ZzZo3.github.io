@@ -216,6 +216,7 @@ new TerminalCMND(['help'], // HELP
 SYNTAX: \'help [cmnd]\'
 PURPOSES:
 ⠀⠀⠀\'help\' explains syntax and purpose of a named locally available command.
+⠀⠀⠀\'help\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:
@@ -259,6 +260,9 @@ SYNTAX: \'[name] [type] [key]\'
 ⠀⠀⠀Names: \'list\', \'ls\'
 PURPOSES:
 ⠀⠀⠀\'list\' displays a list of all keys stored in either {localStorage} or {sessionStorage}.
+⠀⠀⠀\'list\' is globally available.
+⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
+⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:
 ⠀⠀⠀[key] takes \'local\'/\'l\' or \'session\'/\'s\'.
 ⠀⠀⠀- \'local\'/\'l\' lists all keys in dictionary {localStorage}.
@@ -331,6 +335,9 @@ new TerminalCMND(['echo'], // ECHO
 SYNTAX: \'echo [package] [to] [append]\'
 PURPOSES:
 ⠀⠀⠀
+⠀⠀⠀\'echo\' is globally available.
+⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
+⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:
 ⠀⠀⠀
 `,
@@ -366,6 +373,9 @@ new TerminalCMND(['line'], // LINE
 SYNTAX: \'line\'
 PURPOSES:
 ⠀⠀⠀\'line\' calls TERMINAL.write() with a long sequence of equal signs. See ^ or v for examples.
+⠀⠀⠀\'line\' is globally available.
+⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
+⠀⠀⠀   n0n-sense.org domain.
 `,
     [],
 (argList)=>{
