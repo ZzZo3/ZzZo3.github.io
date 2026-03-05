@@ -206,7 +206,7 @@ var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
 HELP: \'help [cmnd]\'
-Optional argument: [cmnd] take the name of any 
+Optional argument: [cmnd] takes name of any command 
 `,
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
