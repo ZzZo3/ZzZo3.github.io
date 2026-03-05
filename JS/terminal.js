@@ -286,14 +286,13 @@ ARGUMENTS:
     } else {
         var keys = []
         var keyTitles = []
-        var validKey = false
         if (argList[0]=='local' || argList[0]=='l') {
             keys = [...Object.keys(localStorage)]
         } else {
             keys = [...Object.keys(sessionStorage)]
         }
-        keys.map((key)=>{
-            key = key.split(':')
+        keys.map((key)=>key.split(':'))
+        keys.forEach((key)=>{
             keyTitles.push(key[0])
         })
         if (keyTitles.includes(argList[1])) {
