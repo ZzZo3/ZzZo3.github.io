@@ -79,7 +79,7 @@ write(text) {
             word[1] = '<span style=\"color:'+word[0]+'\">'+word[1]+'</span>'
             return word[1]
         } else {
-            return word
+            return '<span style=\"color:rgb(255, 216, 132)\">'+word+'</span>'
         }
     })
     text = text.join(' ')
