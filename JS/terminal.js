@@ -297,8 +297,8 @@ ARGUMENTS:
         })
         if (keyTitles.includes(argList[1])) {
             TERMINAL.aim('localStorage data of key \"'+argList[1]+':...\":')
+            keys.map((key)=>key.split(':'))
             keys.forEach((key)=>{
-                key.split(':')
                 if (key[0].toLowerCase()==argList[1].toLowerCase()) {
                     validKey = true
                     TERMINAL.aim('>  '+key.join(':'))
