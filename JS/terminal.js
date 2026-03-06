@@ -431,17 +431,17 @@ ARGUMENTS:%cred
 }),
 new TerminalCMND(['swath','swa'], // COLOR
 `
-SYNTAX:%cred \'%corangered swath%corangered [color]%clime \'%corangered
-⠀⠀⠀Alternate%corange name:%corange \'swa\'%corange
+SYNTAX:%cred \'%corangered swath%corangered [color]%clime \'%corangered 
+⠀⠀⠀Alternate%corange name:%corange \'swa\'%corange 
 PURPOSES:%cred 
-⠀⠀⠀\'swath\'%cyellow displays%cyellow a%cyellow square%cyellow of%cyellow a%cyellow specified%cyellow color%cyellow for%cyellow testing%cyellow purposes.%cyellow
+⠀⠀⠀\'swath\'%cyellow displays%cyellow a%cyellow square%cyellow of%cyellow a%cyellow specified%cyellow color%cyellow for%cyellow testing%cyellow purposes.%cyellow 
 ⠀⠀⠀\'swath\'%clime is%clime globally%clime available.%clime
-⠀⠀⠀ *%cmediumseagreen Some%cmediumseagreen commands%cmediumseagreen are%cmediumseagreen available%cmediumseagreen across%cmediumseagreen all%cmediumseagreen instances%cmediumseagreen of%cmediumseagreen TERMINAL.js%cmediumseagreen while%cmediumseagreen others%cmediumseagreen are%cmediumseagreen only%cmediumseagreen available%cmediumseagreen in%cmediumseagreen specific%cmediumseagreen html%cmediumseagreen files%cmediumseagreen within%cmediumseagreen the%cmediumseagreen
-⠀⠀⠀   n0n-sense.org%cmediumturquoise domain.%cmediumturquoise
+⠀⠀⠀ *%cmediumseagreen Some%cmediumseagreen commands%cmediumseagreen are%cmediumseagreen available%cmediumseagreen across%cmediumseagreen all%cmediumseagreen instances%cmediumseagreen of%cmediumseagreen TERMINAL.js%cmediumseagreen while%cmediumseagreen others%cmediumseagreen are%cmediumseagreen only%cmediumseagreen available%cmediumseagreen in%cmediumseagreen specific%cmediumseagreen html%cmediumseagreen files%cmediumseagreen within%cmediumseagreen the%cmediumseagreen 
+⠀⠀⠀   n0n-sense.org%cmediumturquoise domain.%cmediumturquoise 
 ARGUMENTS:%cred 
-⠀⠀⠀[color]%clime takes%cmediumblue any%cmediumblue input.%cmediumblue If%cmediumblue given%cmediumblue a%cmediumblue value%cmediumblue of%cmediumblue a%cmediumblue valid%cmediumblue color,%cmediumblue the%cmediumblue square%cmediumblue will%cmediumblue display%cmediumblue with%cmediumblue that%cmediumblue color.%cmediumblue
-⠀⠀⠀-%cdarkslateblue \'rainbow\'%cdarkslateblue displays%cdarkslateblue all%cdarkslateblue universally%cdarkslateblue available%cdarkslateblue CSS%cdarkslateblue colors%cdarkslateblue in%cdarkslateblue order.%cdarkslateblue
-⠀⠀⠀ *%cdarkmagenta Optional%cdarkmagenta arguments%cdarkmagenta are%cdarkmagenta automatically%cdarkmagenta ignored%cdarkmagenta if%cdarkmagenta they%cdarkmagenta appear%cdarkmagenta as%cdarkmagenta the%cdarkmagenta last%cdarkmagenta argument%cdarkmagenta in%cdarkmagenta a%cdarkmagenta command%cdarkmagenta and%cdarkmagenta are%cdarkmagenta left%cdarkmagenta blank.%cdarkmagenta
+⠀⠀⠀[color]%clime takes%cmediumblue any%cmediumblue input.%cmediumblue If%cmediumblue given%cmediumblue a%cmediumblue value%cmediumblue of%cmediumblue a%cmediumblue valid%cmediumblue color,%cmediumblue the%cmediumblue square%cmediumblue will%cmediumblue display%cmediumblue with%cmediumblue that%cmediumblue color.%cmediumblue 
+⠀⠀⠀-%cdarkslateblue \'rainbow\'%cdarkslateblue displays%cdarkslateblue all%cdarkslateblue universally%cdarkslateblue available%cdarkslateblue CSS%cdarkslateblue colors%cdarkslateblue in%cdarkslateblue order.%cdarkslateblue 
+⠀⠀⠀ *%cdarkmagenta Optional%cdarkmagenta arguments%cdarkmagenta are%cdarkmagenta automatically%cdarkmagenta ignored%cdarkmagenta if%cdarkmagenta they%cdarkmagenta appear%cdarkmagenta as%cdarkmagenta the%cdarkmagenta last%cdarkmagenta argument%cdarkmagenta in%cdarkmagenta a%cdarkmagenta command%cdarkmagenta and%cdarkmagenta are%cdarkmagenta left%cdarkmagenta blank.%cdarkmagenta 
 `,
     [new TerminalARG('color',[],false)],
 (argList)=>{
