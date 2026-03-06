@@ -84,6 +84,7 @@ write(text) {
         } else {
             spanTxt += 'color:rgb(255,216,132)'
         }
+        console.log('word: '+word)
         console.log('spanTxt: '+spanTxt)
         if (word.includes('%f')) {
             word = word.split('%f')
@@ -92,6 +93,7 @@ write(text) {
         } else {
             spanTxt += '; font-weight:normal'
         }
+        console.log('word: '+word)
         console.log('spanTxt: '+spanTxt)
         console.log('returns: <span style=\"'+spanTxt+'\">'+word+'</span>')
         return '<span style=\"'+spanTxt+'\">'+word+'</span>'
