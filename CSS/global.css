@@ -165,7 +165,7 @@ html, body {
     line-height: 2.67vh;
     margin-right: 1vw;
     margin-left: 1vw;
-    color: rgb(255, 216, 132);
+    color: white;
 }
 #terminalInput:focus {
     background-color: blue;

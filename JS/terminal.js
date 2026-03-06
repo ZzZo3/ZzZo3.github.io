@@ -70,6 +70,8 @@ var TERMINAL = {
     waiting: false,
     waitList: '',
     acceptableReplies: [],
+    inputColor: rgb(255, 216, 132)
+    outputColor: rgb(255, 216, 132)
 write(text) {
     console.log('TERMINAL: writing') //log
     text = text.split('\n').join('<br> ')
@@ -80,7 +82,7 @@ write(text) {
             word[1] = '<span style=\"color:'+word[0]+'\">'+word[1]+'</span>'
             return word[1]
         } else {
-            return '<span style=\"color:rgb(255, 216, 132)\">'+word+'</span>'
+            return '<span style=\"color:'+this.outputColor+'\">'+word+'</span>'
         }
     })
     text = text.join(' ')
@@ -122,7 +124,7 @@ read(text) {
         if (!this.waiting) {
             text = text.split('<br>')
             text.forEach((line)=>{
-                let line1 = line.split(' ').map(word=>'#ffdd00%c'+word).join(' ')
+                let line1 = line.split(' ').map(word=>this.inputColor+'%c'+word).join(' ')
                 this.write(line1)
                 this.parse(line)
             })
@@ -135,7 +137,7 @@ read(text) {
                 this.waitList += ' '+text
                 this.waitList = this.waitList.split('<br>').join(' ')
                 console.log('TERMINAL.waitList: '+this.waitList)
-                let waitList1 = this.waitList1.split(' ').map(word=>'#ffdd00%c'+word).join(' ')
+                let waitList1 = this.waitList1.split(' ').map(word=>this.inputColor'%c'+word).join(' ')
                 this.write(waitList1)
                 this.parse(this.waitList)
                 this.waitList = []
