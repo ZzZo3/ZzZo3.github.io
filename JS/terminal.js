@@ -75,6 +75,7 @@ var TERMINAL = {
 write(text) {
     console.log('TERMINAL: writing') //log
     text = text.split('\n').join('<br> ').split(' ').map((word)=>{
+        console.log('word: '+word)
         var spanTxt = ''
         if (word.includes('%c')) {
             word = word.split('%c')
@@ -83,6 +84,7 @@ write(text) {
         } else {
             spanTxt += 'color:rgb(255,216,132)'
         }
+        console.log('spanTxt: '+spanTxt)
         if (word.includes('%f')) {
             word = word.split('%f')
             spanTxt += ' font-weight:'+word[1]
@@ -90,6 +92,8 @@ write(text) {
         } else {
             spanTxt += ' font-weight:normal'
         }
+        console.log('spanTxt: '+spanTxt)
+        console.log('returns: <span style=\"'+spanTxt+'\">'+word+'</span>')
         return '<span style=\"'+spanTxt+'\">'+word+'</span>'
     }).join(' ')
     terminalOutput.innerHTML = terminalOutput.innerHTML+'<br>'+text
