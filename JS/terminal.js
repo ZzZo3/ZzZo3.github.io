@@ -251,13 +251,13 @@ class TerminalARG {
 var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
-SYNTAX:%cred \' help [cmnd]%clime \'
-PURPOSES:%cred 
+SYNTAX:%cred%c%wbold%w \' help [cmnd]%clime \'
+PURPOSES:%cred%c%wbold%w 
 ⠀⠀⠀\'help\' explains syntax and purpose of a named locally available command.
 ⠀⠀⠀\'help\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
-ARGUMENTS:%cred 
+ARGUMENTS:%cred%c%wbold%w 
 ⠀⠀⠀[cmnd]%clime (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
 ⠀⠀⠀statement*.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
@@ -296,14 +296,14 @@ ARGUMENTS:%cred
 }),
 new TerminalCMND(['list','ls'], // LIST
 `
-SYNTAX:%cred \' list [type]%clime [key]%clime \'
+SYNTAX:%cred%c%wbold%w \' list [type]%clime [key]%clime \'
 ⠀⠀⠀Alternate name: \'ls\'
-PURPOSES:%cred 
+PURPOSES:%cred%c%wbold%w 
 ⠀⠀⠀\'list\' displays a list of keys for data stored in either {localStorage} or {sessionStorage}.
 ⠀⠀⠀\'list\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
-ARGUMENTS:%cred 
+ARGUMENTS:%cred%c%wbold%w 
 ⠀⠀⠀[type]%clime takes \'local\'/\'l\' or \'session\'/\'s\' to determine what dictionary to search.
 ⠀⠀⠀- \'local\'/\'l\' sets the searchable dictionary to {localStorage}.
 ⠀⠀⠀  These data are stored in local browser files persists between sessions.
