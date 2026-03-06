@@ -53,10 +53,12 @@ terminalInput.addEventListener('input', ()=>{
     var text = terminalInput.value
     text = text.split('<br>')
     terminalInput.style.height = (3 * text.length)+'vh'
+    if (parseInt(terminalOutput.style.height.split('vh')[0]) > this.height) {
     terminal.scrollIntoView({
         behavior: 'smooth',
         block: 'end'
     })
+    }
 })
 
 
