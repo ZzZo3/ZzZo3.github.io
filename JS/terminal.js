@@ -145,6 +145,7 @@ read() {
             this.waiting = false
         } else {
             this.write('ERROR: \"'+text+'\" not acceptable reply')
+            TERMINAL.write('>  Try \'help\'.')
         }
     }
 },
@@ -160,6 +161,7 @@ parse(line) {
     })
     if (!validCommand) {
         this.write('ERROR: unknown command: '+line[0])
+        TERMINAL.write('>  Try \'help\'.')
     }
     terminal.scrollBy(0,999999)
 }
@@ -177,6 +179,7 @@ class TerminalCMND {
     execute(line) { // takes array of words in command
         if (typeof line[0] != 'string') {
             TERMINAL.write('ERROR: failed to parse')
+            TERMINAL.write('>  Try \'help '+this.name[0]+'\' for a detailed description.')
             console.log('terminal failed to parse line as string')
             console.log(line)
             return
@@ -193,6 +196,7 @@ class TerminalCMND {
         })
         if (lineNotFirst.length < this.args.length - optionals) { // check # args
             TERMINAL.write('ERROR: incorrect argument count')
+            TERMINAL.write('>  Try \'help '+this.name[0]+'\' for a detailed description.')
             console.log('terminal incorrect argument count')
             return
         }
@@ -209,9 +213,10 @@ class TerminalCMND {
                 validArgs++
             } else if (this.args[i].isOptional || this.args[i].isOptional) {
                 TERMINAL.write('ERROR: optional arg ['+this.args[i].name+'] is ignored with -')
+                TERMINAL.write('>  Try \'help '+this.name[0]+'\' for a detailed description.')
             } else {
                 TERMINAL.write('ERROR: compulsory arg ['+this.args[i].name+'] does not take: '+lineNotFirst[i])
-                TERMINAL.write('>  \'help '+this.name[0]+'\' for a detailed description.')
+                TERMINAL.write('>  Try \'help '+this.name[0]+'\' for a detailed description.')
             }
         }
         if (validArgs==this.args.length) {this.does(vettedArgs)}
@@ -266,6 +271,7 @@ red%cARGUMENTS:
         })
         if (!validHelp) {
             TERMINAL.write('ERROR: optional arg [cmnd] does not take: '+argList[i])
+            TERMINAL.write('>  Try \'help help\' for a detailed description.')
         }
     } else {
         TERMINAL.write('AWAIT: cancelled')
@@ -336,6 +342,7 @@ red%cARGUMENTS:
             })
         } else {
             TERMINAL.write('ERROR: no data of key \"'+argList[1]+'\" found.')
+            TERMINAL.write('>  Try \'help list\' for a detailed description.')
         }
     }
     if (validKey) {
