@@ -169,7 +169,7 @@ parse(line) {
     console.log('TERMINAL: parsing') //log
     line = line.split(' ')
     var validCommand = false
-    TERMINALCOMMANDS.forEach((COMMAND)=>{
+    this.COMMANDARRAY.forEach((COMMAND)=>{
         if (COMMAND.name.includes(line[0])) {
             validCommand = true
             COMMAND.execute(line)
@@ -271,7 +271,7 @@ ARGUMENTS:%cred
     if (argList[0]=='-') {
         TERMINAL.write('AWAIT: Choose a command to elaborate, or \'cancel\'')
         var acceptables = ['cancel']
-        TERMINALCOMMANDS.forEach((c)=>{
+        TERMINAL.COMMANDARRAY.forEach((c)=>{
             TERMINAL.write('>  '+c.name[0])
             acceptables.push(c.name[0])
         })
@@ -279,7 +279,7 @@ ARGUMENTS:%cred
         TERMINAL.await(acceptables)
     } else if (argList[0] != 'cancel') {
         var validHelp = false
-        TERMINALCOMMANDS.forEach((CMND)=>{
+        TERMINAL.COMMANDARRAY.forEach((CMND)=>{
             if (CMND.name.includes(argList[0])) {
                 validHelp = true
                 TERMINAL.parse('line')
