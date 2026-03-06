@@ -440,7 +440,7 @@ PURPOSES:%cred
 ⠀⠀⠀   n0n-sense.org%cmediumturquoise domain.%cmediumturquoise 
 ARGUMENTS:%cred 
 ⠀⠀⠀[color]%clime takes%cmediumblue any%cmediumblue input.%cmediumblue If%cmediumblue given%cmediumblue a%cmediumblue value%cmediumblue of%cmediumblue a%cmediumblue valid%cmediumblue color,%cmediumblue the%cmediumblue square%cmediumblue will%cmediumblue display%cmediumblue with%cmediumblue that%cmediumblue color.%cmediumblue 
-⠀⠀⠀-%cdarkmagenta \'rainbow\'/\'rb\'%cdarkmagenta displays%cdarkmagenta all%cdarkmagenta universally%cdarkmagenta available%cdarkmagenta CSS%cdarkmagenta colors%cdarkmagenta in%cdarkmagenta order.%cdarkmagenta 
+⠀⠀⠀-%cdarkmagenta \'rainbow\'/\'rb\'%cdarkmagenta displays%cdarkmagenta all%cdarkmagenta universally%cdarkmagenta available%cdarkmagenta CSS%cdarkmagenta colors%cdarkmagenta in%cdarkmagenta alphabetical%cdarkmagenta order.%cdarkmagenta 
 `,
     [new TerminalARG('color',[],false)],
 (argList)=>{
