@@ -431,7 +431,7 @@ ARGUMENTS:%cred
 }),
 new TerminalCMND(['swath','swa'], // COLOR
 `
-SYNTAX:%cred \' swath [color]%lime \'
+SYNTAX:%cred \' swath [color]%clime \'
 ⠀⠀⠀Alternate name: \'swa\'
 PURPOSES:%cred 
 ⠀⠀⠀\'swath\' displays a square of a specified color for testing purposes.
@@ -439,13 +439,36 @@ PURPOSES:%cred
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:%cred 
-⠀⠀⠀[color]%lime takes any input. If given a value of a valid color, the square will display with that color.
+⠀⠀⠀[color]%clime takes any input. If given a value of a valid color, the square will display with that color.
+⠀⠀⠀- \'rainbow\' displays all universally available CSS colors in order.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
 `,
     [new TerminalARG('color',[],false)],
 (argList)=>{
-    TERMINAL.write('████████████████████████%c'+argList[0]+' ')
-    TERMINAL.write('████████████████████████%c'+argList[0]+' ')
-    TERMINAL.write('████████████████████████%c'+argList[0]+' ')
+    if (argList[0] != 'rainbow') {
+        TERMINAL.write('████████████████████████%c'+argList[0]+' ')
+        TERMINAL.write('████████████████████████%c'+argList[0]+' ')
+        TERMINAL.write('████████████████████████%c'+argList[0]+' ')
+    } else {
+        const colors = ['AliceBlue','AntiqueWhite','Aqua','Aquamarine','Azure',
+        'Beige','Bisque','Black','BlanchedAlmond','Blue','BlueViolet','Brown','BurlyWood',
+        'CadetBlue','Chartreuse','Chocolate','Coral','CornflowerBlue','Cornsilk','Crimson','Cyan',
+        'DarkBlue','DarkCyan','DarkGoldenRod','DarkGray','DarkGreen','DarkKhaki','DarkMagenta',
+        'DarkOliveGreen','DarkOrage','DarkOrchid','DarkRed','DarkSalmon','DarkSeaGreen','DarkSlateBlue',
+        'DarkSlateGray','DarkTurquoise','DarkViolet','DeepPink','DeepSkyBlue','DimGray','DodgerBlue','FireBrick'
+        'FloralWhite','ForestGreen','Fuchsia','Gainsboro','GhostWhite','Gold','GoldenRod','Gray','Green','GreenYellow',
+        'HoneyDew','HotPink','IndianRed','Indigo','Ivory','Khaki','Lavender','LavenderBlush','LawnGreen','LemonChiffon',
+        'LightBlue','LightCoral','LightCyan','LightGoldenRodYellow','LightGray','LightGreen','LightPink','LightSalmon',
+        'LightSeaGreen','LightSkyBlue','LightSlateGray','LightSteelBlue','LightYellow','Lime','LimeGreen','Linen','Magenta',
+        'Maroon','MediumAquaMarine','MediumBlue','MediumOrchid','MediumPurple','MediumSeaGreen','MediumSlateBlue','MediumSpringGreen',
+        'MediumTurquoise','MediumVioletRed','MidnightBlue','MintCream','MistyRose','Moccasin','NavajoWhite','Navy','OldLace',
+        'Olive','OliveDrab','Orange','OrangeRed','Orchid','PaleGoldenRod','PaleGreen','PaleTurquoise','PaleVioletRed','PapayaWhip',
+        'PeachPuff','Peru','Pink','Plum','Powderblue','Purple','RebeccaPurple','Red','RosyBrown','RoyalBlue','SaddleBrown','Salmon',
+        'SandyBrown','SeaGreen','SeaShell','Sienna','Silver','SkyBlue','SlateBlue','SlateGray','Snow','SpringGreen','SteeleBlue',
+        'Tan','Teal','Thisle','Tomato','Turquoise','Violet','Wheat','White','WhiteSmoke','Yellow','YellowGreen']
+        colors.forEach((color)=>{
+        TERMINAL.write('████████████████████████%c'+color+' '+color)
+        })
+    }
 })
 ]
