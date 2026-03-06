@@ -63,7 +63,7 @@ terminalInput.addEventListener('input', ()=>{
 // TERMINAL OBJECT
 
 var TERMINAL = {
-    height: 26
+    height: (26*3)
     previousCommands: [],
     previousCommandsNav: 0,
     previousCommandToRemove: 0,
@@ -106,7 +106,9 @@ write(text) {
     }).join(' ')
     terminalOutput.innerHTML = terminalOutput.innerHTML+'<br>'+text
     terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length)+'vh'
-    terminal.scrollBy(0,999999)
+    if (parseInt(terminalOutput.style.height.split('vh')[0]) > this.height) {
+        terminal.scrollBy(0,999999)
+    }
 },
 aim(text) {
     console.log('TERMINAL: queueing')
@@ -181,7 +183,9 @@ parse(line) {
         this.write('ERROR: unknown command: '+line[0])
         TERMINAL.write('>  Try \'help\'.')
     }
-    terminal.scrollBy(0,999999)
+    if (parseInt(terminalOutput.style.height.split('vh')[0]) > this.height) {
+        terminal.scrollBy(0,999999)
+    }
 }
 }
 
