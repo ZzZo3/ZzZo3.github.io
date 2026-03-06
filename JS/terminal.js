@@ -32,14 +32,14 @@ document.addEventListener('keydown', (event)=>{
                     TERMINAL.previousCommandsNav -= 1
                 }
                 terminalInput.value = TERMINAL.previousCommands[TERMINAL.previousCommands.length - 1 - TERMINAL.previousCommandsNav]
-                terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length + 1)+'vh'
+                terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length)+'vh'
             }
         } else if (event.key === "ArrowDown") {
             event.preventDefault()
             if (TERMINAL.previousCommands.length > 0 && TERMINAL.previousCommandsNav > 0) {
                 TERMINAL.previousCommandsNav -= 1
                 terminalInput.value = TERMINAL.previousCommands[TERMINAL.previousCommands.length - 1 - TERMINAL.previousCommandsNav]
-                terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length + 1)+'vh'
+                terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length)+'vh'
             }
         }
     }
@@ -87,7 +87,7 @@ write(text) {
     })
     text = text.join(' ')
     terminalOutput.innerHTML = terminalOutput.innerHTML+'<br>'+text
-    terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length + 1)+'vh'
+    terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length)+'vh'
     terminal.scrollBy(0,999999)
 },
 aim(text) {
@@ -338,7 +338,7 @@ ARGUMENTS:
     if (validKey) {
         TERMINAL.parse('line')
         TERMINAL.fire()
-        TERMINAL.write('')
+        TERMINAL.write('<br>')
         TERMINAL.parse('line')
     }
 }),
