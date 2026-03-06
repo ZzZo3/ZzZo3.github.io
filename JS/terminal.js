@@ -92,14 +92,6 @@ write(text) {
         } else {
             spanTxt += 'color:rgb(255,216,132)'
         }
-        if (word.includes('%w')) {
-            word = word.split('%w')
-            spanTxt += '; font-weight:'+word[1]
-            word.splice(1,1)
-            word = word.join('')
-        } else {
-            spanTxt += '; font-weight:normal'
-        }
         return '<span style=\"'+spanTxt+'\">'+word+'</span>'
     }).join(' ')
     terminalOutput.innerHTML = terminalOutput.innerHTML+'<br>'+text
