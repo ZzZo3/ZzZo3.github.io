@@ -428,4 +428,24 @@ ARGUMENTS:%cred
     } else {
         TERMINAL.write('======================================================================================================================================================%c'+argList[0]+' ')
     }
-})]
+}),
+new TerminalCMND(['swath','swa'], // COLOR
+`
+SYNTAX:%cred \' swath [color]%lime \'
+⠀⠀⠀Alternate name: \'swa\'
+PURPOSES:%cred 
+⠀⠀⠀\'swath\' displays a square of a specified color for testing purposes.
+⠀⠀⠀\'swath\' is globally available.
+⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
+⠀⠀⠀   n0n-sense.org domain.
+ARGUMENTS:%cred 
+⠀⠀⠀[color]%lime takes any input. If given a value of a valid color, the square will display with that color.
+⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
+`,
+    [new TerminalARG('color',[],false)],
+(argList)={
+    TERMINAL.write('████████%c'+argList[0]+' ')
+    TERMINAL.write('████████%c'+argList[0]+' ')
+    TERMINAL.write('████████%c'+argList[0]+' ')
+})
+]
