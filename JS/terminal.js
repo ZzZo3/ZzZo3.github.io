@@ -72,7 +72,7 @@ var TERMINAL = {
     acceptableReplies: [],
 write(text) {
     console.log('TERMINAL: writing') //log
-    text = text.split('\n').join('<br>')
+    text = text.split('\n').join('<br> ')
     text = text.split(' ')
     text = text.map((word)=>{
         if (word.includes('%c')) {
