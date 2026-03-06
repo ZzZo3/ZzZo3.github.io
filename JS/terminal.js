@@ -229,14 +229,14 @@ class TerminalARG {
 var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
-SYNTAX: \' blue%chelp #28e925%c[cmnd] \'
+SYNTAX: \' help #28e925%c[cmnd] \'
 PURPOSES:
-blue%c⠀⠀⠀\'help\' explains syntax and purpose of a named locally available command.
-blue%c⠀⠀⠀\'help\' is globally available.
+⠀⠀⠀\'help\' explains syntax and purpose of a named locally available command.
+⠀⠀⠀\'help\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:
-#28e925%c⠀⠀⠀[cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
+⠀⠀⠀#28e925%c[cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
 ⠀⠀⠀statement*.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
 ⠀⠀⠀   They may be manually ignored with \'-\'.
@@ -273,19 +273,22 @@ ARGUMENTS:
 }),
 new TerminalCMND(['list','ls'], // LIST
 `
-SYNTAX: \'[name] [type] [key]\'
-⠀⠀⠀Names: \'list\', \'ls\'
+SYNTAX: \' list #28e925%c[type] #28e925%c[key]\'
+⠀⠀⠀Alternate name: \'ls\'
 PURPOSES:
-⠀⠀⠀\'list\' displays a list of all keys stored in either {localStorage} or {sessionStorage}.
+⠀⠀⠀\'list\' displays a list of keys for data stored in either {localStorage} or {sessionStorage}.
 ⠀⠀⠀\'list\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:
-⠀⠀⠀[key] takes \'local\'/\'l\' or \'session\'/\'s\'.
-⠀⠀⠀- \'local\'/\'l\' lists all keys in dictionary {localStorage}.
+⠀⠀⠀#28e925%c[type] takes \'local\'/\'l\' or \'session\'/\'s\' to determine what dictionary to search.
+⠀⠀⠀- \'local\'/\'l\' sets the searchable dictionary to {localStorage}.
 ⠀⠀⠀  These data are stored in local browser files persists between sessions.
-⠀⠀⠀- \'session\'/\'s\' lists all keys in dictionary {sessionStorage}.
+⠀⠀⠀- \'session\'/\'s\' sets the searchable dictionary to {sessionStorage}.
 ⠀⠀⠀  These data are stored in local browser files and are cleared upon tab close or hard refresh.
+⠀⠀⠀#28e925%c[key] (optional)* takes any input. If ignored, keys for all data in the searchable dictionary will be displayed. If given 
+⠀⠀⠀an input, only keys prefixed with that input will be displayed.
+⠀⠀⠀- 
 `,
     [new TerminalARG('type',['local','l','session','s'],false),
     new TerminalARG('key',[],true)],
