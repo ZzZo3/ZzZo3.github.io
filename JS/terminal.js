@@ -409,14 +409,14 @@ ARGUMENTS:
 }),
 new TerminalCMND(['line'], // LINE
 `
-SYNTAX:%cred \' line [color]%lime \'
+SYNTAX:%cred \' line [color]%clime \'
 PURPOSES:%cred 
 ⠀⠀⠀\'line\' calls TERMINAL.write() with a long sequence of equal signs. See ^ or v for examples.
 ⠀⠀⠀\'line\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:%cred 
-⠀⠀⠀[color]%lime (optional)* takes any input. If ignored, the line will display in the default color. If given a value of a valid color, the line will
+⠀⠀⠀[color]%clime (optional)* takes any input. If ignored, the line will display in the default color. If given a value of a valid color, the line will
 ⠀⠀⠀display with that color.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
 ⠀⠀⠀   They may be manually ignored with \'-\'.
