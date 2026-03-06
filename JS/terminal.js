@@ -127,8 +127,7 @@ read() {
     if (!this.waiting) {
         text = text.split('<br>')
         text.forEach((line)=>{
-            let line1 = line.split(' ').map(word=>this.inputColor+'%c'+word).join(' ')
-            this.write(line1)
+            this.write(line)
             this.parse(line)
         })
     } else if (text == 'cancel') {
@@ -140,8 +139,7 @@ read() {
             this.waitList += ' '+text
             this.waitList = this.waitList.split('<br>').join(' ')
             console.log('TERMINAL.waitList: '+this.waitList)
-            let waitList1 = this.waitList.split(' ').map(word=>this.inputColor+'%c'+word).join(' ')
-            this.write(waitList1)
+            this.write(this.waitList)
             this.parse(this.waitList)
             this.waitList = []
             this.waiting = false
