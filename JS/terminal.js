@@ -63,6 +63,7 @@ terminalInput.addEventListener('input', ()=>{
 // TERMINAL OBJECT
 
 var TERMINAL = {
+    height: 26
     previousCommands: [],
     previousCommandsNav: 0,
     previousCommandToRemove: 0,
