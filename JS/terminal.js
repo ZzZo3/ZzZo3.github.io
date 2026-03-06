@@ -10,7 +10,7 @@ document.addEventListener('keydown', (event)=>{
         if (event.key === "Enter") {
             if (!event.shiftKey) {
                 event.preventDefault()
-                TERMINAL.read(terminalInput.value)
+                TERMINAL.read()
             }
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
@@ -110,7 +110,8 @@ await(replyArr) {
     this.waiting = true
     this.acceptableReplies = replyArr
 },
-read(text) {
+read() {
+    var text = terminalInput.value
     alert(text)
     console.log('TERMINAL: reading') //log
     if (text=='') {
@@ -122,7 +123,6 @@ read(text) {
         this.previousCommands = this.previousCommands.splice(this.previousCommandToRemove,1)
     }
     this.previousCommands = this.previousCommands.filter((value)=>value != '')
-    text = ''
     terminalInput.style.height = '3vh'
     if (!this.waiting) {
         text = text.split('<br>')
