@@ -87,10 +87,10 @@ write(text) {
         console.log('spanTxt: '+spanTxt)
         if (word.includes('%f')) {
             word = word.split('%f')
-            spanTxt += ' font-weight:'+word[1]
+            spanTxt += '; font-weight:'+word[1]
             word = word[0]
         } else {
-            spanTxt += ' font-weight:normal'
+            spanTxt += '; font-weight:normal'
         }
         console.log('spanTxt: '+spanTxt)
         console.log('returns: <span style=\"'+spanTxt+'\">'+word+'</span>')
