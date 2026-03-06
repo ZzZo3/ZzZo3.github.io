@@ -78,32 +78,23 @@ var TERMINAL = {
 write(text) {
     console.log('TERMINAL: writing') //log
     text = text.split('\n').join('<br> ').split(' ').map((word)=>{
-        console.log('word: '+word)
         var spanTxt = ''
         if (word.includes('%c')) {
             word = word.split('%c')
-            console.log('wordc1: '+word)
             spanTxt += 'color:'+word[1]
             word.splice(1,1)
             word = word.join('')
-            console.log('wordc2: '+word)
         } else {
             spanTxt += 'color:rgb(255,216,132)'
         }
-        console.log('spanTxt: '+spanTxt)
         if (word.includes('%w')) {
             word = word.split('%w')
-            console.log('wordw1: '+word)
             spanTxt += '; font-weight:'+word[1]
             word.splice(1,1)
             word = word.join('')
-            console.log('wordw2: '+word)
         } else {
             spanTxt += '; font-weight:normal'
         }
-        console.log('word: '+word)
-        console.log('spanTxt: '+spanTxt)
-        console.log('returns: <span style=\"'+spanTxt+'\">'+word+'</span>')
         return '<span style=\"'+spanTxt+'\">'+word+'</span>'
     }).join(' ')
     terminalOutput.innerHTML = terminalOutput.innerHTML+'<br>'+text
@@ -160,7 +151,6 @@ read() {
         if (this.acceptableReplies.includes(text)) {
             this.waitList += ' '+text
             this.waitList = this.waitList.split('<br>').join(' ')
-            console.log('TERMINAL.waitList: '+this.waitList)
             this.write(this.waitList)
             this.parse(this.waitList)
             this.waitList = []
