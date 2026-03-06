@@ -74,18 +74,15 @@ var TERMINAL = {
     outputColor: 'rgb(255,216,132)',
 write(text) {
     console.log('TERMINAL: writing') //log
-    text = text.split('\n').join('<br> ')
-    text = text.split(' ')
-    text = text.map((word)=>{
+    text = text.split('\n').join('<br> ').split(' ').map((word)=>{
         if (word.includes('%c')) {
             word = word.split('%c')
-            word[1] = '<span style=\"color:'+word[0]+'\">'+word[1]+'</span>'
-            return word[1]
+            word[0] = '<span style=\"color:'+word[1]+'\">'+word[0]+'</span>'
+            return word[0]
         } else {
             return '<span style=\"color:'+this.outputColor+'\">'+word+'</span>'
         }
-    })
-    text = text.join(' ')
+    }).join(' ')
     terminalOutput.innerHTML = terminalOutput.innerHTML+'<br>'+text
     terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length)+'vh'
     terminal.scrollBy(0,999999)
@@ -234,14 +231,14 @@ class TerminalARG {
 var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
-red%cSYNTAX: \' help #28e925%c[cmnd] \'
-red%cPURPOSES:
+SYNTAX:%cred \' help [cmnd]%clime \'
+PURPOSES:%cred
 ⠀⠀⠀\'help\' explains syntax and purpose of a named locally available command.
 ⠀⠀⠀\'help\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
-red%cARGUMENTS:
-#28e925%c⠀⠀⠀[cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
+ARGUMENTS:%cred
+⠀⠀⠀[cmnd]%clime (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
 ⠀⠀⠀statement*.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
 ⠀⠀⠀   They may be manually ignored with \'-\'.
@@ -279,20 +276,20 @@ red%cARGUMENTS:
 }),
 new TerminalCMND(['list','ls'], // LIST
 `
-red%cSYNTAX: \' list #28e925%c[type] #28e925%c[key]\'
+SYNTAX:%cred \' list [type]%clime [key]%clime \'
 ⠀⠀⠀Alternate name: \'ls\'
-red%cPURPOSES:
+PURPOSES:%cred
 ⠀⠀⠀\'list\' displays a list of keys for data stored in either {localStorage} or {sessionStorage}.
 ⠀⠀⠀\'list\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
-red%cARGUMENTS:
-#28e925%c⠀⠀⠀[type] takes \'local\'/\'l\' or \'session\'/\'s\' to determine what dictionary to search.
+ARGUMENTS:%cred
+⠀⠀⠀[type]%clime takes \'local\'/\'l\' or \'session\'/\'s\' to determine what dictionary to search.
 ⠀⠀⠀- \'local\'/\'l\' sets the searchable dictionary to {localStorage}.
 ⠀⠀⠀  These data are stored in local browser files persists between sessions.
 ⠀⠀⠀- \'session\'/\'s\' sets the searchable dictionary to {sessionStorage}.
 ⠀⠀⠀  These data are stored in local browser files and are cleared upon tab close or hard refresh.
-#28e925%c⠀⠀⠀[key] (optional)* takes any input. If ignored, keys for all data in the searchable dictionary will be displayed. If given 
+⠀⠀⠀[key]%clime (optional)* takes any input. If ignored, keys for all data in the searchable dictionary will be displayed. If given 
 ⠀⠀⠀an input, only keys prefixed with that input will be displayed.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
 ⠀⠀⠀   They may be manually ignored with \'-\'.
