@@ -270,7 +270,7 @@ ARGUMENTS:%cred
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
     TERMINAL.parse('line')
-    TERMINAL.write('TERMINAL.COMMANDARRAY: '+TERMINAL.commandArrayName+' ['+TERMINAL.COMMANDARRAY.length+']')
+    TERMINAL.write('⠀⠀⠀TERMINAL.COMMANDARRAY: '+TERMINAL.commandArrayName+' ['+TERMINAL.COMMANDARRAY.length+']')
     if (argList[0]=='-') {
         TERMINAL.write('AWAIT: Choose a command to elaborate, or \'cancel\'')
         var acceptables = ['cancel']
