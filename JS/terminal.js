@@ -81,7 +81,7 @@ write(text) {
             word = word.split('%c')
             console.log('wordc1: '+word)
             spanTxt += 'color:'+word[1]
-            word = word.splice(1,1).join('')
+            word.splice(1,1).join('')
             console.log('wordc2: '+word)
         } else {
             spanTxt += 'color:rgb(255,216,132)'
@@ -91,7 +91,7 @@ write(text) {
             word = word.split('%w')
             console.log('wordw1: '+word)
             spanTxt += '; font-weight:'+word[1]
-            word = word.splice(1,1).join('')
+            word.splice(1,1).join('')
             console.log('wordw2: '+word)
         } else {
             spanTxt += '; font-weight:normal'
