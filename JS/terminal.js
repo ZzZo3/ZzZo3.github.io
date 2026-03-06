@@ -461,7 +461,7 @@ ARGUMENTS:%cred
         'SandyBrown','SeaGreen','SeaShell','Sienna','Silver','SkyBlue','SlateBlue','SlateGray','Snow','SpringGreen','SteeleBlue',
         'Tan','Teal','Thistle','Tomato','Turquoise','Violet','Wheat','White','WhiteSmoke','Yellow','YellowGreen']
         colors.forEach((color)=>{
-        TERMINAL.write('████████████████████████%c'+color+' '+color)
+            TERMINAL.write('████████████████████████%c'+color+' '+color)
         })
     }
 })
