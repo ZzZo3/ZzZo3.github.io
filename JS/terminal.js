@@ -71,7 +71,7 @@ var TERMINAL = {
     waitList: '',
     acceptableReplies: [],
     inputColor: 'rgb(255, 216, 132)',
-    outputColor: 'rgb(255, 216, 132)'
+    outputColor: 'rgb(255, 216, 132)',
 write(text) {
     console.log('TERMINAL: writing') //log
     text = text.split('\n').join('<br> ')
