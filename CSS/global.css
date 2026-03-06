@@ -147,6 +147,7 @@ html, body {
     height: 3vh;
     field-sizing: 2.67vh;
     font-family:'Courier New', Courier, monospace;
+    font-size: 2.5vh;
     border: none;
     outline: none;
 }
