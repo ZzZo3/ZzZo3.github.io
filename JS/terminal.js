@@ -446,9 +446,7 @@ ARGUMENTS:%cred
     [new TerminalARG('color',[],false)],
 (argList)=>{
     if (argList[0] != 'rainbow') {
-        TERMINAL.write('████████████████████████%c'+argList[0]+' ')
-        TERMINAL.write('████████████████████████%c'+argList[0]+' ')
-        TERMINAL.write('████████████████████████%c'+argList[0]+' ')
+        TERMINAL.write('████████████████████████%c'+argList[0]+' '+argList[0])
     } else {
         const colors = ['AliceBlue','AntiqueWhite','Aqua','Aquamarine','Azure',
         'Beige','Bisque','Black','BlanchedAlmond','Blue','BlueViolet','Brown','BurlyWood',
