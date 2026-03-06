@@ -86,8 +86,8 @@ write(text) {
         }
         console.log('word: '+word)
         console.log('spanTxt: '+spanTxt)
-        if (word.includes('%f')) {
-            word = word.split('%f')
+        if (word.includes('%w')) {
+            word = word.split('%w')
             spanTxt += '; font-weight:'+word[1]
             word.splice(1,1).join('')
         } else {
