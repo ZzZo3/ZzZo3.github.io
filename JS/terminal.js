@@ -122,7 +122,7 @@ read(text) {
         if (!this.waiting) {
             text = text.split('<br>')
             text.forEach((line)=>{
-                let line1 = line.split(' ').map(word=>'white%c'+word).join(' ')
+                let line1 = line.split(' ').map(word=>'#ffdd00%c'+word).join(' ')
                 this.write(line1)
                 this.parse(line)
             })
@@ -135,7 +135,7 @@ read(text) {
                 this.waitList += ' '+text
                 this.waitList = this.waitList.split('<br>').join(' ')
                 console.log('TERMINAL.waitList: '+this.waitList)
-                let waitList1 = this.waitList1.split(' ').map(word=>'white%c'+word).join(' ')
+                let waitList1 = this.waitList1.split(' ').map(word=>'#ffdd00%c'+word).join(' ')
                 this.write(waitList1)
                 this.parse(this.waitList)
                 this.waitList = []
