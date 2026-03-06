@@ -79,7 +79,7 @@ write(text) {
             word = word.split('%c')
             word[0] = '<span style=\"color:'+word[1]+'\">'+word[0]+'</span>'
             return word[0]
-        } else {
+        } else if (!word.includes('%f')) {
             return '<span style=\"color:'+this.outputColor+'\">'+word+'</span>'
         }
         if (word.includes('%f')) {
