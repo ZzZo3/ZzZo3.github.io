@@ -75,22 +75,22 @@ var TERMINAL = {
 write(text) {
     console.log('TERMINAL: writing') //log
     text = text.split('\n').join('<br> ').split(' ').map((word)=>{
-        var span = ''
+        var spanTxt = ''
         if (word.includes('%c')) {
             word = word.split('%c')
-            span += 'color:'+word[1]
+            spanTxt += 'color:'+word[1]
             word = word[0]
         } else {
-            span += 'color:rgb(255,216,132)'
+            spanTxt += 'color:rgb(255,216,132)'
         }
         if (word.includes('%f')) {
             word = word.split('%f')
-            span += ' font-weight:'+word[1]
+            spanTxt += ' font-weight:'+word[1]
             word = word[0]
         } else {
-            span += ' font-weight:normal'
+            spanTxt += ' font-weight:normal'
         }
-        return '<span style=\"'+span+'\">'+word+'</span>'
+        return '<span style=\"'+spanTxt+'\">'+word+'</span>'
     }).join(' ')
     terminalOutput.innerHTML = terminalOutput.innerHTML+'<br>'+text
     terminalOutput.style.height = (3 * terminalOutput.innerHTML.split('<br>').length)+'vh'
