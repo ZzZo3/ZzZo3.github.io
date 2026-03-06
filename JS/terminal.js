@@ -112,7 +112,6 @@ await(replyArr) {
 },
 read() {
     var text = terminalInput.value
-    alert(text)
     console.log('TERMINAL: reading') //log
     if (text=='') {
         return
