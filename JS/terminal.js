@@ -251,13 +251,13 @@ class TerminalARG {
 var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
-SYNTAX:%cred%c%wbold%w \' help [cmnd]%clime \'
-PURPOSES:%cred%c%wbold%w 
+SYNTAX:%cred \' help [cmnd]%clime \'
+PURPOSES:%cred 
 ⠀⠀⠀\'help\' explains syntax and purpose of a named locally available command.
 ⠀⠀⠀\'help\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
-ARGUMENTS:%cred%c%wbold%w 
+ARGUMENTS:%cred 
 ⠀⠀⠀[cmnd]%clime (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
 ⠀⠀⠀statement*.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
@@ -296,14 +296,14 @@ ARGUMENTS:%cred%c%wbold%w
 }),
 new TerminalCMND(['list','ls'], // LIST
 `
-SYNTAX:%cred%c%wbold%w \' list [type]%clime [key]%clime \'
+SYNTAX:%cred \' list [type]%clime [key]%clime \'
 ⠀⠀⠀Alternate name: \'ls\'
-PURPOSES:%cred%c%wbold%w 
+PURPOSES:%cred 
 ⠀⠀⠀\'list\' displays a list of keys for data stored in either {localStorage} or {sessionStorage}.
 ⠀⠀⠀\'list\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
-ARGUMENTS:%cred%c%wbold%w 
+ARGUMENTS:%cred 
 ⠀⠀⠀[type]%clime takes \'local\'/\'l\' or \'session\'/\'s\' to determine what dictionary to search.
 ⠀⠀⠀- \'local\'/\'l\' sets the searchable dictionary to {localStorage}.
 ⠀⠀⠀  These data are stored in local browser files persists between sessions.
@@ -409,14 +409,23 @@ ARGUMENTS:
 }),
 new TerminalCMND(['line'], // LINE
 `
-SYNTAX: \'line\'
-PURPOSES:
+SYNTAX:%cred \' line [color]%lime \'
+PURPOSES:%cred 
 ⠀⠀⠀\'line\' calls TERMINAL.write() with a long sequence of equal signs. See ^ or v for examples.
 ⠀⠀⠀\'line\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
+ARGUMENTS:%cred 
+⠀⠀⠀[color]%lime (optional)* takes any input. If ignored, the line will display in the default color. If given a value of a valid color, the line will
+⠀⠀⠀display with that color.
+⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
+⠀⠀⠀   They may be manually ignored with \'-\'.
 `,
-    [],
+    [new TerminalARG('color',[],true)],
 (argList)=>{
-    TERMINAL.write('====================================================================================================================================================')
+    if (argList.length==0) {
+        TERMINAL.write('=====================================================================================================================================================')
+    } else {
+        TERMINAL.write('=====================================================================================================================================================%c'+argList[0]+' ')
+    }
 })]
