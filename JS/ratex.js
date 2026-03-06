@@ -629,5 +629,6 @@ function loadFunc() {
     setRF()
     terminalInput.value = ''
     document.getElementById('terminal').style.height = (3*12)+'vh'
+    TERMINAL.height = (12*3)
     console.log('   \"loadFunc()\" finished')
 }
