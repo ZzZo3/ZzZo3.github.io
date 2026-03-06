@@ -392,7 +392,7 @@ ARGUMENTS:
     let to = argList[1]
     let append = argList[2]
     if (to=='-') {
-        package = package.split('\s').join(' ').split('\n').join('<br>')
+        package = package.split('\n').join('<br>')
         TERMINAL.write(package)
     } else if (append=='+') {
         if (Object.keys(localStorage).includes(to)) {
