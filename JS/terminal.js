@@ -288,7 +288,8 @@ green%cARGUMENTS:
 ⠀⠀⠀  These data are stored in local browser files and are cleared upon tab close or hard refresh.
 #28e925%c⠀⠀⠀[key] (optional)* takes any input. If ignored, keys for all data in the searchable dictionary will be displayed. If given 
 ⠀⠀⠀an input, only keys prefixed with that input will be displayed.
-⠀⠀⠀- 
+⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
+⠀⠀⠀   They may be manually ignored with \'-\'.
 `,
     [new TerminalARG('type',['local','l','session','s'],false),
     new TerminalARG('key',[],true)],
