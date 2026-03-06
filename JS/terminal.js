@@ -271,6 +271,7 @@ ARGUMENTS:%cred
 (argList)=>{
     TERMINAL.parse('line')
     TERMINAL.write('⠀⠀⠀TERMINAL.COMMANDARRAY: '+TERMINAL.commandArrayName+' ['+TERMINAL.COMMANDARRAY.length+']')
+    TERMINAL.parse('line')
     if (argList[0]=='-') {
         TERMINAL.write('AWAIT: Choose a command to elaborate, or \'cancel\'')
         var acceptables = ['cancel']
@@ -285,7 +286,6 @@ ARGUMENTS:%cred
         TERMINAL.COMMANDARRAY.forEach((CMND)=>{
             if (CMND.name.includes(argList[0])) {
                 validHelp = true
-                TERMINAL.parse('line')
                 TERMINAL.write(CMND.helpMsg)
                 TERMINAL.parse('line')
             }
