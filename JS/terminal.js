@@ -122,6 +122,7 @@ read() {
         this.previousCommands = this.previousCommands.splice(this.previousCommandToRemove,1)
     }
     this.previousCommands = this.previousCommands.filter((value)=>value != '')
+    terminalInput.value = ''
     terminalInput.style.height = '3vh'
     if (!this.waiting) {
         text = text.split('<br>')
