@@ -61,10 +61,14 @@ terminalInput.addEventListener('input', ()=>{
     }
 })
 
+// COMMAND ARRAY(S)
+
+var TERMINALCOMMANDS = []
 
 // TERMINAL OBJECT
 
 var TERMINAL = {
+    COMMANDARRAY: TERMINALCOMMANDS,
     height: (26*3),
     previousCommands: [],
     previousCommandsNav: 0,
@@ -245,7 +249,7 @@ class TerminalARG {
     }
 }
 
-var TERMINALCOMMANDS = [
+TERMINALCOMMANDS.push(
 new TerminalCMND(['help'], // HELP
 `
 SYNTAX:%cred \' help [cmnd]%clime \'
@@ -465,4 +469,4 @@ ARGUMENTS:%cred
         })
     }
 })
-]
+)
