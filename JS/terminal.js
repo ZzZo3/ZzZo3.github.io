@@ -440,11 +440,11 @@ PURPOSES:%cred
 ⠀⠀⠀   n0n-sense.org%cmediumturquoise domain.%cmediumturquoise 
 ARGUMENTS:%cred 
 ⠀⠀⠀[color]%clime takes%cmediumblue any%cmediumblue input.%cmediumblue If%cmediumblue given%cmediumblue a%cmediumblue value%cmediumblue of%cmediumblue a%cmediumblue valid%cmediumblue color,%cmediumblue the%cmediumblue square%cmediumblue will%cmediumblue display%cmediumblue with%cmediumblue that%cmediumblue color.%cmediumblue 
-⠀⠀⠀-%cdarkmagenta \'rainbow\'%cdarkmagenta displays%cdarkmagenta all%cdarkmagenta universally%cdarkmagenta available%cdarkmagenta CSS%cdarkmagenta colors%cdarkmagenta in%cdarkmagenta order.%cdarkmagenta 
+⠀⠀⠀-%cdarkmagenta \'rainbow\'/\'rb\'%cdarkmagenta displays%cdarkmagenta all%cdarkmagenta universally%cdarkmagenta available%cdarkmagenta CSS%cdarkmagenta colors%cdarkmagenta in%cdarkmagenta order.%cdarkmagenta 
 `,
     [new TerminalARG('color',[],false)],
 (argList)=>{
-    if (argList[0] != 'rainbow') {
+    if (argList[0] != 'rainbow' && argList[0] != 'rb') {
         TERMINAL.write('████████████████████████%c'+argList[0]+' '+argList[0])
     } else {
         const colors = ['AliceBlue','AntiqueWhite','Aqua','Aquamarine','Azure',
