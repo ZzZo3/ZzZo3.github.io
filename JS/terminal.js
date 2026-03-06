@@ -236,7 +236,7 @@ PURPOSES:
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:
-⠀⠀⠀#28e925%c[cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
+#28e925%c⠀⠀⠀[cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
 ⠀⠀⠀statement*.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
 ⠀⠀⠀   They may be manually ignored with \'-\'.
@@ -273,20 +273,20 @@ ARGUMENTS:
 }),
 new TerminalCMND(['list','ls'], // LIST
 `
-SYNTAX: \' list #28e925%c[type] #28e925%c[key]\'
+red%cSYNTAX: \' list #28e925%c[type] #28e925%c[key]\'
 ⠀⠀⠀Alternate name: \'ls\'
-PURPOSES:
+blue%cPURPOSES:
 ⠀⠀⠀\'list\' displays a list of keys for data stored in either {localStorage} or {sessionStorage}.
 ⠀⠀⠀\'list\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
-ARGUMENTS:
-⠀⠀⠀#28e925%c[type] takes \'local\'/\'l\' or \'session\'/\'s\' to determine what dictionary to search.
+green%cARGUMENTS:
+#28e925%c⠀⠀⠀[type] takes \'local\'/\'l\' or \'session\'/\'s\' to determine what dictionary to search.
 ⠀⠀⠀- \'local\'/\'l\' sets the searchable dictionary to {localStorage}.
 ⠀⠀⠀  These data are stored in local browser files persists between sessions.
 ⠀⠀⠀- \'session\'/\'s\' sets the searchable dictionary to {sessionStorage}.
 ⠀⠀⠀  These data are stored in local browser files and are cleared upon tab close or hard refresh.
-⠀⠀⠀#28e925%c[key] (optional)* takes any input. If ignored, keys for all data in the searchable dictionary will be displayed. If given 
+#28e925%c⠀⠀⠀[key] (optional)* takes any input. If ignored, keys for all data in the searchable dictionary will be displayed. If given 
 ⠀⠀⠀an input, only keys prefixed with that input will be displayed.
 ⠀⠀⠀- 
 `,
