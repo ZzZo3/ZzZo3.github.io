@@ -115,13 +115,6 @@ read(text) {
     if (text=='') {
         return
     }
-    text = text.split(' ').map((word)=>{
-        if (word.split('%c').length > 1) {
-            return word.split('%c')[1]
-        } else {
-            return word
-        }
-    }).join(' ')
     this.previousCommands.push(text)
     this.previousCommandsNav = 0
     if (this.previousCommandToRemove != 0) {
