@@ -69,6 +69,7 @@ var TERMINALCOMMANDS = []
 
 var TERMINAL = {
     COMMANDARRAY: TERMINALCOMMANDS,
+    commandArrayName: 'TERMINALCOMMANDS',
     height: (26*3),
     previousCommands: [],
     previousCommandsNav: 0,
@@ -268,6 +269,8 @@ ARGUMENTS:%cred
 `,
     [new TerminalARG('cmnd',[],true)],
 (argList)=>{
+    TERMINAL.parse('line')
+    TERMINAL.write('TERMINAL.COMMANDARRAY: '+TERMINAL.commandArrayName+' ['+TERMINAL.COMMANDARRAY.length+']')
     if (argList[0]=='-') {
         TERMINAL.write('AWAIT: Choose a command to elaborate, or \'cancel\'')
         var acceptables = ['cancel']
