@@ -111,6 +111,7 @@ await(replyArr) {
     this.acceptableReplies = replyArr
 },
 read(text) {
+    alert(text)
     console.log('TERMINAL: reading') //log
     if (text=='') {
         return
