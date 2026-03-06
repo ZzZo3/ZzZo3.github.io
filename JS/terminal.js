@@ -140,7 +140,7 @@ read() {
             this.waitList += ' '+text
             this.waitList = this.waitList.split('<br>').join(' ')
             console.log('TERMINAL.waitList: '+this.waitList)
-            let waitList1 = this.waitList1.split(' ').map(word=>this.inputColor+'%c'+word).join(' ')
+            let waitList1 = this.waitList.split(' ').map(word=>this.inputColor+'%c'+word).join(' ')
             this.write(waitList1)
             this.parse(this.waitList)
             this.waitList = []
