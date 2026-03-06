@@ -443,7 +443,7 @@ ARGUMENTS:%cred
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
 `,
     [new TerminalARG('color',[],false)],
-(argList)={
+(argList)=>{
     TERMINAL.write('████████████████████████%c'+argList[0]+' ')
     TERMINAL.write('████████████████████████%c'+argList[0]+' ')
     TERMINAL.write('████████████████████████%c'+argList[0]+' ')
