@@ -444,8 +444,8 @@ ARGUMENTS:%cred
 `,
     [new TerminalARG('color',[],false)],
 (argList)={
-    TERMINAL.write('████████%c'+argList[0]+' ')
-    TERMINAL.write('████████%c'+argList[0]+' ')
-    TERMINAL.write('████████%c'+argList[0]+' ')
+    TERMINAL.write('████████████████████████%c'+argList[0]+' ')
+    TERMINAL.write('████████████████████████%c'+argList[0]+' ')
+    TERMINAL.write('████████████████████████%c'+argList[0]+' ')
 })
 ]
