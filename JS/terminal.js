@@ -229,14 +229,14 @@ class TerminalARG {
 var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
-SYNTAX: \' blue%chelp rgb(40, 233, 37)%c[cmnd] \'
+SYNTAX: \' blue%chelp #28e925%c[cmnd] \'
 PURPOSES:
-blue%c⠀⠀⠀\'help\' blue%cexplains syntax and purpose of a named locally available command.
+blue%c⠀⠀⠀\'help\' explains syntax and purpose of a named locally available command.
 blue%c⠀⠀⠀\'help\' is globally available.
 ⠀⠀⠀ * Some commands are available across all instances of TERMINAL.js while others are only available in specific html files within the
 ⠀⠀⠀   n0n-sense.org domain.
 ARGUMENTS:
-⠀⠀⠀rgb(40, 233, 37)%c[cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
+#28e925%c⠀⠀⠀[cmnd] (optional)* takes name of any command. If ignored, the name(s) of all locally available commands are displayed with an AWAIT
 ⠀⠀⠀statement*.
 ⠀⠀⠀ * Optional arguments are automatically ignored if they appear as the last argument in a command and are left blank.
 ⠀⠀⠀   They may be manually ignored with \'-\'.
