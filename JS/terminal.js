@@ -226,7 +226,6 @@ var TERMINALCOMMANDS = [
 new TerminalCMND(['help'], // HELP
 `
 SYNTAX: \'help [cmnd]\'
-
 red%cPURPOSES:
 ⠀⠀⠀\'help\' blue%cexplains syntax and purpose of a named locally available command.
 ⠀⠀⠀\'help\' is globally available.
