@@ -112,14 +112,21 @@ await(replyArr) {
 },
 read(text) {
     console.log('TERMINAL: reading') //log
-    if (terminalInput.value != '') {
-        this.previousCommands.push(terminalInput.value)
+    if (text != '') {
+        text = text.split(' ').map((word)=>{
+            if (word.split('%c').length > 1) {
+                return word.split('%c')[1]
+            } else {
+                return word
+            }
+        })
+        this.previousCommands.push(text)
         this.previousCommandsNav = 0
         if (this.previousCommandToRemove != 0) {
             this.previousCommands = this.previousCommands.splice(this.previousCommandToRemove,1)
         }
         this.previousCommands = this.previousCommands.filter((value)=>value != '')
-        terminalInput.value = ''
+        text = ''
         terminalInput.style.height = '3vh'
         if (!this.waiting) {
             text = text.split('<br>')
