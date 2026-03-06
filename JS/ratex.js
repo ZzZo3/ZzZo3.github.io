@@ -628,6 +628,6 @@ function loadFunc() {
     roundPrompt.textContent = 'rounding to ['+roundTo+']'
     setRF()
     terminalInput.value = ''
-    document.getElementById('terminal').style.height = (6*12)+'vh'
+    document.getElementById('terminal').style.height = (3*12)+'vh'
     console.log('   \"loadFunc()\" finished')
 }
