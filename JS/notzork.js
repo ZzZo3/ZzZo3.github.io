@@ -4,6 +4,8 @@ const pageTitle = document.getElementsByClassName('pageTitle')
 
 /*TERMINALCOMMANDS.push(
 )*/
+var ZORKCOMMANDS = [TERMINALCOMMANDS[0]]
+TERMINAL.COMMANDARRAY = ZORKCOMMANDS
 
 //STUFF THAT RUNS ON LOAD
 
