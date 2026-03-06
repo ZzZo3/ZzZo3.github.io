@@ -80,7 +80,7 @@ write(text) {
         if (word.includes('%c')) {
             word = word.split('%c')
             spanTxt += 'color:'+word[1]
-            word = word.splice(1,1).join()
+            word.splice(1,1).join('')
         } else {
             spanTxt += 'color:rgb(255,216,132)'
         }
@@ -89,7 +89,7 @@ write(text) {
         if (word.includes('%f')) {
             word = word.split('%f')
             spanTxt += '; font-weight:'+word[1]
-            word = word.splice(1,1).join()
+            word.splice(1,1).join('')
         } else {
             spanTxt += '; font-weight:normal'
         }
