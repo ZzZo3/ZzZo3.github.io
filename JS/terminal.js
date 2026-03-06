@@ -112,48 +112,49 @@ await(replyArr) {
 },
 read(text) {
     console.log('TERMINAL: reading') //log
-    if (text != '') {
-        text = text.split(' ').map((word)=>{
-            if (word.split('%c').length > 1) {
-                return word.split('%c')[1]
-            } else {
-                return word
-            }
-        })
-        this.previousCommands.push(text)
-        this.previousCommandsNav = 0
-        if (this.previousCommandToRemove != 0) {
-            this.previousCommands = this.previousCommands.splice(this.previousCommandToRemove,1)
+    if (text=='') {
+        return
+    }
+    text = text.split(' ').map((word)=>{
+        if (word.split('%c').length > 1) {
+            return word.split('%c')[1]
+        } else {
+            return word
         }
-        this.previousCommands = this.previousCommands.filter((value)=>value != '')
-        text = ''
-        terminalInput.style.height = '3vh'
-        if (!this.waiting) {
-            text = text.split('<br>')
-            text.forEach((line)=>{
-                let line1 = line.split(' ').map(word=>this.inputColor+'%c'+word).join(' ')
-                this.write(line1)
-                this.parse(line)
-            })
-        } else if (text == 'cancel') {
-            this.write('AWAIT: cancelled')
+    }).join(' ')
+    this.previousCommands.push(text)
+    this.previousCommandsNav = 0
+    if (this.previousCommandToRemove != 0) {
+        this.previousCommands = this.previousCommands.splice(this.previousCommandToRemove,1)
+    }
+    this.previousCommands = this.previousCommands.filter((value)=>value != '')
+    text = ''
+    terminalInput.style.height = '3vh'
+    if (!this.waiting) {
+        text = text.split('<br>')
+        text.forEach((line)=>{
+            let line1 = line.split(' ').map(word=>this.inputColor+'%c'+word).join(' ')
+            this.write(line1)
+            this.parse(line)
+        })
+    } else if (text == 'cancel') {
+        this.write('AWAIT: cancelled')
+        this.waitList = []
+        this.waiting = false
+    } else {
+        if (this.acceptableReplies.includes(text)) {
+            this.waitList += ' '+text
+            this.waitList = this.waitList.split('<br>').join(' ')
+            console.log('TERMINAL.waitList: '+this.waitList)
+            let waitList1 = this.waitList1.split(' ').map(word=>this.inputColor+'%c'+word).join(' ')
+            this.write(waitList1)
+            this.parse(this.waitList)
             this.waitList = []
             this.waiting = false
         } else {
-            if (this.acceptableReplies.includes(text)) {
-                this.waitList += ' '+text
-                this.waitList = this.waitList.split('<br>').join(' ')
-                console.log('TERMINAL.waitList: '+this.waitList)
-                let waitList1 = this.waitList1.split(' ').map(word=>this.inputColor+'%c'+word).join(' ')
-                this.write(waitList1)
-                this.parse(this.waitList)
-                this.waitList = []
-                this.waiting = false
-            } else {
-                this.write('ERROR: \"'+text+'\" not acceptable reply')
-            }
+            this.write('ERROR: \"'+text+'\" not acceptable reply')
         }
-    } 
+    }
 },
 parse(line) {
     console.log('TERMINAL: parsing') //log
