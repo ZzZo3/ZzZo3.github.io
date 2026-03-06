@@ -122,7 +122,8 @@ read(text) {
         if (!this.waiting) {
             text = text.split('<br>')
             text.forEach((line)=>{
-                this.write(line)
+                let line1 = [...line].split(' ').map(word=>{'white%c'+word})
+                this.write(line1)
                 this.parse(line)
             })
         } else if (text == 'cancel') {
