@@ -11,7 +11,7 @@ const dynamicImageData = document.getElementsByClassName('dynamicImageData')
 function loadJpegs() {
     for (const element of dynamicImageData) {
         var name = element.innerHTML
-        element.innerHTML = '<image class=\"photoData\" src=\"./assets/photo/'+name+'.jpeg\" alt=\"'+name+'\" loading=\"lazy\">'
+        element.innerHTML = '<image class=\"photoData\" src=\"./assets/photo/'+name+'\" alt=\"'+name+'\" loading=\"lazy\">'
     }
 }
 
