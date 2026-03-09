@@ -8,7 +8,9 @@ const N = 15 //472
 
 function cap() {
     alert('no more.')
-    window.open('https://n0n-sense.org/idle')
+    for (let i=0; i<3; i++) {
+        window.open('https://n0n-sense.org/idle')
+    }
 }
 
 stepButton.addEventListener('click', (event)=>{
