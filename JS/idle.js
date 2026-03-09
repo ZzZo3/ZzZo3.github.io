@@ -9,11 +9,11 @@ const N = 10 //472
 function suicide() {
     alert('no more.')
     while (true) {
-        freeze()
+        asyncLog()
     }
 }
 
-async function freeze() {
+async function asyncLog() {
     while (true) {
         console.log('no more.')
     }
