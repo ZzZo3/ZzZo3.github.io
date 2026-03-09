@@ -1,5 +1,5 @@
 //BASE
-let photoCount = 0
+var photoCount = 0
 //DYNAMIC IMAGE DISPLAY
 const dynamicImageDisplay = document.getElementsByClassName('dynamicImageDisplay')
 const dynamicImageRow = document.getElementsByClassName('dynamicImageRow')
@@ -9,7 +9,6 @@ const dynamicImageData = document.getElementsByClassName('dynamicImageData')
 
 function loadJpegs() {
     for (const element of dynamicImageData) {
-        photoCount = 0
         var name = element.getAttribute('data-name')
         if (name != 'PLACE') {
             element.innerHTML = '<image class=\"photoData\" src=\"./assets/photo/'+name+'.jpeg\" alt=\"'+name+'\" loading=\"lazy\">'
