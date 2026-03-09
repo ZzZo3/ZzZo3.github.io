@@ -2,11 +2,26 @@
 var photoCount = 0
 const pageTitle = document.getElementsByClassName('pageTitle')
 //DYNAMIC IMAGE DISPLAY
-const dynamicImageDisplay = document.getElementsByClassName('dynamicImageDisplay')
+const dynamicImageDisplay = document.getElementById('dynamicImageDisplay')
 const dynamicImageRow = document.getElementsByClassName('dynamicImageRow')
 const dynamicImageData = document.getElementsByClassName('dynamicImageData')
+var PHOTOS = 
+[['Estelles','flowerShop','LSPpillar','LSPoverlook','PLACE','PLACE'],
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE']]
 
-//DISPLAY jpegs
+//DISPLAY
+
+function setPhotos() {
+    var displayHtmlQueue = ''
+    PHOTOS.forEach((ROW)=>{
+        displayHtmlQueue += '<tr class=\"dynamicImageRow\">'
+        ROW.forEach((PHOTO)=>{
+            displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"'+PHOTO+'\"></td>'
+        })
+        displayHtmlQueue += '</tr>'
+    })
+    dynamicImageDisplay.innerHTML = displayHtmlQueue
+}
 
 function loadJpegs() {
     for (const element of dynamicImageData) {
