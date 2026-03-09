@@ -1,13 +1,17 @@
 .dynamicImageDisplay {
     border-collapse: collapse;
+    margin: none;
+    padding: none;
 }
 
 .dynamicImageData {
+    margin: none;
     padding: none;
 }
 
 .photoData {
-    height: 250px;
-    width: 250px;
+    width: 16vw;
+    height: 16vw;
     margin: none;
+    padding: none;
 }
