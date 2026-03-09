@@ -4,9 +4,9 @@ const stepButton = document.getElementById('stepButton')
 const nDisplay = document.getElementById('nDisplay')
 // VARIABLES
 var n = 0
-const N = 15 //472
+const N = 10 //472
 
-function cap() {
+function suicide() {
     alert('no more.')
     while (true) {
         freeze()
@@ -24,7 +24,7 @@ stepButton.addEventListener('click', (event)=>{
     if (n >= N) {
         n = N
         nDisplay.innerText = '['+n+']'
-        cap()
+        suicide()
     } else {
         nDisplay.innerText = '['+n+']'
     }
