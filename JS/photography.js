@@ -17,7 +17,7 @@ function loadJpegs() {
         } else {
             element.innerHTML = '<image class=\"photoData PLACE\" src=\"./assets/photo/placeholder.png\" alt=\"PLACE\" loading=\"lazy\">'
         }
-        document.querySelectAll('pageTitle').forEach((element)=>{
+        document.getElementsByClassName('pageTitle').forEach((element)=>{
             element.textContent = 'Photos! ['+photoCount+']'
         })
     }
