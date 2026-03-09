@@ -16,7 +16,7 @@ function loadJpegs() {
             element.innerHTML = '<image class=\"photoData\" src=\"./assets/photo/'+name+'.jpeg\" alt=\"'+name+'\" loading=\"lazy\">'
             photoCount++
         } else {
-            element.innerHTML = '<image class=\"photoData\" src=\"./assets/photo/placeholder.png\" alt=\"PLACE\" loading=\"lazy\">'
+            element.innerHTML = '<image class=\"photoData PLACE\" src=\"./assets/photo/placeholder.png\" alt=\"PLACE\" loading=\"lazy\">'
         }
         pageTitle[i].textContent = 'Photos! ['+photoCount+']'
     }
