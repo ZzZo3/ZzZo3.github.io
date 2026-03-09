@@ -10,7 +10,7 @@ const dynamicImageData = document.getElementsByClassName('dynamicImageData')
 
 function loadJpegs() {
     for (const element of dynamicImageData) {
-        var name = element.innerHTML
+        var name = element.getAttribute('data-name')
         if (name =! 'PLACE') {
             element.innerHTML = '<image class=\"photoData\" src=\"./assets/photo/'+name+'.jpeg\" alt=\"'+name+'\" loading=\"lazy\">'
         } else {
