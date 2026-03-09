@@ -6,6 +6,15 @@ const dynamicImageDisplay = document.getElementsByClassName('dynamicImageDisplay
 const dynamicImageRow = document.getElementsByClassName('dynamicImageRow')
 const dynamicImageData = document.getElementsByClassName('dynamicImageData')
 
+//DISPLAY jpegs
+
+function loadJpegs() {
+    dynamicImageData.forEach(element => {
+        var name = element.innerHTML
+        element.innerHTML = '<image src=\"./assets/photo/'+name+'.jpeg\">'
+    });
+}
+
 //STUFF THAT RUNS ON LOAD
 
 function loadFunc() {
