@@ -1,4 +1,4 @@
-const errorAlertsActive = false
+const errorAlertsActive = true
 if (errorAlertsActive) {
     window.addEventListener("error", handleError, true);
     
