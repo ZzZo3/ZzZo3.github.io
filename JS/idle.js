@@ -9,9 +9,7 @@ const N = 10 //472
 
 function suicide() {
     alert('no more.')
-    while (true) {
-        killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
-    }
+    killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
 }
 
 stepButton.addEventListener('click', (event)=>{
