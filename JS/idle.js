@@ -5,7 +5,7 @@ const nDisplay = document.getElementById('nDisplay')
 // VARIABLES
 var n = 0
 
-cap() {
+function cap() {
     alert('no more.')
 }
 
