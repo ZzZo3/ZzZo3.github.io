@@ -23,5 +23,6 @@ function loadFunc() {
     for(let i = 0; i<pageTitle.length; i++) {
         pageTitle[i].textContent = 'Photos! ['+photoCount+']'
     }
+    loadJpegs()
     console.log('   \"loadFunc()\" finished')
 }
