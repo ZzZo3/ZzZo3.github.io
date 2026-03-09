@@ -5,6 +5,8 @@
 }
 
 .dynamicImageData {
+    width: 16vw;
+    height: 16vw;
     margin: none;
     padding: none;
 }
