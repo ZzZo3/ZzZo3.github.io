@@ -9,6 +9,12 @@ const N = 15 //472
 function cap() {
     alert('no more.')
     while (true) {
+        freeze()
+    }
+}
+
+async function freeze() {
+    while (true) {
         console.log('no more.')
     }
 }
