@@ -42,6 +42,7 @@ function loadJpegs() {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
+    setPhotos()
     loadJpegs()
     console.log('   \"loadFunc()\" finished')
 }
