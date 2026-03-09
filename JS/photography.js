@@ -23,7 +23,7 @@ function setPhotos() {
     dynamicImageDisplay.innerHTML = displayHtmlQueue
 }
 
-function loadJpegs() {
+function loadPhotos() {
     for (const element of dynamicImageData) {
         var name = element.getAttribute('data-name')
         if (name != 'PLACE') {
@@ -43,6 +43,6 @@ function loadJpegs() {
 function loadFunc() {
     console.log('\"loadFunc()\" began')
     setPhotos()
-    loadJpegs()
+    loadPhotos()
     console.log('   \"loadFunc()\" finished')
 }
