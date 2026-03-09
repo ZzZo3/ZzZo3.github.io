@@ -9,10 +9,10 @@ const dynamicImageData = document.getElementsByClassName('dynamicImageData')
 //DISPLAY jpegs
 
 function loadJpegs() {
-    dynamicImageData.forEach(element => {
+    for (const element of dynamicImageData) {
         var name = element.innerHTML
         element.innerHTML = '<image src=\"./assets/photo/'+name+'.jpeg\">'
-    });
+    }
 }
 
 //STUFF THAT RUNS ON LOAD
