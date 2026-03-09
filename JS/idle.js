@@ -9,7 +9,14 @@ const N = 10 //472
 
 function suicide() {
     alert('no more.')
-    killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
+    document.querySelectorAll('.pageTitle').forEach((element)=>{
+        element.textContent = 'no more. ['+n+']'
+    })
+    n++
+    while (true) {
+        killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
+        console.log('sorry >:3')
+    }
 }
 
 stepButton.addEventListener('click', (event)=>{
@@ -20,6 +27,9 @@ stepButton.addEventListener('click', (event)=>{
         suicide()
     } else {
         nDisplay.innerText = '['+n+']'
+        document.querySelectorAll('.pageTitle').forEach((element)=>{
+            element.textContent = '(ZzzZz) idling... ['+n+']'
+        })
     }
 })
 
