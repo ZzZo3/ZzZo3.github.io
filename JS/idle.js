@@ -2,6 +2,7 @@
 const pageTitle = document.getElementsByClassName('pageTitle')
 const stepButton = document.getElementById('stepButton')
 const nDisplay = document.getElementById('nDisplay')
+const killSwitch = document.getElementById('killSwitch')
 // VARIABLES
 var n = 0
 const N = 10 //472
@@ -9,13 +10,7 @@ const N = 10 //472
 function suicide() {
     alert('no more.')
     while (true) {
-        asyncLog()
-    }
-}
-
-async function asyncLog() {
-    while (true) {
-        console.log('no more.')
+        killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
     }
 }
 
