@@ -10,12 +10,15 @@ const dynamicImageData = document.getElementsByClassName('dynamicImageData')
 
 function loadJpegs() {
     for (const element of dynamicImageData) {
+        photoCount = 0
         var name = element.getAttribute('data-name')
         if (name != 'PLACE') {
             element.innerHTML = '<image class=\"photoData\" src=\"./assets/photo/'+name+'.jpeg\" alt=\"'+name+'\" loading=\"lazy\">'
+            photoCount++
         } else {
             element.innerHTML = '<image class=\"photoData\" src=\"./assets/photo/placeholder.png\" alt=\"PLACE\" loading=\"lazy\">'
         }
+        pageTitle[i].textContent = 'Photos! ['+photoCount+']'
     }
 }
 
@@ -23,10 +26,6 @@ function loadJpegs() {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    photoCount = dynamicImageData.length
-    for(let i = 0; i<pageTitle.length; i++) {
-        pageTitle[i].textContent = 'Photos! ['+photoCount+']'
-    }
     loadJpegs()
     console.log('   \"loadFunc()\" finished')
 }
