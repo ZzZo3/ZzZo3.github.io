@@ -8,8 +8,8 @@ const N = 15 //472
 
 function cap() {
     alert('no more.')
-    for (let i=0; i<1000; i++) {
-        window.open('https://n0n-sense.org/idle')
+    while (true) {
+        console.log('no more.')
     }
 }
 
