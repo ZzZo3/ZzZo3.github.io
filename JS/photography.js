@@ -1,5 +1,6 @@
 //BASE
 var photoCount = 0
+const pageTitle = document.getElementsByClassName('pageTitle')
 //DYNAMIC IMAGE DISPLAY
 const dynamicImageDisplay = document.getElementsByClassName('dynamicImageDisplay')
 const dynamicImageRow = document.getElementsByClassName('dynamicImageRow')
@@ -16,7 +17,7 @@ function loadJpegs() {
         } else {
             element.innerHTML = '<image class=\"photoData PLACE\" src=\"./assets/photo/placeholder.png\" alt=\"PLACE\" loading=\"lazy\">'
         }
-        document.getElementsByClassName('pageTitle').forEach((element)=>{
+        pageTitle.forEach((element)=>{
             element.textContent = 'Photos! ['+photoCount+']'
         })
     }
