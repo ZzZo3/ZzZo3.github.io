@@ -5,8 +5,16 @@ const nDisplay = document.getElementById('nDisplay')
 // VARIABLES
 var n = 0
 
+cap() {
+    alert('no more.')
+}
+
 stepButton.addEventListener('click', (event)=>{
     n++
+    if (n > 471) {
+        n = 472
+        cap()
+    }
     nDisplay.innerText = '['+n+']'
 })
 
