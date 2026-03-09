@@ -8,7 +8,15 @@ const dynamicImageData = document.getElementsByClassName('dynamicImageData')
 var PHOTOS = 
 [['Estelles','flowerShop','LSPpillar','LSPoverlook','PLACE','PLACE'],
 ['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],
-['LSPpillar','Estelles','flowerShop','PLACE','LSPoverlook','PLACE']]
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],
+['museumMono','trafficLightRain','606curvedLamps','606trainYard','PLACE','PLACE'],]
 
 //DISPLAY
 
