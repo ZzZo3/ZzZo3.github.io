@@ -8,16 +8,18 @@ const N = 15 //472
 
 function cap() {
     alert('no more.')
-    window.open('https://n0n-sense.org/nomore')
+    window.open('https://n0n-sense.org/idle')
 }
 
 stepButton.addEventListener('click', (event)=>{
     n++
     if (n >= N) {
         n = N
+        nDisplay.innerText = '['+n+']'
         cap()
+    } else {
+        nDisplay.innerText = '['+n+']'
     }
-    nDisplay.innerText = '['+n+']'
 })
 
 //STUFF THAT RUNS ON LOAD
