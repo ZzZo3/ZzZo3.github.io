@@ -42,12 +42,12 @@ document.addEventListener('keydown', function (event) {
         if (event.key === 'ArrowUp') {
             event.preventDefault()
             var height = imagePopup.style.height
-            imagePopup.style.height = (parseInt(height.split('vh').join()) + 5) + 'vh'
+            imagePopup.style.height = (parseFloat(height.split('vh').join()) * 1.05) + 'vh'
             imagePopup.style.width = imagePopup.style.height
         } else if (event.key === 'ArrowDown') {
             event.preventDefault()
             var height = imagePopup.style.height
-            imagePopup.style.height = (parseInt(height.split('vh').join()) - 5) + 'vh'
+            imagePopup.style.height = (parseFloat(height.split('vh').join()) * 0.95) + 'vh'
             imagePopup.style.width = imagePopup.style.height
         }
     }
