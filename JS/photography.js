@@ -163,8 +163,6 @@ function setEventListener() {
             let verticalScroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop
             //DOCUMENT SCROLL COPY+PASTE
 
-            blackout.style.display = 'block'
-
             imagePopup.style.top = (verticalScroll + window.innerHeight / 2)+'px'
             imagePopup.style.left = (window.innerWidth / 2)+'px'
             imagePopup.setAttribute('src', photo.getAttribute('src'))
@@ -184,6 +182,7 @@ imagePopup.addEventListener('load', (event)=>{
     imagePopup.style.width = (imagePopup.width * modify)+'px'
     imagePopup.style.transform = 'translate(-50%, -50%)';
     imagePopup.style.boxShadow = '0 0 64px 10px black'
+    blackout.style.display = 'block'
     imagePopup.style.display = 'block'
 })
 
