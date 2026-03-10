@@ -2,6 +2,7 @@
 var photoCount = 0
 const pageTitle = document.getElementsByClassName('pageTitle')
 const imagePopup = document.getElementById('imagePopup')
+const blackout = document.getElementById('blackout')
 //DYNAMIC IMAGE DISPLAY
 const dynamicImageDisplay = document.getElementById('dynamicImageDisplay')
 const dynamicImageRow = document.getElementsByClassName('dynamicImageRow')
@@ -33,6 +34,7 @@ document.addEventListener('keydown', function (event) {
     console.log('Key: \"' + event.key + '\"');
     if (event.key === 'Escape') {
         imagePopup.style.display = 'none'
+        blackout.style.display = 'none'
     }
 });
 
@@ -78,12 +80,11 @@ function setEventListener() {
     document.querySelectorAll('.photoData').forEach((photo)=>{
         photo.addEventListener('click', (event)=>{
             console.log('image clicked: '+photo.getAttribute('src'))
-            imagePopup.style.top = '50%';
-            imagePopup.style.left = '50%';
             imagePopup.style.transform = 'translate(-50%, -50%)';
             imagePopup.style.display = 'block'
+            blackout.style.transform = 'translate(-50%, -50%)';
+            blackout.style.display = 'block'
             imagePopup.setAttribute('src', photo.getAttribute('src'))
-            imagePopup.focus()
         })
     })
 }
