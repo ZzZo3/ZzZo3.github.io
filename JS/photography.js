@@ -164,7 +164,7 @@ function setEventListener() {
             //DOCUMENT SCROLL COPY+PASTE
 
             blackout.style.display = 'block'
-            
+
             imagePopup.style.top = (verticalScroll + window.innerHeight / 2)+'px'
             imagePopup.style.left = (window.innerWidth / 2)+'px'
             imagePopup.setAttribute('src', photo.getAttribute('src'))
@@ -173,6 +173,7 @@ function setEventListener() {
             console.log('imagePopup: modify: '+modify)
             imagePopup.style.height = (imagePopup.height * modify)+'px'
             imagePopup.style.width = (imagePopup.width * modify)+'px'
+            console.log('image: dims: '+[imagePopup.width,imagePopup.height])
             console.log('imagePopup: dims: '+[(imagePopup.width * modify)+'px',(imagePopup.height * modify)+'px'])
             imagePopup.style.transform = 'translate(-50%, -50%)';
             imagePopup.style.display = 'block'
@@ -183,6 +184,7 @@ function setEventListener() {
 imagePopup.addEventListener('load', (event)=>{
     imagePopup.style.height = (imagePopup.height * modify)+'px'
     imagePopup.style.width = (imagePopup.width * modify)+'px'
+    console.log('image(load): dims: '+[imagePopup.width,imagePopup.height])
     console.log('imagePopup(load): dims: '+[(imagePopup.width * modify)+'px',(imagePopup.height * modify)+'px'])
     imagePopup.style.transform = 'translate(-50%, -50%)';
 })
