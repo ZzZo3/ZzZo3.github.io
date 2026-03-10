@@ -35,8 +35,7 @@ var PHOTOS =
 ['trainTracksEvening','woodsGroundVibrant','PLACE','PLACE','tracksCross','tracksHouses'],
 ['underpassGritty','warehouseChicago','PLACE','PLACE','highwayUnder','tracksProtest'],
 ['trainTracksDusk','parkingLotGreen','PLACE','PLACE','tracksRedLight','trainTracksSad'],
-['laneHalloween','parkingLotBeacon','PLACE','PLACE','underpassLamp','walk'],
-[]]
+['laneHalloween','parkingLotBeacon','PLACE','PLACE','underpassLamp','walk']]
 
 //KEY LISTENER
 document.addEventListener('keydown', function (event) {
@@ -129,7 +128,7 @@ function setPhotos() {
             } else if (index<4) {
                 displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"Foggy/'+ROW[index]+'\"></td>'
             } else {
-                displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"Depression/'+ROW[index]+'\"></td>'
+                displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"Depression  /'+ROW[index]+'\"></td>'
             }
         }
         displayHtmlQueue += '</tr>'
