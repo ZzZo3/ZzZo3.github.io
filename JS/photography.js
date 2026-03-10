@@ -1,6 +1,7 @@
 //BASE
 var photoCount = 0
 const pageTitle = document.getElementsByClassName('pageTitle')
+const imagePopup = document.getElementById('imagePopup')
 //DYNAMIC IMAGE DISPLAY
 const dynamicImageDisplay = document.getElementById('dynamicImageDisplay')
 const dynamicImageRow = document.getElementsByClassName('dynamicImageRow')
@@ -26,6 +27,14 @@ var PHOTOS =
 ['trainStation','trainGrassy','PLACE','PLACE','PLACE','PLACE'],
 ['trainTracksOverlook','alleyStreet','PLACE','PLACE','PLACE','PLACE'],
 ['underpassGritty','warehouseChicago','PLACE','PLACE','PLACE','PLACE']]
+
+//KEY LISTENER
+document.addEventListener('keydown', function (event) {
+    console.log('Key: \"' + event.key + '\"');
+    if (event.key === 'Escape') {
+        imagePopup.style.display = 'none'
+    }
+});
 
 //DISPLAY
 
@@ -65,11 +74,24 @@ function loadPhotos() {
     }
 }
 
+function setEventListener() {
+    document.querySelectorAll('.photoData').forEach((photo)=>{
+        photo.addEventListener('click', (event)=>{
+            imagePopup.style.display = 'block'
+            imagePopup.setAttribute('src', photo.getAttribute('src'))
+            imagePopup.focus()
+        })
+    })
+}
+
+
+
 //STUFF THAT RUNS ON LOAD
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
     setPhotos()
     loadPhotos()
+    setEventListener()
     console.log('   \"loadFunc()\" finished')
 }

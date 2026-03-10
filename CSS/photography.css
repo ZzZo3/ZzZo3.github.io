@@ -21,3 +21,11 @@
 .PLACE {
     image-rendering: pixelated;
 }
+
+#imagePopup {
+    display: none;
+    position: fixed;
+    height: 75vh;
+    width: 75vh;
+    z-index: 100;
+}
