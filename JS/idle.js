@@ -9,9 +9,9 @@ const N = 10 //472
 
 function suicide() {
     alert('no more.')
-    while (n<16) {
+    while (n<15) {
         n++
-        window.open("https://n0n-sense.org/nomore")
+        window.open("https://n0n-sense.org/assets/isometric/bases/nomore")
     }
 }
 
