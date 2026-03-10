@@ -3,6 +3,7 @@ var photoCount = 0
 const pageTitle = document.getElementsByClassName('pageTitle')
 const imagePopup = document.getElementById('imagePopup')
 const blackout = document.getElementById('blackout')
+var popup = false
 //DYNAMIC IMAGE DISPLAY
 const dynamicImageDisplay = document.getElementById('dynamicImageDisplay')
 const dynamicImageRow = document.getElementsByClassName('dynamicImageRow')
@@ -33,8 +34,20 @@ var PHOTOS =
 document.addEventListener('keydown', function (event) {
     console.log('Key: \"' + event.key + '\"');
     if (event.key === 'Escape') {
+        popup = false
         imagePopup.style.display = 'none'
         blackout.style.display = 'none'
+    }
+    if (popup) {
+        if (event.key === "ArrowUp") {
+            var height = imagePopup.style.height
+            imagePopup.style.height = (parseInt(height.split('vh').join()) + 5) + 'vh'
+            imagePopup.style.width = imagePopup.style.height
+        } else if (event.key === "ArrowDown") {
+            var height = imagePopup.style.height
+            imagePopup.style.height = (parseInt(height.split('vh').join()) - 5) + 'vh'
+            imagePopup.style.width = imagePopup.style.height
+        }
     }
 });
 
@@ -80,6 +93,7 @@ function setEventListener() {
     document.querySelectorAll('.photoData').forEach((photo)=>{
         photo.addEventListener('click', (event)=>{
             console.log('image clicked: '+photo.getAttribute('src'))
+            popup = true
             imagePopup.style.transform = 'translate(-50%, -50%)';
             imagePopup.style.display = 'block'
             blackout.style.transform = 'translate(-50%, -50%)';
