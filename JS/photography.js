@@ -49,15 +49,13 @@ document.addEventListener('keydown', function (event) {
         if (event.key === 'ArrowUp') {
             event.preventDefault()
             var height = imagePopup.style.height
-            var width = imagePopup.style.width
-            imagePopup.style.height = (parseFloat(height.split('px').join()) * 1.05)+'px'
-            imagePopup.style.width = (parseFloat(width.split('px').join()) * 1.05)+'px'
+            imagePopup.style.height = (parseFloat(height.split('vh').join()) * 1.05) + 'vh'
+            imagePopup.style.width = imagePopup.style.height
         } else if (event.key === 'ArrowDown') {
             event.preventDefault()
             var height = imagePopup.style.height
-            var width = imagePopup.style.width
-            imagePopup.style.height = (parseFloat(height.split('px').join()) * 0.95)+'px'
-            imagePopup.style.width = (parseFloat(width.split('px').join()) * 0.95)+'px'
+            imagePopup.style.height = (parseFloat(height.split('vh').join()) * 0.95) + 'vh'
+            imagePopup.style.width = imagePopup.style.height
         }
     }
 });
@@ -163,31 +161,18 @@ function setEventListener() {
             let verticalScroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop
             //DOCUMENT SCROLL COPY+PASTE
 
-            blackout.style.display = 'block'
-
-            imagePopup.style.top = (verticalScroll + window.innerHeight / 2)+'px'
-            imagePopup.style.left = (window.innerWidth / 2)+'px'
-            imagePopup.setAttribute('src', photo.getAttribute('src'))
-            let VH = window.innerHeight
-            let modify = (VH / imagePopup.height) * 0.88
-            console.log('imagePopup: modify: '+modify)
-            imagePopup.style.height = (imagePopup.height * modify)+'px'
-            imagePopup.style.width = (imagePopup.width * modify)+'px'
-            console.log('image: dims: '+[imagePopup.width,imagePopup.height])
-            console.log('imagePopup: dims: '+[(imagePopup.width * modify)+'px',(imagePopup.height * modify)+'px'])
+            imagePopup.style.top = (verticalScroll + window.innerHeight / 2) + 'px'
+            imagePopup.style.left = (window.innerWidth / 2) + 'px'
+            imagePopup.style.height = '88vh'
+            imagePopup.style.width = '88vh'
             imagePopup.style.transform = 'translate(-50%, -50%)';
             imagePopup.style.display = 'block'
+            blackout.style.transform = 'translate(-50%, -50%)';
+            blackout.style.display = 'block'
+            imagePopup.setAttribute('src', photo.getAttribute('src'))
         })
     })
 }
-
-imagePopup.addEventListener('load', (event)=>{
-    imagePopup.style.height = (imagePopup.height * modify)+'px'
-    imagePopup.style.width = (imagePopup.width * modify)+'px'
-    console.log('image(load): dims: '+[imagePopup.width,imagePopup.height])
-    console.log('imagePopup(load): dims: '+[(imagePopup.width * modify)+'px',(imagePopup.height * modify)+'px'])
-    imagePopup.style.transform = 'translate(-50%, -50%)';
-})
 
 
 var swapAcoords = []
