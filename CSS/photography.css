@@ -16,6 +16,7 @@
     height: 16vw;
     margin: none;
     padding: none;
+    object-fit: cover;
 }
 
 .PLACE {
