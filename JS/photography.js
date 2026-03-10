@@ -184,7 +184,8 @@ imagePopup.addEventListener('load', (event)=>{
     imagePopup.style.width = (imagePopup.width * modify)+'px'
     imagePopup.style.transform = 'translate(-50%, -50%)';
     imagePopup.style.boxShadow = '0 0 64px 10px black'
-    imagePopup.style.display = 'block'
+    var display = imagePopup.style.display
+    imagePopup.style.display = display
 })
 
 
@@ -216,6 +217,5 @@ function loadFunc() {
     setPhotos()
     loadPhotos()
     setEventListener()
-    imagePopup.style.display = 'none'
     console.log('   \"loadFunc()\" finished')
 }
