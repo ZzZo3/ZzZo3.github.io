@@ -77,6 +77,9 @@ function loadPhotos() {
 function setEventListener() {
     document.querySelectorAll('.photoData').forEach((photo)=>{
         photo.addEventListener('click', (event)=>{
+            imagePopup.style.top = '50%';
+            imagePopup.style.left = '50%';
+            imagePopup.style.transform = 'translate(-50%, -50%)';
             imagePopup.style.display = 'block'
             imagePopup.setAttribute('src', photo.getAttribute('src'))
             imagePopup.focus()
