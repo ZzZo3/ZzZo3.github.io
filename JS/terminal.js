@@ -387,14 +387,14 @@ ARGUMENTS:
         package = package.split('\n').join('<br>')
         TERMINAL.write(package)
     } else if (append=='+') {
-        if (Object.keys(localStorage).includes(to)) {
-            if (to=='RF+') {
-                TERMINAL.write('>  cannot write to RF+')
-            } else {
-                localStorage.setItem(to,(package+'<br>'+localStorage.getItem(to)))
-            }
-        } else {
+        if (!Object.keys(localStorage).includes(to)) {
             TERMINAL.write('>  document \"'+to+'\" not found')
+            return
+        }
+        if (to=='RF+') {
+            TERMINAL.write('>  cannot write to RF+')
+        } else {
+            localStorage.setItem(to,(package+'<br>'+localStorage.getItem(to)))
         }
     } else if (append=='force') {
         if (to=='RF+') {
