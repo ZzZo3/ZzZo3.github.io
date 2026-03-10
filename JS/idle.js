@@ -9,13 +9,13 @@ const N = 10 //472
 
 function suicide() {
     alert('no more.')
-    document.querySelectorAll('.pageTitle').forEach((element)=>{
-        element.textContent = 'no more. ['+n+']'
-    })
     while (true) {
-        //killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
         n++
+        //killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
         console.log('sorry >:3 '+n)
+        document.querySelectorAll('.pageTitle').forEach((element)=>{
+            element.textContent = 'no more. ['+n+']'
+        })
     }
 }
 
