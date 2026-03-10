@@ -28,7 +28,11 @@ var PHOTOS =
 ['trainElSandy1','trainElSandy2','PLACE','PLACE','PLACE','PLACE'],
 ['trainStation','trainGrassy','PLACE','PLACE','PLACE','PLACE'],
 ['trainTracksOverlook','alleyStreet','PLACE','PLACE','PLACE','PLACE'],
-['underpassGritty','warehouseChicago','PLACE','PLACE','PLACE','PLACE']]
+['alleyCoolCar','busFordCity','PLACE','PLACE','PLACE','PLACE'],
+['carInteriorNight','lampIndiana1','PLACE','PLACE','PLACE','PLACE'],
+['snowyApt','snowyBuilding','PLACE','PLACE','PLACE','PLACE'],
+['snowyLot','snowyUnderpass','PLACE','PLACE','PLACE','PLACE'],
+['trainTracks1','woodsGroundVibrant','PLACE','PLACE','PLACE','PLACE']]
 
 //KEY LISTENER
 document.addEventListener('keydown', function (event) {
