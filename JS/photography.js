@@ -53,6 +53,12 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+blackout.addEventListener('click', (event)=>{
+    popup = false
+    imagePopup.style.display = 'none'
+    blackout.style.display = 'none'
+})
+
 //DISPLAY
 
 function setPhotos() {
