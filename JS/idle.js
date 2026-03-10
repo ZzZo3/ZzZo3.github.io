@@ -6,6 +6,7 @@ const killSwitch = document.getElementById('killSwitch')
 // VARIABLES
 var n = 0
 const N = 472
+var nPerSecond = 0
 
 
 stepButton.addEventListener('click', (event)=>{
@@ -24,10 +25,23 @@ stepButton.addEventListener('click', (event)=>{
     }
 })
 
+document.querySelectorAll('.rateButton').forEach((element)=>{
+    element.addEventListener('click', (event)=>{
+        let rate = parseFloat(element.getAttribute('data-rate'))
+        element.innerText = '['+rate+'/sec]'
+        nPerSecond += rate
+    })
+})
+
+function run() {
+    n += nPerSecond / 100
+}
+
+
 //STUFF THAT RUNS ON LOAD
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
-    /* code go here */
+    window.setInterval('run()', 10)
     console.log('   \"loadFunc()\" finished')
 }
