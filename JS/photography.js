@@ -162,11 +162,20 @@ function setEventListener() {
     })
 }
 
+
+var swapA = []
+var swapB = []
 function swap(A, B) {
-    let pull = PHOTOS[A[1]][A[0]]
-    let push = PHOTOS[B[1]][B[0]]
-    PHOTOS[B[1]][B[0]] = pull
-    PHOTOS[A[1]][A[0]] = push
+    swapA = PHOTOS[A[1]][A[0]]
+    swapB = PHOTOS[B[1]][B[0]]
+    PHOTOS[B[1]][B[0]] = swapA
+    PHOTOS[A[1]][A[0]] = swapB
+    setPhotos()
+    loadPhotos()
+}
+function swapUndo() {
+    PHOTOS[B[1]][B[0]] = swapB
+    PHOTOS[A[1]][A[0]] = swapA
     setPhotos()
     loadPhotos()
 }
