@@ -8,8 +8,8 @@ var popup = false
 const dynamicImageDisplay = document.getElementById('dynamicImageDisplay')
 const dynamicImageRow = document.getElementsByClassName('dynamicImageRow')
 const dynamicImageData = document.getElementsByClassName('dynamicImageData')
-var PHOTOS = 
-[['Estelles','flowerShop','LSPpillar','LSPoverlook','tracksPillar','lampsHighway'],
+var PHOTOS = [
+['Estelles','flowerShop','LSPpillar','LSPoverlook','tracksPillar','lampsHighway'],
 ['museumMono','trafficLightRain','stuckCloth','fireplace','burned1','burnedMan'],
 ['chicagoRiver','AMSTbridge','marshLadder','606arches','programmingWindow2','alleyOvergrown'],
 ['hospitalView2','trainSnowy','marshTable','oakParkEmpty','606curvedLamps','606houseRow'],
@@ -23,20 +23,20 @@ var PHOTOS =
 ['museumParkingTrail','oakParkCars','houseDoor','houseLit','fireStairs2','fireStairs3'],
 ['overgrownCourt','raisedBridge','laneGarden','LSPmisc','GermanPhone','GermanPoster'],
 ['ring','searsTower','LSPsilos','LSPstairs','warehouseIndiana1','houseHook'],
-['stadium','substationBridge','LSPtiltedLarge','LSPwindow','IKEAhall','ProgrammingWindow1'],
+['stadium','substationBridge','LSPtiltedLarge','yellowTileBuilding','IKEAhall','ProgrammingWindow1'],
 ['trafficMorning','trainElWabash','market','marshBrick','lampSnow','lampSnow2'],
 ['trainElSandy1','trainElSandy2','marshCat','marshPlantWall','laneTech','LSPtilted'],
 ['trainStation','trainGrassy','marshRamp','marshSteelWall','lunchroom','mathWindow'],
-['trainTracksOverlook','alleyStreet','marshTable','marshWall1','orr','overpassClose'],
+['trainTracksOverlook','alleyStreet','woodsStars','marshWall1','orr','overpassClose'],
 ['alleyCoolCar','busFordCity','marshWall2','marshWall3','playground','ProgrammingRoom'],
 ['carInteriorNight','lampIndiana1','mcDees','overgrownBridge','programmingWindow3','substation'],
 ['snowyApt','snowyBuilding','overgrownWater','overpassDull','sun','tall'],
-['snowyLot','snowyUnderpass','overpassSad','snowyLot','tracksAway','tracksBillboard'],
+['snowyLot1','snowyUnderpass','overpassSad','snowyLot2','tracksAway','tracksBillboard'],
 ['trainTracksEvening','woodsGroundVibrant','snowySubstation2','snowySubstation1','tracksCross','tracksHouses'],
 ['underpassGritty','warehouseChicago','snowyWoods','tires','highwayUnder','tracksProtest'],
 ['trainTracksDusk','parkingLotGreen','trainTracksPastel','vacantRetail','tracksRedLight','trainTracksSad'],
-['laneHalloween','parkingLotBeacon','warehouseIndiana2','woodsDusk','underpassLamp','walk'],
-['canyonBridge','PLACE','woodsStars','yellowTileBuilding','PLACE','PLACE']]
+['laneHalloween','parkingLotBeacon','warehouseIndiana2','woodsDusk','underpassLamp','walk']
+]
 
 //KEY LISTENER
 document.addEventListener('keydown', function (event) {
