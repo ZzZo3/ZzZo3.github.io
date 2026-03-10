@@ -154,8 +154,8 @@ function setEventListener() {
             let verticalScroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop
             //DOCUMENT SCROLL COPY+PASTE
 
-            imagePopup.style.top = verticalScroll + 'px'
-            imagePopup.style.left = verticalScroll + 'px'
+            imagePopup.style.top = (verticalScroll + window.innerHeight / 2) + 'px'
+            imagePopup.style.left = (window.innerWidth / 2) + 'px'
             imagePopup.style.height = '88vh'
             imagePopup.style.width = '88vh'
             imagePopup.style.transform = 'translate(-50%, -50%)';
