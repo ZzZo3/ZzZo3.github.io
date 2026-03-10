@@ -163,8 +163,8 @@ function setEventListener() {
 
             imagePopup.style.top = (verticalScroll + window.innerHeight / 2) + 'px'
             imagePopup.style.left = (window.innerWidth / 2) + 'px'
-            imagePopup.style.height = '88vh'
-            imagePopup.style.width = '88vh'
+            imagePopup.style.height = imagePopup.height
+            imagePopup.style.width = imagePopup.width
             imagePopup.style.transform = 'translate(-50%, -50%)';
             imagePopup.style.display = 'block'
             blackout.style.transform = 'translate(-50%, -50%)';

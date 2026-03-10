@@ -31,6 +31,7 @@
     height: 88vh;
     width: 88vh;
     z-index: 100;
+    object-fit: cover;
 }
 
 #blackout {
