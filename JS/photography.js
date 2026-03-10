@@ -148,6 +148,9 @@ function setEventListener() {
         photo.addEventListener('click', (event)=>{
             console.log('image clicked: '+photo.getAttribute('src'))
             popup = true
+            
+            imagePopup.style.tpp = '50%'
+            imagePopup.style.left = '50%'
             imagePopup.style.height = '88vh'
             imagePopup.style.width = '88vh'
             imagePopup.style.transform = 'translate(-50%, -50%)';
