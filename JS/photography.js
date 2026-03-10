@@ -165,15 +165,13 @@ function setEventListener() {
 
             imagePopup.style.top = (verticalScroll + window.innerHeight / 2)+'px'
             imagePopup.style.left = (window.innerWidth / 2)+'px'
-            imagePopup.style.transform = 'translate(-50%, -50%)';
-            imagePopup.style.display = 'block'
-            blackout.style.transform = 'translate(-50%, -50%)';
-            blackout.style.display = 'block'
             imagePopup.setAttribute('src', photo.getAttribute('src'))
             let VH = window.innerHeight * 0.88
             let modify = VH / imagePopup.height
             imagePopup.style.height = (imagePopup.height * modify)+'px'
             imagePopup.style.width = (imagePopup.width * modify)+'px'
+            imagePopup.style.transform = 'translate(-50%, -50%)';
+            imagePopup.style.display = 'block'
         })
     })
 }
