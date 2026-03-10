@@ -109,8 +109,9 @@ function dragElement(elmnt) {
 
 function setPhotos() {
     var displayHtmlQueue = ''
-    PHOTOS.forEach((ROW)=>{
+    PHOTOS.forEach((ROW, index)=>{
         displayHtmlQueue += '<tr class=\"dynamicImageRow\">'
+        displayHtmlQueue += '<p>'+index+'</p>'
         var folder = ''
         for (let index=0; index < 6; index++) {
             if (ROW[index]=='PLACE') {
@@ -161,7 +162,14 @@ function setEventListener() {
     })
 }
 
-
+function swap(A, B) {
+    let pull = PHOTOS[A[1]][A[0]]
+    let push = PHOTOS[B[1]][B[0]]
+    PHOTOS[B[1]][B[0]] = pull
+    PHOTOS[A[1]][A[0]] = push
+    setPhotos()
+    loadPhotos()
+}
 
 //STUFF THAT RUNS ON LOAD
 
