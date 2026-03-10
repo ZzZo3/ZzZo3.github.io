@@ -111,7 +111,7 @@ function setPhotos() {
     var displayHtmlQueue = ''
     PHOTOS.forEach((ROW, index)=>{
         displayHtmlQueue += '<tr class=\"dynamicImageRow\">'
-        displayHtmlQueue += '<p>'+index+'</p>'
+        displayHtmlQueue += '<td><p>'+index+'</p></td>'
         var folder = ''
         for (let index=0; index < 6; index++) {
             if (ROW[index]=='PLACE') {
