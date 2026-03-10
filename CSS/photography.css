@@ -22,10 +22,6 @@
     image-rendering: pixelated;
 }
 
-[draggable=true] {
-  cursor: move;
-}
-
 #imagePopup {
     display: none;
     position: absolute;
