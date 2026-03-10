@@ -215,5 +215,7 @@ function loadFunc() {
     setPhotos()
     loadPhotos()
     setEventListener()
+    blackout.style.display = 'none'
+    imagePopup.style.display = 'none'
     console.log('   \"loadFunc()\" finished')
 }
