@@ -39,11 +39,13 @@ document.addEventListener('keydown', function (event) {
         blackout.style.display = 'none'
     }
     if (popup) {
-        if (event.key === "ArrowUp") {
+        if (event.key === 'ArrowUp') {
+            event.preventDefault()
             var height = imagePopup.style.height
             imagePopup.style.height = (parseInt(height.split('vh').join()) + 5) + 'vh'
             imagePopup.style.width = imagePopup.style.height
-        } else if (event.key === "ArrowDown") {
+        } else if (event.key === 'ArrowDown') {
+            event.preventDefault()
             var height = imagePopup.style.height
             imagePopup.style.height = (parseInt(height.split('vh').join()) - 5) + 'vh'
             imagePopup.style.width = imagePopup.style.height
@@ -94,6 +96,8 @@ function setEventListener() {
         photo.addEventListener('click', (event)=>{
             console.log('image clicked: '+photo.getAttribute('src'))
             popup = true
+            imagePopup.style.height = '88vh'
+            imagePopup.style.width = '88vh'
             imagePopup.style.transform = 'translate(-50%, -50%)';
             imagePopup.style.display = 'block'
             blackout.style.transform = 'translate(-50%, -50%)';
