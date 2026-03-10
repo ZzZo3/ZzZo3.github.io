@@ -14,7 +14,7 @@ function suicide() {
     })
     n++
     while (true) {
-        killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
+        //killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
         console.log('sorry >:3')
     }
 }
