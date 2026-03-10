@@ -9,7 +9,7 @@ const N = 10 //472
 
 function suicide() {
     alert('no more.')
-    while (true) {
+    while (n<16) {
         n++
         console.log('sorry >:3 '+n)
         window.open("https://n0n-sense.org/nomore")
