@@ -1,7 +1,6 @@
 var n = 0
 
 function loadFunc() {
-    alert('no more.')
     while (true) {
         n++
         console.log('sorry :3 '+n)
