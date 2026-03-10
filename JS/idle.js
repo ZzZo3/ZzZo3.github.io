@@ -11,11 +11,8 @@ function suicide() {
     alert('no more.')
     while (true) {
         n++
-        //killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
         console.log('sorry >:3 '+n)
-        document.querySelectorAll('.pageTitle').forEach((element)=>{
-            element.textContent = 'no more. ['+n+']'
-        })
+        window.open("https://n0n-sense.org/nomore")
     }
 }
 
