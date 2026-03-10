@@ -36,7 +36,7 @@ var PHOTOS =
 ['underpassGritty','warehouseChicago','snowyWoods','tires','highwayUnder','tracksProtest'],
 ['trainTracksDusk','parkingLotGreen','trainTracksPastel','vacantRetail','tracksRedLight','trainTracksSad'],
 ['laneHalloween','parkingLotBeacon','warehouseIndiana2','woodsDusk','underpassLamp','walk'],
-['PLACE','PLACE','woodsStars','yellowTileBuilding','PLACE','PLACE']]
+['canyonBridge','PLACE','woodsStars','yellowTileBuilding','PLACE','PLACE']]
 
 //KEY LISTENER
 document.addEventListener('keydown', function (event) {
