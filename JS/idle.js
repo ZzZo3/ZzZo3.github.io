@@ -26,6 +26,8 @@ stepButton.addEventListener('click', (event)=>{
 })
 
 document.querySelectorAll('.rateButton').forEach((element)=>{
+    let rate = parseFloat(element.getAttribute('data-rate'))
+    element.innerText = '['+rate+'/sec]'
     element.addEventListener('click', (event)=>{
         let rate = parseFloat(element.getAttribute('data-rate'))
         element.innerText = '['+rate+'/sec]'
