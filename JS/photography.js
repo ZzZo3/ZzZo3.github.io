@@ -161,15 +161,15 @@ function setEventListener() {
             let verticalScroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop
             //DOCUMENT SCROLL COPY+PASTE
 
-            imagePopup.style.top = (verticalScroll + window.innerHeight / 2) + 'px'
-            imagePopup.style.left = (window.innerWidth / 2) + 'px'
-            imagePopup.style.height = imagePopup.height + 'px'
-            imagePopup.style.width = imagePopup.width + 'px'
+            imagePopup.style.top = (verticalScroll + window.innerHeight / 2)+'px'
+            imagePopup.style.left = (window.innerWidth / 2)+'px'
             imagePopup.style.transform = 'translate(-50%, -50%)';
             imagePopup.style.display = 'block'
             blackout.style.transform = 'translate(-50%, -50%)';
             blackout.style.display = 'block'
             imagePopup.setAttribute('src', photo.getAttribute('src'))
+            imagePopup.style.width = (imagePopup.width * 0.5)+'px'
+            imagePopup.style.height = (imagePopup.height * 0.5)+'px'
         })
     })
 }
