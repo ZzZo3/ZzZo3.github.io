@@ -166,8 +166,8 @@ function setEventListener() {
             imagePopup.style.top = (verticalScroll + window.innerHeight / 2)+'px'
             imagePopup.style.left = (window.innerWidth / 2)+'px'
             imagePopup.setAttribute('src', photo.getAttribute('src'))
-            let VH = window.innerHeight * 0.88
-            let modify = VH / imagePopup.height
+            let VH = window.innerHeight
+            let modify = (VH / imagePopup.height) * 0.88
             imagePopup.style.height = (imagePopup.height * modify)+'px'
             imagePopup.style.width = (imagePopup.width * modify)+'px'
             imagePopup.style.transform = 'translate(-50%, -50%)';
