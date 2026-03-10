@@ -163,9 +163,13 @@ function setEventListener() {
 }
 
 
-var swapA = []
-var swapB = []
+var swapAcoords = []
+var swapBcoords = []
+var swapA = ''
+var swapB = ''
 function swap(A, B) {
+    swapAcoords = A
+    swapBcoords = B
     swapA = PHOTOS[A[1]][A[0]]
     swapB = PHOTOS[B[1]][B[0]]
     PHOTOS[B[1]][B[0]] = swapA
@@ -173,9 +177,9 @@ function swap(A, B) {
     setPhotos()
     loadPhotos()
 }
-function swapUndo() {
-    PHOTOS[B[1]][B[0]] = swapB
-    PHOTOS[A[1]][A[0]] = swapA
+function undoSwap() {
+    PHOTOS[swapBcoords[1]][swapBcoords[0]] = swapB
+    PHOTOS[swapAcoords[1]][swapAcoords[0]] = swapA
     setPhotos()
     loadPhotos()
 }
