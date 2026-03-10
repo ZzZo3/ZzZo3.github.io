@@ -13,9 +13,6 @@ function suicide() {
         n++
         window.open("https://n0n-sense.org/nomore")
     }
-    while (true) {
-        console.log('sorry >:3 '+n)
-    }
 }
 
 stepButton.addEventListener('click', (event)=>{
