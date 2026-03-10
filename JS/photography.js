@@ -169,8 +169,8 @@ function setEventListener() {
             );
             //DOCUMENT DIMENSIONS COPY+PASTE
 
-            imagePopup.style.top = fullPageHeight / 2
-            imagePopup.style.left = fullPageWidth / 2
+            imagePopup.style.top = (fullPageHeight / 2) + 'px'
+            imagePopup.style.left = (fullPageWidth / 2) + 'px'
             imagePopup.style.height = '88vh'
             imagePopup.style.width = '88vh'
             imagePopup.style.transform = 'translate(-50%, -50%)';
