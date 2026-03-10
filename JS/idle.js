@@ -25,16 +25,6 @@ stepButton.addEventListener('click', (event)=>{
     }
 })
 
-document.querySelectorAll('.rateButton').forEach((element)=>{
-    let rate = parseFloat(element.getAttribute('data-rate'))
-    element.innerText = '['+rate+'/sec]'
-    element.addEventListener('click', (event)=>{
-        let rate = parseFloat(element.getAttribute('data-rate'))
-        element.innerText = '['+rate+'/sec]'
-        nPerSecond += rate
-    })
-})
-
 function run() {
     n += nPerSecond / 100
 }
@@ -44,6 +34,15 @@ function run() {
 
 function loadFunc() {
     console.log('\"loadFunc()\" began')
+    document.querySelectorAll('.rateButton').forEach((element)=>{
+        let rate = parseFloat(element.getAttribute('data-rate'))
+        element.innerText = '['+rate+'/sec]'
+        element.addEventListener('click', (event)=>{
+            let rate = parseFloat(element.getAttribute('data-rate'))
+            element.innerText = '['+rate+'/sec]'
+            nPerSecond += rate
+        })
+    })
     window.setInterval('run()', 10)
     console.log('   \"loadFunc()\" finished')
 }
