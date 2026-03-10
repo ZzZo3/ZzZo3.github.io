@@ -149,8 +149,28 @@ function setEventListener() {
         photo.addEventListener('click', (event)=>{
             console.log('image clicked: '+photo.getAttribute('src'))
             popup = true
-            imagePopup.style.top = window.innerHeight / 2
-            imagePopup.style.left = window.innerWidth / 2
+
+            //DOCUMENT DIMENSIONS COPY+PASTE
+            let fullPageHeight = Math.max(
+            document.body.scrollHeight,
+            document.documentElement.scrollHeight,
+            document.body.offsetHeight,
+            document.documentElement.offsetHeight,
+            document.body.clientHeight,
+            document.documentElement.clientHeight
+            );
+            let fullPageWidth = Math.max(
+            document.body.scrollWidth,
+            document.documentElement.scrollWidth,
+            document.body.offsetWidth,
+            document.documentElement.offsetWidth,
+            document.body.clientWidth,
+            document.documentElement.clientWidth
+            );
+            //DOCUMENT DIMENSIONS COPY+PASTE
+
+            imagePopup.style.top = fullPageHeight / 2
+            imagePopup.style.left = fullPageWidth / 2
             imagePopup.style.height = '88vh'
             imagePopup.style.width = '88vh'
             imagePopup.style.transform = 'translate(-50%, -50%)';
