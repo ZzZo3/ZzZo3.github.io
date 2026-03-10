@@ -168,8 +168,10 @@ function setEventListener() {
             imagePopup.setAttribute('src', photo.getAttribute('src'))
             let VH = window.innerHeight
             let modify = (VH / imagePopup.height) * 0.88
+            console.log('imagePopup: modify: '+modify)
             imagePopup.style.height = (imagePopup.height * modify)+'px'
             imagePopup.style.width = (imagePopup.width * modify)+'px'
+            console.log('imagePopup: dims: '+[(imagePopup.width * modify)+'px',(imagePopup.height * modify)+'px'])
             imagePopup.style.transform = 'translate(-50%, -50%)';
             imagePopup.style.display = 'block'
         })
