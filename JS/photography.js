@@ -49,13 +49,15 @@ document.addEventListener('keydown', function (event) {
         if (event.key === 'ArrowUp') {
             event.preventDefault()
             var height = imagePopup.style.height
-            imagePopup.style.height = (parseFloat(height.split('vh').join()) * 1.05) + 'vh'
-            imagePopup.style.width = imagePopup.style.height
+            var width = imagePopup.style.width
+            imagePopup.style.height = (parseFloat(height.split('px').join()) * 1.05)+'px'
+            imagePopup.style.width = (parseFloat(width.split('px').join()) * 1.05)+'px'
         } else if (event.key === 'ArrowDown') {
             event.preventDefault()
             var height = imagePopup.style.height
-            imagePopup.style.height = (parseFloat(height.split('vh').join()) * 0.95) + 'vh'
-            imagePopup.style.width = imagePopup.style.height
+            var width = imagePopup.style.width
+            imagePopup.style.height = (parseFloat(height.split('px').join()) * 0.95)+'px'
+            imagePopup.style.width = (parseFloat(width.split('px').join()) * 0.95)+'px'
         }
     }
 });
@@ -168,8 +170,10 @@ function setEventListener() {
             blackout.style.transform = 'translate(-50%, -50%)';
             blackout.style.display = 'block'
             imagePopup.setAttribute('src', photo.getAttribute('src'))
-            imagePopup.style.width = (imagePopup.width * 0.5)+'px'
-            imagePopup.style.height = (imagePopup.height * 0.5)+'px'
+            let VH = window.innerHeight * 0.88
+            let modify = VH / imagePopup.height
+            imagePopup.style.height = (imagePopup.height * modify)+'px'
+            imagePopup.style.width = (imagePopup.width * modify)+'px'
         })
     })
 }
