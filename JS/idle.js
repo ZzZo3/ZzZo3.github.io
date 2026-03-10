@@ -12,9 +12,9 @@ function suicide() {
     document.querySelectorAll('.pageTitle').forEach((element)=>{
         element.textContent = 'no more. ['+n+']'
     })
-    n++
     while (true) {
         //killSwitch.innerHTML += '<image src="./assets/photo/LSPpillar.jpeg">'
+        n++
         console.log('sorry >:3 '+n)
     }
 }
