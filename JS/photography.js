@@ -128,7 +128,7 @@ function setPhotos() {
             } else if (index<4) {
                 displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"Foggy/'+ROW[index]+'\"></td>'
             } else {
-                displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"Depression  /'+ROW[index]+'\"></td>'
+                displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"Depression/'+ROW[index]+'\"></td>'
             }
         }
         displayHtmlQueue += '</tr>'
