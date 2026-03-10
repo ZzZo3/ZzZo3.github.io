@@ -153,24 +153,21 @@ function translate(toTrans, simplify) {
         let chars = word.split('')
         if(chars[0] == '\\' && !simplify) {
             chars[0] = ''
-            word = chars.join('')
-        } else {
-            exclusiveMappings.forEach((transMap)=>{ //for each 'transMap' in 'exclusiveMappings', run the function
-                if(transMap.map(item=>item.toLowerCase()).includes(word.toLowerCase())) {
-                    word = transMap[i]
-                }
-            })
-            inclusiveMappings.forEach((transMap)=>{
-                if(word.toLowerCase().includes(transMap[i].toLowerCase())) {
-                    word = transMap[1-i]
-                }
-                if(simplify) {
-                    if(word == transMap[0]) {
-                        word = transMap[0]
-                    }
-                }
-            })
+            return chars.join('')
         }
+        exclusiveMappings.forEach((transMap)=>{ //for each 'transMap' in 'exclusiveMappings', run the function
+            if(transMap.map(item=>item.toLowerCase()).includes(word.toLowerCase())) {
+                word = transMap[i]
+            }
+        })
+        inclusiveMappings.forEach((transMap)=>{
+            if(word.toLowerCase().includes(transMap[i].toLowerCase())) {
+                word = transMap[1-i]
+            }
+            if(simplify && word == transMap[0]) {
+                word = transMap[0]
+            }
+        })
         return word
     }))
     console.log('   \"translate()\" finished')

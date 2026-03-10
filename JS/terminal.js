@@ -7,11 +7,9 @@ const terminalOutput = document.getElementById('terminalOutput')
 //KEY LISTENER
 document.addEventListener('keydown', (event)=>{
     if (document.activeElement === terminalInput) { // detect Enter / shift+Enter in terminalInput
-        if (event.key === "Enter") {
-            if (!event.shiftKey) {
-                event.preventDefault()
-                TERMINAL.read()
-            }
+        if (event.key === "Enter" && !event.shiftKey) {
+            event.preventDefault()
+            TERMINAL.read()
         } else if (event.key === "ArrowUp") {
             event.preventDefault()
             if (TERMINAL.previousCommands.length > 0 && TERMINAL.previousCommandsNav < TERMINAL.previousCommands.length) {
@@ -264,6 +262,10 @@ ARGUMENTS:%cred
     TERMINAL.parse('line')
     TERMINAL.write('⠀⠀⠀TERMINAL.COMMANDARRAY: '+TERMINAL.commandArrayName+' ['+TERMINAL.COMMANDARRAY.length+']')
     TERMINAL.parse('line')
+    if (argList[0]=='cancel') {
+        TERMINAL.write('AWAIT: cancelled')
+        return
+    }
     if (argList[0]=='-') {
         TERMINAL.write('AWAIT: Choose a command to elaborate, or \'cancel\'')
         var acceptables = ['cancel']
@@ -273,7 +275,7 @@ ARGUMENTS:%cred
         })
         TERMINAL.waitList = 'help'
         TERMINAL.await(acceptables)
-    } else if (argList[0] != 'cancel') {
+    } else {
         var validHelp = false
         TERMINAL.COMMANDARRAY.forEach((CMND)=>{
             if (CMND.name.includes(argList[0])) {
@@ -286,8 +288,6 @@ ARGUMENTS:%cred
             TERMINAL.write('ERROR: optional arg [cmnd] does not take: '+argList[i])
             TERMINAL.write('>  Try \'help help\' for a detailed description.')
         }
-    } else {
-        TERMINAL.write('AWAIT: cancelled')
     }
 }),
 new TerminalCMND(['list','ls'], // LIST
