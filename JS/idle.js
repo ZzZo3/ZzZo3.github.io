@@ -5,22 +5,17 @@ const nDisplay = document.getElementById('nDisplay')
 const killSwitch = document.getElementById('killSwitch')
 // VARIABLES
 var n = 0
-const N = 10 //472
+const N = 472
 
-function suicide() {
-    alert('no more.')
-    while (n<15) {
-        n++
-        window.open("https://n0n-sense.org/assets/isometric/bases/nomore")
-    }
-}
 
 stepButton.addEventListener('click', (event)=>{
     n++
     if (n >= N) {
         n = N
         nDisplay.innerText = '['+n+']'
-        suicide()
+        document.querySelectorAll('.pageTitle').forEach((element)=>{
+            element.textContent = '(ZzzZz) idling... ['+n+']'
+        })
     } else {
         nDisplay.innerText = '['+n+']'
         document.querySelectorAll('.pageTitle').forEach((element)=>{
