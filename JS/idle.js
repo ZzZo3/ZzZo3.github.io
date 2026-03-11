@@ -1,11 +1,11 @@
-//BASE
+//BASE ᴇ
 const pageTitle = document.getElementsByClassName('pageTitle')
 const stepButton = document.getElementById('stepButton')
 const nDisplay = document.getElementById('nDisplay')
 const npsDisplay = document.getElementById('npsDisplay')
 // VARIABLES
+const max = 999*(10^999)
 var n = 0
-const N = 999*(10^999)
 var nPerSecond = 0
 
 
@@ -14,21 +14,31 @@ stepButton.addEventListener('click', (event)=>{
     updateN()
 })
 
-function updateN() {
-    if (n >= N) {
-        n = N
-        nDisplay.innerText = '['+Math.round(n)+']'
-        npsDisplay.innerText = '['+(Math.round(nPerSecond * 100) / 100)+'/sec]'
-        document.querySelectorAll('.pageTitle').forEach((element)=>{
-            element.textContent = '(ZzzZz) idling... ['+Math.round(n)+']'
-        })
-    } else {
-        nDisplay.innerText = '['+Math.round(n)+']'
-        document.querySelectorAll('.pageTitle').forEach((element)=>{
-        npsDisplay.innerText = '['+(Math.round(nPerSecond * 100) / 100)+'/sec]'
-            element.textContent = '(ZzzZz) idling... ['+Math.round(n)+']'
-        })
+function notate(numI,round) {
+    if (round==NaN) {
+        round = 1
     }
+    numF = Math(numI / round) * round
+    if (numF < 999999) {
+        console.log('notate(): not large enough to justify')
+        return numF
+    }
+    let digits = numF.split('.').length
+    numF /= digits
+    return numF+'ᴇ'+(digits-1)
+}
+
+function updateN() {
+    if (n >= max) {
+        n = max
+        clearInterval(ticker)
+        return
+    }
+    nDisplay.innerText = '['+notate(n)+']'
+    npsDisplay.innerText = '['+notate(nPerSecond,0.001)+'/sec]'
+    document.querySelectorAll('.pageTitle').forEach((element)=>{
+        element.textContent = '(ZzzZz) idling... ['+notate(n)+']'
+    })
 }
 
 function tick() {
@@ -52,6 +62,6 @@ function loadFunc() {
             console.log('nPerSecond: '+nPerSecond)
         })
     })
-    window.setInterval(tick, 10)
+    const ticker = setInterval(tick, 10)
     console.log('   \"loadFunc()\" finished')
 }
