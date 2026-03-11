@@ -22,12 +22,12 @@ function notate(numI,round) {
     }
     numF = Math.round(numI / round) * round
     if (numF < 1000000) {
-        console.log('notate(): not large enough to justify')
         return String(numF)
     }
     let digits = String(numF).split('.')[0].length
     console.log('digits: '+digits)
-    return (numF / digits)+'ᴇ'+(digits-1)
+    let numS = (numF / digits)+'ᴇ'+(digits-1)
+    return numS
 }
 
 function updateN() {
