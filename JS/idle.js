@@ -18,7 +18,7 @@ function notate(numI,round) {
     if (round==NaN) {
         round = 1
     }
-    numF = Math(numI / round) * round
+    numF = Math.round(numI / round) * round
     if (numF < 999999) {
         console.log('notate(): not large enough to justify')
         return numF
