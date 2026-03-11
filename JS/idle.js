@@ -5,7 +5,7 @@ const nDisplay = document.getElementById('nDisplay')
 const npsDisplay = document.getElementById('npsDisplay')
 // VARIABLES
 var n = 0
-const N = 472
+const N = 999*(10^999)
 var nPerSecond = 0
 
 
