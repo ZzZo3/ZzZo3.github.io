@@ -271,29 +271,33 @@ function renderIsometric() {
     var isometricBasesQuery = document.querySelectorAll(".isometricBase")
     REND(isometricTilesQuery,3)     // TILE AT ORIGIN HAS z: 3
     REND(isometricBasesQuery,1)     // BASE AT ORIGIN HAS z: 1
-    function REND(CLASS,ZED) {
-        CLASS.forEach((element) => {
-            let tile = element
-            let off = 0
-            if (tile.classList.length == 4) {
-                off = parseInt(tile.classList[3].slice(3))
-            }
-            let xi = parseInt(tile.classList[1].slice(1))
-            let yi = parseInt(tile.classList[2].slice(1))
-            console.log('   IsometricTile:')
-            let offsets = Iso2Reg(xi, yi)
-            let xf = offsets[0] + "px"
-            let yf = offsets[1]
-            yf += off * tileScale
-            tile.style.left = xf
-            tile.style.top = yf + "px"
-            tile.style.zIndex = yi - xi + ZED
-            tile.style.width = 64 * tileScale + "px"
-            tile.style.height = 256 * tileScale + "px"
-            return tile
-        })
-    }
     console.log('> \"renderIsometric()\" finished')
+}
+function REND(CLASS,ZED) {
+    CLASS.forEach((element) => {
+        var perTileScale = 1
+        if (element.hasAttribute('data-scale')) {
+            perTileScale = parseInt(element.getAttribute('data-scale'))
+        }
+        let tile = element
+        let off = 0
+        if (tile.classList.length == 4) {
+            off = parseInt(tile.classList[3].slice(3))
+        }
+        let xi = parseInt(tile.classList[1].slice(1))
+        let yi = parseInt(tile.classList[2].slice(1))
+        console.log('   IsometricTile:')
+        let offsets = Iso2Reg(xi, yi)
+        let xf = offsets[0] + "px"
+        let yf = offsets[1]
+        yf += off * tileScale
+        tile.style.left = xf
+        tile.style.top = yf + "px"
+        tile.style.zIndex = yi - xi + ZED
+        tile.style.width = 64 * tileScale + "px"
+        tile.style.height = 256 * tileScale + "px"
+        return tile
+    })
 }
 
 
