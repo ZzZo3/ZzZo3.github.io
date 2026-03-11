@@ -15,6 +15,7 @@ stepButton.addEventListener('click', (event)=>{
 })
 
 function updateN() {
+    Math.round(n)
     if (n >= N) {
         n = N
         nDisplay.innerText = '['+n+']'
