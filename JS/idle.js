@@ -26,6 +26,7 @@ stepButton.addEventListener('click', (event)=>{
 })
 
 function tick() {
+    console.log('tick()')
     n += (nPerSecond / 100)
 }
 
@@ -41,6 +42,7 @@ function loadFunc() {
             let rate = parseFloat(element.getAttribute('data-rate'))
             element.innerText = '['+rate+'/sec]'
             nPerSecond += rate
+            console.log('nPerSecond: '+nPerSecond)
         })
     })
     window.setInterval(tick, 10)
