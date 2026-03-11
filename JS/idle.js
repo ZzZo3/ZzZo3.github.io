@@ -11,6 +11,10 @@ var nPerSecond = 0
 
 stepButton.addEventListener('click', (event)=>{
     n++
+    updateN()
+})
+
+function updateN() {
     if (n >= N) {
         n = N
         nDisplay.innerText = '['+n+']'
@@ -23,11 +27,12 @@ stepButton.addEventListener('click', (event)=>{
             element.textContent = '(ZzzZz) idling... ['+n+']'
         })
     }
-})
+}
 
 function tick() {
     console.log('tick()')
     n += (nPerSecond / 100)
+    updateN()
 }
 
 
