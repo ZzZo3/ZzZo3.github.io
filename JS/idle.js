@@ -20,13 +20,12 @@ function notate(numI,round) {
     if (round===undefined) {
         round = 1
     }
-    numF = Math.round(numI / round) * round
+    var numF = Math.round(numI / round) * round
     if (numF < 1000000) {
         return String(numF)
     }
     let digits = String(numF).split('.')[0].length
     let numS = (numF / digits)+'ᴇ'+(digits-1)
-    console.log('numS: '+numS)
     return numS
 }
 
@@ -38,8 +37,8 @@ function updateN() {
     }
     if (nPerSecond >= 100) {
         clearInterval(ticker)
-        ticker = setInterval(tick, 1000)
-        tickMs = 1000
+        ticker = setInterval(tick, 100)
+        tickMs = 100
     }
     nDisplay.innerText = '['+notate(n)+']'
     npsDisplay.innerText = '['+notate(nPerSecond,0.001)+'/sec]'
