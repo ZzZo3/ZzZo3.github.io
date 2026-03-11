@@ -70,7 +70,7 @@ blackout.addEventListener('click', (event)=>{
 })
 
 
-/*DRAGGABLE ELEMENT COPY+PASTE
+//DRAGGABLE ELEMENT COPY+PASTE
 dragElement(document.getElementById("imagePopup"));
 
 function dragElement(elmnt) {
@@ -113,7 +113,7 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-//DRAGGABLE ELEMENT COPY+PASTE*/
+//DRAGGABLE ELEMENT COPY+PASTE
 
 //DISPLAY
 
@@ -125,13 +125,13 @@ function setPhotos() {
         var folder = ''
         for (let index=0; index < 6; index++) {
             if (ROW[index]=='PLACE') {
-                displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"PLACE\"></td>'
+                displayHtmlQueue += '<td class=\"dynamicImageData\" draggable="true" data-name=\"PLACE\"></td>'
             } else if (index<2) {
-                displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"CityPop/'+ROW[index]+'\"></td>'
+                displayHtmlQueue += '<td class=\"dynamicImageData\" draggable="true" data-name=\"CityPop/'+ROW[index]+'\"></td>'
             } else if (index<4) {
-                displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"Foggy/'+ROW[index]+'\"></td>'
+                displayHtmlQueue += '<td class=\"dynamicImageData\" draggable="true" data-name=\"Foggy/'+ROW[index]+'\"></td>'
             } else {
-                displayHtmlQueue += '<td class=\"dynamicImageData\" data-name=\"Depression/'+ROW[index]+'\"></td>'
+                displayHtmlQueue += '<td class=\"dynamicImageData\" draggable="true" data-name=\"Depression/'+ROW[index]+'\"></td>'
             }
         }
         displayHtmlQueue += '</tr>'
