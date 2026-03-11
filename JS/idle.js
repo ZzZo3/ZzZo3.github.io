@@ -24,8 +24,8 @@ function notate(numI,round) {
     if (numF < 1000000) {
         return String(numF)
     }
-    let digits = String(numF).split('.')[0].length
-    let numS = (numF / 10**digits)+'ᴇ'+(digits-1)
+    let digits = String(numF).split('.')[0].length - 1
+    let numS = (numF / 10**digits)+'ᴇ'+(digits)
     return numS
 }
 
