@@ -2,7 +2,6 @@
 const pageTitle = document.getElementsByClassName('pageTitle')
 const stepButton = document.getElementById('stepButton')
 const nDisplay = document.getElementById('nDisplay')
-const nDisplay = document.getElementById('nDisplay')
 const npsDisplay = document.getElementById('npsDisplay')
 // VARIABLES
 var n = 0
@@ -26,6 +25,7 @@ function updateN() {
     } else {
         nDisplay.innerText = '['+Math.round(n)+']'
         document.querySelectorAll('.pageTitle').forEach((element)=>{
+        npsDisplay.innerText = '['+(Math.round(nPerSecond * 100) / 100)+'/sec]'
             element.textContent = '(ZzzZz) idling... ['+Math.round(n)+']'
         })
     }
