@@ -25,8 +25,8 @@ function notate(numI,round) {
         return String(numF)
     }
     let digits = String(numF).split('.')[0].length
-    console.log('digits: '+digits)
     let numS = (numF / digits)+'ᴇ'+(digits-1)
+    console.log('numS: '+numS)
     return numS
 }
 
