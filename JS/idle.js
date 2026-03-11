@@ -42,7 +42,6 @@ function updateN() {
 }
 
 function tick() {
-    console.log('tick()')
     n += (nPerSecond / 100)
     updateN()
 }
