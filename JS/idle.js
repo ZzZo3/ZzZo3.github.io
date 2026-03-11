@@ -2,7 +2,8 @@
 const pageTitle = document.getElementsByClassName('pageTitle')
 const stepButton = document.getElementById('stepButton')
 const nDisplay = document.getElementById('nDisplay')
-const killSwitch = document.getElementById('killSwitch')
+const nDisplay = document.getElementById('nDisplay')
+const npsDisplay = document.getElementById('npsDisplay')
 // VARIABLES
 var n = 0
 const N = 472
@@ -18,6 +19,7 @@ function updateN() {
     if (n >= N) {
         n = N
         nDisplay.innerText = '['+Math.round(n)+']'
+        npsDisplay.innerText = '['+(Math.round(nPerSecond * 100) / 100)+'/sec]'
         document.querySelectorAll('.pageTitle').forEach((element)=>{
             element.textContent = '(ZzzZz) idling... ['+Math.round(n)+']'
         })
@@ -42,10 +44,10 @@ function loadFunc() {
     console.log('\"loadFunc()\" began')
     document.querySelectorAll('.rateButton').forEach((element)=>{
         let rate = parseFloat(element.getAttribute('data-rate'))
-        element.innerText = '['+rate+'/sec]'
+        element.innerText = '+'+rate+'/sec'
         element.addEventListener('click', (event)=>{
             let rate = parseFloat(element.getAttribute('data-rate'))
-            element.innerText = '['+rate+'/sec]'
+            element.innerText = '+'+rate+'/sec'
             nPerSecond += rate
             console.log('nPerSecond: '+nPerSecond)
         })
