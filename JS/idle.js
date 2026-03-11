@@ -54,10 +54,10 @@ function loadFunc() {
     console.log('\"loadFunc()\" began')
     document.querySelectorAll('.rateButton').forEach((element)=>{
         let rate = parseFloat(element.getAttribute('data-rate'))
-        element.innerText = '+'+rate+'/sec'
+        element.innerText = '+'+notate(rate)+'/sec'
         element.addEventListener('click', (event)=>{
             let rate = parseFloat(element.getAttribute('data-rate'))
-            element.innerText = '+'+rate+'/sec'
+            element.innerText = '+'+notate(rate)+'/sec'
             nPerSecond += rate
             console.log('nPerSecond: '+nPerSecond)
         })
