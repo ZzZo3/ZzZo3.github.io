@@ -23,7 +23,7 @@ function notate(numI,round) {
         console.log('notate(): not large enough to justify')
         return numF
     }
-    let digits = numF.split('.').length
+    let digits = String(numF).split('.')[0].length
     numF /= digits
     return numF+'ᴇ'+(digits-1)
 }
