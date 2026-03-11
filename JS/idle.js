@@ -8,7 +8,7 @@ const max = 999*(10^999)
 var n = 0
 var nPerSecond = 0
 // TICKER
-var ticker = setInterval(tick(10), 10)
+const ticker = setInterval(tick(10), 10)
 
 stepButton.addEventListener('click', (event)=>{
     n++
