@@ -294,7 +294,7 @@ function REND(CLASS,ZED) {
         let yf = offsets[1]
         yf += off * tileScale
         tile.style.left = xf
-        tile.style.top = (yf - 256*(perTileScale-1)) + "px"
+        tile.style.top = (yf - 256*(perTileScale)) + "px"
         tile.style.zIndex = yi - xi + ZED
         tile.style.width = 64 * perTileScale * tileScale + "px"
         tile.style.height = 256 * perTileScale * tileScale + "px"
