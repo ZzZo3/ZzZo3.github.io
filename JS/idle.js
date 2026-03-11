@@ -4,7 +4,7 @@ const stepButton = document.getElementById('stepButton')
 const nDisplay = document.getElementById('nDisplay')
 const npsDisplay = document.getElementById('npsDisplay')
 // VARIABLES
-const max = 999*(10^999)
+const max = 1*(10^30)
 var n = 0
 var nPerSecond = 0
 // TICKER
