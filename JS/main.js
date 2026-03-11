@@ -277,13 +277,12 @@ function renderIsometric() {
     console.log('> \"renderIsometric()\" finished')
 }
 function REND(CLASS,ZED) {
-    CLASS.forEach((element) => {
-        var perTileScale = 1
-        if (element.hasAttribute('data-scale')) {
-            perTileScale = parseInt(element.getAttribute('data-scale'))
-        }
-        let tile = element
+    CLASS.forEach((tile) => {
         let off = 0
+        var perTileScale = 1
+        if (tile.hasAttribute('data-scale')) {
+            perTileScale = parseInt(tile.getAttribute('data-scale'))
+        }
         if (tile.classList.length == 4) {
             off = parseInt(tile.classList[3].slice(3))
         }
