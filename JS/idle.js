@@ -8,7 +8,7 @@ const max = 1*(10^30)
 var n = 0
 var nPerSecond = 0
 // TICKER
-var ticker = setInterval(tick, 10)
+let ticker = setInterval(tick, 10)
 var tickMs = 10
 
 stepButton.addEventListener('click', (event)=>{
