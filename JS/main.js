@@ -83,10 +83,10 @@ function Iso2Reg(xi, yi, pts) {
     let yf = 0
     // xi <- iterations (+leftward, -rightward)
     yf -= (11*pts + mountainOffset / isoSpread) * isoSpread * tileScale * xi
-    xf += 32*pts * tileScale * isoSpread * xi
+    xf += 32 * tileScale * isoSpread * xi
     // yi <- iterations (+downward, -upward)
     yf += (11*pts + mountainOffset / isoSpread) * isoSpread * tileScale * yi
-    xf += 32*pts * tileScale * isoSpread * yi
+    xf += 32 * tileScale * isoSpread * yi
     console.log('   final: [' + xf + ',' + yf + ']')
     return [xf, yf]
 }
