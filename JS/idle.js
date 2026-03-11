@@ -8,7 +8,7 @@ const max = 999*(10^999)
 var n = 0
 var nPerSecond = 0
 // TICKER
-var ticker = setInterval(tick, 10)
+var ticker = setInterval(tick(10), 10)
 
 stepButton.addEventListener('click', (event)=>{
     n++
@@ -37,7 +37,7 @@ function updateN() {
     }
     if (nPerSecond >= 100) {
         clearInterval(ticker)
-        ticker = setInterval(tick, 1000)
+        ticker = setInterval(tick(1000), 1000)
     }
     nDisplay.innerText = '['+notate(n)+']'
     npsDisplay.innerText = '['+notate(nPerSecond,0.001)+'/sec]'
@@ -46,8 +46,8 @@ function updateN() {
     })
 }
 
-function tick() {
-    n += (nPerSecond / 100)
+function tick(delayMs) {
+    n += (nPerSecond * 1000 / delayMs)
     updateN()
 }
 
