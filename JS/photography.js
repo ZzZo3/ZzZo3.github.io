@@ -70,7 +70,7 @@ blackout.addEventListener('click', (event)=>{
 })
 
 
-//DRAGGABLE ELEMENT COPY+PASTE
+/*DRAGGABLE ELEMENT COPY+PASTE
 dragElement(document.getElementById("imagePopup"));
 
 function dragElement(elmnt) {
@@ -113,7 +113,7 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-//DRAGGABLE ELEMENT COPY+PASTE
+//DRAGGABLE ELEMENT COPY+PASTE*/
 
 //DISPLAY
 
