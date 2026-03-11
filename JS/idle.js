@@ -38,7 +38,7 @@ function updateN() {
     }
     if (nPerSecond >= 100) {
         clearInterval(ticker)
-        ticker = setInterval(tick(1000), 1000)
+        ticker = setInterval(tick, 1000)
         tickMs = 1000
     }
     nDisplay.innerText = '['+notate(n)+']'
