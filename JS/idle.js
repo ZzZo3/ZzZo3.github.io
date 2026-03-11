@@ -1,4 +1,4 @@
-//BASE ᴇ
+// BASE ᴇ
 const pageTitle = document.getElementsByClassName('pageTitle')
 const stepButton = document.getElementById('stepButton')
 const nDisplay = document.getElementById('nDisplay')
@@ -7,7 +7,8 @@ const npsDisplay = document.getElementById('npsDisplay')
 const max = 999*(10^999)
 var n = 0
 var nPerSecond = 0
-
+// TICKER
+const ticker = setInterval(tick, 10)
 
 stepButton.addEventListener('click', (event)=>{
     n++
@@ -61,6 +62,5 @@ function loadFunc() {
             console.log('nPerSecond: '+nPerSecond)
         })
     })
-    const ticker = setInterval(tick, 10)
     console.log('   \"loadFunc()\" finished')
 }
