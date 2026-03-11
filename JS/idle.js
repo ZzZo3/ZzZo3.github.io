@@ -25,7 +25,7 @@ stepButton.addEventListener('click', (event)=>{
     }
 })
 
-function run() {
+function tick() {
     n += (nPerSecond / 100)
 }
 
@@ -43,6 +43,6 @@ function loadFunc() {
             nPerSecond += rate
         })
     })
-    window.setInterval(run(), 10)
+    window.setInterval(tick, 10)
     console.log('   \"loadFunc()\" finished')
 }
