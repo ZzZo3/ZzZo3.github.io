@@ -25,7 +25,7 @@ function notate(numI,round) {
         return String(numF)
     }
     let digits = String(numF).split('.')[0].length
-    let numS = (numF / digits)+'ᴇ'+(digits-1)
+    let numS = (numF / 10**digits)+'ᴇ'+(digits-1)
     return numS
 }
 
