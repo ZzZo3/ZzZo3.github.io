@@ -294,8 +294,8 @@ function REND(CLASS,ZED) {
         tile.style.left = xf
         tile.style.top = yf + "px"
         tile.style.zIndex = yi - xi + ZED
-        tile.style.width = 64 * tileScale + "px"
-        tile.style.height = 256 * tileScale + "px"
+        tile.style.width = 64 * perTileScale * tileScale + "px"
+        tile.style.height = 256 * perTileScale * tileScale + "px"
         return tile
     })
 }
