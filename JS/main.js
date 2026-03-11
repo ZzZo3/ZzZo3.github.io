@@ -73,11 +73,7 @@ window.onresize = () => {
 
 //TRANSLATE ISOMETRIC COORDINATES TO SCREEN COORDINATES (from top left, where +y is down and +x is right)
 
-function Iso2Reg(xi, yi, pts) {
-    if (pts==undefined) {
-        pts = 1
-    }
-    console.log('\"Iso2Reg()\" began, pts: '+pts)
+function Iso2Reg(xi, yi) {
     console.log('   initial: [' + xi + ',' + yi + ']')
     let xf = 0
     let yf = 0
@@ -289,7 +285,7 @@ function REND(CLASS,ZED) {
         let xi = parseInt(tile.classList[1].slice(1))
         let yi = parseInt(tile.classList[2].slice(1))
         console.log('   IsometricTile:')
-        let offsets = Iso2Reg(xi, yi, perTileScale)
+        let offsets = Iso2Reg(xi, yi)
         let xf = offsets[0] + "px"
         let yf = offsets[1]
         yf += off * tileScale
