@@ -16,7 +16,7 @@ stepButton.addEventListener('click', (event)=>{
 })
 
 function notate(numI,round) {
-    if (round==NaN) {
+    if (round===undefined) {
         round = 1
     }
     numF = Math.round(numI / round) * round
