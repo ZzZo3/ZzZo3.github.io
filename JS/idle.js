@@ -15,17 +15,16 @@ stepButton.addEventListener('click', (event)=>{
 })
 
 function updateN() {
-    Math.round(n)
     if (n >= N) {
         n = N
-        nDisplay.innerText = '['+n+']'
+        nDisplay.innerText = '['+Math.round(n)+']'
         document.querySelectorAll('.pageTitle').forEach((element)=>{
-            element.textContent = '(ZzzZz) idling... ['+n+']'
+            element.textContent = '(ZzzZz) idling... ['+Math.round(n)+']'
         })
     } else {
-        nDisplay.innerText = '['+n+']'
+        nDisplay.innerText = '['+Math.round(n)+']'
         document.querySelectorAll('.pageTitle').forEach((element)=>{
-            element.textContent = '(ZzzZz) idling... ['+n+']'
+            element.textContent = '(ZzzZz) idling... ['+Math.round(n)+']'
         })
     }
 }
