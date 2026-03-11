@@ -23,7 +23,7 @@ function notate(numI,round) {
     numF = Math.round(numI / round) * round
     if (numF < 1000000) {
         console.log('notate(): not large enough to justify')
-        return numF
+        return String(numF)
     }
     let digits = String(numF).split('.')[0].length
     console.log('digits: '+digits)
