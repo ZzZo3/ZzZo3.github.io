@@ -8,7 +8,7 @@ const max = 1*(10^30)
 var n = 0
 var nPerSecond = 0
 // TICKER
-let ticker = setInterval(tick, 10)
+var ticker = setInterval(tick, 10)
 var tickMs = 10
 
 stepButton.addEventListener('click', (event)=>{
@@ -21,7 +21,7 @@ function notate(numI,round) {
         round = 1
     }
     numF = Math.round(numI / round) * round
-    if (numF < 999999) {
+    if (numF < 1000000) {
         console.log('notate(): not large enough to justify')
         return numF
     }
