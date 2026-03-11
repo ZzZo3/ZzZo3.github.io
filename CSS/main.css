@@ -18,9 +18,6 @@
     width: 64px;
     height: 256px;
 }
-.isometricBase {
-    border: 1px solid white;
-}
 #SchematicTile { /*all clones*/
     pointer-events: none;
 }
