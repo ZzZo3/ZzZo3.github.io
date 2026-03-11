@@ -16,16 +16,15 @@ stepButton.addEventListener('click', (event)=>{
     updateN()
 })
 
-function notate(numI,round) {
+function notate(num,round) {
     if (round===undefined) {
         round = 1
     }
-    var numF = Math.round(numI / round) * round
+    var numF = Math.round(num / round) * round
     if (numF < 1000000) {
         return String(numF)
     }
     let digits = String(numF).split('.')[0].length - 1
-    numF = parseFloat(String(numF).slice(0, -(String(numF).length - 4)))
     let numS = (numF / 10**digits)+'ᴇ'+(digits)
     return numS
 }
