@@ -24,8 +24,8 @@ function notate(numI,round) {
         return numF
     }
     let digits = String(numF).split('.')[0].length
-    numF /= digits
-    return numF+'ᴇ'+(digits-1)
+    console.log('digits: '+digits)
+    return (numF / digits)+'ᴇ'+(digits-1)
 }
 
 function updateN() {
