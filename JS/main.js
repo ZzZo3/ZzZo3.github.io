@@ -82,10 +82,14 @@ function Iso2Reg(xi, yi, pts) {
     let xf = 0
     let yf = 0
     // xi <- iterations (+leftward, -rightward)
-    yf -= (11*pts + mountainOffset / isoSpread) * isoSpread * tileScale * xi
+    var pto = 0
+    if (pts>1) {
+        pto = 256*(pts-1)
+    }
+    yf -= (11*pts + pto + mountainOffset / isoSpread) * isoSpread * tileScale * xi
     xf += 32 * tileScale * isoSpread * xi
     // yi <- iterations (+downward, -upward)
-    yf += (11*pts + mountainOffset / isoSpread) * isoSpread * tileScale * yi
+    yf += (11*pts + pto + mountainOffset / isoSpread) * isoSpread * tileScale * yi
     xf += 32 * tileScale * isoSpread * yi
     console.log('   final: [' + xf + ',' + yf + ']')
     return [xf, yf]
@@ -262,7 +266,7 @@ function renderIsoWindow(offsets) {
     let winOffY = windowDimensions[1] / 2
     console.log('\"renderIsoWindow()\" began')
     isometricContainer.style.left = winOffX - (32 * tileScale) + offsets[0] + 'px'
-    isometricContainer.style.top = winOffY - (245 * tileScale) + offsets[1] + 'px'
+    isometricContainer.style.top = winOffY - ((256-11) * tileScale) + offsets[1] + 'px'
     console.log('> \"renderIsoWindow()\" finished')
 }
 function renderIsometric() {
