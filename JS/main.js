@@ -279,13 +279,13 @@ function renderIsometric() {
 }
 function REND(CLASS,ZED) {
     CLASS.forEach((tile) => {
-        let off = 0
+        let offY = 0
         var perTileScale = 1
         if (tile.hasAttribute('data-scale')) {
             perTileScale = parseInt(tile.getAttribute('data-scale'))
         }
         if (tile.hasAttribute('data-offY')) {
-            off = parseInt(tile.getAttribute('data-offY'))
+            offY = parseInt(tile.getAttribute('data-offY'))
         }
         let xi = parseInt(tile.classList[1].slice(1))
         let yi = parseInt(tile.classList[2].slice(1))
@@ -293,7 +293,7 @@ function REND(CLASS,ZED) {
         let offsets = Iso2Reg(xi, yi)
         let xf = offsets[0] + "px"
         let yf = offsets[1]
-        yf += off * tileScale
+        yf += offY * tileScale
         tile.style.left = xf
         tile.style.top = (yf - (256-11)*(perTileScale-1)*tileScale) + "px"
         tile.style.zIndex = yi - xi + ZED
