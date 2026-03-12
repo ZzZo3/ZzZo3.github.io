@@ -8,12 +8,15 @@ const consoleLogFunc = console.log
 const spreadInput = document.getElementById("spreadInput")
 const scaleInput = document.getElementById("scaleInput")
 const mountainInput = document.getElementById("mountainInput")
+const scrollInput = document.getElementById("scrollInput")
 const SpLabel = document.getElementById("SpLabel")
 const ScLabel = document.getElementById("ScLabel")
 const MnLabel = document.getElementById("MnLabel")
+const ScrollLabel = document.getElementById("ScrollLabel")
 const resetSpreadButton = document.getElementById("resetSpreadButton")
 const resetScaleButton = document.getElementById("resetScaleButton")
 const resetMountainButton = document.getElementById("resetMountainButton")
+const resetScrollButton = document.getElementById("resetScrollButton")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const originButton = document.getElementById("originButton")
@@ -28,10 +31,12 @@ const posDisplay = document.getElementById('posDisplay')
 let isoSpread = 1.0
 let tileScale = 1.0
 let mountainOffset = 0
+let scrollOffset = 0
 //DEFAULT VALUES
 const spreadDefault = 1.0
 const scaleDefault = 2.0
 const hillDefault = 0
+const scrollDefault = 0
 //POSITION / TILE DATA
 let POSITION = [0,0]
 let POSITIONprevious = [0,0]
@@ -258,7 +263,7 @@ function renderIsoWindow(offsets) {
     let winOffY = windowDimensions[1] / 2
     console.log('\"renderIsoWindow()\" began')
     isometricContainer.style.left = winOffX - (32 * tileScale) + offsets[0] + 'px'
-    isometricContainer.style.top = winOffY - ((256-11) * tileScale) + offsets[1] + 'px'
+    isometricContainer.style.top = winOffY - ((256-11+scrollOffset) * tileScale) + offsets[1] + 'px'
     console.log('> \"renderIsoWindow()\" finished')
 }
 function renderIsometric() {
@@ -333,6 +338,16 @@ function mountainInputFunc() {
     renderIsometric()
     console.log('> \"mountainInputFunc()\" finished')
 }
+scrollInput.addEventListener('input',scrollInputFunc)
+function scrollInputFunc() {
+    console.log('\"scrollInputFunc()\" began')
+    scrollOffset = parseInt(scrollInput.value)
+    scrollOffset = Number.isNaN(scrollOffset) ? 0 : scrollOffset
+    MnLabel.innerText = 'Scroll: ' + scrollOffset
+    sessionStorage.setItem('Scroll',scrollOffset)
+    renderIsometric()
+    console.log('> \"scrollInputFunc()\" finished')
+}
 gridXInput.addEventListener('input',gridXFunc)
 function gridXFunc() {
     console.log('\"gridXFunc()\" began')
@@ -381,6 +396,15 @@ function resetMountain() {
     MnLabel.innerText = 'Hill: ' + mountainOffset
     sessionStorage.setItem('Hill',mountainOffset)
     renderIsometric()
+}
+resetMountainButton.addEventListener('click',resetScroll)
+function resetMountain() {
+    console.log('scrollOffset -> ' + scrollDefault)
+    scrollOffset = scrollDefault
+    scrollInput.value = scrollDefault
+    MnLabel.innerText = 'Scroll: ' + scrollOffset
+    sessionStorage.setItem('Scroll',scrollOffset)
+    renderIsoWindow()
 }
 
 
@@ -461,6 +485,16 @@ function loadFunc() {
         mountainOffset = hillDefault
         mountainInput.value = mountainOffset
         MnLabel.innerText = 'Hill: ' + mountainOffset
+    }
+    if (sessionStorage.getItem('Scroll') != null) {       //SCROLL
+        let storedScroll = sessionStorage.getItem('Scroll')
+        scrollOffset = parseFloat(storedScroll)
+        scrollInput.value = storedScroll
+        ScrollLabel.innerText = 'Scroll: ' + scrollOffset
+    } else {
+        scrollOffset = scrollDefault
+        scrollInput.value = scrollOffset
+        ScrollLabel.innerText = 'Scroll: ' + scrollOffset
     }
     renderIsometric()                                   //RENDER ISOMETRIC
     if (sessionStorage.getItem('POSITION') != null) {   //POSITION
