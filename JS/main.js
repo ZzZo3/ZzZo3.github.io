@@ -71,7 +71,9 @@ function setBigBases() {
         if (pts==1) {
             return
         }
-        let coords = [tile.classList[1],tile.classList[2]]
+        let xCoord = parseInt(tile.classList[1].split('x').join())
+        let yCoord = parseInt(tile.classList[2].split('y').join())
+        let coords = [xCoord,yCoord]
         BIGBASES.push(new BIGBASE(coords, pts))
     })
     console.log('BIGBASES:')
