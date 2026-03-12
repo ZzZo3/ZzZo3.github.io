@@ -44,7 +44,7 @@ let canMove = true
 let link = ''
 
 // BIG BASES
-var BIGBASES = []
+let BIGBASES = []
 class BIGBASE {
     constructor(coords, scale) {
         this.coords = coords
