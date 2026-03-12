@@ -191,18 +191,17 @@ function walkRight() {
 }
 function move(to) {
     BIGBASES.forEach((obj)=>{
+        if (JSON.stringify(obj.coords)==JSON.stringify(POSIITON)) {
+            if (to[0] > POSIITON[0]) {
+                to = [(to[0] + obj.scale - 1),to[1]]
+            }
+            if (to[1] > POSIITON[1]) {
+                to = [to[0],(to[1] + obj.scale - 1)]
+            }
+        }
         obj.redirections.forEach((coordPair)=>{
             if (JSON.stringify(coordPair)==JSON.stringify(to)) {
-                if (JSON.stringify(obj.coords)==JSON.stringify(POSIITON)) {
-                    if (to[0] > POSIITON[0]) {
-                        to = [(to[0] + obj.scale - 1),to[1]]
-                    }
-                    if (to[1] > POSIITON[1]) {
-                        to = [to[0],(to[1] + obj.scale - 1)]
-                    }
-                } else {
-                    to = obj.coords
-                }
+                to = obj.coords
             }
         })
     })
