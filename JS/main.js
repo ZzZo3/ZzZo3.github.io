@@ -117,7 +117,6 @@ window.onresize = () => {
 //TRANSLATE ISOMETRIC COORDINATES TO SCREEN COORDINATES (from top left, where +y is down and +x is right)
 
 function Iso2Reg(xi, yi) {
-    console.log('   initial: [' + xi + ',' + yi + ']')
     let xf = 0
     let yf = 0
     // xi <- iterations (+leftward, -rightward)
@@ -126,7 +125,6 @@ function Iso2Reg(xi, yi) {
     // yi <- iterations (+downward, -upward)
     yf += (11 + mountainOffset / isoSpread) * isoSpread * tileScale * yi
     xf += 32 * tileScale * isoSpread * yi
-    console.log('   final: [' + xf + ',' + yf + ']')
     return [xf, yf]
 }
 
