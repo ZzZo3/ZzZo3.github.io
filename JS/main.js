@@ -208,7 +208,7 @@ function renderSchematic() {
         for (let yi = 0; yi < Ydim; yi++) {
             let invalidSchemCoord = false
             BIGBASES.forEach((obj)=>{
-                console.log('redirections: '+redirections)
+                console.log('redirections: '+obj.redirections)
                 if (obj.redirections.includes([xi,yi])) {
                     invalidSchemCoord = true
                 }
