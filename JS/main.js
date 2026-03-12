@@ -62,6 +62,7 @@ class BIGBASE {
     }
 }
 function setBigBases() {
+    console.log('\"setBigBases()\" began')
     document.querySelectorAll(".isometricBase").forEach((tile)=>{
         if (!tile.hasAttribute('data-scale')) {
             return
