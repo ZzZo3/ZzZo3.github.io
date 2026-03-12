@@ -61,17 +61,19 @@ class BIGBASE {
         this.redirections.push(potentials.filter((coordPair)=>coordPair!=this.coords))   
     }
 }
-document.querySelectorAll(".isometricBase").forEach((tile)=>{
-    if (!tile.hasAttribute('data-scale')) {
-        return
-    }
-    let pts = parseInt(tile.getAttribute('data-scale'))
-    if (pts==1) {
-        return
-    }
-    let coords = [tile.classList[1],tile.classList[2]]
-    BIGBASES.push(new BIGBASE(coords, pts))
-})
+function setBigBases() {
+    document.querySelectorAll(".isometricBase").forEach((tile)=>{
+        if (!tile.hasAttribute('data-scale')) {
+            return
+        }
+        let pts = parseInt(tile.getAttribute('data-scale'))
+        if (pts==1) {
+            return
+        }
+        let coords = [tile.classList[1],tile.classList[2]]
+        BIGBASES.push(new BIGBASE(coords, pts))
+    })
+}
 
 
 //BASE
@@ -534,6 +536,7 @@ function loadFunc() {
         scrollInput.value = scrollOffset
         ScrollLabel.innerText = 'Scroll: ' + scrollOffset
     }
+    setBigBases()                                       //SET BIG BASES
     renderIsometric()                                   //RENDER ISOMETRIC
     if (sessionStorage.getItem('POSITION') != null) {   //POSITION
         console.log('stored POSITION detected')
