@@ -171,25 +171,33 @@ function origin() {
 }
 function walkUp() {
     console.log('\"walkUp()\" called')
-    POSITION[1] -= 1
-    renderSelector()
-    savePosition()
+    let to = [POSITION[0],(POSITION[1] - 1)]
+    move(to)
 }
 function walkDown() {
     console.log('\"walkDown()\" called')
-    POSITION[1] += 1
-    renderSelector()
-    savePosition()
+    let to = [POSITION[0],(POSITION[1] + 1)]
+    move(to)
 }
 function walkLeft() {
     console.log('\"walkLeft()\" called')
-    POSITION[0] += 1
-    renderSelector()
-    savePosition()
+    let to = [(POSITION[0] + 1),POSITION[1]]
+    move(to)
 }
 function walkRight() {
     console.log('\"walkRight()\" called')
-    POSITION[0] -= 1
+    let to = [(POSITION[0] - 1),POSITION[1]]
+    move(to)
+}
+function move(to) {
+    BIGBASES.forEach((obj)=>{
+        obj.redirections.forEach((coordPair)=>{
+            if (JSON.stringify(coordPair)==JSON.stringify(to)) {
+                to = obj.coords
+            }
+        })
+    })
+    POSITION = to
     renderSelector()
     savePosition()
 }
@@ -211,7 +219,6 @@ function renderSchematic() {
         for (let yi = 0; yi < Ydim; yi++) {
             let invalidSchemCoord = false
             BIGBASES.forEach((obj)=>{
-                console.log('redirections: '+obj.redirections)
                 obj.redirections.forEach((coordPair)=>{
                     if (JSON.stringify(coordPair)==JSON.stringify([xi,yi])) {
                         invalidSchemCoord = true
