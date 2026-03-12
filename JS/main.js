@@ -397,8 +397,8 @@ function resetMountain() {
     sessionStorage.setItem('Hill',mountainOffset)
     renderIsometric()
 }
-resetMountainButton.addEventListener('click',resetScroll)
-function resetMountain() {
+resetScrollButton.addEventListener('click',resetScroll)
+function resetScroll() {
     console.log('scrollOffset -> ' + scrollDefault)
     scrollOffset = scrollDefault
     scrollInput.value = scrollDefault
