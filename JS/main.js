@@ -209,9 +209,11 @@ function renderSchematic() {
             let invalidSchemCoord = false
             BIGBASES.forEach((obj)=>{
                 console.log('redirections: '+obj.redirections)
-                if (obj.redirections.includes([xi,yi])) {
-                    invalidSchemCoord = true
-                }
+                obj.redirections.forEach((coordPair)=>{
+                    if (JSON.stringify(coordPair)==JSON.stringify([xi,yi])) {
+                        invalidSchemCoord = true
+                    }
+                })
             })
             if (!invalidSchemCoord) {
                 let offsets = Iso2Reg(xi, yi)
