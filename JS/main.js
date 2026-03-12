@@ -73,8 +73,8 @@ function setBigBases() {
         let coords = [tile.classList[1],tile.classList[2]]
         BIGBASES.push(new BIGBASE(coords, pts))
     })
-    console.log(BIGBASES)
 }
+function viewBIGS() {console.log(BIGBASES)}
 
 
 //BASE
