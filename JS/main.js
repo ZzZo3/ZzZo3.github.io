@@ -171,7 +171,7 @@ function renderSchematic() {
     document.querySelectorAll(".isometricBase").forEach((tile)=>{
         let x = parseInt(tile.classList[1].slice(1))
         let y = parseInt(tile.classList[2].slice(1))
-        viableSchematicCoordinates.push([x,y]) 
+        viableSchematicCoordinates.push([x,y])
     })
     let totalSchemTiles = Xdim * Ydim
     console.log('   schemDimensions: (' + Xdim + ',' + Ydim + ')')
