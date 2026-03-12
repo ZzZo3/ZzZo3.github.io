@@ -284,8 +284,8 @@ function REND(CLASS,ZED) {
         if (tile.hasAttribute('data-scale')) {
             perTileScale = parseInt(tile.getAttribute('data-scale'))
         }
-        if (tile.classList.length == 4) {
-            off = parseInt(tile.classList[3].slice(3))
+        if (tile.hasAttribute('data-offY')) {
+            off = parseInt(tile.getAttribute('data-offY'))
         }
         let xi = parseInt(tile.classList[1].slice(1))
         let yi = parseInt(tile.classList[2].slice(1))
