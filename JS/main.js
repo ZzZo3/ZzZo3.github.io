@@ -50,6 +50,7 @@ class BIGBASE {
         this.coords = coords
         this.scale = scale
         this.redirections = []
+        this.setRedirns()
     }
     setRedirns() {
         let potentials = []
@@ -76,7 +77,6 @@ function setBigBases() {
         let coords = [xCoord,yCoord]
         BIGBASES.push(new BIGBASE(coords, pts))
     })
-    BIGBASES.forEach((obj)=>obj.setRedirns())
     console.log('BIGBASES:')
     console.log(BIGBASES)
 }
