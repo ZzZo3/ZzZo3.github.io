@@ -54,8 +54,8 @@ class BIGBASE {
     }
     setRedirns() {
         let potentials = []
-        for (let xStep = this.coords[0]; xStep < (this.coords[0] + pts); xStep++) {
-            for (let yStep = this.coords[1]; yStep < (this.coords[1] + pts); yStep++) {
+        for (let xStep = this.coords[0]; xStep < (this.coords[0] + this.scale); xStep++) {
+            for (let yStep = this.coords[1]; yStep < (this.coords[1] + this.scale); yStep++) {
                 potentials.push([xStep,yStep])
             }
         }
