@@ -209,8 +209,8 @@ function renderSchematic() {
             let invalidSchemCoord = false
             BIGBASES.forEach((obj)=>{
                 console.log('redirections: '+obj.redirections)
+                alert('redirections: '+obj.redirections)
                 obj.redirections.forEach((coordPair)=>{
-                    alert('coordPair: '+JSON.stringify(coordPair)+', [xi,yi]: '+JSON.stringify([xi,yi]))
                     if (JSON.stringify(coordPair)==JSON.stringify([xi,yi])) {
                         invalidSchemCoord = true
                     }
