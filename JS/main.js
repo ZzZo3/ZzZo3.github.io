@@ -263,7 +263,7 @@ function renderIsoWindow(offsets) {
     let winOffY = windowDimensions[1] / 2
     console.log('\"renderIsoWindow()\" began')
     isometricContainer.style.left = winOffX - (32 * tileScale) + offsets[0] + 'px'
-    isometricContainer.style.top = winOffY - ((256-11+scrollOffset) * tileScale) + offsets[1] + 'px'
+    isometricContainer.style.top = winOffY - ((256-11) * tileScale) + offsets[1] + scrollOffset + 'px'
     console.log('> \"renderIsoWindow()\" finished')
 }
 function renderIsometric() {
