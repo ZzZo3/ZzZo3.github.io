@@ -404,7 +404,7 @@ function resetScroll() {
     scrollInput.value = scrollDefault
     ScrollLabel.innerText = 'Scroll: ' + scrollOffset
     sessionStorage.setItem('Scroll',scrollOffset)
-    renderIsoWindow()
+    renderIsometric()
 }
 
 
