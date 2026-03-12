@@ -76,6 +76,7 @@ function setBigBases() {
         let coords = [xCoord,yCoord]
         BIGBASES.push(new BIGBASE(coords, pts))
     })
+    BIGBASES.forEach((obj)=>obj.setRedirns())
     console.log('BIGBASES:')
     console.log(BIGBASES)
 }
