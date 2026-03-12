@@ -173,15 +173,13 @@ function renderSchematic() {
             let pts = parseInt(tile.getAttribute('data-scale'))
             let bigTileX = parseInt(tile.classList[1].slice(1))
             let bigTileY = parseInt(tile.classList[2].slice(1))
-            let xBound = bigTileX + (pts-1)
-            let yBound = bigTileY + (pts-1)
             let potentialInviableSchematicCoordinates = []
-            for (let xStep=bigTileX;xStep<=xBound;xStep++) {
-                for (let yStep=bigTileY;yStep<=yBound;yStep++) {
+            for (let xStep = bigTileX; xStep < (bigTileX + pts); xStep++) {
+                for (let yStep = bigTileY; yStep < (bigTileY + pts); yStep++) {
                     potentialInviableSchematicCoordinates.push([xStep,yStep])
                 }
             }
-            inviableSchematicCoordinates.push(potentialInviableSchematicCoordinates.filter((coordPair)=>coordPair==[bigTileX,bigTileY]))
+            inviableSchematicCoordinates.push(potentialInviableSchematicCoordinates.filter((coordPair)=>coordPair!=[bigTileX,bigTileY]))
         }
     })
     let totalSchemTiles = Xdim * Ydim
