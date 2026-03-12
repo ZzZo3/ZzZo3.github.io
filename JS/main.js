@@ -190,14 +190,12 @@ function walkRight() {
     move(to)
 }
 function move(to) {
-    alert('POSi: '+POSITION)
-    alert('to: '+to)
     BIGBASES.forEach((obj)=>{
-        if (JSON.stringify(obj.coords)==JSON.stringify(POSIITON)) {
-            if (to[0] > POSIITON[0]) {
+        if (JSON.stringify(obj.coords)==JSON.stringify(POSITION)) {
+            if (to[0] > POSITION[0]) {
                 to = [(to[0] + obj.scale - 1),to[1]]
             }
-            if (to[1] > POSIITON[1]) {
+            if (to[1] > POSITION[1]) {
                 to = [to[0],(to[1] + obj.scale - 1)]
             }
         }
@@ -208,7 +206,6 @@ function move(to) {
         })
     })
     POSITION = to
-    alert('POSf: '+POSITION)
     renderSelector()
     savePosition()
 }
