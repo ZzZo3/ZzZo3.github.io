@@ -43,6 +43,36 @@ let POSITIONprevious = [0,0]
 let canMove = true
 let link = ''
 
+// BIG BASES
+let BIGBASES = []
+class BIGBASE {
+    constructor(coords, scale) {
+        this.coords = coords
+        this.scale = scale
+        this.redirections = []
+    }
+    setRedirns() {
+        let potentials = []
+        for (let xStep = this.coords[0]; xStep < (this.coords[0] + pts); xStep++) {
+            for (let yStep = this.coords[1]; yStep < (this.coords[1] + pts); yStep++) {
+                potentials.push([xStep,yStep])
+            }
+        }
+        this.redirections.push(potentials.filter((coordPair)=>coordPair!=this.coords))   
+    }
+}
+document.querySelectorAll(".isometricBase").forEach((tile)=>{
+    if (!tile.hasAttribute('data-scale')) {
+        return
+    }
+    let pts = parseInt(tile.getAttribute('data-scale'))
+    if (pts==1) {
+        return
+    }
+    let coords = [tile.classList[1],tile.classList[2]]
+    BIGBASES.push(new BIGBASE(coords, pts))
+})
+
 
 //BASE
 //KEY LISTENER
@@ -167,26 +197,10 @@ function renderSchematic() {
     let SchematicTile = document.getElementById('SCHEMATIC')
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
-    let inviableSchematicCoordinates = []
-    document.querySelectorAll(".isometricBase").forEach((tile)=>{
-        if (tile.hasAttribute('data-scale')) {
-            let pts = parseInt(tile.getAttribute('data-scale'))
-            let bigTileX = parseInt(tile.classList[1].slice(1))
-            let bigTileY = parseInt(tile.classList[2].slice(1))
-            let potentialInviableSchematicCoordinates = []
-            for (let xStep = bigTileX; xStep < (bigTileX + pts); xStep++) {
-                for (let yStep = bigTileY; yStep < (bigTileY + pts); yStep++) {
-                    potentialInviableSchematicCoordinates.push([xStep,yStep])
-                }
-            }
-            inviableSchematicCoordinates.push(potentialInviableSchematicCoordinates.filter((coordPair)=>coordPair!=[bigTileX,bigTileY]))
-        }
-    })
-    alert('inviableSchematicCoordinates: '+inviableSchematicCoordinates)
     console.log('   schemDimensions: (' + Xdim + ',' + Ydim + ')')
     for (let xi = 0; xi < Xdim; xi++) {
         for (let yi = 0; yi < Ydim; yi++) {
-            if (!inviableSchematicCoordinates.includes([xi,yi])) {
+            if (true/*BIGBASES[] stuff*/) {
                 let offsets = Iso2Reg(xi, yi)
                 let schemTile = SchematicTile.cloneNode()
                 schemTile.classList.add('cloneSchemTile')
