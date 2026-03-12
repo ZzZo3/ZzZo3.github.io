@@ -170,7 +170,7 @@ function renderSchematic() {
     let inviableSchematicCoordinates = []
     document.querySelectorAll(".isometricBase").forEach((tile)=>{
         if (tile.hasAttribute('data-scale')) {
-            let pts = tile.getAttribute('data-scale')
+            let pts = parseInt(tile.getAttribute('data-scale'))
             let bigTileX = parseInt(tile.classList[1].slice(1))
             let bigTileY = parseInt(tile.classList[2].slice(1))
             let xBound = bigTileX + (pts-1)
