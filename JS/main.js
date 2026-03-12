@@ -343,7 +343,7 @@ function scrollInputFunc() {
     console.log('\"scrollInputFunc()\" began')
     scrollOffset = parseInt(scrollInput.value)
     scrollOffset = Number.isNaN(scrollOffset) ? 0 : scrollOffset
-    MnLabel.innerText = 'Scroll: ' + scrollOffset
+    ScrollLabel.innerText = 'Scroll: ' + scrollOffset
     sessionStorage.setItem('Scroll',scrollOffset)
     renderIsometric()
     console.log('> \"scrollInputFunc()\" finished')
@@ -402,7 +402,7 @@ function resetScroll() {
     console.log('scrollOffset -> ' + scrollDefault)
     scrollOffset = scrollDefault
     scrollInput.value = scrollDefault
-    MnLabel.innerText = 'Scroll: ' + scrollOffset
+    ScrollLabel.innerText = 'Scroll: ' + scrollOffset
     sessionStorage.setItem('Scroll',scrollOffset)
     renderIsoWindow()
 }
