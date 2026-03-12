@@ -193,7 +193,13 @@ function move(to) {
     BIGBASES.forEach((obj)=>{
         obj.redirections.forEach((coordPair)=>{
             if (JSON.stringify(coordPair)==JSON.stringify(to)) {
-                to = obj.coords
+                if (JSON.stringify(obj.coords)==JSON.stringify(POSIITON)) {
+                    if (to[0] > POSIITON[0]) {
+                        to = [(to[0] + 1),to[1]]
+                    }
+                } else {
+                    to = obj.coords
+                }
             }
         })
     })
