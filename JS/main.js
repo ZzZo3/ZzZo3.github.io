@@ -182,7 +182,7 @@ function renderSchematic() {
             inviableSchematicCoordinates.push(potentialInviableSchematicCoordinates.filter((coordPair)=>coordPair!=[bigTileX,bigTileY]))
         }
     })
-    let totalSchemTiles = Xdim * Ydim
+    alert('inviableSchematicCoordinates: '+inviableSchematicCoordinates)
     console.log('   schemDimensions: (' + Xdim + ',' + Ydim + ')')
     for (let xi = 0; xi < Xdim; xi++) {
         for (let yi = 0; yi < Ydim; yi++) {
