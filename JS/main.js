@@ -190,6 +190,7 @@ function walkRight() {
     move(to)
 }
 function move(to) {
+    alert('to: '+to)
     BIGBASES.forEach((obj)=>{
         if (JSON.stringify(obj.coords)==JSON.stringify(POSIITON)) {
             if (to[0] > POSIITON[0]) {
