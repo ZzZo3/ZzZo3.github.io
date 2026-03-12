@@ -200,7 +200,13 @@ function renderSchematic() {
     console.log('   schemDimensions: (' + Xdim + ',' + Ydim + ')')
     for (let xi = 0; xi < Xdim; xi++) {
         for (let yi = 0; yi < Ydim; yi++) {
-            if (true/*BIGBASES[] stuff*/) {
+            let invalidSchemCoord = false
+            BIGBASES.forEach((obj)=>{
+                if (obj.redirections.includes([xi,yi])) {
+                    invalidSchemCoord = true
+                }
+            })
+            if (!invalidSchemCoord) {
                 let offsets = Iso2Reg(xi, yi)
                 let schemTile = SchematicTile.cloneNode()
                 schemTile.classList.add('cloneSchemTile')
