@@ -59,7 +59,10 @@ class BIGBASE {
                 potentials.push([xStep,yStep])
             }
         }
-        this.redirections.push(potentials.filter((coordPair)=>coordPair!=this.coords))   
+        let invalidCoords = potentials.filter((coordPair)=>coordPair!=this.coords)
+        invalidCoords.forEach((pair)=>{
+            this.redirections.push(pair)
+        }) 
     }
 }
 function setBigBases() {
