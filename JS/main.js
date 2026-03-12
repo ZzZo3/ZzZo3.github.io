@@ -190,6 +190,7 @@ function walkRight() {
     move(to)
 }
 function move(to) {
+    alert('POSi: '+POSITION)
     alert('to: '+to)
     BIGBASES.forEach((obj)=>{
         if (JSON.stringify(obj.coords)==JSON.stringify(POSIITON)) {
@@ -207,6 +208,7 @@ function move(to) {
         })
     })
     POSITION = to
+    alert('POSf: '+POSITION)
     renderSelector()
     savePosition()
 }
