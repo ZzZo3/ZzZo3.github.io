@@ -167,22 +167,31 @@ function renderSchematic() {
     let SchematicTile = document.getElementById('SCHEMATIC')
     let Xdim = SchematicTile.getAttribute("data-Xdim")
     let Ydim = SchematicTile.getAttribute("data-Ydim")
+    let viableSchematicCoordinates = []
+    document.querySelectorAll(".isometricBase").forEach((tile)=>{
+        let x = parseInt(tile.classList[1].slice(1))
+        let y = parseInt(tile.classList[2].slice(1))
+        viableSchematicCoordinates.push([x,y])
+    })
     let totalSchemTiles = Xdim * Ydim
     console.log('   schemDimensions: (' + Xdim + ',' + Ydim + ')')
-    console.log('   totalSchemTiles: ' + totalSchemTiles)
     for (let xi = 0; xi < Xdim; xi++) {
         for (let yi = 0; yi < Ydim; yi++) {
+            if (viableSchematicCoordinates.includes([xi,yi])) {
+                let offsets = Iso2Reg(xi, yi)
+                let schemTile = SchematicTile.cloneNode()
+                schemTile.classList.add('cloneSchemTile')
+                schemTile.style.zIndex = yi - xi    // SCHEMATIC TILE AT ORIGIN HAS z: 0
+                schemTile.style.left = offsets[0] + "px"
+                schemTile.style.top = offsets[1] + "px"
+                schemTile.style.width = 64 * tileScale + "px"
+                schemTile.style.height = 256 * tileScale + "px"
+                schemTile.style.visibility = "visible"
+                isometricContainer.appendChild(schemTile)
+            } else {
+                console.log('   non-viable schematic tile at[' + xi + ',' + yi + ']')
+            }
             console.log('   schematic cloned at [' + xi + ',' + yi + ']')
-            let offsets = Iso2Reg(xi, yi)
-            let schemTile = SchematicTile.cloneNode()
-            schemTile.classList.add('cloneSchemTile')
-            schemTile.style.zIndex = yi - xi    // SCHEMATIC TILE AT ORIGIN HAS z: 0
-            schemTile.style.left = offsets[0] + "px"
-            schemTile.style.top = offsets[1] + "px"
-            schemTile.style.width = 64 * tileScale + "px"
-            schemTile.style.height = 256 * tileScale + "px"
-            schemTile.style.visibility = "visible"
-            isometricContainer.appendChild(schemTile)
         }
     }
     console.log('> \"renderSchematic()\" finished')
@@ -268,13 +277,13 @@ function renderIsoWindow(offsets) {
 }
 function renderIsometric() {
     console.log('\"renderIsometric()\" began')
-    renderSchematic()
-    renderSelector()
-    renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
     var isometricTilesQuery = document.querySelectorAll(".isometricTile")
     var isometricBasesQuery = document.querySelectorAll(".isometricBase")
     REND(isometricTilesQuery,3)     // TILE AT ORIGIN HAS z: 3
     REND(isometricBasesQuery,1)     // BASE AT ORIGIN HAS z: 1
+    renderSchematic()
+    renderSelector()
+    renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
     console.log('> \"renderIsometric()\" finished')
 }
 function REND(CLASS,ZED) {
