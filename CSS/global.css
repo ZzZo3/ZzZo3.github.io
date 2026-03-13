@@ -62,7 +62,10 @@ html, body {
     margin-left: 0px;
     border-radius: 5px;
     border: 2px solid #6011AF;
-    background-color: #8239CA;
+    background-image: url("../assets/backgrounds/starryNightFSmooth.gif");
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    background-position: top left;
     color: rgb(255, 216, 132);
     text-decoration: none;
     font-family:'Courier New', Courier, monospace;
