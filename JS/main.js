@@ -349,9 +349,7 @@ function REND(CLASS,ZED) {
         if (tile.hasAttribute('data-scale')) {
             perTileScale = parseInt(tile.getAttribute('data-scale'))
         }
-        if (tile.hasAttribute('data-offY')) {
-            offY = parseInt(tile.getAttribute('data-offY'))
-        }
+        if (tile.hasAttribute('data-offY')) {offY = parseInt(tile.getAttribute('data-offY'))}
         let xi = parseInt(tile.classList[1].slice(1))
         let yi = parseInt(tile.classList[2].slice(1))
         console.log('   IsometricTile:')
