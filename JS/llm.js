@@ -4,7 +4,7 @@ const outputBox = document.getElementById("output")
 //SEED LISTS & FORMATTING
 const seedBlacklist = [" ",".","","?","!",","]
 let seedWhitelist = []
-const capitalizedWords = ['i','macbeth','banquo','hecate','duncan','malcolm','donalbain','macduff','lennox','ross','menteith','agnus','caithness','fleance','siward','seyton']
+const capitalizedWords = ['i','lord','god','macbeth','banquo','hecate','duncan','malcolm','donalbain','macduff','lennox','ross','menteith','agnus','caithness','fleance','siward','seyton']
 const punctuation = [",",";",":",".","!","?"]
 const puncTerminating = [".","!","?"]
 
