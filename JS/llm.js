@@ -204,8 +204,9 @@ function write(inWord) {
 
 let seedBlacklist = [" ",".","","?","!",","]
 
+let outputText = ""
 function run(count) {
-    let outputText = ""
+    outputText = ""
     for (let i=0; i<count; i++) {
       let seed = ""
       while (seedBlacklist.includes(seed)) {
