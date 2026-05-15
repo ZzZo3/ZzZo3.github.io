@@ -1,8 +1,10 @@
 //BASE
+const mainBody = document.getElementById("mainBody")
 const outputBox = document.getElementById("output")
+let outputText = ""
 
 //SEED LISTS & FORMATTING
-const seedBlacklist = [" ",".","","?","!",","]
+const seedBlacklist = [" ",""]
 let seedWhitelist = []
 const capitalizedWords = ['i','lord','caesar','god','macbeth','banquo','hecate','duncan','malcolm','donalbain','macduff','lennox','ross','menteith','agnus','caithness','fleance','siward','seyton']
 const punctuation = [",",";",":",".","!","?","[","]","(",")","{","}","<",">","/","\`","~","\'","\"","|","-","—"]
@@ -4096,8 +4098,6 @@ function eatData(input) {
   }
 }
 
-eatData(data)
-
 function follow(inWord) {
   var index = 0
   let foundInWord = false
@@ -4163,8 +4163,9 @@ function format(text) {
   return text
 }
 
-
-let outputText = ""
+for (let i=0; i<punctuation.length; i++) {
+  seedBlacklist.push(punctuation[i])
+}
 function run(count) {
     outputText = ""
     for (let i=0; i<count; i++) {
@@ -4180,7 +4181,14 @@ function run(count) {
 }
 
 function updateOutput() {
-  console.log("seedWhitelist:",seedWhitelist)
   run(3)
   outputBox.innerHTML = outputText
+}
+
+//STUFF THAT RUNS ON LOAD
+
+mainBody.addEventListener('load',loadFunc())
+function loadFunc() {
+  eatData(data)
+  console.log("seedWhitelist:",seedWhitelist)
 }
