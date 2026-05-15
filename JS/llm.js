@@ -4163,19 +4163,17 @@ function format(text) {
   return text
 }
 
-for (let i=0; i<punctuation.length; i++) {
-  seedBlacklist.push(punctuation[i])
-}
+
 function run(count) {
     outputText = ""
     for (let i=0; i<count; i++) {
       let seed = ""
-      while (seedBlacklist.includes(seed)) {
+      while (seedBlacklist.includes(seed)||punctuation.includes(seed)) {
         seed = seedWhitelist[Math.floor(Math.random()*seedWhitelist.length)]
       }
       newWrite = write(seed)
       newForm = format(newWrite)
-      console.log(i+1,newWrite,newForm)
+      console.log(i+1,"seed: \"",seed,"\", write: \"",newWrite,"\", format: \"",newForm,"\"")
       outputText += "<br>"+(i+1)+"  "+newForm
     }
 }
