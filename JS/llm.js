@@ -673,12 +673,12 @@ function write(inWord) {
 }
 
 function format(text) {
-  text.split(" i ").join(" I ")
+  text = text.split(" i ").join(" I ")
   text = text.split(" .").join(".")
   text = text.split(" !").join("!")
   text = text.split(" ?").join("?")
   text = text.split(" ,").join(",")
-  text.charAt(0).toUpperCase() + text.slice(1)
+  text = text.charAt(0).toUpperCase() + text.slice(1)
   return text
 }
 
