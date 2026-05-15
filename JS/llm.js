@@ -226,8 +226,7 @@ function run(count) {
 }
 
 function updateOutput() {
+  console.log("seedWhitelist:",seedWhitelist)
   run(3)
   outputBox.innerHTML = outputText
 }
-
-console.log("seedWhitelist:",seedWhitelist)
