@@ -1,5 +1,11 @@
+//BASE
 const outputBox = document.getElementById("output")
 
+//SEED LISTS
+let seedBlacklist = [" ",".","","?","!",","]
+let seedWhitelist = []
+
+//CLASSES
 class Word {
     constructor(name, nexts) {
         this.name = name
@@ -7,8 +13,11 @@ class Word {
     }
 }
 
-/*let data = "I have a lot of fish . I am a fish . I was a basket of fish . I will be a fish . a fish is a swimming animal . swimming is the act of moving through water . fish swim through water . I eat fish . I enjoy the taste of a fish . a fish would taste quite good . quite a lot of fish swim through oceans . fish are in the oceans . a fish is in the oceans . I am in the oceans . water is wet . I swim . once upon a time there was a fish . the fish swam up the stream which led to the ocean . Hasan Piker is live on stream . Hasan is a communist . I am Hasan and I am on stream . in the stream there are fish . live fish swim and swam through water . I was not a fish and I was Hasan ."*/
-
+//DATA
+let words = []
+let nextWords = []
+const punctuation = [",",";",":",".","!","?"]
+const puncTerminating = [".","!","?"]
 let data = `Synopsis:
 
 Banquo, who has accompanied Duncan to Inverness, is uneasy because he too is tempted by the witches’ prophecies, although only in his dreams. Macbeth pretends to have forgotten them. Left alone by Banquo, Macbeth sees a gory dagger leading him to Duncan’s room. Hearing the bell rung by Lady Macbeth to signal completion of her preparations for Duncan’s death, Macbeth exits to kill the king.
@@ -106,10 +115,6 @@ Hear it not, Duncan, for it is a knell
 That summons thee to heaven or to hell.
 He exits.`
 
-let words = []
-let nextWords = []
-const punctuation = [",",";",":",".","!","?"]
-const puncTerminating = [".","!","?"]
 function eatData(input) {
   data = data.split("\n").join()
   data = data.split(".").join(" . ")
@@ -129,6 +134,9 @@ function eatData(input) {
     for (let j=0; j<data.length; j++) {
       if (data[j]==words[i] && j+1<data.length) {
         possibleNexts.push(data[j+1])
+        if (puncTerminating.includes(data[j])) {
+          seedWhitelist.push(data[j+1])
+        }
       }
     }
     let nextsRaw = []
@@ -202,7 +210,6 @@ function write(inWord) {
   return(text.join(" "))
 }
 
-let seedBlacklist = [" ",".","","?","!",","]
 
 let outputText = ""
 function run(count) {
@@ -222,3 +229,5 @@ function updateOutput() {
   run(3)
   outputBox.innerHTML = outputText
 }
+
+console.log("seedWhitelist:",seedWhitelist)
