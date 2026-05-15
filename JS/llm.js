@@ -211,6 +211,16 @@ function write(inWord) {
   return(text.join(" "))
 }
 
+function format(text) {
+  text.split(" i ").join(" I ")
+  text = text.split(" .").join(".")
+  text = text.split(" !").join("!")
+  text = text.split(" ?").join("?")
+  text = text.split(" ,").join(",")
+  text.charAt(0).toUpperCase() + text.slice(1)
+  return text
+}
+
 
 let outputText = ""
 function run(count) {
