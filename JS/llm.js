@@ -204,17 +204,20 @@ function write(inWord) {
 
 let seedBlacklist = [" ",".","","?","!",","]
 
-let outputText = ""
-for (let i=0; i<3; i++) {
-  let seed = ""
-  while (seedBlacklist.includes(seed)) {
-    seed = words[Math.floor(Math.random()*words.length)]
-  }
-  newWrite = write(seed)
-  console.log(i+1,newWrite)
-  outputText += (i+1)+"\n"+newWrite
+function run(count) {
+    let outputText = ""
+    for (let i=0; i<count; i++) {
+      let seed = ""
+      while (seedBlacklist.includes(seed)) {
+        seed = words[Math.floor(Math.random()*words.length)]
+      }
+      newWrite = write(seed)
+      console.log(i+1,newWrite)
+      outputText += (i+1)+"\n"+newWrite
+    }
 }
 
 function updateOutput() {
+  run(3)
   outputBox.innerHTML = outputText
 }
