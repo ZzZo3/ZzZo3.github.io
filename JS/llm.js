@@ -217,7 +217,7 @@ function run(count) {
     for (let i=0; i<count; i++) {
       let seed = ""
       while (seedBlacklist.includes(seed)) {
-        seed = words[Math.floor(Math.random()*words.length)]
+        seed = seedWhitelist[Math.floor(Math.random()*seedWhitelist.length)]
       }
       newWrite = write(seed)
       console.log(i+1,newWrite)
