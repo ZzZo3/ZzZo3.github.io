@@ -4150,13 +4150,11 @@ function write(inWord) {
 }
 
 function format(text) {
-  text = text.split(" ")
-  for (let i=0; i<text.length; i++) {
-    if (capitalizedWords.includes(text[i])) {
-      text[i] = text[i].charAt(0).toUpperCase() + text[i].slice(1)
+  text = text.split(" ").map((k)=>{
+    if (capitalizedWords.includes(k)) {
+      k = k.charAt(0).toUpperCase() + k.slice(1)
     }
-  }
-  text = text.join(" ")
+  }).join(" ")
   text = text.split(" .").join(".")
   text = text.split(" !").join("!")
   text = text.split(" ?").join("?")
