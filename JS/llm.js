@@ -4167,7 +4167,7 @@ function format(text) {
 function run(count) {
     outputText = ""
     for (let i=0; i<count; i++) {
-      let seed = seed = seedWhitelist[Math.floor(Math.random()*seedWhitelist.length)]
+      let seed = seedWhitelist[Math.floor(Math.random()*seedWhitelist.length)]
       newWrite = write(seed)
       newForm = format(newWrite)
       console.log(i+1,"seed: \"",seed,"\", write: \"",newWrite,"\", format: \"",newForm,"\"")
