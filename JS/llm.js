@@ -1,3 +1,5 @@
+const outputBox = document.getElementById("output")
+
 class Word {
     constructor(name, nexts) {
         this.name = name
@@ -201,10 +203,16 @@ function write(inWord) {
 }
 
 let seedBlacklist = [" ",".",""]
+
+let outputText = ""
 for (let i=0; i<3; i++) {
   let seed = ""
   while (seedBlacklist.includes(seed)) {
     seed = words[Math.floor(Math.random()*words.length)]
   }
-  console.log(i+1,write(seed))
+  newWrite = write(seed)
+  console.log(i+1,newWrite)
+  outputText += newWrite
 }
+
+outputBox.text = outputText
