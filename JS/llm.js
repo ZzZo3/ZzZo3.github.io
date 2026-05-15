@@ -215,4 +215,4 @@ for (let i=0; i<3; i++) {
   outputText += "\n"+newWrite
 }
 
-outputBox.text = outputText
+outputBox.innerHTML = outputText
