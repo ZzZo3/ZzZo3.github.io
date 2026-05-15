@@ -4156,7 +4156,7 @@ function format(text) {
       text[i] = text[i].charAt(0).toUpperCase() + text[i].slice(1)
     }
   }
-  text.join(" ")
+  text = text.join(" ")
   text = text.split(" .").join(".")
   text = text.split(" !").join("!")
   text = text.split(" ?").join("?")
