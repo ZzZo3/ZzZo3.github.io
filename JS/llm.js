@@ -124,6 +124,7 @@ function eatData(input) {
   data = data.split(" ")
   data = data.filter((k)=>k!=""&&k!=" ")
   data = data.map((k)=>k.toLowerCase())
+  console.log(data)
   for (let i=0; i<data.length; i++) {
     if (!words.includes(data[i])) {
       words.push(data[i])
