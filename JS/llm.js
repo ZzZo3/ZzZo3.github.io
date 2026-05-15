@@ -4152,15 +4152,16 @@ function write(inWord) {
 function format(text) {
   text = text.split(" ").map((k)=>{
     if (capitalizedWords.includes(k)) {
-      k = k.charAt(0).toUpperCase() + k.slice(1)
+      return k.charAt(0).toUpperCase() + k.slice(1)
+    } else {
+      return k
     }
   }).join(" ")
   text = text.split(" .").join(".")
   text = text.split(" !").join("!")
   text = text.split(" ?").join("?")
   text = text.split(" ,").join(",")
-  text = text.charAt(0).toUpperCase() + text.slice(1)
-  return text
+  return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
 
