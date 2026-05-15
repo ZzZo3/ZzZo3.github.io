@@ -13,7 +13,8 @@ const capitalizedWords = ['i','lord','sankara',
   'asia','asian','thomas','caesar','god','macbeth',
   'banquo','hecate','duncan','malcolm','donalbain',
   'macduff','lennox','ross','menteith','agnus',
-  'caithness','fleance','siward','seyton','cawdor']
+  'caithness','fleance','siward','seyton','cawdor',
+  'ireland']
 const punctuation = [",",";",":",".","!","?","[","]","(",")",
   "{","}","<",">","/","\`","~","\'","\"","|","-","—","—","—"]
 const puncTerminating = [".","!","?"]
