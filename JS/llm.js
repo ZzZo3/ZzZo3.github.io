@@ -4167,7 +4167,7 @@ function format(text) {
 function run(count) {
     outputText = ""
     for (let i=0; i<count; i++) {
-      seedWhitelist = seedWhitelist.filter((k)=>(seedBlacklist.includes(k)||punctuation.includes(k)))
+      seedWhitelist = seedWhitelist.filter((k)=>!(seedBlacklist.includes(k)||punctuation.includes(k)))
       let seed = seed = seedWhitelist[Math.floor(Math.random()*seedWhitelist.length)]
       newWrite = write(seed)
       newForm = format(newWrite)
