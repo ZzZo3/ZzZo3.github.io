@@ -1,9 +1,12 @@
 //BASE
 const outputBox = document.getElementById("output")
 
-//SEED LISTS
-let seedBlacklist = [" ",".","","?","!",","]
+//SEED LISTS & FORMATTING
+const seedBlacklist = [" ",".","","?","!",","]
 let seedWhitelist = []
+const capitalizedWords = ['i','macbeth','banquo','hecate','duncan','malcolm','donalbain','macduff','lennox','ross','menteith','agnus','caithness','fleance','siward','seyton']
+const punctuation = [",",";",":",".","!","?"]
+const puncTerminating = [".","!","?"]
 
 //CLASSES
 class Word {
@@ -16,8 +19,6 @@ class Word {
 //DATA
 let words = []
 let nextWords = []
-const punctuation = [",",";",":",".","!","?"]
-const puncTerminating = [".","!","?"]
 let data = `
 
 *** START OF THE PROJECT GUTENBERG EBOOK 1533 ***
@@ -4149,7 +4150,13 @@ function write(inWord) {
 }
 
 function format(text) {
-  text = text.split(" i ").join(" I ")
+  text = text.split(" ")
+  for (let i=0; i<text.length; i++) {
+    if (capitalizedWords.includes(text[i])) {
+      text[i] = text[i].charAt(0).toUpperCase() + text[i].slice(1)
+    }
+  }
+  text.join(" ")
   text = text.split(" .").join(".")
   text = text.split(" !").join("!")
   text = text.split(" ?").join("?")
