@@ -4167,13 +4167,12 @@ function format(text) {
   return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
-
 function run(count) {
     outputText = ""
     for (let i=0; i<count; i++) {
       let seed = seedWhitelist[Math.floor(Math.random()*seedWhitelist.length)]
-      newWrite = write(seed)
-      newForm = format(newWrite)
+      let newWrite = write(seed)
+      let newForm = format(newWrite)
       console.log(i+1,"seed: \"",seed,"\", write: \"",newWrite,"\", format: \"",newForm,"\"")
       outputText += "<br>"+(i+1)+"  "+newForm
     }
