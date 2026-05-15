@@ -4167,7 +4167,6 @@ function format(text) {
 function run(count) {
     outputText = ""
     for (let i=0; i<count; i++) {
-      seedWhitelist = seedWhitelist.filter((k)=>!(seedBlacklist.includes(k)||punctuation.includes(k)))
       let seed = seed = seedWhitelist[Math.floor(Math.random()*seedWhitelist.length)]
       newWrite = write(seed)
       newForm = format(newWrite)
@@ -4186,5 +4185,6 @@ function updateOutput() {
 mainBody.addEventListener('load',loadFunc())
 function loadFunc() {
   eatData(data)
+  seedWhitelist = seedWhitelist.filter((k)=>!(seedBlacklist.includes(k)||punctuation.includes(k)))
   console.log("seedWhitelist:",seedWhitelist)
 }
