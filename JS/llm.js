@@ -5,7 +5,7 @@ const outputBox = document.getElementById("output")
 const seedBlacklist = [" ",".","","?","!",","]
 let seedWhitelist = []
 const capitalizedWords = ['i','lord','caesar','god','macbeth','banquo','hecate','duncan','malcolm','donalbain','macduff','lennox','ross','menteith','agnus','caithness','fleance','siward','seyton']
-const punctuation = [",",";",":",".","!","?"]
+const punctuation = [",",";",":",".","!","?","[","]","(",")","{","}","<",">","/","\`","~","\'","\"","|","-","—"]
 const puncTerminating = [".","!","?"]
 
 //CLASSES
