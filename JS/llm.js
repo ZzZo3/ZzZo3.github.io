@@ -214,7 +214,7 @@ function run(count) {
       }
       newWrite = write(seed)
       console.log(i+1,newWrite)
-      outputText += (i+1)+"\n"+newWrite
+      outputText += (i+1)+"<br>"+newWrite
     }
 }
 
