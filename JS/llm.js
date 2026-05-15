@@ -231,8 +231,9 @@ function run(count) {
         seed = seedWhitelist[Math.floor(Math.random()*seedWhitelist.length)]
       }
       newWrite = write(seed)
-      console.log(i+1,newWrite)
-      outputText += "<br>"+(i+1)+"  "+newWrite
+      newForm = format(newWrite)
+      console.log(i+1,newWrite,newForm)
+      outputText += "<br>"+(i+1)+"  "+newForm
     }
 }
 
