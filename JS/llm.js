@@ -30,6 +30,393 @@ class Word {
 let words = []
 let nextWords = []
 let data = `
+According to all known laws of aviation, there is no way a bee should be able to fly.
+Its wings are too small to get its fat little body off the ground.
+The bee, of course, flies anyway because bees don't care what humans think is impossible.
+Yellow, black. Yellow, black. Yellow, black. Yellow, black.
+Three days grade school, three days high school.
+Those were awkward.
+Three days college. I'm glad I took a day and hitchhiked around The Hive.
+We know that you, as a bee, have worked your whole life to get to the point where you can work for your whole life.
+Honey begins when our valiant Pollen Jocks bring the nectar to The Hive.
+Our top-secret formula is automatically color-corrected, scent-adjusted and bubble-contoured into this soothing sweet syrup with its distinctive golden glow you know as... Honey!
+But bees know that every small job, if it's done well, means a lot.
+But choose carefully because you'll stay in the job you pick for the rest of your life.
+You'll be happy to know that bees, as a species, haven't had one day off in 27 million years.
+That's an insane choice to have to make.
+I'm relieved. Now we only have to make one decision in life.
+But, Adam, how could they never have told us that?
+Why would you question anything? We're bees.
+We're the most perfectly functioning society on Earth.
+You ever think maybe things work a little too well here?
+Like what? Give me one example.
+I don't know. But you know what I'm talking about.
+Please clear the gate. Royal Nectar Force on approach.
+It must be dangerous being a Pollen Jock.
+Yeah. Once a bear pinned me against a mushroom!
+He had a paw on my throat, and with the other, he was slapping me!
+Do you ever get bored doing the same job every day?
+Son, let me tell you about stirring.
+You grab that stick, and you just move it around, and you stir it around.
+You get yourself into a rhythm.
+It's a beautiful thing.
+You know, Dad, the more I think about it,
+maybe the honey field just isn't right for me.
+You were thinking of what, making balloon animals?
+That's a bad job for a guy with a stinger.
+Janet, your son's not sure he wants to go into honey!
+Barry, you are so funny sometimes.
+I'm not trying to be funny.
+You're not funny! You're going into honey. Our son, the stirrer!
+You're gonna be a stirrer?
+No one's listening to me!
+Wait till you see the sticks I have.
+I could say anything right now.
+I'm gonna get an ant tattoo!
+Let's open some honey and celebrate!
+Maybe I'll pierce my thorax. Shave my antennae. Shack up with a grasshopper. Get a gold tooth and call everybody "dawg"!
+I'm so proud.
+We're starting work today!
+Today's the day.
+Come on! All the good jobs will be gone.
+Yeah, right.
+Pollen counting, stunt bee, pouring, stirrer, front desk, hair removal...
+A bee died. Makes an opening. See? He's dead. Another dead one.
+Deady. Deadified. Two more dead.
+Dead from the neck up. Dead from the neck down. That's life!
+Oh, this is so hard!
+Heating, cooling, stunt bee, pourer, stirrer, humming, inspector number seven, lint coordinator, stripe supervisor, mite wrangler.
+Barry, what do you think I should... Barry?
+All right, we've got the sunflower patch in quadrant nine...
+I have to, before I go to work for the rest of my life.
+You're gonna die! You're crazy! Hello?
+Another call coming in.
+If anyone's feeling brave, there's a Korean deli on 83rd that gets their roses today.
+You got a rain advisory today, and as you all know, bees cannot fly in rain.
+So be careful. As always, watch your brooms, hockey sticks, dogs, birds, bears and bats.
+Also, I got a couple of reports of root beer being poured on us.
+Murphy's in a home because of it, babbling like a cicada!
+That's awful.
+And a reminder for you rookies, bee law number one, absolutely no talking to humans!
+ All right, launch positions!
+Buzz, buzz, buzz, buzz! Buzz, buzz, buzz, buzz! Buzz, buzz, buzz, buzz!
+I pick up some pollen here, sprinkle it over here. Maybe a dash over there, a pinch on that one.
+See that? It's a little bit of magic.
+That's amazing. Why do we do that?
+That's pollen power. More pollen, more flowers, more nectar, more honey for us.
+I'm picking up a lot of bright yellow, Could be daisies, Don't we need those?
+What are you doing?!
+Wow... the tension level out here is unbelievable.
+I gotta get home.
+Can't fly in rain. Can't fly in rain. Can't fly in rain.
+Mayday! Mayday! Bee going down!
+Ken, could you close the window please?
+Ken, could you close the window please?
+Check out my new resume. I made it into a fold-out brochure. You see? Folds out.
+Oh, no. More humans. I don't need this.
+What was that?
+Maybe this time. This time. This time. This time! This time! This... Drapes!
+That is diabolical.
+It's fantastic. It's got all my special skills, even my top-ten favorite movies.
+What's number one? Star Wars?
+Nah, I don't go for that... kind of stuff.
+No wonder we shouldn't talk to them. They're out of their minds.
+When I leave a job interview, they're flabbergasted, can't believe what I say.
+There's the sun. Maybe that's a way out.
+I don't remember the sun having a big 75 on it.
+I predicted global warming. I could feel it getting hotter. At first I thought it was just me.
+Wait! Stop! Bee!
+Stand back. These are winter boots.
+Don't kill him!
+You know I'm allergic to them! This thing could kill me!
+Why does his life have less value than yours?
+Why does his life have any less value than mine? Is that your statement?
+I'm just saying all life has value. You don't know what he's capable of feeling.
+Well, I'm sure this is very disconcerting.
+This is a bit of a surprise to me. I mean, you're a bee!
+I am. And I'm not supposed to be doing this, but they were all trying to kill me.
+And if it wasn't for you... I had to thank you. It's just how I was raised.
+That was a little weird. I'm talking with a bee.
+Yeah.
+I'm talking to a bee. And the bee is talking to me!
+I just want to say I'm grateful.
+I'll leave now.
+Wait! How did you learn to do that?
+What?
+The talking thing.
+Same way you did, I guess. "Mama, Dada, honey." You pick it up.
+That's very funny.
+Yeah.
+Bees are funny. If we didn't laugh, we'd cry with what we have to deal with.
+Anyway... Can I... get you something?
+Like what?
+I don't know. I mean... I don't know. Coffee?
+I don't want to put you out.
+It's no trouble. It takes two minutes.
+It's just coffee.
+I hate to impose.
+Don't be ridiculous!
+Actually, I would love a cup.
+Hey, you want rum cake?
+I shouldn't.
+Have some.
+No, I can't.
+Come on!
+I'm trying to lose a couple micrograms.
+Where?
+These stripes don't help.
+You look great!
+I don't know if you know anything about fashion.
+Are you all right?
+No.
+He's making the tie in the cab as they're flying up Madison.
+He finally gets there.
+He runs up the steps into the church.
+The wedding is on.
+And he says, "Watermelon?
+I thought you said Guatemalan.
+Why would I marry a watermelon?"
+Is that a bee joke?
+That's the kind of stuff we do.
+Yeah, different.
+So, what are you gonna do, Barry?
+About work? I don't know.
+I want to do my part for The Hive, but I can't do it the way they want.
+I know how you feel.
+You do?
+Sure.
+My parents wanted me to be a lawyer or a doctor, but I wanted to be a florist.
+Really?
+My only interest is flowers.
+Our new queen was just elected with that same campaign slogan.
+Anyway, if you look... There's my hive right there. See it?
+You're in Sheep Meadow!
+Yes! I'm right off the Turtle Pond!
+No way! I know that area. I lost a toe ring there once.
+Why do girls put rings on their toes?
+Why not?
+It's like putting a hat on your knee.
+Maybe I'll try that.
+You all right, ma'am?
+Oh, yeah. Fine.
+Just having two cups of coffee!
+Anyway, this has been great.
+Thanks for the coffee.
+Yeah, it's no trouble.
+Sorry I couldn't finish it. If I did, I'd be up the rest of my life.
+Are you...?
+Can I take a piece of this with me?
+Sure! Here, have a crumb.
+Thanks!
+Yeah.
+All right. Well, then... I guess I'll see you around. Or not.
+OK, Barry.
+And thank you so much again... for before.
+Oh, that? That was nothing.
+Well, not nothing, but... Anyway...
+This can't possibly work.
+He's all set to go.
+We may as well try it.
+OK, Dave, pull the chute.
+Sounds amazing.
+It was amazing!
+It was the scariest, happiest moment of my life.
+Humans! I can't believe you were with humans!
+Giant, scary humans!
+What were they like?
+Huge and crazy. They talk crazy.
+They eat crazy giant things.
+They drive crazy.
+Do they try and kill you, like on TV?
+Some of them. But some of them don't.
+How'd you get back?
+Poodle.
+You did it, and I'm glad. You saw whatever you wanted to see.
+You had your "experience." Now you can pick out yourjob and be normal.
+Well...
+Well?
+Well, I met someone.
+You did? Was she Bee-ish?
+A wasp?! Your parents will kill you!
+No, no, no, not a wasp.
+Spider?
+I'm not attracted to spiders.
+I know it's the hottest thing, with the eight legs and all. I can't get by that face.
+So who is she?
+She's... human.
+No, no. That's a bee law. You wouldn't break a bee law.
+Her name's Vanessa.
+Oh, boy.
+She's so nice. And she's a florist!
+Oh, no! You're dating a human florist!
+We're not dating.
+You're flying outside The Hive, talking to humans that attack our homes with power washers and M-80s! One-eighth a stick of dynamite!
+She saved my life! And she understands me.
+This is over!
+Eat this.
+This is not over! What was that?
+They call it a crumb.
+It was so stingin' stripey!
+And that's not what they eat.
+That's what falls off what they eat!
+You know what a Cinnabon is?
+It's bread and cinnamon and frosting. They heat it up...
+We are not them! We're us.
+There's us and there's them!
+Yes, but who can deny the heart that is yearning?
+There's no yearning. Stop yearning. Listen to me!
+You have got to start thinking bee, my friend. Thinking bee!
+Thinking bee.
+Thinking bee.
+Thinking bee! Thinking bee! Thinking bee! Thinking bee!
+There he is. He's in the pool.
+You know what your problem is, Barry?
+I gotta start thinking bee?
+How much longer will this go on?
+It's been three days! Why aren't you working?
+I've got a lot of big life decisions to think about.
+What life? You have no life!
+They have a huge parade of flowers every year in Pasadena?
+To be in the Tournament of Roses, that's every florist's dream!
+Up on a float, surrounded by flowers, crowds cheering.
+A tournament. Do the roses compete in athletic events?
+No. All right, I've got one.
+How come you don't fly everywhere?
+It's exhausting. Why don't you run everywhere? It's faster.
+TiVo. You can just freeze live TV? That's insane!
+You don't have that?
+We have Hivo, but it's a disease. It's a horrible, horrible disease.
+You must want to sting all those jerks.
+We try not to sting. It's usually fatal for us.
+So you have to watch your temper.
+Very carefully.
+You kick a wall, take a walk, write an angry letter and throw it out. Work through it like any emotion: Anger, jealousy, lust.
+I know who makes it! And it's hard to make it!
+There's heating, cooling, stirring. You need a whole Krelman thing!
+It's organic.
+It's our-ganic!
+It's just honey, Barry.
+Just what?!
+Bees don't know about this! This is stealing! A lot of stealing!
+You've taken our homes, schools,hospitals! This is all we have!
+And it's on sale?! I'm getting to the bottom of this.
+I'm getting to the bottom of all of this!
+Hey, Hector. You almost done?
+Almost.
+He is here. I sense it.
+Well, I guess I'll go home now and just leave this nice honey out, with no one around.
+You're busted, box boy!
+I knew I heard something.
+So you can talk!
+I can talk. And now you'll start talking!
+Where you getting the sweet stuff? Who's your supplier?
+I don't understand.
+I thought we were friends.
+The last thing we want to do is upset bees!
+You're too late! It's ours now!
+You, sir, have crossed the wrong sword!
+You, sir, will be lunch for my iguana, Ignacio!
+Where is the honey coming from? Tell me where!
+Honey Farms! It comes from Honey Farms!
+Crazy person!
+What horrible thing has happened here?
+These faces, they never knew what hit them. And now
+they're on the road to nowhere!
+Just keep still.
+What? You're not dead?
+Do I look dead? They will wipe anything that moves. Where you headed?
+To Honey Farms. I am onto something huge here.
+I'm going to Alaska. Moose blood, crazy stuff. Blows your head off!
+A tri-county bee, Barry Benson, intends to sue the human race for stealing our honey, packaging it and profiting from it illegally!
+Tomorrow night on Bee Larry King, we'll have three former queens here in our studio, discussing their new book, classy Ladies, out this week on Hexagon.
+Tonight we're talking to Barry Benson.
+Did you ever think, "I'm a kid from The Hive. I can't do this"?
+Bees have never been afraid to change the world.
+What about Bee Oolumbus? Bee Gandhi? Bejesus?
+Where I'm from, we'd never sue humans.
+We were thinking of stickball or candy stores.
+How old are you?
+The bee community is supporting you in this case, which will be the trial of the bee century.
+You know, they have a Larry King in the human world too.
+It's a common name. Next week...
+He looks like you and has a show and suspenders and colored dots...
+Next week...
+Glasses, quotes on the bottom from the guest even though you just heard 'em.
+Bear Week next week! They're scary, hairy and here live.
+Always leans forward, pointy shoulders, squinty eyes, very Jewish.
+In tennis, you attack at the point of weakness!
+Yes, and Adam here has been a huge help.
+Frosting...
+How many sugars?
+Just one. I try not to use the competition.
+So why are you helping me?
+Bees have good qualities. And it takes my mind off the shop. Instead of flowers, people are giving balloon bouquets now.
+Those are great, if you're three.
+And artificial flowers.
+Oh, those just get me psychotic!
+Yeah, me too.
+Bent stingers, pointless pollination.
+Bees must hate those fake things!
+Nothing worse than a daffodil that's had work done.
+Maybe this could make up for it a little bit.
+This lawsuit's a pretty big deal.
+I guess.
+You sure you want to go through with it?
+Am I sure? When I'm done with the humans, they won't be able to say, "Honey, I'm home," without paying a royalty!
+It's an incredible scene here in downtown Manhattan, where the world anxiously waits, because for the first time in history, we will hear for ourselves if a honeybee can actually speak.
+What have we gotten into here, Barry?
+It's pretty big, isn't it?
+I can't believe how many humans don't work during the day.
+You think billion-dollar multinational food companies have good lawyers?
+Everybody needs to stay behind the barricade.
+What's the matter?
+I don't know, I just got a chill.
+Well, if it isn't the bee team.
+You boys work on this?
+All rise! The Honorable Judge Bumbleton presiding.
+All right. Case number 4475,
+Superior Court of New York,
+Barry Bee Benson v. the Honey Industry is now in session.
+Mr. Montgomery, you're representing the five food companies collectively?
+A privilege.
+Mr. Benson... you're representing all the bees of the world?
+I'm kidding. Yes, Your Honor, we're ready to proceed.
+Mr. Montgomery, your opening statement, please.
+Ladies and gentlemen of the jury, my grandmother was a simple woman. Born on a farm, she believed it was man's divine right to benefit from the bounty of nature God put before us.
+If we lived in the topsy-turvy world Mr. Benson imagines, just think of what would it mean.
+I would have to negotiate with the silkworm for the elastic in my britches!
+Talking bee!
+How do we know this isn't some sort of holographic motion-picture-capture Hollywood wizardry?
+They could be using laser beams! Robotics! Ventriloquism! Cloning! For all we know, he could be on steroids!
+Mr. Benson?
+Ladies and gentlemen, there's no trickery here. I'm just an ordinary bee. Honey's pretty important to me. It's important to all bees. We invented it! We make it. And we protect it with our lives.
+Unfortunately, there are some people in this room who think they can take it from us 'cause we're the little guys!
+I'm hoping that, after this is all over, you'll see how, by taking our honey, you not only take everything we have but everything we are!
+I wish he'd dress like that all the time. So nice!
+Call your first witness.
+So, Mr. Klauss Vanderhayden of Honey Farms, big company you have.
+I suppose so.
+I see you also own Honeyburton and Honron!
+Yes, they provide beekeepers for our farms.
+Beekeeper. I find that to be a very disturbing term.
+I don't imagine you employ any bee-free-ers, do you?
+No.
+I couldn't hear you.
+No.
+No. Because you don't free bees. You keep bees. Not only that, it seems you thought a bear would be an appropriate image for a jar of honey.
+They're very lovable creatures. Yogi Bear, Fozzie Bear, Build-A-Bear.
+You mean like this?
+Bears kill bees!
+How'd you like his head crashing through your living room?! Biting into your couch! Spitting out your throw pillows! OK, that's enough. Take him away.
+So, Mr. Sting, thank you for being here. Your name intrigues me. Where have I heard it before?
+I was dying to get out of that office.
+You have got to start thinking bee, my friend.
+Hold it. Let's just stop for a second. Hold it.
+I'm sorry. I'm sorry, everyone. Can we stop here?
+I'm not making a major life decision during a production number!
+All right. Take ten, everybody. Wrap it up, guys.
+
+
 16 April 1963
 My Dear Fellow Clergymen:
 While confined here in the Birmingham city jail, I came across your recent statement calling my present activities "unwise and untimely." Seldom do I pause to answer criticism of my work and ideas. If I sought to answer all the criticisms that cross my desk, my secretaries would have little time for anything other than such correspondence in the course of the day, and I would have no time for constructive work. But since I feel that you are men of genuine good will and that your criticisms are sincerely set forth, I want to try to answer your statement in what I hope will be patient and reasonable terms.
@@ -299,74 +686,6 @@ Eternal glory to the peoples who are struggling for their freedom! Eternal glory
 
 Fatherland or death: we shall triumph.
 
-Thomas Sankara Internet Archive
-
-
-*** START OF THE PROJECT GUTENBERG EBOOK 1533 ***
-MACBETH
-by William Shakespeare
-Contents
-ACT I
-Scene I. An open Place.
-Scene II. A Camp near Forres.
-Scene III. A heath.
-Scene IV. Forres. A Room in the Palace.
-Scene V. Inverness. A Room in Macbeth’s Castle.
-Scene VI. The same. Before the Castle.
-Scene VII. The same. A Lobby in the Castle.
-
-ACT II
-Scene I. Inverness. Court within the Castle.
-Scene II. The same.
-Scene III. The same.
-Scene IV. The same. Without the Castle.
-
-ACT III
-Scene I. Forres. A Room in the Palace.
-Scene II. The same. Another Room in the Palace.
-Scene III. The same. A Park or Lawn, with a gate leading to the Palace.
-Scene IV. The same. A Room of state in the Palace.
-Scene V. The heath.
-Scene VI. Forres. A Room in the Palace.
-
-ACT IV
-Scene I. A dark Cave. In the middle, a Cauldron Boiling.
-Scene II. Fife. A Room in Macduff’s Castle.
-Scene III. England. Before the King’s Palace.
-
-ACT V
-Scene I. Dunsinane. A Room in the Castle.
-Scene II. The Country near Dunsinane.
-Scene III. Dunsinane. A Room in the Castle.
-Scene IV. Country near Dunsinane: a Wood in view.
-Scene V. Dunsinane. Within the castle.
-Scene VI. The same. A Plain before the Castle.
-Scene VII. The same. Another part of the Plain.
-Scene VIII. The same. Another part of the field.
-Dramatis Personæ
-
-DUNCAN, King of Scotland.
-MALCOLM, his Son.
-DONALBAIN, his Son.
-MACBETH, General in the King’s Army.
-BANQUO, General in the King’s Army.
-MACDUFF, Nobleman of Scotland.
-LENNOX, Nobleman of Scotland.
-ROSS, Nobleman of Scotland.
-MENTEITH, Nobleman of Scotland.
-ANGUS, Nobleman of Scotland.
-CAITHNESS, Nobleman of Scotland.
-FLEANCE, Son to Banquo.
-SIWARD, Earl of Northumberland, General of the English Forces.
-YOUNG SIWARD, his Son.
-SEYTON, an Officer attending on Macbeth.
-BOY, Son to Macduff.
-An English Doctor.
-A Scottish Doctor.
-A Soldier.
-A Porter.
-An Old Man.
-
 LADY MACBETH.
 LADY MACDUFF.
 Gentlewoman attending on Lady Macbeth.
@@ -584,19 +903,6 @@ Though his bark cannot be lost,
 Yet it shall be tempest-tost.
 Look what I have.
 
-SECOND WITCH.
-Show me, show me.
-
-FIRST WITCH.
-Here I have a pilot’s thumb,
-Wrack’d as homeward he did come.
-
-[Drum within.]
-
-THIRD WITCH.
-A drum, a drum!
-Macbeth doth come.
-
 ALL.
 The Weird Sisters, hand in hand,
 Posters of the sea and land,
@@ -604,8 +910,6 @@ Thus do go about, about:
 Thrice to thine, and thrice to mine,
 And thrice again, to make up nine.
 Peace!—the charm’s wound up.
-
-Enter Macbeth and Banquo.
 
 MACBETH.
 So foul and fair a day I have not seen.
@@ -620,15 +924,6 @@ By each at once her choppy finger laying
 Upon her skinny lips. You should be women,
 And yet your beards forbid me to interpret
 That you are so.
-
-MACBETH.
-Speak, if you can;—what are you?
-
-FIRST WITCH.
-All hail, Macbeth! hail to thee, Thane of Glamis!
-
-SECOND WITCH.
-All hail, Macbeth! hail to thee, Thane of Cawdor!
 
 THIRD WITCH.
 All hail, Macbeth! that shalt be king hereafter!
@@ -908,20 +1203,6 @@ For in my way it lies. Stars, hide your fires!
 Let not light see my black and deep desires.
 The eye wink at the hand, yet let that be,
 Which the eye fears, when it is done, to see.
-
-[Exit.]
-
-DUNCAN.
-True, worthy Banquo! He is full so valiant;
-And in his commendations I am fed.
-It is a banquet to me. Let’s after him,
-Whose care is gone before to bid us welcome:
-It is a peerless kinsman.
-
-[Flourish. Exeunt.]
-SCENE V. Inverness. A Room in Macbeth’s Castle.
-
-Enter Lady Macbeth, reading a letter.
 
 LADY MACBETH.
 “They met me in the day of success; and I have learned by the perfect’st report they have more in them than mortal knowledge. When I burned in desire to question them further, they made themselves air, into which they vanished. Whiles I stood rapt in the wonder of it, came missives from the King, who all-hailed me, ‘Thane of Cawdor’; by which title, before, these Weird Sisters saluted me, and referred me to the coming on of time, with ‘Hail, king that shalt be!’ This have I thought good to deliver thee (my dearest partner of greatness) that thou might’st not lose the dues of rejoicing, by being ignorant of what greatness is promis’d thee. Lay it to thy heart, and farewell.”
@@ -1365,32 +1646,6 @@ I heard the owl scream and the crickets cry.
 Did not you speak?
 
 MACBETH.
-When?
-
-LADY MACBETH.
-Now.
-
-MACBETH.
-As I descended?
-
-LADY MACBETH.
-Ay.
-
-MACBETH.
-Hark!—Who lies i’ th’ second chamber?
-
-LADY MACBETH.
-Donalbain.
-
-MACBETH.
-This is a sorry sight.
-
-[Looking on his hands.]
-
-LADY MACBETH.
-A foolish thought, to say a sorry sight.
-
-MACBETH.
 There’s one did laugh in’s sleep, and one cried, “Murder!”
 That they did wake each other: I stood and heard them.
 But they did say their prayers, and address’d them
@@ -1490,75 +1745,6 @@ Enter a Porter. Knocking within.
 
 PORTER.
 Here’s a knocking indeed! If a man were porter of hell gate, he should have old turning the key. [Knocking.] Knock, knock, knock. Who’s there, i’ th’ name of Belzebub? Here’s a farmer that hanged himself on the expectation of plenty: come in time; have napkins enow about you; here you’ll sweat for’t. [Knocking.] Knock, knock! Who’s there, i’ th’ other devil’s name? Faith, here’s an equivocator, that could swear in both the scales against either scale, who committed treason enough for God’s sake, yet could not equivocate to heaven: O, come in, equivocator. [Knocking.] Knock, knock, knock! Who’s there? Faith, here’s an English tailor come hither, for stealing out of a French hose: come in, tailor; here you may roast your goose. [Knocking.] Knock, knock. Never at quiet! What are you?—But this place is too cold for hell. I’ll devil-porter it no further: I had thought to have let in some of all professions, that go the primrose way to th’ everlasting bonfire. [Knocking.] Anon, anon! I pray you, remember the porter.
-
-[Opens the gate.]
-
-Enter Macduff and Lennox.
-
-MACDUFF.
-Was it so late, friend, ere you went to bed,
-That you do lie so late?
-
-PORTER.
-Faith, sir, we were carousing till the second cock; and drink, sir, is a great provoker of three things.
-
-MACDUFF.
-What three things does drink especially provoke?
-
-PORTER.
-Marry, sir, nose-painting, sleep, and urine. Lechery, sir, it provokes and unprovokes; it provokes the desire, but it takes away the performance. Therefore much drink may be said to be an equivocator with lechery: it makes him, and it mars him; it sets him on, and it takes him off; it persuades him, and disheartens him; makes him stand to, and not stand to; in conclusion, equivocates him in a sleep, and giving him the lie, leaves him.
-
-MACDUFF.
-I believe drink gave thee the lie last night.
-
-PORTER.
-That it did, sir, i’ the very throat on me; but I requited him for his lie; and (I think) being too strong for him, though he took up my legs sometime, yet I made a shift to cast him.
-
-MACDUFF.
-Is thy master stirring?
-
-Enter Macbeth.
-
-Our knocking has awak’d him; here he comes.
-
-LENNOX.
-Good morrow, noble sir!
-
-MACBETH.
-Good morrow, both!
-
-MACDUFF.
-Is the King stirring, worthy thane?
-
-MACBETH.
-Not yet.
-
-MACDUFF.
-He did command me to call timely on him.
-I have almost slipp’d the hour.
-
-MACBETH.
-I’ll bring you to him.
-
-MACDUFF.
-I know this is a joyful trouble to you;
-But yet ’tis one.
-
-MACBETH.
-The labour we delight in physics pain.
-This is the door.
-
-MACDUFF.
-I’ll make so bold to call.
-For ’tis my limited service.
-
-[Exit Macduff.]
-
-LENNOX.
-Goes the King hence today?
-
-MACBETH.
-He does. He did appoint so.
 
 LENNOX.
 The night has been unruly: where we lay,
@@ -2793,734 +2979,6 @@ Something wicked this way comes.
 Open, locks,
 Whoever knocks!
 
-Enter Macbeth.
-
-MACBETH.
-How now, you secret, black, and midnight hags!
-What is’t you do?
-
-ALL.
-A deed without a name.
-
-MACBETH.
-I conjure you, by that which you profess,
-(Howe’er you come to know it) answer me:
-Though you untie the winds, and let them fight
-Against the churches; though the yesty waves
-Confound and swallow navigation up;
-Though bladed corn be lodg’d, and trees blown down;
-Though castles topple on their warders’ heads;
-Though palaces and pyramids do slope
-Their heads to their foundations; though the treasure
-Of nature’s germens tumble all together,
-Even till destruction sicken, answer me
-To what I ask you.
-
-FIRST WITCH.
-Speak.
-
-SECOND WITCH.
-Demand.
-
-THIRD WITCH.
-We’ll answer.
-
-FIRST WITCH.
-Say, if thou’dst rather hear it from our mouths,
-Or from our masters?
-
-MACBETH.
-Call ’em, let me see ’em.
-
-FIRST WITCH.
-Pour in sow’s blood, that hath eaten
-Her nine farrow; grease that’s sweaten
-From the murderer’s gibbet throw
-Into the flame.
-
-ALL.
-Come, high or low;
-Thyself and office deftly show!
-
-[Thunder. An Apparition of an armed Head rises.]
-
-MACBETH.
-Tell me, thou unknown power,—
-
-FIRST WITCH.
-He knows thy thought:
-Hear his speech, but say thou naught.
-
-APPARITION.
-Macbeth! Macbeth! Macbeth! Beware Macduff;
-Beware the Thane of Fife.—Dismiss me.—Enough.
-
-[Descends.]
-
-MACBETH.
-Whate’er thou art, for thy good caution, thanks;
-Thou hast harp’d my fear aright.—But one word more.
-
-FIRST WITCH.
-He will not be commanded. Here’s another,
-More potent than the first.
-
-[Thunder. An Apparition of a bloody Child rises.]
-
-APPARITION.
-Macbeth! Macbeth! Macbeth!
-
-MACBETH.
-Had I three ears, I’d hear thee.
-
-APPARITION.
-Be bloody, bold, and resolute. Laugh to scorn
-The power of man, for none of woman born
-Shall harm Macbeth.
-
-[Descends.]
-
-MACBETH.
-Then live, Macduff: what need I fear of thee?
-But yet I’ll make assurance double sure,
-And take a bond of fate. Thou shalt not live;
-That I may tell pale-hearted fear it lies,
-And sleep in spite of thunder.
-
-[Thunder. An Apparition of a Child crowned, with a tree in his hand, rises.]
-
-What is this,
-That rises like the issue of a king,
-And wears upon his baby brow the round
-And top of sovereignty?
-
-ALL.
-Listen, but speak not to’t.
-
-APPARITION.
-Be lion-mettled, proud, and take no care
-Who chafes, who frets, or where conspirers are:
-Macbeth shall never vanquish’d be, until
-Great Birnam wood to high Dunsinane hill
-Shall come against him.
-
-[Descends.]
-
-MACBETH.
-That will never be:
-Who can impress the forest; bid the tree
-Unfix his earth-bound root? Sweet bodements, good!
-Rebellious head, rise never till the wood
-Of Birnam rise, and our high-plac’d Macbeth
-Shall live the lease of nature, pay his breath
-To time and mortal custom.—Yet my heart
-Throbs to know one thing: tell me, if your art
-Can tell so much, shall Banquo’s issue ever
-Reign in this kingdom?
-
-ALL.
-Seek to know no more.
-
-MACBETH.
-I will be satisfied: deny me this,
-And an eternal curse fall on you! Let me know.
-Why sinks that cauldron? and what noise is this?
-
-[Hautboys.]
-
-FIRST WITCH.
-Show!
-
-SECOND WITCH.
-Show!
-
-THIRD WITCH.
-Show!
-
-ALL.
-Show his eyes, and grieve his heart;
-Come like shadows, so depart!
-
-[A show of eight kings appear, and pass over in order, the last with a glass in his hand; Banquo following.]
-
-MACBETH.
-Thou are too like the spirit of Banquo. Down!
-Thy crown does sear mine eyeballs:—and thy hair,
-Thou other gold-bound brow, is like the first.
-A third is like the former.—Filthy hags!
-Why do you show me this?—A fourth!—Start, eyes!
-What, will the line stretch out to th’ crack of doom?
-Another yet!—A seventh!—I’ll see no more:—
-And yet the eighth appears, who bears a glass
-Which shows me many more; and some I see
-That twofold balls and treble sceptres carry.
-Horrible sight!—Now I see ’tis true;
-For the blood-bolter’d Banquo smiles upon me,
-And points at them for his.—What! is this so?
-
-FIRST WITCH.
-Ay, sir, all this is so:—but why
-Stands Macbeth thus amazedly?—
-Come, sisters, cheer we up his sprites,
-And show the best of our delights.
-I’ll charm the air to give a sound,
-While you perform your antic round;
-That this great king may kindly say,
-Our duties did his welcome pay.
-
-[Music. The Witches dance, and vanish.]
-
-MACBETH.
-Where are they? Gone?—Let this pernicious hour
-Stand aye accursed in the calendar!—
-Come in, without there!
-
-Enter Lennox.
-
-LENNOX.
-What’s your Grace’s will?
-
-MACBETH.
-Saw you the Weird Sisters?
-
-LENNOX.
-No, my lord.
-
-MACBETH.
-Came they not by you?
-
-LENNOX.
-No, indeed, my lord.
-
-MACBETH.
-Infected be the air whereon they ride;
-And damn’d all those that trust them!—I did hear
-The galloping of horse: who was’t came by?
-
-LENNOX.
-’Tis two or three, my lord, that bring you word
-Macduff is fled to England.
-
-MACBETH.
-Fled to England!
-
-LENNOX.
-Ay, my good lord.
-
-MACBETH.
-Time, thou anticipat’st my dread exploits:
-The flighty purpose never is o’ertook
-Unless the deed go with it. From this moment
-The very firstlings of my heart shall be
-The firstlings of my hand. And even now,
-To crown my thoughts with acts, be it thought and done:
-The castle of Macduff I will surprise;
-Seize upon Fife; give to th’ edge o’ th’ sword
-His wife, his babes, and all unfortunate souls
-That trace him in his line. No boasting like a fool;
-This deed I’ll do before this purpose cool:
-But no more sights!—Where are these gentlemen?
-Come, bring me where they are.
-
-[Exeunt.]
-SCENE II. Fife. A Room in Macduff’s Castle.
-
-Enter Lady Macduff her Son and Ross.
-
-LADY MACDUFF.
-What had he done, to make him fly the land?
-
-ROSS.
-You must have patience, madam.
-
-LADY MACDUFF.
-He had none:
-His flight was madness: when our actions do not,
-Our fears do make us traitors.
-
-ROSS.
-You know not
-Whether it was his wisdom or his fear.
-
-LADY MACDUFF.
-Wisdom! to leave his wife, to leave his babes,
-His mansion, and his titles, in a place
-From whence himself does fly? He loves us not:
-He wants the natural touch; for the poor wren,
-The most diminutive of birds, will fight,
-Her young ones in her nest, against the owl.
-All is the fear, and nothing is the love;
-As little is the wisdom, where the flight
-So runs against all reason.
-
-ROSS.
-My dearest coz,
-I pray you, school yourself: but, for your husband,
-He is noble, wise, judicious, and best knows
-The fits o’ th’ season. I dare not speak much further:
-But cruel are the times, when we are traitors,
-And do not know ourselves; when we hold rumour
-From what we fear, yet know not what we fear,
-But float upon a wild and violent sea
-Each way and move—I take my leave of you:
-Shall not be long but I’ll be here again.
-Things at the worst will cease, or else climb upward
-To what they were before.—My pretty cousin,
-Blessing upon you!
-
-LADY MACDUFF.
-Father’d he is, and yet he’s fatherless.
-
-ROSS.
-I am so much a fool, should I stay longer,
-It would be my disgrace and your discomfort:
-I take my leave at once.
-
-[Exit.]
-
-LADY MACDUFF.
-Sirrah, your father’s dead.
-And what will you do now? How will you live?
-
-SON.
-As birds do, mother.
-
-LADY MACDUFF.
-What, with worms and flies?
-
-SON.
-With what I get, I mean; and so do they.
-
-LADY MACDUFF.
-Poor bird! thou’dst never fear the net nor lime,
-The pit-fall nor the gin.
-
-SON.
-Why should I, mother? Poor birds they are not set for.
-My father is not dead, for all your saying.
-
-LADY MACDUFF.
-Yes, he is dead: how wilt thou do for a father?
-
-SON.
-Nay, how will you do for a husband?
-
-LADY MACDUFF.
-Why, I can buy me twenty at any market.
-
-SON.
-Then you’ll buy ’em to sell again.
-
-LADY MACDUFF.
-Thou speak’st with all thy wit;
-And yet, i’ faith, with wit enough for thee.
-
-SON.
-Was my father a traitor, mother?
-
-LADY MACDUFF.
-Ay, that he was.
-
-SON.
-What is a traitor?
-
-LADY MACDUFF.
-Why, one that swears and lies.
-
-SON.
-And be all traitors that do so?
-
-LADY MACDUFF.
-Every one that does so is a traitor, and must be hanged.
-
-SON.
-And must they all be hanged that swear and lie?
-
-LADY MACDUFF.
-Every one.
-
-SON.
-Who must hang them?
-
-LADY MACDUFF.
-Why, the honest men.
-
-SON.
-Then the liars and swearers are fools: for there are liars and swearers enow to beat the honest men and hang up them.
-
-LADY MACDUFF.
-Now, God help thee, poor monkey! But how wilt thou do for a father?
-
-SON.
-If he were dead, you’ld weep for him: if you would not, it were a good sign that I should quickly have a new father.
-
-LADY MACDUFF.
-Poor prattler, how thou talk’st!
-
-Enter a Messenger.
-
-MESSENGER.
-Bless you, fair dame! I am not to you known,
-Though in your state of honour I am perfect.
-I doubt some danger does approach you nearly:
-If you will take a homely man’s advice,
-Be not found here; hence, with your little ones.
-To fright you thus, methinks, I am too savage;
-To do worse to you were fell cruelty,
-Which is too nigh your person. Heaven preserve you!
-I dare abide no longer.
-
-[Exit.]
-
-LADY MACDUFF.
-Whither should I fly?
-I have done no harm. But I remember now
-I am in this earthly world, where to do harm
-Is often laudable; to do good sometime
-Accounted dangerous folly: why then, alas,
-Do I put up that womanly defence,
-To say I have done no harm? What are these faces?
-
-Enter Murderers.
-
-FIRST MURDERER.
-Where is your husband?
-
-LADY MACDUFF.
-I hope, in no place so unsanctified
-Where such as thou mayst find him.
-
-FIRST MURDERER.
-He’s a traitor.
-
-SON.
-Thou liest, thou shag-ear’d villain!
-
-FIRST MURDERER.
-What, you egg!
-
-[Stabbing him.]
-
-Young fry of treachery!
-
-SON.
-He has kill’d me, mother:
-Run away, I pray you!
-
-[Dies. Exit Lady Macduff, crying “Murder!” and pursued by the Murderers.]
-SCENE III. England. Before the King’s Palace.
-
-Enter Malcolm and Macduff.
-
-MALCOLM.
-Let us seek out some desolate shade and there
-Weep our sad bosoms empty.
-
-MACDUFF.
-Let us rather
-Hold fast the mortal sword, and, like good men,
-Bestride our down-fall’n birthdom. Each new morn
-New widows howl, new orphans cry; new sorrows
-Strike heaven on the face, that it resounds
-As if it felt with Scotland, and yell’d out
-Like syllable of dolour.
-
-MALCOLM.
-What I believe, I’ll wail;
-What know, believe; and what I can redress,
-As I shall find the time to friend, I will.
-What you have spoke, it may be so, perchance.
-This tyrant, whose sole name blisters our tongues,
-Was once thought honest: you have loved him well;
-He hath not touch’d you yet. I am young; but something
-You may deserve of him through me; and wisdom
-To offer up a weak, poor, innocent lamb
-To appease an angry god.
-
-MACDUFF.
-I am not treacherous.
-
-MALCOLM.
-But Macbeth is.
-A good and virtuous nature may recoil
-In an imperial charge. But I shall crave your pardon.
-That which you are, my thoughts cannot transpose.
-Angels are bright still, though the brightest fell:
-Though all things foul would wear the brows of grace,
-Yet grace must still look so.
-
-MACDUFF.
-I have lost my hopes.
-
-MALCOLM.
-Perchance even there where I did find my doubts.
-Why in that rawness left you wife and child,
-Those precious motives, those strong knots of love,
-Without leave-taking?—I pray you,
-Let not my jealousies be your dishonours,
-But mine own safeties. You may be rightly just,
-Whatever I shall think.
-
-MACDUFF.
-Bleed, bleed, poor country!
-Great tyranny, lay thou thy basis sure,
-For goodness dare not check thee! wear thou thy wrongs;
-The title is affeer’d.—Fare thee well, lord:
-I would not be the villain that thou think’st
-For the whole space that’s in the tyrant’s grasp
-And the rich East to boot.
-
-MALCOLM.
-Be not offended:
-I speak not as in absolute fear of you.
-I think our country sinks beneath the yoke;
-It weeps, it bleeds; and each new day a gash
-Is added to her wounds. I think, withal,
-There would be hands uplifted in my right;
-And here, from gracious England, have I offer
-Of goodly thousands: but, for all this,
-When I shall tread upon the tyrant’s head,
-Or wear it on my sword, yet my poor country
-Shall have more vices than it had before,
-More suffer, and more sundry ways than ever,
-By him that shall succeed.
-
-MACDUFF.
-What should he be?
-
-MALCOLM.
-It is myself I mean; in whom I know
-All the particulars of vice so grafted
-That, when they shall be open’d, black Macbeth
-Will seem as pure as snow; and the poor state
-Esteem him as a lamb, being compar’d
-With my confineless harms.
-
-MACDUFF.
-Not in the legions
-Of horrid hell can come a devil more damn’d
-In evils to top Macbeth.
-
-MALCOLM.
-I grant him bloody,
-Luxurious, avaricious, false, deceitful,
-Sudden, malicious, smacking of every sin
-That has a name: but there’s no bottom, none,
-In my voluptuousness: your wives, your daughters,
-Your matrons, and your maids, could not fill up
-The cistern of my lust; and my desire
-All continent impediments would o’erbear,
-That did oppose my will: better Macbeth
-Than such an one to reign.
-
-MACDUFF.
-Boundless intemperance
-In nature is a tyranny; it hath been
-Th’ untimely emptying of the happy throne,
-And fall of many kings. But fear not yet
-To take upon you what is yours: you may
-Convey your pleasures in a spacious plenty,
-And yet seem cold—the time you may so hoodwink.
-We have willing dames enough; there cannot be
-That vulture in you, to devour so many
-As will to greatness dedicate themselves,
-Finding it so inclin’d.
-
-MALCOLM.
-With this there grows
-In my most ill-compos’d affection such
-A staunchless avarice, that, were I king,
-I should cut off the nobles for their lands;
-Desire his jewels, and this other’s house:
-And my more-having would be as a sauce
-To make me hunger more; that I should forge
-Quarrels unjust against the good and loyal,
-Destroying them for wealth.
-
-MACDUFF.
-This avarice
-Sticks deeper; grows with more pernicious root
-Than summer-seeming lust; and it hath been
-The sword of our slain kings: yet do not fear;
-Scotland hath foisons to fill up your will,
-Of your mere own. All these are portable,
-With other graces weigh’d.
-
-MALCOLM.
-But I have none: the king-becoming graces,
-As justice, verity, temp’rance, stableness,
-Bounty, perseverance, mercy, lowliness,
-Devotion, patience, courage, fortitude,
-I have no relish of them; but abound
-In the division of each several crime,
-Acting it many ways. Nay, had I power, I should
-Pour the sweet milk of concord into hell,
-Uproar the universal peace, confound
-All unity on earth.
-
-MACDUFF.
-O Scotland, Scotland!
-
-MALCOLM.
-If such a one be fit to govern, speak:
-I am as I have spoken.
-
-MACDUFF.
-Fit to govern?
-No, not to live.—O nation miserable,
-With an untitled tyrant bloody-scepter’d,
-When shalt thou see thy wholesome days again,
-Since that the truest issue of thy throne
-By his own interdiction stands accus’d,
-And does blaspheme his breed? Thy royal father
-Was a most sainted king. The queen that bore thee,
-Oft’ner upon her knees than on her feet,
-Died every day she lived. Fare thee well!
-These evils thou repeat’st upon thyself
-Have banish’d me from Scotland.—O my breast,
-Thy hope ends here!
-
-MALCOLM.
-Macduff, this noble passion,
-Child of integrity, hath from my soul
-Wiped the black scruples, reconcil’d my thoughts
-To thy good truth and honour. Devilish Macbeth
-By many of these trains hath sought to win me
-Into his power, and modest wisdom plucks me
-From over-credulous haste: but God above
-Deal between thee and me! for even now
-I put myself to thy direction, and
-Unspeak mine own detraction; here abjure
-The taints and blames I laid upon myself,
-For strangers to my nature. I am yet
-Unknown to woman; never was forsworn;
-Scarcely have coveted what was mine own;
-At no time broke my faith; would not betray
-The devil to his fellow; and delight
-No less in truth than life: my first false speaking
-Was this upon myself. What I am truly,
-Is thine and my poor country’s to command:
-Whither, indeed, before thy here-approach,
-Old Siward, with ten thousand warlike men,
-Already at a point, was setting forth.
-Now we’ll together, and the chance of goodness
-Be like our warranted quarrel. Why are you silent?
-
-MACDUFF.
-Such welcome and unwelcome things at once
-’Tis hard to reconcile.
-
-Enter a Doctor.
-
-MALCOLM.
-Well; more anon.—Comes the King forth, I pray you?
-
-DOCTOR.
-Ay, sir. There are a crew of wretched souls
-That stay his cure: their malady convinces
-The great assay of art; but at his touch,
-Such sanctity hath heaven given his hand,
-They presently amend.
-
-MALCOLM.
-I thank you, doctor.
-
-[Exit Doctor.]
-
-MACDUFF.
-What’s the disease he means?
-
-MALCOLM.
-’Tis call’d the evil:
-A most miraculous work in this good king;
-Which often, since my here-remain in England,
-I have seen him do. How he solicits heaven,
-Himself best knows, but strangely-visited people,
-All swoln and ulcerous, pitiful to the eye,
-The mere despair of surgery, he cures;
-Hanging a golden stamp about their necks,
-Put on with holy prayers: and ’tis spoken,
-To the succeeding royalty he leaves
-The healing benediction. With this strange virtue,
-He hath a heavenly gift of prophecy;
-And sundry blessings hang about his throne,
-That speak him full of grace.
-
-Enter Ross.
-
-MACDUFF.
-See, who comes here?
-
-MALCOLM.
-My countryman; but yet I know him not.
-
-MACDUFF.
-My ever-gentle cousin, welcome hither.
-
-MALCOLM.
-I know him now. Good God, betimes remove
-The means that makes us strangers!
-
-ROSS.
-Sir, amen.
-
-MACDUFF.
-Stands Scotland where it did?
-
-ROSS.
-Alas, poor country,
-Almost afraid to know itself! It cannot
-Be call’d our mother, but our grave, where nothing,
-But who knows nothing, is once seen to smile;
-Where sighs, and groans, and shrieks, that rent the air,
-Are made, not mark’d; where violent sorrow seems
-A modern ecstasy. The dead man’s knell
-Is there scarce ask’d for who; and good men’s lives
-Expire before the flowers in their caps,
-Dying or ere they sicken.
-
-MACDUFF.
-O, relation
-Too nice, and yet too true!
-
-MALCOLM.
-What’s the newest grief?
-
-ROSS.
-That of an hour’s age doth hiss the speaker;
-Each minute teems a new one.
-
-MACDUFF.
-How does my wife?
-
-ROSS.
-Why, well.
-
-MACDUFF.
-And all my children?
-
-ROSS.
-Well too.
-
-MACDUFF.
-The tyrant has not batter’d at their peace?
-
-ROSS.
-No; they were well at peace when I did leave ’em.
-
-MACDUFF.
-Be not a niggard of your speech: how goes’t?
-
-ROSS.
-When I came hither to transport the tidings,
-Which I have heavily borne, there ran a rumour
-Of many worthy fellows that were out;
-Which was to my belief witness’d the rather,
-For that I saw the tyrant’s power afoot.
-Now is the time of help. Your eye in Scotland
-Would create soldiers, make our women fight,
-To doff their dire distresses.
-
 MALCOLM.
 Be’t their comfort
 We are coming thither. Gracious England hath
@@ -4037,301 +3495,6 @@ Signifying nothing.
 
 Enter a Messenger.
 
-Thou com’st to use thy tongue; thy story quickly.
-
-MESSENGER.
-Gracious my lord,
-I should report that which I say I saw,
-But know not how to do’t.
-
-MACBETH.
-Well, say, sir.
-
-MESSENGER.
-As I did stand my watch upon the hill,
-I look’d toward Birnam, and anon, methought,
-The wood began to move.
-
-MACBETH.
-Liar, and slave!
-
-MESSENGER.
-Let me endure your wrath, if’t be not so.
-Within this three mile may you see it coming;
-I say, a moving grove.
-
-MACBETH.
-If thou speak’st false,
-Upon the next tree shalt thou hang alive,
-Till famine cling thee: if thy speech be sooth,
-I care not if thou dost for me as much.—
-I pull in resolution; and begin
-To doubt th’ equivocation of the fiend,
-That lies like truth. “Fear not, till Birnam wood
-Do come to Dunsinane;” and now a wood
-Comes toward Dunsinane.—Arm, arm, and out!—
-If this which he avouches does appear,
-There is nor flying hence nor tarrying here.
-I ’gin to be aweary of the sun,
-And wish th’ estate o’ th’ world were now undone.—
-Ring the alarum bell!—Blow, wind! come, wrack!
-At least we’ll die with harness on our back.
-
-[Exeunt.]
-SCENE VI. The same. A Plain before the Castle.
-
-Enter, with drum and colours, Malcolm, old Siward, Macduff and their Army, with boughs.
-
-MALCOLM.
-Now near enough. Your leafy screens throw down,
-And show like those you are.—You, worthy uncle,
-Shall with my cousin, your right noble son,
-Lead our first battle: worthy Macduff and we
-Shall take upon’s what else remains to do,
-According to our order.
-
-SIWARD.
-Fare you well.—
-Do we but find the tyrant’s power tonight,
-Let us be beaten, if we cannot fight.
-
-MACDUFF.
-Make all our trumpets speak; give them all breath,
-Those clamorous harbingers of blood and death.
-
-[Exeunt.]
-SCENE VII. The same. Another part of the Plain.
-
-Alarums. Enter Macbeth.
-
-MACBETH.
-They have tied me to a stake. I cannot fly,
-But, bear-like I must fight the course.—What’s he
-That was not born of woman? Such a one
-Am I to fear, or none.
-
-Enter young Siward.
-
-YOUNG SIWARD.
-What is thy name?
-
-MACBETH.
-Thou’lt be afraid to hear it.
-
-YOUNG SIWARD.
-No; though thou call’st thyself a hotter name
-Than any is in hell.
-
-MACBETH.
-My name’s Macbeth.
-
-YOUNG SIWARD.
-The devil himself could not pronounce a title
-More hateful to mine ear.
-
-MACBETH.
-No, nor more fearful.
-
-YOUNG SIWARD.
-Thou liest, abhorred tyrant. With my sword
-I’ll prove the lie thou speak’st.
-
-[They fight, and young Siward is slain.]
-
-MACBETH.
-Thou wast born of woman.
-But swords I smile at, weapons laugh to scorn,
-Brandish’d by man that’s of a woman born.
-
-[Exit.]
-
-Alarums. Enter Macduff.
-
-MACDUFF.
-That way the noise is.—Tyrant, show thy face!
-If thou be’st slain and with no stroke of mine,
-My wife and children’s ghosts will haunt me still.
-I cannot strike at wretched kerns, whose arms
-Are hired to bear their staves. Either thou, Macbeth,
-Or else my sword, with an unbatter’d edge,
-I sheathe again undeeded. There thou shouldst be;
-By this great clatter, one of greatest note
-Seems bruited. Let me find him, Fortune!
-And more I beg not.
-
-[Exit. Alarums.]
-
-Enter Malcolm and old Siward.
-
-SIWARD.
-This way, my lord;—the castle’s gently render’d:
-The tyrant’s people on both sides do fight;
-The noble thanes do bravely in the war,
-The day almost itself professes yours,
-And little is to do.
-
-MALCOLM.
-We have met with foes
-That strike beside us.
-
-SIWARD.
-Enter, sir, the castle.
-
-[Exeunt. Alarums.]
-SCENE VIII. The same. Another part of the field.
-
-Enter Macbeth.
-
-MACBETH.
-Why should I play the Roman fool, and die
-On mine own sword? whiles I see lives, the gashes
-Do better upon them.
-
-Enter Macduff.
-
-MACDUFF.
-Turn, hell-hound, turn!
-
-MACBETH.
-Of all men else I have avoided thee:
-But get thee back; my soul is too much charg’d
-With blood of thine already.
-
-MACDUFF.
-I have no words;
-My voice is in my sword: thou bloodier villain
-Than terms can give thee out!
-
-[They fight.]
-
-MACBETH.
-Thou losest labour:
-As easy mayst thou the intrenchant air
-With thy keen sword impress, as make me bleed:
-Let fall thy blade on vulnerable crests;
-I bear a charmed life, which must not yield
-To one of woman born.
-
-MACDUFF.
-Despair thy charm;
-And let the angel whom thou still hast serv’d
-Tell thee, Macduff was from his mother’s womb
-Untimely ripp’d.
-
-MACBETH.
-Accursed be that tongue that tells me so,
-For it hath cow’d my better part of man!
-And be these juggling fiends no more believ’d,
-That palter with us in a double sense;
-That keep the word of promise to our ear,
-And break it to our hope!—I’ll not fight with thee.
-
-MACDUFF.
-Then yield thee, coward,
-And live to be the show and gaze o’ th’ time.
-We’ll have thee, as our rarer monsters are,
-Painted upon a pole, and underwrit,
-“Here may you see the tyrant.”
-
-MACBETH.
-I will not yield,
-To kiss the ground before young Malcolm’s feet,
-And to be baited with the rabble’s curse.
-Though Birnam wood be come to Dunsinane,
-And thou oppos’d, being of no woman born,
-Yet I will try the last. Before my body
-I throw my warlike shield: lay on, Macduff;
-And damn’d be him that first cries, “Hold, enough!”
-
-[Exeunt fighting. Alarums.]
-
-Retreat. Flourish. Enter, with drum and colours, Malcolm, old Siward, Ross, Thanes and Soldiers.
-
-MALCOLM.
-I would the friends we miss were safe arriv’d.
-
-SIWARD.
-Some must go off; and yet, by these I see,
-So great a day as this is cheaply bought.
-
-MALCOLM.
-Macduff is missing, and your noble son.
-
-ROSS.
-Your son, my lord, has paid a soldier’s debt:
-He only liv’d but till he was a man;
-The which no sooner had his prowess confirm’d
-In the unshrinking station where he fought,
-But like a man he died.
-
-SIWARD.
-Then he is dead?
-
-ROSS.
-Ay, and brought off the field. Your cause of sorrow
-Must not be measur’d by his worth, for then
-It hath no end.
-
-SIWARD.
-Had he his hurts before?
-
-ROSS.
-Ay, on the front.
-
-SIWARD.
-Why then, God’s soldier be he!
-Had I as many sons as I have hairs,
-I would not wish them to a fairer death:
-And so his knell is knoll’d.
-
-MALCOLM.
-He’s worth more sorrow,
-And that I’ll spend for him.
-
-SIWARD.
-He’s worth no more.
-They say he parted well and paid his score:
-And so, God be with him!—Here comes newer comfort.
-
-Enter Macduff with Macbeth’s head.
-
-MACDUFF.
-Hail, King, for so thou art. Behold, where stands
-Th’ usurper’s cursed head: the time is free.
-I see thee compass’d with thy kingdom’s pearl,
-That speak my salutation in their minds;
-Whose voices I desire aloud with mine,—
-Hail, King of Scotland!
-
-ALL.
-Hail, King of Scotland!
-
-[Flourish.]
-
-MALCOLM.
-We shall not spend a large expense of time
-Before we reckon with your several loves,
-And make us even with you. My thanes and kinsmen,
-Henceforth be earls, the first that ever Scotland
-In such an honour nam’d. What’s more to do,
-Which would be planted newly with the time,—
-As calling home our exil’d friends abroad,
-That fled the snares of watchful tyranny;
-Producing forth the cruel ministers
-Of this dead butcher, and his fiend-like queen,
-Who, as ’tis thought, by self and violent hands
-Took off her life;—this, and what needful else
-That calls upon us, by the grace of Grace,
-We will perform in measure, time, and place.
-So thanks to all at once, and to each one,
-Whom we invite to see us crown’d at Scone.
-
-[Flourish. Exeunt.]
-Transcriber’s Notes
-
-    New original cover art included with this eBook is granted to the public domain.
-
-*** END OF THE PROJECT GUTENBERG EBOOK 1533 ***
 `
 
 function eatData(input) {
