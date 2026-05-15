@@ -3599,8 +3599,10 @@ function format(text) {
     if (capitalizedWords.includes(k)) {
       k = k.charAt(0).toUpperCase() + k.slice(1)
     }
-    if (wordBlacklist.includes(k)) {
-      k = "***"
+    for (let i=0; i<wordBlacklist.length; i++) {
+      if (k.includes(wordBlacklist[i])) {
+        k = "***"
+      }
     }
     return k
   }).join(" ")
