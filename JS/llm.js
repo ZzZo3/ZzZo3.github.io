@@ -106,6 +106,8 @@ He exits.`
 
 let words = []
 let nextWords = []
+const punctuation = [",",";",":",".","!","?"]
+const puncTerminating = [".","!","?"]
 function eatData(input) {
   data = data.split("\n").join()
   data = data.split(".").join(" . ")
@@ -186,9 +188,9 @@ function write(inWord) {
   var text = [inWord]
   var last = inWord
   for (let n=0; n<100; n++) {
-    if (true) {
+    if (!puncTerminating.includes(last)) {
       var next = last
-      while (next==last) {
+      while (next==last||punctuation.includes(last)&&punctuation.includes(next)) {
         next = follow(last)
       }
       text.push(next)
@@ -204,5 +206,5 @@ for (let i=0; i<3; i++) {
   while (seedBlacklist.includes(seed)) {
     seed = words[Math.floor(Math.random()*words.length)]
   }
-  console.log("OUTPUT",i+1,write(seed))
+  console.log(i+1,write(seed))
 }
