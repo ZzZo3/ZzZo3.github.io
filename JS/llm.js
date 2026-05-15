@@ -4149,14 +4149,15 @@ function write(inWord) {
   return(text.join(" "))
 }
 
+function capitalize(k) {
+  if (capitalizedWords.includes(k)) {
+    k = k.charAt(0).toUpperCase() + k.slice(1)
+  }
+  return k
+}
+
 function format(text) {
-  text = text.split(" ").map((k)=>{
-    if (capitalizedWords.includes(k)) {
-      return k.charAt(0).toUpperCase() + k.slice(1)
-    } else {
-      return k
-    }
-  }).join(" ")
+  text = text.split(" ").map((k)=>capitalize(k)).join(" ")
   text = text.split(" .").join(".")
   text = text.split(" !").join("!")
   text = text.split(" ?").join("?")
