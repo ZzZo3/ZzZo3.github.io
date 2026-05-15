@@ -202,7 +202,7 @@ function write(inWord) {
   return(text.join(" "))
 }
 
-let seedBlacklist = [" ",".",""]
+let seedBlacklist = [" ",".","","?","!",","]
 
 let outputText = ""
 for (let i=0; i<3; i++) {
@@ -215,4 +215,6 @@ for (let i=0; i<3; i++) {
   outputText += "\n"+newWrite
 }
 
-outputBox.innerHTML = outputText
+function updateOutput() {
+  outputBox.innerHTML = outputText
+}
