@@ -4157,7 +4157,9 @@ function capitalize(k) {
 }
 
 function format(text) {
+  console.log(text)
   text = text.split(" ").map((k)=>capitalize(k)).join(" ")
+  console.log(text)
   text = text.split(" .").join(".")
   text = text.split(" !").join("!")
   text = text.split(" ?").join("?")
