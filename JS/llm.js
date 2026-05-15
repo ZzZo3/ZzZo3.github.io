@@ -212,7 +212,7 @@ for (let i=0; i<3; i++) {
   }
   newWrite = write(seed)
   console.log(i+1,newWrite)
-  outputText += "\n"+newWrite
+  outputText += (i+1)+"\n"+newWrite
 }
 
 function updateOutput() {
