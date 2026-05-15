@@ -15,10 +15,11 @@ const capitalizedWords = ['i','lord','sankara',
   'macduff','lennox','ross','menteith','angus',
   'caithness','fleance','siward','seyton','cawdor',
   'ireland','birmingham','dunsinane','morocco','barry','larry',
-  'afghanistan','norweyan']
+  'afghanistan','norweyan','josé','marti']
 const punctuation = [",",";",":",".","!","?","[","]","(",")",
   "{","}","<",">","/","\`","~","\'","\"","|","-","—","—","—"]
 const puncTerminating = [".","!","?"]
+const wordBlacklist = ["negro","nigger"]
 
 //CLASSES
 class Word {
@@ -3597,6 +3598,9 @@ function format(text) {
   text = text.split(" ").map((k)=>{
     if (capitalizedWords.includes(k)) {
       k = k.charAt(0).toUpperCase() + k.slice(1)
+    }
+    if (wordBlacklist.includes(k)) {
+      k = "***"
     }
     return k
   }).join(" ")
