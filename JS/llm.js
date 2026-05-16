@@ -4913,16 +4913,13 @@ function updateOutput() {
 }
 
 function updateManualOutput() {
-  let text = inputText.value
-  text = text.split(" ")
+  let text = inputText.value.split(" ")
   let seed = text[text.length-1]
   text[text.length-1] = ""
-  text = text.filter((k)=>k!="")
-  text = text.join(" ")
+  text = text.filter((k)=>k!="").join(" ")
   runSeed(seed,1)
   text += (" "+outputText.toLowerCase())
-  text = format(text)
-  manualOutput.innerHTML = text
+  manualOutput.innerHTML = format(text)
 }
 
 //STUFF THAT RUNS ON LOAD
