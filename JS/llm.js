@@ -3625,8 +3625,10 @@ function run(count) {
 }
 
 function updateOutput() {
-  run(3)
-  outputBox.innerHTML = outputText
+  while (!outputBox.innerHTML.includes("***")) {
+    run(3)
+    outputBox.innerHTML = outputText
+  }
 }
 
 //STUFF THAT RUNS ON LOAD
