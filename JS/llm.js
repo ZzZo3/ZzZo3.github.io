@@ -15,7 +15,7 @@ const capitalizedWords = ['i','lord','sankara',
   'israel','africa','latin','america','american',
   'asia','asian','thomas','caesar','god','macbeth',
   'banquo','hecate','duncan','malcolm','donalbain',
-  'macduff','lennox','ross','menteith','angus',
+  'macduff','norway','lennox','ross','menteith','angus',
   'caithness','fleance','siward','seyton','cawdor',
   'ireland','birmingham','dunsinane','morocco','barry','larry',
   'afghanistan','norweyan','josé','marti','martin','luther']
