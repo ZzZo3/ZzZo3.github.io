@@ -3925,9 +3925,9 @@ function format(text) {
   return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
-function runSeed(seed, count) {
+function runSeed(seedTemp, count) {
     outputText = ""
-    seed = seed.toLowerCase().split(" ").join("")
+    let seed = seedTemp.toLowerCase().split(" ").join("")
     if (!words.includes(seed)) {
       outputText = "INVALID SEED"
       return
