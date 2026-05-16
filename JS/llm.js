@@ -3627,7 +3627,7 @@ function runSeed(seed, count) {
       let newWrite = write(seed)
       let newForm = format(newWrite)
       console.log(i+1,"seed: \"",seed,"\", write: \"",newWrite,"\", format: \"",newForm,"\"")
-      outputText += "<br>"+(i+1)+"  "+newForm
+      outputText = newForm
     }
 }
 
