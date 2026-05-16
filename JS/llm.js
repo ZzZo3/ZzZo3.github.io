@@ -3646,7 +3646,7 @@ function updateOutput() {
   run(3)
   outputBox.innerHTML = outputText
 }
-//
+
 function updateManualOutput() {
   let text = inputText.value
   text = text.split(" ")
@@ -3655,7 +3655,7 @@ function updateManualOutput() {
   text = text.filter((k)=>k!="")
   text = text.join(" ")
   runSeed(seed,1)
-  text += (" "+outputText)
+  text += (" "+outputText.toLowerCase())
   manualOutput.innerHTML = format(text)
 }
 
