@@ -36,3471 +36,3793 @@ class Word {
 let words = []
 let nextWords = []
 let data = `
-According to all known laws of aviation, there is no way a bee should be able to fly.
-Its wings are too small to get its fat little body off the ground.
-The bee, of course, flies anyway because bees don't care what humans think is impossible.
-Yellow, black. Yellow, black. Yellow, black. Yellow, black.
-Three days grade school, three days high school.
-Those were awkward.
-Three days college. I'm glad I took a day and hitchhiked around The Hive.
-We know that you, as a bee, have worked your whole life to get to the point where you can work for your whole life.
-Honey begins when our valiant Pollen Jocks bring the nectar to The Hive.
-Our top-secret formula is automatically color-corrected, scent-adjusted and bubble-contoured into this soothing sweet syrup with its distinctive golden glow you know as... Honey!
-But bees know that every small job, if it's done well, means a lot.
-But choose carefully because you'll stay in the job you pick for the rest of your life.
-You'll be happy to know that bees, as a species, haven't had one day off in 27 million years.
-That's an insane choice to have to make.
-I'm relieved. Now we only have to make one decision in life.
-But, Adam, how could they never have told us that?
-Why would you question anything? We're bees.
-We're the most perfectly functioning society on Earth.
-You ever think maybe things work a little too well here?
-Like what? Give me one example.
-I don't know. But you know what I'm talking about.
-Please clear the gate. Royal Nectar Force on approach.
-It must be dangerous being a Pollen Jock.
-Yeah. Once a bear pinned me against a mushroom!
-He had a paw on my throat, and with the other, he was slapping me!
-Do you ever get bored doing the same job every day?
-Son, let me tell you about stirring.
-You grab that stick, and you just move it around, and you stir it around.
-You get yourself into a rhythm.
-It's a beautiful thing.
-You know, Dad, the more I think about it,
-maybe the honey field just isn't right for me.
-You were thinking of what, making balloon animals?
-That's a bad job for a guy with a stinger.
-Janet, your son's not sure he wants to go into honey!
-Barry, you are so funny sometimes.
-I'm not trying to be funny.
-You're not funny! You're going into honey. Our son, the stirrer!
-You're gonna be a stirrer?
-No one's listening to me!
-Wait till you see the sticks I have.
-I could say anything right now.
-I'm gonna get an ant tattoo!
-Let's open some honey and celebrate!
-Maybe I'll pierce my thorax. Shave my antennae. Shack up with a grasshopper. Get a gold tooth and call everybody "dawg"!
-I'm so proud.
-We're starting work today!
-Today's the day.
-Come on! All the good jobs will be gone.
-Yeah, right.
-Pollen counting, stunt bee, pouring, stirrer, front desk, hair removal...
-A bee died. Makes an opening. See? He's dead. Another dead one.
-Deady. Deadified. Two more dead.
-Dead from the neck up. Dead from the neck down. That's life!
-Oh, this is so hard!
-Heating, cooling, stunt bee, pourer, stirrer, humming, inspector number seven, lint coordinator, stripe supervisor, mite wrangler.
-Barry, what do you think I should... Barry?
-All right, we've got the sunflower patch in quadrant nine...
-I have to, before I go to work for the rest of my life.
-You're gonna die! You're crazy! Hello?
-Another call coming in.
-If anyone's feeling brave, there's a Korean deli on 83rd that gets their roses today.
-You got a rain advisory today, and as you all know, bees cannot fly in rain.
-So be careful. As always, watch your brooms, hockey sticks, dogs, birds, bears and bats.
-Also, I got a couple of reports of root beer being poured on us.
-Murphy's in a home because of it, babbling like a cicada!
-That's awful.
-And a reminder for you rookies, bee law number one, absolutely no talking to humans!
- All right, launch positions!
-Buzz, buzz, buzz, buzz! Buzz, buzz, buzz, buzz! Buzz, buzz, buzz, buzz!
-I pick up some pollen here, sprinkle it over here. Maybe a dash over there, a pinch on that one.
-See that? It's a little bit of magic.
-That's amazing. Why do we do that?
-That's pollen power. More pollen, more flowers, more nectar, more honey for us.
-I'm picking up a lot of bright yellow, Could be daisies, Don't we need those?
-What are you doing?!
-Wow... the tension level out here is unbelievable.
-I gotta get home.
-Can't fly in rain. Can't fly in rain. Can't fly in rain.
-Mayday! Mayday! Bee going down!
-Ken, could you close the window please?
-Ken, could you close the window please?
-Check out my new resume. I made it into a fold-out brochure. You see? Folds out.
-Oh, no. More humans. I don't need this.
-What was that?
-Maybe this time. This time. This time. This time! This time! This... Drapes!
-That is diabolical.
-It's fantastic. It's got all my special skills, even my top-ten favorite movies.
-What's number one? Star Wars?
-Nah, I don't go for that... kind of stuff.
-No wonder we shouldn't talk to them. They're out of their minds.
-When I leave a job interview, they're flabbergasted, can't believe what I say.
-There's the sun. Maybe that's a way out.
-I don't remember the sun having a big 75 on it.
-I predicted global warming. I could feel it getting hotter. At first I thought it was just me.
-Wait! Stop! Bee!
-Stand back. These are winter boots.
-Don't kill him!
-You know I'm allergic to them! This thing could kill me!
-Why does his life have less value than yours?
-Why does his life have any less value than mine? Is that your statement?
-I'm just saying all life has value. You don't know what he's capable of feeling.
-Well, I'm sure this is very disconcerting.
-This is a bit of a surprise to me. I mean, you're a bee!
-I am. And I'm not supposed to be doing this, but they were all trying to kill me.
-And if it wasn't for you... I had to thank you. It's just how I was raised.
-That was a little weird. I'm talking with a bee.
-Yeah.
-I'm talking to a bee. And the bee is talking to me!
-I just want to say I'm grateful.
-I'll leave now.
-Wait! How did you learn to do that?
-What?
-The talking thing.
-Same way you did, I guess. "Mama, Dada, honey." You pick it up.
-That's very funny.
-Yeah.
-Bees are funny. If we didn't laugh, we'd cry with what we have to deal with.
-Anyway... Can I... get you something?
-Like what?
-I don't know. I mean... I don't know. Coffee?
-I don't want to put you out.
-It's no trouble. It takes two minutes.
-It's just coffee.
-I hate to impose.
-Don't be ridiculous!
-Actually, I would love a cup.
-Hey, you want rum cake?
-I shouldn't.
-Have some.
-No, I can't.
-Come on!
-I'm trying to lose a couple micrograms.
-Where?
-These stripes don't help.
-You look great!
-I don't know if you know anything about fashion.
-Are you all right?
-No.
-He's making the tie in the cab as they're flying up Madison.
-He finally gets there.
-He runs up the steps into the church.
-The wedding is on.
-And he says, "Watermelon?
-I thought you said Guatemalan.
-Why would I marry a watermelon?"
-Is that a bee joke?
-That's the kind of stuff we do.
-Yeah, different.
-So, what are you gonna do, Barry?
-About work? I don't know.
-I want to do my part for The Hive, but I can't do it the way they want.
-I know how you feel.
-You do?
-Sure.
-My parents wanted me to be a lawyer or a doctor, but I wanted to be a florist.
-Really?
-My only interest is flowers.
-Our new queen was just elected with that same campaign slogan.
-Anyway, if you look... There's my hive right there. See it?
-You're in Sheep Meadow!
-Yes! I'm right off the Turtle Pond!
-No way! I know that area. I lost a toe ring there once.
-Why do girls put rings on their toes?
-Why not?
-It's like putting a hat on your knee.
-Maybe I'll try that.
-You all right, ma'am?
-Oh, yeah. Fine.
-Just having two cups of coffee!
-Anyway, this has been great.
-Thanks for the coffee.
-Yeah, it's no trouble.
-Sorry I couldn't finish it. If I did, I'd be up the rest of my life.
-Are you...?
-Can I take a piece of this with me?
-Sure! Here, have a crumb.
-Thanks!
-Yeah.
-All right. Well, then... I guess I'll see you around. Or not.
-OK, Barry.
-And thank you so much again... for before.
-Oh, that? That was nothing.
-Well, not nothing, but... Anyway...
-This can't possibly work.
-He's all set to go.
-We may as well try it.
-OK, Dave, pull the chute.
-Sounds amazing.
-It was amazing!
-It was the scariest, happiest moment of my life.
-Humans! I can't believe you were with humans!
-Giant, scary humans!
-What were they like?
-Huge and crazy. They talk crazy.
-They eat crazy giant things.
-They drive crazy.
-Do they try and kill you, like on TV?
-Some of them. But some of them don't.
-How'd you get back?
-Poodle.
-You did it, and I'm glad. You saw whatever you wanted to see.
-You had your "experience." Now you can pick out yourjob and be normal.
-Well...
-Well?
-Well, I met someone.
-You did? Was she Bee-ish?
-A wasp?! Your parents will kill you!
-No, no, no, not a wasp.
-Spider?
-I'm not attracted to spiders.
-I know it's the hottest thing, with the eight legs and all. I can't get by that face.
-So who is she?
-She's... human.
-No, no. That's a bee law. You wouldn't break a bee law.
-Her name's Vanessa.
-Oh, boy.
-She's so nice. And she's a florist!
-Oh, no! You're dating a human florist!
-We're not dating.
-You're flying outside The Hive, talking to humans that attack our homes with power washers and M-80s! One-eighth a stick of dynamite!
-She saved my life! And she understands me.
-This is over!
-Eat this.
-This is not over! What was that?
-They call it a crumb.
-It was so stingin' stripey!
-And that's not what they eat.
-That's what falls off what they eat!
-You know what a Cinnabon is?
-It's bread and cinnamon and frosting. They heat it up...
-We are not them! We're us.
-There's us and there's them!
-Yes, but who can deny the heart that is yearning?
-There's no yearning. Stop yearning. Listen to me!
-You have got to start thinking bee, my friend. Thinking bee!
-Thinking bee.
-Thinking bee.
-Thinking bee! Thinking bee! Thinking bee! Thinking bee!
-There he is. He's in the pool.
-You know what your problem is, Barry?
-I gotta start thinking bee?
-How much longer will this go on?
-It's been three days! Why aren't you working?
-I've got a lot of big life decisions to think about.
-What life? You have no life!
-They have a huge parade of flowers every year in Pasadena?
-To be in the Tournament of Roses, that's every florist's dream!
-Up on a float, surrounded by flowers, crowds cheering.
-A tournament. Do the roses compete in athletic events?
-No. All right, I've got one.
-How come you don't fly everywhere?
-It's exhausting. Why don't you run everywhere? It's faster.
-TiVo. You can just freeze live TV? That's insane!
-You don't have that?
-We have Hivo, but it's a disease. It's a horrible, horrible disease.
-You must want to sting all those jerks.
-We try not to sting. It's usually fatal for us.
-So you have to watch your temper.
-Very carefully.
-You kick a wall, take a walk, write an angry letter and throw it out. Work through it like any emotion: Anger, jealousy, lust.
-I know who makes it! And it's hard to make it!
-There's heating, cooling, stirring. You need a whole Krelman thing!
-It's organic.
-It's our-ganic!
-It's just honey, Barry.
-Just what?!
-Bees don't know about this! This is stealing! A lot of stealing!
-You've taken our homes, schools,hospitals! This is all we have!
-And it's on sale?! I'm getting to the bottom of this.
-I'm getting to the bottom of all of this!
-Hey, Hector. You almost done?
-Almost.
-He is here. I sense it.
-Well, I guess I'll go home now and just leave this nice honey out, with no one around.
-You're busted, box boy!
-I knew I heard something.
-So you can talk!
-I can talk. And now you'll start talking!
-Where you getting the sweet stuff? Who's your supplier?
-I don't understand.
-I thought we were friends.
-The last thing we want to do is upset bees!
-You're too late! It's ours now!
-You, sir, have crossed the wrong sword!
-You, sir, will be lunch for my iguana, Ignacio!
-Where is the honey coming from? Tell me where!
-Honey Farms! It comes from Honey Farms!
-Crazy person!
-What horrible thing has happened here?
-These faces, they never knew what hit them. And now
-they're on the road to nowhere!
-Just keep still.
-What? You're not dead?
-Do I look dead? They will wipe anything that moves. Where you headed?
-To Honey Farms. I am onto something huge here.
-I'm going to Alaska. Moose blood, crazy stuff. Blows your head off!
-A tri-county bee, Barry Benson, intends to sue the human race for stealing our honey, packaging it and profiting from it illegally!
-Tomorrow night on Bee Larry King, we'll have three former queens here in our studio, discussing their new book, classy Ladies, out this week on Hexagon.
-Tonight we're talking to Barry Benson.
-Did you ever think, "I'm a kid from The Hive. I can't do this"?
-Bees have never been afraid to change the world.
-What about Bee Oolumbus? Bee Gandhi? Bejesus?
-Where I'm from, we'd never sue humans.
-We were thinking of stickball or candy stores.
-How old are you?
-The bee community is supporting you in this case, which will be the trial of the bee century.
-You know, they have a Larry King in the human world too.
-It's a common name. Next week...
-He looks like you and has a show and suspenders and colored dots...
-Next week...
-Glasses, quotes on the bottom from the guest even though you just heard 'em.
-Bear Week next week! They're scary, hairy and here live.
-Always leans forward, pointy shoulders, squinty eyes, very Jewish.
-In tennis, you attack at the point of weakness!
-Yes, and Adam here has been a huge help.
-Frosting...
-How many sugars?
-Just one. I try not to use the competition.
-So why are you helping me?
-Bees have good qualities. And it takes my mind off the shop. Instead of flowers, people are giving balloon bouquets now.
-Those are great, if you're three.
-And artificial flowers.
-Oh, those just get me psychotic!
-Yeah, me too.
-Bent stingers, pointless pollination.
-Bees must hate those fake things!
-Nothing worse than a daffodil that's had work done.
-Maybe this could make up for it a little bit.
-This lawsuit's a pretty big deal.
-I guess.
-You sure you want to go through with it?
-Am I sure? When I'm done with the humans, they won't be able to say, "Honey, I'm home," without paying a royalty!
-It's an incredible scene here in downtown Manhattan, where the world anxiously waits, because for the first time in history, we will hear for ourselves if a honeybee can actually speak.
-What have we gotten into here, Barry?
-It's pretty big, isn't it?
-I can't believe how many humans don't work during the day.
-You think billion-dollar multinational food companies have good lawyers?
-Everybody needs to stay behind the barricade.
-What's the matter?
-I don't know, I just got a chill.
-Well, if it isn't the bee team.
-You boys work on this?
-All rise! The Honorable Judge Bumbleton presiding.
-All right. Case number 4475,
-Superior Court of New York,
-Barry Bee Benson v. the Honey Industry is now in session.
-Mr. Montgomery, you're representing the five food companies collectively?
-A privilege.
-Mr. Benson... you're representing all the bees of the world?
-I'm kidding. Yes, Your Honor, we're ready to proceed.
-Mr. Montgomery, your opening statement, please.
-Ladies and gentlemen of the jury, my grandmother was a simple woman. Born on a farm, she believed it was man's divine right to benefit from the bounty of nature God put before us.
-If we lived in the topsy-turvy world Mr. Benson imagines, just think of what would it mean.
-I would have to negotiate with the silkworm for the elastic in my britches!
-Talking bee!
-How do we know this isn't some sort of holographic motion-picture-capture Hollywood wizardry?
-They could be using laser beams! Robotics! Ventriloquism! Cloning! For all we know, he could be on steroids!
-Mr. Benson?
-Ladies and gentlemen, there's no trickery here. I'm just an ordinary bee. Honey's pretty important to me. It's important to all bees. We invented it! We make it. And we protect it with our lives.
-Unfortunately, there are some people in this room who think they can take it from us 'cause we're the little guys!
-I'm hoping that, after this is all over, you'll see how, by taking our honey, you not only take everything we have but everything we are!
-I wish he'd dress like that all the time. So nice!
-Call your first witness.
-So, Mr. Klauss Vanderhayden of Honey Farms, big company you have.
-I suppose so.
-I see you also own Honeyburton and Honron!
-Yes, they provide beekeepers for our farms.
-Beekeeper. I find that to be a very disturbing term.
-I don't imagine you employ any bee-free-ers, do you?
-No.
-I couldn't hear you.
-No.
-No. Because you don't free bees. You keep bees. Not only that, it seems you thought a bear would be an appropriate image for a jar of honey.
-They're very lovable creatures. Yogi Bear, Fozzie Bear, Build-A-Bear.
-You mean like this?
-Bears kill bees!
-How'd you like his head crashing through your living room?! Biting into your couch! Spitting out your throw pillows! OK, that's enough. Take him away.
-So, Mr. Sting, thank you for being here. Your name intrigues me. Where have I heard it before?
-I was dying to get out of that office.
-You have got to start thinking bee, my friend.
-Hold it. Let's just stop for a second. Hold it.
-I'm sorry. I'm sorry, everyone. Can we stop here?
-I'm not making a major life decision during a production number!
-All right. Take ten, everybody. Wrap it up, guys.
-
-
-16 April 1963
-My Dear Fellow Clergymen:
-While confined here in the Birmingham city jail, I came across your recent statement calling my present activities "unwise and untimely." Seldom do I pause to answer criticism of my work and ideas. If I sought to answer all the criticisms that cross my desk, my secretaries would have little time for anything other than such correspondence in the course of the day, and I would have no time for constructive work. But since I feel that you are men of genuine good will and that your criticisms are sincerely set forth, I want to try to answer your statement in what I hope will be patient and reasonable terms.
-
-I think I should indicate why I am here in Birmingham, since you have been influenced by the view which argues against "outsiders coming in." I have the honor of serving as president of the Southern Christian Leadership Conference, an organization operating in every southern state, with headquarters in Atlanta, Georgia. We have some eighty five affiliated organizations across the South, and one of them is the Alabama Christian Movement for Human Rights. Frequently we share staff, educational and financial resources with our affiliates. Several months ago the affiliate here in Birmingham asked us to be on call to engage in a nonviolent direct action program if such were deemed necessary. We readily consented, and when the hour came we lived up to our promise. So I, along with several members of my staff, am here because I was invited here. I am here because I have organizational ties here.
-
-But more basically, I am in Birmingham because injustice is here. Just as the prophets of the eighth century B.C. left their villages and carried their "thus saith the Lord" far beyond the boundaries of their home towns, and just as the Apostle Paul left his village of Tarsus and carried the gospel of Jesus Christ to the far corners of the Greco Roman world, so am I compelled to carry the gospel of freedom beyond my own home town. Like Paul, I must constantly respond to the Macedonian call for aid.
-
-Moreover, I am cognizant of the interrelatedness of all communities and states. I cannot sit idly by in Atlanta and not be concerned about what happens in Birmingham. Injustice anywhere is a threat to justice everywhere. We are caught in an inescapable network of mutuality, tied in a single garment of destiny. Whatever affects one directly, affects all indirectly. Never again can we afford to live with the narrow, provincial "outside agitator" idea. Anyone who lives inside the United States can never be considered an outsider anywhere within its bounds.
-
-You deplore the demonstrations taking place in Birmingham. But your statement, I am sorry to say, fails to express a similar concern for the conditions that brought about the demonstrations. I am sure that none of you would want to rest content with the superficial kind of social analysis that deals merely with effects and does not grapple with underlying causes. It is unfortunate that demonstrations are taking place in Birmingham, but it is even more unfortunate that the city's white power structure left the Negro community with no alternative.
-
-In any nonviolent campaign there are four basic steps: collection of the facts to determine whether injustices exist; negotiation; self purification; and direct action. We have gone through all these steps in Birmingham. There can be no gainsaying the fact that racial injustice engulfs this community. Birmingham is probably the most thoroughly segregated city in the United States. Its ugly record of brutality is widely known. Negroes have experienced grossly unjust treatment in the courts. There have been more unsolved bombings of Negro homes and churches in Birmingham than in any other city in the nation. These are the hard, brutal facts of the case. On the basis of these conditions, Negro leaders sought to negotiate with the city fathers. But the latter consistently refused to engage in good faith negotiation.
-
-Then, last September, came the opportunity to talk with leaders of Birmingham's economic community. In the course of the negotiations, certain promises were made by the merchants--for example, to remove the stores' humiliating racial signs. On the basis of these promises, the Reverend Fred Shuttlesworth and the leaders of the Alabama Christian Movement for Human Rights agreed to a moratorium on all demonstrations. As the weeks and months went by, we realized that we were the victims of a broken promise. A few signs, briefly removed, returned; the others remained. As in so many past experiences, our hopes had been blasted, and the shadow of deep disappointment settled upon us. We had no alternative except to prepare for direct action, whereby we would present our very bodies as a means of laying our case before the conscience of the local and the national community. Mindful of the difficulties involved, we decided to undertake a process of self purification. We began a series of workshops on nonviolence, and we repeatedly asked ourselves: "Are you able to accept blows without retaliating?" "Are you able to endure the ordeal of jail?" We decided to schedule our direct action program for the Easter season, realizing that except for Christmas, this is the main shopping period of the year. Knowing that a strong economic-withdrawal program would be the by product of direct action, we felt that this would be the best time to bring pressure to bear on the merchants for the needed change.
-
-Then it occurred to us that Birmingham's mayoral election was coming up in March, and we speedily decided to postpone action until after election day. When we discovered that the Commissioner of Public Safety, Eugene "Bull" Connor, had piled up enough votes to be in the run off, we decided again to postpone action until the day after the run off so that the demonstrations could not be used to cloud the issues. Like many others, we waited to see Mr. Connor defeated, and to this end we endured postponement after postponement. Having aided in this community need, we felt that our direct action program could be delayed no longer.
-
-You may well ask: "Why direct action? Why sit ins, marches and so forth? Isn't negotiation a better path?" You are quite right in calling for negotiation. Indeed, this is the very purpose of direct action. Nonviolent direct action seeks to create such a crisis and foster such a tension that a community which has constantly refused to negotiate is forced to confront the issue. It seeks so to dramatize the issue that it can no longer be ignored. My citing the creation of tension as part of the work of the nonviolent resister may sound rather shocking. But I must confess that I am not afraid of the word "tension." I have earnestly opposed violent tension, but there is a type of constructive, nonviolent tension which is necessary for growth. Just as Socrates felt that it was necessary to create a tension in the mind so that individuals could rise from the bondage of myths and half truths to the unfettered realm of creative analysis and objective appraisal, so must we see the need for nonviolent gadflies to create the kind of tension in society that will help men rise from the dark depths of prejudice and racism to the majestic heights of understanding and brotherhood. The purpose of our direct action program is to create a situation so crisis packed that it will inevitably open the door to negotiation. I therefore concur with you in your call for negotiation. Too long has our beloved Southland been bogged down in a tragic effort to live in monologue rather than dialogue.
-
-One of the basic points in your statement is that the action that I and my associates have taken in Birmingham is untimely. Some have asked: "Why didn't you give the new city administration time to act?" The only answer that I can give to this query is that the new Birmingham administration must be prodded about as much as the outgoing one, before it will act. We are sadly mistaken if we feel that the election of Albert Boutwell as mayor will bring the millennium to Birmingham. While Mr. Boutwell is a much more gentle person than Mr. Connor, they are both segregationists, dedicated to maintenance of the status quo. I have hope that Mr. Boutwell will be reasonable enough to see the futility of massive resistance to desegregation. But he will not see this without pressure from devotees of civil rights. My friends, I must say to you that we have not made a single gain in civil rights without determined legal and nonviolent pressure. Lamentably, it is an historical fact that privileged groups seldom give up their privileges voluntarily. Individuals may see the moral light and voluntarily give up their unjust posture; but, as Reinhold Niebuhr has reminded us, groups tend to be more immoral than individuals.
-
-We know through painful experience that freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed. Frankly, I have yet to engage in a direct action campaign that was "well timed" in the view of those who have not suffered unduly from the disease of segregation. For years now I have heard the word "Wait!" It rings in the ear of every Negro with piercing familiarity. This "Wait" has almost always meant "Never." We must come to see, with one of our distinguished jurists, that "justice too long delayed is justice denied."
-
-We have waited for more than 340 years for our constitutional and God given rights. The nations of Asia and Africa are moving with jetlike speed toward gaining political independence, but we still creep at horse and buggy pace toward gaining a cup of coffee at a lunch counter. Perhaps it is easy for those who have never felt the stinging darts of segregation to say, "Wait." But when you have seen vicious mobs lynch your mothers and fathers at will and drown your sisters and brothers at whim; when you have seen hate filled policemen curse, kick and even kill your black brothers and sisters; when you see the vast majority of your twenty million Negro brothers smothering in an airtight cage of poverty in the midst of an affluent society; when you suddenly find your tongue twisted and your speech stammering as you seek to explain to your six year old daughter why she can't go to the public amusement park that has just been advertised on television, and see tears welling up in her eyes when she is told that Funtown is closed to colored children, and see ominous clouds of inferiority beginning to form in her little mental sky, and see her beginning to distort her personality by developing an unconscious bitterness toward white people; when you have to concoct an answer for a five year old son who is asking: "Daddy, why do white people treat colored people so mean?"; when you take a cross county drive and find it necessary to sleep night after night in the uncomfortable corners of your automobile because no motel will accept you; when you are humiliated day in and day out by nagging signs reading "white" and "colored"; when your first name becomes "nigger," your middle name becomes "boy" (however old you are) and your last name becomes "John," and your wife and mother are never given the respected title "Mrs."; when you are harried by day and haunted by night by the fact that you are a Negro, living constantly at tiptoe stance, never quite knowing what to expect next, and are plagued with inner fears and outer resentments; when you are forever fighting a degenerating sense of "nobodiness"--then you will understand why we find it difficult to wait. There comes a time when the cup of endurance runs over, and men are no longer willing to be plunged into the abyss of despair. I hope, sirs, you can understand our legitimate and unavoidable impatience. You express a great deal of anxiety over our willingness to break laws. This is certainly a legitimate concern. Since we so diligently urge people to obey the Supreme Court's decision of 1954 outlawing segregation in the public schools, at first glance it may seem rather paradoxical for us consciously to break laws. One may well ask: "How can you advocate breaking some laws and obeying others?" The answer lies in the fact that there are two types of laws: just and unjust. I would be the first to advocate obeying just laws. One has not only a legal but a moral responsibility to obey just laws. Conversely, one has a moral responsibility to disobey unjust laws. I would agree with St. Augustine that "an unjust law is no law at all."
-
-Now, what is the difference between the two? How does one determine whether a law is just or unjust? A just law is a man made code that squares with the moral law or the law of God. An unjust law is a code that is out of harmony with the moral law. To put it in the terms of St. Thomas Aquinas: An unjust law is a human law that is not rooted in eternal law and natural law. Any law that uplifts human personality is just. Any law that degrades human personality is unjust. All segregation statutes are unjust because segregation distorts the soul and damages the personality. It gives the segregator a false sense of superiority and the segregated a false sense of inferiority. Segregation, to use the terminology of the Jewish philosopher Martin Buber, substitutes an "I it" relationship for an "I thou" relationship and ends up relegating persons to the status of things. Hence segregation is not only politically, economically and sociologically unsound, it is morally wrong and sinful. Paul Tillich has said that sin is separation. Is not segregation an existential expression of man's tragic separation, his awful estrangement, his terrible sinfulness? Thus it is that I can urge men to obey the 1954 decision of the Supreme Court, for it is morally right; and I can urge them to disobey segregation ordinances, for they are morally wrong.
-
-Let us consider a more concrete example of just and unjust laws. An unjust law is a code that a numerical or power majority group compels a minority group to obey but does not make binding on itself. This is difference made legal. By the same token, a just law is a code that a majority compels a minority to follow and that it is willing to follow itself. This is sameness made legal. Let me give another explanation. A law is unjust if it is inflicted on a minority that, as a result of being denied the right to vote, had no part in enacting or devising the law. Who can say that the legislature of Alabama which set up that state's segregation laws was democratically elected? Throughout Alabama all sorts of devious methods are used to prevent Negroes from becoming registered voters, and there are some counties in which, even though Negroes constitute a majority of the population, not a single Negro is registered. Can any law enacted under such circumstances be considered democratically structured?
-
-Sometimes a law is just on its face and unjust in its application. For instance, I have been arrested on a charge of parading without a permit. Now, there is nothing wrong in having an ordinance which requires a permit for a parade. But such an ordinance becomes unjust when it is used to maintain segregation and to deny citizens the First-Amendment privilege of peaceful assembly and protest.
-
-I hope you are able to see the distinction I am trying to point out. In no sense do I advocate evading or defying the law, as would the rabid segregationist. That would lead to anarchy. One who breaks an unjust law must do so openly, lovingly, and with a willingness to accept the penalty. I submit that an individual who breaks a law that conscience tells him is unjust, and who willingly accepts the penalty of imprisonment in order to arouse the conscience of the community over its injustice, is in reality expressing the highest respect for law.
-
-Of course, there is nothing new about this kind of civil disobedience. It was evidenced sublimely in the refusal of Shadrach, Meshach and Abednego to obey the laws of Nebuchadnezzar, on the ground that a higher moral law was at stake. It was practiced superbly by the early Christians, who were willing to face hungry lions and the excruciating pain of chopping blocks rather than submit to certain unjust laws of the Roman Empire. To a degree, academic freedom is a reality today because Socrates practiced civil disobedience. In our own nation, the Boston Tea Party represented a massive act of civil disobedience.
-
-We should never forget that everything Adolf Hitler did in Germany was "legal" and everything the Hungarian freedom fighters did in Hungary was "illegal." It was "illegal" to aid and comfort a Jew in Hitler's Germany. Even so, I am sure that, had I lived in Germany at the time, I would have aided and comforted my Jewish brothers. If today I lived in a Communist country where certain principles dear to the Christian faith are suppressed, I would openly advocate disobeying that country's antireligious laws.
-
-I must make two honest confessions to you, my Christian and Jewish brothers. First, I must confess that over the past few years I have been gravely disappointed with the white moderate. I have almost reached the regrettable conclusion that the Negro's great stumbling block in his stride toward freedom is not the White Citizen's Counciler or the Ku Klux Klanner, but the white moderate, who is more devoted to "order" than to justice; who prefers a negative peace which is the absence of tension to a positive peace which is the presence of justice; who constantly says: "I agree with you in the goal you seek, but I cannot agree with your methods of direct action"; who paternalistically believes he can set the timetable for another man's freedom; who lives by a mythical concept of time and who constantly advises the Negro to wait for a "more convenient season." Shallow understanding from people of good will is more frustrating than absolute misunderstanding from people of ill will. Lukewarm acceptance is much more bewildering than outright rejection.
-
-I had hoped that the white moderate would understand that law and order exist for the purpose of establishing justice and that when they fail in this purpose they become the dangerously structured dams that block the flow of social progress. I had hoped that the white moderate would understand that the present tension in the South is a necessary phase of the transition from an obnoxious negative peace, in which the Negro passively accepted his unjust plight, to a substantive and positive peace, in which all men will respect the dignity and worth of human personality. Actually, we who engage in nonviolent direct action are not the creators of tension. We merely bring to the surface the hidden tension that is already alive. We bring it out in the open, where it can be seen and dealt with. Like a boil that can never be cured so long as it is covered up but must be opened with all its ugliness to the natural medicines of air and light, injustice must be exposed, with all the tension its exposure creates, to the light of human conscience and the air of national opinion before it can be cured.
-
-In your statement you assert that our actions, even though peaceful, must be condemned because they precipitate violence. But is this a logical assertion? Isn't this like condemning a robbed man because his possession of money precipitated the evil act of robbery? Isn't this like condemning Socrates because his unswerving commitment to truth and his philosophical inquiries precipitated the act by the misguided populace in which they made him drink hemlock? Isn't this like condemning Jesus because his unique God consciousness and never ceasing devotion to God's will precipitated the evil act of crucifixion? We must come to see that, as the federal courts have consistently affirmed, it is wrong to urge an individual to cease his efforts to gain his basic constitutional rights because the quest may precipitate violence. Society must protect the robbed and punish the robber. I had also hoped that the white moderate would reject the myth concerning time in relation to the struggle for freedom. I have just received a letter from a white brother in Texas. He writes: "All Christians know that the colored people will receive equal rights eventually, but it is possible that you are in too great a religious hurry. It has taken Christianity almost two thousand years to accomplish what it has. The teachings of Christ take time to come to earth." Such an attitude stems from a tragic misconception of time, from the strangely irrational notion that there is something in the very flow of time that will inevitably cure all ills. Actually, time itself is neutral; it can be used either destructively or constructively. More and more I feel that the people of ill will have used time much more effectively than have the people of good will. We will have to repent in this generation not merely for the hateful words and actions of the bad people but for the appalling silence of the good people. Human progress never rolls in on wheels of inevitability; it comes through the tireless efforts of men willing to be co workers with God, and without this hard work, time itself becomes an ally of the forces of social stagnation. We must use time creatively, in the knowledge that the time is always ripe to do right. Now is the time to make real the promise of democracy and transform our pending national elegy into a creative psalm of brotherhood. Now is the time to lift our national policy from the quicksand of racial injustice to the solid rock of human dignity.
-
-You speak of our activity in Birmingham as extreme. At first I was rather disappointed that fellow clergymen would see my nonviolent efforts as those of an extremist. I began thinking about the fact that I stand in the middle of two opposing forces in the Negro community. One is a force of complacency, made up in part of Negroes who, as a result of long years of oppression, are so drained of self respect and a sense of "somebodiness" that they have adjusted to segregation; and in part of a few middle-class Negroes who, because of a degree of academic and economic security and because in some ways they profit by segregation, have become insensitive to the problems of the masses. The other force is one of bitterness and hatred, and it comes perilously close to advocating violence. It is expressed in the various black nationalist groups that are springing up across the nation, the largest and best known being Elijah Muhammad's Muslim movement. Nourished by the Negro's frustration over the continued existence of racial discrimination, this movement is made up of people who have lost faith in America, who have absolutely repudiated Christianity, and who have concluded that the white man is an incorrigible "devil."
-
-I have tried to stand between these two forces, saying that we need emulate neither the "do nothingism" of the complacent nor the hatred and despair of the black nationalist. For there is the more excellent way of love and nonviolent protest. I am grateful to God that, through the influence of the Negro church, the way of nonviolence became an integral part of our struggle. If this philosophy had not emerged, by now many streets of the South would, I am convinced, be flowing with blood. And I am further convinced that if our white brothers dismiss as "rabble rousers" and "outside agitators" those of us who employ nonviolent direct action, and if they refuse to support our nonviolent efforts, millions of Negroes will, out of frustration and despair, seek solace and security in black nationalist ideologies--a development that would inevitably lead to a frightening racial nightmare.
-
-Oppressed people cannot remain oppressed forever. The yearning for freedom eventually manifests itself, and that is what has happened to the American Negro. Something within has reminded him of his birthright of freedom, and something without has reminded him that it can be gained. Consciously or unconsciously, he has been caught up by the Zeitgeist, and with his black brothers of Africa and his brown and yellow brothers of Asia, South America and the Caribbean, the United States Negro is moving with a sense of great urgency toward the promised land of racial justice. If one recognizes this vital urge that has engulfed the Negro community, one should readily understand why public demonstrations are taking place. The Negro has many pent up resentments and latent frustrations, and he must release them. So let him march; let him make prayer pilgrimages to the city hall; let him go on freedom rides -and try to understand why he must do so. If his repressed emotions are not released in nonviolent ways, they will seek expression through violence; this is not a threat but a fact of history. So I have not said to my people: "Get rid of your discontent." Rather, I have tried to say that this normal and healthy discontent can be channeled into the creative outlet of nonviolent direct action. And now this approach is being termed extremist. But though I was initially disappointed at being categorized as an extremist, as I continued to think about the matter I gradually gained a measure of satisfaction from the label. Was not Jesus an extremist for love: "Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you." Was not Amos an extremist for justice: "Let justice roll down like waters and righteousness like an ever flowing stream." Was not Paul an extremist for the Christian gospel: "I bear in my body the marks of the Lord Jesus." Was not Martin Luther an extremist: "Here I stand; I cannot do otherwise, so help me God." And John Bunyan: "I will stay in jail to the end of my days before I make a butchery of my conscience." And Abraham Lincoln: "This nation cannot survive half slave and half free." And Thomas Jefferson: "We hold these truths to be self evident, that all men are created equal . . ." So the question is not whether we will be extremists, but what kind of extremists we will be. Will we be extremists for hate or for love? Will we be extremists for the preservation of injustice or for the extension of justice? In that dramatic scene on Calvary's hill three men were crucified. We must never forget that all three were crucified for the same crime--the crime of extremism. Two were extremists for immorality, and thus fell below their environment. The other, Jesus Christ, was an extremist for love, truth and goodness, and thereby rose above his environment. Perhaps the South, the nation and the world are in dire need of creative extremists.
-
-I had hoped that the white moderate would see this need. Perhaps I was too optimistic; perhaps I expected too much. I suppose I should have realized that few members of the oppressor race can understand the deep groans and passionate yearnings of the oppressed race, and still fewer have the vision to see that injustice must be rooted out by strong, persistent and determined action. I am thankful, however, that some of our white brothers in the South have grasped the meaning of this social revolution and committed themselves to it. They are still all too few in quantity, but they are big in quality. Some -such as Ralph McGill, Lillian Smith, Harry Golden, James McBride Dabbs, Ann Braden and Sarah Patton Boyle--have written about our struggle in eloquent and prophetic terms. Others have marched with us down nameless streets of the South. They have languished in filthy, roach infested jails, suffering the abuse and brutality of policemen who view them as "dirty nigger-lovers." Unlike so many of their moderate brothers and sisters, they have recognized the urgency of the moment and sensed the need for powerful "action" antidotes to combat the disease of segregation. Let me take note of my other major disappointment. I have been so greatly disappointed with the white church and its leadership. Of course, there are some notable exceptions. I am not unmindful of the fact that each of you has taken some significant stands on this issue. I commend you, Reverend Stallings, for your Christian stand on this past Sunday, in welcoming Negroes to your worship service on a nonsegregated basis. I commend the Catholic leaders of this state for integrating Spring Hill College several years ago.
-
-But despite these notable exceptions, I must honestly reiterate that I have been disappointed with the church. I do not say this as one of those negative critics who can always find something wrong with the church. I say this as a minister of the gospel, who loves the church; who was nurtured in its bosom; who has been sustained by its spiritual blessings and who will remain true to it as long as the cord of life shall lengthen.
-
-When I was suddenly catapulted into the leadership of the bus protest in Montgomery, Alabama, a few years ago, I felt we would be supported by the white church. I felt that the white ministers, priests and rabbis of the South would be among our strongest allies. Instead, some have been outright opponents, refusing to understand the freedom movement and misrepresenting its leaders; all too many others have been more cautious than courageous and have remained silent behind the anesthetizing security of stained glass windows.
-
-In spite of my shattered dreams, I came to Birmingham with the hope that the white religious leadership of this community would see the justice of our cause and, with deep moral concern, would serve as the channel through which our just grievances could reach the power structure. I had hoped that each of you would understand. But again I have been disappointed.
-
-I have heard numerous southern religious leaders admonish their worshipers to comply with a desegregation decision because it is the law, but I have longed to hear white ministers declare: "Follow this decree because integration is morally right and because the Negro is your brother." In the midst of blatant injustices inflicted upon the Negro, I have watched white churchmen stand on the sideline and mouth pious irrelevancies and sanctimonious trivialities. In the midst of a mighty struggle to rid our nation of racial and economic injustice, I have heard many ministers say: "Those are social issues, with which the gospel has no real concern." And I have watched many churches commit themselves to a completely other worldly religion which makes a strange, un-Biblical distinction between body and soul, between the sacred and the secular.
-
-I have traveled the length and breadth of Alabama, Mississippi and all the other southern states. On sweltering summer days and crisp autumn mornings I have looked at the South's beautiful churches with their lofty spires pointing heavenward. I have beheld the impressive outlines of her massive religious education buildings. Over and over I have found myself asking: "What kind of people worship here? Who is their God? Where were their voices when the lips of Governor Barnett dripped with words of interposition and nullification? Where were they when Governor Wallace gave a clarion call for defiance and hatred? Where were their voices of support when bruised and weary Negro men and women decided to rise from the dark dungeons of complacency to the bright hills of creative protest?"
-
-Yes, these questions are still in my mind. In deep disappointment I have wept over the laxity of the church. But be assured that my tears have been tears of love. There can be no deep disappointment where there is not deep love. Yes, I love the church. How could I do otherwise? I am in the rather unique position of being the son, the grandson and the great grandson of preachers. Yes, I see the church as the body of Christ. But, oh! How we have blemished and scarred that body through social neglect and through fear of being nonconformists.
-
-There was a time when the church was very powerful--in the time when the early Christians rejoiced at being deemed worthy to suffer for what they believed. In those days the church was not merely a thermometer that recorded the ideas and principles of popular opinion; it was a thermostat that transformed the mores of society. Whenever the early Christians entered a town, the people in power became disturbed and immediately sought to convict the Christians for being "disturbers of the peace" and "outside agitators."' But the Christians pressed on, in the conviction that they were "a colony of heaven," called to obey God rather than man. Small in number, they were big in commitment. They were too God-intoxicated to be "astronomically intimidated." By their effort and example they brought an end to such ancient evils as infanticide and gladiatorial contests. Things are different now. So often the contemporary church is a weak, ineffectual voice with an uncertain sound. So often it is an archdefender of the status quo. Far from being disturbed by the presence of the church, the power structure of the average community is consoled by the church's silent--and often even vocal--sanction of things as they are.
-
-But the judgment of God is upon the church as never before. If today's church does not recapture the sacrificial spirit of the early church, it will lose its authenticity, forfeit the loyalty of millions, and be dismissed as an irrelevant social club with no meaning for the twentieth century. Every day I meet young people whose disappointment with the church has turned into outright disgust.
-
-Perhaps I have once again been too optimistic. Is organized religion too inextricably bound to the status quo to save our nation and the world? Perhaps I must turn my faith to the inner spiritual church, the church within the church, as the true ekklesia and the hope of the world. But again I am thankful to God that some noble souls from the ranks of organized religion have broken loose from the paralyzing chains of conformity and joined us as active partners in the struggle for freedom. They have left their secure congregations and walked the streets of Albany, Georgia, with us. They have gone down the highways of the South on tortuous rides for freedom. Yes, they have gone to jail with us. Some have been dismissed from their churches, have lost the support of their bishops and fellow ministers. But they have acted in the faith that right defeated is stronger than evil triumphant. Their witness has been the spiritual salt that has preserved the true meaning of the gospel in these troubled times. They have carved a tunnel of hope through the dark mountain of disappointment. I hope the church as a whole will meet the challenge of this decisive hour. But even if the church does not come to the aid of justice, I have no despair about the future. I have no fear about the outcome of our struggle in Birmingham, even if our motives are at present misunderstood. We will reach the goal of freedom in Birmingham and all over the nation, because the goal of America is freedom. Abused and scorned though we may be, our destiny is tied up with America's destiny. Before the pilgrims landed at Plymouth, we were here. Before the pen of Jefferson etched the majestic words of the Declaration of Independence across the pages of history, we were here. For more than two centuries our forebears labored in this country without wages; they made cotton king; they built the homes of their masters while suffering gross injustice and shameful humiliation -and yet out of a bottomless vitality they continued to thrive and develop. If the inexpressible cruelties of slavery could not stop us, the opposition we now face will surely fail. We will win our freedom because the sacred heritage of our nation and the eternal will of God are embodied in our echoing demands. Before closing I feel impelled to mention one other point in your statement that has troubled me profoundly. You warmly commended the Birmingham police force for keeping "order" and "preventing violence." I doubt that you would have so warmly commended the police force if you had seen its dogs sinking their teeth into unarmed, nonviolent Negroes. I doubt that you would so quickly commend the policemen if you were to observe their ugly and inhumane treatment of Negroes here in the city jail; if you were to watch them push and curse old Negro women and young Negro girls; if you were to see them slap and kick old Negro men and young boys; if you were to observe them, as they did on two occasions, refuse to give us food because we wanted to sing our grace together. I cannot join you in your praise of the Birmingham police department.
-
-It is true that the police have exercised a degree of discipline in handling the demonstrators. In this sense they have conducted themselves rather "nonviolently" in public. But for what purpose? To preserve the evil system of segregation. Over the past few years I have consistently preached that nonviolence demands that the means we use must be as pure as the ends we seek. I have tried to make clear that it is wrong to use immoral means to attain moral ends. But now I must affirm that it is just as wrong, or perhaps even more so, to use moral means to preserve immoral ends. Perhaps Mr. Connor and his policemen have been rather nonviolent in public, as was Chief Pritchett in Albany, Georgia, but they have used the moral means of nonviolence to maintain the immoral end of racial injustice. As T. S. Eliot has said: "The last temptation is the greatest treason: To do the right deed for the wrong reason."
-
-I wish you had commended the Negro sit inners and demonstrators of Birmingham for their sublime courage, their willingness to suffer and their amazing discipline in the midst of great provocation. One day the South will recognize its real heroes. They will be the James Merediths, with the noble sense of purpose that enables them to face jeering and hostile mobs, and with the agonizing loneliness that characterizes the life of the pioneer. They will be old, oppressed, battered Negro women, symbolized in a seventy two year old woman in Montgomery, Alabama, who rose up with a sense of dignity and with her people decided not to ride segregated buses, and who responded with ungrammatical profundity to one who inquired about her weariness: "My feets is tired, but my soul is at rest." They will be the young high school and college students, the young ministers of the gospel and a host of their elders, courageously and nonviolently sitting in at lunch counters and willingly going to jail for conscience' sake. One day the South will know that when these disinherited children of God sat down at lunch counters, they were in reality standing up for what is best in the American dream and for the most sacred values in our Judaeo Christian heritage, thereby bringing our nation back to those great wells of democracy which were dug deep by the founding fathers in their formulation of the Constitution and the Declaration of Independence.
-
-Never before have I written so long a letter. I'm afraid it is much too long to take your precious time. I can assure you that it would have been much shorter if I had been writing from a comfortable desk, but what else can one do when he is alone in a narrow jail cell, other than write long letters, think long thoughts and pray long prayers?
-
-If I have said anything in this letter that overstates the truth and indicates an unreasonable impatience, I beg you to forgive me. If I have said anything that understates the truth and indicates my having a patience that allows me to settle for anything less than brotherhood, I beg God to forgive me.
-
-I hope this letter finds you strong in the faith. I also hope that circumstances will soon make it possible for me to meet each of you, not as an integrationist or a civil-rights leader but as a fellow clergyman and a Christian brother. Let us all hope that the dark clouds of racial prejudice will soon pass away and the deep fog of misunderstanding will be lifted from our fear drenched communities, and in some not too distant tomorrow the radiant stars of love and brotherhood will shine over our great nation with all their scintillating beauty.
-
-Yours for the cause of Peace and Brotherhood, Martin Luther King, Jr.
-Published in:
-King, Martin Luther Jr. 
-
-Thomas Sankara
-Speech before the General Assembly of the United Nations
-
-Delivered: In French, at the United Nations General Assembly, in New York City, on 4 October 1984.
-Source of the translation into English: United Nations (1984), United Nations General Assembly Official Records, 20th Plenary Meeting, Thursday, 4 October 1984, at 10.40 a.m., New York, (A/39/PV.20), pp. 405-410.
-This edition: Marxists Internet Archive, January 2019.
-
-I bring the fraternal greetings of a country covering 274,000 square kilometres, where 7 million men, women and children refuse henceforth to die of ignorance, hunger and thirst, even though they are not yet able to have a real life, after a quarter of a century as a sovereign State represented here at the United Nations.
-
-I come to this thirty-ninth session of the General Assembly to speak on behalf of a people which, on the land of its ancestors, has chosen from now on to assert itself and to take responsibility for its own history, in both its positive and negative aspects, without any complexes.
-
-I come here, mandated by the National Council of the Revolution of Burkina Faso, to express the views of my people on the problems that have been included on the General Assembly's agenda, which form the tragic background of the events which are sadly undermining the foundations of the world late in this twentieth century. It is a world of chaos, in which the human race is tom apart by struggles between the great and the not-so-great, attacked by armed bands and subjected to violence and plunder. It is a world in which the nations, eluding international jurisdiction, command groups beyond the law, which, with gun in hand, live by preying on others and organizing the most despicable kinds of trafficking.
-
-I do not intend to enunciate dogmas here. I am neither a messiah nor a prophet. I possess no truths. My only ambition is a twofold aspiration: first, to be able to speak in simple language, the language of facts and clarity, on behalf of my people, the people of Burkina Faso, and, secondly, to be able-to express in my own way the feelings or that mass of people who are disinherited--those who belong to that world maliciously dubbed "the third world"--and to state, even if I cannot make them understood, the reasons that have led us to rise up, all of which explains our interest in the United Nations, the demands of our rights drawing strength in the clear awareness of our duties.
-
-Nobody will be surprised to hear us associate the former Upper Volta, now Burkina Faso, with that despised rag-bag, the third world, which the other worlds invented at the time of our independence in order better to ensure our intellectual, cultural, economic and political alienation. We want to fit in there without at all justifying this great swindle of history, still less accepting that we are a backward world left behind by the West. Rather, we do so to affirm our awareness of belonging to a three-continent whole and to state, as one of the non-aligned countries, our deeply felt conviction that a special solidarity unites the three continents of Asia, Latin America and Africa in the same battle against the same political traffickers and economic exploiters.
-
-Thus to recognize our presence in the third world is, to paraphrase José Marti, to affirm that we feel on our cheek every blow struck against every other man in the world. So far, we have turned the other cheek. The slaps in the face have been redoubled and the evil-doers have felt no tenderness in their hearts. They have trampled on the truth of the just. They have betrayed the word of Christ. They have turned His cross into a club, and after putting on His robe they have tom our bodies and souls to shreds. They have obscured His message, making it a Western one, whereas we saw it as a message of universal liberation. Now our eyes have been opened to the class struggle and there will be no more blows dealt against us. It must be proclaimed that there will be no salvation for our peoples unless we turn our backs completely on all the models that all the charlatans of that type have tried to sell us for 20 years. There can be no salvation for us unless we reject those models; there can be no development without that break.
-
-Now all the new "master minds" are awakening, roused by the dizzy increase of millions of men in rags and frightened by the threat to their digestion of this multitude hounded by hunger. They are beginning to change their tune and are again anxiously seeking among us miraculous ideas for new forms of development for our countries. In order to understand this it is necessary only to read the proceedings of innumerable colloquys and seminars.
-
-I certainly do not wish to ridicule the patient effort of those honest intellectuals who, because they have t, ;s to see, have observed the terrible consequences of the ravages caused in the third world by the so-called development specialists.
-
-I fear that the results of all the energies seized by the Prósperos of all kinds may be turned into a magic wand to be used to turn us back in to a world of slavery, dressed up according to the taste of our times. This fear is justified by the fact that the African petite bourgeoisie with its diplomas, if not that of the whole third world, is not ready--whether because of intellectual laziness or simply because it has sampled the Western way of life--to give up its privileges. It therefore forgets that all true political struggle requires a rigorous theoretical debate, and it refuses to do the thinking necessary in order to invent the new concepts needed to wage the kind of struggle to the death that is ahead of us. A passive and pathetic consumer group, it overflows with the "in" words of the West, just as it overflows with its whisky and champagne, in salons where there is a dubious kind of harmony. One will search in vain-- the concepts of Blackness or the African personality now being a little outdated--for truly new ideas from the brains of our so-called intellectual giants. Words and ideas come to us from elsewhere. Our professors, engineers and economists are content simply to add a little colouring, because they have brought from the European universities of which they are the products only their diplomas and the surface smoothness of adjectives and superlatives. It is urgently necessary that our qualified personnel and those who work with ideas learn that there is no innocent writing. In these tempestuous times, we cannot leave it to our enemies of the past and of the present to think and to imagine and to create. We also must do so.
-
-Before it is too late--and it is already late--this élite, these men of Africa, of the third world, must come to their senses; in other words, they must turn to their own societies, they must look at this wretchedness that we have inherited, to understand that the battle for thought that will help the disinherited masses not only is not a vain one but can become credible at the international level. They must provide a faithful picture for their own peoples, a picture that will enable them to carry out profound changes in the social and political situation so that we can free ourselves from the foreign domination and exploitation that can lead our States only to failure.
-
-This is something that we understood, we, the people of Burkina Faso, on that night of 4 August 1983, when the stars first began to shine in the heavens of our homeland. We had to take the lead of the peasant uprisings in the countryside, threatened by desertification, exhausted by hunger and thirst, and abandoned. We had to give some sense of meaning to the revolts of the unemployed urban masses, frustrated and tired of seeing the limousines of the alienated élite flash by following the head of State, who offered them only false solutions devised and conceived in the brains of others. We had to give an ideological soul to the just struggles of our masses mobilized against the monstrosity of imperialism. Instead of a minor, short-lived revolt, we had to have revolution, the eternal struggle against all domination. Others have noted this before me and yet others will say after me how broad the gap now is between the rich peoples and those that aspire only to have enough to eat, enough to drink, to survive and to defend their dignity, but nobody could believe how much of the food of our people has gone to feed the rich man's cow.
-
-In the case of Upper Volta, the process was even more crystal clear. We demonstrated the essence of all the calamities that have crushed the so-called developing countries.
-
-The truth about aid, represented as the panacea for all ills and often praised beyond all rhyme or reason, has been revealed. Very few countries have been so inundated with aid of all kinds as has mine.
-
-Aid is supposed to help development, but one can look in vain in what used to be Upper Volta to see any sign of any kind of development. The people who were m power through either naivety or class selfishness could not or else did not want to gain control over this inflow from the outside or grasp the scope of it and use it in the interests of our people.
-
-Analysing a table that was published in 1983 by the Sahel Club, Jacques Giri, in his book entitled The Sahel Tomorrow, concluded quite sensibly that aid to the Sahel, because of its content and because of the machinery in place, was only aid for survival. He emphasized that only 30 per cent of that aid would enable the Sahel simply to remain alive. According to Jacques Giri, this outside aid was designed only for the continued development of the unproductive sectors, imposing intolerable burdens on our small budgets, completely disrupting our countryside, creating deficits in our trade balance and, in fact, speeding up our indebtedness.
-
-Here are just a few standard facts to describe what Upper Volta used to be like: 7 million inhabitants, with more than 6 million peasants; infant mortality at 180 per 1,000; life expectancy of 40 years; an illiteracy rate of 98 per cent, if literacy is considered to mean being able to read, write and speak a language; one doctor for 50,000 inhabitants; 16 per cent receiving schooling; and lastly, a gross domestic product of 53,356 CFA francs, that is, just over $100 per capita.
-
-The diagnosis obviously was a very bad one. The source of the evil was political and so the only cure must be a political one.
-
-Of course, we encourage aid that can help us to manage without aid, but in general the aid and assistance policies merely led us to become completely disorganized, to enslave ourselves, to shirk our responsibility in our economic, political and cultural areas..
-
-We have chosen a different path to achieve better results. We have chosen to establish new techniques. We have chosen to seek forms of organization that are better adapted to our civilization, abruptly and once and for all rejecting all kinds of outside diktats, so that we can create the conditions for a dignity in keeping with our ambitions.
-
-We refuse simple survival. We want to ease the pressures, to free our countryside from medieval stagnation or regression. We want to democratize our society, to open up our minds to a universe of collective responsibility, so that we may be bold enough to invent the future. We want to change the administration and reconstruct it with a different kind of civil servant. We want to get our army involved with the people in productive work and remind it constantly that, without patriotic training, a soldier is only a criminal with power. That is our political programme.
-
-At the economic level, we are learning to live simply, to accept and to demand of ourselves the austerity that we need in order to carry out our great designs.
-
-Thanks to the revolutionary solidarity fund, which is fed by voluntary contributions, we are now beginning to deal with the cruel questions posed by the drought. We support and have applied the principles of the Declaration of Alma-Ata/ expanding our primary health care. We endorse as a State policy the global strategy of GOBI FFF advocated by UNICEF.
-
-We believe that through the United Nations Sudano-Sahelian Office, the United Nations should enable those countries affected by drought to establish a medium- and long-term plan to achieve selfsufficiency in food.
-
-To prepare for the twenty-first century, we have begun, by creating a special tombola section, an immense campaign for the education and training of our children in a new school. The programme is called "Let's teach our children". Through committees to defend the revolution, we have established a vast house-building programme--500 units in three months--and we are also building roads, small water collectors, and so forth. Our economic ambition is to work to ensure that the use of the mind and the strength of each inhabitant of Burkina Faso will produce what is necessary to provide two meals a day and drinking-water.
-
-We swear that in future in Burkina Faso nothing will be done without the participation of the people of Burkina Faso themselves, nothing that has not been decided by us, that has not been prepared by us. There shall be no more attacks on our honour and dignity.
-
-Strengthened by this conviction, we want our words to cover all those who suffer, all those whose dignity has been crushed by a minority or a system.
-
-Let me say to those who are listening to me now that I speak not only on behalf of Burkina Faso, my country which I love so much, but also on behalf of all those who suffer, wherever they may be.
-
-I speak on behalf of those millions of human beings who are in ghettos because their skin is black, or because they have a different kind of culture, those whose status is hardly higher than that of an animal.
-
-I suffer, too, on behalf of those Indians who have been massacred, trampled on and humiliated and who, for centuries, have been confined to reservations, so that they do not have any aspirations to any rights whatsoever, so that their culture cannot become enriched through contact with other cultures, including that of the invader.
-
-I speak out on behalf of those who are unemployed because of a structurally unjust system which has now been completely disrupted, the unemployed who have been reduced to seeing their lives as only the reflection of the lives of those who have more than themselves.
-
-I speak on behalf of women throughout the entire world who suffer from a system of exploitation imposed on them by men. As far as we are concerned, we are willing to welcome all suggestions from anywhere in the world that will help us to promote the full development and prosperity of the women of Burkina Faso. In return, we will share with all countries the positive experience we are now undertaking with our women, who are now involved at all levels of the State apparatus and social life in Burkina Faso, women who struggle and who say with us that the slave who will not shoulder responsibility to rebel does not deserve pity. That slave will alone be responsible for his own wretchedness if he has any illusions whatsoever about the suspect indulgence shown by a master who pretends to give him freedom. Only struggle helps us to become free, and we call on all our sisters of all races to rise up to regain their rights.
-
-I speak on behalf of the mothers of our poor countries who see their children dying of malaria and diarrhoea, unaware that to save them there are simple methods available but which the science of the multinationals does not offer to them, preferring to invest in cosmetics laboratories and engage in cosmetic surgery to satisfy the whims and caprices of a few men and women who feel they have become too fat because of too many calories in the rich food they consume with regularity. That must make even members of this Assembly dizzy--not to mention the peoples of the Sahel. We have decided to adopt and popularize the methods that have been advocated by WHO and UNICEF.
-
-I speak on behalf of the child, the child of the poor man, who is hungry and who furtively eyes the wealth piled up in the rich man's shop, a shop that is protected by a thick window, a window which is defended by an impassable grille, the grille guarded by a policeman in a helmet with gloves and a bludgeon, the policeman placed there by the father of another child, who comes there to serve himself or rather to be served because these are the guarantees of capitalistic representativeness and norms of the system.
-
-I speak on behalf of the artists--poets, painters, sculptors, musicians, actors and so on--people of good will who see their art being prostituted by the show-business magicians.
-
-I cry out on behalf of the journalists who have been reduced to silence or else to lies simply to avoid the hardships of unemployment.
-
-I protest on behalf of the athletes of the entire world whose muscles are being exploited by political systems or by those who deal in the modern slavery of the stadium.
-
-My country is the essence of all the miseries of peoples, a tragic synthesis of all the suffering of mankind but also, and above all, the synthesis of the hopes of our struggles. That is why I speak out on behalf of the sick who are anxiously looking to see what science can do for them--but that science has been taken over by the gun merchants. My thoughts go to all those who nave been affected by the destruction of nature, those 30 million who are dying every year, crushed by that most fearsome weapon, hunger.
-
-As a soldier, I cannot forget that obedient soldier who does what he is told, whose finger is on the trigger and who knows that the bullet which is going to leave his gun will bring only a message of death.
-
-Lastly, I speak out in indignation as I think of the Palestinians, whom this most inhuman humanity has replaced with another people, a people who only yesterday were themselves being martyred at leisure. I think of the valiant Palestinian people, the families which have been splintered and split up and are wandering throughout the world seeking asylum. Courageous, determined, stoic and tireless, the Palestinians remind us all of the need and moral obligation to respect the rights of a people. Along with their Jewish brothers, they are anti-Zionists.
-
-Standing alongside my soldier brothers of Iran and Iraq, who are dying in a fratricidal and suicidal war, I wish also to feel close to my comrades of Nicaragua, whose ports are being mined, whose towns are being bombed and who, despite all, face up with courage and lucidity to their fate. I suffer with all those in Latin America who are suffering from imperialist domination.
-
-I wish to stand side by side with the peoples of Afghanistan and Ireland, the peoples of Grenada and East Timor, each of those peoples seeking happiness in keeping with their dignity and the laws of their own culture.
-
-I rise up on behalf of all who seek in vain any forum in the world to make their voices heard and to have themselves taken seriously.
-
-Many have already spoken from this rostrum. Many will speak after me. But only a few will take the real decisions, although we are all officially considered equals. I speak on behalf of all those who seek in vain for a forum in the world where they can be heard. Yes, I wish to speak for all those--the forgotten--because I am a man and nothing that is human is alien to me.
-
-Our revolution in Burkina Faso takes account of the ills of all peoples. We are also inspired by all the experiences of mankind, from the very first breath of the first human being.
-
-We wish to enjoy the inheritance of all the revolutions of the world, all the liberation struggles of the third-world peoples. We are trying to learn from the great upheavals that have transformed the world. We have drawn the lessons of the American revolution, the lessons of its victory against colonial domination, and the consequences of that victory. We endorse the doctrine of non-interference by Europeans in American affairs and non-interference by Americans in European affairs. In 1823, Monroe said "America for the Americans". We would say "Africa for the Africans; Burkina Faso for the Burkinabe". The French revolution of 1789, which disrupted the foundations of absolutism, has taught us the rights of man linked to the rights of peoples to freedom. The great revolution of October 1917 transformed the world and made possible the victory of the proletariat, shook the foundations of capitalism and made possible the dreams of justice of the French Commune.
-
-Open to all the wishes of the peoples and their revolutions, learning also from the terrible failures that have led to truly sad infringements of human rights, we want to preserve from each revolution only that essence of purity that prohibits us from becoming servants to the realities of others, even though in our thinking we find that there is a community of interests among us.
-
-There must be no more deceit. The new international economic order, for which we are struggling and will continue to struggle, can be achieved only if we manage to do away with the old order, which completely ignores us, only if we insist on the place which is ours in the political organization of the world, only if we realize our importance in the world and obtain the right to decision-making with respect to the machinery governing trade, economic and monetary affairs at the world level.
-
-The new international economic order is simply one among all the other rights of peoples--the right to independence, to the free choice of the form and structure of government, the right to development-- and like all the rights of peoples it is a right which can be gained only through the struggle of the peoples. It will never be obtained by any act of generosity by any Power whatsoever.
-
-I continue to have unshakeable confidence--a confidence I share with the immense community of non-aligned countries--that, despite our peoples' battering-ram cries of distress, our group will preserve its cohesion, strengthen its power of collective negotiation, find allies among all nations, and begin, together with all who can still hear us, to organize a really new system of international economic relations.
-
-I agreed to come to speak before the Assembly because, despite the criticism of certain major contributors, the United Nations remains the ideal forum for our demands, the place where the legitimacy of countries which have no voice is recognized. This was expressed very accurately by the Secretary- General, when he wrote:
-
-"The United Nations reflects in a unique way the aspirations and frustrations of many nations and groups all over the world. One of its great merits is that all nations---including the weak, the oppressed and the victims of injustice"--that is, us--"can get a hearing and have a platform even in the face of the hard realities of power. A just cause, however frustrated or disregarded, can find a voice in the United Nations. This is not always a well- liked attribute of the Organization, but it is an essential one."
-
-The meaning and scope of the Organization could not be better defined.
-
-Therefore, it is absolutely essential for the good of each of us that the United Nations be strengthened and provided with the means to take action. That is why we endorse the Secretary-General's proposals to this end, to help the Organization break the many deadlocks which have been carefully preserved by the great Powers in order to discredit it in the eyes of the world.
-
-Since I recognize the admittedly limited merits of the Organization, I cannot but rejoice to see new Members join us That is why the delegation of Burkina Faso welcomes the admission of the 159th Member of the United Nations, the State of Brunei Darussalam.
-
-The folly of those who, by a quirk of fate, rule the world makes it imperative for the Movement of Non-Aligned Countries--which, I hope, the State of Brunei Darussalam will soon join--to consider as one of the permanent goals of its struggle the achievement of disarmament, which is an essential aspect of the principal conditions of our right to development.
-
-In our view, there must be serious studies of all the factors which have led to the calamities which have befallen the world. In this connection, President Fidel Castro stated our view admirably at the opening of the Sixth Conference of Heads of State or Government of Non-Aligned Countries, held at Havana in September 1979, when he said:
-
-"Three hundred billion dollars could build 600,000 schools, with a capacity for 400 million children; or 60 million comfortable homes, for 300 million people; or 30,000 hospitals, with 18 million beds; or 20,000 factories, with jobs for more than 20 million workers; or an irrigation system for 150 million hectares of land--that, with the application of technology, could feed a billion people."
-
-If we multiply those numbers by 10--and I am sure that that is a conservative figure--we can see how much mankind wastes every year in the military field, that is, against peace.
-
-It is easy to see why the indignation of the peoples is easily transformed into rebellion and revolution in the face of the crumbs tossed to them in the ignominious form of some aid, to which utterly humiliating conditions are sometimes attached. It can be understood why, in the fight for development, we consider ourselves to be tireless combatants for peace.
-
-We swear to struggle to ease tension, to introduce the principles of civilized life into international relations and to extend these to all parts of the world. That means that we can no longer stand by passively and watch people haggle over concepts.
-
-We reiterate our determination to work actively for peace; to take our place in the struggle for disarmament; to take action in the field of international politics as a decisive factor, free of all hindrance by any of the big Powers, whatever may be their designs.
-
-But the quest for peace also involves the strict application of the right of countries to independence. On this point, the most pathetic--indeed, the most appalling--example is found in the Middle East, where, with arrogance, insolence and incredible stubbornness, a small country, Israel, has for more than 20 years, with the unspeakable complicity of its powerful protector, the United States, continued to defy the international community.
-
-Only yesterday, Jews were consigned to the horrors of the crematorium, but Israel scorns history by inflicting on others the tortures it suffered.
-
-In any event, Israel--whose people we love for its courage and sacrifices of the past--should realize that the conditions for its own tranquillity are not to be found in military strength financed from outside. Israel must begin to learn to be a nation like other nations, one among many.
-
-For the present, we declare from this rostrum our militant, active solidarity with the fighters, both men and women, of the wonderful people of Palestine, for we know that there is no suffering that has no end.
-
-Analysing the economic and political situation in Africa, we cannot fail to stress our serious concern at the dangerous challenges to the rights of peoples hurled by certain nations which, secure in their alliances, openly flout international morality.
-
-We are naturally pleased at the decision to withdraw foreign troops from Chad so that the Chadian people themselves, without intermediaries, can find the way to put an end to that fratricidal war and finally be able to dry the tears that have been shed for so many years. But, despite the progress made here and there in the struggle of the African peoples for economic emancipation, our continent continues to reflect the essential reality of the contradictions between the big Powers and to be oppressed by the unbearable scourges of today's world.
-
-That is why we cannot accept and must unreservedly condemn the treatment of the people of Western Sahara by the Kingdom of Morocco, which has been using delaying tactics to postpone the day of reckoning that will in any event be forced upon it by the will of the Saharan people. I have visited the regions liberated by the Saharan people, and I have
-
-come to believe more firmly than ever that nothing will stop its progress towards the total liberation of its country under the militant and enlightened leadership of the Frente POLISARIO.
-
-I do not wish to dwell too long on the question of Mayotte and the islands of the Malagasy archipelago; since the facts are clear and the principles obvious, there is no need to dwell on them. Mayotte belongs to the Comoros; the islands of the archipelago belong to Madagascar.
-
-With regard to Latin America, we welcome the initiative of the Contadora Group as a positive step in the search for a just solution to the explosive situation in the region. Commander Daniel Ortega, speaking here [16th meeting] on behalf of the revolutionary people of Nicaragua, made concrete proposals and posed some basic, direct questions. We hope to see peace in his country and throughout Central America on and after 15 October; this is what world public opinion calls for.
-
-Just as we condemned the foreign aggression against the island of Grenada, so we condemn all foreign intervention. Thus, we cannot remain silent about the foreign military intervention in Afghanistan.
-
-And yet there is one point that is so serious that each of us must give a very open and clear explanation of it. That question, as members can imagine, is that of South Africa. The unbelievable insolence of that country with respect to all nations of the world--even those that support the terrorism which it has erected into a State system designed physically to liquidate the black majority of that country--and the contempt that it has shown for all our resolutions constitute one of the most serious and overwhelming concerns of the world today.
-
-But the most tragic factor is not that South Africa has outlawed itself from the international community because of its apartheid laws, not even that it continues to occupy Namibia illegally and keep it under its colonialist and racist boot or that it continues with impugnity to subject its neighbours to the laws of banditry. No, what is the most abject and the most humiliating for the human conscience is that it has made this tragedy a matter of everyday reality for millions of human beings, who have only their own body and the heroism or their bare hands to defend themselves. Sure of the complicity of the big Powers and the active support of certain among them, as well as of the criminal collaboration of some pathetic African leaders, the white minority simply ignores the feelings of all those people, everywhere in the world, who find the savage methods of that country to be absolutely intolerable.
-
-There was a time when international brigades went to defend the honour of nations that suffered aggression. Today, despite the agonizing open wounds that are suffered, all we do is vote for resolutions that do nothing more than call on a nation of pirates, which "destroys a smile as hail kills flowers", to mend its ways.
-
-We shall soon be celebrating the one-hundred- and-fiftieth anniversary of the emancipation of slaves in the British Empire. My delegation supports the proposal of Antigua and Barbuda for the commemoration of that event, which is of very great importance to African countries and the black world. For us, all that can be said throughout the world during the commemorative ceremonies must emphasize the terrible cost paid by Africa and the black world in the development of civilization. Nothing was given us in return, which no doubt explains the tragedy on our continent today. It is our blood that nourished the rise of capitalism, that made possible our present condition of dependence and consolidated our underdevelopment. But we cannot hide the truth any more; it cannot be ignored. The figures cannot be simply haggled away. For every black man who came to the plantations, five died or were crippled. And here I do not mention the disorganization of the continent and its consequences.
-
-While the entire world, thanks to you, Mr. President, with the help of the Secretary-General, will be commemorating that anniversary and noting this truth, it will understand why we long for peace among nations and why we demand our right to development with absolute equality through the organization and distribution of human resources. It is because we belong to one of the races that has suffered the most that we in Burkina Faso have sworn that we shall never accept any splitting up of our country or any denial of justice. It is the memory of that suffering that causes us to stand side by side with the Palestine Liberation Organization [PLO] against the armed bands of Israel. It is the memory of that suffering which, on the one hand, causes us to support the African National Congress of South Africa [ANC] and the South West Africa People's Organization [SWAPO] and, on the other, makes absolutely intolerable the presence in South Africa of men who say they are white and feel entitled on that account to set the whole world on fire. It is that memory of suffering that makes us put all our faith in the United Nations, with the common responsibility, the common task and the common hopes of us all.
-
-We demand that throughout the world the campaign to free Nelson Mandela be intensified so that his presence here at the next session of the General Assembly will be a victory of collective pride. In memory of our suffering and as a collective pardon, an international humanitarian prize should be given for all those who have contributed to the defence of human rights through their work and research. We call for cutting all budgets for space research by one ten-thousandth and devoting that amount to research in the field of health and to improving the human environment which has been disrupted by those "fireworks" which are harmful to the ecosystem.
-
-We also propose that the structures of the United Nations be reviewed and revised so that an end may be put to the scandal of the right of veto. The perverse effects of its abuse have, of course, been offset by the vigilance of some States that possess the veto right. However, nothing can justify that right--neither the size of the country nor its wealth.
-
-If the argument used to justify that inequity has been the cost paid during the Second World War, then those nations that have arrogated those rights to themselves should know that each of us has an uncle or a father who--like thousands of other innocent people recruited from the third world to defend the rights that had been flouted by the Hitlerite hordes-- also suffered and died from Nazi bullets. Therefore, let those major Powers, which miss no opportunity to question the right of peoples, not be so arrogant. The absence of Africa from the club of those that have the right of veto is an injustice which must be ended.
-
-Lastly, my delegation would be failing in its duty if it did not call for the suspension of Israel and the pure and simple exclusion of South Africa from the United Nations. When, in the course of time, those countries have done what they must do to justify their presence in the international community, then we would be only too happy to welcome them here and to guide their first steps.
-
-We should like to reconfirm our confidence in the United Nations. We are grateful for the work which its agencies have done in Burkina Faso and for their presence side by side with us in the difficult times in which we are living. We are grateful to the members of the Security Council for having allowed us twice this year to preside over the work of the Council. We only hope the Council will recognize the principle of the struggle against the extermination of 30 million human beings each year through hunger, which today is more devastating than nuclear weapons.
-
-Our confidence and faith in the United Nations leads me to thank the Secretary-General for his visit, which we greatly appreciated; he came to see for himself the harsh reality of our life and to get a true picture of the aridity or the Sahel and the tragedy of desertification.
-
-I cannot conclude without paying a tribute to the President of the General Assembly, who, with his great intelligence and perception, will guide the work of this thirty-ninth session.
-
-I have travelled many thousands of kilometres to be here. I have come to ask each member to work together to put an end to the contempt of those who are unreasonable, to eliminate the tragic spectacle of children dying of hunger, to do away with ignorance, to ensure the triumph of the legitimate rebellion of peoples and to put an end to the use of weapons so that they can be laid down and fall silent, and to ensure that mankind will survive and that together, with the great poet Novalis we can all sing together:
-
-"Soon the stars will come back to the Earth where they have long been gone; soon the sun will return, the star will shine again among the stars, all the races of the world will gather together again after a long separation, the old orphaned families will find one another again and every day there will be new discoveries, more people will embrace one another; then the inhabitants of the old days will come back to the Earth, the ashes will be relit in each tomb, the flame of life will bum again, the old houses will be rebuilt, the old times will come again and history will be the dream of the present extended to infinity."
-
-Down with international reaction! Down with imperialism! Down with neo-colonialism! Down with "puppetism"!
-
-Eternal glory to the peoples who are struggling for their freedom! Eternal glory to the peoples who stand shoulder to shoulder to defend their dignity! Eternal victory to the peoples of Africa, Latin America and Asia in their struggle!
-
-Fatherland or death: we shall triumph.
-
-LADY MACBETH.
-LADY MACDUFF.
-Gentlewoman attending on Lady Macbeth.
-HECATE, and three Witches.
-
-Lords, Gentlemen, Officers, Soldiers, Murderers, Attendants and Messengers.
-
-The Ghost of Banquo and several other Apparitions.
-SCENE: In the end of the Fourth Act, in England; through the rest of the Play, in Scotland; and chiefly at Macbeth’s Castle.
-ACT I
-SCENE I. An open Place.
-
-Thunder and Lightning. Enter three Witches.
-
-FIRST WITCH.
-When shall we three meet again?
-In thunder, lightning, or in rain?
-
-SECOND WITCH.
-When the hurlyburly’s done,
-When the battle’s lost and won.
-
-THIRD WITCH.
-That will be ere the set of sun.
-
-FIRST WITCH.
-Where the place?
-
-SECOND WITCH.
-Upon the heath.
-
-THIRD WITCH.
-There to meet with Macbeth.
-
-FIRST WITCH.
-I come, Graymalkin!
-
-SECOND WITCH.
-Paddock calls.
-
-THIRD WITCH.
-Anon.
-
-ALL.
-Fair is foul, and foul is fair:
-Hover through the fog and filthy air.
-
-[Exeunt.]
-SCENE II. A Camp near Forres.
-
-Alarum within. Enter King Duncan, Malcolm, Donalbain, Lennox, with Attendants, meeting a bleeding Captain.
-
-DUNCAN.
-What bloody man is that? He can report,
-As seemeth by his plight, of the revolt
-The newest state.
-
-MALCOLM.
-This is the sergeant
-Who, like a good and hardy soldier, fought
-’Gainst my captivity.—Hail, brave friend!
-Say to the King the knowledge of the broil
-As thou didst leave it.
-
-SOLDIER.
-Doubtful it stood;
-As two spent swimmers that do cling together
-And choke their art. The merciless Macdonwald
-(Worthy to be a rebel, for to that
-The multiplying villainies of nature
-Do swarm upon him) from the Western Isles
-Of kerns and gallowglasses is supplied;
-And Fortune, on his damned quarrel smiling,
-Show’d like a rebel’s whore. But all’s too weak;
-For brave Macbeth (well he deserves that name),
-Disdaining Fortune, with his brandish’d steel,
-Which smok’d with bloody execution,
-Like Valour’s minion, carv’d out his passage,
-Till he fac’d the slave;
-Which ne’er shook hands, nor bade farewell to him,
-Till he unseam’d him from the nave to the chops,
-And fix’d his head upon our battlements.
-
-DUNCAN.
-O valiant cousin! worthy gentleman!
-
-SOLDIER.
-As whence the sun ’gins his reflection
-Shipwracking storms and direful thunders break,
-So from that spring, whence comfort seem’d to come
-Discomfort swells. Mark, King of Scotland, mark:
-No sooner justice had, with valour arm’d,
-Compell’d these skipping kerns to trust their heels,
-But the Norweyan lord, surveying vantage,
-With furbish’d arms and new supplies of men,
-Began a fresh assault.
-
-DUNCAN.
-Dismay’d not this
-Our captains, Macbeth and Banquo?
-
-SOLDIER.
-Yes;
-As sparrows eagles, or the hare the lion.
-If I say sooth, I must report they were
-As cannons overcharg’d with double cracks;
-So they
-Doubly redoubled strokes upon the foe:
-Except they meant to bathe in reeking wounds,
-Or memorize another Golgotha,
-I cannot tell—
-But I am faint, my gashes cry for help.
-
-DUNCAN.
-So well thy words become thee as thy wounds:
-They smack of honour both.—Go, get him surgeons.
-
-[Exit Captain, attended.]
-
-Enter Ross and Angus.
-
-Who comes here?
-
-MALCOLM.
-The worthy Thane of Ross.
-
-LENNOX.
-What a haste looks through his eyes! So should he look
-That seems to speak things strange.
-
-ROSS.
-God save the King!
-
-DUNCAN.
-Whence cam’st thou, worthy thane?
-
-ROSS.
-From Fife, great King,
-Where the Norweyan banners flout the sky
-And fan our people cold.
-Norway himself, with terrible numbers,
-Assisted by that most disloyal traitor,
-The Thane of Cawdor, began a dismal conflict;
-Till that Bellona’s bridegroom, lapp’d in proof,
-Confronted him with self-comparisons,
-Point against point, rebellious arm ’gainst arm,
-Curbing his lavish spirit: and, to conclude,
-The victory fell on us.
-
-DUNCAN.
-Great happiness!
-
-ROSS.
-That now
-Sweno, the Norways’ king, craves composition;
-Nor would we deign him burial of his men
-Till he disbursed at Saint Colme’s Inch
-Ten thousand dollars to our general use.
-
-DUNCAN.
-No more that Thane of Cawdor shall deceive
-Our bosom interest. Go pronounce his present death,
-And with his former title greet Macbeth.
-
-ROSS.
-I’ll see it done.
-
-DUNCAN.
-What he hath lost, noble Macbeth hath won.
-
-[Exeunt.]
-SCENE III. A heath.
-
-Thunder. Enter the three Witches.
-
-FIRST WITCH.
-Where hast thou been, sister?
-
-SECOND WITCH.
-Killing swine.
-
-THIRD WITCH.
-Sister, where thou?
-
-FIRST WITCH.
-A sailor’s wife had chestnuts in her lap,
-And mounch’d, and mounch’d, and mounch’d. “Give me,” quoth I.
-“Aroint thee, witch!” the rump-fed ronyon cries.
-Her husband’s to Aleppo gone, master o’ th’ Tiger:
-But in a sieve I’ll thither sail,
-And, like a rat without a tail,
-I’ll do, I’ll do, and I’ll do.
-
-SECOND WITCH.
-I’ll give thee a wind.
-
-FIRST WITCH.
-Th’art kind.
-
-THIRD WITCH.
-And I another.
-
-FIRST WITCH.
-I myself have all the other,
-And the very ports they blow,
-All the quarters that they know
-I’ the shipman’s card.
-I will drain him dry as hay:
-Sleep shall neither night nor day
-Hang upon his pent-house lid;
-He shall live a man forbid.
-Weary sev’n-nights nine times nine,
-Shall he dwindle, peak, and pine:
-Though his bark cannot be lost,
-Yet it shall be tempest-tost.
-Look what I have.
-
-ALL.
-The Weird Sisters, hand in hand,
-Posters of the sea and land,
-Thus do go about, about:
-Thrice to thine, and thrice to mine,
-And thrice again, to make up nine.
-Peace!—the charm’s wound up.
-
-MACBETH.
-So foul and fair a day I have not seen.
-
-BANQUO.
-How far is’t call’d to Forres?—What are these,
-So wither’d, and so wild in their attire,
-That look not like the inhabitants o’ th’ earth,
-And yet are on’t?—Live you? or are you aught
-That man may question? You seem to understand me,
-By each at once her choppy finger laying
-Upon her skinny lips. You should be women,
-And yet your beards forbid me to interpret
-That you are so.
-
-THIRD WITCH.
-All hail, Macbeth! that shalt be king hereafter!
-
-BANQUO.
-Good sir, why do you start and seem to fear
-Things that do sound so fair?—I’ th’ name of truth,
-Are ye fantastical, or that indeed
-Which outwardly ye show? My noble partner
-You greet with present grace and great prediction
-Of noble having and of royal hope,
-That he seems rapt withal. To me you speak not.
-If you can look into the seeds of time,
-And say which grain will grow, and which will not,
-Speak then to me, who neither beg nor fear
-Your favours nor your hate.
-
-FIRST WITCH.
-Hail!
-
-SECOND WITCH.
-Hail!
-
-THIRD WITCH.
-Hail!
-
-FIRST WITCH.
-Lesser than Macbeth, and greater.
-
-SECOND WITCH.
-Not so happy, yet much happier.
-
-THIRD WITCH.
-Thou shalt get kings, though thou be none:
-So all hail, Macbeth and Banquo!
-
-FIRST WITCH.
-Banquo and Macbeth, all hail!
-
-MACBETH.
-Stay, you imperfect speakers, tell me more.
-By Sinel’s death I know I am Thane of Glamis;
-But how of Cawdor? The Thane of Cawdor lives,
-A prosperous gentleman; and to be king
-Stands not within the prospect of belief,
-No more than to be Cawdor. Say from whence
-You owe this strange intelligence? or why
-Upon this blasted heath you stop our way
-With such prophetic greeting?—Speak, I charge you.
-
-[Witches vanish.]
-
-BANQUO.
-The earth hath bubbles, as the water has,
-And these are of them. Whither are they vanish’d?
-
-MACBETH.
-Into the air; and what seem’d corporal,
-Melted as breath into the wind.
-Would they had stay’d!
-
-BANQUO.
-Were such things here as we do speak about?
-Or have we eaten on the insane root
-That takes the reason prisoner?
-
-MACBETH.
-Your children shall be kings.
-
-BANQUO.
-You shall be king.
-
-MACBETH.
-And Thane of Cawdor too; went it not so?
-
-BANQUO.
-To the selfsame tune and words. Who’s here?
-
-Enter Ross and Angus.
-
-ROSS.
-The King hath happily receiv’d, Macbeth,
-The news of thy success, and when he reads
-Thy personal venture in the rebels’ fight,
-His wonders and his praises do contend
-Which should be thine or his: silenc’d with that,
-In viewing o’er the rest o’ th’ selfsame day,
-He finds thee in the stout Norweyan ranks,
-Nothing afeard of what thyself didst make,
-Strange images of death. As thick as tale
-Came post with post; and everyone did bear
-Thy praises in his kingdom’s great defence,
-And pour’d them down before him.
-
-ANGUS.
-We are sent
-To give thee from our royal master thanks;
-Only to herald thee into his sight,
-Not pay thee.
-
-ROSS.
-And, for an earnest of a greater honour,
-He bade me, from him, call thee Thane of Cawdor:
-In which addition, hail, most worthy thane,
-For it is thine.
-
-BANQUO.
-What, can the devil speak true?
-
-MACBETH.
-The Thane of Cawdor lives: why do you dress me
-In borrow’d robes?
-
-ANGUS.
-Who was the Thane lives yet,
-But under heavy judgement bears that life
-Which he deserves to lose. Whether he was combin’d
-With those of Norway, or did line the rebel
-With hidden help and vantage, or that with both
-He labour’d in his country’s wrack, I know not;
-But treasons capital, confess’d and prov’d,
-Have overthrown him.
-
-MACBETH.
-[Aside.] Glamis, and Thane of Cawdor:
-The greatest is behind. [To Ross and Angus.] Thanks for your pains.
-[To Banquo.] Do you not hope your children shall be kings,
-When those that gave the Thane of Cawdor to me
-Promis’d no less to them?
-
-BANQUO.
-That, trusted home,
-Might yet enkindle you unto the crown,
-Besides the Thane of Cawdor. But ’tis strange:
-And oftentimes to win us to our harm,
-The instruments of darkness tell us truths;
-Win us with honest trifles, to betray’s
-In deepest consequence.—
-Cousins, a word, I pray you.
-
-MACBETH.
-[Aside.] Two truths are told,
-As happy prologues to the swelling act
-Of the imperial theme.—I thank you, gentlemen.—
-[Aside.] This supernatural soliciting
-Cannot be ill; cannot be good. If ill,
-Why hath it given me earnest of success,
-Commencing in a truth? I am Thane of Cawdor:
-If good, why do I yield to that suggestion
-Whose horrid image doth unfix my hair,
-And make my seated heart knock at my ribs,
-Against the use of nature? Present fears
-Are less than horrible imaginings.
-My thought, whose murder yet is but fantastical,
-Shakes so my single state of man
-That function is smother’d in surmise,
-And nothing is but what is not.
-
-BANQUO.
-Look, how our partner’s rapt.
-
-MACBETH.
-[Aside.] If chance will have me king, why, chance may crown me
-Without my stir.
-
-BANQUO.
-New honours come upon him,
-Like our strange garments, cleave not to their mould
-But with the aid of use.
-
-MACBETH.
-[Aside.] Come what come may,
-Time and the hour runs through the roughest day.
-
-BANQUO.
-Worthy Macbeth, we stay upon your leisure.
-
-MACBETH.
-Give me your favour. My dull brain was wrought
-With things forgotten. Kind gentlemen, your pains
-Are register’d where every day I turn
-The leaf to read them.—Let us toward the King.—
-Think upon what hath chanc’d; and at more time,
-The interim having weigh’d it, let us speak
-Our free hearts each to other.
-
-BANQUO.
-Very gladly.
-
-MACBETH.
-Till then, enough.—Come, friends.
-
-[Exeunt.]
-SCENE IV. Forres. A Room in the Palace.
-
-Flourish. Enter Duncan, Malcolm, Donalbain, Lennox and Attendants.
-
-DUNCAN.
-Is execution done on Cawdor? Are not
-Those in commission yet return’d?
-
-MALCOLM.
-My liege,
-They are not yet come back. But I have spoke
-With one that saw him die, who did report,
-That very frankly he confess’d his treasons,
-Implor’d your Highness’ pardon, and set forth
-A deep repentance. Nothing in his life
-Became him like the leaving it; he died
-As one that had been studied in his death,
-To throw away the dearest thing he ow’d
-As ’twere a careless trifle.
-
-DUNCAN.
-There’s no art
-To find the mind’s construction in the face:
-He was a gentleman on whom I built
-An absolute trust.
-
-Enter Macbeth, Banquo, Ross and Angus.
-
-O worthiest cousin!
-The sin of my ingratitude even now
-Was heavy on me. Thou art so far before,
-That swiftest wing of recompense is slow
-To overtake thee. Would thou hadst less deserv’d;
-That the proportion both of thanks and payment
-Might have been mine! only I have left to say,
-More is thy due than more than all can pay.
-
-MACBETH.
-The service and the loyalty I owe,
-In doing it, pays itself. Your Highness’ part
-Is to receive our duties: and our duties
-Are to your throne and state, children and servants;
-Which do but what they should, by doing everything
-Safe toward your love and honour.
-
-DUNCAN.
-Welcome hither:
-I have begun to plant thee, and will labour
-To make thee full of growing.—Noble Banquo,
-That hast no less deserv’d, nor must be known
-No less to have done so, let me infold thee
-And hold thee to my heart.
-
-BANQUO.
-There if I grow,
-The harvest is your own.
-
-DUNCAN.
-My plenteous joys,
-Wanton in fulness, seek to hide themselves
-In drops of sorrow.—Sons, kinsmen, thanes,
-And you whose places are the nearest, know,
-We will establish our estate upon
-Our eldest, Malcolm; whom we name hereafter
-The Prince of Cumberland: which honour must
-Not unaccompanied invest him only,
-But signs of nobleness, like stars, shall shine
-On all deservers.—From hence to Inverness,
-And bind us further to you.
-
-MACBETH.
-The rest is labour, which is not us’d for you:
-I’ll be myself the harbinger, and make joyful
-The hearing of my wife with your approach;
-So, humbly take my leave.
-
-DUNCAN.
-My worthy Cawdor!
-
-MACBETH.
-[Aside.] The Prince of Cumberland!—That is a step
-On which I must fall down, or else o’erleap,
-For in my way it lies. Stars, hide your fires!
-Let not light see my black and deep desires.
-The eye wink at the hand, yet let that be,
-Which the eye fears, when it is done, to see.
-
-LADY MACBETH.
-“They met me in the day of success; and I have learned by the perfect’st report they have more in them than mortal knowledge. When I burned in desire to question them further, they made themselves air, into which they vanished. Whiles I stood rapt in the wonder of it, came missives from the King, who all-hailed me, ‘Thane of Cawdor’; by which title, before, these Weird Sisters saluted me, and referred me to the coming on of time, with ‘Hail, king that shalt be!’ This have I thought good to deliver thee (my dearest partner of greatness) that thou might’st not lose the dues of rejoicing, by being ignorant of what greatness is promis’d thee. Lay it to thy heart, and farewell.”
-
-Glamis thou art, and Cawdor; and shalt be
-What thou art promis’d. Yet do I fear thy nature;
-It is too full o’ th’ milk of human kindness
-To catch the nearest way. Thou wouldst be great;
-Art not without ambition, but without
-The illness should attend it. What thou wouldst highly,
-That wouldst thou holily; wouldst not play false,
-And yet wouldst wrongly win. Thou’dst have, great Glamis,
-That which cries, “Thus thou must do,” if thou have it;
-And that which rather thou dost fear to do,
-Than wishest should be undone. Hie thee hither,
-That I may pour my spirits in thine ear,
-And chastise with the valour of my tongue
-All that impedes thee from the golden round,
-Which fate and metaphysical aid doth seem
-To have thee crown’d withal.
-
-Enter a Messenger.
-
-What is your tidings?
-
-MESSENGER.
-The King comes here tonight.
-
-LADY MACBETH.
-Thou’rt mad to say it.
-Is not thy master with him? who, were’t so,
-Would have inform’d for preparation.
-
-MESSENGER.
-So please you, it is true. Our thane is coming.
-One of my fellows had the speed of him,
-Who, almost dead for breath, had scarcely more
-Than would make up his message.
-
-LADY MACBETH.
-Give him tending.
-He brings great news.
-
-[Exit Messenger.]
-
-The raven himself is hoarse
-That croaks the fatal entrance of Duncan
-Under my battlements. Come, you spirits
-That tend on mortal thoughts, unsex me here,
-And fill me, from the crown to the toe, top-full
-Of direst cruelty! make thick my blood,
-Stop up th’ access and passage to remorse,
-That no compunctious visitings of nature
-Shake my fell purpose, nor keep peace between
-Th’ effect and it! Come to my woman’s breasts,
-And take my milk for gall, your murd’ring ministers,
-Wherever in your sightless substances
-You wait on nature’s mischief! Come, thick night,
-And pall thee in the dunnest smoke of hell
-That my keen knife see not the wound it makes,
-Nor heaven peep through the blanket of the dark
-To cry, “Hold, hold!”
-
-Enter Macbeth.
-
-Great Glamis, worthy Cawdor!
-Greater than both, by the all-hail hereafter!
-Thy letters have transported me beyond
-This ignorant present, and I feel now
-The future in the instant.
-
-MACBETH.
-My dearest love,
-Duncan comes here tonight.
-
-LADY MACBETH.
-And when goes hence?
-
-MACBETH.
-Tomorrow, as he purposes.
-
-LADY MACBETH.
-O, never
-Shall sun that morrow see!
-Your face, my thane, is as a book where men
-May read strange matters. To beguile the time,
-Look like the time; bear welcome in your eye,
-Your hand, your tongue: look like the innocent flower,
-But be the serpent under’t. He that’s coming
-Must be provided for; and you shall put
-This night’s great business into my dispatch;
-Which shall to all our nights and days to come
-Give solely sovereign sway and masterdom.
-
-MACBETH.
-We will speak further.
-
-LADY MACBETH.
-Only look up clear;
-To alter favour ever is to fear.
-Leave all the rest to me.
-
-[Exeunt.]
-SCENE VI. The same. Before the Castle.
-
-Hautboys. Servants of Macbeth attending.
-
-Enter Duncan, Malcolm, Donalbain, Banquo, Lennox, Macduff, Ross, Angus and Attendants.
-
-DUNCAN.
-This castle hath a pleasant seat. The air
-Nimbly and sweetly recommends itself
-Unto our gentle senses.
-
-BANQUO.
-This guest of summer,
-The temple-haunting martlet, does approve,
-By his loved mansionry, that the heaven’s breath
-Smells wooingly here: no jutty, frieze,
-Buttress, nor coign of vantage, but this bird
-hath made his pendant bed and procreant cradle.
-Where they most breed and haunt, I have observ’d
-The air is delicate.
-
-Enter Lady Macbeth.
-
-DUNCAN.
-See, see, our honour’d hostess!—
-The love that follows us sometime is our trouble,
-Which still we thank as love. Herein I teach you
-How you shall bid God ’ild us for your pains,
-And thank us for your trouble.
-
-LADY MACBETH.
-All our service,
-In every point twice done, and then done double,
-Were poor and single business to contend
-Against those honours deep and broad wherewith
-Your Majesty loads our house: for those of old,
-And the late dignities heap’d up to them,
-We rest your hermits.
-
-DUNCAN.
-Where’s the Thane of Cawdor?
-We cours’d him at the heels, and had a purpose
-To be his purveyor: but he rides well;
-And his great love, sharp as his spur, hath holp him
-To his home before us. Fair and noble hostess,
-We are your guest tonight.
-
-LADY MACBETH.
-Your servants ever
-Have theirs, themselves, and what is theirs, in compt,
-To make their audit at your Highness’ pleasure,
-Still to return your own.
-
-DUNCAN.
-Give me your hand;
-Conduct me to mine host: we love him highly,
-And shall continue our graces towards him.
-By your leave, hostess.
-
-[Exeunt.]
-SCENE VII. The same. A Lobby in the Castle.
-
-Hautboys and torches. Enter, and pass over, a Sewer and divers Servants with dishes and service. Then enter Macbeth.
-
-MACBETH.
-If it were done when ’tis done, then ’twere well
-It were done quickly. If th’ assassination
-Could trammel up the consequence, and catch
-With his surcease success; that but this blow
-Might be the be-all and the end-all—here,
-But here, upon this bank and shoal of time,
-We’d jump the life to come. But in these cases
-We still have judgement here; that we but teach
-Bloody instructions, which being taught, return
-To plague th’ inventor. This even-handed justice
-Commends th’ ingredience of our poison’d chalice
-To our own lips. He’s here in double trust:
-First, as I am his kinsman and his subject,
-Strong both against the deed; then, as his host,
-Who should against his murderer shut the door,
-Not bear the knife myself. Besides, this Duncan
-Hath borne his faculties so meek, hath been
-So clear in his great office, that his virtues
-Will plead like angels, trumpet-tongued, against
-The deep damnation of his taking-off;
-And pity, like a naked new-born babe,
-Striding the blast, or heaven’s cherubin, hors’d
-Upon the sightless couriers of the air,
-Shall blow the horrid deed in every eye,
-That tears shall drown the wind.—I have no spur
-To prick the sides of my intent, but only
-Vaulting ambition, which o’erleaps itself
-And falls on th’ other—
-
-Enter Lady Macbeth.
-
-How now! what news?
-
-LADY MACBETH.
-He has almost supp’d. Why have you left the chamber?
-
-MACBETH.
-Hath he ask’d for me?
-
-LADY MACBETH.
-Know you not he has?
-
-MACBETH.
-We will proceed no further in this business:
-He hath honour’d me of late; and I have bought
-Golden opinions from all sorts of people,
-Which would be worn now in their newest gloss,
-Not cast aside so soon.
-
-LADY MACBETH.
-Was the hope drunk
-Wherein you dress’d yourself? Hath it slept since?
-And wakes it now, to look so green and pale
-At what it did so freely? From this time
-Such I account thy love. Art thou afeard
-To be the same in thine own act and valour
-As thou art in desire? Wouldst thou have that
-Which thou esteem’st the ornament of life,
-And live a coward in thine own esteem,
-Letting “I dare not” wait upon “I would,”
-Like the poor cat i’ th’ adage?
-
-MACBETH.
-Pr’ythee, peace!
-I dare do all that may become a man;
-Who dares do more is none.
-
-LADY MACBETH.
-What beast was’t, then,
-That made you break this enterprise to me?
-When you durst do it, then you were a man;
-And, to be more than what you were, you would
-Be so much more the man. Nor time nor place
-Did then adhere, and yet you would make both:
-They have made themselves, and that their fitness now
-Does unmake you. I have given suck, and know
-How tender ’tis to love the babe that milks me:
-I would, while it was smiling in my face,
-Have pluck’d my nipple from his boneless gums
-And dash’d the brains out, had I so sworn as you
-Have done to this.
-
-MACBETH.
-If we should fail?
-
-LADY MACBETH.
-We fail?
-But screw your courage to the sticking-place,
-And we’ll not fail. When Duncan is asleep
-(Whereto the rather shall his day’s hard journey
-Soundly invite him), his two chamberlains
-Will I with wine and wassail so convince
-That memory, the warder of the brain,
-Shall be a fume, and the receipt of reason
-A limbeck only: when in swinish sleep
-Their drenched natures lie as in a death,
-What cannot you and I perform upon
-Th’ unguarded Duncan? what not put upon
-His spongy officers; who shall bear the guilt
-Of our great quell?
-
-MACBETH.
-Bring forth men-children only;
-For thy undaunted mettle should compose
-Nothing but males. Will it not be receiv’d,
-When we have mark’d with blood those sleepy two
-Of his own chamber, and us’d their very daggers,
-That they have done’t?
-
-LADY MACBETH.
-Who dares receive it other,
-As we shall make our griefs and clamour roar
-Upon his death?
-
-MACBETH.
-I am settled, and bend up
-Each corporal agent to this terrible feat.
-Away, and mock the time with fairest show:
-False face must hide what the false heart doth know.
-
-[Exeunt.]
-ACT II
-SCENE I. Inverness. Court within the Castle.
-
-Enter Banquo and Fleance with a torch before him.
-
-BANQUO.
-How goes the night, boy?
-
-FLEANCE.
-The moon is down; I have not heard the clock.
-
-BANQUO.
-And she goes down at twelve.
-
-FLEANCE.
-I take’t, ’tis later, sir.
-
-BANQUO.
-Hold, take my sword.—There’s husbandry in heaven;
-Their candles are all out. Take thee that too.
-A heavy summons lies like lead upon me,
-And yet I would not sleep. Merciful powers,
-Restrain in me the cursed thoughts that nature
-Gives way to in repose!
-
-Enter Macbeth and a Servant with a torch.
-
-Give me my sword.—Who’s there?
-
-MACBETH.
-A friend.
-
-BANQUO.
-What, sir, not yet at rest? The King’s abed:
-He hath been in unusual pleasure and
-Sent forth great largess to your offices.
-This diamond he greets your wife withal,
-By the name of most kind hostess, and shut up
-In measureless content.
-
-MACBETH.
-Being unprepar’d,
-Our will became the servant to defect,
-Which else should free have wrought.
-
-BANQUO.
-All’s well.
-I dreamt last night of the three Weird Sisters:
-To you they have show’d some truth.
-
-MACBETH.
-I think not of them:
-Yet, when we can entreat an hour to serve,
-We would spend it in some words upon that business,
-If you would grant the time.
-
-BANQUO.
-At your kind’st leisure.
-
-MACBETH.
-If you shall cleave to my consent, when ’tis,
-It shall make honour for you.
-
-BANQUO.
-So I lose none
-In seeking to augment it, but still keep
-My bosom franchis’d, and allegiance clear,
-I shall be counsell’d.
-
-MACBETH.
-Good repose the while!
-
-BANQUO.
-Thanks, sir: the like to you.
-
-[Exeunt Banquo and Fleance.]
-
-MACBETH.
-Go bid thy mistress, when my drink is ready,
-She strike upon the bell. Get thee to bed.
-
-[Exit Servant.]
-
-Is this a dagger which I see before me,
-The handle toward my hand? Come, let me clutch thee:—
-I have thee not, and yet I see thee still.
-Art thou not, fatal vision, sensible
-To feeling as to sight? or art thou but
-A dagger of the mind, a false creation,
-Proceeding from the heat-oppressed brain?
-I see thee yet, in form as palpable
-As this which now I draw.
-Thou marshall’st me the way that I was going;
-And such an instrument I was to use.
-Mine eyes are made the fools o’ the other senses,
-Or else worth all the rest: I see thee still;
-And on thy blade and dudgeon, gouts of blood,
-Which was not so before.—There’s no such thing.
-It is the bloody business which informs
-Thus to mine eyes.—Now o’er the one half-world
-Nature seems dead, and wicked dreams abuse
-The curtain’d sleep. Witchcraft celebrates
-Pale Hecate’s off’rings; and wither’d murder,
-Alarum’d by his sentinel, the wolf,
-Whose howl’s his watch, thus with his stealthy pace,
-With Tarquin’s ravishing strides, towards his design
-Moves like a ghost.—Thou sure and firm-set earth,
-Hear not my steps, which way they walk, for fear
-Thy very stones prate of my whereabout,
-And take the present horror from the time,
-Which now suits with it.—Whiles I threat, he lives.
-Words to the heat of deeds too cold breath gives.
-
-[A bell rings.]
-
-I go, and it is done. The bell invites me.
-Hear it not, Duncan, for it is a knell
-That summons thee to heaven or to hell.
-
-[Exit.]
-SCENE II. The same.
-
-Enter Lady Macbeth.
-
-LADY MACBETH.
-That which hath made them drunk hath made me bold:
-What hath quench’d them hath given me fire.—Hark!—Peace!
-It was the owl that shriek’d, the fatal bellman,
-Which gives the stern’st good night. He is about it.
-The doors are open; and the surfeited grooms
-Do mock their charge with snores: I have drugg’d their possets,
-That death and nature do contend about them,
-Whether they live or die.
-
-MACBETH.
-[Within.] Who’s there?—what, ho!
-
-LADY MACBETH.
-Alack! I am afraid they have awak’d,
-And ’tis not done. Th’ attempt and not the deed
-Confounds us.—Hark!—I laid their daggers ready;
-He could not miss ’em.—Had he not resembled
-My father as he slept, I had done’t.—My husband!
-
-Enter Macbeth.
-
-MACBETH.
-I have done the deed.—Didst thou not hear a noise?
-
-LADY MACBETH.
-I heard the owl scream and the crickets cry.
-Did not you speak?
-
-MACBETH.
-There’s one did laugh in’s sleep, and one cried, “Murder!”
-That they did wake each other: I stood and heard them.
-But they did say their prayers, and address’d them
-Again to sleep.
-
-LADY MACBETH.
-There are two lodg’d together.
-
-MACBETH.
-One cried, “God bless us!” and, “Amen,” the other,
-As they had seen me with these hangman’s hands.
-List’ning their fear, I could not say “Amen,”
-When they did say, “God bless us.”
-
-LADY MACBETH.
-Consider it not so deeply.
-
-MACBETH.
-But wherefore could not I pronounce “Amen”?
-I had most need of blessing, and “Amen”
-Stuck in my throat.
-
-LADY MACBETH.
-These deeds must not be thought
-After these ways; so, it will make us mad.
-
-MACBETH.
-Methought I heard a voice cry, “Sleep no more!
-Macbeth does murder sleep,”—the innocent sleep;
-Sleep that knits up the ravell’d sleave of care,
-The death of each day’s life, sore labour’s bath,
-Balm of hurt minds, great nature’s second course,
-Chief nourisher in life’s feast.
-
-LADY MACBETH.
+The Vought logo leads into an ad for Translucent: Invisible Force 2.
+
+CUT TO: EXT. STREET
+
+The ad is revealed to be on the back of a bus, which drives away. Jamie and Benjy walk by it, talking.
+
+BENJY: Yo, I am so psyched for Invisible Force 2.
+
+JAMIE: Please. Invisible Force 1 was lame. I'm all about Rising Tide.
+
+BENJY: Rising Tide? The Deep? Translucent could kick the Deep’s ass.
+
+JAMIE: How? He's invisible. That's, like, all he’s got. That's it.
+
+BENJY: Exactly. He sneaks up on the Deep, and then boom, motherfucker! Sit down.
+
+JAMIE: Until the Deep makes a shark bite Translucent's dick off.
+
+BENJY: How's he gonna find his dick? It's invisible.
+
+A noise behind them startles the duo. They turn to look. Cut to an armored truck careening down the street, pursued by multiple cop cars.
+
+BENJY: Holy shit.
+
+The truck speeds towards them. They turn and run, but Benjy trips.
+JAMIE: Benjy!
+
+Before the truck reaches them, Queen Maeve flips a car, attempting to stop it. Cut to a shot from inside an apartment. As an old woman pours tea, Maeve walks on the windows, cracking them. Back outside, the armored truck avoids the car, swerving towards Jamie and Benjy.
+
+JAMIE: Get up, get up, get up. Come on, Benjy. Come on, come on.
+
+As the truck is about to crush them, Maeve jumps in front of it, splitting the truck in two. Jamie and Benjy are hit with only light debris. Cut to a shot of Maeve standing stoically as the truck splits around her. As it comes to a stop, she ends up inside the ruined truck, face to face with a robber. She smirks at him. Cut back to the street. Jamie helps Benjy to his feet. They watch from outside as a skirmish can be heard inside the truck. The driver walks out in front of them, spitting blood all over the street. Cut to Maeve exiting the truck to find the driver and another robber holding the young men at gunpoint.
+
+DRIVER: Stay back. Just stay the fuck back.
+
+Maeve approaches them, smiling.
+
+DRIVER: What are you smiling at?
+
+From offscreen, Homelander fires his laser vision at the driver's gun, melting it all over his hand. He screams in pain and falls to the ground. The two young men run away as the other robber tries to fire at Homelander. The bullets have no effect. He walks slowly towards the man and then throws him quite a distance.
+
+BENJY: Homelander?
+
+Homelander turns towards the young men, revealing his face to the camera for the first time.
+
+HOMELANDER: You boys okay?
+
+The robber finally crashes down on some cars down the road. Cut to Benjy and Jamie staring at Homelander in shock for a few moments.
+
+BENJY: Can I can I get a selfie?
+HOMELANDER: 'Course you can.
+
+Homelander smiles and opens his arms welcomingly. The young men walk over and take a selfie with him. The shot changes to news footage of the incident, with an anchor narrating.
+
+ANCHOR: The Seven's Queen Maeve and Homelander made another heroic save today, stopping a hijacked armored truck on the streets of Brooklyn, then staying behind for a photo op with some very lucky fans.
+
+CUT TO: INT. STORE
+
+The camera pulls back to reveal Hughie cleaning off a TV screen playing the broadcast.
+
+HOMELANDER: Nice to meet you.
+
+Cut to Hughie helping a woman in the store.
+
+HUGHIE: So, this is pretty much everything in one. Bluetooth speakers. It’s in stereo, so you can put it all around your living room, have some fun with it. You said you have a standard cable box, right?
+
+WOMAN: Uh-huh.
+
+HUGHIE: Okay, then I need to get you an audio transmitter, aptX Low Latency. It makes it so there’s less audio lag, and it's got a standard optical in. And let’s hook you up with thousand-meg HDMI. Let's go with this one. Uh, it costs a little bit more, but the carbon's way more conductive.
+
+Cut to later. Hughie approaches Gary at the front desk.
+
+HUGHIE: Hey, Gary. Um, I really need to talk to you about something.
+
+GARY: Later, kid.
+HUGHIE: Okay. Cool. Later you want, like want, like, 30… 30 minutes? Like, a solid 45?
+
+Cut to even later. Robin enters the store as Hughie has his back to the door.
+
+ROBIN: Excuse me, sir? Hi. I'd like to make an appointment for you to come over and lay some cable.
+
+HUGHIE: Okay. Uh, oh, Robin. Oh, dear, dear, Robin. Um, that doesn’t mean what you think it means.
+
+ROBIN: Um, "laying cable" means sex.
+
+HUGHIE: No, "laying pipe" means sex. "Laying cable" means you want me to come over to your house and just take a big, old shit.
+
+ROBIN: That's disgusting.
+
+HUGHIE: Well, okay. But you… Who, who said it, though?
+
+ROBIN: Okay. Are you ready? Despite your best efforts, I'm actually still hungry.
+
+HUGHIE: I'm actually more hungry now.
+
+ROBIN: Where are we gonna go after all this hot talk?
+
+They walk out the door.
+
+HUGHIE: I don't know. More importantly, where are we gonna go to lay some cable afterwards?
+
+Cut to a shot of them walking down the sidewalk.
+
+ROBIN: So, did you ask him?
+
+HUGHIE: Who?
+
+ROBIN: Gary. Did you ask Gary for the raise?
+
+HUGHIE: Yeah. Yeah. It was... it was a, look, it was a crazy day, and- and he was super busy, but tomorrow for sure. Yes.
+
+ROBIN: Okay.
+
+HUGHIE: What was I supposed to do, kick his door down? Like Homelander?
+
+ROBIN: I said "okay".
+
+HUGHIE: Yeah, but you didn't mean it. Hey, I see the look. I see it. Come on.
+
+ROBIN: This is like when we started dating.
+
+HUGHIE: I don't think that's... I don't think that's true.
+
+ROBIN: Dude, I had to ask you out.
+
+HUGHIE: Well, excuse me for waiting. You ever hear of chivalry?
+
+ROBIN: Listen, this is about you getting what you deserve. I'm killing myself at school because I think it's gonna be worth it for both of us. You know, if we move in together.
+
+HUGHIE: Wait, what? What? W-w-wait. Hey, hey, hey. Hey, hey. What was that? What'd you just say?
+
+They stop walking. Hughie stops on the curb, while Robin stops about a step off the curb.
+
+ROBIN: Well, I mean, we can't keep, you know, laying pipe at your dad's place. Trying to be all quiet. Staring up at that dumb Billy Joel post-
+
+Hughie kisses her, stopping her mid-sentence.
+
+ROBIN: … Poster.
+
+HUGHIE: Hey. Don't you ever besmirch Billy Jo-
+
+Robin disappears. Time slows to a crawl. Drops of blood float midair. Hughie is hit with a blast of air. Some of the blood sprays on his face. The camera slowly pans to reveal Robin has exploded into blood, bones, and guts. Time returns to normal speed. Robin's remains fall to the ground. A-Train stands nearby, panting. He takes off his running goggles and looks at the mess and the shocked Hughie.
+
+A-TRAIN: I can't stop. I can't stop. I can't stop. I can't stop. Can't stop. Can't stop.
+
+A-Train puts his goggles back on and resumes running.
+
+HUGHIE: Robin?
+
+Hughie looks down to see he is still holding Robin's now detached hands.
+
+HUGHIE: Robin? Robin! Robin!
+
+CUT TO: INT. ANNIE'S HOUSE
+
+Text on screen reads, “DES MOINES, IOWA.” The sun rises in the distance. The camera pans to Annie's alarm clock. As the clock hits 7:00 A.M., it begins playing “Barracuda” by Heart. We watch a montage of Annie training. She does pull ups, punches a brick wall outside, and lifts her car. Her mom walks nearby.
+
+DONNA: Let the energy go through the wall!
+
+Cut to Annie inside, now in costume. She films an audition tape.
+
+ANNIE: I am Starlight. I'm 110 pounds, and I'm five foot six.
+
+CASTING DIRECTOR: Turn around, please. Okay. Let's see it, dear.
+
+ANNIE: You should look away.
+
+CASTING DIRECTOR: Sorry?
+
+ANNIE: You should turn away from the camera, and you should close your eyes, or else I'll blind you.
+
+CASTING DIRECTOR: All right. Okay, go ahead.
+
+Annie uses her power. All of the lights go out as she sends out a burst of light. She accidentally knocks over the camera filming. She walks over to it.
+
+ANNIE: I am so sorry. Are you all right?
+
+Cut to a shot of Annie in the bathroom. She puts down a cup of urine.
+
+ANNIE: I was born Super-Abled.
+
+Cut to Annie taking a polygraph test.
+
+ANNIE: Uh, my mom was thrilled. She took me to all the little miss hero pageants, but I hated it. Ugh, I mean, I can still smell the hairspray. Uh, but, at the Q and A, they always asked me what my wish was, and I always said, "to save the world." And the judges just chuckled like it was cute. But it wasn't a joke to me. Since when did "hopeful" and "naive" become the same thing? I mean, why would you get into this business if not to save the world? That's all I have ever wanted. And that's why I've always wanted to be in The Seven.
+
+CUT TO: INT. HUGHIE'S HOUSE
+
+Hughie sits on his couch, watching TV and looking distraught. His dad comes to sit next to him.
+
+HUGHIE'S DAD: Thought Robin's service was nice. Did you see how many people came? Wow. Lot of respect for that girl. Lot of love in the room. And the spread. What a spread. Just really nice.
+
+Hughie's dad notices the TV is playing a conference about Robin's death. Madelyn Stillwell speaks, with A-Train next to her.
+
+MADELYN: That does not begin to convey the terrible regret-
+
+HUGHIE'S DAD: Aw, geez. Maybe there's a movie on.
+
+HUGHIE: No, keep it.
+
+HUGHIE'S DAD: No, we can switch-
+
+HUGHIE: Keep it.
+
+A-TRAIN: My deepest condolences to Robin Ward's family. I was chasing these bank robbers. She just stepped in the middle of the street, and I, I couldn't…
+
+HUGHIE: Middle of the... She was a half step off the fucking curb!
+
+HUGHIE'S DAD: Oh, now, come on, Hughie. Just, uh, don't get upset, okay? Just… He knows.
+
+The doorbell rings. Cut to Hughie sitting at a table across from a Vought lawyer.
+
+LAWYER: Everyone at Vought is just, just wrecked about Robin. Now, you two weren't married, and look, technically, there's no legal claim. But Vought wants to do the right thing: offer you $45,000 in restitution. All you have to do is sign right here, and I'll offer you the check.
+
+HUGHIE: This is a confidentiality agreement.
+
+LAWYER: It's a boilerplate NDA.
+
+HUGHIE: I sign this, and I can't talk about it? Have to pretend like it didn't happen, like I wasn't holding Robin's arms in my hands?
+
+LAWYER: Look, I know you're upset, but we're just trying to help.
+
+HUGHIE: Then say you're sorry.
+
+LAWYER: Excuse me?
+
+HUGHIE: I mean, you people say "our condolences" and "my sympathies" and "our regrets,” but nobody can look me in the fucking eye and say "I'm sorry!" I'm not signing anything. Get out.
+
+Hughie reaches over and grabs the lawyer, screaming into his face.
+
+HUGHIE: I said get the hell out!
+
+The past minute is revealed to be a fantasy in Hughie's imagination. Hughie stares ahead blankly. panting slightly.
+
+LAWYER: You okay? As I said, boilerplate NDA, really. Pretty standard stuff.
+
+HUGHIE: Can I think about it?
+
+LAWYER: If you have any questions at all, just, uh…
+
+The lawyer taps his business card in front of Hughie. He gets up and leaves.
+
+CUT TO: INT. ANNIE'S HOUSE
+
+The camera cuts to a shot of a trophy shelf in Annie's kitchen. It then pans to show Annie listening to a police radio. Her mother walks in.
+
+DISPATCHER: Unit 44, code 20. Address is 1420 63rd Street-
+
+DONNA: Any maniacs out there?
+
+ANNIE: Mm-mm. Quiet night. Like every night.
+
+DONNA: That's too bad. We could really use the press right now.
+
+Annie pours herself some food.
+
+DONNA: Oh, Annie.
+
+ANNIE: I'm hungry. Don't worry. I didn't get the job.
+
+DONNA: You don't know that.
+
+ANNIE: They're auditioning girls nationwide. Besides, Countess probably got it. She's so good in a room.
+
+The phone rings.
+
+DONNA: If you're negative, negative things happen to you.
+
+Donna picks up the phone.
+
+DONNA: Hello? Yes, I'm her mother. Uh, yes. Uh, one moment.
+
+Donna hands Annie the phone.
+
+DONNA: It's them. It's them.
+
+ANNIE: Hello? Yes, this is she. I got it?
+
+Annie and her mother immediately begin jumping and yelling in glee.
+
+DONNA: You got it! You got it!
+
+They stop.
+
+ANNIE: Shh.
+
+DONNA: Oh, my God.
+
+ANNIE: Uh, I'm so I'm so sorry. It's a weird connection. I don't know what that was, actually. Uh... Mm-hmm.
+
+CUT TO: INT. HUGHIE'S HOUSE
+
+Hughie's dad sits on the couch watching TV. Hughie walks around in the background.
+
+HUGHIE: Oh, shit.
+
+Hughie's dad watches him walk around.
+
+HUGHIE'S DAD: Whatcha doing?
+
+HUGHIE: Can't file a criminal case against A-Train. Supes are like cops. They can't be charged for damages while they're on the job.
+
+HUGHIE'S DAD: Okay...
+
+HUGHIE: But maybe we can file a wrongful death. I just got to get Robin's parents to sign off on it.
+
+HUGHIE'S DAD: Hughie, come sit with me.
+
+HUGHIE: Dad, I'm not... I'm right... Okay.
+
+Hughie sits on the couch. His dad pats him on the back.
+
+HUGHIE'S DAD: Good for you. You want to make this right, what happened to Robin.
+
+Hughie smiles.
+
+HUGHIE'S DAD: But you can't. So sign this.
+
+Hughie's smile fades as his dad hands him the NDA.
+
+HUGHIE: What?
+
+HUGHIE'S DAD: This is a lot of money, Hughie. We could really use it.
+
+Hughie stands up.
+
+HUGHIE: I can't… Dad, they killed her.
+
+HUGHIE'S DAD: Be realistic, okay? Even if we could pay for a lawyer, and that's a big if there's no case. She was in the street. Be like if a bus hit her.
+
+HUGHIE: Dad, she was one step off the curb. I, I saw it!
+
+HUGHIE'S DAD: Hughie, look. Look. You can't do this.
+
+HUGHIE: Why not? Dad, I have-
+
+HUGHIE'S DAD: You don't have the fight. You never have. I'm sorry, but it's… it's true. Neither do I. Now come and, come and sit with me, okay? Remington Steele's on.
+
+Hughie walks out the door.
+
+HUGHIE'S DAD: Hughie! Where you going?
+
+He sighs.
+
+CUT TO: EXT. RED CARPET
+
+The camera pans down to a shot of a large crowd around a red carpet. Ashley waits at the end. Cut to a shot of Annie and her mother getting out of a limo.
+
+ASHLEY: There she is! Welcome to New York. I'm Ashley Barrett, director of talent relations.
+
+ANNIE: So, uh, are all these people here for me?
+
+ASHLEY: Oh, honey. Who else would they be here for? Come on. We're running late.
+
+Annie and her mother follow Ashley as they look around at all of the screaming fans and paparazzi. Cut to inside the building as Madelyn speaks at the shareholder's meeting.
+
+MADELYN: Ladies and gentlemen, it is without a doubt a good time to be in the Superhero business. Our net income is up 14%. Our latest film, G-MEN: World War, just grossed shy of $1.7 billion world-wide. And this fall, we break ground on our newest theme park outside of Paris. The branding opportunities are limitless. But, you know, none of that really matters. Because job one is managing, supporting, and advising the brave heroes who put themselves in harm's way each and every day for us. Let's take a look.
+
+She gestures towards a big screen behind her. It begins playing a commercial for Vought's superheroes, which is narrated by her.
+
+MADELYN: (Narrating) A world without crime, with liberty and justice for all, that's within our reach, thanks to the 200-plus Superheroes in the Vought Family. We see a bright future ahead, where there is a Vought Hero in every town.
+
+Cut to backstage. Ashely leads Annie and her mother towards the stage.
+
+ASHLEY: You're doing really well, by the way, so far.
+
+ANNIE: I, I haven't done anything yet.
+
+ASHLEY: Yeah, exactly. You're already up two-and-a-half points with Midwesterners and conservative Christians in 18 to 49. That speech, by the way, your audition, oh! It was modest; it was humble. Really fucking smart choice.
+
+ANNIE: Uh, I, I meant it.
+
+ASHLEY: Yeah, that's why we love you. So you ready for your life to change?
+
+Back to the conference, the video continues.
+
+MADELYN: (Narrating) - including the jewel in Vought's crown, the greatest superhero team the world's ever seen: The Seven. That is our job, our honor. We are Vought. We make heroes super.
+
+The video ends. The audience applauds. Madelyn returns to the mic.
+
+MADELYN: I have a very exciting surprise for you. Both a member of The Seven, and Lord of the Seven Seas, live and in person, the Deep!
+
+The Deep walks out on stage and approaches the mic. There's lots of applause.
+
+DEEP: Thank you. Thank you, everybody. After a long, distinguished career with The Seven, my good friend, the Lamplighter, has retired. Let's give him a big "thank you.” What do you say?
+
+The audience applauds.
+
+DEEP: But now, as we turn towards the future, I'd like to introduce someone very special. And I, for one, can't wait to work with her. Please welcome Starlight.
+
+Backstage, Annie looks nervous. Ashley pushes her out.
+
+ASHLEY: Go!
+
+Annie walks out on stage. The Deep greets her. They both wave towards the crowd. Madelyn returns to the mic.
+
+MADELYN: Ladies and gentlemen, Starlight and the Deep!
+
+The Deep continues waving. Annie looks around at the audience.
+
+CUT TO: INT. SHOP
+
+Hughie enters a store. He grabs some beer, then looks up to see A-Train branded beer. He begins panting. Looking around and walking to the counter he also encounters A-Train cereal and a cardboard cutout of A-Train. At the counter, the store clerk is reading a tabloid with A-Train on the cover. Hughie's panting gets worse.
+
+CLERK: Hey, buddy, you okay?
+
+Hughie falls backwards into some shelves.
+
+CLERK: Hey, buddy!
+
+CUT TO: INT. SEVEN HEADQUARTERS
+
+The Deep and Annie get off an elevator into the Seven's main conference room. He leads her around.
+
+ANNIE: Wow.
+
+DEEP: Pretty cool, huh? Oh, hey, check this out. We have two World View-4 satellites in geocentric orbit. We can essentially read a getaway car's license plate from 380 miles up.
+
+ANNIE: That is just... I mean, I was working with a police scanner that I bought on eBay.
+
+DEEP: Yeah, well, not anymore you're not. Oh, and wait till you check out the dining room. We, uh, may or may not have stolen Miro from Gramercy Tavern. Yeah, he's fan-fucking-tastic.
+
+ANNIE: That's his, isn't it?
+
+She looks at the chair at the head of the main table.
+
+DEEP: Homelander's? Yeah. But you'll have your own soon. Here. Come on.
+
+He pulls out Homelander's chair.
+
+DEEP: Give it a test drive. Come on. Oh, you, you okay?
+
+ANNIE: It's just… I used to stand in the mirror, pretending to be where I am right now.
+
+DEEP: You know something? On my first day, I, uh... Well, I felt like a fraud. Yeah. But the good news is, everybody feels that way.
+
+ANNIE: Thank you.
+
+DEEP: And, hey, we're a team now. We'll help each other out. I bet growing up you had a poster of Homelander on your wall, huh?
+
+ANNIE: No, actually, I... I don't know, Homelander's so... He's like Jesus or something. If you want to know the truth, I actually had a poster of you.
+
+DEEP: Really?
+
+ANNIE: Yeah. Yeah.
+
+DEEP: Oh.
+
+ANNIE: I kind of, I kind of had a schoolgirl crush on you.
+
+DEEP: Oh, my God.
+
+ANNIE: Oh, my God. I hope that's not inappropriate to say.
+
+DEEP: No, no, no, no, no. It's not inappropriate at all. It's just, it's kind of wild.
+
+Annie looks out the window for a moment, then turns and sees The Deep has pulled his pants down and begun masturbating.
+
+DEEP: What? I mean, you said you had a crush on me. I figured that, you know…
+
+Annie hurriedly walks away, disgusted.
+
+DEEP: Whoa, whoa, wh-wh-whoa, hey. Look, you're gorgeous. I'm not I'm not talking about sex, just a little bit of pole-smoking. Whoa, whoa, whoa. Hey, wait, wait, wait, wait, wait. It's just a question of how bad you want to be in The Seven.
+
+Anine stops in her tracks and turns around.
+
+ANNIE: Excuse me?
+
+Her powers flare up, shattering some nearby screens and causes the lights to flicker.
+
+DEEP: Whoa. Whoa, whoa, whoa. Hey, hey, hey. Hey. Take it easy. Settle down. We're just, we're just talking. And look, I know that you're powerful. I get it. Your powers are no joke. The thing is I am number two around here. So, like, if I say so, you know, you'd be out of here. Especially since you attacked me.
+
+ANNIE: I what?
+
+DEEP: Yeah. Look.
+
+He gestures towards the broken screens. As he talks, he walks over to her.
+
+DEEP: I mean, Iowa's sweetheart, the Defender of Des Moines, just went psycho on the Deep. I mean, that that could put you out of the business. Yeah. I mean, home to Mommy, tail tucked between your legs. Just think of all those kids. I mean, the kids. Those kids who look up to you, they'd just be shattered. I mean, that's not what you really want, right? Or, we come together as a team. You and me, we just roll with the punches, for, like, three minutes, maybe. It's not a big deal. And then you know what happens? All your dreams come true.
+
+CUT TO: INT. STUDIO
+
+Cut to a shot of The Tonight Show. Translucent is being interviewed by Jimmy Fallon.
+
+JIMMY: I'm sure you guys have all heard that Translucent stopped a home invasion in Yonkers last night, a young, single mother and her two kids. Just incredible. Just... So tell us, how are you able to, to vanish?
+
+TRANSLUCENT: No, I don't actually vanish. My skin turns into this carbon meta-material that bends the light. Like an invisibility cloak.
+
+Cut to a shot of Hughie at work. The Tonight Show continues on one of the monitors nearby.
+
+JIMMY: All right, but just to be clear, you have to be completely naked, right?
+
+The door opens. Hughie turns to look. He sees Billy Butcher looking at a nanny cam.
+
+HUGHIE: You interested in a nanny cam? 'Cause we're actually running a special on that. Um, it's a pretty popular bear. There's cameras in the eyes.
+
+BILLY: Tell me, how many nannies shake their babies?
+
+HUGHIE: Uh, I'm sorry?
+
+BILLY: You know, a good hard shake, like, like tryin' to get ketchup out of a bottle. One percent? Less?
+
+HUGHIE: I, I don't really know.
+
+Billy puts the nanny cam down.
+
+BILLY: Funny, that. They sell a billion dollars worth of that shit worldwide. Goes to show you, doesn't it? The bollocks people will believe if you get them scared enough.
+
+HUGHIE: Cool. Cool, cool. Um, is there anything I can help you with today, or... ?
+
+BILLY: I'm not gonna piss you about, Hughie. I heard what happened to Robin.
+
+HUGHIE: I'm, I'm sorry, who are you?
+
+BILLY: She wasn't in the street. She was one step off the fucking curb. And you didn't take the pay-off.
+
+HUGHIE: Yeah. I said, who the hell are you? How do you know that?
+
+BILLY: Name's Butcher. Billy Butcher.
+
+Billy flashes an FBI badge.
+
+BILLY: Listen, I was thinking that, uh, you and me should have a little bit of a chat.
+
+Cut to them walking on a busy sidewalk outside.
+
+HUGHIE: You're a Fed? You don't sound like a Fed.
+
+BILLY: What, I can't immigrate? There's a giant green slapper with her ass in the harbor that says different.
+
+HUGHIE: You don't really look like one, either.
+
+BILLY: No? What do I look like?
+
+HUGHIE: Like you're starring in a porn version of The Matrix.
+
+BILLY: Well, it's all right there in black and white.
+
+HUGHIE: Okay. Uh, what exactly can I do for you?
+
+BILLY: No, you got it all wrong, Hughie. It's what I can do for you. You see, you ain't alone, son. It happens a lot more than you think. Supes lose hundreds of people each year to collateral damage.
+
+HUGHIE: No. Come on, that'd be all over the news. People would be screaming bloody murder.
+
+BILLY: Yeah, look, there might be the odd mention of it now and again, like with Robin, but there's a fuck-sight more that happens that just gets swept right under the rug.
+
+They stop walking.
+
+HUGHIE: Why?
+
+As Billy continues, he gestures around at dozens of ads for various superhero properties.
+
+BILLY: Ain't it obvious? Movie tickets, merchandising, theme parks, video games. A multi-billion dollar global industry supported by corporate lobbyists and politicians on both sides. But the main reason that you won't hear about it is 'cause the public don't want to know about it. See, people love that cozy feeling that Supes give them. Some golden cunt to swoop out of the sky and save the day so you don't gotta do it yourself. But if you knew half the shit they get up to... Ooh. Fuckin' diabolical. But then, that's where I come in.
+
+HUGHIE: Come in to to do what?
+
+BILLY: Spank the bastards when they get out of line.
+
+HUGHIE: How do you spank a Supe?
+
+BILLY: Come on, son.
+
+Billy begins to walk away.
+
+HUGHIE: Uh, where?
+
+BILLY: You'll love it.
+
+Billy turns back to Hughie.
+
+HUGHIE: Uh, not likely. Uh, listen. I think this is good; I'm good. Uh, thank you for an extremely weird conversation, but, uh, I don't want to go to a second location with you. So, I'm gonna get back to work. Thank you.
+
+Hughie begins walking away but stops as Billy begins talking again.
+
+BILLY: Hughie! Hughie. This is your one and only, mate. Once I go, I'm gone. I'm offering you the opportunity to get them that got your girl. What have you got to lose that you ain't already lost?
+
+Billy walks away again. Hughie stands for a few moments. Cut to him following Billy down an alley.
+
+HUGHIE: Where are we?
+
+BILLY: Keep your mouth shut.
+
+Billy knocks on a door. Harry opens a slot on the door to talk to Billy.
+
+BILLY: Harry. Got your message. Thank you for being an upstanding citizen.
+
+HARRY: You know this is fucking police brutality, man. You know what they'll do to me, they catch me letting you in?
+
+BILLY: Not half of what I'll do if you don't.
+
+HUGHIE: Did he just say you were police?
+
+BILLY: Yeah, you know, cop, Fed, all the same to twats like that.
+
+The door opens. Billy pulls Hughie inside. Cut to inside. Hughie stares shocked at the superhero debauchery taking place, include some couples having sex while floating middair.
+
+HUGHIE: Holy shit.
+
+BILLY: Pick your jaw up off the floor and try to blend in. This is the only place where the Supes can scratch their filthy little itch without the paps taking snaps.
+
+Hughie watches a superhero with the ability to shrink jump inside a woman's vagina. He sees Ezekiel receiving oral sex nearby.
+
+HUGHIE: Wait, wait, wait. That's Ezekiel. The "Capes for Christ" guy preaches all that "pray the gay away" shit.
+
+Ezekiel stretches across the aisle between another two men on a couch nearby.
+
+BILLY: And now he's the meat in the Manwich. Fucking hypocrite.
+
+They step over Ezekiel. Cut to the back room. Harry shows Billy and Hughie security footage.
+
+BILLY: Keep going forward. That's it. Further. Further. There. There. Stop.
+
+The footage shows A-Train sitting in a booth.
+
+HUGHIE: Wait, wait, wait. A-Train's... A-Train's here right now?
+
+BILLY: Was. This is from last night. Turn it up.
+
+Another hero comes to sit with A-Train.
+
+BIG GAME: I cannot believe you ran through a bitch.
+
+A-TRAIN: You want to hear something crazy? I ran so fast through this bitch that I swallowed one of her molars. Like a bug on the fucking freeway.
+
+BIG GAME: Dude, that's nasty.
+
+The pair begins laughing.
+
+HUGHIE: They're laughing. Just, like she's a joke. They're fucking laughing.
+
+BILLY: So what are you gonna do about it?
+
+CUT TO: INT. BATHROOM
+
+Annie vomits in the toilet. She exits the stall to see Maeve standing nearby. Annie washes her face. Maeve hands her some tissues.
+
+MAEVE: Oh, for Chrissakes. Clean yourself up. Never let them see you like this. Translucent, you're a goddamn pervert.
+
+Maeve leaves. Translucent makes himself visible, having been standing naked nearby.
+
+TRANSLUCENT: Ah... Oh, uh... I'll just go.
+
+CUT TO: INT. BAR
+
+Billy and Hughie sit across from each other.
+
+HUGHIE: They're all like that? All of them? Even Homelander?
+
+BILLY: Homelander's the exception. He doesn't drink, doesn't smoke. Man's a saint. But the rest of 'em, yeah. Pardon my French, fuck those fuckers. Here. Have a shufti of that.
+
+Billy hands Hughie some files.
+
+HUGHIE: What are these?
+
+BILLY: That's the police log the day that Robin got murdered. Couple of bar fights. A few cars got nicked. But you know what's not in there? No bank alarms going off. No one charged at Central Booking. A-Train stopped two bank robbers, my arse. Someone's fucking hiding something.
+
+HUGHIE: Hiding what?
+
+BILLY: Well, I don't know, whatever dodgy shit he was up to that night. Why couldn't he stop? I mean, what was in that bag? You know? Who was he running from?
+
+HUGHIE: Or where was he running to?
+
+BILLY: Bingo. Work that out, and we'll have the fucker, I can smell it.
+
+HUGHIE: Okay. Okay, so, um, what can I do to help?
+
+BILLY: Here's what you do. Ring Vought, tell 'em you'll take the money, sign the NDA, but only if A-Train's there in person when you do it.
+
+HUGHIE: Why does A-Train need to be there?
+
+BILLY: Then they'll take you into The Seven Tower, through security, mate, and then you're gonna plant a bug.
+
+HUGHIE: A bug?
+
+BILLY: A bug. And we'll have a little listen. See what's really going on.
+
+HUGHIE: Okay, let me just, sorry, let me just get this straight. You want me to, you want me to go to Seven Tower by myself, and-and you want me to plant a bug, like I'm what, like I'm fuckin' James Bond?
+
+BILLY: Yeah, exactly. You got it.
+
+HUGHIE: You're FBI. If you're FBI, then get a warrant. Why do you, why do you even need me?
+
+BILLY: Hughie, Hughie, look, mate, I got a warrant, all right? But that place is firewalled, untappable, and locked up tighter than a nun's knickers. I couldn't get myself in there in a million years. But you, son, you could do it.
+
+HUGHIE: No, no, I can't, okay? I can't. No. You didn't see A-Train covered in... And, and I'm, what, I'm just supposed to go in there, and I'm supposed to I'm supposed to shake his hand? And smile?
+
+BILLY: Yeah.
+
+HUGHIE: I'm not g- I'm not… Do you know who my favorite musician is?
+
+BILLY: Who?
+
+HUGHIE: James Taylor. Number two, Simon & Garfunkel. Number three, Billy Joel. Any of those guys, they don't infiltrate. Okay? I'm not an infiltrator.
+
+BILLY: Hughie, Hughie, fucking grow a pair. You heard that cunt laughing at your girl.
+
+HUGHIE: No. No. No. No, I can't. I can't do that. I'm sorry, I'm just gonna fuck it up, and you're not gonna have your bug, and I'll be dead. I'm not, I'm not like you.
+
+Hughie leaves.
+
+CUT TO: INT. MADELYN'S OFFICE
+
+Madelyn sits down across from the Mayor of Baltimore. He's holding a signed photo of Homelander.
+
+STEVE: This is amazing, Madelyn. Thank you for this. My kid is gonna lose his mind.
+
+MADELYN: Ah, it is our pleasure. Just do not sell it online.
+
+STEVE: All right. What are you thinking?
+
+MADELYN: Baltimore is a beautiful town. But you've got a problem. Your homicide rates are up, what, 62%? The police are not closing cases. You're on the verge of needing a federal lifeline.
+
+STEVE: Cut to the chase, Madelyn. Who are you proposing?
+
+MADELYN: Nubian Prince. Fits your population's demo, but not too militant. Caucasians love him, too, with a 59% approval rate. I am willing to give you a three-year exclusive contract with full PR support, and I'm gonna give you nine and a half points of the merchandising.
+
+STEVE: I thought he was in Detroit.
+
+MADELYN: Well, we're thinking about making a move.
+
+STEVE: How much?
+
+MADELYN: $300 million a year.
+
+They both chuckle.
+
+MADELYN: I know, I know, it's a tough swallow. But we both know that your city needs a hero.
+
+STEVE: $200 million for Nubian Prince. I can sell that.
+
+MADELYN: Mm. I'm sorry, Steve, I can't do it. We've got Atlanta waiting in the wings.
+
+STEVE: I think maybe you can.
+
+MADELYN: And why is that?
+
+STEVE: I happen to know about Compound V.
+
+As they talk, a hero is seen flying outside.
+
+MADELYN: What is Compound V?
+
+STEVE: It's the type of rumor that could really tarnish those heroes of yours. Nobody wants that. People need heroes. Now, I can make sure that that stays a rumor, because I'm a friend. But friendship does cut both ways.
+
+MADELYN: I'm sorry, Steve, I don't know what you're talking about. $300 million is the price, or we go to Atlanta.
+
+CUT TO: EXT. PARK
+
+We see a shot of Donna cutting out photos of Annie from a tabloid. She's on the phone with Annie. The shot cuts back and forth between the two.
+
+DONNA: So, how amazing is it? What's Homelander like?
+
+ANNIE: Uh, he's busy. I haven't really met him yet, but Mom, I got to tell you what happened.
+
+DONNA: Oh, I forgot. I was playing mah-jongg with Patty and Trish, and Patty is going on and on about how her daughter got into med school, and I'm thinking, so what? My daughter got into The Seven! Anyway, so, so, what did you want to tell me?
+
+ANNIE: Everything's great. Just how we dreamed. Um, mom, actually, you know what? I have to go.
+
+DONNA: All right. Bye, honey.
+
+Annie hangs up. She's sitting on a park bench. The camera pulls back and reveals Hughie sitting a few feet from her eating a sandwich.
+
+HUGHIE: Um, excuse me. I'm sorry, a-are you okay? Just seemed like a tough call. Sorry. I don't mean to bother you.
+
+ANNIE: No, no, it's okay. Uh, I'm fine. I'm just… I'm just having a bad day.
+
+HUGHIE: Yeah, me, too. Uh is it, like, a, a work thing, or a, a life thing?
+
+ANNIE: It's a work thing. You?
+
+HUGHIE: Uh, life thing.
+
+ANNIE: You know how you have this image of yourself? Like, I thought I was strong. You know? Like, made of steel. A fighter. And then I was faced with this horrible situation with this asshole and I just heard my mom's voice in my head, "Keep smiling, the show must go on," and I didn't fight. And now I just feel sick. Partly because I did it, but mostly because turns out I'm not who I thought I was. Oh. Oh, I'm, um, sorry. Uh I-I didn't mean to just dump all of that onto you.
+
+HUGHIE: No, no, it's totally fine that you dumped. Um, listen, d-do you like your job?
+
+ANNIE: Oh. It's the only thing I've ever wanted.
+
+HUGHIE: And it's a good job? Like, you're not selling kids smack?
+
+ANNIE: No, it's a great job. I could help a lot of people.
+
+HUGHIE: Thing is, I, um... used to know this girl, and we used to go skating at Rockefeller, and I'd be on the side with this death grip on the rails. She would just charge headfirst into the middle of the rink. And she wasn't good. Like, she fell a lot but she was never scared. And she always used to say, "Just 'cause you fall on your ass doesn't mean you have to stay there." So you fell on your ass, you know? That's not who you are. So who are you?
+
+ANNIE: I'm a fighter. I'm gonna fight. Yeah. I'm gonna take that son of a bitch's head clean off his body.
+
+HUGHIE: Okay. Wow, that was... Okay. Cool. Little scary, but, but cool. I'm-I'm Hughie, by the way.
+
+ANNIE: Annie.
+
+They shake hands.
+
+CUT TO: EXT. BAR
+
+Billy sits alone at the bar. Hughie enters and sits next to him.
+
+HUGHIE: Okay, man. I'm in.
+
+Cut to the pair in the bathroom. Hughie calls the Vought lawyer while Billy listens in.
+
+HUGHIE: Okay, it's ringing.
+
+LAWYER: Yeah, hello?
+
+HUGHIE: Hi. Hi. Yes, hello. Hello, Mr. Friedman. It's Hughie Campbell. I got your message, and-and $45K, it's just it's just it's bingo, like, life-changing. Um, but I just need one thing before I sign anything. I need an apology from A-Train.
+
+LAWYER: Uh, he already apologized.
+
+HUGHIE: Well, no, no, no. No, he hasn't. Yes, he sent his he sent his regrets and his sympathies on, on TV, but I, if I could just get an apology face-to-face, that would be fantastic. Just to, just for closure, just to put just to put a button on it.
+
+LAWYER: Okay, yeah. But, uh, Hugh, I'm telling you, the answer's gonna be no.
+
+HUGHIE: All right, in that in that case, can you just give me... Uh, hello? I think... They hung up. I don't think they're gonna go for it.
+
+BILLY: Oh, yes, they will.
+
+CUT TO: SEVEN HEADQUARTERS
+
+Annie enters the main conference room. The other six members of The Seven are already there. Homelander stands by the window while the rest are sitting at the table.
+
+HOMELANDER: Starlight. Don't want to be late to your first official meeting. I had a whole welcome speech planned.
+
+ANNIE: Sorry, sir.
+
+HOMELANDER: Please, Homelander's fine.
+
+DEEP: Beginning to wonder if you'd even show up. I mean, all that pressure, it's a lot for anyone to swallow.
+
+Annie sits down.
+
+ANNIE: Yeah. Don't worry, I'll be fine. I'm here, and I'm not going anywhere.
+
+TRANSLUCENT: Can we get back to this, please? This is a serious crime. These assholes pirated my movie three weeks before release, and you can't walk down 5th Avenue without bumping into a table of unlicensed Homelander shirts. Copyright infringement is costing Vought $1.2 billion per year. That's money out of our pockets. We've all got, what, four points each?
+
+A-TRAIN: What the fuck? You got four points?
+
+MAEVE: And clearly better lawyers.
+
+HOMELANDER: Hey, hey, hey, guys, come on. Stop. What's Starlight gonna think? Listening to us haggling over nickels. We're The Seven, for God's sake. Whether we're out there or we're in here. Now, what I do want to hear is who you saved this week. Huh? Who's up for that? Black Noir. Let's start with you, man.
+
+CUT TO: EXT. SEVEN HEADQUARTERS
+
+Billy pulls up outside the building. Hughie spots some dog toys in the back seat.
+
+HUGHIE: Do you have a dog?
+
+BILLY: No. All right, give us your phone. There's fuck-all security to worry about. In fact, they're a bunch of muppets. And the metal detector won't pick this up. Right? And what they'll probably do is take you through the security and then up into the boardroom. Sit down. Be nice, congenial. Then, real polite-like, tell 'em you're gonna take a fake shit. Go into the bog, take the bug out. Peel back the plastic bit to reveal the sticky side. Put the plastic bit in the bog. Flush it. Then go back into the boardroom, sit down big smiles plant the bug underneath the table. Easy peasy Japanesey. Bob's your uncle. That's that.
+
+HUGHIE: That's that? That was that was a lot. Th- I've- Hold on, can you just can you repeat it again? Just a little bit slower? Because I-
+
+BILLY: Shh. Listen.
+
+HUGHIE: Fuck.
+
+BILLY: Hughie, calm down, all right? This is like that scene in The Matrix. Now, you could take the fucking red pill, right? Spend the rest of your life jacking off, crying into your chai tea green latte, what the fuck. Or you could take the blue pill. Or is it the red pill? Anyway, take the other pill and quit being a cunt.
+
+HUGHIE: Which pill do you want me to take?
+
+BILLY: Just quit being a cunt. That's what I'm saying.
+
+HUGHIE: Fuck me. Okay.
+
+Hughie gets out of the car. “Take Me Down” by Daniel Pembleton plays. Hughie pauses to take in the sight of the full building. Cut to him inside walking past armed guards. He sets off the metal detector.
+
+GUARD: Sir, could you empty your pockets, please?
+
+Hughie walks back through and puts his keys and phone on a tray. He walks back through and one guard scans him down while another inspects his phone. After a few moments the guard slides the tray over.
+
+GUARD: Thank you.
+
+Hughie grabs his things. Cut to him in the main conference room. He looks up and sees a mural of the previous Seven lineup. He turns toward a guard in the room.
+
+HUGHIE: Um excuse me, can-can I, uh... can I use your bathroom?
+
+The Vought lawyer walks in, tailed by A-Train and Ashley. They all approach the table. Hughie stands up.
+
+LAWYER: Just to be clear, A-Train's apology isn't an admission of any sort of culpability whatsoever. Do you understand?
+
+Hughie hallucinates that A-Train is covered in Robin's blood. He stares wide-eyed and begins panting.
+
+A-TRAIN: I'm sorry about what happened to your girlfriend, all right?
+
+In the background, Hughie imagines A-Train's laughter from the security tape.
+
+A-TRAIN: Hey, dude, are you okay?
+
+Everyone stares as Hughie's panting gets worse. After a few moments and some deep breaths, he returns to normal.
+
+HUGHIE: Fine. I appreciate the apology. Accidents happen, right? After all, I mean, you were saving the world.
+
+ASHLEY: Okay, great. Thank you so much. As you know, a crimefighter's work is never done. Douglas here will handle the rest of the paperwork for you, okay? Thank you.
+
+Ashley and A-Train leave. The lawyer hands Hughie a pen.
+
+HUGHIE: Can I use your bathroom?
+
+Cut to Hughie in the bathroom. He drops the bug on the floor. Before he can pick it up, Annie walks in. After standing in front of the mirror for a few moments, she leaves. Hughie then picks the bug back up and prepares it. He leaves as well. After he leaves, Translucent makes himself visible.
+
+TRANSLUCENT: What the fuck?
+
+Hughie re-enters the conference room and signs the NDA, placing the bug under the table.
+
+CUT TO: EXT. STREET
+
+Billy drives Hughie to his job.
+
+HUGHIE: And I look him right in the eye, and I smile. And that was awesome, man, just getting to stare that asshole down. I get why you dig this job.
+
+BILLY: Yeah, you know, it has its moments, doesn't it?
+
+HUGHIE: You were right. Fuck A-Train. Fuck A-Train. Fuck-fuck The Seven. Fuck all Seven. What are we, uh, what are we doing here?
+
+BILLY: Well, you got to go to work, don't you?
+
+HUGHIE: Yeah, but, um, I don't, uh…
+
+BILLY: Well, I mean, that's all I need you for right now, yeah?
+
+HUGHIE: Yeah, I mean, but I, I can, I can help with other stuff, you know? I could, I could be, like, your tech guy. You know? Like, I could be in the van with the thing and, like, you know, "He's down the hall to the left." Like, I can-
+
+BILLY: Yeah, look, son, I, uh, I think it's best that I take it from here. You know what I mean?
+
+HUGHIE: Yeah, but I, I can I can really help.
+
+BILLY: I know you can help. I got it.
+
+Hughie gets out of the car and walks away. Billy starts the car again. Hughie turns around.
+
+HUGHIE: Oh, hey, wait. You ever see an asshole tear up $45K?
+
+Hughie tears up the check from Vought.
+
+BILLY: Hughie. You're a good lad.
+
+Billy drives away.
+
+CUT TO: INT. CAR
+
+Mayor Steve answers a call from Madelyn in his car. The shot cuts back and forth between them as they talk.
+
+STEVE: Ms. Stillwell, I wasn't sure you'd call.
+
+MADELYN: This fucking chafes, but, um, I'm willing to come down to $230 million for Nubian Prince.
+
+STEVE: That's very reasonable, Maddie. Thank you.
+
+MADELYN: And, Steve, this, um, Compound V… Any rumors you may have heard about my heroes? Libelous and completely untrue. But, we all know how rumors spread, so I'd appreciate your discretion.
+
+STEVE: Of course. You have my word.
+
+MADELYN: Thank you. Have a safe flight home.
+
+CUT TO: INT. STORE
+
+Hughie watches the news while at the front counter.
+
+ANCHOR: Policing cities is a thorny enough issue as it is, but allowing superheroes into national defense? We'd basically be privatizing war.
+
+Gary walks over.
+
+GARY: Good night, Hughie. You'll lock up?
+
+HUGHIE: Yeah. Thanks, Gary.
+
+Gary leaves. Before the door fully closes, Translucent enters, invisible.
+
+HUGHIE: Sorry, we're closing up.
+
+He realizes that it appears no one has entered the store.
+
+HUGHIE: Hello?
+
+TRANSLUCENT: Who are you?
+
+Hughie bolts up.
+
+HUGHIE: The fuck?
+
+TRANSLUCENT: Right in front of you, prick. You think I wouldn't find this thing?
+
+Translucent, still invisible, holds the bug up in front of Hughie. He puts it down and grabs Hughie's lanyard.
+
+TRANSLUCENT: Hughie.
+
+Translucent begins throwing Hughie around the store.
+
+TRANSLUCENT: You pussy, I followed you from the fucking Tower.
+
+HUGHIE: No, no, no!
+
+TRANSLUCENT: Who's that guy you were with, in the car? Who was he?
+
+HUGHIE: I don't-
+
+TRANSLUCENT: He put you up to this?
+
+HUGHIE: I don't know! He was just some Uber driver, okay?
+
+TRANSLUCENT: Don't give me some bullshit! Uber driver! Do you think I'm a fucking idiot? Why'd you plant the bug?
+
+Translucent picks a TV off the wall and begins walking over to Hughie with it.
+
+HUGHIE: Please. Please, please, please. No, please.
+
+TRANSLUCENT: We're The Seven, Earth's most mighty, champions of the innocent, motherfucker!
+
+Right before Translucent hits Hughie with the TV, Billy drives into the store and knocks Translucent across the store.
+
+BILLY: Sorry about the mess. You should fuck off, Hughie. Hughie, run!
+
+”London Calling” by The Clash begins playing. Hughie runs into the back. Billy approaches where Translucent landed with a crowbar.
+
+BILLY: Well, well, well, if it ain't the invisible cunt.
+
+Billy swings with the crowbar, but Translucent is no longer there. They begin fighting. In the back, Hughie begins to leave, but turns around and returns to watch the fight. Translucent gains the upper hand, but Billy spits blood on Translucent, giving away where he is.
+
+BILLY: There you are.
+
+Now somewhat visible, the fight becomes more fair, but Translucent still manages to get Billy on the ground.
+
+TRANSLUCENT: So who are you? Fucking spy? For who? Huh? You're gonna fucking tell me, or I'm gonna smash your fucking scalp off! Who the fuck are you?
+
+Translucent picks up the crowbar and holds it over Billy. Hughie sneaks up behind him and grabs a live wire from the wall.
+
+BILLY: I'll tell you who you are. A fucking moron. "Translucent" doesn't even mean "invisible". It means "semi-transparent".
+
+Hughie attempts to get Translucent with the wire, but he's not close enough. Billy looks disappointed. Translucent begins to turn. Now distracted, Billy is able to kick him towards Hughie, allowing Hughie to electrocute him. Hughie screams and after a few moments Translucent falls to the floor. Billy gets up. Hughie tosses the wire.
+
+HUGHIE: Is he, is he dead? Is he…
+
+Billy kicks Translucent.
+
+BILLY: Well, he ain't moving.
+
+HUGHIE: Oh, fuck. Oh, shit.
+
+BILLY: How'd you know the electric could do the job?
+
+HUGHIE: Skin's carbon. Highly conductive. Saw it on, uh, Jimmy Fallon.
+
+BILLY: Would've taken me forever to work that one out. Good job. Let's get him in the boot.
+
+Billy begins to lift up Translucent.
+
+HUGHIE: Wait, wait, what? Wait, what? What?
+
+BILLY: The trunk.
+
+HUGHIE: No, no, I mean, what are we, what are we, what are we doing with him?
+
+BILLY: Well, Hughie, you just offed one of The Seven, mate.
+
+HUGHIE: Me? I... You, you hit him with a fucking car!
+
+Billy drops Translucent.
+
+BILLY: Look, potato, fucking po-tah-to. We're both in a shitload of trouble.
+
+HUGHIE: No, no, no, we're not! It's, it, he, he attacked us, okay? And you're, you're a federal officer, you know? Just, just call the fucking FBI.
+
+BILLY: Yeah, o-okay, so, look, technically, I'm not a Fed.
+
+HUGHIE: What?! Then who the fuck are you?!
+
+CUT TO: INT. PLANE
+
+“The Passenger” by Iggy Pop plays. Mayor Steve's son sits at a table with the autographed photo of Homelander in front of him. The plane rattles. The shot changes to show Steve is sitting next to his son.
+
+STEVE: Don't worry about it, kiddo. It's just a little turbulence. It'll be okay.
+
+An aide whispers something to Steve. Steve's son sees Homelander out the plane window.
+
+KID: Dad. Dad. Dad!
+
+STEVE: What's he doing out here?
+
+KID: Are you guys friends?
+
+Homelander's eyes glow red.
+
+STEVE: Oh, my God.
+
+Homelander uses his laser vision to cut the plane in two. It crashes down through the clouds. Homelander watches. After a few moments, he smiles.
+
+END CREDITS
+THE BOYS
+Episode #206
+“The Bloody Doors Off”
+Written by
+Anslem Richardson
+Directed by
+Sarah Boyd
+Based on the Comic by
+Garth Ennis and Darick Robertson
+PRODUCTION WHITE 8/19/19
+FULL BLUE DRAFT (RENUMBERED) 8/29/19
+FULL PINK DRAFT 9/06/19
+FULL YELLOW DRAFT 9/13/19
+REVISED GREEN PAGES 9/15/19
+REVISED GOLDENROD PAGES 9/17/19
+REVISED 2ND WHITE PAGES 9/18/19
+REVISED 2ND BLUE PAGES 9/23/19
+REVISED 2ND PINK PAGES 10/18/19
+REVISED 2ND YELLOW PAGES 10/29/19
+REVISED 2ND YELLOW PAGES (1 TOTAL)
+56
+Copyright © 2019
+SONY PICTURES TELEVISION INC.
+All Rights Reserved
+No portion of this script may be performed, or reproduced
+by any means, or quoted, or published in any medium without
+prior consent of SONY PICTURES TELEVISION INC. * 10202 West
+Washington Boulevard * Culver City, CA 90232 *
+THE BOYS #206 CAST LIST – REV. 2ND BLUE PAGES - 9-23-19
+THE BOYS
+Episode #206
+“The Bloody Doors Off”
+9/23/19
+(REVISED 2ND BLUE PAGES)
+CAST LIST
+BILLY BUTCHER......................
+HUGHIE CAMPBELL....................
+HOMELANDER.........................
+ANNIE JANUARY/“STARLIGHT”..........
+QUEEN MAEVE........................
+A-TRAIN............................
+MOTHER’S MILK......................
+THE DEEP...........................
+FRENCHIE...........................
+KIMIKO.............................
+STORMFRONT.........................
+ASHLEY BARRETT (VOUGHT PUBLICIST)
+GRACE MALLORY......................
+ALASTAIR ADANA (THE COLLECTIVE)....
+THE LAMPLIGHTER....................
+ELENA..............................
+CHERIE (FRENCHIE’S ASSOCIATE)......
+JAY (FRENCHIE’S FRIEND, FLASHBACKS)
+DENNIS (KILLED BY STARLIGHT).......
+PERP (KILLED BY HOMELANDER + STORMFRONT)
+TIM (INSTITUTE PATIENT KILLED BY LAMPLIGHTER)
+CINDY (PATIENT AT INSTITUTE).......
+PATIENT (ESCAPES INSTITUTE, HURTS HUGHIE)
+LOVE SAUSAGE (PATIENT AT SAGE GROVE)
+HUSBAND (FLIGHT 37 VIDEO)..........
+CHRIS LENNERTZ (A-TRAIN RAP DEMO)
+INTESTINE BOY (SAGE GROVE PATIENT)
+SECURITY GUARD (SAGE GROVE)........
+ANOTHER GUARD (SC. 23).............
+Karl Urban
+Jack Quaid
+Antony Starr
+Erin Moriarty
+Dominique McElligott
+Jessie T. Usher
+Laz Alonso
+Chace Crawford
+Tomer Capon
+Karen Fukuhara
+Aya Cash
+Colby Minifie
+Laila Robins
+Goran Visnjic
+Shawn Ashmore
+Nicola Correia-Damude
+Jordana Lajoie
+THE BOYS #206 CAST LIST – REV. 2ND BLUE PAGES - 9-23-19 2
+DEANNA (ASHLEY’S ASSISTANT)........
+INTERVIEWER (WITH HOMELANDER/STORMFRONT ON SET)
+NEWS ANCHOR........................
+OMITTED
+AL ROKER *
+THE BOYS
+Episode #206
+“The Bloody Doors Off”
+10/18/19
+(REVISED 2ND PINK PAGES)
+SET LIST
+INTERIORS
+SEVEN TOWER –
+QUEEN MAEVE’S APT -
+BEDROOM
+STORMFRONT’S APT - *
+BEDROOM
+HAITIAN KINGS BASEMENT
+CHURCH OF THE COLLECTIVE
+RENEWAL CENTER
+SAGE GROVE CENTER –
+MEDICAL SUPPLY ROOM
+SECURITY ROOM
+HALLWAY 1
+HALLWAY 2
+HALLWAY 3
+HALLWAY 4
+HALLWAY 5
+HALLWAY 6
+“DAWN OF THE SEVEN” SET –
+HOMELANDER’S TRAILER
+MAEVE’S TRAILER
+MEDICAL CLINIC
+RUNDOWN WAREHOUSE (FLASHBACK)
+INTERROGATION ROOM (FLASHBACK)
+SEEDY CHELSEA APT. (FLASHBACK)
+RECORDING BOOTH
+DIAMOND STORE -
+BASEMENT
+EXTERIORS
+“DAWN OF THE SEVEN” SET –
+BASECAMP
+HOMELANDER’S TRAILER
+SAGE GROVE CENTER -
+FIELD OUTSIDE
+RURAL ROAD
+WOODED ROADSIDE
+CLEARING
+VARIOUS NEW YORK EXTERIORS –
+ALLEY (SCENE 3)
+MEATPACKING DISTRICT (SC. 35)
+VEHICLES
+FRENCHIE’S VAN
+HYUNDAI
+SAGE GROVE AMBULANCE
+CAB
+OMITTED
+INT. SEVEN TOWER – *
+HOMELANDER’S APT -
+BEDROOM
+THE BOYS
+“The Bloody Doors Off”
+FADE IN...
+We hear French rap pumping loud, as a NUTRIBULLET WHIRS --
+CHYRON: 8 YEARS AGO.
+INT. SEEDY CHELSEA APARTMENT - NIGHT - FLASHBACK1 1
+OPEN ON FRENCHIE. JOINT in his mouth. A smile on his lips.
+Happy. Light. Surrounded by his best friends in the world:
+CHERIE (yes, that Cherie) and JAY (20’s, handsome, West-
+African). The Three Musketeers.
+Jay snorts a line of coke. As Frenchie frowns at Cherie --
+FRENCHIE
+Why are you laughing?
+CHERIE
+You’re ridiculous.
+FRENCHIE
+I’m not ridiculous.
+CHERIE
+Then you’re high.
+Frenchie opens the Nutribullet, checks the white powder he’s
+been grinding. Breathes deeply.
+FRENCHIE
+Beside the point. Point is, I
+learned everything I know from those
+girls.
+JAY
+(just confirming)
+The Golden Girls.
+Frenchie stops the Nutribullet and uses a funnel to dump the
+powder into a DIY pressurized “fill-station” fastened to the
+table. All meant to be a glimpse of his grimy, powder-caked,
+mad druggy brilliant scientist lab skillz.
+FRENCHIE
+I was 17 years old, alone in New
+York. Turning tricks, begging for
+scraps. Who kept me company? The
+Golden Girls. 3am to 5am. They lit
+up that shelter’s shitty TV.
+JAY
+You’re not talking porn? Golden
+Shower Girls?
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 1.
+FRENCHIE
+That’s disrespectful.
+CHERIE
+So sensitive.
+Frenchie pivots to an adjacent table. More lab equipment, a
+CLUSTER of Xanax prescription bottles (Alprazolam). Tricked- *
+out PET soda bottles. He uses the “fill station” to load the
+bottles with pressurized Xanax... (give us all of this
+business in fun close-up inserts please).
+FRENCHIE
+(dead serious)
+Those saucy ladies made their own
+family. I didn't know it was
+possible to make your own family.
+So I did what they did. You are my
+Golden Girls.
+JAY
+I’d rather not be.
+FRENCHIE
+(to Cherie)
+You are my Blanche. And Jay, you
+are my Dorothy.
+CHERIE
+(to Jay)
+Because you’re gay.
+(ALT., we’ll see!) *
+Because you’re a little bit gay. *
+Jay can’t argue with that.
+FRENCHIE
+Thank you for being a friend.
+JAY
+So you’re Betty White?
+FRENCHIE
+What a fucking question. Of course
+I'm Betty White.
+Frenchie smiles at them. Full of love.
+FRENCHIE (CONT’D)
+Now. Who wants to rob a bank?
+INT. DIAMOND STORE - BASEMENT - NIGHT - PRESENT2 2 *
+MATCH CUT TO FRENCHIE. As he pulls on a pair of goggles.
+The classic comic book version of Frenchie.
+Then he picks up a diamond DRILL -- revs it -- zzzzeee --
+CONTINUED:1 1
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 2.
+Behind him -- multiple HASIDIC MEN CUT DIAMONDS with saws,
+other equipment. This is the scruffy, cluttered basement
+level of Jaffe Jewelers.
+Frenchie turns. Reveal ANNIE and HUGHIE across from him.
+ANNIE
+Will it get through my skin?
+FRENCHIE
+If it can’t, nothing can.
+Hughie looks nervous. Nervous and queasy.
+HUGHIE
+I don’t know about this.
+ANNIE
+Stormfront knows I leaked the V.
+HUGHIE
+She hasn’t come after you yet.
+ANNIE
+Even worse. That means she’s got
+some fucked up plan for me. I want
+this chip out, now. *
+FRENCHIE
+I understand, Petit Hughie. Though
+you’ve been covered with the
+entrails of many a person -- even a
+sea mammal -- it’s harder when it’s
+someone you love.
+HUGHIE
+(flustered)
+What? I don’t -- I mean, of course
+I do, but not like, we’re just *
+friends --
+Annie averts her eyes. Awkward.
+ANNIE
+Can we just do this please before I
+change my mind?
+Annie pulls her collar aside. Taps the area just below her *
+neck and steels herself -- Frenchie FIRES UP THE DRILL -- *
+FRENCHIE
+(over the WHIRRING) *
+This might sting a little! *
+Hughie clutches the gauze tightly. Can barely look.
+He LOWERS IT against Annie’s neck... the DRILL SLOWS as it *
+hits the surface... whining with overexertion... then
+WHOOOOOSH...
+CONTINUED:2 2
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 3.
+punctures through the skin as a spray of BLOOD spatters
+Frenchie’s goggles. Hughie’s splattered on the face as well. *
+Grimaces. *
+Annie winces, it’s a fair amount of pain.
+HUGHIE
+Oh my god. Oh my god.
+Frenchie stops when he spots metal. Fishes the chip out with
+a pair of gemstone tweezers -- speaks to it --
+FRENCHIE
+Bonjour, my little spy. Hughie!
+The box.
+Hughie hands him a small box covered in RF shielding foil.
+Frenchie drops the chip inside. Closes the lid.
+Hughie covers Annie’s wound with gauze. Puts pressure on it.
+Likes being this close to her, does not like all the blood --
+HUGHIE
+You okay?
+ANNIE
+(through gritted teeth)
+I feel lighter already.
+Off the two of them. Connected. But not. All at once.
+EXT. ALLEY - NIGHT3 3 *
+Handheld. A scruffy PERP, 30s, runs with a gun and a plastic
+bag full of loot down a filthy, out of the way, trash-strewn
+alley. He ducks behind a DUMPSTER. A distant SIREN. *
+The Perp examines his winnings: a wad of money, two cartons
+of cigarettes and a box of SLIM JIMS.
+When suddenly -- A RED BOOT steps beside the loot. He looks
+up to find -- HOMELANDER smiling down at him.
+HOMELANDER
+Howdy ho, buckaroo.
+The Perp freaks and starts to run, but is cut off by --
+STORMFRONT blocking the rear exit. He pulls his gun, but she *
+smacks it away, shattering his wrist.
+PERP
+SHIT! You broke my hand!
+Homelander approaches. *
+STORMFRONT
+What do you wanna do with him?
+CONTINUED: (2)2 2
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 4.
+HOMELANDER
+Well, hand him over to the police.
+Of course.
+PERP
+It really hurts!
+They talk past him.
+STORMFRONT
+Yes, of course. We are heroes, and
+that’s what heroes do.
+HOMELANDER
+Absolutely.
+STORMFRONT
+Though. He’ll probably just get
+released tomorrow.
+We start to realize -- this is SEXUAL FOREPLAY. The Perp
+also starts to realize something troubling is going on...
+PERP
+Please -- can you take me to the
+hospital?
+HOMELANDER
+You know, sometimes it feels like
+the justice system doesn’t even work
+anymore...
+STORMFRONT
+(seductive)
+Everyone recording everything on
+their phones -- it’s like you can’t
+even do your job.
+Man, it’s fucking sexy the way she says that. Brushing her
+hands on his chest -- Homelander’s hot and bothered --
+HOMELANDER
+(voice thick with lust)
+Really, uh, really speaks to the
+deterioration of, uh, God fearing
+American values.
+PERP
+Please... just turn me in...
+STORMFRONT
+What is the world coming to?
+HOMELANDER
+Someone should do something.
+Perp screams out at the top of his lungs --
+CONTINUED:3 3
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 5.
+PERP
+(terrified now)
+HELP! HEL --
+He doesn’t get a chance to finish -- Homelander covers the
+Perp’s MOUTH with his glove. Starts pushing his head back
+against the WALL. The GUY HOWLS in MUFFLED AGONY.
+As Stormfront RUBS Homelander’s CROTCH, titillated. Murder
+as a sex act. Then --
+Homelander PUSHES his PALM right THROUGH the guy’s face.
+RENDERING IT INTO A BLOODY PULP. Stormfront and Homelander
+lock eyes excitedly. Fuck this is hot.
+The Temptations “My Girl” plays as they lunge at each other,
+kiss hard. Homelander smears the Perp’s blood on her cheek.
+TIME CUT. PAN OFF THE CORPSE -- Homelander’s pants are at
+his ankles, Stormfront’s are off. They fuck hard against the
+wall, her legs around him, face to face. Pounding. The
+corpse at their feet. They got sunshine on a cloudy day...
+INT. HAITIAN KINGS BASEMENT - NIGHT4 4 *
+CLOSE ON BUTCHER. Sitting at one end of the couch. Watching
+the television. Quietly furious.
+ON THE SCREEN. Homelander and Stormfront. In directors’
+chairs. ON SET for “Dawn of the Seven.”
+INTERVIEWER (O.S.)
+All right. Be honest. Who’s the
+biggest prankster on set?
+Homelander and Stormfront laugh. Flirting. Can’t help it.
+This is so fun. Homelander points to Stormfront --
+HOMELANDER
+(”this one”)
+Oh, no comment...
+BUTCHER. Watching. Burning.
+KIMIKO. On the other end of the couch. Glaring at
+Stormfront. Also burning.
+They can both read the body language loud and clear.
+BUTCHER
+(through grit teeth)
+...they’re fucking.
+Kimiko agrees. Two killers, quietly hungry for blood.
+CONTINUED: (2)3 3
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 6.
+INT. HAITIAN KINGS BASEMENT - NEAR THE STAIRS - NIGHT5 5 *
+MOTHER’S MILK sits by himself -- inspecting a FOLDED, WELL-
+WORN PIECE OF PAPER.
+INSERT. A childish cartoon drawing of a penguin with a
+chainsaw. Signed “LOVE, JANINE.” We saw his daughter give
+it to him in Ep. 107 last year.
+He stares at it. Lost in regret. When he hears his friends
+coming, so he folds it up, puts it away. As --
+Frenchie hops down the steps. Followed by Hughie. Followed
+by... Annie.
+MOTHER’S MILK
+You get the chip out?
+Frenchie nods. Annie looks around. Disgusted. Some pity.
+ANNIE
+This is where you’re living?
+HUGHIE
+It’s got its charms. The rats are
+like Pokemon. With Hep-C.
+Annie feels guilty. Living in luxury, while Hughie is here?
+ANNIE
+I’m sorry.
+HUGHIE
+(lies)
+It’s not so bad.
+Kimiko approaches --
+FRENCHIE
+So? You’re back? You got tired of
+killing people for money?
+Kimiko FLIPS HIM OFF. Otherwise, doesn’t even look at him. *
+Steps to Annie. Just stares at her. Face to face. Blankly.
+Annie is Stormfront’s teammate, after all.
+ANNIE
+Uh. Hi. Remember me...?
+HUGHIE
+(please don’t kill her) *
+She saved you from the black site,
+remember Kimiko?
+Long beat. Face to face. Is Kimiko going to attack? Then --
+Kimiko HUGS Annie tightly. Tenderly. Annie reacts,
+surprised. Then Kimiko backs up, holds Annie’s hand. It’s a
+leeetle bit awkward, but okay --
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 7.
+ANGLE. Butcher hangs back a bit. Watching this happy little
+bunch. Nice and cozy with a fucking Supe. Kimiko is still *
+holding Annie’s hand. Butcher sees it, rolls his eyes. *
+BUTCHER
+Well, well, well. What have we
+here?
+HUGHIE
+I know what you’re gonna say --
+BUTCHER
+Starlight. Don’t you just light up
+a room. You’re looking well.
+Hughie stares. That’s not the reaction he was expecting.
+Butcher is pristine politeness. Hughie waits for the other
+shoe to drop. So do we.
+ANNIE
+No thanks to the 50 caliber round
+you pumped into my chest.
+BUTCHER
+That was awkward. But you know what
+they say: what doesn’t kill us,
+makes us stronger, eh?
+Now what brings you by? *
+HUGHIE
+She has a lead on Stormfront.
+ANNIE
+I broke into her laptop and got a
+look at her inbox. Dozen messages
+from Stan Edgar.
+BUTCHER
+Oh? And what does Vought’s Big
+Slapper have to say?
+ANNIE
+How they’re close to a break-
+through. At the Sage Grove Center?
+It’s a psychiatric hospital in *
+Pennsylvania. *
+HUGHIE
+What kinda breakthrough?
+ANNIE
+She came in before I could see any
+more.
+MOTHER’S MILK
+Anyone else on the email?
+ANNIE
+Someone named ‘Elle?’
+CONTINUED:5 5
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 8.
+MOTHER’S MILK
+Elle? Who’s she?
+Annie shrugs. You got me.
+BUTCHER
+Well then, let’s have ourselves a
+dekko at this looney bin.
+Starlight, would you be amenable to
+joining us on this little caper?
+Hughie. Annie. Seriously, what’s up with Butcher?
+HUGHIE
+You -- want her to come?
+BUTCHER
+Naturally. Things go tits up, who
+do you think Vought’s after? Us or
+their billion dollar baby turned
+traitor who ripped out her own chip?
+Never go into shark infested waters
+without bringing chum. Cheers.
+He smiles pleasantly, heads away. Off Hughie, Annie. There
+it is. There’s the other shoe. From there, we CUT TO: *
+A NEWS REPORT. STOCK FOOTAGE of two different factions ofA6 A6 *
+people SCREAMING and SHOVING at each other. *
+NEWS ANCHOR (V.O.) *
+With the House Judiciary Hearing *
+into Vought just four days away, pro *
+and anti Vought camps clashed in *
+Manhattan this morning. *
+Congresswoman Victoria Neuman said *
+that Compound V must -- *
+Then -- BZZT -- channel changes -- *
+A TV COMMERCIALB6 B6 *
+Moody, in black and white, like a classy-ass Nike spot. *
+Maeve regards herself in a mirror. Then turns, seemingly *
+challenging the camera, challenging the viewer. *
+MAEVE (V.O.) *
+This is who I am. Who are you? *
+Maeve lifts a PRIDE BAR -- rainbow wrapper, the only colored *
+thing in the commercial -- takes a bite -- *
+MAEVE (V.O.) *
+Brave Maeve Pride Bars. Because you *
+can’t be proud on an empty stomach. *
+*
+CONTINUED: (2)5 5
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 9.
+INT. QUEEN MAEVE’S TRAILER - DAY6 6 *
+The commercial PLAYS ON MAEVE’S TELEVISION -- *
+THE ACTUAL MAEVE. Vapes marijuana, stares at the TV. Things *
+are getting so fucked, so fast. When there’s a KNOCK on her
+door. She switches off the TV --
+QUEEN MAEVE
+Come in!
+As DEEP lets himself in. With a backpack.
+QUEEN MAEVE (CONT’D)
+You were supposed to call first, you
+fucking idiot. Anyone see you?
+DEEP
+I’m allowed to visit my friends.
+QUEEN MAEVE
+You find it?
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 9A.
+DEEP
+Sorry. No black box.
+Maeve grimaces, disappointed. But Deep smiles. He loves
+proving useful.
+DEEP (CONT’D)
+But -- I told my contacts to keep an *
+eye on the North Atlantic Current.
+And this school of Halibut -- I
+mean, these dudes are rowdy *
+motherfuckers --
+(off Maeve’s withering look) *
+Anyway, they found some of the
+wreckage that drifted up near
+Iceland. Found this. *
+From his backpack, Deep brings out.. a BATTERED WATERPROOF GO-
+PRO camera, damaged... but still intact.
+DEEP (CONT’D)
+I doubt it even works...
+Maeve takes it. Evidence from the plane. She’s pensive.
+Troubled. Suddenly melancholy.
+DEEP (CONT’D)
+Flight 37. That was the one you and
+Homelander got to too late, right, *
+it already went down?
+(Maeve nods)
+What do you care about it?
+QUEEN MAEVE
+If you want back in the Seven? Not
+a fucking word of this to anyone,
+you understand?
+INT. RECORDING BOOTH - DAY7 7
+CHRIS LENNERTZ, our brilliant, lovable, and Caucasian
+composer, stands alone in the booth. Headphones on his ears.
+Then the beat kicks in, he starts singing a rap song --
+CHRIS LENNERTZ
+What... okay... What what... ready,
+set, go... Here Comes the A-Train,
+Mr. Fleet feet/ Saving lives and *
+takin' names, nice and easy/ Ain't
+no day like a race day, what/ Ain't
+no love like a raceway, what...
+PULL OUT TO REVEAL THIS IS PLAYING ON A TABLET --
+EXT. SET OF ‘DAWN OF THE SEVEN’ - DAY8 8
+A-TRAIN watches on the tablet at video village. Same *
+‘wrecked NYC’ movie set behind them that we saw in ep. 205. *
+The crew’s broken for lunch. He’s beside ASHLEY. *
+CONTINUED:6 6
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 10.
+ASHLEY
+Isn’t it lit? Your very own goodbye
+anthem?
+A-TRAIN
+(defeated)
+Dope.
+ASHLEY
+This is just a demo of course.
+We’re going out to Lil Nas X for the
+official version. Maybe you could
+bust out Prince’s Guitar for the
+video?
+A-TRAIN
+I had to sell it. I’m going 10-1.
+A-Train walks away. Despondent. Behind him, DEANNA
+APPROACHES Ashley, who’s moved on to other business. *
+DEANNA *
+I can’t find her. *
+ASHLEY
+So where the FUCK is Starlight?
+WITH A-TRAIN. Walking. Yesterday’s news. He notices
+Stormfront, walking toward him. Their eyes catch. She
+regards him as if seeing a street urchin. Gives a wide berth
+as she passes. A-Train shakes his head -- Bitch, seriously?
+DEEP (O.S.)
+Yo! Here comes the A-Train!
+Deep approaches, carrying his backpack. A-Train swears to
+himself. When it fucking rains. He tries to ignore him --
+DEEP (CONT’D)
+Hey man! Hello? It’s me! Right
+here!
+Deep steps up, they bro hug, a little stiff. A-Train doesn’t
+like him much.
+A-TRAIN
+What are you doing here?
+DEEP
+Oh, I came to see -- no reason.
+(leans in)
+Bro. Been thinking about you. I’m
+sorry. Talk about getting assfucked
+with a soup can.
+A-TRAIN
 What do you mean?
-
-MACBETH.
-Still it cried, “Sleep no more!” to all the house:
-“Glamis hath murder’d sleep, and therefore Cawdor
-Shall sleep no more. Macbeth shall sleep no more!”
-
-LADY MACBETH.
-Who was it that thus cried? Why, worthy thane,
-You do unbend your noble strength to think
-So brainsickly of things. Go get some water,
-And wash this filthy witness from your hand.—
-Why did you bring these daggers from the place?
-They must lie there: go carry them, and smear
-The sleepy grooms with blood.
-
-MACBETH.
-I’ll go no more:
-I am afraid to think what I have done;
-Look on’t again I dare not.
-
-LADY MACBETH.
-Infirm of purpose!
-Give me the daggers. The sleeping and the dead
-Are but as pictures. ’Tis the eye of childhood
-That fears a painted devil. If he do bleed,
-I’ll gild the faces of the grooms withal,
-For it must seem their guilt.
-
-[Exit. Knocking within.]
-
-MACBETH.
-Whence is that knocking?
-How is’t with me, when every noise appals me?
-What hands are here? Ha, they pluck out mine eyes!
-Will all great Neptune’s ocean wash this blood
-Clean from my hand? No, this my hand will rather
-The multitudinous seas incarnadine,
-Making the green one red.
-
-Enter Lady Macbeth.
-
-LADY MACBETH.
-My hands are of your color, but I shame
-To wear a heart so white. [Knocking within.] I hear knocking
-At the south entry:—retire we to our chamber.
-A little water clears us of this deed:
-How easy is it then! Your constancy
-Hath left you unattended.—[Knocking within.] Hark, more knocking.
-Get on your nightgown, lest occasion call us
-And show us to be watchers. Be not lost
-So poorly in your thoughts.
-
-MACBETH.
-To know my deed, ’twere best not know myself. [Knocking within.]
-Wake Duncan with thy knocking! I would thou couldst!
-
-[Exeunt.]
-SCENE III. The same.
-
-Enter a Porter. Knocking within.
-
-PORTER.
-Here’s a knocking indeed! If a man were porter of hell gate, he should have old turning the key. [Knocking.] Knock, knock, knock. Who’s there, i’ th’ name of Belzebub? Here’s a farmer that hanged himself on the expectation of plenty: come in time; have napkins enow about you; here you’ll sweat for’t. [Knocking.] Knock, knock! Who’s there, i’ th’ other devil’s name? Faith, here’s an equivocator, that could swear in both the scales against either scale, who committed treason enough for God’s sake, yet could not equivocate to heaven: O, come in, equivocator. [Knocking.] Knock, knock, knock! Who’s there? Faith, here’s an English tailor come hither, for stealing out of a French hose: come in, tailor; here you may roast your goose. [Knocking.] Knock, knock. Never at quiet! What are you?—But this place is too cold for hell. I’ll devil-porter it no further: I had thought to have let in some of all professions, that go the primrose way to th’ everlasting bonfire. [Knocking.] Anon, anon! I pray you, remember the porter.
-
-LENNOX.
-The night has been unruly: where we lay,
-Our chimneys were blown down and, as they say,
-Lamentings heard i’ th’ air, strange screams of death,
-And prophesying, with accents terrible,
-Of dire combustion and confus’d events,
-New hatch’d to the woeful time. The obscure bird
-Clamour’d the live-long night. Some say the earth
-Was feverous, and did shake.
-
-MACBETH.
-’Twas a rough night.
-
-LENNOX.
-My young remembrance cannot parallel
-A fellow to it.
-
-Enter Macduff.
-
-MACDUFF.
-O horror, horror, horror!
-Tongue nor heart cannot conceive nor name thee!
-
-MACBETH, LENNOX.
-What’s the matter?
-
-MACDUFF.
-Confusion now hath made his masterpiece!
-Most sacrilegious murder hath broke ope
-The Lord’s anointed temple, and stole thence
-The life o’ th’ building.
-
-MACBETH.
-What is’t you say? the life?
-
-LENNOX.
-Mean you his majesty?
-
-MACDUFF.
-Approach the chamber, and destroy your sight
-With a new Gorgon. Do not bid me speak.
-See, and then speak yourselves.
-
-[Exeunt Macbeth and Lennox.]
-
-Awake, awake!—
-Ring the alarum bell.—Murder and treason!
-Banquo and Donalbain! Malcolm! awake!
-Shake off this downy sleep, death’s counterfeit,
-And look on death itself! Up, up, and see
-The great doom’s image. Malcolm! Banquo!
-As from your graves rise up, and walk like sprites
-To countenance this horror!
-
-[Alarum-bell rings.]
-
-Enter Lady Macbeth.
-
-LADY MACBETH.
-What’s the business,
-That such a hideous trumpet calls to parley
-The sleepers of the house? Speak, speak!
-
-MACDUFF.
-O gentle lady,
-’Tis not for you to hear what I can speak:
-The repetition, in a woman’s ear,
-Would murder as it fell.
-
-Enter Banquo.
-
-O Banquo, Banquo!
-Our royal master’s murder’d!
-
-LADY MACBETH.
-Woe, alas!
-What, in our house?
-
-BANQUO.
-Too cruel anywhere.—
-Dear Duff, I pr’ythee, contradict thyself,
-And say it is not so.
-
-Enter Macbeth and Lennox with Ross.
-
-MACBETH.
-Had I but died an hour before this chance,
-I had liv’d a blessed time; for, from this instant
-There’s nothing serious in mortality.
-All is but toys: renown and grace is dead;
-The wine of life is drawn, and the mere lees
-Is left this vault to brag of.
-
-Enter Malcolm and Donalbain.
-
-DONALBAIN.
-What is amiss?
-
-MACBETH.
-You are, and do not know’t:
-The spring, the head, the fountain of your blood
-Is stopp’d; the very source of it is stopp’d.
-
-MACDUFF.
-Your royal father’s murder’d.
-
-MALCOLM.
-O, by whom?
-
-LENNOX.
-Those of his chamber, as it seem’d, had done’t:
-Their hands and faces were all badg’d with blood;
-So were their daggers, which, unwip’d, we found
-Upon their pillows. They star’d, and were distracted;
-No man’s life was to be trusted with them.
-
-MACBETH.
-O, yet I do repent me of my fury,
-That I did kill them.
-
-MACDUFF.
-Wherefore did you so?
-
-MACBETH.
-Who can be wise, amaz’d, temperate, and furious,
-Loyal and neutral, in a moment? No man:
-Th’ expedition of my violent love
-Outrun the pauser, reason. Here lay Duncan,
-His silver skin lac’d with his golden blood;
-And his gash’d stabs look’d like a breach in nature
-For ruin’s wasteful entrance: there, the murderers,
-Steep’d in the colours of their trade, their daggers
-Unmannerly breech’d with gore. Who could refrain,
-That had a heart to love, and in that heart
-Courage to make’s love known?
-
-LADY MACBETH.
-Help me hence, ho!
-
-MACDUFF.
-Look to the lady.
-
-MALCOLM.
-Why do we hold our tongues,
-That most may claim this argument for ours?
-
-DONALBAIN.
-What should be spoken here, where our fate,
-Hid in an auger hole, may rush, and seize us?
-Let’s away. Our tears are not yet brew’d.
-
-MALCOLM.
-Nor our strong sorrow
-Upon the foot of motion.
-
-BANQUO.
-Look to the lady:—
-
-[Lady Macbeth is carried out.]
-
-And when we have our naked frailties hid,
-That suffer in exposure, let us meet,
-And question this most bloody piece of work
-To know it further. Fears and scruples shake us:
-In the great hand of God I stand; and thence
-Against the undivulg’d pretence I fight
-Of treasonous malice.
-
-MACDUFF.
-And so do I.
-
-ALL.
-So all.
-
-MACBETH.
-Let’s briefly put on manly readiness,
-And meet i’ th’ hall together.
-
-ALL.
-Well contented.
-
-[Exeunt all but Malcolm and Donalbain.]
-
-MALCOLM.
-What will you do? Let’s not consort with them:
-To show an unfelt sorrow is an office
-Which the false man does easy. I’ll to England.
-
-DONALBAIN.
-To Ireland, I. Our separated fortune
-Shall keep us both the safer. Where we are,
-There’s daggers in men’s smiles: the near in blood,
-The nearer bloody.
-
-MALCOLM.
-This murderous shaft that’s shot
-Hath not yet lighted; and our safest way
-Is to avoid the aim. Therefore to horse;
-And let us not be dainty of leave-taking,
-But shift away. There’s warrant in that theft
-Which steals itself, when there’s no mercy left.
-
-[Exeunt.]
-SCENE IV. The same. Without the Castle.
-
-Enter Ross and an Old Man.
-
-OLD MAN.
-Threescore and ten I can remember well,
-Within the volume of which time I have seen
-Hours dreadful and things strange, but this sore night
-Hath trifled former knowings.
-
-ROSS.
-Ha, good father,
-Thou seest the heavens, as troubled with man’s act,
-Threatens his bloody stage: by the clock ’tis day,
-And yet dark night strangles the travelling lamp.
-Is’t night’s predominance, or the day’s shame,
-That darkness does the face of earth entomb,
-When living light should kiss it?
-
-OLD MAN.
-’Tis unnatural,
-Even like the deed that’s done. On Tuesday last,
-A falcon, towering in her pride of place,
-Was by a mousing owl hawk’d at and kill’d.
-
-ROSS.
-And Duncan’s horses (a thing most strange and certain)
-Beauteous and swift, the minions of their race,
-Turn’d wild in nature, broke their stalls, flung out,
-Contending ’gainst obedience, as they would make
-War with mankind.
-
-OLD MAN.
-’Tis said they eat each other.
-
-ROSS.
-They did so; to the amazement of mine eyes,
-That look’d upon’t.
-Here comes the good Macduff.
-
-Enter Macduff.
-
-How goes the world, sir, now?
-
-MACDUFF.
-Why, see you not?
-
-ROSS.
-Is’t known who did this more than bloody deed?
-
-MACDUFF.
-Those that Macbeth hath slain.
-
-ROSS.
-Alas, the day!
-What good could they pretend?
-
-MACDUFF.
-They were suborn’d.
-Malcolm and Donalbain, the King’s two sons,
-Are stol’n away and fled; which puts upon them
-Suspicion of the deed.
-
-ROSS.
-’Gainst nature still:
-Thriftless ambition, that will ravin up
-Thine own life’s means!—Then ’tis most like
-The sovereignty will fall upon Macbeth.
-
-MACDUFF.
-He is already nam’d; and gone to Scone
-To be invested.
-
-ROSS.
-Where is Duncan’s body?
-
-MACDUFF.
-Carried to Colmekill,
-The sacred storehouse of his predecessors,
-And guardian of their bones.
-
-ROSS.
-Will you to Scone?
-
-MACDUFF.
-No, cousin, I’ll to Fife.
-
-ROSS.
-Well, I will thither.
-
-MACDUFF.
-Well, may you see things well done there. Adieu!
-Lest our old robes sit easier than our new!
-
-ROSS.
-Farewell, father.
-
-OLD MAN.
-God’s benison go with you; and with those
-That would make good of bad, and friends of foes!
-
-[Exeunt.]
-ACT III
-SCENE I. Forres. A Room in the Palace.
-
-Enter Banquo.
-
-BANQUO.
-Thou hast it now, King, Cawdor, Glamis, all,
-As the Weird Women promis’d; and, I fear,
-Thou play’dst most foully for’t; yet it was said
-It should not stand in thy posterity;
-But that myself should be the root and father
-Of many kings. If there come truth from them
-(As upon thee, Macbeth, their speeches shine)
-Why, by the verities on thee made good,
-May they not be my oracles as well,
-And set me up in hope? But hush; no more.
-
-Sennet sounded. Enter Macbeth as King, Lady Macbeth as Queen; Lennox, Ross, Lords, and Attendants.
-
-MACBETH.
-Here’s our chief guest.
-
-LADY MACBETH.
-If he had been forgotten,
-It had been as a gap in our great feast,
-And all-thing unbecoming.
-
-MACBETH.
-Tonight we hold a solemn supper, sir,
-And I’ll request your presence.
-
-BANQUO.
-Let your Highness
-Command upon me, to the which my duties
-Are with a most indissoluble tie
-For ever knit.
-
-MACBETH.
-Ride you this afternoon?
-
-BANQUO.
-Ay, my good lord.
-
-MACBETH.
-We should have else desir’d your good advice
-(Which still hath been both grave and prosperous)
-In this day’s council; but we’ll take tomorrow.
-Is’t far you ride?
-
-BANQUO.
-As far, my lord, as will fill up the time
-’Twixt this and supper: go not my horse the better,
-I must become a borrower of the night,
-For a dark hour or twain.
-
-MACBETH.
-Fail not our feast.
-
-BANQUO.
-My lord, I will not.
-
-MACBETH.
-We hear our bloody cousins are bestow’d
-In England and in Ireland; not confessing
-Their cruel parricide, filling their hearers
-With strange invention. But of that tomorrow,
-When therewithal we shall have cause of state
-Craving us jointly. Hie you to horse: adieu,
-Till you return at night. Goes Fleance with you?
-
-BANQUO.
-Ay, my good lord: our time does call upon’s.
-
-MACBETH.
-I wish your horses swift and sure of foot;
-And so I do commend you to their backs.
-Farewell.—
-
-[Exit Banquo.]
-
-Let every man be master of his time
-Till seven at night; to make society
-The sweeter welcome, we will keep ourself
-Till supper time alone: while then, God be with you.
-
-[Exeunt Lady Macbeth, Lords, &c.]
-
-Sirrah, a word with you. Attend those men
-Our pleasure?
-
-SERVANT.
-They are, my lord, without the palace gate.
-
-MACBETH.
-Bring them before us.
-
-[Exit Servant.]
-
-To be thus is nothing,
-But to be safely thus. Our fears in Banquo
-Stick deep, and in his royalty of nature
-Reigns that which would be fear’d: ’tis much he dares;
-And, to that dauntless temper of his mind,
-He hath a wisdom that doth guide his valour
-To act in safety. There is none but he
-Whose being I do fear: and under him
-My genius is rebuk’d; as, it is said,
-Mark Antony’s was by Caesar. He chid the sisters
-When first they put the name of king upon me,
-And bade them speak to him; then, prophet-like,
-They hail’d him father to a line of kings:
-Upon my head they plac’d a fruitless crown,
-And put a barren sceptre in my gripe,
-Thence to be wrench’d with an unlineal hand,
-No son of mine succeeding. If’t be so,
-For Banquo’s issue have I fil’d my mind;
-For them the gracious Duncan have I murder’d;
-Put rancours in the vessel of my peace
-Only for them; and mine eternal jewel
-Given to the common enemy of man,
-To make them kings, the seed of Banquo kings!
-Rather than so, come, fate, into the list,
-And champion me to th’ utterance!—Who’s there?—
-
-Enter Servant with two Murderers.
-
-Now go to the door, and stay there till we call.
-
-[Exit Servant.]
-
-Was it not yesterday we spoke together?
-
-FIRST MURDERER.
-It was, so please your Highness.
-
-MACBETH.
-Well then, now
-Have you consider’d of my speeches? Know
-That it was he, in the times past, which held you
-So under fortune, which you thought had been
-Our innocent self? This I made good to you
-In our last conference, pass’d in probation with you
-How you were borne in hand, how cross’d, the instruments,
-Who wrought with them, and all things else that might
-To half a soul and to a notion craz’d
-Say, “Thus did Banquo.”
-
-FIRST MURDERER.
-You made it known to us.
-
-MACBETH.
-I did so; and went further, which is now
-Our point of second meeting. Do you find
-Your patience so predominant in your nature,
-That you can let this go? Are you so gospell’d,
-To pray for this good man and for his issue,
-Whose heavy hand hath bow’d you to the grave,
-And beggar’d yours forever?
-
-FIRST MURDERER.
-We are men, my liege.
-
-MACBETH.
-Ay, in the catalogue ye go for men;
-As hounds, and greyhounds, mongrels, spaniels, curs,
-Shoughs, water-rugs, and demi-wolves are clept
-All by the name of dogs: the valu’d file
-Distinguishes the swift, the slow, the subtle,
-The housekeeper, the hunter, every one
-According to the gift which bounteous nature
-Hath in him clos’d; whereby he does receive
-Particular addition, from the bill
-That writes them all alike: and so of men.
-Now, if you have a station in the file,
-Not i’ th’ worst rank of manhood, say’t;
-And I will put that business in your bosoms,
-Whose execution takes your enemy off,
-Grapples you to the heart and love of us,
-Who wear our health but sickly in his life,
-Which in his death were perfect.
-
-SECOND MURDERER.
-I am one, my liege,
-Whom the vile blows and buffets of the world
-Hath so incens’d that I am reckless what
-I do to spite the world.
-
-FIRST MURDERER.
-And I another,
-So weary with disasters, tugg’d with fortune,
-That I would set my life on any chance,
-To mend it or be rid on’t.
-
-MACBETH.
-Both of you
-Know Banquo was your enemy.
-
-BOTH MURDERERS.
-True, my lord.
-
-MACBETH.
-So is he mine; and in such bloody distance,
-That every minute of his being thrusts
-Against my near’st of life; and though I could
-With barefac’d power sweep him from my sight,
-And bid my will avouch it, yet I must not,
-For certain friends that are both his and mine,
-Whose loves I may not drop, but wail his fall
-Who I myself struck down: and thence it is
-That I to your assistance do make love,
-Masking the business from the common eye
-For sundry weighty reasons.
-
-SECOND MURDERER.
-We shall, my lord,
-Perform what you command us.
-
-FIRST MURDERER.
-Though our lives—
-
-MACBETH.
-Your spirits shine through you. Within this hour at most,
-I will advise you where to plant yourselves,
-Acquaint you with the perfect spy o’ th’ time,
-The moment on’t; for’t must be done tonight
-And something from the palace; always thought
-That I require a clearness. And with him
-(To leave no rubs nor botches in the work)
-Fleance his son, that keeps him company,
-Whose absence is no less material to me
-Than is his father’s, must embrace the fate
-Of that dark hour. Resolve yourselves apart.
-I’ll come to you anon.
-
-BOTH MURDERERS.
-We are resolv’d, my lord.
-
-MACBETH.
-I’ll call upon you straight: abide within.
-
-[Exeunt Murderers.]
-
-It is concluded. Banquo, thy soul’s flight,
-If it find heaven, must find it out tonight.
-
-[Exit.]
-SCENE II. The same. Another Room in the Palace.
-
-Enter Lady Macbeth and a Servant.
-
-LADY MACBETH.
-Is Banquo gone from court?
-
-SERVANT.
-Ay, madam, but returns again tonight.
-
-LADY MACBETH.
-Say to the King, I would attend his leisure
-For a few words.
-
-SERVANT.
-Madam, I will.
-
-[Exit.]
-
-LADY MACBETH.
-Naught’s had, all’s spent,
-Where our desire is got without content:
-’Tis safer to be that which we destroy,
-Than by destruction dwell in doubtful joy.
-
-Enter Macbeth.
-
-How now, my lord, why do you keep alone,
-Of sorriest fancies your companions making,
-Using those thoughts which should indeed have died
-With them they think on? Things without all remedy
-Should be without regard: what’s done is done.
-
-MACBETH.
-We have scorch’d the snake, not kill’d it.
-She’ll close, and be herself; whilst our poor malice
-Remains in danger of her former tooth.
-But let the frame of things disjoint,
-Both the worlds suffer,
-Ere we will eat our meal in fear, and sleep
-In the affliction of these terrible dreams
-That shake us nightly. Better be with the dead,
-Whom we, to gain our peace, have sent to peace,
-Than on the torture of the mind to lie
-In restless ecstasy. Duncan is in his grave;
-After life’s fitful fever he sleeps well;
-Treason has done his worst: nor steel, nor poison,
-Malice domestic, foreign levy, nothing
-Can touch him further.
-
-LADY MACBETH.
-Come on,
-Gently my lord, sleek o’er your rugged looks;
-Be bright and jovial among your guests tonight.
-
-MACBETH.
-So shall I, love; and so, I pray, be you.
-Let your remembrance apply to Banquo;
-Present him eminence, both with eye and tongue:
-Unsafe the while, that we
-Must lave our honours in these flattering streams,
-And make our faces vizards to our hearts,
-Disguising what they are.
-
-LADY MACBETH.
-You must leave this.
-
-MACBETH.
-O, full of scorpions is my mind, dear wife!
-Thou know’st that Banquo, and his Fleance, lives.
-
-LADY MACBETH.
-But in them nature’s copy’s not eterne.
-
-MACBETH.
-There’s comfort yet; they are assailable.
-Then be thou jocund. Ere the bat hath flown
-His cloister’d flight, ere to black Hecate’s summons
-The shard-born beetle, with his drowsy hums,
-Hath rung night’s yawning peal, there shall be done
-A deed of dreadful note.
-
-LADY MACBETH.
-What’s to be done?
-
-MACBETH.
-Be innocent of the knowledge, dearest chuck,
-Till thou applaud the deed. Come, seeling night,
-Scarf up the tender eye of pitiful day,
-And with thy bloody and invisible hand
-Cancel and tear to pieces that great bond
-Which keeps me pale!—Light thickens; and the crow
-Makes wing to th’ rooky wood.
-Good things of day begin to droop and drowse,
-Whiles night’s black agents to their preys do rouse.
-Thou marvell’st at my words: but hold thee still;
-Things bad begun make strong themselves by ill.
-So, pr’ythee, go with me.
-
-[Exeunt.]
-SCENE III. The same. A Park or Lawn, with a gate leading to the Palace.
-
-Enter three Murderers.
-
-FIRST MURDERER.
-But who did bid thee join with us?
-
-THIRD MURDERER.
-Macbeth.
-
-SECOND MURDERER.
-He needs not our mistrust; since he delivers
-Our offices and what we have to do
-To the direction just.
-
-FIRST MURDERER.
-Then stand with us.
-The west yet glimmers with some streaks of day.
-Now spurs the lated traveller apace,
-To gain the timely inn; and near approaches
-The subject of our watch.
-
-THIRD MURDERER.
-Hark! I hear horses.
-
-BANQUO.
-[Within.] Give us a light there, ho!
-
-SECOND MURDERER.
-Then ’tis he; the rest
-That are within the note of expectation
-Already are i’ th’ court.
-
-FIRST MURDERER.
-His horses go about.
-
-THIRD MURDERER.
-Almost a mile; but he does usually,
-So all men do, from hence to the palace gate
-Make it their walk.
-
-Enter Banquo and Fleance with a torch.
-
-SECOND MURDERER.
-A light, a light!
-
-THIRD MURDERER.
-’Tis he.
-
-FIRST MURDERER.
-Stand to’t.
-
-BANQUO.
-It will be rain tonight.
-
-FIRST MURDERER.
-Let it come down.
-
-[Assaults Banquo.]
-
-BANQUO.
-O, treachery! Fly, good Fleance, fly, fly, fly!
-Thou mayst revenge—O slave!
-
-[Dies. Fleance escapes.]
-
-THIRD MURDERER.
-Who did strike out the light?
-
-FIRST MURDERER.
-Was’t not the way?
-
-THIRD MURDERER.
-There’s but one down: the son is fled.
-
-SECOND MURDERER.
-We have lost best half of our affair.
-
-FIRST MURDERER.
-Well, let’s away, and say how much is done.
-
-[Exeunt.]
-SCENE IV. The same. A Room of state in the Palace.
-
-A banquet prepared. Enter Macbeth, Lady Macbeth, Ross, Lennox, Lords and Attendants.
-
-MACBETH.
-You know your own degrees, sit down. At first
-And last the hearty welcome.
-
-LORDS.
-Thanks to your Majesty.
-
-MACBETH.
-Ourself will mingle with society,
-And play the humble host.
-Our hostess keeps her state; but, in best time,
-We will require her welcome.
-
-LADY MACBETH.
-Pronounce it for me, sir, to all our friends;
-For my heart speaks they are welcome.
-
-Enter first Murderer to the door.
-
-MACBETH.
-See, they encounter thee with their hearts’ thanks.
-Both sides are even: here I’ll sit i’ th’ midst.
-
-Be large in mirth; anon we’ll drink a measure
-The table round. There’s blood upon thy face.
-
-MURDERER.
-’Tis Banquo’s then.
-
-MACBETH.
-’Tis better thee without than he within.
-Is he dispatch’d?
-
-MURDERER.
-My lord, his throat is cut. That I did for him.
-
-MACBETH.
-Thou art the best o’ th’ cut-throats;
-Yet he’s good that did the like for Fleance:
-If thou didst it, thou art the nonpareil.
-
-MURDERER.
-Most royal sir,
-Fleance is ’scap’d.
-
-MACBETH.
-Then comes my fit again: I had else been perfect;
-Whole as the marble, founded as the rock,
-As broad and general as the casing air:
-But now I am cabin’d, cribb’d, confin’d, bound in
-To saucy doubts and fears. But Banquo’s safe?
-
-MURDERER.
-Ay, my good lord. Safe in a ditch he bides,
-With twenty trenched gashes on his head;
-The least a death to nature.
-
-MACBETH.
-Thanks for that.
-There the grown serpent lies; the worm that’s fled
-Hath nature that in time will venom breed,
-No teeth for th’ present.—Get thee gone; tomorrow
-We’ll hear, ourselves, again.
-
-[Exit Murderer.]
-
-LADY MACBETH.
-My royal lord,
-You do not give the cheer: the feast is sold
-That is not often vouch’d, while ’tis a-making,
-’Tis given with welcome. To feed were best at home;
-From thence the sauce to meat is ceremony;
-Meeting were bare without it.
-
-The Ghost of Banquo rises, and sits in Macbeth’s place.
-
-MACBETH.
-Sweet remembrancer!—
-Now, good digestion wait on appetite,
-And health on both!
-
-LENNOX.
-May’t please your Highness sit.
-
-MACBETH.
-Here had we now our country’s honour roof’d,
-Were the grac’d person of our Banquo present;
-Who may I rather challenge for unkindness
-Than pity for mischance!
-
-ROSS.
-His absence, sir,
-Lays blame upon his promise. Please’t your Highness
-To grace us with your royal company?
-
-MACBETH.
-The table’s full.
-
-LENNOX.
-Here is a place reserv’d, sir.
-
-MACBETH.
-Where?
-
-LENNOX.
-Here, my good lord. What is’t that moves your Highness?
-
-MACBETH.
-Which of you have done this?
-
-LORDS.
-What, my good lord?
-
-MACBETH.
-Thou canst not say I did it. Never shake
-Thy gory locks at me.
-
-ROSS.
-Gentlemen, rise; his Highness is not well.
-
-LADY MACBETH.
-Sit, worthy friends. My lord is often thus,
-And hath been from his youth: pray you, keep seat;
-The fit is momentary; upon a thought
-He will again be well. If much you note him,
-You shall offend him, and extend his passion.
-Feed, and regard him not.—Are you a man?
-
-MACBETH.
-Ay, and a bold one, that dare look on that
-Which might appal the devil.
-
-LADY MACBETH.
-O proper stuff!
-This is the very painting of your fear:
-This is the air-drawn dagger which you said,
-Led you to Duncan. O, these flaws, and starts
-(Impostors to true fear), would well become
-A woman’s story at a winter’s fire,
-Authoris’d by her grandam. Shame itself!
-Why do you make such faces? When all’s done,
-You look but on a stool.
-
-MACBETH.
-Pr’ythee, see there!
-Behold! look! lo! how say you?
-Why, what care I? If thou canst nod, speak too.—
-If charnel houses and our graves must send
-Those that we bury back, our monuments
-Shall be the maws of kites.
-
-[Ghost disappears.]
-
-LADY MACBETH.
-What, quite unmann’d in folly?
-
-MACBETH.
-If I stand here, I saw him.
-
-LADY MACBETH.
-Fie, for shame!
-
-MACBETH.
-Blood hath been shed ere now, i’ th’ olden time,
-Ere humane statute purg’d the gentle weal;
-Ay, and since too, murders have been perform’d
-Too terrible for the ear: the time has been,
-That, when the brains were out, the man would die,
-And there an end; but now they rise again,
-With twenty mortal murders on their crowns,
-And push us from our stools. This is more strange
-Than such a murder is.
-
-LADY MACBETH.
-My worthy lord,
-Your noble friends do lack you.
-
-MACBETH.
-I do forget.—
-Do not muse at me, my most worthy friends.
-I have a strange infirmity, which is nothing
-To those that know me. Come, love and health to all;
-Then I’ll sit down.—Give me some wine, fill full.—
-I drink to the general joy o’ th’ whole table,
-And to our dear friend Banquo, whom we miss:
-Would he were here.
-
-Ghost rises again.
-
-To all, and him, we thirst,
-And all to all.
-
-LORDS.
-Our duties, and the pledge.
-
-MACBETH.
-Avaunt! and quit my sight! let the earth hide thee!
-Thy bones are marrowless, thy blood is cold;
-Thou hast no speculation in those eyes
-Which thou dost glare with!
-
-LADY MACBETH.
-Think of this, good peers,
-But as a thing of custom: ’tis no other,
-Only it spoils the pleasure of the time.
-
-MACBETH.
-What man dare, I dare:
-Approach thou like the rugged Russian bear,
-The arm’d rhinoceros, or th’ Hyrcan tiger;
-Take any shape but that, and my firm nerves
-Shall never tremble: or be alive again,
-And dare me to the desert with thy sword;
-If trembling I inhabit then, protest me
-The baby of a girl. Hence, horrible shadow!
-Unreal mock’ry, hence!
-
-[Ghost disappears.]
-
-Why, so;—being gone,
-I am a man again.—Pray you, sit still.
-
-LADY MACBETH.
-You have displaced the mirth, broke the good meeting
-With most admir’d disorder.
-
-MACBETH.
-Can such things be,
-And overcome us like a summer’s cloud,
-Without our special wonder? You make me strange
-Even to the disposition that I owe,
-When now I think you can behold such sights,
-And keep the natural ruby of your cheeks,
-When mine are blanch’d with fear.
-
-ROSS.
-What sights, my lord?
-
-LADY MACBETH.
-I pray you, speak not; he grows worse and worse;
-Question enrages him. At once, good night:—
-Stand not upon the order of your going,
-But go at once.
-
-LENNOX.
-Good night; and better health
-Attend his Majesty!
-
-LADY MACBETH.
-A kind good night to all!
-
-[Exeunt all Lords and Attendants.]
-
-MACBETH.
-It will have blood, they say, blood will have blood.
-Stones have been known to move, and trees to speak;
-Augurs, and understood relations, have
-By magot-pies, and choughs, and rooks, brought forth
-The secret’st man of blood.—What is the night?
-
-LADY MACBETH.
-Almost at odds with morning, which is which.
-
-MACBETH.
-How say’st thou, that Macduff denies his person
-At our great bidding?
-
-LADY MACBETH.
-Did you send to him, sir?
-
-MACBETH.
-I hear it by the way; but I will send.
-There’s not a one of them but in his house
-I keep a servant fee’d. I will tomorrow
-(And betimes I will) to the Weird Sisters:
-More shall they speak; for now I am bent to know,
-By the worst means, the worst. For mine own good,
-All causes shall give way: I am in blood
-Stepp’d in so far that, should I wade no more,
-Returning were as tedious as go o’er.
-Strange things I have in head, that will to hand,
-Which must be acted ere they may be scann’d.
-
-LADY MACBETH.
-You lack the season of all natures, sleep.
-
-MACBETH.
-Come, we’ll to sleep. My strange and self-abuse
-Is the initiate fear that wants hard use.
-We are yet but young in deed.
-
-[Exeunt.]
-SCENE V. The heath.
-
-Thunder. Enter the three Witches meeting Hecate.
-
-FIRST WITCH.
-Why, how now, Hecate? you look angerly.
-
-HECATE.
-Have I not reason, beldams as you are,
-Saucy and overbold? How did you dare
-To trade and traffic with Macbeth
-In riddles and affairs of death;
-And I, the mistress of your charms,
-The close contriver of all harms,
-Was never call’d to bear my part,
-Or show the glory of our art?
-And, which is worse, all you have done
-Hath been but for a wayward son,
-Spiteful and wrathful; who, as others do,
-Loves for his own ends, not for you.
-But make amends now: get you gone,
-And at the pit of Acheron
-Meet me i’ th’ morning: thither he
-Will come to know his destiny.
-Your vessels and your spells provide,
-Your charms, and everything beside.
-I am for th’ air; this night I’ll spend
-Unto a dismal and a fatal end.
-Great business must be wrought ere noon.
-Upon the corner of the moon
-There hangs a vap’rous drop profound;
-I’ll catch it ere it come to ground:
-And that, distill’d by magic sleights,
-Shall raise such artificial sprites,
-As, by the strength of their illusion,
-Shall draw him on to his confusion.
-He shall spurn fate, scorn death, and bear
-His hopes ’bove wisdom, grace, and fear.
-And you all know, security
-Is mortals’ chiefest enemy.
-
-[Music and song within, “Come away, come away” &c.]
-
-Hark! I am call’d; my little spirit, see,
-Sits in a foggy cloud and stays for me.
-
-[Exit.]
-
-FIRST WITCH.
-Come, let’s make haste; she’ll soon be back again.
-
-[Exeunt.]
-SCENE VI. Forres. A Room in the Palace.
-
-Enter Lennox and another Lord.
-
-LENNOX.
-My former speeches have but hit your thoughts,
-Which can interpret farther: only, I say,
-Thing’s have been strangely borne. The gracious Duncan
-Was pitied of Macbeth:—marry, he was dead:—
-And the right valiant Banquo walk’d too late;
-Whom, you may say, if’t please you, Fleance kill’d,
-For Fleance fled. Men must not walk too late.
-Who cannot want the thought, how monstrous
-It was for Malcolm and for Donalbain
-To kill their gracious father? damned fact!
-How it did grieve Macbeth! did he not straight,
-In pious rage, the two delinquents tear
-That were the slaves of drink and thralls of sleep?
-Was not that nobly done? Ay, and wisely too;
-For ’twould have anger’d any heart alive,
-To hear the men deny’t. So that, I say,
-He has borne all things well: and I do think,
-That had he Duncan’s sons under his key
-(As, and’t please heaven, he shall not) they should find
-What ’twere to kill a father; so should Fleance.
-But, peace!—for from broad words, and ’cause he fail’d
-His presence at the tyrant’s feast, I hear,
-Macduff lives in disgrace. Sir, can you tell
-Where he bestows himself?
-
-LORD.
-The son of Duncan,
-From whom this tyrant holds the due of birth,
-Lives in the English court and is receiv’d
-Of the most pious Edward with such grace
-That the malevolence of fortune nothing
-Takes from his high respect. Thither Macduff
-Is gone to pray the holy king, upon his aid
-To wake Northumberland, and warlike Siward
-That, by the help of these (with Him above
-To ratify the work), we may again
-Give to our tables meat, sleep to our nights;
-Free from our feasts and banquets bloody knives,
-Do faithful homage, and receive free honours,
-All which we pine for now. And this report
-Hath so exasperate the King that he
-Prepares for some attempt of war.
-
-LENNOX.
-Sent he to Macduff?
-
-LORD.
-He did: and with an absolute “Sir, not I,”
-The cloudy messenger turns me his back,
-And hums, as who should say, “You’ll rue the time
-That clogs me with this answer.”
-
-LENNOX.
-And that well might
-Advise him to a caution, t’ hold what distance
-His wisdom can provide. Some holy angel
-Fly to the court of England, and unfold
-His message ere he come, that a swift blessing
-May soon return to this our suffering country
-Under a hand accurs’d!
-
-LORD.
-I’ll send my prayers with him.
-
-[Exeunt.]
-ACT IV
-SCENE I. A dark Cave. In the middle, a Cauldron Boiling.
-
-Thunder. Enter the three Witches.
-
-FIRST WITCH.
-Thrice the brinded cat hath mew’d.
-
-SECOND WITCH.
-Thrice, and once the hedge-pig whin’d.
-
-THIRD WITCH.
-Harpier cries:—’Tis time, ’tis time.
-
-FIRST WITCH.
-Round about the cauldron go;
-In the poison’d entrails throw.—
-Toad, that under cold stone
-Days and nights has thirty-one
-Swelter’d venom sleeping got,
-Boil thou first i’ th’ charmed pot!
-
-ALL.
-Double, double, toil and trouble;
-Fire, burn; and cauldron, bubble.
-
-SECOND WITCH.
-Fillet of a fenny snake,
-In the cauldron boil and bake;
-Eye of newt, and toe of frog,
-Wool of bat, and tongue of dog,
-Adder’s fork, and blind-worm’s sting,
-Lizard’s leg, and howlet’s wing,
-For a charm of powerful trouble,
-Like a hell-broth boil and bubble.
-
-ALL.
-Double, double, toil and trouble;
-Fire, burn; and cauldron, bubble.
-
-THIRD WITCH.
-Scale of dragon, tooth of wolf,
-Witch’s mummy, maw and gulf
-Of the ravin’d salt-sea shark,
-Root of hemlock digg’d i’ th’ dark,
-Liver of blaspheming Jew,
-Gall of goat, and slips of yew
-Sliver’d in the moon’s eclipse,
-Nose of Turk, and Tartar’s lips,
-Finger of birth-strangled babe
-Ditch-deliver’d by a drab,
-Make the gruel thick and slab:
-Add thereto a tiger’s chaudron,
-For th’ ingredients of our cauldron.
-
-ALL.
-Double, double, toil and trouble;
-Fire, burn; and cauldron, bubble.
-
-SECOND WITCH.
-Cool it with a baboon’s blood.
-Then the charm is firm and good.
-
-Enter Hecate.
-
-HECATE.
-O, well done! I commend your pains,
-And everyone shall share i’ th’ gains.
-And now about the cauldron sing,
-Like elves and fairies in a ring,
-Enchanting all that you put in.
-
-[Music and a song: “Black Spirits,” &c.]
-
-[Exit Hecate.]
-
-SECOND WITCH.
-By the pricking of my thumbs,
-Something wicked this way comes.
-Open, locks,
-Whoever knocks!
-
-MALCOLM.
-Be’t their comfort
-We are coming thither. Gracious England hath
-Lent us good Siward and ten thousand men;
-An older and a better soldier none
-That Christendom gives out.
-
-ROSS.
-Would I could answer
-This comfort with the like! But I have words
-That would be howl’d out in the desert air,
-Where hearing should not latch them.
-
-MACDUFF.
-What concern they?
-The general cause? or is it a fee-grief
-Due to some single breast?
-
-ROSS.
-No mind that’s honest
-But in it shares some woe, though the main part
-Pertains to you alone.
-
-MACDUFF.
-If it be mine,
-Keep it not from me, quickly let me have it.
-
-ROSS.
-Let not your ears despise my tongue for ever,
-Which shall possess them with the heaviest sound
-That ever yet they heard.
-
-MACDUFF.
-Humh! I guess at it.
-
-ROSS.
-Your castle is surpris’d; your wife and babes
-Savagely slaughter’d. To relate the manner
-Were, on the quarry of these murder’d deer,
-To add the death of you.
-
-MALCOLM.
-Merciful heaven!—
-What, man! ne’er pull your hat upon your brows.
-Give sorrow words. The grief that does not speak
-Whispers the o’er-fraught heart, and bids it break.
-
-MACDUFF.
-My children too?
-
-ROSS.
-Wife, children, servants, all
-That could be found.
-
-MACDUFF.
-And I must be from thence!
-My wife kill’d too?
-
-ROSS.
-I have said.
-
-MALCOLM.
-Be comforted:
-Let’s make us med’cines of our great revenge,
-To cure this deadly grief.
-
-MACDUFF.
-He has no children.—All my pretty ones?
-Did you say all?—O hell-kite!—All?
-What, all my pretty chickens and their dam
-At one fell swoop?
-
-MALCOLM.
-Dispute it like a man.
-
-MACDUFF.
-I shall do so;
-But I must also feel it as a man:
-I cannot but remember such things were,
-That were most precious to me.—Did heaven look on,
-And would not take their part? Sinful Macduff,
-They were all struck for thee! Naught that I am,
-Not for their own demerits, but for mine,
-Fell slaughter on their souls: heaven rest them now!
-
-MALCOLM.
-Be this the whetstone of your sword. Let grief
-Convert to anger; blunt not the heart, enrage it.
-
-MACDUFF.
-O, I could play the woman with mine eyes,
-And braggart with my tongue!—But, gentle heavens,
-Cut short all intermission; front to front,
-Bring thou this fiend of Scotland and myself;
-Within my sword’s length set him; if he ’scape,
-Heaven forgive him too!
-
-MALCOLM.
-This tune goes manly.
-Come, go we to the King. Our power is ready;
-Our lack is nothing but our leave. Macbeth
-Is ripe for shaking, and the powers above
-Put on their instruments. Receive what cheer you may;
-The night is long that never finds the day.
-
-[Exeunt.]
-ACT V
-SCENE I. Dunsinane. A Room in the Castle.
-
-Enter a Doctor of Physic and a Waiting-Gentlewoman.
-
-DOCTOR.
-I have two nights watched with you, but can perceive no truth in your report. When was it she last walked?
-
-GENTLEWOMAN.
-Since his Majesty went into the field, I have seen her rise from her bed, throw her nightgown upon her, unlock her closet, take forth paper, fold it, write upon’t, read it, afterwards seal it, and again return to bed; yet all this while in a most fast sleep.
-
-DOCTOR.
-A great perturbation in nature, to receive at once the benefit of sleep, and do the effects of watching. In this slumbery agitation, besides her walking and other actual performances, what, at any time, have you heard her say?
-
-GENTLEWOMAN.
-That, sir, which I will not report after her.
-
-DOCTOR.
-You may to me; and ’tis most meet you should.
-
-GENTLEWOMAN.
-Neither to you nor anyone; having no witness to confirm my speech.
-
-Enter Lady Macbeth with a taper.
-
-Lo you, here she comes! This is her very guise; and, upon my life, fast asleep. Observe her; stand close.
-
-DOCTOR.
-How came she by that light?
-
-GENTLEWOMAN.
-Why, it stood by her: she has light by her continually; ’tis her command.
-
-DOCTOR.
-You see, her eyes are open.
-
-GENTLEWOMAN.
-Ay, but their sense are shut.
-
-DOCTOR.
-What is it she does now? Look how she rubs her hands.
-
-GENTLEWOMAN.
-It is an accustomed action with her, to seem thus washing her hands. I have known her continue in this a quarter of an hour.
-
-LADY MACBETH.
-Yet here’s a spot.
-
-DOCTOR.
-Hark, she speaks. I will set down what comes from her, to satisfy my remembrance the more strongly.
-
-LADY MACBETH.
-Out, damned spot! out, I say! One; two. Why, then ’tis time to do’t. Hell is murky! Fie, my lord, fie! a soldier, and afeard? What need we fear who knows it, when none can call our power to account? Yet who would have thought the old man to have had so much blood in him?
-
-DOCTOR.
-Do you mark that?
-
-LADY MACBETH.
-The Thane of Fife had a wife. Where is she now?—What, will these hands ne’er be clean? No more o’ that, my lord, no more o’ that: you mar all with this starting.
-
-DOCTOR.
-Go to, go to. You have known what you should not.
-
-GENTLEWOMAN.
-She has spoke what she should not, I am sure of that: heaven knows what she has known.
-
-LADY MACBETH.
-Here’s the smell of the blood still: all the perfumes of Arabia will not sweeten this little hand. Oh, oh, oh!
-
-DOCTOR.
-What a sigh is there! The heart is sorely charged.
-
-GENTLEWOMAN.
-I would not have such a heart in my bosom for the dignity of the whole body.
-
-DOCTOR.
-Well, well, well.
-
-GENTLEWOMAN.
-Pray God it be, sir.
-
-DOCTOR.
-This disease is beyond my practice: yet I have known those which have walked in their sleep, who have died holily in their beds.
-
-LADY MACBETH.
-Wash your hands, put on your nightgown; look not so pale. I tell you yet again, Banquo’s buried; he cannot come out on’s grave.
-
-DOCTOR.
-Even so?
-
-LADY MACBETH.
-To bed, to bed. There’s knocking at the gate. Come, come, come, come, give me your hand. What’s done cannot be undone. To bed, to bed, to bed.
-
-[Exit.]
-
-DOCTOR.
-Will she go now to bed?
-
-GENTLEWOMAN.
-Directly.
-
-DOCTOR.
-Foul whisp’rings are abroad. Unnatural deeds
-Do breed unnatural troubles: infected minds
-To their deaf pillows will discharge their secrets.
-More needs she the divine than the physician.—
-God, God, forgive us all! Look after her;
-Remove from her the means of all annoyance,
-And still keep eyes upon her. So, good night:
-My mind she has mated, and amaz’d my sight.
-I think, but dare not speak.
-
-GENTLEWOMAN.
-Good night, good doctor.
-
-[Exeunt.]
-SCENE II. The Country near Dunsinane.
-
-Enter, with drum and colours Menteith, Caithness, Angus, Lennox and Soldiers.
-
-MENTEITH.
-The English power is near, led on by Malcolm,
-His uncle Siward, and the good Macduff.
-Revenges burn in them; for their dear causes
-Would to the bleeding and the grim alarm
-Excite the mortified man.
-
-ANGUS.
-Near Birnam wood
-Shall we well meet them. That way are they coming.
-
-CAITHNESS.
-Who knows if Donalbain be with his brother?
-
-LENNOX.
-For certain, sir, he is not. I have a file
-Of all the gentry: there is Siward’s son
-And many unrough youths, that even now
-Protest their first of manhood.
-
-MENTEITH.
-What does the tyrant?
-
-CAITHNESS.
-Great Dunsinane he strongly fortifies.
-Some say he’s mad; others, that lesser hate him,
-Do call it valiant fury: but, for certain,
-He cannot buckle his distemper’d cause
-Within the belt of rule.
-
-ANGUS.
-Now does he feel
-His secret murders sticking on his hands;
-Now minutely revolts upbraid his faith-breach;
-Those he commands move only in command,
-Nothing in love: now does he feel his title
-Hang loose about him, like a giant’s robe
-Upon a dwarfish thief.
-
-MENTEITH.
-Who, then, shall blame
-His pester’d senses to recoil and start,
-When all that is within him does condemn
-Itself for being there?
-
-CAITHNESS.
-Well, march we on,
-To give obedience where ’tis truly ow’d:
-Meet we the med’cine of the sickly weal;
-And with him pour we, in our country’s purge,
-Each drop of us.
-
-LENNOX.
-Or so much as it needs
-To dew the sovereign flower, and drown the weeds.
-Make we our march towards Birnam.
-
-[Exeunt, marching.]
-SCENE III. Dunsinane. A Room in the Castle.
-
-Enter Macbeth, Doctor and Attendants.
-
-MACBETH.
-Bring me no more reports; let them fly all:
-Till Birnam wood remove to Dunsinane
-I cannot taint with fear. What’s the boy Malcolm?
-Was he not born of woman? The spirits that know
-All mortal consequences have pronounc’d me thus:
-“Fear not, Macbeth; no man that’s born of woman
-Shall e’er have power upon thee.”—Then fly, false thanes,
-And mingle with the English epicures:
-The mind I sway by, and the heart I bear,
-Shall never sag with doubt nor shake with fear.
-
-Enter a Servant.
-
-The devil damn thee black, thou cream-fac’d loon!
-Where gott’st thou that goose look?
-
-SERVANT.
-There is ten thousand—
-
-MACBETH.
-Geese, villain?
-
-SERVANT.
-Soldiers, sir.
-
-MACBETH.
-Go prick thy face and over-red thy fear,
-Thou lily-liver’d boy. What soldiers, patch?
-Death of thy soul! those linen cheeks of thine
-Are counsellors to fear. What soldiers, whey-face?
-
-SERVANT.
-The English force, so please you.
-
-MACBETH.
-Take thy face hence.
-
-[Exit Servant.]
-
-Seyton!—I am sick at heart,
-When I behold—Seyton, I say!—This push
-Will cheer me ever or disseat me now.
-I have liv’d long enough: my way of life
-Is fall’n into the sere, the yellow leaf;
-And that which should accompany old age,
-As honour, love, obedience, troops of friends,
-I must not look to have; but, in their stead,
-Curses, not loud but deep, mouth-honour, breath,
-Which the poor heart would fain deny, and dare not.
-Seyton!—
-
-Enter Seyton.
-
-SEYTON.
-What’s your gracious pleasure?
-
-MACBETH.
-What news more?
-
-SEYTON.
-All is confirm’d, my lord, which was reported.
-
-MACBETH.
-I’ll fight till from my bones my flesh be hack’d.
-Give me my armour.
-
-SEYTON.
-’Tis not needed yet.
-
-MACBETH.
-I’ll put it on.
-Send out more horses, skirr the country round;
-Hang those that talk of fear. Give me mine armour.—
-How does your patient, doctor?
-
-DOCTOR.
-Not so sick, my lord,
-As she is troubled with thick-coming fancies,
-That keep her from her rest.
-
-MACBETH.
-Cure her of that:
-Canst thou not minister to a mind diseas’d,
-Pluck from the memory a rooted sorrow,
-Raze out the written troubles of the brain,
-And with some sweet oblivious antidote
-Cleanse the stuff’d bosom of that perilous stuff
-Which weighs upon the heart?
-
-DOCTOR.
-Therein the patient
-Must minister to himself.
-
-MACBETH.
-Throw physic to the dogs, I’ll none of it.
-Come, put mine armour on; give me my staff:
-Seyton, send out.—Doctor, the Thanes fly from me.—
-Come, sir, despatch.—If thou couldst, doctor, cast
-The water of my land, find her disease,
-And purge it to a sound and pristine health,
-I would applaud thee to the very echo,
-That should applaud again.—Pull’t off, I say.—
-What rhubarb, senna, or what purgative drug,
-Would scour these English hence? Hear’st thou of them?
-
-DOCTOR.
-Ay, my good lord. Your royal preparation
-Makes us hear something.
-
-MACBETH.
-Bring it after me.—
-I will not be afraid of death and bane,
-Till Birnam forest come to Dunsinane.
-
-[Exeunt all except Doctor.]
-
-DOCTOR.
-Were I from Dunsinane away and clear,
-Profit again should hardly draw me here.
-
-[Exit.]
-SCENE IV. Country near Dunsinane: a Wood in view.
-
-Enter, with drum and colours Malcolm, old Siward and his Son, Macduff, Menteith, Caithness, Angus, Lennox, Ross and Soldiers, marching.
-
-MALCOLM.
-Cousins, I hope the days are near at hand
-That chambers will be safe.
-
-MENTEITH.
-We doubt it nothing.
-
-SIWARD.
-What wood is this before us?
-
-MENTEITH.
-The wood of Birnam.
-
-MALCOLM.
-Let every soldier hew him down a bough,
-And bear’t before him. Thereby shall we shadow
-The numbers of our host, and make discovery
-Err in report of us.
-
-SOLDIERS.
-It shall be done.
-
-SIWARD.
-We learn no other but the confident tyrant
-Keeps still in Dunsinane, and will endure
-Our setting down before’t.
-
-MALCOLM.
-’Tis his main hope;
-For where there is advantage to be given,
-Both more and less have given him the revolt,
-And none serve with him but constrained things,
-Whose hearts are absent too.
-
-MACDUFF.
-Let our just censures
-Attend the true event, and put we on
-Industrious soldiership.
-
-SIWARD.
-The time approaches,
-That will with due decision make us know
-What we shall say we have, and what we owe.
-Thoughts speculative their unsure hopes relate,
-But certain issue strokes must arbitrate;
-Towards which advance the war.
-
-[Exeunt, marching.]
-SCENE V. Dunsinane. Within the castle.
-
-Enter with drum and colours, Macbeth, Seyton and Soldiers.
-
-MACBETH.
-Hang out our banners on the outward walls;
-The cry is still, “They come!” Our castle’s strength
-Will laugh a siege to scorn: here let them lie
-Till famine and the ague eat them up.
-Were they not forc’d with those that should be ours,
-We might have met them dareful, beard to beard,
-And beat them backward home.
-
-[A cry of women within.]
-
-What is that noise?
-
-SEYTON.
-It is the cry of women, my good lord.
-
-[Exit.]
-
-MACBETH.
-I have almost forgot the taste of fears.
-The time has been, my senses would have cool’d
-To hear a night-shriek; and my fell of hair
-Would at a dismal treatise rouse and stir
-As life were in’t. I have supp’d full with horrors;
-Direness, familiar to my slaughterous thoughts,
-Cannot once start me.
-
-Enter Seyton.
-
-Wherefore was that cry?
-
-SEYTON.
-The Queen, my lord, is dead.
-
-MACBETH.
-She should have died hereafter.
-There would have been a time for such a word.
-Tomorrow, and tomorrow, and tomorrow,
-Creeps in this petty pace from day to day,
-To the last syllable of recorded time;
-And all our yesterdays have lighted fools
-The way to dusty death. Out, out, brief candle!
-Life’s but a walking shadow; a poor player,
-That struts and frets his hour upon the stage,
-And then is heard no more: it is a tale
-Told by an idiot, full of sound and fury,
-Signifying nothing.
-
-Enter a Messenger.
-
+CONTINUED:8 8
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. GOLDENROD - 9/17/19 11.
+DEEP
+C’mon. If anyone knows what it’s
+like to get bounced, it’s me.
+CONTINUED: (2)8 8
+(MORE)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. GOLDENROD - 9/17/19 11A.
+Did some shit I’m not proud of.
+Weird shit.
+A-TRAIN *
+(lies) *
+I’m fine. My people are talking to *
+Nike and Under Armour. This’ll be *
+good for me. *
+DEEP
+Hey, that’s great. Well, then you
+don’t need his help. Forget I said
+anything.
+A-TRAIN
+Okay, cool.
+(then)
+Whose? Help?
+Deep reaches into his backpack -- takes out a CAN --
+DEEP
+Would you like a Fresca?
+EXT. SAGE GROVE CENTER - DAY9 9
+A STONE SIGN: SAGE GROVE CENTER.
+A HOSPITAL. In Pennsylvania. Quiet. Tranquil. Isolated.
+But still SECURE. A CHAIN LINK FENCE SURROUNDS IT. *
+INT./EXT. FRENCHIE’S VAN - DAY10 10
+Away from the main gate, the van is safely parked out of
+sight, hidden in some surrounding trees.
+Butcher watches the hospital through a pair of small binocs.
+Kimiko, Frenchie, Mother’s Milk all wear dark blue SAGE GROVE *
+scrubs. M.M. has his laptop open --
+MOTHER'S MILK
+Sage Grove. A proud subsidiary of
+Global Wellness Services, which is a
+subsidiary of --
+BUTCHER
+I can guess.
+Butcher checks a couple PISTOLS. Hands one to M.M.
+CLOSE ON: Frenchie hands out PERFECTLY FORGED SAGE GROVE
+lanyards with fake photo IDs of Frenchie, Kimiko, M.M.
+He notices Kimiko is wearing a flashy, three-finger gold
+ring, encrusted with diamonds that say BOSSY --
+CONTINUED: (2)8 8
+DEEP (CONT'D)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 12.
+FRENCHIE
+That’s what you bought with your
+blood money? No one will believe
+you’re an orderly with that.
+Kimiko holds up her hand. Examines the ring. Maybe he’s
+right. Then breathes onto the diamonds, as if polishing
+them. Smiles. Nope. Fuck off.
+ANNIE
+I should go in with them.
+BUTCHER
+How will they ever manage without a
+bony blonde Supe? Just get ‘em in
+and get the fuck back, yeah?
+Hughie. Wanting peace between these two.
+HUGHIE
+Annie. If they recognize your face
+in there...
+Starlight. She’s stronger than all of them. Part of her
+wants to blast Butcher. But she stands down. Nods.
+Mother’s Milk opens the back and jumps out. Kimiko follows.
+Then Starlight, pissed. Frenchie is the last to go.
+BUTCHER
+And don’t get caught.
+FRENCHIE
+I never do.
+INT. INTERROGATION ROOM - NIGHT - FLASHBACK - 8 YEARS AGO11 11 *
+MATCH CUT TO: FRENCHIE. Cuffed to a table. CAUGHT. He *
+wears the same clothes from the first scene. When he hears -- *
+MALLORY (O.S.)
+Weaponized Xanax.
+Frenchie looks up to see -- A FIGURE WALKS IN. With a THICK
+DOSSIER. She sits as we reveal -- it’s MALLORY.
+MALLORY (CONT’D)
+The grenades you used on Behemoth
+during the bank heist.
+(Frenchie doesn’t respond)
+You got a Supe activated by rage, so
+you simply take away his rage -- *
+turn him into a cupcake. Clever. *
+FRENCHIE
+I don’t know what you’re talking
+about.
+Mallory looks at him, impressed.
+CONTINUED:10 10
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 13.
+MALLORY
+And Cold Snap two months ago?
+Malchemical a month before that?
+You don’t know about those either?
+FRENCHIE
+What is this about?
+Mallory gets to business, drops the dossier before him.
+MALLORY
+Armed robbery, breaking and
+entering, aggravated assault on a
+Supe. You’re looking at twenty to
+twenty-five, minimum.
+Frenchie’s stomach plummets. He’s fucked.
+MALLORY (CONT’D)
+Or you can come work for me. I
+could use someone with your
+imagination.
+Frenchie’s street code won’t allow him to accept.
+FRENCHIE
+Madame. Fuck you.
+Mallory looks genuinely disappointed.
+MALLORY
+That’s a pity -- for you, but even
+more for --
+(looks at file)
+Cherie and Jay, I believe?
+Fuck. Frenchie swallows.
+MALLORY (CONT’D)
+ADX Florence, it’s a Supermax in *
+Colorado. They got the Unabomber,
+head of the Aryan Brotherhood, all
+the greats. And your friends too, *
+maybe. Or, they go free. But that *
+depends on you. Right now.
+FRENCHIE
+You can’t do that.
+She smiles -- can’t I? -- and starts for the door.
+FRENCHIE (CONT’D)
+Wait!
+She pauses, holding all the cards.
+FRENCHIE (CONT’D)
+What kind of work do you do?
+CONTINUED:11 11
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 14.
+OMITTED12 12 *
+EXT. DAWN OF THE SEVEN SET - BASECAMP - DAYA13 A13 *
+Homelander and Stormfront head past all the talent trailers. *
+He starts to pull her towards his trailer. *
+HOMELANDER *
+Hey -- come into my trailer. Got a *
+surprise for you. *
+STORMFRONT *
+(playful, loving) *
+Gotta swing by the Tower first, meet *
+with my social guys -- *
+HOMELANDER *
+Blow ‘em off. *
+STORMFRONT *
+Be back in twenty, okay? Then you *
+can surprise me. Wherever you want. *
+But Homelander isn’t used to ANY REJECTION WHATSOEVER. *
+HOMELANDER *
+Yeah. I mean, yeah, sure. *
+She kisses him and heads off. Off Homelander. Feeling a *
+little needy and insecure. He steps up into his trailer -- *
+INT. HOMELANDER’S TRAILER - DAY13 13
+-- to REVEAL he was going to surprise her with a special *
+gift... a BANAL VASE OF FLOWERS. Beside it, there’s a pre-
+printed card from the flower company -- “Thanks for a great
+night!” -- carefully signed in pen -- “XO, Homelander.”
+The “great night” was, of course, the two of them killing
+someone and fucking beside their victim’s corpse.
+Homelander looks at the card, smiles, proud. CLOSE ON THE *
+XO. Really feels like he’s nailed this one. He glances at
+the clock. 2:15. She’ll be back soon.
+EXT. FRENCHIE’S VAN - DAY14 14
+Hughie. Looking up at the roof of the VAN --
+Where Butcher is on his belly. With a SNIPER RIFLE.
+Providing COVER, just in case. Looking into the scope --
+HUGHIE
+You see ‘em?
+BUTCHER
+I see ‘em.
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. GOLDENROD - 9/17/19 15.
+SCOPE POV. Annie points her PALM at the FENCE -- A BLINDING
+FLASH THAT FLARES the SCOPE -- blasting man-sized hole in the
+fence, RED METAL sizzling at the edges. She turns, leaves
+them as they SNEAK ONTO THE GROUNDS --
+INTERCUT BUTCHER and that SCOPE POV. He sets the cross-hatch
+target on Annie. Follows her. Thinks very seriously about
+pulling the trigger. But doesn’t. But WE SEE IT -- and it’s
+pretty fucking troubling. His hate for Supes burns deep.
+CONTINUED:14 14
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. GOLDENROD - 9/17/19 15A.
+Frenchie nods. Enters, M.M. and Kimiko behind. Annie peels
+back, returning to the van.
+OMITTED15 15
+INT. SAGE GROVE CENTER - HALLWAY 1/2 - DAY16 16 *
+Mother’s Milk, Frenchie, and Kimiko ENTER FRAME (or through a *
+door) head down a hallway. They spot an empty ROLLING BED. *
+Frenchie pivots to Kimiko. A whisper, maintaining cover --
+FRENCHIE
+Get in.
+She silently mock-imitates him -- ‘get in.’ Just a fuck you.
+He rolls his eyes.
+Frenchie climbs into the bed. Under the sheets.
+M.M. and Kimiko push. Suddenly, they all look like they *
+completely belong. Orderlies and patient. *
+EXT. FRENCHIE’S VAN - DAY17 17 *
+Annie approaches as Butcher hands the sniper rifle down to
+Hughie, as he climbs off the van roof. She reaches out to
+give him a hand.
+ANNIE
+Here.
+He moves past her, without touching her. She drops her hand.
+ANNIE (CONT’D)
+Seriously?
+Butcher heads to the side doors of the van. Annie follows.
+ANNIE (CONT’D)
+What is your problem with me?
+BUTCHER
+I ain’t got no problem with you.
+ANNIE
+That’s why you won’t even touch my
+hand?
+HUGHIE
+Guys, c’mon, not the time.
+ANNIE
+I think it’s exactly the time. I
+think the time is long overdue.
+(to Butcher)
+You know I hate Vought as much as
+you do. But it doesn’t matter.
+CONTINUED:14 14
+(MORE)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 16.
+Cause what you can’t stand is in my
+blood. I’m sub-human to you. Only
+good Supe is a dead Supe, right?
+BUTCHER
+You said it, not me.
+HUGHIE
+That’s enough --
+ANNIE
+You know. Under all that swagger,
+you’re just a bigot and a bully. I
+know a guy just like that. He’s got
+a flag for a cape.
+HUGHIE
+(oh FUCK)
+Annie, stop!
+Butcher. He gives her a homicidal look. A look that says,
+I’m gonna kill you for that one day. Even Annie averts her
+eyes, the look is so scary.
+The tense frozen moment is broken, when -- a sudden CRACKLE *
+RIPPLES overhead -- *
+They all DUCK DOWN -- shit -- STORMFRONT FLIES OVER! *
+Did she see them? Didn’t seem to. Butcher grabs a pair of *
+high-powered BINOCULARS, looks -- *
+STORMFRONT DROPS OUT OF THE SKY BEFORE THE SAGE GROVE *
+ENTRANCE, PLASMA TENDRILS stretching to the ground as she *
+lands. SHE STROLLS THROUGH THE FRONT DOOR -- *
+BUTCHER
+Fuck me. *
+OMITTED18 18 *
+INT. SAGE GROVE CENTER - HALLWAY 3/SECURITY ROOM - DAY19 19
+A UNIFORMED SAGE GROVE SECURITY GUARD oversees a BANK of
+MONITORS. When... a KNOCK on his LOCKED door --
+He heads over, looks through the small window in the door --
+POV. It’s M.M. Frenchie is convulsing in the bed. (Let’s
+make sure it’s not big, but scary and realistic, as these
+things really are).
+MOTHER’S MILK
+Open up, I need help. He’s gonna
+swallow his tongue, now open the
+goddam door!
+The SECURITY GUARD hesitates, then opens the door --
+CONTINUED:17 17
+ANNIE (CONT'D)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 17.
+SECURITY GUARD
+What’s wrong with him?
+That’s the last thing he’ll ever say -- THWIPPTHWIPP! -- *
+Frenchie sits up, FIRES A PISTOL WITH A SUPPRESSOR TIP. The *
+Guard collapses -- *
+Kimiko pulls his dead body into the room. As M.M. pushes *
+Frenchie’s gurney in quickly. Frenchie leaps out of the bed, *
+climbs up on a table, DISABLES the Security Camera in the
+room by pulling its cord out. As M.M. locks the door. A *
+well-oiled machine. *
+Kimiko stares at all the monitors. STUNNED. M.M. and *
+Frenchie soon join her. Soon they’re just as stunned.
+MOTHER’S MILK
+What in the holy fuck?
+REVEAL -- TEN MONITORS. Each showing SECURITY CAMERA FOOTAGE
+of TEN DIFFERENT ROOMS. Clean, white, with HEAVILY LOCKED
+DOORS. Half hospital room, half cell.
+And each room has a BAREFOOT PATIENT. With SUPER POWERS.
+(Remember the security room in “Cabin in the Woods.” All the
+different monsters. This is our wacko version of that.
+Should be a GONZO MOMENT.)
+Some powers seem odd -- for example, one PHASING PATIENT *
+vanishes and reappears uncontrollably in his room, but can’t *
+seem to get out. *
+But others are horrific SUPE FREAKS -- one PATIENT sits in
+his cell, his intestines flowing out of his mouth, squirming
+and beating on the outside of his body. He mumbles
+something, muffled because his mouth is so full.
+Mother’s Milk turns up the audio dial, so we hear --
+INTESTINE BOY
+...someone kill me...
+Another PATIENT VOMITS ACID onto a tray of food, it smokes as
+he leans over and laps it up.
+Another is a heavy-set bearded man, with what seems to be a
+massive, elephantiasis-inflicted penis straining his pants.
+The metal walls in his room are pocked with large dents.
+MOTHER’S MILK
+Whoa, brother’s got a love sausage.
+Kimiko. Staring at a different monitor. A YOUNG WOMAN
+(CINDY) sitting on the floor. Drugged. Head shaved. Arms *
+around her knees. No powers to speak of, but her silence and
+stillness are frightening. She seems to sense Kimiko, looks
+up at the camera -- as if right at Kimiko.
+The two young women seemingly lock glances for an eerie beat.
+CONTINUED:19 19
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 18.
+FRENCHIE
+What is this? Vought’s making more
+Supe Terrorists?
+MOTHER’S MILK
+If they are, they’re doin’ a pretty
+piss poor job.
+M.M. notices another MONITOR. STORMFRONT! Fuck. She enters *
+with a MAN IN SCRUBS (we briefly glimpsed him in ep. 205). *
+They talk to a PATIENT, TIM, who is nimbly making a ball *
+float in the air of its own accord -- *
+FRENCHIE *
+Stormfront is here? Merde! *
+CLOSE ON KIMIKO. WIDE ANGLE, SHALLOW FOCUS. Tense. *
+Stormfront is the SOURCE of her PTSD. M.M. puts a comforting *
+hand on her shoulder. *
+MOTHER'S MILK *
+It’s alright. You’re okay. *
+She nods, grateful -- Frenchie watches, wishes he were a part *
+of it. Wishes he could comfort her. But he can’t. Those *
+days have passed. *
+M.M. turns up the audio on that camera -- *
+STORMFRONT (ON SCREEN)
+...pretty impressive, Tim. Any
+trouble sleeping? Depression?
+TIM (ON SCREEN) *
+No, ma’am. *
+M.M. notices the Man in Scrubs. Give us a pixellated CLOSE- *
+UP on the screen --
+MOTHER’S MILK
+Yo. That dude she’s with, he look *
+familiar to you? *
+STORMFRONT (O.S.) *
+What about nausea? Headaches? *
+TIM (O.S.) *
+No. *
+FRENCHIE
+(he does, but Frenchie can’t
+place it)
+Je ne sais pas. *
+STORMFRONT (ON SCREEN)
+(to the Man in Scrubs)
+That’s promising. I think we’re
+pretty damn close.
+CONTINUED: (2)19 19
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 19.
+TIM (ON SCREEN)
+Ma’am. I’d like to go home now.
+See my family.
+STORMFRONT (ON SCREEN)
+You were admitted to Sage Grove as
+suicidal, Tim. You still may be a
+danger to yourself.
+TIM (ON SCREEN)
+Well. I’m not doin’ anymore of
+these stupid pet tricks until I talk
+to my sister.
+STORMFRONT (ON SCREEN)
+Okay, okay. We’ll sort it out.
+She gives the Man in Scrubs a pointed nod. Then walks out.
+The Man in Scrubs pulls his ZIPPO out of his pocket,
+FLICKS... then CONTROLS the FIRE... he’s a Supe, too! He
+sends a WALL OF FLAME AT TIM -- WHO FALLS BACK, BURNING O.S.! *
+IN THE SECURITY ROOM *
+FRENCHIE AND M.M. watch. Screams of AGONY echo as Tim BURNS *
+ALIVE. GET A CLOSE UP ON FRENCHIE’S FACE. Eyes widening -- *
+The Man in Scrubs, somber at this murder, closes the Zippo. *
+Get CLOSE on its ENGRAVING -- “Titty Committee”. (Remember *
+that detail in 205? It’s the same guy.) *
+Frenchie. About to lose his shit. It’s not so much big as *
+INTENSE -- he’s almost quivering with RAGE. It’s scary.
+Feels dangerous.
+FRENCHIE
+Lamplighter. That’s fucking
+Lamplighter.
+MOTHER’S MILK
+Shhh --
+FRENCHIE
+I didn’t recognize him without the
+mask and hood.
+(realizing)
+The “Elle” on Stormfront’s emails --
+the letter “L,” Lamplighter. We are
+so stupid.
+MOTHER’S MILK
+Take a breath.
+FRENCHIE
+We have to kill him! *
+MOTHER’S MILK
+Just hold on --
+CONTINUED: (3)19 19
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 20.
+FRENCHIE
+We have to. For Madame Mallory.
+For her grandchildren.
+MOTHER’S MILK
+Okay but not yet. Not until we *
+figure out what the fuck all this
+is. Clear?
+A long, long beat. Then Frenchie nods. Clear. He’s a
+professional, after all.
+In QUICK CUTS, they get to work. Pulling all the HARD DRIVES
+from the SECURITY COMPUTERS. (Or whatever electronic proof
+you’d really pilfer from the security room). They pack them
+neatly into the gurney bed. As --
+M.M.’s phone BUZZES -- he answers --
+HUGHIE (O.S.)
+You alright? Stormfront was there!
+INT. FRENCHIE’S VAN - OUTSIDE HOSPITAL - DAY - INTERCUT20 20
+BINOC POV. Hughie, in the passenger seat, sees STORMFRONT *
+exiting. She launches up on a blast of PLASMA --
+MOTHER’S MILK
+That ain’t all who’s here.
+HUGHIE
+(on handless mode) *
+Well, she just left. Get the hell
+out.
+MOTHER’S MILK
+On our way.
+FRENCHIE CLIMBS ONTO the BED, ON TOP of all the devices, then
+they put the sheet over him. Smart way to smuggle shit.
+INT. SAGE GROVE CENTER - HALLWAY 4 - DAY21 21
+A DOCTOR passes. Then --
+M.M. and Kimiko push Frenchie -- and the treasure trove of
+proof -- down the hall, towards the door -- freedom in SIGHT,
+when around the corner --
+Comes LAMPLIGHTER!! Approaching in their direction -- *
+M.M. and Kimiko play it cool. Keep pushing. No worries.
+Nothing to see here. Right past him.
+Did they get away with it? We think so.
+CONTINUED: (4)19 19
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 21.
+But in SLOW, LANGUID MOTION -- Lamplighter happens to look
+down at Frenchie. Who happens to look up at Lamplighter.
+MILK the connection. Lamplighter’s EYES WIDEN.
+LAMPLIGHTER
+You.
+Lamplighter PULLS his ZIPPO LIGHTER from his POCKET.
+Frenchie DIVES from the GURNEY -- FIGHTS HIM for the lighter
+before he has a chance to use it. To Kimiko and M.M. --
+FRENCHIE
+HELP ME!
+Kimiko LUNGES at Lamplighter -- KNOCKING HIM OFF BALANCE -- *
+but too late -- *
+IN SLOW MOTION as Lamplighter flicks the flame... *
+A BILLOWING COLUMN OF FIRE SHOOTS WILDLY FROM THE LIGHTER -- *
+a FLAME THROWER but THICKER -- they and M.M. dive out of the *
+way at the VERY LAST SECOND. It catches an ORDERLY -- *
+MELTING HIM in seconds! -- *
+CONTINUES THROUGH HIM and CRASHES INTO a HIGH SECURITY STEEL *
+DOOR. Blasting open a GAPING HOLE -- *
+SCREAMS from inside the LOCKED ROOMS in the hall. POUNDING *
+ON THE DOORS. Patients are in there that want to get out. *
+Lamplighter rises. Suddenly, he doesn’t seem to care about
+The Boys. He’s SCARED SHITLESS. Eyes on that hole. *
+A long, ominous beat.
+Then out walks CINDY, the young head-shaven woman. *
+LAMPLIGHTER
+Heyyyy, Cindy? Hey there... cool.
+Let’s be cool, okay?
+Cindy just looks at Lamplighter.
+LAMPLIGHTER (CONT’D)
+Remember the extra helping of Kraft
+shells n’ cheese I snuck you? I
+like you. You know that, right?
+CINDY
+...who are your friends?...
+MOTHER’S MILK
+We ain’t his friends! Fuck him up!
+CINDY
+...you’re dressed like his friends.
+I don’t like liars --
+CONTINUED:21 21
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 22.
+We’re not entirely sure what’s gonna happen, but it seems
+like it’s gonna be really BAD -- when --
+BAMBAMBAMBAMBAMBAM! A SAGE GROVE SECURITY GUARD behind Cindy *
+OPENS FIRE into her back! *
+She turns to them.
+Lamplighter quietly starts backing down the hall -- *
+Cindy CLENCHES a hand, makes a fist. *
+And the GUARD is CRUSHED. As if by a massive fist. Every *
+BONE SHATTERED --
+Mother’s Milk, Frenchie, and Kimiko watch, stunned.
+MOTHER’S MILK
+Oh, shit!
+When they notice -- Lamplighter is already hauling ass in the
+opposite direction -- AWAY from Cindy -- AWAY FROM ALL OF *
+THEM -- *
+They also notice -- Cindy pivots back to them -- a sliver of
+her face -- one eye on them. *
+So they haul ass, too -- after Lamplighter -- *
+OFF CINDY -- in the middle of the hallway -- clenching her
+fists again -- as EVERY CELL DOOR on both sides of the
+hallway CRUMPLES IN like TIN FOIL, OPENING --
+ANGLE ON BARE FEET shuffling out of various doors... one pair
+FLOATS... as a DOZEN SUPER POWERED PATIENTS STREAM OUT as an
+ALARM BLARES OUT --
+INT. SAGE GROVE CENTER - HALLWAY 3/OUTSIDE SECURITY ROOM -22 22
+CONTINUOUS
+Lamplighter RACES INSIDE the Security Room -- when Kimiko
+sprints towards him and WEDGES HERSELF in the DOORWAY before
+Lamplighter can close it!
+LAMPLIGHTER
+Let go! They’re coming!
+Kimiko shoves the door open. Lamplighter is thrown back *
+(ACTOR ACTION PLEASE) as Frenchie and M.M. race inside. His *
+lighter skitters across the floor away from him. Kimiko *
+slams the door SHUT behind them.
+INT. SAGE GROVE CENTER - SECURITY ROOM - CONTINUOUS23 23
+The Boys are now trapped with their mortal enemy (and lost
+all their EVIDENCE, btw). Lamplighter scrambles for the *
+lighter, holds it out at Frenchie. *
+CONTINUED: (2)21 21
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 23.
+LAMPLIGHTER
+Stay the fuck back! I’ll burn your
+skin off, asshole --
+Frenchie doesn’t give a shit -- he’s ready to end it all, if
+it means ending Lamplighter -- he aims his pistol -- *
+FRENCHIE
+You won’t get the chance --
+NOISES outside approach down the hallway. The Supe Freaks
+will hear them any second --
+MOTHER’S MILK
+Shut up! They’ll hear you!
+Stow. Your. Dicks!
+When the DOOR STARTS RATTLING --
+GUARD (O.S.)
+HELP! SOMEONE HELP ME!!
+Suddenly, screams of HORRIFIC AGONY -- and the small window
+in the door is COATED IN BLOOD and gummy bits --
+Our heroes stand TOTALLY STILL, listening, praying the freaks
+won’t storm inside -- Lamplighter holds up his lighter,
+Frenchie with his gun, Kimiko poised.
+More HORRIFIC SCREAMS from outside. SQUELCHING.
+Meanwhile, M.M. has been watching the SECURITY MONITORS.
+ON SCREEN. An ORDERLY knocked off his feet as a TENTACLE
+DRAGS HIM SCREAMING BY THE LEG out of frame. (What the fuck
+is THAT?)
+The inmates have taken over the asylum.
+M.M. pivots to Lamplighter. *
+MOTHER’S MILK
+(re: Kimiko)
+Now listen. She’s a Supe. So maybe
+you can burn us, but you’ll just
+piss her off. So how ‘bout we all *
+calm down, live through this *
+motherfucker?
+Frenchie and Lamplighter trade suspicious looks.
+ON THE MONITOR -- ANOTHER ANGLE -- A DOZEN SCREAMING PATIENTS
+POUNDING at a HEAVY LOCKED DOOR (HALLWAY 6) -- one pivots
+back to look at the CAMERA with GLOWING EYES.
+MOTHER’S MILK (CONT’D)
+(re: the monitor)
+What’s going on there?
+CONTINUED:23 23
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 24.
+LAMPLIGHTER
+Lockdown. No one’s getting out.
+(re: Kimiko)
+Not even her.
+MOTHER’S MILK
+There’s gotta be an access code.
+LAMPLIGHTER
+There is, genius, at the door. But
+no fucking way I’m telling you or
+taking you with me. Suck shit.
+MOTHER’S MILK *
+You got a Supe army out there who *
+wanna rip you apart --
+(gestures to Kimiko)
+She can help --
+LAMPLIGHTER
+I’ll take my chances.
+Suddenly the DOOR behind him FLINGS OPEN, LOCK BREAKING! *
+ACID VOMIT GUY BARRELS IN -- TACKLES Lamplighter to the FLOOR *
+-- his ZIPPO KNOCKED AWAY -- *
+LAMPLIGHTER (CONT’D)
+FUCK!
+Vomit Guy PINS Lamplighter down. Lamplighter STRUGGLES but *
+can’t do much, the dude’s STRONG, arms like GRANITE! *
+Frenchie and M.M. aim their guns, but can’t take the shot, *
+not without killing their only ticket out of here. *
+Vomit Guy GAGS TWICE -- like a CAT COUGHING UP A HAIRBALL -- *
+then VOMITS onto Lamplighter -- Lamplighter SQUIRMS his HEAD *
+away, the puke HITS his SHOULDER -- WHICH SMOKES and BURNS! *
+LAMPLIGHTER (CONT’D) *
+AAAAAAHHHH! *
+Vomit Guy leans closer for a KILL SHOT. GAGS TWICE -- here *
+it comes -- when KIMIKO SPRINGS into Vomit Guy!! KNOCKS HIM *
+ON HIS BACK -- as he VOMITS -- but it spurts up into the air *
+and lands directly on his FACE. HE SCREAMS and his FACE *
+SMOKES and BLEEDS as the vomit BURNS and MELTS INTO HIS EYS -- *
+boring through to his brain. Until he’s dead. *
+Everyone watches this horror. A long, long beat. Then -- *
+LAMPLIGHTER (CONT’D)
+Okay, you guys can come. *
+OMITTED24 24 *
+OMITTED25 25 *
+OMITTED26 26 *
+CONTINUED: (2)23 23
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 25.
+OMITTED27 27 *
+INT. SAGE GROVE CENTER - SECURITY ROOM - DAYA28 A28
+SLAM! -- Mother’s Milk SMASHES the SECURITY CONSOLE CONTROLS *
+with a FIRE EXTINGUISHER. THE MONITORS FRITZ TO BLACK. He *
+makes sure there’s no record of them ever being there -- *
+They peek out the door to make sure the coast is clear... *
+then sneak out... leaving a dead, bloody Vomit Guy behind... *
+INT./EXT. VAN - FIELD OUTSIDE HOSPITAL - DAYB28 B28 *
+INSIDE THE VAN. Hughie still watches the hospital with *
+binocs, stunned, through the windshield as -- *
+BEDLAM. A BLUE SUPER-POWERED ENERGY BURST inside one
+unbroken supe-proof WINDOW. A blood splat against ANOTHER. *
+HUGHIE
+What the fuck??
+EXT. FIELD OUTSIDE HOSPITAL - DAYC28 C28 *
+OUTSIDE THE VAN. Annie watches the windows. Butcher has *
+been trying to get ahold of M.M., tries again. *
+BUTCHER *
+Bloody hell, M.M., pick up! *
+When they pivot to see -- a young, skinny, haggard PATIENT. *
+Must’ve gotten out before the lockdown.
+BUTCHER (CONT’D)
+Hello. Easy, son. No trouble from *
+us, you just stroll on by, yeah? *
+PATIENT
+(near tears)
+I don’t want them to hurt me again.
+BUTCHER
+No one’s gonna hurt you, lad. We’re
+your mates, ain’t we?
+Long beat. Then the Patient nods slowly. Yeah, okay. Just
+as Butcher and Annie breathe a sigh of relief --
+OVERHEAD SHOT. The Patient clenches, unleashing a CIRCULAR
+ENERGY PULSE that widens like a ripple in a pond. Kicking up
+DIRT and DUST. Swatting Butcher and Annie to the ground,
+HARD. And ROLLING the VAN ON ITS ROOF --
+From the dirt -- Annie looks up, horrified, to see --
+BANGBANGBANG! The guy’s chest EXPLODES with gunfire.
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 26.
+REVEAL -- Butcher on the ground. Unloading his pistol into
+him. The Patient drops. Dead.
+Annie stands. Eyes on the bloody Patient. Couldn’t be more
+than 18. But her grim reverie is broken when --
+BUTCHER (CONT’D)
+Gimme a fuckin’ hand!
+The van is UPSIDE DOWN. Butcher SLIDES OPEN the SIDE DOOR,
+Annie quickly joins him, pulling a dazed Hughie out --
+ANNIE
+Hughie. You alright?
+He looks at her. Nods. Then crumples. There’s a JAGGED
+METAL FRAGMENT jutting out of his abdomen. It’s really bad.
+Hughie collapses.
+ANNIE (CONT'D)
+Hughie! BUTCHER
+Hughie, fuck!
+They drop to their knees around him. Inspect the wound.
+Blood begins to flow. Too much blood. Way too much.
+ANNIE
+Oh no oh no.
+BUTCHER
+Can you cauterize it?
+Annie holds up her hand. CAN’T make it glow. *
+ANNIE
+The kid must’ve fried everything. I *
+gotta draw the power from somewhere. *
+BUTCHER *
+Well, you got a useless fuckin’ *
+superpower, dontcha? *
+Butcher looks down at Hughie. There’s only one choice. *
+BUTCHER (CONT’D)
+We gotta get him to a doctor.
+ANNIE
+Where? How?
+BUTCHER
+Well, we ain’t gonna just fuckin’ *
+sit here and watch him bleed out! *
+ANNIE
+What about the others?
+Butcher lifts up Hughie -- *
+CONTINUED:C28 C28
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND WHITE - 9/18/19 27.
+BUTCHER
+They’ll have to sort themselves.
+Come on.
+Together, they shoulder an unconscious Hughie, as fast as
+they can, across the field... both trying to repress their
+OUTRIGHT TERROR at the possibility of losing Hughie...
+INT. HOMELANDER’S TRAILER - DAYD28 D28
+The clock. 4:15.
+Homelander waits. Stormfront is very, very late. He stares
+at the banal flowers. At his card. “XO, Homelander.” It *
+all seems so ridiculous now. So pathetic.
+XO? He’s stupid. Weak to go out on a limb like this. Hates
+himself more than he hates her. XO!?
+Off his twisting expression --
+EXT. BASECAMP - DAY - LATERE28 E28
+CAMERA FINDS: A PAIR OF FIREMAN BOOTS step over -- the
+charred remnant of the card -- “XO, HOMEL”
+CREW watch as FIRETRUCKS and FIREMEN hose down Homelander’s
+trailer. Extinguishing the raging fire that engulfed it.
+Mostly embers and charcoal by now.
+Ashley sits with an EMT, being treated for smoke inhalation. *
+She takes off her mask long enough to ask DEANNA -- business *
+above health always -- *
+ASHLEY *
+Really, no one’s seen Starlight yet? *
+HIGH POV of the chaotic scene. Then we reveal --
+Homelander watches from atop the Dawn of the Seven backdrop. *
+A combustible mix of emotions. Insecurity. Petulance. *
+STORMFRONT (O.S.)
+Been looking everywhere for you.
+Stormfront steps up. Looking over at the smoking trailer.
+STORMFRONT (CONT’D)
+What happened to your trailer?
+HOMELANDER
+Oh. Electrical fire. How was your
+meeting?
+She gives him a look. Can tell he’s lying.
+STORMFRONT
+Sorry, it went long.
+CONTINUED: (2)C28 C28
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 28.
+HOMELANDER
+You don’t have to apologize. So I’m
+gonna go run lines with Noir. Scene
+43 tonight. Real magilla.
+He’s a little stiff. Stormfront senses it --
+STORMFRONT
+What’s wrong?
+HOMELANDER
+Nothing.
+STORMFRONT
+You sure?
+HOMELANDER
+Why would anything be wrong?
+He heads off, with as much dignity as he can muster. But he
+can’t help himself. His insecurity overwhelms him. He
+pivots back around --
+HOMELANDER (CONT’D)
+Oh, by the way? I went to the
+Tower. You weren’t there. No one
+knew where you were.
+STORMFRONT
+You were -- checking on me?
+HOMELANDER
+I was checking to see how your
+meeting went. But it’s fine.
+STORMFRONT
+Hold on. Just let me --
+He steps forward. For a flash -- we see what a Homelander
+SCORNED looks like. Anger and hurt and violence. It should
+scare the ever loving SHIT out of us. He lightly brushes his
+hand over her throat. Then --
+HOMELANDER
+Explain? Why would you have to
+explain anything?
+He walks off. Off Stormfront -- actually RATTLED for the
+first time. Which for her, is something. *
+OMITTED28 28 *
+INT. SAGE GROVE CENTER - HALLWAY 5 - DAYA29 A29
+Heads on swivel, M.M., Frenchie, Kimiko and Lamplighter. *
+Walk down a hall. Over a MUTILATED ORDERLY CORPSE, face down *
+in a big pool of blood. Lamplighter, still nursing his acid- *
+burnt SHOULDER, stops at a particular ROOM -- *
+CONTINUED:E28 E28
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 29.
+LAMPLIGHTER
+C’mon, in here.
+INT. SAGE GROVE CENTER - MEDICAL SUPPLY ROOM - DAY29 29
+They lock the door behind them -- as Lamplighter moves to the
+antiseptic and gauze to wrap himself up.
+CLOSE ON FRENCHIE. He looks around like Moses looking at the
+Promised Land: the room is STACKED FULL OF DRUGS!
+SHELVES AND SHELVES of PILLS, LIQUIDS, you name it. (All pad-
+locked. Also syringes, oxygen tanks, brooms, wheelchairs.) *
+GIVE US CLOSE-UPS of ALL THE PILLS for Frenchie’s reaction -- *
+FRENCHIE
+(in awe)
+It’s so beautiful.
+He immediately inspects all the goodies as -- *
+Lamplighter grabs supplies. Dresses, bandages his SHOULDER. *
+MOTHER'S MILK
+What the hell’s going on anyway?
+(Lamplighter looks at him)
+Juicing people with Compound V, only
+to roast ‘em alive? Why? And why
+are you here?
+LAMPLIGHTER
+Maybe I just like watching people
+burn.
+Lamplighter looks at Frenchie. Frenchie stops examining the *
+drugs, looks back at him. It’s loaded as fuck. *
+LAMPLIGHTER (CONT’D)
+I remember you, y’know. You were
+tailin’ me the night I torched those
+kids.
+M.M. clocks Frenchie’s guilt and anger roiling within.
+MOTHER’S MILK
+Frenchie...
+LAMPLIGHTER
+Why didn’t you stop me? Maybe you
+like watching people burn, too.
+FRENCHIE
+FILS DE PUTE!
+Frenchie charges him -- M.M. has to work like a MOTHERFUCKER
+to pull him back -- Lamplighter grins, he wants it --
+CONTINUED:A29 A29
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 30.
+MOTHER'S MILK
+NO! Stop it!
+Finally, Frenchie twists free. Tries to catch his breath.
+Push down his anger -- but more than that -- his ANGUISH.
+Kimiko watches him. With some empathy. She’s never quite
+seen him like this.
+Off Frenchie, MATCH CUT TO:
+INT. RUN DOWN WAREHOUSE - NIGHT - FLASHBACK30 30
+FRENCHIE’S FACE. Staring at a gorgeous engagement ring in
+M.M.’s hand.
+CHYRON: 5 YEARS AGO
+FRENCHIE
+Mon dieu...
+MOTHER'S MILK
+I don’t wanna hear nothing about
+getting tired of the pussy. I love *
+her. *
+Beat. Then Frenchie surprisingly hugs him. M.M. grins.
+We’ve never seen such warm camaraderie between these two.
+They used to be very good friends.
+Mallory steps up. A small smile on her face. She carries a
+TABLET COMPUTER to be used a bit later.
+MALLORY
+Congratulations, Marvin.
+MOTHER’S MILK
+Thank you, Colonel.
+FRENCHIE
+Oh, the bachelor party I will throw
+you. What are your feelings about
+transgender strippers?
+MOTHER’S MILK
+Strippers ain’t my kinda Hershey’s,
+with or without nuts. I was
+thinking a golf trip maybe.
+FRENCHIE
+You’re a fucking monster.
+Mallory stifles a smile. Enjoys the camaraderie of her men.
+Meanwhile, an intense Butcher at the window, all business.
+BUTCHER
+He’s here.
+CONTINUED:29 29
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 31.
+Butcher cocks the hammer on a 9mm at his side. The Boys
+position themselves behind Mallory. Game faces on.
+ENTRANCE. AN ORANGE FLICKERING GLOW approaches, growing
+steadily brighter. LAMPLIGHTER enters. Sharp. Trim.
+Wearing his supersuit and carrying his renowned LIT STAFF.
+He posts before them in all of his Seven glory --
+THE BOYS SNICKER. It’s contagious. Even Mallory has to
+clear her throat and look away.
+LAMPLIGHTER
+What?
+BUTCHER
+Sorry, mate. You just look like one
+a’ them poncy baton twirlers.
+MOTHER’S MILK
+Majorettes.
+BUTCHER
+Right. A majorette.
+Mallory shows Lamplighter the TABLET. FLICKS through some
+images. We don’t see the images, but the blood drains from
+his face.
+MALLORY
+So here’s what happens now. You’re
+going to tell us every single thing
+you see and hear at the Tower.
+BUTCHER
+Especially when it’s about
+Homelander.
+Mallory shoots Butcher a “shut up” look. Butcher looks back,
+defiant. When it comes to Homelander -- whatever it takes.
+Lamplighter. Fury in his eyes. The intensity of the torch
+increases -- Butcher grips his gun. Frenchie glances at M.M.
+Tense. But Mallory remains cool.
+MALLORY
+Please don’t pretend like you have a
+choice.
+(hands him a card)
+I look forward to your call.
+A moment. Lamplighter takes the card, storms out. Butcher
+smiles, pleased with himself --
+BUTCHER
+What’d I say? Easy peasy.
+Mallory drops her bravado.
+CONTINUED:30 30
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 32.
+MALLORY
+I don’t like it. You don’t back an
+animal like that into a corner.
+BUTCHER
+Fuck him. We own his arse.
+MALLORY
+Frenchie. Keep an eye on
+Lamplighter. Don’t let him outta
+your sight.
+FRENCHIE
+Oui, madame.
+Frenchie nods, heads out. Off this --
+EXT. RURAL ROAD - DAY - PRESENT31 31
+Country road, lined with thick trees on both sides. A
+Hyundai SEDAN rolls around the corner, BRAKES in front of --
+Annie. Stepping into the road, waving her hands.
+The driver -- businessman DENNIS, 40, loosened tie and blazer
+-- rolls down the window --
+DENNIS
+What’s the trouble, miss?
+ANNIE
+Sir, I need you to step out of your
+car please.
+DENNIS
+What’re you talking about?
+Butcher steps up. Arm around a bleeding Hughie -- GUN
+conspicuously at his side.
+BUTCHER
+FBI. Need to commandeer your
+Hyundai. Bit of an emergency.
+DENNIS
+Jesus. What happened to him?
+BUTCHER
+Long story, that.
+Dennis climbs out --
+DENNIS
+Can I see some I.D.?
+BUTCHER
+In my other pants, too busy saving *
+this one, but you can ring my boss -- *
+CONTINUED: (2)30 30
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. GREEN PAGES - 9/15/19 33.
+DENNIS
+Look, I’ll take you to the hospital.
+But it’s the middle of nowhere, I’m
+not giving you my car. *
+Butcher. A beat of resignation. *
+BUTCHER *
+Alright. Have it your way. *
+Butcher carefully sets Hughie down against a tree. Then *
+approaches. Menacing. Gun at his side. *
+ANNIE
+(cool it)
+Butcher, no. Listen, sir -- *
+When Dennis PULLS a GUN from his GLOVE BOX -- LUNGES from the
+car for a cleaner shot -- he’s TERRIFIED --
+DENNIS
+Just stay back!
+ANNIE
+Whoa, that’s not necessary. Let’s
+just talk!
+DENNIS *
+FBI. Get real. You’re not even
+American! Is he even really hurt?
+This some scam?? *
+The situation spins further and further out of control. *
+BUTCHER *
+If I wanted to nick some wheels, it *
+wouldn’t be a fuckin’ Hyundai. *
+DENNIS
+This is a stand your ground state.
+Stay back!
+BUTCHER *
+You stand where you want. *
+ANNIE
+Butcher, stop. Buddy, put the gun
+down!
+Butcher keeps approaching --
+DENNIS
+I said stay back!
+ANNIE
+I said put it down!
+CONTINUED:31 31
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. GREEN PAGES - 9/15/19 34.
+CLOSE ON ANNIE. She can see -- CLOSE ON DENNIS. CLOSE ON
+HIS TRIGGER FINGER. He’s about to FIRE --
+His Hyundai headlights suddenly FLARE -- as she HOLDS OUT her
+HANDS and BLASTS HIM BACK --
+CONTINUED: (2)31 31
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. GREEN PAGES - 9/15/19 34A.
+Dennis sails through the air, CRACKS his head hard on the
+pavement. Blood starts pooling beneath him.
+Annie rushes over. Checks his pulse. Tries to rouse him.
+Butcher SNAGS Dennis’ KEYS from his hands. Moves to Hughie,
+loads him into the back seat.
+CLOSE ON ANNIE. PUSH IN. Her frozen stillness.
+ANNIE (CONT’D)
+He’s dead. You couldn’t just listen
+to me and stay back??
+BUTCHER
+Come on! You can cauterize it!
+Annie. Leaves Dennis there, a murder in the road.
+Heads to the open back door, where Hughie lays. Beside an
+EMPTY BABY SEAT, strapped in the back. Annie takes it in.
+The things she has to do. The depths she has to go. Then --
+She reaches out her HAND. The LIGHTS inside the CAR PULSE,
+the RADIO FRITZES with static -- as she presses her now
+GLOWING HAND against Hughie’s wound. We HEAR his FLESH
+SIZZLE. Even unconscious, he SCREAMS.
+Annie struggles with seeing him like this.
+Her power finally dims and goes out. The bleeding’s stopped.
+BUTCHER (CONT’D)
+It won’t hold long. Come on.
+Butcher jumps in the driver’s seat, she hops in the
+passenger’s seat.
+Even Butcher knows better than to fuck with her right now.
+BUTCHER (CONT’D)
+(quietly)
+Thank you.
+This doesn’t make Annie feel any better. Not by a longshot.
+She watches Dennis’s face-down body in the SIDE MIRROR as
+they leave it behind.
+OMITTED32 32 *
+CONTINUED: (3)31 31
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 35-36.
+OMITTED33 33 *
+INT. SAGE GROVE CENTER - MEDICAL SUPPLY ROOM - DAY34 34
+CRASH! Frenchie’s elbow SMASHES the glass of a MEDICINE
+CABINET. Starts stuffing them into his pockets --
+MOTHER’S MILK
+This really the time to go shopping?
+Frenchie checks out the drug labels.
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 37.
+FRENCHIE *
+One, why not? And two, this is good *
+news. Perhaps we won’t have to *
+fight anyone. *
+MOTHER’S MILK *
+What do you mean? *
+FRENCHIE *
+With some aerated propofol, some *
+other odds and ends? I make a *
+knockout bomb. Even for Supes. *
+M.M. reacts, it’s a smart idea. Lamplighter keeps his *
+distance. Tension between them still thick. Plays with his *
+‘Titty Committee’ ZIPPO. Click. Click.
+Frenchie eyes him as he selects PILLS, CHEMICALS, GLASS *
+CONTAINERS. Sets up a make-shift lab. Something burns on *
+his mind. Then... finally decides to say it.
+FRENCHIE (CONT’D)
+Why are we still alive?
+LAMPLIGHTER
+Dumb luck. *
+FRENCHIE
+Non. I mean that night. We went *
+underground for months, but you
+never came for us. Not you, not
+Homelander, no one. Why?
+LAMPLIGHTER
+What, you’re disappointed we didn’t
+kill you?
+FRENCHIE
+The Seven always retaliate.
+Lamplighter’s hiding something he wants to keep buried. He
+grows annoyed. His Zippo. Click. Click.
+LAMPLIGHTER
+You’re nobodies. You weren’t worth
+it.
+Frenchie looks up at Lamplighter as he realizes --
+FRENCHIE
+You never told them, did you?
+A moment. Lamplighter clearly grows uncomfortable.
+FRENCHIE (CONT’D)
+Why wouldn’t you tell them?
+LAMPLIGHTER
+Who says I didn’t?
+CONTINUED:34 34
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 38.
+FRENCHIE
+I figured you’d boast about it.
+Must’ve found it thrilling.
+Lamplighter shifts. Increasingly uncomfortable. Does NOT
+want to keep talking about this. Clickclickclick.
+LAMPLIGHTER
+I’m not an animal.
+FRENCHIE
+Only an animal would do what you
+did.
+LAMPLIGHTER
+Just fucking drop it, okay?
+FRENCHIE
+You murdered innocent children --
+LAMPLIGHTER
+(getting hotter)
+Shut the fuck up --
+FRENCHIE
+You watched them burn alive, crying
+for their Mama -- if that’s not an
+animal, then what --
+LAMPLIGHTER
+(finally blurts out)
+I didn’t know!
+(then quieter)
+I didn’t know they were in the bed.
+I thought it was your boss. Wasn’t
+until I heard them screaming... but
+by then it was too late.
+For the first time Frenchie, SHOCKED, sees Lamplighter as far
+more complicated than he imagined. But M.M. doesn’t care --
+MOTHER’S MILK
+You didn’t mean to? We should feel
+bad for you? Fuck you.
+LAMPLIGHTER
+I don’t want anything from you.
+(to Frenchie, in real and
+genuine pain)
+I saw you following me that night.
+Then you disappeared. I keep asking
+myself, why didn’t you stop me? Why
+didn’t you?
+M.M. shoots Frenchie a simmering look.
+MOTHER’S MILK
+Good question.
+CONTINUED: (2)34 34
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 39.
+Kimiko watches, sympathetic -- as Frenchie IN ANGUISH stares *
+at M.M. and Lamplighter. His guilt crushing him down.
+EXT. MEATPACKING DISTRICT - NIGHT - FLASHBACK35 35
+MATCH CUT TO Frenchie sticking to the shadows and watching
+Lamplighter (still in costume) entering an extravagant RED *
+CARPET ART GALA. He holds hands with a beautiful model -- *
+his date for the night. The crowd roars. Paparazzi flash *
+their cameras. Lamplighter grins a Tom Cruise smile.
+VMMMT... VMMMT... -- Frenchie glances at his phone. CHERIE’s
+face appears giving the camera a middle finger. He sends it
+to VM. It buzzes again: Cherie. Merde. Answers --
+FRENCHIE
+Cherie, this’s not a good --
+CHERIE
+(crying)
+He’s dying!
+FRENCHIE
+Quoi?
+CHERIE
+Jay’s OD’ing. I don’t know what he
+took. Please!
+Frenchie tries not to raise his voice.
+FRENCHIE
+Take him to the hospital.
+CHERIE
+Serge! Fucking come! Now!
+Frenchie watches Lamplighter and the model enter the gala. *
+Checks his watch. Considers.
+INT. SEEDY CHELSEA APARTMENT - NIGHT - FLASHBACK36 36
+CLOSE ON Frenchie slapping Jay’s face. He lies unresponsive
+on the floor. Cherie paces, distraught.
+Frenchie empties a HYPODERMIC NEEDLE into Jay’s abdomen. A
+bottle of Naloxone Hcl is at his side. Gives Jay mouth to *
+mouth. Jay stirs barely. Spittle on the side of his mouth.
+(This isn’t Pulp Fiction -- it isn’t sexy, there’s no
+dramatic gasp.) His eyes barely open.
+FRENCHIE
+Jay, c’mon, mon ami. You’re okay.
+You went out. Can you sit up?
+Frenchie helps Jay lean on the couch. Drug paraphernalia
+lies everywhere in the unkempt room. This isn’t the Jay we
+first met. He looks around, groggy. Cherie hugs Frenchie --
+CONTINUED: (3)34 34
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 40.
+CHERIE
+Oh my God!
+But Frenchie glances at his watch, start’s packing up.
+FRENCHIE
+Stay with him. Keep him up. Keep
+him talking.
+CHERIE
+Where’re you going?
+FRENCHIE
+I told you, I’ve got something...
+CHERIE
+More important than this? Us?
+FRENCHIE
+Cherie, I cannot do this right now.
+CHERIE
+Fine, then go. Go! We don’t give a
+shit.
+Frenchie looks at her with guilt, but he can’t stay.
+JAY
+...Serge?
+Frenchie turns to his old friend, gives him a weak and
+heartbroken smile.
+FRENCHIE
+I’ll come back. Je promets.
+EXT. RURAL ROAD - DAY - PRESENT37 37
+The Hyundai SCREAMS down the road. Pushing 90 mph.
+INT. HYUNDAI - MOVING - DAY38 38
+Butcher drives, tense. Annie in the back, beside Hughie. At
+least he’s not bleeding anymore. But he quietly moans. A
+fever. Infection starting to set in. Annie reaches over,
+feels Hughie’s head.
+ANNIE
+He’s burning up.
+BUTCHER
+Going as fast as I can.
+Butcher. Annie. Riding in silence. Butcher looks over at
+her. Beat. Then --
+BUTCHER (CONT’D)
+Appreciate what you did back there.
+CONTINUED:36 36
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 41.
+ANNIE
+Thanks. Your approval means
+everything to me.
+BUTCHER
+And some sarcasm to stick the
+landing. Nice one.
+(long beat of silence) *
+You didn’t have a choice. *
+Annie meets his gaze, steely --
+ANNIE
+I know. Know what I was thinking,
+looking at him? “Why’d you pull a
+gun, you stupid fuck?” That’s all.
+Maybe once I would’ve cried for him,
+but not anymore. Now he was just
+another person in our way.
+Butcher throws her a long look. Maybe even impressed --
+BUTCHER
+Huh.
+ANNIE
+No.
+BUTCHER
+No what?
+ANNIE
+No to that fucking look of quiet
+respect or approval or whatever it
+is. I don’t want it. We’re nothing
+alike. Nothing.
+Off Annie -- she doth protest too much. Fact is, she is
+growing calloused, maybe a bit like Butcher. But hates it --
+INT. CHURCH OF THE COLLECTIVE RENEWAL CENTER - DAY39 39
+OPEN ON A PHOTO PORTRAIT ON THE WALL. Church of the
+Collective Chairman ALASTAIR ADANA. Looking thoughtful.
+Then PULL BACK to REVEAL the real ADANA. He’s impeccably
+dressed in a fine suit and tasteful Rolex.
+WIDE SHOT. Adana is with Deep and A-Train. In an ornate
+DINING ROOM. They’re the only ones in here, save an
+ATTENTIVE CHURCH OF THE COLLECTIVE WAITER -- wearing what
+looks like CREAM LINEN PAJAMAS. (Inside the Church walls,
+these are the uniforms). He serves steak, spoons Bernaise.
+ALASTAIR
+Poor Phillip here lost his wife to
+breast cancer.
+CONTINUED:38 38
+(MORE)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND WHITE - 9/18/19 42.
+But after four levels of our
+“Renewal” study course? Just look *
+at him now.
+DEEP
+Congrats, man.
+Phillip gives a shaky smile, still fragile.
+They all have Frescas. Alastair sips from his.
+ALASTAIR
+Deep, your numbers among women have
+been ticking up quite nicely. Did
+you catch Malala Yousafzai’s Tweet?
+Called you a sweetheart.
+DEEP
+She’s the sweetheart.
+Alastair turns to A-Train, who’s still eating.
+ALASTAIR *
+So what’s on your mind, A-Train? *
+A-TRAIN
+Hmm. Well, Mr. Adana. I mean, Deep *
+invited me here. Having a, I don’t
+know, a real nice lunch.
+Alastair nods, maintaining his warm smile.
+ALASTAIR
+And Deep? What’s on your mind?
+DEEP
+I think A-Train has sabotaged me my
+entire career.
+A-Train looks at Deep, dumbstruck.
+A-TRAIN
+...What?
+DEEP
+You think you’re better than me. I
+fantasize about drowning you, you
+know that? Over and over again.
+And I don’t want to have that
+feeling anymore. I wanna be clean.
+ALASTAIR
+Oh boy. Looks like we got ourselves
+a good old Truth Exchange.
+A-Train stands.
+CONTINUED:39 39
+ALASTAIR (CONT'D)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 43.
+A-TRAIN
+Uh, hell no.
+ALASTAIR
+Please sit down.
+A-TRAIN
+I’m a Baptist, okay -- I saw that
+documentary about y’all -- this
+ain’t my shit --
+As he goes, Alastair calls after him --
+ALASTAIR
+For a man in seven figure debt, a
+heart condition, and in heavy
+withdrawal, you really have the
+luxury to get up and leave?
+A-TRAIN
+How do you know that?
+(re: Deep)
+He fucking tell you that?
+ALASTAIR
+No. The Church knows all kinds of
+things. But don’t worry, we also
+know how to be discreet, especially
+for our members.
+(then)
+They’re gonna give Shockwave your
+uniform, you know. Call him the
+next A-Train.
+A-TRAIN
+They can’t do that.
+ALASTAIR
+Why not? A-Train is a trademark.
+You are just another nobody from the
+South Side of Chicago.
+A-TRAIN
+Fuck you!
+ALASTAIR
+I can help. With this Congressional *
+Hearing, Stan Edgar’s gonna need a *
+united Seven. I can get you back
+in. But first? Sit down. And let
+Deep tell you his truths.
+A moment. A-Train sits, looks at Deep, who needs this
+exchange. Alastair smiles encouragingly.
+ALASTAIR (CONT’D)
+See how much progress we’re making?
+CONTINUED: (2)39 39
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 44.
+INT. SAGE GROVE CENTER - MEDICAL SUPPLIES ROOM - DAY40 40
+Frenchie works his magic. Aerates a solution of pulverized *
+pills and liquid with a nebulizer, then -- *
+Attaches it to an OXYGEN TANK. Dumping the contents in, *
+completing the knock-out bomb. *
+REVERSE TO REVEAL -- Mother’s Milk, Kimiko, even Lamplighter *
+stare at Frenchie’s work with a mixture of awe and fear. *
+LAMPLIGHTER *
+(skeptical) *
+You really think this is gonna work? *
+FRENCHIE *
+I think so. *
+They regard each other. Brought together again by fate. *
+Both men silently wrestling with thoughts of guilt and *
+regret. Until an expression on Lamplighter’s face. Fuck it. *
+LAMPLIGHTER *
+...they’re not trying to make Supes
+here, these people are only test *
+subjects. They’re just trying to
+stabilize the V.
+MOTHER’S MILK
+Stabilize? What do you mean?
+LAMPLIGHTER
+Infants handle it best. But adults?
+Well, you saw. Sometimes you get
+powers. Sometimes you get --
+freaks, sometimes you just explode.
+Vought wants to stabilize it. So
+you stick the V in any adult arm,
+anytime, anywhere, you get a solid
+Supe, solid powers.
+M.M. and Frenchie lock eyes. Jesus Christ. Milk this. This
+is a HUGE SCARY REVEAL.
+MOTHER’S MILK
+(holy fucking shit)
+A thousand more Supes, a hundred
+thousand? Why? Fucks their movies,
+their merchandising --
+LAMPLIGHTER
+They don’t tell me. They just make
+me burn the evidence, y’know?
+Lamplighter quiets. Genuinely tortured. Frenchie looks at
+him. Shocked to find the two of them have much in common.
+If Lamplighter opened up... Frenchie thinks he should, too...
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 45.
+FRENCHIE
+...my best friend was ODing and I
+left to save him that night.
+(Lamplighter looks at him)
+Why I didn’t stop you. You were at
+a party. I was away for 30 minutes. *
+Came back, you were gone.
+M.M. leans forward. He didn’t know. Neither did Kimiko.
+LAMPLIGHTER
+Did he live? Your friend?
+FRENCHIE *
+Oui. But I never saw him again. *
+Then he died a few months later. *
+Another overdose.
+MOTHER’S MILK
+You serious? Why didn’t you tell *
+us?
+FRENCHIE
+What difference would it make?
+MOTHER’S MILK
+All these years... we woulda let you
+off the hook.
+FRENCHIE
+What makes you think I want to be
+let off the hook?
+They all look at Frenchie with sympathy. Even Kimiko.
+Especially Kimiko. They’ve had such a chasm between them
+lately. Now she understands him better than she ever has.
+The emotional moment is abruptly shattered when --
+SMASH -- a THICK GLISTENING TENTACLE DARTS through a DOOR *
+WINDOW, WRAPS AROUND M.M.’s neck! SLAMS him against the *
+doorway. Strangling him! He CLAWS AT IT -- frantically *
+TUGGING AT IT! Back and forth! *
+FRENCHIE (CONT’D)
+Merde!
+Frenchie tries to RIP at the tentacle -- no good!
+Lamplighter doesn’t have a clean shot to burn it!
+So Kimiko DIVES OUT of the ROOM -- we hear a THUMP, a SHOUT
+of PAIN -- and the TENTACLE suddenly drops to the floor. *
+Weaves up to the door, exits. *
+M.M. gasps for air -- they move to the door to see --
+THE BIG BEARDED DUDE. On the floor. Out cold. With “BOSSY”
+embedded in blood on his face.
+CONTINUED:40 40
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 46.
+The tentacle retracts -- up his pajama leg --
+MOTHER’S MILK
+Wait. Was that -- ??
+FRENCHIE
+It’s okay.
+MOTHER’S MILK
+Was that his fucking dick??
+FRENCHIE
+Don’t be so closed-minded. Let’s
+go.
+Frenchie GRABS the oxygen tank and bolts out -- with a
+disturbed M.M., Kimiko and Lamplighter following...
+INT. SAGE GROVE INSTITUTE - HALLWAY 6 - CONTINUOUS41 41
+They move down the HALLWAY -- rounding a CORNER --
+LAMPLIGHTER
+We’re here.
+UP AHEAD. THE DOOR. With a KEYPAD at the side. They made
+it! When --
+CINDY steps out of a stairwell. Between them and the exit.
+Looking at them, chin down, eyes up. *
+MOTHER’S MILK
+Oh fuck!
+They immediately RETREAT -- DIVING into a SIDE ROOM --
+IN THE ROOM. Frenchie unscrews the NOZZLE on the OXYGEN TANK
+-- HURLS IT OUT THE DOOR, SLIDING across the floor to Cindy --
+But she clenches her fist -- SCRUNCHING it into a tight ball *
+of twisted metal. And is otherwise UNHARMED -- *
+MOTHER'S MILK *
+You said that shit would work!
+FRENCHIE
+I said I thought it would!
+They BACK AWAY. No other exit out of the room.
+IN THE HALL. CINDY approaches. Closer. Closer. No escape.
+INTERCUT our HEROES with CINDY, build some suspense. When --
+SUDDENLY -- PURPLE PLASMA TENDRILS suddenly LASH OUT --
+WRAPPING TIGHTLY AROUND CINDY’S ARMS AND TORSO --
+CONTINUED: (2)40 40
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 47.
+As Stormfront ENTERS through the NOW OPEN DOOR -- she opened
+it from the outside. Out of the frying pan...
+CINDY SCREAMS -- as it wraps around her, then she crumples to *
+the floor, unconscious.
+STORMFRONT
+Lamplighter?? You here??
+IN THE ROOM. Lamplighter and The Boys trade frightened
+looks. Don’t go out there, man. PLEASE. But then --
+LAMPLIGHTER
+I’m here!!
+NO! They’re dead meat. He steps out of the room --
+Kimiko. Quells her PANIC. It’s SO UNLIKE her to feel fear.
+But she feels it now. (Let’s see a PTSD WIDE ANGLE). *
+Frenchie takes her arm. Trying to calm her. They do their
+best to hide, perhaps behind a desk. But it’s futile.
+Play this next nail-biting moment from The Boys’ POV.
+Stormfront and Lamplighter are JUST OUTSIDE THE OPEN DOOR.
+The Boys. Tense. Will Lamplighter turn them in? Is this
+it? If so, they’re ready to fight to the gory end.
+STORMFRONT
+I just killed six subjects out there
+like a fucking Teddy Bear picnic.
+What the hell happened?
+Long beat. Lamplighter. Genuinely intimidated by
+Stormfront. What’s he gonna say?
+The Boys. Moments away from certain death.
+LAMPLIGHTER
+(finally)
+Dr. Carlton got the propofol dose *
+wrong again. So Cindy got loose,
+freed a bunch of the others. Some
+of them musta got out before the
+lockdown.
+STORMFRONT
+Where’s Dr. Carlton?
+LAMPLIGHTER
+In the cafeteria. And the hallway.
+And some on the walls.
+Long, loooong beat. Will she buy it?
+CONTINUED:41 41
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 48.
+STORMFRONT
+Clean up this mess. I’ll go see who
+else is loose.
+LAMPLIGHTER
+Yes, ma’am.
+She turns, heads off.
+Frenchie, M.M., Kimiko. Rising from their hiding spot in the
+room. Sharing an exhausted, grateful look with Lamplighter.
+As CAMERA FINDS -- the spot on the floor where Cindy was.
+Only she’s not there anymore. She’s GONE...
+INT. MEDICAL CLINIC - DAY42 42
+A sleepy, small town MEDICAL CLINIC. Probably one Doctor on
+call. A NURSE listlessly on-line shops for SHOES. When --
+The DOOR BURSTS OPEN -- Butcher and Annie drag in a feverish
+Hughie, shirt drenched in blood.
+BUTCHER
+We need help!
+INT. MEDICAL CLINIC - DAY - LATER43 43
+Hughie. Still unconscious. Stabilized in a hospital bed.
+The tranquil beeps of the machinery.
+Butcher over him. Alone, we can now see the RAW WORRY in
+Butcher’s face. How much he cares for Hughie. Which he
+immediately covers up when -- Annie enters.
+BUTCHER
+What’d they say?
+ANNIE
+Needs a day or two for the Cefazolin
+to kick in, but he should be
+alright.
+Butcher doesn’t like being a sitting duck.
+BUTCHER
+We ain’t got a day or two.
+ANNIE
+We’ll have to risk it.
+Long beat. She looks down at Hughie. Brushes his hair out
+of his face -- catches a whiff of something -- smiles, warm --
+ANNIE (CONT’D)
+Jesus --
+CONTINUED: (2)41 41
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 49.
+BUTCHER
+What?
+ANNIE
+That kids’ shampoo he uses.
+BUTCHER
+L’Oreal for Kids “Strawberry
+Smoothie.” I seen the bottle.
+Hateful shit.
+Annie smiles, thinking --
+ANNIE
+And his Axe body spray? It’s how
+Vin Diesel must smell.
+BUTCHER
+You know Hughie slathers Creamy
+Desitin on his bum every morning.
+ANNIE
+I don’t wanna know that!
+BUTCHER
+He’s mental, is all I’m saying.
+She smiles. Christ, are these two bonding?
+ANNIE
+But he never quite gives up on you,
+does he?
+BUTCHER
+Aye. He follows you around like a
+right little pup.
+Long beat.
+ANNIE
+He’s too good for either of us.
+INT. MAEVE’S APARTMENT - BEDROOM - DAY44 44
+Elena moves past the bathroom where Maeve showers within --
+ELENA
+I’m gonna postmate Sugarfish.
+QUEEN MAEVE
+(from inside shower)
+Sorry? I can’t hear you --
+ELENA
+Where’s your phone?
+Elena looks around for Maeve’s phone. No sign of it on the
+bed... it’s in the DESK DRAWER for some reason...
+CONTINUED:43 43
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 50.
+She moves to it -- and spots something strange. Connected to
+the phone by a USB cord is... THE BATTERED GO-PRO.
+Elena looks at the Go-Pro. Then at the phone screen -- a
+file that’s been recently downloaded...
+Maeve steps out of the bathroom, dries her hair --
+QUEEN MAEVE
+Did you say Sugarfish?
+Maeve hears Homelander’s voice before she registers Elena on
+the bed, looking at the downloaded footage of Flight 37 --
+Elena watches the SHAKY FOOTAGE -- it’s being taken by a
+terrified HUSBAND (30s) -- the plane WHINING, passengers
+SCREAMING, total panic. Husband turns the camera on himself,
+leaving a final message for his wife --
+HUSBAND (ON VIDEO)
+They’re leaving us! Homelander and
+Queen Maeve. Oh my God, they’re
+leaving!
+He swivels the camera around and catches Maeve pulling the
+SWEET MOM and CUTE LITTLE GIRL toward HOMELANDER who waits
+impatiently at the OPEN REAR EXIT DOOR --
+QUEEN MAEVE (ON VIDEO)
+Take them! Just these two!
+HOMELANDER (ON VIDEO)
+So they can tell the world we let
+everyone else die?
+Maeve stares at Elena watching the video. She can’t breathe.
+QUEEN MAEVE
+Elena. Please...
+But she just watches --
+ON VIDEO. Maeve reluctantly releases the mom and little
+girl, takes Homelander’s hand and the two leap out the exit.
+Desperate screams from the passengers as the husband swivels
+the camera back to his face. This is it...
+HUSBAND (ON VIDEO)
+I love you. Tell the boys I love
+them --
+IN THE ROOM. Elena turns to Maeve. Blood drained from her
+face. Abject horror.
+QUEEN MAEVE
+I’m -- gonna show that to
+Homelander. He either leaves us
+alone, or I put it on CNN. This is *
+how we get out. *
+CONTINUED:44 44
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND WHITE - 9/18/19 51.
+Elena’s got bigger issues right now. Voice small, quivering. *
+ELENA
+You just left them. How could you
+just leave them?
+Maeve’s held onto it too long -- but here it is -- the
+searing guilt, the crushing self-hatred. Like Frenchie, like
+Lamplighter, she can never forgive herself for what happened.
+QUEEN MAEVE
+I was scared. I know I should’ve
+stood up to him. But I didn’t.
+(can barely get it out)
+So I watched them all, I watched
+that little girl, die.
+Elena doesn’t know what to say. What to think. Leaves Maeve
+dangling over a chasm.
+QUEEN MAEVE (CONT’D)
+Please. Don’t look at me like
+that... say something.
+She’s reaching for comfort, understanding, anything -- but
+Elena just looks at her, frozen.
+Off Maeve, searching for some kind of absolution that she
+knows doesn’t exist.
+EXT. CLEARING - DAY45 45
+Some unbelievably visual, wide open space upstate. Emmy
+winning? Fuck that. We’re going full Oscar for this bitch.
+A SAGE GROVE AMBULANCE, stolen, parked. OUTSIDE. Mother’s
+Milk. Frenchie. Kimiko. M.M. on the phone --
+MOTHER’S MILK
+(to Frenchie and Kimiko)
+Yo. Tight scrape, but Hughie’s
+okay.
+FRENCHIE
+Bien. Tell Butcher about the thick *
+penis around your neck.
+M.M. gives Frenchie a “seriously going to kill you” look.
+Then keeps speaking. As Frenchie leans over to Kimiko.
+FRENCHIE (CONT’D)
+I am sorry.
+She looks up at him, curious.
+FRENCHIE (CONT’D)
+For a long time, I was trying to
+save you.
+CONTINUED: (2)44 44
+(MORE)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 52.
+I thought if I did, somehow that
+would make up for the things I’ve
+done.
+(beat)
+But you never asked to be saved. It
+wasn’t even about you. You cannot
+absolve my sins, no one can. I know
+this now. So. I leave you alone.
+Kimiko stares at him, registering his growth and maturity.
+This is a mixed bag. Does she want him to leave her alone?
+When a SEDAN PULLS UP. The guys noticeably tense.
+And MALLORY steps out.
+This is the first time Frenchie and M.M. have seen her since
+her grandchildren were killed. Gone is the easy camaraderie
+we saw in the flashback. It’s LOADED with tension.
+Especially with Frenchie.
+MOTHER’S MILK
+Colonel.
+MALLORY
+Marvin. Where is he?
+FRENCHIE
+Madame Mallory. I know I wasn’t
+welcome at the funeral, so all these
+years, I could never offer my
+condolences, but --
+Mallory is chilly. Clearly hasn’t forgiven Frenchie.
+MALLORY
+Where. Is. He?
+We realize now -- she carries a GUN at her side. She’s
+practically quivering with anger.
+With that -- Kimiko and M.M. open the back of the AMBULANCE.
+Lamplighter sits inside. Waiting for her.
+Mallory is a combustible mix of surprise and quiet rage.
+MALLORY (CONT’D)
+Why isn’t this man restrained?
+Lamplighter can barely make eye contact.
+LAMPLIGHTER *
+No need. I wanted to come. *
+MALLORY *
+I don’t want to hear a single *
+goddamn word from you. *
+(anguish) *
+CONTINUED:45 45
+FRENCHIE (CONT’D)
+(MORE)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 53.
+I thought this was behind me, but -- *
+it’s not, it never is. *
+LAMPLIGHTER
+Then let’s both be done with it -- I *
+know what you have to do. You’d be *
+doing me a favor.
+She gives him a long look. Surprised. He gives her a nod *
+back. Giving her permission to do it. Pleads for it. *
+Her face twists. Finger on the trigger. But then --
+FRENCHIE
+Madame. If I may? Besides you, no
+one wanted him dead more than me.
+But I am begging you for his life. *
+MALLORY *
+(anguished) *
+I don’t have a choice. *
+FRENCHIE *
+It won’t help you. All you’d be *
+doing is ending his torment. You
+cannot punish him as much as he
+punishes himself. Trust me, I know
+this.
+MALLORY
+So -- what exactly -- are you
+proposing we do with him?
+Off Mallory. Off her swirling emotion. What will she do?
+INT. MEDICAL CLINIC - DAY46 46
+Hughie blinks awake. Groggy.
+HUGHIE
+Mom?
+Butcher. Sitting beside him. He cocks his head at the
+mention of Hughie’s Mom -- huh -- first we’ve heard of her.
+BUTCHER
+Not quite.
+HUGHIE
+What... what happened?
+BUTCHER
+You bled all over the place like a
+right wanker, that’s what happened.
+HUGHIE
+Where’s Annie?
+CONTINUED: (2)45 45
+MALLORY (CONT'D)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 54.
+Butcher shakes his head a little. Don’t worry about it.
+Annie’s gone. After all -- Hughie’s too good for her.
+INT. CAB - MOVING - DAY47 47
+Annie. In the backseat of a small town CAB. Blank-faced.
+We wonder if she’s truly as closed up and closed off as she
+seems to be... off this...
+INT. SEVEN TOWER - STORMFRONT’S APARTMENT - BEDROOM - DAY48 48 *
+Stormfront enters her apartment. To find -- *
+HOMELANDER. Just... standing in her place. Blank faced. *
+Not even looking at her. Is he here to hurt her? We don’t *
+know. She treads carefully. She’s even a bit scared. This *
+can go bad a hundred different ways -- *
+STORMFRONT *
+Hey -- you. *
+(silence) *
+Listen. I’m glad you’re here. I *
+want to say how sorry I am. Just *
+let me explain -- *
+He spins on her. Calm, chilling murder in his eyes. *
+HOMELANDER
+Flap, flap, flap goes that mouth of
+yours.
+(his eerie blank look)
+You told me you don’t break easy. *
+I’ve been thinking about that. A
+lot.
+Threat received. She’s intimidated. But calmly as she can --
+STORMFRONT
+I’ll never lie to you again. I’ll *
+tell you everything.
+He wasn’t expecting that -- thrown off-guard.
+STORMFRONT (CONT’D)
+Starting with this.
+Nearby, a LOCKED WOODEN HOPE CHEST. Has some aged history to *
+it. She unlocks it, opens it. First thing she shows *
+Homelander -- a picture from a few years ago. We saw it in
+her trailer in Ep. 205. Stormfront (in uniform) beside a
+very old, wrinkled WOMAN.
+HOMELANDER *
+Your... grandmother.
+STORMFRONT
+My daughter.
+(off Homelander’s surprise)
+CONTINUED:46 46
+(MORE)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND PINK - 10/18/19 55.
+Chloe. She died of Alzheimer’s a
+few years ago.
+He takes this in, surprised. Beat. Then --
+HOMELANDER
+How old are you?
+STORMFRONT
+I was born in 1919. In Berlin.
+She shows him another faded photo of a BERLIN STATE DINNER in
+1940. Swastikas and Gestapo everywhere. Prominent Nazis at
+a table -- Goebbels, Goering -- and clearly STORMFRONT, in
+period appropriate hair and dress.
+HOMELANDER
+Is that you with...?
+CONTINUED:48 48
+STORMFRONT (CONT'D)
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND PINK - 10/18/19 55A.
+STORMFRONT
+Heinrich Himmler. He was a lovely
+dancer... there’s Goebbels... and
+here, the most important man in the
+room.
+She points to a MAN in the photo standing beside GOEBBELS. A
+German with a strong, proud face.
+HOMELANDER
+Vought. That’s Frederick Vought.
+STORMFRONT
+He gave me the first successful V
+injection. He taught me everything. *
+Then we fell in love, he gave me a
+daughter. He made me -- his genius
+made you.
+She’s a TRUE BELIEVER. Sincere. Even emotional.
+STORMFRONT (CONT’D)
+Frederick didn’t care about fans or
+stardom or any of that shallow
+bullshit. We’re in a War for the
+Culture. The other races are
+grinding us down, stealing what’s
+rightfully ours. But we can fight
+back. With an army of super men,
+millions strong. That’s the true
+destiny of Vought. And you’re the
+one who will lead us.
+CLOSE ON HOMELANDER. He doesn’t have to say anything, but
+it’s clear -- he likes the sound of that.
+STORMFRONT (CONT’D)
+So yes, I love you, with all my
+heart. How could I not?
+(takes his hand)
+Everyone I’ve ever loved is in the
+ground. But -- I found you, we
+found each other. We don’t have to
+be alone anymore. That’s the truth.
+Long beat. Will he go for it? Then... he leans in and
+kisses her. It’s passionate, overwhelming: a kiss of
+commitment, of love, of shared dreams. Of trust. She had
+him at Master Race.
+Off this romantic image of our reunited lovers -- the theme
+song to “Golden Girls” kicks in, and we CUT TO --
+EXT. WOODED ROADSIDE – DAY49 49
+One last post script. CLOSE ON BARE FEET. TILT UP to FILTHY
+HOSPITAL ISSUED CLOTHES. And an extended THUMB of a young
+woman. Reveal: CINDY. Alive. Escaped.
+CONTINUED: (2)48 48
+(CONTINUED)
+THE BOYS #206 "The Bloody Doors Off" REV. 2ND YELLOW - 10/29/19 56.
+A car approaches from behind. STICK FIGURE FAMILY stickers *
+on the rear window. Slows. *
+WIDE. Cindy leans her head inside the car. We don’t hear or
+see the exchange. She climbs in. The car drives off...
+“You would see, the biggest gift would be from me, and the
+card attached would say: thank you for being a friend --”
+BLACKOUT.
+TO BE CONTINUED...
+CONTINUED:49 49
+THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 57.
+ADDITIONAL DIALOGUE
+ADDITIONAL DIALOGUE FOR HOMELANDER, STORMFRONT AND THEIR
+INTERVIEWER ON THE SET OF “DAWN OF THE SEVEN” -- FOR BUTCHER
+AND KIMIKO TO WATCH AND REACT TO IN SCENE 4.
+NOTE: Already scripted content is in BOLD FONT
+EXT. SET - NEAR ‘DESTROYED NEW YORK CITY’ - DAY4 4
+Homelander and Stormfront. In directors’ chairs. ON SET for
+“Dawn of the Seven.”
+INTERVIEWER (O.S.)
+In many ways, Dawn of the Seven is
+the first film of its kind -- The
+ultimate superhero movie.
+HOMELANDER
+It’s certainly ambitious.
+STORMFRONT
+I mean, we got Mr. Marathon --
+(re: Homelander)
+We got him!
+HOMELANDER
+You’re so humble!
+(to interviewer)
+She’s amazing. Blows me out of the
+water. Every take.
+INTERVIEWER (O.S.)
+All right. Be honest. Who’s the
+biggest prankster on set?
+Homelander and Stormfront laugh. Flirting. Can’t help it.
+This is so fun. Homelander points to Stormfront --
+HOMELANDER
+(”this one”)
+Oh, no comment...
+STORMFRONT
+He’s right.
+(joking)
+Black Noir has the biggest ego,
+though.
+HOMELANDER
+(going along)
+Oh, of course. Total diva.
+STORMFRONT
+But really, I can’t believe how
+chill everyone is. It feels like
+I’m back home, just making a movie
+with my friends.
+(CONTINUED)
+THE BOYS #206 POCKET DIALOGUE FOR SCENE 4
+INTERVIEWER (O.S.)
+It’s a complicated project.
+Everyone still manages to get along?
+HOMELANDER
+I’ve been with roughly the same crew
+since Homelander: Origins. We
+really are a family.
+INTERVIEWER (O.S.)
+That’s incredible.
+Homelander and Stormfront stare, lost in each others’ eyes...
+CONTINUED:4 4
+THE BOYS #206 POCKET DIALOGUE FOR SCENE 4
+ADDITIONAL DIALOGUE
+ADDITIONAL DIALOGUE FOR THE NEWS ANCHOR IN SCENE 6. TO PLAY
+AS QUEEN MAEVE AND DEEP TALK.
+NOTE: Already scripted content is in BOLD FONT
+INT. MAEVE’S TRAILER - DAY6 6
+ON THE TELEVISION. STOCK FOOTAGE of two different factions
+of people SCREAMING and SHOVING at each other. We see this
+kind of thing at Women’s Clinics and outside rallies.
+NEWS ANCHOR (V.O.)
+Police are reporting unrest
+throughout the city as the story of
+Compound V develops. With the House
+Judiciary Hearing into Vought just
+four days away, pro and anti Vought
+camps clashed in Manhattan this
+morning. Congresswoman Victoria
+Neuman said that Compound V must be
+brought under government control.
+Neuman’s opponents maintain that the
+United States is in the midst of a
+National Emergency too dire to
+warrant regulation, and moved to
+postpone the hearing.
+(then)
+Foreign governments have launched
+probes into the presence of Compound
+V within their borders, petitioning
+top U.N. Officials to launch
+investigations. The Secretary
+General has yet to comment.
+(then)
+A growing faction of citizen
+activists are taking up the charge
+against Vought International.
+Protests have begun in 15 states so
+far, with growing anti-Vought
+crowds.
+THE BOYS #206 POCKET DIALOGUE FOR SCENE 6
 `
 
 function eatData(input) {
