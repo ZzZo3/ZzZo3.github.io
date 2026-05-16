@@ -3957,15 +3957,14 @@ function updateOutput() {
 }
 
 function updateManualOutput() {
-  console.log("input detected")
-  runSeed(input.text,1)
+  console.log("input keypress detected")
+  runSeed(input.value,1)
   manualOutput.innerHTML = outputText
 }
 
 //STUFF THAT RUNS ON LOAD
 
 mainBody.addEventListener('load',loadFunc())
-input.addEventListener('input',updateManualOutput())
 function loadFunc() {
   eatData(data)
   seedWhitelist = seedWhitelist.filter((k)=>!(seedBlacklist.includes(k)||punctuation.includes(k)))
