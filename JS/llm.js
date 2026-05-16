@@ -36,3793 +36,866 @@ class Word {
 let words = []
 let nextWords = []
 let data = `
-The Vought logo leads into an ad for Translucent: Invisible Force 2.
-
-CUT TO: EXT. STREET
-
-The ad is revealed to be on the back of a bus, which drives away. Jamie and Benjy walk by it, talking.
-
-BENJY: Yo, I am so psyched for Invisible Force 2.
-
-JAMIE: Please. Invisible Force 1 was lame. I'm all about Rising Tide.
-
-BENJY: Rising Tide? The Deep? Translucent could kick the Deep’s ass.
-
-JAMIE: How? He's invisible. That's, like, all he’s got. That's it.
-
-BENJY: Exactly. He sneaks up on the Deep, and then boom, motherfucker! Sit down.
-
-JAMIE: Until the Deep makes a shark bite Translucent's dick off.
-
-BENJY: How's he gonna find his dick? It's invisible.
-
-A noise behind them startles the duo. They turn to look. Cut to an armored truck careening down the street, pursued by multiple cop cars.
-
-BENJY: Holy shit.
-
-The truck speeds towards them. They turn and run, but Benjy trips.
-JAMIE: Benjy!
-
-Before the truck reaches them, Queen Maeve flips a car, attempting to stop it. Cut to a shot from inside an apartment. As an old woman pours tea, Maeve walks on the windows, cracking them. Back outside, the armored truck avoids the car, swerving towards Jamie and Benjy.
-
-JAMIE: Get up, get up, get up. Come on, Benjy. Come on, come on.
-
-As the truck is about to crush them, Maeve jumps in front of it, splitting the truck in two. Jamie and Benjy are hit with only light debris. Cut to a shot of Maeve standing stoically as the truck splits around her. As it comes to a stop, she ends up inside the ruined truck, face to face with a robber. She smirks at him. Cut back to the street. Jamie helps Benjy to his feet. They watch from outside as a skirmish can be heard inside the truck. The driver walks out in front of them, spitting blood all over the street. Cut to Maeve exiting the truck to find the driver and another robber holding the young men at gunpoint.
-
-DRIVER: Stay back. Just stay the fuck back.
-
-Maeve approaches them, smiling.
-
-DRIVER: What are you smiling at?
-
-From offscreen, Homelander fires his laser vision at the driver's gun, melting it all over his hand. He screams in pain and falls to the ground. The two young men run away as the other robber tries to fire at Homelander. The bullets have no effect. He walks slowly towards the man and then throws him quite a distance.
-
-BENJY: Homelander?
-
-Homelander turns towards the young men, revealing his face to the camera for the first time.
-
-HOMELANDER: You boys okay?
-
-The robber finally crashes down on some cars down the road. Cut to Benjy and Jamie staring at Homelander in shock for a few moments.
-
-BENJY: Can I can I get a selfie?
-HOMELANDER: 'Course you can.
-
-Homelander smiles and opens his arms welcomingly. The young men walk over and take a selfie with him. The shot changes to news footage of the incident, with an anchor narrating.
-
-ANCHOR: The Seven's Queen Maeve and Homelander made another heroic save today, stopping a hijacked armored truck on the streets of Brooklyn, then staying behind for a photo op with some very lucky fans.
-
-CUT TO: INT. STORE
-
-The camera pulls back to reveal Hughie cleaning off a TV screen playing the broadcast.
-
-HOMELANDER: Nice to meet you.
-
-Cut to Hughie helping a woman in the store.
-
-HUGHIE: So, this is pretty much everything in one. Bluetooth speakers. It’s in stereo, so you can put it all around your living room, have some fun with it. You said you have a standard cable box, right?
-
-WOMAN: Uh-huh.
-
-HUGHIE: Okay, then I need to get you an audio transmitter, aptX Low Latency. It makes it so there’s less audio lag, and it's got a standard optical in. And let’s hook you up with thousand-meg HDMI. Let's go with this one. Uh, it costs a little bit more, but the carbon's way more conductive.
-
-Cut to later. Hughie approaches Gary at the front desk.
-
-HUGHIE: Hey, Gary. Um, I really need to talk to you about something.
-
-GARY: Later, kid.
-HUGHIE: Okay. Cool. Later you want, like want, like, 30… 30 minutes? Like, a solid 45?
-
-Cut to even later. Robin enters the store as Hughie has his back to the door.
-
-ROBIN: Excuse me, sir? Hi. I'd like to make an appointment for you to come over and lay some cable.
-
-HUGHIE: Okay. Uh, oh, Robin. Oh, dear, dear, Robin. Um, that doesn’t mean what you think it means.
-
-ROBIN: Um, "laying cable" means sex.
-
-HUGHIE: No, "laying pipe" means sex. "Laying cable" means you want me to come over to your house and just take a big, old shit.
-
-ROBIN: That's disgusting.
-
-HUGHIE: Well, okay. But you… Who, who said it, though?
-
-ROBIN: Okay. Are you ready? Despite your best efforts, I'm actually still hungry.
-
-HUGHIE: I'm actually more hungry now.
-
-ROBIN: Where are we gonna go after all this hot talk?
-
-They walk out the door.
-
-HUGHIE: I don't know. More importantly, where are we gonna go to lay some cable afterwards?
-
-Cut to a shot of them walking down the sidewalk.
-
-ROBIN: So, did you ask him?
-
-HUGHIE: Who?
-
-ROBIN: Gary. Did you ask Gary for the raise?
-
-HUGHIE: Yeah. Yeah. It was... it was a, look, it was a crazy day, and- and he was super busy, but tomorrow for sure. Yes.
-
-ROBIN: Okay.
-
-HUGHIE: What was I supposed to do, kick his door down? Like Homelander?
-
-ROBIN: I said "okay".
-
-HUGHIE: Yeah, but you didn't mean it. Hey, I see the look. I see it. Come on.
-
-ROBIN: This is like when we started dating.
-
-HUGHIE: I don't think that's... I don't think that's true.
-
-ROBIN: Dude, I had to ask you out.
-
-HUGHIE: Well, excuse me for waiting. You ever hear of chivalry?
-
-ROBIN: Listen, this is about you getting what you deserve. I'm killing myself at school because I think it's gonna be worth it for both of us. You know, if we move in together.
-
-HUGHIE: Wait, what? What? W-w-wait. Hey, hey, hey. Hey, hey. What was that? What'd you just say?
-
-They stop walking. Hughie stops on the curb, while Robin stops about a step off the curb.
-
-ROBIN: Well, I mean, we can't keep, you know, laying pipe at your dad's place. Trying to be all quiet. Staring up at that dumb Billy Joel post-
-
-Hughie kisses her, stopping her mid-sentence.
-
-ROBIN: … Poster.
-
-HUGHIE: Hey. Don't you ever besmirch Billy Jo-
-
-Robin disappears. Time slows to a crawl. Drops of blood float midair. Hughie is hit with a blast of air. Some of the blood sprays on his face. The camera slowly pans to reveal Robin has exploded into blood, bones, and guts. Time returns to normal speed. Robin's remains fall to the ground. A-Train stands nearby, panting. He takes off his running goggles and looks at the mess and the shocked Hughie.
-
-A-TRAIN: I can't stop. I can't stop. I can't stop. I can't stop. Can't stop. Can't stop.
-
-A-Train puts his goggles back on and resumes running.
-
-HUGHIE: Robin?
-
-Hughie looks down to see he is still holding Robin's now detached hands.
-
-HUGHIE: Robin? Robin! Robin!
-
-CUT TO: INT. ANNIE'S HOUSE
-
-Text on screen reads, “DES MOINES, IOWA.” The sun rises in the distance. The camera pans to Annie's alarm clock. As the clock hits 7:00 A.M., it begins playing “Barracuda” by Heart. We watch a montage of Annie training. She does pull ups, punches a brick wall outside, and lifts her car. Her mom walks nearby.
-
-DONNA: Let the energy go through the wall!
-
-Cut to Annie inside, now in costume. She films an audition tape.
-
-ANNIE: I am Starlight. I'm 110 pounds, and I'm five foot six.
-
-CASTING DIRECTOR: Turn around, please. Okay. Let's see it, dear.
-
-ANNIE: You should look away.
-
-CASTING DIRECTOR: Sorry?
-
-ANNIE: You should turn away from the camera, and you should close your eyes, or else I'll blind you.
-
-CASTING DIRECTOR: All right. Okay, go ahead.
-
-Annie uses her power. All of the lights go out as she sends out a burst of light. She accidentally knocks over the camera filming. She walks over to it.
-
-ANNIE: I am so sorry. Are you all right?
-
-Cut to a shot of Annie in the bathroom. She puts down a cup of urine.
-
-ANNIE: I was born Super-Abled.
-
-Cut to Annie taking a polygraph test.
-
-ANNIE: Uh, my mom was thrilled. She took me to all the little miss hero pageants, but I hated it. Ugh, I mean, I can still smell the hairspray. Uh, but, at the Q and A, they always asked me what my wish was, and I always said, "to save the world." And the judges just chuckled like it was cute. But it wasn't a joke to me. Since when did "hopeful" and "naive" become the same thing? I mean, why would you get into this business if not to save the world? That's all I have ever wanted. And that's why I've always wanted to be in The Seven.
-
-CUT TO: INT. HUGHIE'S HOUSE
-
-Hughie sits on his couch, watching TV and looking distraught. His dad comes to sit next to him.
-
-HUGHIE'S DAD: Thought Robin's service was nice. Did you see how many people came? Wow. Lot of respect for that girl. Lot of love in the room. And the spread. What a spread. Just really nice.
-
-Hughie's dad notices the TV is playing a conference about Robin's death. Madelyn Stillwell speaks, with A-Train next to her.
-
-MADELYN: That does not begin to convey the terrible regret-
-
-HUGHIE'S DAD: Aw, geez. Maybe there's a movie on.
-
-HUGHIE: No, keep it.
-
-HUGHIE'S DAD: No, we can switch-
-
-HUGHIE: Keep it.
-
-A-TRAIN: My deepest condolences to Robin Ward's family. I was chasing these bank robbers. She just stepped in the middle of the street, and I, I couldn't…
-
-HUGHIE: Middle of the... She was a half step off the fucking curb!
-
-HUGHIE'S DAD: Oh, now, come on, Hughie. Just, uh, don't get upset, okay? Just… He knows.
-
-The doorbell rings. Cut to Hughie sitting at a table across from a Vought lawyer.
-
-LAWYER: Everyone at Vought is just, just wrecked about Robin. Now, you two weren't married, and look, technically, there's no legal claim. But Vought wants to do the right thing: offer you $45,000 in restitution. All you have to do is sign right here, and I'll offer you the check.
-
-HUGHIE: This is a confidentiality agreement.
-
-LAWYER: It's a boilerplate NDA.
-
-HUGHIE: I sign this, and I can't talk about it? Have to pretend like it didn't happen, like I wasn't holding Robin's arms in my hands?
-
-LAWYER: Look, I know you're upset, but we're just trying to help.
-
-HUGHIE: Then say you're sorry.
-
-LAWYER: Excuse me?
-
-HUGHIE: I mean, you people say "our condolences" and "my sympathies" and "our regrets,” but nobody can look me in the fucking eye and say "I'm sorry!" I'm not signing anything. Get out.
-
-Hughie reaches over and grabs the lawyer, screaming into his face.
-
-HUGHIE: I said get the hell out!
-
-The past minute is revealed to be a fantasy in Hughie's imagination. Hughie stares ahead blankly. panting slightly.
-
-LAWYER: You okay? As I said, boilerplate NDA, really. Pretty standard stuff.
-
-HUGHIE: Can I think about it?
-
-LAWYER: If you have any questions at all, just, uh…
-
-The lawyer taps his business card in front of Hughie. He gets up and leaves.
-
-CUT TO: INT. ANNIE'S HOUSE
-
-The camera cuts to a shot of a trophy shelf in Annie's kitchen. It then pans to show Annie listening to a police radio. Her mother walks in.
-
-DISPATCHER: Unit 44, code 20. Address is 1420 63rd Street-
-
-DONNA: Any maniacs out there?
-
-ANNIE: Mm-mm. Quiet night. Like every night.
-
-DONNA: That's too bad. We could really use the press right now.
-
-Annie pours herself some food.
-
-DONNA: Oh, Annie.
-
-ANNIE: I'm hungry. Don't worry. I didn't get the job.
-
-DONNA: You don't know that.
-
-ANNIE: They're auditioning girls nationwide. Besides, Countess probably got it. She's so good in a room.
-
-The phone rings.
-
-DONNA: If you're negative, negative things happen to you.
-
-Donna picks up the phone.
-
-DONNA: Hello? Yes, I'm her mother. Uh, yes. Uh, one moment.
-
-Donna hands Annie the phone.
-
-DONNA: It's them. It's them.
-
-ANNIE: Hello? Yes, this is she. I got it?
-
-Annie and her mother immediately begin jumping and yelling in glee.
-
-DONNA: You got it! You got it!
-
-They stop.
-
-ANNIE: Shh.
-
-DONNA: Oh, my God.
-
-ANNIE: Uh, I'm so I'm so sorry. It's a weird connection. I don't know what that was, actually. Uh... Mm-hmm.
-
-CUT TO: INT. HUGHIE'S HOUSE
-
-Hughie's dad sits on the couch watching TV. Hughie walks around in the background.
-
-HUGHIE: Oh, shit.
-
-Hughie's dad watches him walk around.
-
-HUGHIE'S DAD: Whatcha doing?
-
-HUGHIE: Can't file a criminal case against A-Train. Supes are like cops. They can't be charged for damages while they're on the job.
-
-HUGHIE'S DAD: Okay...
-
-HUGHIE: But maybe we can file a wrongful death. I just got to get Robin's parents to sign off on it.
-
-HUGHIE'S DAD: Hughie, come sit with me.
-
-HUGHIE: Dad, I'm not... I'm right... Okay.
-
-Hughie sits on the couch. His dad pats him on the back.
-
-HUGHIE'S DAD: Good for you. You want to make this right, what happened to Robin.
-
-Hughie smiles.
-
-HUGHIE'S DAD: But you can't. So sign this.
-
-Hughie's smile fades as his dad hands him the NDA.
-
-HUGHIE: What?
-
-HUGHIE'S DAD: This is a lot of money, Hughie. We could really use it.
-
-Hughie stands up.
-
-HUGHIE: I can't… Dad, they killed her.
-
-HUGHIE'S DAD: Be realistic, okay? Even if we could pay for a lawyer, and that's a big if there's no case. She was in the street. Be like if a bus hit her.
-
-HUGHIE: Dad, she was one step off the curb. I, I saw it!
-
-HUGHIE'S DAD: Hughie, look. Look. You can't do this.
-
-HUGHIE: Why not? Dad, I have-
-
-HUGHIE'S DAD: You don't have the fight. You never have. I'm sorry, but it's… it's true. Neither do I. Now come and, come and sit with me, okay? Remington Steele's on.
-
-Hughie walks out the door.
-
-HUGHIE'S DAD: Hughie! Where you going?
-
-He sighs.
-
-CUT TO: EXT. RED CARPET
-
-The camera pans down to a shot of a large crowd around a red carpet. Ashley waits at the end. Cut to a shot of Annie and her mother getting out of a limo.
-
-ASHLEY: There she is! Welcome to New York. I'm Ashley Barrett, director of talent relations.
-
-ANNIE: So, uh, are all these people here for me?
-
-ASHLEY: Oh, honey. Who else would they be here for? Come on. We're running late.
-
-Annie and her mother follow Ashley as they look around at all of the screaming fans and paparazzi. Cut to inside the building as Madelyn speaks at the shareholder's meeting.
-
-MADELYN: Ladies and gentlemen, it is without a doubt a good time to be in the Superhero business. Our net income is up 14%. Our latest film, G-MEN: World War, just grossed shy of $1.7 billion world-wide. And this fall, we break ground on our newest theme park outside of Paris. The branding opportunities are limitless. But, you know, none of that really matters. Because job one is managing, supporting, and advising the brave heroes who put themselves in harm's way each and every day for us. Let's take a look.
-
-She gestures towards a big screen behind her. It begins playing a commercial for Vought's superheroes, which is narrated by her.
-
-MADELYN: (Narrating) A world without crime, with liberty and justice for all, that's within our reach, thanks to the 200-plus Superheroes in the Vought Family. We see a bright future ahead, where there is a Vought Hero in every town.
-
-Cut to backstage. Ashely leads Annie and her mother towards the stage.
-
-ASHLEY: You're doing really well, by the way, so far.
-
-ANNIE: I, I haven't done anything yet.
-
-ASHLEY: Yeah, exactly. You're already up two-and-a-half points with Midwesterners and conservative Christians in 18 to 49. That speech, by the way, your audition, oh! It was modest; it was humble. Really fucking smart choice.
-
-ANNIE: Uh, I, I meant it.
-
-ASHLEY: Yeah, that's why we love you. So you ready for your life to change?
-
-Back to the conference, the video continues.
-
-MADELYN: (Narrating) - including the jewel in Vought's crown, the greatest superhero team the world's ever seen: The Seven. That is our job, our honor. We are Vought. We make heroes super.
-
-The video ends. The audience applauds. Madelyn returns to the mic.
-
-MADELYN: I have a very exciting surprise for you. Both a member of The Seven, and Lord of the Seven Seas, live and in person, the Deep!
-
-The Deep walks out on stage and approaches the mic. There's lots of applause.
-
-DEEP: Thank you. Thank you, everybody. After a long, distinguished career with The Seven, my good friend, the Lamplighter, has retired. Let's give him a big "thank you.” What do you say?
-
-The audience applauds.
-
-DEEP: But now, as we turn towards the future, I'd like to introduce someone very special. And I, for one, can't wait to work with her. Please welcome Starlight.
-
-Backstage, Annie looks nervous. Ashley pushes her out.
-
-ASHLEY: Go!
-
-Annie walks out on stage. The Deep greets her. They both wave towards the crowd. Madelyn returns to the mic.
-
-MADELYN: Ladies and gentlemen, Starlight and the Deep!
-
-The Deep continues waving. Annie looks around at the audience.
-
-CUT TO: INT. SHOP
-
-Hughie enters a store. He grabs some beer, then looks up to see A-Train branded beer. He begins panting. Looking around and walking to the counter he also encounters A-Train cereal and a cardboard cutout of A-Train. At the counter, the store clerk is reading a tabloid with A-Train on the cover. Hughie's panting gets worse.
-
-CLERK: Hey, buddy, you okay?
-
-Hughie falls backwards into some shelves.
-
-CLERK: Hey, buddy!
-
-CUT TO: INT. SEVEN HEADQUARTERS
-
-The Deep and Annie get off an elevator into the Seven's main conference room. He leads her around.
-
-ANNIE: Wow.
-
-DEEP: Pretty cool, huh? Oh, hey, check this out. We have two World View-4 satellites in geocentric orbit. We can essentially read a getaway car's license plate from 380 miles up.
-
-ANNIE: That is just... I mean, I was working with a police scanner that I bought on eBay.
-
-DEEP: Yeah, well, not anymore you're not. Oh, and wait till you check out the dining room. We, uh, may or may not have stolen Miro from Gramercy Tavern. Yeah, he's fan-fucking-tastic.
-
-ANNIE: That's his, isn't it?
-
-She looks at the chair at the head of the main table.
-
-DEEP: Homelander's? Yeah. But you'll have your own soon. Here. Come on.
-
-He pulls out Homelander's chair.
-
-DEEP: Give it a test drive. Come on. Oh, you, you okay?
-
-ANNIE: It's just… I used to stand in the mirror, pretending to be where I am right now.
-
-DEEP: You know something? On my first day, I, uh... Well, I felt like a fraud. Yeah. But the good news is, everybody feels that way.
-
-ANNIE: Thank you.
-
-DEEP: And, hey, we're a team now. We'll help each other out. I bet growing up you had a poster of Homelander on your wall, huh?
-
-ANNIE: No, actually, I... I don't know, Homelander's so... He's like Jesus or something. If you want to know the truth, I actually had a poster of you.
-
-DEEP: Really?
-
-ANNIE: Yeah. Yeah.
-
-DEEP: Oh.
-
-ANNIE: I kind of, I kind of had a schoolgirl crush on you.
-
-DEEP: Oh, my God.
-
-ANNIE: Oh, my God. I hope that's not inappropriate to say.
-
-DEEP: No, no, no, no, no. It's not inappropriate at all. It's just, it's kind of wild.
-
-Annie looks out the window for a moment, then turns and sees The Deep has pulled his pants down and begun masturbating.
-
-DEEP: What? I mean, you said you had a crush on me. I figured that, you know…
-
-Annie hurriedly walks away, disgusted.
-
-DEEP: Whoa, whoa, wh-wh-whoa, hey. Look, you're gorgeous. I'm not I'm not talking about sex, just a little bit of pole-smoking. Whoa, whoa, whoa. Hey, wait, wait, wait, wait, wait. It's just a question of how bad you want to be in The Seven.
-
-Anine stops in her tracks and turns around.
-
-ANNIE: Excuse me?
-
-Her powers flare up, shattering some nearby screens and causes the lights to flicker.
-
-DEEP: Whoa. Whoa, whoa, whoa. Hey, hey, hey. Hey. Take it easy. Settle down. We're just, we're just talking. And look, I know that you're powerful. I get it. Your powers are no joke. The thing is I am number two around here. So, like, if I say so, you know, you'd be out of here. Especially since you attacked me.
-
-ANNIE: I what?
-
-DEEP: Yeah. Look.
-
-He gestures towards the broken screens. As he talks, he walks over to her.
-
-DEEP: I mean, Iowa's sweetheart, the Defender of Des Moines, just went psycho on the Deep. I mean, that that could put you out of the business. Yeah. I mean, home to Mommy, tail tucked between your legs. Just think of all those kids. I mean, the kids. Those kids who look up to you, they'd just be shattered. I mean, that's not what you really want, right? Or, we come together as a team. You and me, we just roll with the punches, for, like, three minutes, maybe. It's not a big deal. And then you know what happens? All your dreams come true.
-
-CUT TO: INT. STUDIO
-
-Cut to a shot of The Tonight Show. Translucent is being interviewed by Jimmy Fallon.
-
-JIMMY: I'm sure you guys have all heard that Translucent stopped a home invasion in Yonkers last night, a young, single mother and her two kids. Just incredible. Just... So tell us, how are you able to, to vanish?
-
-TRANSLUCENT: No, I don't actually vanish. My skin turns into this carbon meta-material that bends the light. Like an invisibility cloak.
-
-Cut to a shot of Hughie at work. The Tonight Show continues on one of the monitors nearby.
-
-JIMMY: All right, but just to be clear, you have to be completely naked, right?
-
-The door opens. Hughie turns to look. He sees Billy Butcher looking at a nanny cam.
-
-HUGHIE: You interested in a nanny cam? 'Cause we're actually running a special on that. Um, it's a pretty popular bear. There's cameras in the eyes.
-
-BILLY: Tell me, how many nannies shake their babies?
-
-HUGHIE: Uh, I'm sorry?
-
-BILLY: You know, a good hard shake, like, like tryin' to get ketchup out of a bottle. One percent? Less?
-
-HUGHIE: I, I don't really know.
-
-Billy puts the nanny cam down.
-
-BILLY: Funny, that. They sell a billion dollars worth of that shit worldwide. Goes to show you, doesn't it? The bollocks people will believe if you get them scared enough.
-
-HUGHIE: Cool. Cool, cool. Um, is there anything I can help you with today, or... ?
-
-BILLY: I'm not gonna piss you about, Hughie. I heard what happened to Robin.
-
-HUGHIE: I'm, I'm sorry, who are you?
-
-BILLY: She wasn't in the street. She was one step off the fucking curb. And you didn't take the pay-off.
-
-HUGHIE: Yeah. I said, who the hell are you? How do you know that?
-
-BILLY: Name's Butcher. Billy Butcher.
-
-Billy flashes an FBI badge.
-
-BILLY: Listen, I was thinking that, uh, you and me should have a little bit of a chat.
-
-Cut to them walking on a busy sidewalk outside.
-
-HUGHIE: You're a Fed? You don't sound like a Fed.
-
-BILLY: What, I can't immigrate? There's a giant green slapper with her ass in the harbor that says different.
-
-HUGHIE: You don't really look like one, either.
-
-BILLY: No? What do I look like?
-
-HUGHIE: Like you're starring in a porn version of The Matrix.
-
-BILLY: Well, it's all right there in black and white.
-
-HUGHIE: Okay. Uh, what exactly can I do for you?
-
-BILLY: No, you got it all wrong, Hughie. It's what I can do for you. You see, you ain't alone, son. It happens a lot more than you think. Supes lose hundreds of people each year to collateral damage.
-
-HUGHIE: No. Come on, that'd be all over the news. People would be screaming bloody murder.
-
-BILLY: Yeah, look, there might be the odd mention of it now and again, like with Robin, but there's a fuck-sight more that happens that just gets swept right under the rug.
-
-They stop walking.
-
-HUGHIE: Why?
-
-As Billy continues, he gestures around at dozens of ads for various superhero properties.
-
-BILLY: Ain't it obvious? Movie tickets, merchandising, theme parks, video games. A multi-billion dollar global industry supported by corporate lobbyists and politicians on both sides. But the main reason that you won't hear about it is 'cause the public don't want to know about it. See, people love that cozy feeling that Supes give them. Some golden cunt to swoop out of the sky and save the day so you don't gotta do it yourself. But if you knew half the shit they get up to... Ooh. Fuckin' diabolical. But then, that's where I come in.
-
-HUGHIE: Come in to to do what?
-
-BILLY: Spank the bastards when they get out of line.
-
-HUGHIE: How do you spank a Supe?
-
-BILLY: Come on, son.
-
-Billy begins to walk away.
-
-HUGHIE: Uh, where?
-
-BILLY: You'll love it.
-
-Billy turns back to Hughie.
-
-HUGHIE: Uh, not likely. Uh, listen. I think this is good; I'm good. Uh, thank you for an extremely weird conversation, but, uh, I don't want to go to a second location with you. So, I'm gonna get back to work. Thank you.
-
-Hughie begins walking away but stops as Billy begins talking again.
-
-BILLY: Hughie! Hughie. This is your one and only, mate. Once I go, I'm gone. I'm offering you the opportunity to get them that got your girl. What have you got to lose that you ain't already lost?
-
-Billy walks away again. Hughie stands for a few moments. Cut to him following Billy down an alley.
-
-HUGHIE: Where are we?
-
-BILLY: Keep your mouth shut.
-
-Billy knocks on a door. Harry opens a slot on the door to talk to Billy.
-
-BILLY: Harry. Got your message. Thank you for being an upstanding citizen.
-
-HARRY: You know this is fucking police brutality, man. You know what they'll do to me, they catch me letting you in?
-
-BILLY: Not half of what I'll do if you don't.
-
-HUGHIE: Did he just say you were police?
-
-BILLY: Yeah, you know, cop, Fed, all the same to twats like that.
-
-The door opens. Billy pulls Hughie inside. Cut to inside. Hughie stares shocked at the superhero debauchery taking place, include some couples having sex while floating middair.
-
-HUGHIE: Holy shit.
-
-BILLY: Pick your jaw up off the floor and try to blend in. This is the only place where the Supes can scratch their filthy little itch without the paps taking snaps.
-
-Hughie watches a superhero with the ability to shrink jump inside a woman's vagina. He sees Ezekiel receiving oral sex nearby.
-
-HUGHIE: Wait, wait, wait. That's Ezekiel. The "Capes for Christ" guy preaches all that "pray the gay away" shit.
-
-Ezekiel stretches across the aisle between another two men on a couch nearby.
-
-BILLY: And now he's the meat in the Manwich. Fucking hypocrite.
-
-They step over Ezekiel. Cut to the back room. Harry shows Billy and Hughie security footage.
-
-BILLY: Keep going forward. That's it. Further. Further. There. There. Stop.
-
-The footage shows A-Train sitting in a booth.
-
-HUGHIE: Wait, wait, wait. A-Train's... A-Train's here right now?
-
-BILLY: Was. This is from last night. Turn it up.
-
-Another hero comes to sit with A-Train.
-
-BIG GAME: I cannot believe you ran through a bitch.
-
-A-TRAIN: You want to hear something crazy? I ran so fast through this bitch that I swallowed one of her molars. Like a bug on the fucking freeway.
-
-BIG GAME: Dude, that's nasty.
-
-The pair begins laughing.
-
-HUGHIE: They're laughing. Just, like she's a joke. They're fucking laughing.
-
-BILLY: So what are you gonna do about it?
-
-CUT TO: INT. BATHROOM
-
-Annie vomits in the toilet. She exits the stall to see Maeve standing nearby. Annie washes her face. Maeve hands her some tissues.
-
-MAEVE: Oh, for Chrissakes. Clean yourself up. Never let them see you like this. Translucent, you're a goddamn pervert.
-
-Maeve leaves. Translucent makes himself visible, having been standing naked nearby.
-
-TRANSLUCENT: Ah... Oh, uh... I'll just go.
-
-CUT TO: INT. BAR
-
-Billy and Hughie sit across from each other.
-
-HUGHIE: They're all like that? All of them? Even Homelander?
-
-BILLY: Homelander's the exception. He doesn't drink, doesn't smoke. Man's a saint. But the rest of 'em, yeah. Pardon my French, fuck those fuckers. Here. Have a shufti of that.
-
-Billy hands Hughie some files.
-
-HUGHIE: What are these?
-
-BILLY: That's the police log the day that Robin got murdered. Couple of bar fights. A few cars got nicked. But you know what's not in there? No bank alarms going off. No one charged at Central Booking. A-Train stopped two bank robbers, my arse. Someone's fucking hiding something.
-
-HUGHIE: Hiding what?
-
-BILLY: Well, I don't know, whatever dodgy shit he was up to that night. Why couldn't he stop? I mean, what was in that bag? You know? Who was he running from?
-
-HUGHIE: Or where was he running to?
-
-BILLY: Bingo. Work that out, and we'll have the fucker, I can smell it.
-
-HUGHIE: Okay. Okay, so, um, what can I do to help?
-
-BILLY: Here's what you do. Ring Vought, tell 'em you'll take the money, sign the NDA, but only if A-Train's there in person when you do it.
-
-HUGHIE: Why does A-Train need to be there?
-
-BILLY: Then they'll take you into The Seven Tower, through security, mate, and then you're gonna plant a bug.
-
-HUGHIE: A bug?
-
-BILLY: A bug. And we'll have a little listen. See what's really going on.
-
-HUGHIE: Okay, let me just, sorry, let me just get this straight. You want me to, you want me to go to Seven Tower by myself, and-and you want me to plant a bug, like I'm what, like I'm fuckin' James Bond?
-
-BILLY: Yeah, exactly. You got it.
-
-HUGHIE: You're FBI. If you're FBI, then get a warrant. Why do you, why do you even need me?
-
-BILLY: Hughie, Hughie, look, mate, I got a warrant, all right? But that place is firewalled, untappable, and locked up tighter than a nun's knickers. I couldn't get myself in there in a million years. But you, son, you could do it.
-
-HUGHIE: No, no, I can't, okay? I can't. No. You didn't see A-Train covered in... And, and I'm, what, I'm just supposed to go in there, and I'm supposed to I'm supposed to shake his hand? And smile?
-
-BILLY: Yeah.
-
-HUGHIE: I'm not g- I'm not… Do you know who my favorite musician is?
-
-BILLY: Who?
-
-HUGHIE: James Taylor. Number two, Simon & Garfunkel. Number three, Billy Joel. Any of those guys, they don't infiltrate. Okay? I'm not an infiltrator.
-
-BILLY: Hughie, Hughie, fucking grow a pair. You heard that cunt laughing at your girl.
-
-HUGHIE: No. No. No. No, I can't. I can't do that. I'm sorry, I'm just gonna fuck it up, and you're not gonna have your bug, and I'll be dead. I'm not, I'm not like you.
-
-Hughie leaves.
-
-CUT TO: INT. MADELYN'S OFFICE
-
-Madelyn sits down across from the Mayor of Baltimore. He's holding a signed photo of Homelander.
-
-STEVE: This is amazing, Madelyn. Thank you for this. My kid is gonna lose his mind.
-
-MADELYN: Ah, it is our pleasure. Just do not sell it online.
-
-STEVE: All right. What are you thinking?
-
-MADELYN: Baltimore is a beautiful town. But you've got a problem. Your homicide rates are up, what, 62%? The police are not closing cases. You're on the verge of needing a federal lifeline.
-
-STEVE: Cut to the chase, Madelyn. Who are you proposing?
-
-MADELYN: Nubian Prince. Fits your population's demo, but not too militant. Caucasians love him, too, with a 59% approval rate. I am willing to give you a three-year exclusive contract with full PR support, and I'm gonna give you nine and a half points of the merchandising.
-
-STEVE: I thought he was in Detroit.
-
-MADELYN: Well, we're thinking about making a move.
-
-STEVE: How much?
-
-MADELYN: $300 million a year.
-
-They both chuckle.
-
-MADELYN: I know, I know, it's a tough swallow. But we both know that your city needs a hero.
-
-STEVE: $200 million for Nubian Prince. I can sell that.
-
-MADELYN: Mm. I'm sorry, Steve, I can't do it. We've got Atlanta waiting in the wings.
-
-STEVE: I think maybe you can.
-
-MADELYN: And why is that?
-
-STEVE: I happen to know about Compound V.
-
-As they talk, a hero is seen flying outside.
-
-MADELYN: What is Compound V?
-
-STEVE: It's the type of rumor that could really tarnish those heroes of yours. Nobody wants that. People need heroes. Now, I can make sure that that stays a rumor, because I'm a friend. But friendship does cut both ways.
-
-MADELYN: I'm sorry, Steve, I don't know what you're talking about. $300 million is the price, or we go to Atlanta.
-
-CUT TO: EXT. PARK
-
-We see a shot of Donna cutting out photos of Annie from a tabloid. She's on the phone with Annie. The shot cuts back and forth between the two.
-
-DONNA: So, how amazing is it? What's Homelander like?
-
-ANNIE: Uh, he's busy. I haven't really met him yet, but Mom, I got to tell you what happened.
-
-DONNA: Oh, I forgot. I was playing mah-jongg with Patty and Trish, and Patty is going on and on about how her daughter got into med school, and I'm thinking, so what? My daughter got into The Seven! Anyway, so, so, what did you want to tell me?
-
-ANNIE: Everything's great. Just how we dreamed. Um, mom, actually, you know what? I have to go.
-
-DONNA: All right. Bye, honey.
-
-Annie hangs up. She's sitting on a park bench. The camera pulls back and reveals Hughie sitting a few feet from her eating a sandwich.
-
-HUGHIE: Um, excuse me. I'm sorry, a-are you okay? Just seemed like a tough call. Sorry. I don't mean to bother you.
-
-ANNIE: No, no, it's okay. Uh, I'm fine. I'm just… I'm just having a bad day.
-
-HUGHIE: Yeah, me, too. Uh is it, like, a, a work thing, or a, a life thing?
-
-ANNIE: It's a work thing. You?
-
-HUGHIE: Uh, life thing.
-
-ANNIE: You know how you have this image of yourself? Like, I thought I was strong. You know? Like, made of steel. A fighter. And then I was faced with this horrible situation with this asshole and I just heard my mom's voice in my head, "Keep smiling, the show must go on," and I didn't fight. And now I just feel sick. Partly because I did it, but mostly because turns out I'm not who I thought I was. Oh. Oh, I'm, um, sorry. Uh I-I didn't mean to just dump all of that onto you.
-
-HUGHIE: No, no, it's totally fine that you dumped. Um, listen, d-do you like your job?
-
-ANNIE: Oh. It's the only thing I've ever wanted.
-
-HUGHIE: And it's a good job? Like, you're not selling kids smack?
-
-ANNIE: No, it's a great job. I could help a lot of people.
-
-HUGHIE: Thing is, I, um... used to know this girl, and we used to go skating at Rockefeller, and I'd be on the side with this death grip on the rails. She would just charge headfirst into the middle of the rink. And she wasn't good. Like, she fell a lot but she was never scared. And she always used to say, "Just 'cause you fall on your ass doesn't mean you have to stay there." So you fell on your ass, you know? That's not who you are. So who are you?
-
-ANNIE: I'm a fighter. I'm gonna fight. Yeah. I'm gonna take that son of a bitch's head clean off his body.
-
-HUGHIE: Okay. Wow, that was... Okay. Cool. Little scary, but, but cool. I'm-I'm Hughie, by the way.
-
-ANNIE: Annie.
-
-They shake hands.
-
-CUT TO: EXT. BAR
-
-Billy sits alone at the bar. Hughie enters and sits next to him.
-
-HUGHIE: Okay, man. I'm in.
-
-Cut to the pair in the bathroom. Hughie calls the Vought lawyer while Billy listens in.
-
-HUGHIE: Okay, it's ringing.
-
-LAWYER: Yeah, hello?
-
-HUGHIE: Hi. Hi. Yes, hello. Hello, Mr. Friedman. It's Hughie Campbell. I got your message, and-and $45K, it's just it's just it's bingo, like, life-changing. Um, but I just need one thing before I sign anything. I need an apology from A-Train.
-
-LAWYER: Uh, he already apologized.
-
-HUGHIE: Well, no, no, no. No, he hasn't. Yes, he sent his he sent his regrets and his sympathies on, on TV, but I, if I could just get an apology face-to-face, that would be fantastic. Just to, just for closure, just to put just to put a button on it.
-
-LAWYER: Okay, yeah. But, uh, Hugh, I'm telling you, the answer's gonna be no.
-
-HUGHIE: All right, in that in that case, can you just give me... Uh, hello? I think... They hung up. I don't think they're gonna go for it.
-
-BILLY: Oh, yes, they will.
-
-CUT TO: SEVEN HEADQUARTERS
-
-Annie enters the main conference room. The other six members of The Seven are already there. Homelander stands by the window while the rest are sitting at the table.
-
-HOMELANDER: Starlight. Don't want to be late to your first official meeting. I had a whole welcome speech planned.
-
-ANNIE: Sorry, sir.
-
-HOMELANDER: Please, Homelander's fine.
-
-DEEP: Beginning to wonder if you'd even show up. I mean, all that pressure, it's a lot for anyone to swallow.
-
-Annie sits down.
-
-ANNIE: Yeah. Don't worry, I'll be fine. I'm here, and I'm not going anywhere.
-
-TRANSLUCENT: Can we get back to this, please? This is a serious crime. These assholes pirated my movie three weeks before release, and you can't walk down 5th Avenue without bumping into a table of unlicensed Homelander shirts. Copyright infringement is costing Vought $1.2 billion per year. That's money out of our pockets. We've all got, what, four points each?
-
-A-TRAIN: What the fuck? You got four points?
-
-MAEVE: And clearly better lawyers.
-
-HOMELANDER: Hey, hey, hey, guys, come on. Stop. What's Starlight gonna think? Listening to us haggling over nickels. We're The Seven, for God's sake. Whether we're out there or we're in here. Now, what I do want to hear is who you saved this week. Huh? Who's up for that? Black Noir. Let's start with you, man.
-
-CUT TO: EXT. SEVEN HEADQUARTERS
-
-Billy pulls up outside the building. Hughie spots some dog toys in the back seat.
-
-HUGHIE: Do you have a dog?
-
-BILLY: No. All right, give us your phone. There's fuck-all security to worry about. In fact, they're a bunch of muppets. And the metal detector won't pick this up. Right? And what they'll probably do is take you through the security and then up into the boardroom. Sit down. Be nice, congenial. Then, real polite-like, tell 'em you're gonna take a fake shit. Go into the bog, take the bug out. Peel back the plastic bit to reveal the sticky side. Put the plastic bit in the bog. Flush it. Then go back into the boardroom, sit down big smiles plant the bug underneath the table. Easy peasy Japanesey. Bob's your uncle. That's that.
-
-HUGHIE: That's that? That was that was a lot. Th- I've- Hold on, can you just can you repeat it again? Just a little bit slower? Because I-
-
-BILLY: Shh. Listen.
-
-HUGHIE: Fuck.
-
-BILLY: Hughie, calm down, all right? This is like that scene in The Matrix. Now, you could take the fucking red pill, right? Spend the rest of your life jacking off, crying into your chai tea green latte, what the fuck. Or you could take the blue pill. Or is it the red pill? Anyway, take the other pill and quit being a cunt.
-
-HUGHIE: Which pill do you want me to take?
-
-BILLY: Just quit being a cunt. That's what I'm saying.
-
-HUGHIE: Fuck me. Okay.
-
-Hughie gets out of the car. “Take Me Down” by Daniel Pembleton plays. Hughie pauses to take in the sight of the full building. Cut to him inside walking past armed guards. He sets off the metal detector.
-
-GUARD: Sir, could you empty your pockets, please?
-
-Hughie walks back through and puts his keys and phone on a tray. He walks back through and one guard scans him down while another inspects his phone. After a few moments the guard slides the tray over.
-
-GUARD: Thank you.
-
-Hughie grabs his things. Cut to him in the main conference room. He looks up and sees a mural of the previous Seven lineup. He turns toward a guard in the room.
-
-HUGHIE: Um excuse me, can-can I, uh... can I use your bathroom?
-
-The Vought lawyer walks in, tailed by A-Train and Ashley. They all approach the table. Hughie stands up.
-
-LAWYER: Just to be clear, A-Train's apology isn't an admission of any sort of culpability whatsoever. Do you understand?
-
-Hughie hallucinates that A-Train is covered in Robin's blood. He stares wide-eyed and begins panting.
-
-A-TRAIN: I'm sorry about what happened to your girlfriend, all right?
-
-In the background, Hughie imagines A-Train's laughter from the security tape.
-
-A-TRAIN: Hey, dude, are you okay?
-
-Everyone stares as Hughie's panting gets worse. After a few moments and some deep breaths, he returns to normal.
-
-HUGHIE: Fine. I appreciate the apology. Accidents happen, right? After all, I mean, you were saving the world.
-
-ASHLEY: Okay, great. Thank you so much. As you know, a crimefighter's work is never done. Douglas here will handle the rest of the paperwork for you, okay? Thank you.
-
-Ashley and A-Train leave. The lawyer hands Hughie a pen.
-
-HUGHIE: Can I use your bathroom?
-
-Cut to Hughie in the bathroom. He drops the bug on the floor. Before he can pick it up, Annie walks in. After standing in front of the mirror for a few moments, she leaves. Hughie then picks the bug back up and prepares it. He leaves as well. After he leaves, Translucent makes himself visible.
-
-TRANSLUCENT: What the fuck?
-
-Hughie re-enters the conference room and signs the NDA, placing the bug under the table.
-
-CUT TO: EXT. STREET
-
-Billy drives Hughie to his job.
-
-HUGHIE: And I look him right in the eye, and I smile. And that was awesome, man, just getting to stare that asshole down. I get why you dig this job.
-
-BILLY: Yeah, you know, it has its moments, doesn't it?
-
-HUGHIE: You were right. Fuck A-Train. Fuck A-Train. Fuck-fuck The Seven. Fuck all Seven. What are we, uh, what are we doing here?
-
-BILLY: Well, you got to go to work, don't you?
-
-HUGHIE: Yeah, but, um, I don't, uh…
-
-BILLY: Well, I mean, that's all I need you for right now, yeah?
-
-HUGHIE: Yeah, I mean, but I, I can, I can help with other stuff, you know? I could, I could be, like, your tech guy. You know? Like, I could be in the van with the thing and, like, you know, "He's down the hall to the left." Like, I can-
-
-BILLY: Yeah, look, son, I, uh, I think it's best that I take it from here. You know what I mean?
-
-HUGHIE: Yeah, but I, I can I can really help.
-
-BILLY: I know you can help. I got it.
-
-Hughie gets out of the car and walks away. Billy starts the car again. Hughie turns around.
-
-HUGHIE: Oh, hey, wait. You ever see an asshole tear up $45K?
-
-Hughie tears up the check from Vought.
-
-BILLY: Hughie. You're a good lad.
-
-Billy drives away.
-
-CUT TO: INT. CAR
-
-Mayor Steve answers a call from Madelyn in his car. The shot cuts back and forth between them as they talk.
-
-STEVE: Ms. Stillwell, I wasn't sure you'd call.
-
-MADELYN: This fucking chafes, but, um, I'm willing to come down to $230 million for Nubian Prince.
-
-STEVE: That's very reasonable, Maddie. Thank you.
-
-MADELYN: And, Steve, this, um, Compound V… Any rumors you may have heard about my heroes? Libelous and completely untrue. But, we all know how rumors spread, so I'd appreciate your discretion.
-
-STEVE: Of course. You have my word.
-
-MADELYN: Thank you. Have a safe flight home.
-
-CUT TO: INT. STORE
-
-Hughie watches the news while at the front counter.
-
-ANCHOR: Policing cities is a thorny enough issue as it is, but allowing superheroes into national defense? We'd basically be privatizing war.
-
-Gary walks over.
-
-GARY: Good night, Hughie. You'll lock up?
-
-HUGHIE: Yeah. Thanks, Gary.
-
-Gary leaves. Before the door fully closes, Translucent enters, invisible.
-
-HUGHIE: Sorry, we're closing up.
-
-He realizes that it appears no one has entered the store.
-
-HUGHIE: Hello?
-
-TRANSLUCENT: Who are you?
-
-Hughie bolts up.
-
-HUGHIE: The fuck?
-
-TRANSLUCENT: Right in front of you, prick. You think I wouldn't find this thing?
-
-Translucent, still invisible, holds the bug up in front of Hughie. He puts it down and grabs Hughie's lanyard.
-
-TRANSLUCENT: Hughie.
-
-Translucent begins throwing Hughie around the store.
-
-TRANSLUCENT: You pussy, I followed you from the fucking Tower.
-
-HUGHIE: No, no, no!
-
-TRANSLUCENT: Who's that guy you were with, in the car? Who was he?
-
-HUGHIE: I don't-
-
-TRANSLUCENT: He put you up to this?
-
-HUGHIE: I don't know! He was just some Uber driver, okay?
-
-TRANSLUCENT: Don't give me some bullshit! Uber driver! Do you think I'm a fucking idiot? Why'd you plant the bug?
-
-Translucent picks a TV off the wall and begins walking over to Hughie with it.
-
-HUGHIE: Please. Please, please, please. No, please.
-
-TRANSLUCENT: We're The Seven, Earth's most mighty, champions of the innocent, motherfucker!
-
-Right before Translucent hits Hughie with the TV, Billy drives into the store and knocks Translucent across the store.
-
-BILLY: Sorry about the mess. You should fuck off, Hughie. Hughie, run!
-
-”London Calling” by The Clash begins playing. Hughie runs into the back. Billy approaches where Translucent landed with a crowbar.
-
-BILLY: Well, well, well, if it ain't the invisible cunt.
-
-Billy swings with the crowbar, but Translucent is no longer there. They begin fighting. In the back, Hughie begins to leave, but turns around and returns to watch the fight. Translucent gains the upper hand, but Billy spits blood on Translucent, giving away where he is.
-
-BILLY: There you are.
-
-Now somewhat visible, the fight becomes more fair, but Translucent still manages to get Billy on the ground.
-
-TRANSLUCENT: So who are you? Fucking spy? For who? Huh? You're gonna fucking tell me, or I'm gonna smash your fucking scalp off! Who the fuck are you?
-
-Translucent picks up the crowbar and holds it over Billy. Hughie sneaks up behind him and grabs a live wire from the wall.
-
-BILLY: I'll tell you who you are. A fucking moron. "Translucent" doesn't even mean "invisible". It means "semi-transparent".
-
-Hughie attempts to get Translucent with the wire, but he's not close enough. Billy looks disappointed. Translucent begins to turn. Now distracted, Billy is able to kick him towards Hughie, allowing Hughie to electrocute him. Hughie screams and after a few moments Translucent falls to the floor. Billy gets up. Hughie tosses the wire.
-
-HUGHIE: Is he, is he dead? Is he…
-
-Billy kicks Translucent.
-
-BILLY: Well, he ain't moving.
-
-HUGHIE: Oh, fuck. Oh, shit.
-
-BILLY: How'd you know the electric could do the job?
-
-HUGHIE: Skin's carbon. Highly conductive. Saw it on, uh, Jimmy Fallon.
-
-BILLY: Would've taken me forever to work that one out. Good job. Let's get him in the boot.
-
-Billy begins to lift up Translucent.
-
-HUGHIE: Wait, wait, what? Wait, what? What?
-
-BILLY: The trunk.
-
-HUGHIE: No, no, I mean, what are we, what are we, what are we doing with him?
-
-BILLY: Well, Hughie, you just offed one of The Seven, mate.
-
-HUGHIE: Me? I... You, you hit him with a fucking car!
-
-Billy drops Translucent.
-
-BILLY: Look, potato, fucking po-tah-to. We're both in a shitload of trouble.
-
-HUGHIE: No, no, no, we're not! It's, it, he, he attacked us, okay? And you're, you're a federal officer, you know? Just, just call the fucking FBI.
-
-BILLY: Yeah, o-okay, so, look, technically, I'm not a Fed.
-
-HUGHIE: What?! Then who the fuck are you?!
-
-CUT TO: INT. PLANE
-
-“The Passenger” by Iggy Pop plays. Mayor Steve's son sits at a table with the autographed photo of Homelander in front of him. The plane rattles. The shot changes to show Steve is sitting next to his son.
-
-STEVE: Don't worry about it, kiddo. It's just a little turbulence. It'll be okay.
-
-An aide whispers something to Steve. Steve's son sees Homelander out the plane window.
-
-KID: Dad. Dad. Dad!
-
-STEVE: What's he doing out here?
-
-KID: Are you guys friends?
-
-Homelander's eyes glow red.
-
-STEVE: Oh, my God.
-
-Homelander uses his laser vision to cut the plane in two. It crashes down through the clouds. Homelander watches. After a few moments, he smiles.
-
-END CREDITS
-THE BOYS
-Episode #206
-“The Bloody Doors Off”
-Written by
-Anslem Richardson
-Directed by
-Sarah Boyd
-Based on the Comic by
-Garth Ennis and Darick Robertson
-PRODUCTION WHITE 8/19/19
-FULL BLUE DRAFT (RENUMBERED) 8/29/19
-FULL PINK DRAFT 9/06/19
-FULL YELLOW DRAFT 9/13/19
-REVISED GREEN PAGES 9/15/19
-REVISED GOLDENROD PAGES 9/17/19
-REVISED 2ND WHITE PAGES 9/18/19
-REVISED 2ND BLUE PAGES 9/23/19
-REVISED 2ND PINK PAGES 10/18/19
-REVISED 2ND YELLOW PAGES 10/29/19
-REVISED 2ND YELLOW PAGES (1 TOTAL)
-56
-Copyright © 2019
-SONY PICTURES TELEVISION INC.
-All Rights Reserved
-No portion of this script may be performed, or reproduced
-by any means, or quoted, or published in any medium without
-prior consent of SONY PICTURES TELEVISION INC. * 10202 West
-Washington Boulevard * Culver City, CA 90232 *
-THE BOYS #206 CAST LIST – REV. 2ND BLUE PAGES - 9-23-19
-THE BOYS
-Episode #206
-“The Bloody Doors Off”
-9/23/19
-(REVISED 2ND BLUE PAGES)
-CAST LIST
-BILLY BUTCHER......................
-HUGHIE CAMPBELL....................
-HOMELANDER.........................
-ANNIE JANUARY/“STARLIGHT”..........
-QUEEN MAEVE........................
-A-TRAIN............................
-MOTHER’S MILK......................
-THE DEEP...........................
-FRENCHIE...........................
-KIMIKO.............................
-STORMFRONT.........................
-ASHLEY BARRETT (VOUGHT PUBLICIST)
-GRACE MALLORY......................
-ALASTAIR ADANA (THE COLLECTIVE)....
-THE LAMPLIGHTER....................
-ELENA..............................
-CHERIE (FRENCHIE’S ASSOCIATE)......
-JAY (FRENCHIE’S FRIEND, FLASHBACKS)
-DENNIS (KILLED BY STARLIGHT).......
-PERP (KILLED BY HOMELANDER + STORMFRONT)
-TIM (INSTITUTE PATIENT KILLED BY LAMPLIGHTER)
-CINDY (PATIENT AT INSTITUTE).......
-PATIENT (ESCAPES INSTITUTE, HURTS HUGHIE)
-LOVE SAUSAGE (PATIENT AT SAGE GROVE)
-HUSBAND (FLIGHT 37 VIDEO)..........
-CHRIS LENNERTZ (A-TRAIN RAP DEMO)
-INTESTINE BOY (SAGE GROVE PATIENT)
-SECURITY GUARD (SAGE GROVE)........
-ANOTHER GUARD (SC. 23).............
-Karl Urban
-Jack Quaid
-Antony Starr
-Erin Moriarty
-Dominique McElligott
-Jessie T. Usher
-Laz Alonso
-Chace Crawford
-Tomer Capon
-Karen Fukuhara
-Aya Cash
-Colby Minifie
-Laila Robins
-Goran Visnjic
-Shawn Ashmore
-Nicola Correia-Damude
-Jordana Lajoie
-THE BOYS #206 CAST LIST – REV. 2ND BLUE PAGES - 9-23-19 2
-DEANNA (ASHLEY’S ASSISTANT)........
-INTERVIEWER (WITH HOMELANDER/STORMFRONT ON SET)
-NEWS ANCHOR........................
-OMITTED
-AL ROKER *
-THE BOYS
-Episode #206
-“The Bloody Doors Off”
-10/18/19
-(REVISED 2ND PINK PAGES)
-SET LIST
-INTERIORS
-SEVEN TOWER –
-QUEEN MAEVE’S APT -
-BEDROOM
-STORMFRONT’S APT - *
-BEDROOM
-HAITIAN KINGS BASEMENT
-CHURCH OF THE COLLECTIVE
-RENEWAL CENTER
-SAGE GROVE CENTER –
-MEDICAL SUPPLY ROOM
-SECURITY ROOM
-HALLWAY 1
-HALLWAY 2
-HALLWAY 3
-HALLWAY 4
-HALLWAY 5
-HALLWAY 6
-“DAWN OF THE SEVEN” SET –
-HOMELANDER’S TRAILER
-MAEVE’S TRAILER
-MEDICAL CLINIC
-RUNDOWN WAREHOUSE (FLASHBACK)
-INTERROGATION ROOM (FLASHBACK)
-SEEDY CHELSEA APT. (FLASHBACK)
-RECORDING BOOTH
-DIAMOND STORE -
-BASEMENT
-EXTERIORS
-“DAWN OF THE SEVEN” SET –
-BASECAMP
-HOMELANDER’S TRAILER
-SAGE GROVE CENTER -
-FIELD OUTSIDE
-RURAL ROAD
-WOODED ROADSIDE
-CLEARING
-VARIOUS NEW YORK EXTERIORS –
-ALLEY (SCENE 3)
-MEATPACKING DISTRICT (SC. 35)
-VEHICLES
-FRENCHIE’S VAN
-HYUNDAI
-SAGE GROVE AMBULANCE
-CAB
-OMITTED
-INT. SEVEN TOWER – *
-HOMELANDER’S APT -
-BEDROOM
-THE BOYS
-“The Bloody Doors Off”
-FADE IN...
-We hear French rap pumping loud, as a NUTRIBULLET WHIRS --
-CHYRON: 8 YEARS AGO.
-INT. SEEDY CHELSEA APARTMENT - NIGHT - FLASHBACK1 1
-OPEN ON FRENCHIE. JOINT in his mouth. A smile on his lips.
-Happy. Light. Surrounded by his best friends in the world:
-CHERIE (yes, that Cherie) and JAY (20’s, handsome, West-
-African). The Three Musketeers.
-Jay snorts a line of coke. As Frenchie frowns at Cherie --
-FRENCHIE
-Why are you laughing?
-CHERIE
-You’re ridiculous.
-FRENCHIE
-I’m not ridiculous.
-CHERIE
-Then you’re high.
-Frenchie opens the Nutribullet, checks the white powder he’s
-been grinding. Breathes deeply.
-FRENCHIE
-Beside the point. Point is, I
-learned everything I know from those
-girls.
-JAY
-(just confirming)
-The Golden Girls.
-Frenchie stops the Nutribullet and uses a funnel to dump the
-powder into a DIY pressurized “fill-station” fastened to the
-table. All meant to be a glimpse of his grimy, powder-caked,
-mad druggy brilliant scientist lab skillz.
-FRENCHIE
-I was 17 years old, alone in New
-York. Turning tricks, begging for
-scraps. Who kept me company? The
-Golden Girls. 3am to 5am. They lit
-up that shelter’s shitty TV.
-JAY
-You’re not talking porn? Golden
-Shower Girls?
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 1.
-FRENCHIE
-That’s disrespectful.
-CHERIE
-So sensitive.
-Frenchie pivots to an adjacent table. More lab equipment, a
-CLUSTER of Xanax prescription bottles (Alprazolam). Tricked- *
-out PET soda bottles. He uses the “fill station” to load the
-bottles with pressurized Xanax... (give us all of this
-business in fun close-up inserts please).
-FRENCHIE
-(dead serious)
-Those saucy ladies made their own
-family. I didn't know it was
-possible to make your own family.
-So I did what they did. You are my
-Golden Girls.
-JAY
-I’d rather not be.
-FRENCHIE
-(to Cherie)
-You are my Blanche. And Jay, you
-are my Dorothy.
-CHERIE
-(to Jay)
-Because you’re gay.
-(ALT., we’ll see!) *
-Because you’re a little bit gay. *
-Jay can’t argue with that.
-FRENCHIE
-Thank you for being a friend.
-JAY
-So you’re Betty White?
-FRENCHIE
-What a fucking question. Of course
-I'm Betty White.
-Frenchie smiles at them. Full of love.
-FRENCHIE (CONT’D)
-Now. Who wants to rob a bank?
-INT. DIAMOND STORE - BASEMENT - NIGHT - PRESENT2 2 *
-MATCH CUT TO FRENCHIE. As he pulls on a pair of goggles.
-The classic comic book version of Frenchie.
-Then he picks up a diamond DRILL -- revs it -- zzzzeee --
-CONTINUED:1 1
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 2.
-Behind him -- multiple HASIDIC MEN CUT DIAMONDS with saws,
-other equipment. This is the scruffy, cluttered basement
-level of Jaffe Jewelers.
-Frenchie turns. Reveal ANNIE and HUGHIE across from him.
-ANNIE
-Will it get through my skin?
-FRENCHIE
-If it can’t, nothing can.
-Hughie looks nervous. Nervous and queasy.
-HUGHIE
-I don’t know about this.
-ANNIE
-Stormfront knows I leaked the V.
-HUGHIE
-She hasn’t come after you yet.
-ANNIE
-Even worse. That means she’s got
-some fucked up plan for me. I want
-this chip out, now. *
-FRENCHIE
-I understand, Petit Hughie. Though
-you’ve been covered with the
-entrails of many a person -- even a
-sea mammal -- it’s harder when it’s
-someone you love.
-HUGHIE
-(flustered)
-What? I don’t -- I mean, of course
-I do, but not like, we’re just *
-friends --
-Annie averts her eyes. Awkward.
-ANNIE
-Can we just do this please before I
-change my mind?
-Annie pulls her collar aside. Taps the area just below her *
-neck and steels herself -- Frenchie FIRES UP THE DRILL -- *
-FRENCHIE
-(over the WHIRRING) *
-This might sting a little! *
-Hughie clutches the gauze tightly. Can barely look.
-He LOWERS IT against Annie’s neck... the DRILL SLOWS as it *
-hits the surface... whining with overexertion... then
-WHOOOOOSH...
-CONTINUED:2 2
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 3.
-punctures through the skin as a spray of BLOOD spatters
-Frenchie’s goggles. Hughie’s splattered on the face as well. *
-Grimaces. *
-Annie winces, it’s a fair amount of pain.
-HUGHIE
-Oh my god. Oh my god.
-Frenchie stops when he spots metal. Fishes the chip out with
-a pair of gemstone tweezers -- speaks to it --
-FRENCHIE
-Bonjour, my little spy. Hughie!
-The box.
-Hughie hands him a small box covered in RF shielding foil.
-Frenchie drops the chip inside. Closes the lid.
-Hughie covers Annie’s wound with gauze. Puts pressure on it.
-Likes being this close to her, does not like all the blood --
-HUGHIE
-You okay?
-ANNIE
-(through gritted teeth)
-I feel lighter already.
-Off the two of them. Connected. But not. All at once.
-EXT. ALLEY - NIGHT3 3 *
-Handheld. A scruffy PERP, 30s, runs with a gun and a plastic
-bag full of loot down a filthy, out of the way, trash-strewn
-alley. He ducks behind a DUMPSTER. A distant SIREN. *
-The Perp examines his winnings: a wad of money, two cartons
-of cigarettes and a box of SLIM JIMS.
-When suddenly -- A RED BOOT steps beside the loot. He looks
-up to find -- HOMELANDER smiling down at him.
-HOMELANDER
-Howdy ho, buckaroo.
-The Perp freaks and starts to run, but is cut off by --
-STORMFRONT blocking the rear exit. He pulls his gun, but she *
-smacks it away, shattering his wrist.
-PERP
-SHIT! You broke my hand!
-Homelander approaches. *
-STORMFRONT
-What do you wanna do with him?
-CONTINUED: (2)2 2
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 4.
-HOMELANDER
-Well, hand him over to the police.
-Of course.
-PERP
-It really hurts!
-They talk past him.
-STORMFRONT
-Yes, of course. We are heroes, and
-that’s what heroes do.
-HOMELANDER
-Absolutely.
-STORMFRONT
-Though. He’ll probably just get
-released tomorrow.
-We start to realize -- this is SEXUAL FOREPLAY. The Perp
-also starts to realize something troubling is going on...
-PERP
-Please -- can you take me to the
-hospital?
-HOMELANDER
-You know, sometimes it feels like
-the justice system doesn’t even work
-anymore...
-STORMFRONT
-(seductive)
-Everyone recording everything on
-their phones -- it’s like you can’t
-even do your job.
-Man, it’s fucking sexy the way she says that. Brushing her
-hands on his chest -- Homelander’s hot and bothered --
-HOMELANDER
-(voice thick with lust)
-Really, uh, really speaks to the
-deterioration of, uh, God fearing
-American values.
-PERP
-Please... just turn me in...
-STORMFRONT
-What is the world coming to?
-HOMELANDER
-Someone should do something.
-Perp screams out at the top of his lungs --
-CONTINUED:3 3
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 5.
-PERP
-(terrified now)
-HELP! HEL --
-He doesn’t get a chance to finish -- Homelander covers the
-Perp’s MOUTH with his glove. Starts pushing his head back
-against the WALL. The GUY HOWLS in MUFFLED AGONY.
-As Stormfront RUBS Homelander’s CROTCH, titillated. Murder
-as a sex act. Then --
-Homelander PUSHES his PALM right THROUGH the guy’s face.
-RENDERING IT INTO A BLOODY PULP. Stormfront and Homelander
-lock eyes excitedly. Fuck this is hot.
-The Temptations “My Girl” plays as they lunge at each other,
-kiss hard. Homelander smears the Perp’s blood on her cheek.
-TIME CUT. PAN OFF THE CORPSE -- Homelander’s pants are at
-his ankles, Stormfront’s are off. They fuck hard against the
-wall, her legs around him, face to face. Pounding. The
-corpse at their feet. They got sunshine on a cloudy day...
-INT. HAITIAN KINGS BASEMENT - NIGHT4 4 *
-CLOSE ON BUTCHER. Sitting at one end of the couch. Watching
-the television. Quietly furious.
-ON THE SCREEN. Homelander and Stormfront. In directors’
-chairs. ON SET for “Dawn of the Seven.”
-INTERVIEWER (O.S.)
-All right. Be honest. Who’s the
-biggest prankster on set?
-Homelander and Stormfront laugh. Flirting. Can’t help it.
-This is so fun. Homelander points to Stormfront --
-HOMELANDER
-(”this one”)
-Oh, no comment...
-BUTCHER. Watching. Burning.
-KIMIKO. On the other end of the couch. Glaring at
-Stormfront. Also burning.
-They can both read the body language loud and clear.
-BUTCHER
-(through grit teeth)
-...they’re fucking.
-Kimiko agrees. Two killers, quietly hungry for blood.
-CONTINUED: (2)3 3
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 6.
-INT. HAITIAN KINGS BASEMENT - NEAR THE STAIRS - NIGHT5 5 *
-MOTHER’S MILK sits by himself -- inspecting a FOLDED, WELL-
-WORN PIECE OF PAPER.
-INSERT. A childish cartoon drawing of a penguin with a
-chainsaw. Signed “LOVE, JANINE.” We saw his daughter give
-it to him in Ep. 107 last year.
-He stares at it. Lost in regret. When he hears his friends
-coming, so he folds it up, puts it away. As --
-Frenchie hops down the steps. Followed by Hughie. Followed
-by... Annie.
-MOTHER’S MILK
-You get the chip out?
-Frenchie nods. Annie looks around. Disgusted. Some pity.
-ANNIE
-This is where you’re living?
-HUGHIE
-It’s got its charms. The rats are
-like Pokemon. With Hep-C.
-Annie feels guilty. Living in luxury, while Hughie is here?
-ANNIE
-I’m sorry.
-HUGHIE
-(lies)
-It’s not so bad.
-Kimiko approaches --
-FRENCHIE
-So? You’re back? You got tired of
-killing people for money?
-Kimiko FLIPS HIM OFF. Otherwise, doesn’t even look at him. *
-Steps to Annie. Just stares at her. Face to face. Blankly.
-Annie is Stormfront’s teammate, after all.
-ANNIE
-Uh. Hi. Remember me...?
-HUGHIE
-(please don’t kill her) *
-She saved you from the black site,
-remember Kimiko?
-Long beat. Face to face. Is Kimiko going to attack? Then --
-Kimiko HUGS Annie tightly. Tenderly. Annie reacts,
-surprised. Then Kimiko backs up, holds Annie’s hand. It’s a
-leeetle bit awkward, but okay --
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 7.
-ANGLE. Butcher hangs back a bit. Watching this happy little
-bunch. Nice and cozy with a fucking Supe. Kimiko is still *
-holding Annie’s hand. Butcher sees it, rolls his eyes. *
-BUTCHER
-Well, well, well. What have we
-here?
-HUGHIE
-I know what you’re gonna say --
-BUTCHER
-Starlight. Don’t you just light up
-a room. You’re looking well.
-Hughie stares. That’s not the reaction he was expecting.
-Butcher is pristine politeness. Hughie waits for the other
-shoe to drop. So do we.
-ANNIE
-No thanks to the 50 caliber round
-you pumped into my chest.
-BUTCHER
-That was awkward. But you know what
-they say: what doesn’t kill us,
-makes us stronger, eh?
-Now what brings you by? *
-HUGHIE
-She has a lead on Stormfront.
-ANNIE
-I broke into her laptop and got a
-look at her inbox. Dozen messages
-from Stan Edgar.
-BUTCHER
-Oh? And what does Vought’s Big
-Slapper have to say?
-ANNIE
-How they’re close to a break-
-through. At the Sage Grove Center?
-It’s a psychiatric hospital in *
-Pennsylvania. *
-HUGHIE
-What kinda breakthrough?
-ANNIE
-She came in before I could see any
-more.
-MOTHER’S MILK
-Anyone else on the email?
-ANNIE
-Someone named ‘Elle?’
-CONTINUED:5 5
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 8.
-MOTHER’S MILK
-Elle? Who’s she?
-Annie shrugs. You got me.
-BUTCHER
-Well then, let’s have ourselves a
-dekko at this looney bin.
-Starlight, would you be amenable to
-joining us on this little caper?
-Hughie. Annie. Seriously, what’s up with Butcher?
-HUGHIE
-You -- want her to come?
-BUTCHER
-Naturally. Things go tits up, who
-do you think Vought’s after? Us or
-their billion dollar baby turned
-traitor who ripped out her own chip?
-Never go into shark infested waters
-without bringing chum. Cheers.
-He smiles pleasantly, heads away. Off Hughie, Annie. There
-it is. There’s the other shoe. From there, we CUT TO: *
-A NEWS REPORT. STOCK FOOTAGE of two different factions ofA6 A6 *
-people SCREAMING and SHOVING at each other. *
-NEWS ANCHOR (V.O.) *
-With the House Judiciary Hearing *
-into Vought just four days away, pro *
-and anti Vought camps clashed in *
-Manhattan this morning. *
-Congresswoman Victoria Neuman said *
-that Compound V must -- *
-Then -- BZZT -- channel changes -- *
-A TV COMMERCIALB6 B6 *
-Moody, in black and white, like a classy-ass Nike spot. *
-Maeve regards herself in a mirror. Then turns, seemingly *
-challenging the camera, challenging the viewer. *
-MAEVE (V.O.) *
-This is who I am. Who are you? *
-Maeve lifts a PRIDE BAR -- rainbow wrapper, the only colored *
-thing in the commercial -- takes a bite -- *
-MAEVE (V.O.) *
-Brave Maeve Pride Bars. Because you *
-can’t be proud on an empty stomach. *
-*
-CONTINUED: (2)5 5
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 9.
-INT. QUEEN MAEVE’S TRAILER - DAY6 6 *
-The commercial PLAYS ON MAEVE’S TELEVISION -- *
-THE ACTUAL MAEVE. Vapes marijuana, stares at the TV. Things *
-are getting so fucked, so fast. When there’s a KNOCK on her
-door. She switches off the TV --
-QUEEN MAEVE
-Come in!
-As DEEP lets himself in. With a backpack.
-QUEEN MAEVE (CONT’D)
-You were supposed to call first, you
-fucking idiot. Anyone see you?
-DEEP
-I’m allowed to visit my friends.
-QUEEN MAEVE
-You find it?
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 9A.
-DEEP
-Sorry. No black box.
-Maeve grimaces, disappointed. But Deep smiles. He loves
-proving useful.
-DEEP (CONT’D)
-But -- I told my contacts to keep an *
-eye on the North Atlantic Current.
-And this school of Halibut -- I
-mean, these dudes are rowdy *
-motherfuckers --
-(off Maeve’s withering look) *
-Anyway, they found some of the
-wreckage that drifted up near
-Iceland. Found this. *
-From his backpack, Deep brings out.. a BATTERED WATERPROOF GO-
-PRO camera, damaged... but still intact.
-DEEP (CONT’D)
-I doubt it even works...
-Maeve takes it. Evidence from the plane. She’s pensive.
-Troubled. Suddenly melancholy.
-DEEP (CONT’D)
-Flight 37. That was the one you and
-Homelander got to too late, right, *
-it already went down?
-(Maeve nods)
-What do you care about it?
-QUEEN MAEVE
-If you want back in the Seven? Not
-a fucking word of this to anyone,
-you understand?
-INT. RECORDING BOOTH - DAY7 7
-CHRIS LENNERTZ, our brilliant, lovable, and Caucasian
-composer, stands alone in the booth. Headphones on his ears.
-Then the beat kicks in, he starts singing a rap song --
-CHRIS LENNERTZ
-What... okay... What what... ready,
-set, go... Here Comes the A-Train,
-Mr. Fleet feet/ Saving lives and *
-takin' names, nice and easy/ Ain't
-no day like a race day, what/ Ain't
-no love like a raceway, what...
-PULL OUT TO REVEAL THIS IS PLAYING ON A TABLET --
-EXT. SET OF ‘DAWN OF THE SEVEN’ - DAY8 8
-A-TRAIN watches on the tablet at video village. Same *
-‘wrecked NYC’ movie set behind them that we saw in ep. 205. *
-The crew’s broken for lunch. He’s beside ASHLEY. *
-CONTINUED:6 6
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 10.
-ASHLEY
-Isn’t it lit? Your very own goodbye
-anthem?
-A-TRAIN
-(defeated)
-Dope.
-ASHLEY
-This is just a demo of course.
-We’re going out to Lil Nas X for the
-official version. Maybe you could
-bust out Prince’s Guitar for the
-video?
-A-TRAIN
-I had to sell it. I’m going 10-1.
-A-Train walks away. Despondent. Behind him, DEANNA
-APPROACHES Ashley, who’s moved on to other business. *
-DEANNA *
-I can’t find her. *
-ASHLEY
-So where the FUCK is Starlight?
-WITH A-TRAIN. Walking. Yesterday’s news. He notices
-Stormfront, walking toward him. Their eyes catch. She
-regards him as if seeing a street urchin. Gives a wide berth
-as she passes. A-Train shakes his head -- Bitch, seriously?
-DEEP (O.S.)
-Yo! Here comes the A-Train!
-Deep approaches, carrying his backpack. A-Train swears to
-himself. When it fucking rains. He tries to ignore him --
-DEEP (CONT’D)
-Hey man! Hello? It’s me! Right
-here!
-Deep steps up, they bro hug, a little stiff. A-Train doesn’t
-like him much.
-A-TRAIN
-What are you doing here?
-DEEP
-Oh, I came to see -- no reason.
-(leans in)
-Bro. Been thinking about you. I’m
-sorry. Talk about getting assfucked
-with a soup can.
-A-TRAIN
-What do you mean?
-CONTINUED:8 8
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. GOLDENROD - 9/17/19 11.
-DEEP
-C’mon. If anyone knows what it’s
-like to get bounced, it’s me.
-CONTINUED: (2)8 8
-(MORE)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. GOLDENROD - 9/17/19 11A.
-Did some shit I’m not proud of.
-Weird shit.
-A-TRAIN *
-(lies) *
-I’m fine. My people are talking to *
-Nike and Under Armour. This’ll be *
-good for me. *
-DEEP
-Hey, that’s great. Well, then you
-don’t need his help. Forget I said
-anything.
-A-TRAIN
-Okay, cool.
-(then)
-Whose? Help?
-Deep reaches into his backpack -- takes out a CAN --
-DEEP
-Would you like a Fresca?
-EXT. SAGE GROVE CENTER - DAY9 9
-A STONE SIGN: SAGE GROVE CENTER.
-A HOSPITAL. In Pennsylvania. Quiet. Tranquil. Isolated.
-But still SECURE. A CHAIN LINK FENCE SURROUNDS IT. *
-INT./EXT. FRENCHIE’S VAN - DAY10 10
-Away from the main gate, the van is safely parked out of
-sight, hidden in some surrounding trees.
-Butcher watches the hospital through a pair of small binocs.
-Kimiko, Frenchie, Mother’s Milk all wear dark blue SAGE GROVE *
-scrubs. M.M. has his laptop open --
-MOTHER'S MILK
-Sage Grove. A proud subsidiary of
-Global Wellness Services, which is a
-subsidiary of --
-BUTCHER
-I can guess.
-Butcher checks a couple PISTOLS. Hands one to M.M.
-CLOSE ON: Frenchie hands out PERFECTLY FORGED SAGE GROVE
-lanyards with fake photo IDs of Frenchie, Kimiko, M.M.
-He notices Kimiko is wearing a flashy, three-finger gold
-ring, encrusted with diamonds that say BOSSY --
-CONTINUED: (2)8 8
-DEEP (CONT'D)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 12.
-FRENCHIE
-That’s what you bought with your
-blood money? No one will believe
-you’re an orderly with that.
-Kimiko holds up her hand. Examines the ring. Maybe he’s
-right. Then breathes onto the diamonds, as if polishing
-them. Smiles. Nope. Fuck off.
-ANNIE
-I should go in with them.
-BUTCHER
-How will they ever manage without a
-bony blonde Supe? Just get ‘em in
-and get the fuck back, yeah?
-Hughie. Wanting peace between these two.
-HUGHIE
-Annie. If they recognize your face
-in there...
-Starlight. She’s stronger than all of them. Part of her
-wants to blast Butcher. But she stands down. Nods.
-Mother’s Milk opens the back and jumps out. Kimiko follows.
-Then Starlight, pissed. Frenchie is the last to go.
-BUTCHER
-And don’t get caught.
-FRENCHIE
-I never do.
-INT. INTERROGATION ROOM - NIGHT - FLASHBACK - 8 YEARS AGO11 11 *
-MATCH CUT TO: FRENCHIE. Cuffed to a table. CAUGHT. He *
-wears the same clothes from the first scene. When he hears -- *
-MALLORY (O.S.)
-Weaponized Xanax.
-Frenchie looks up to see -- A FIGURE WALKS IN. With a THICK
-DOSSIER. She sits as we reveal -- it’s MALLORY.
-MALLORY (CONT’D)
-The grenades you used on Behemoth
-during the bank heist.
-(Frenchie doesn’t respond)
-You got a Supe activated by rage, so
-you simply take away his rage -- *
-turn him into a cupcake. Clever. *
-FRENCHIE
-I don’t know what you’re talking
-about.
-Mallory looks at him, impressed.
-CONTINUED:10 10
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 13.
-MALLORY
-And Cold Snap two months ago?
-Malchemical a month before that?
-You don’t know about those either?
-FRENCHIE
-What is this about?
-Mallory gets to business, drops the dossier before him.
-MALLORY
-Armed robbery, breaking and
-entering, aggravated assault on a
-Supe. You’re looking at twenty to
-twenty-five, minimum.
-Frenchie’s stomach plummets. He’s fucked.
-MALLORY (CONT’D)
-Or you can come work for me. I
-could use someone with your
-imagination.
-Frenchie’s street code won’t allow him to accept.
-FRENCHIE
-Madame. Fuck you.
-Mallory looks genuinely disappointed.
-MALLORY
-That’s a pity -- for you, but even
-more for --
-(looks at file)
-Cherie and Jay, I believe?
-Fuck. Frenchie swallows.
-MALLORY (CONT’D)
-ADX Florence, it’s a Supermax in *
-Colorado. They got the Unabomber,
-head of the Aryan Brotherhood, all
-the greats. And your friends too, *
-maybe. Or, they go free. But that *
-depends on you. Right now.
-FRENCHIE
-You can’t do that.
-She smiles -- can’t I? -- and starts for the door.
-FRENCHIE (CONT’D)
-Wait!
-She pauses, holding all the cards.
-FRENCHIE (CONT’D)
-What kind of work do you do?
-CONTINUED:11 11
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 14.
-OMITTED12 12 *
-EXT. DAWN OF THE SEVEN SET - BASECAMP - DAYA13 A13 *
-Homelander and Stormfront head past all the talent trailers. *
-He starts to pull her towards his trailer. *
-HOMELANDER *
-Hey -- come into my trailer. Got a *
-surprise for you. *
-STORMFRONT *
-(playful, loving) *
-Gotta swing by the Tower first, meet *
-with my social guys -- *
-HOMELANDER *
-Blow ‘em off. *
-STORMFRONT *
-Be back in twenty, okay? Then you *
-can surprise me. Wherever you want. *
-But Homelander isn’t used to ANY REJECTION WHATSOEVER. *
-HOMELANDER *
-Yeah. I mean, yeah, sure. *
-She kisses him and heads off. Off Homelander. Feeling a *
-little needy and insecure. He steps up into his trailer -- *
-INT. HOMELANDER’S TRAILER - DAY13 13
--- to REVEAL he was going to surprise her with a special *
-gift... a BANAL VASE OF FLOWERS. Beside it, there’s a pre-
-printed card from the flower company -- “Thanks for a great
-night!” -- carefully signed in pen -- “XO, Homelander.”
-The “great night” was, of course, the two of them killing
-someone and fucking beside their victim’s corpse.
-Homelander looks at the card, smiles, proud. CLOSE ON THE *
-XO. Really feels like he’s nailed this one. He glances at
-the clock. 2:15. She’ll be back soon.
-EXT. FRENCHIE’S VAN - DAY14 14
-Hughie. Looking up at the roof of the VAN --
-Where Butcher is on his belly. With a SNIPER RIFLE.
-Providing COVER, just in case. Looking into the scope --
-HUGHIE
-You see ‘em?
-BUTCHER
-I see ‘em.
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. GOLDENROD - 9/17/19 15.
-SCOPE POV. Annie points her PALM at the FENCE -- A BLINDING
-FLASH THAT FLARES the SCOPE -- blasting man-sized hole in the
-fence, RED METAL sizzling at the edges. She turns, leaves
-them as they SNEAK ONTO THE GROUNDS --
-INTERCUT BUTCHER and that SCOPE POV. He sets the cross-hatch
-target on Annie. Follows her. Thinks very seriously about
-pulling the trigger. But doesn’t. But WE SEE IT -- and it’s
-pretty fucking troubling. His hate for Supes burns deep.
-CONTINUED:14 14
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. GOLDENROD - 9/17/19 15A.
-Frenchie nods. Enters, M.M. and Kimiko behind. Annie peels
-back, returning to the van.
-OMITTED15 15
-INT. SAGE GROVE CENTER - HALLWAY 1/2 - DAY16 16 *
-Mother’s Milk, Frenchie, and Kimiko ENTER FRAME (or through a *
-door) head down a hallway. They spot an empty ROLLING BED. *
-Frenchie pivots to Kimiko. A whisper, maintaining cover --
-FRENCHIE
-Get in.
-She silently mock-imitates him -- ‘get in.’ Just a fuck you.
-He rolls his eyes.
-Frenchie climbs into the bed. Under the sheets.
-M.M. and Kimiko push. Suddenly, they all look like they *
-completely belong. Orderlies and patient. *
-EXT. FRENCHIE’S VAN - DAY17 17 *
-Annie approaches as Butcher hands the sniper rifle down to
-Hughie, as he climbs off the van roof. She reaches out to
-give him a hand.
-ANNIE
-Here.
-He moves past her, without touching her. She drops her hand.
-ANNIE (CONT’D)
-Seriously?
-Butcher heads to the side doors of the van. Annie follows.
-ANNIE (CONT’D)
-What is your problem with me?
-BUTCHER
-I ain’t got no problem with you.
-ANNIE
-That’s why you won’t even touch my
-hand?
-HUGHIE
-Guys, c’mon, not the time.
-ANNIE
-I think it’s exactly the time. I
-think the time is long overdue.
-(to Butcher)
-You know I hate Vought as much as
-you do. But it doesn’t matter.
-CONTINUED:14 14
-(MORE)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 16.
-Cause what you can’t stand is in my
-blood. I’m sub-human to you. Only
-good Supe is a dead Supe, right?
-BUTCHER
-You said it, not me.
-HUGHIE
-That’s enough --
-ANNIE
-You know. Under all that swagger,
-you’re just a bigot and a bully. I
-know a guy just like that. He’s got
-a flag for a cape.
-HUGHIE
-(oh FUCK)
-Annie, stop!
-Butcher. He gives her a homicidal look. A look that says,
-I’m gonna kill you for that one day. Even Annie averts her
-eyes, the look is so scary.
-The tense frozen moment is broken, when -- a sudden CRACKLE *
-RIPPLES overhead -- *
-They all DUCK DOWN -- shit -- STORMFRONT FLIES OVER! *
-Did she see them? Didn’t seem to. Butcher grabs a pair of *
-high-powered BINOCULARS, looks -- *
-STORMFRONT DROPS OUT OF THE SKY BEFORE THE SAGE GROVE *
-ENTRANCE, PLASMA TENDRILS stretching to the ground as she *
-lands. SHE STROLLS THROUGH THE FRONT DOOR -- *
-BUTCHER
-Fuck me. *
-OMITTED18 18 *
-INT. SAGE GROVE CENTER - HALLWAY 3/SECURITY ROOM - DAY19 19
-A UNIFORMED SAGE GROVE SECURITY GUARD oversees a BANK of
-MONITORS. When... a KNOCK on his LOCKED door --
-He heads over, looks through the small window in the door --
-POV. It’s M.M. Frenchie is convulsing in the bed. (Let’s
-make sure it’s not big, but scary and realistic, as these
-things really are).
-MOTHER’S MILK
-Open up, I need help. He’s gonna
-swallow his tongue, now open the
-goddam door!
-The SECURITY GUARD hesitates, then opens the door --
-CONTINUED:17 17
-ANNIE (CONT'D)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 17.
-SECURITY GUARD
-What’s wrong with him?
-That’s the last thing he’ll ever say -- THWIPPTHWIPP! -- *
-Frenchie sits up, FIRES A PISTOL WITH A SUPPRESSOR TIP. The *
-Guard collapses -- *
-Kimiko pulls his dead body into the room. As M.M. pushes *
-Frenchie’s gurney in quickly. Frenchie leaps out of the bed, *
-climbs up on a table, DISABLES the Security Camera in the
-room by pulling its cord out. As M.M. locks the door. A *
-well-oiled machine. *
-Kimiko stares at all the monitors. STUNNED. M.M. and *
-Frenchie soon join her. Soon they’re just as stunned.
-MOTHER’S MILK
-What in the holy fuck?
-REVEAL -- TEN MONITORS. Each showing SECURITY CAMERA FOOTAGE
-of TEN DIFFERENT ROOMS. Clean, white, with HEAVILY LOCKED
-DOORS. Half hospital room, half cell.
-And each room has a BAREFOOT PATIENT. With SUPER POWERS.
-(Remember the security room in “Cabin in the Woods.” All the
-different monsters. This is our wacko version of that.
-Should be a GONZO MOMENT.)
-Some powers seem odd -- for example, one PHASING PATIENT *
-vanishes and reappears uncontrollably in his room, but can’t *
-seem to get out. *
-But others are horrific SUPE FREAKS -- one PATIENT sits in
-his cell, his intestines flowing out of his mouth, squirming
-and beating on the outside of his body. He mumbles
-something, muffled because his mouth is so full.
-Mother’s Milk turns up the audio dial, so we hear --
-INTESTINE BOY
-...someone kill me...
-Another PATIENT VOMITS ACID onto a tray of food, it smokes as
-he leans over and laps it up.
-Another is a heavy-set bearded man, with what seems to be a
-massive, elephantiasis-inflicted penis straining his pants.
-The metal walls in his room are pocked with large dents.
-MOTHER’S MILK
-Whoa, brother’s got a love sausage.
-Kimiko. Staring at a different monitor. A YOUNG WOMAN
-(CINDY) sitting on the floor. Drugged. Head shaved. Arms *
-around her knees. No powers to speak of, but her silence and
-stillness are frightening. She seems to sense Kimiko, looks
-up at the camera -- as if right at Kimiko.
-The two young women seemingly lock glances for an eerie beat.
-CONTINUED:19 19
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 18.
-FRENCHIE
-What is this? Vought’s making more
-Supe Terrorists?
-MOTHER’S MILK
-If they are, they’re doin’ a pretty
-piss poor job.
-M.M. notices another MONITOR. STORMFRONT! Fuck. She enters *
-with a MAN IN SCRUBS (we briefly glimpsed him in ep. 205). *
-They talk to a PATIENT, TIM, who is nimbly making a ball *
-float in the air of its own accord -- *
-FRENCHIE *
-Stormfront is here? Merde! *
-CLOSE ON KIMIKO. WIDE ANGLE, SHALLOW FOCUS. Tense. *
-Stormfront is the SOURCE of her PTSD. M.M. puts a comforting *
-hand on her shoulder. *
-MOTHER'S MILK *
-It’s alright. You’re okay. *
-She nods, grateful -- Frenchie watches, wishes he were a part *
-of it. Wishes he could comfort her. But he can’t. Those *
-days have passed. *
-M.M. turns up the audio on that camera -- *
-STORMFRONT (ON SCREEN)
-...pretty impressive, Tim. Any
-trouble sleeping? Depression?
-TIM (ON SCREEN) *
-No, ma’am. *
-M.M. notices the Man in Scrubs. Give us a pixellated CLOSE- *
-UP on the screen --
-MOTHER’S MILK
-Yo. That dude she’s with, he look *
-familiar to you? *
-STORMFRONT (O.S.) *
-What about nausea? Headaches? *
-TIM (O.S.) *
-No. *
-FRENCHIE
-(he does, but Frenchie can’t
-place it)
-Je ne sais pas. *
-STORMFRONT (ON SCREEN)
-(to the Man in Scrubs)
-That’s promising. I think we’re
-pretty damn close.
-CONTINUED: (2)19 19
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 19.
-TIM (ON SCREEN)
-Ma’am. I’d like to go home now.
-See my family.
-STORMFRONT (ON SCREEN)
-You were admitted to Sage Grove as
-suicidal, Tim. You still may be a
-danger to yourself.
-TIM (ON SCREEN)
-Well. I’m not doin’ anymore of
-these stupid pet tricks until I talk
-to my sister.
-STORMFRONT (ON SCREEN)
-Okay, okay. We’ll sort it out.
-She gives the Man in Scrubs a pointed nod. Then walks out.
-The Man in Scrubs pulls his ZIPPO out of his pocket,
-FLICKS... then CONTROLS the FIRE... he’s a Supe, too! He
-sends a WALL OF FLAME AT TIM -- WHO FALLS BACK, BURNING O.S.! *
-IN THE SECURITY ROOM *
-FRENCHIE AND M.M. watch. Screams of AGONY echo as Tim BURNS *
-ALIVE. GET A CLOSE UP ON FRENCHIE’S FACE. Eyes widening -- *
-The Man in Scrubs, somber at this murder, closes the Zippo. *
-Get CLOSE on its ENGRAVING -- “Titty Committee”. (Remember *
-that detail in 205? It’s the same guy.) *
-Frenchie. About to lose his shit. It’s not so much big as *
-INTENSE -- he’s almost quivering with RAGE. It’s scary.
-Feels dangerous.
-FRENCHIE
-Lamplighter. That’s fucking
-Lamplighter.
-MOTHER’S MILK
-Shhh --
-FRENCHIE
-I didn’t recognize him without the
-mask and hood.
-(realizing)
-The “Elle” on Stormfront’s emails --
-the letter “L,” Lamplighter. We are
-so stupid.
-MOTHER’S MILK
-Take a breath.
-FRENCHIE
-We have to kill him! *
-MOTHER’S MILK
-Just hold on --
-CONTINUED: (3)19 19
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 20.
-FRENCHIE
-We have to. For Madame Mallory.
-For her grandchildren.
-MOTHER’S MILK
-Okay but not yet. Not until we *
-figure out what the fuck all this
-is. Clear?
-A long, long beat. Then Frenchie nods. Clear. He’s a
-professional, after all.
-In QUICK CUTS, they get to work. Pulling all the HARD DRIVES
-from the SECURITY COMPUTERS. (Or whatever electronic proof
-you’d really pilfer from the security room). They pack them
-neatly into the gurney bed. As --
-M.M.’s phone BUZZES -- he answers --
-HUGHIE (O.S.)
-You alright? Stormfront was there!
-INT. FRENCHIE’S VAN - OUTSIDE HOSPITAL - DAY - INTERCUT20 20
-BINOC POV. Hughie, in the passenger seat, sees STORMFRONT *
-exiting. She launches up on a blast of PLASMA --
-MOTHER’S MILK
-That ain’t all who’s here.
-HUGHIE
-(on handless mode) *
-Well, she just left. Get the hell
-out.
-MOTHER’S MILK
-On our way.
-FRENCHIE CLIMBS ONTO the BED, ON TOP of all the devices, then
-they put the sheet over him. Smart way to smuggle shit.
-INT. SAGE GROVE CENTER - HALLWAY 4 - DAY21 21
-A DOCTOR passes. Then --
-M.M. and Kimiko push Frenchie -- and the treasure trove of
-proof -- down the hall, towards the door -- freedom in SIGHT,
-when around the corner --
-Comes LAMPLIGHTER!! Approaching in their direction -- *
-M.M. and Kimiko play it cool. Keep pushing. No worries.
-Nothing to see here. Right past him.
-Did they get away with it? We think so.
-CONTINUED: (4)19 19
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 21.
-But in SLOW, LANGUID MOTION -- Lamplighter happens to look
-down at Frenchie. Who happens to look up at Lamplighter.
-MILK the connection. Lamplighter’s EYES WIDEN.
-LAMPLIGHTER
-You.
-Lamplighter PULLS his ZIPPO LIGHTER from his POCKET.
-Frenchie DIVES from the GURNEY -- FIGHTS HIM for the lighter
-before he has a chance to use it. To Kimiko and M.M. --
-FRENCHIE
-HELP ME!
-Kimiko LUNGES at Lamplighter -- KNOCKING HIM OFF BALANCE -- *
-but too late -- *
-IN SLOW MOTION as Lamplighter flicks the flame... *
-A BILLOWING COLUMN OF FIRE SHOOTS WILDLY FROM THE LIGHTER -- *
-a FLAME THROWER but THICKER -- they and M.M. dive out of the *
-way at the VERY LAST SECOND. It catches an ORDERLY -- *
-MELTING HIM in seconds! -- *
-CONTINUES THROUGH HIM and CRASHES INTO a HIGH SECURITY STEEL *
-DOOR. Blasting open a GAPING HOLE -- *
-SCREAMS from inside the LOCKED ROOMS in the hall. POUNDING *
-ON THE DOORS. Patients are in there that want to get out. *
-Lamplighter rises. Suddenly, he doesn’t seem to care about
-The Boys. He’s SCARED SHITLESS. Eyes on that hole. *
-A long, ominous beat.
-Then out walks CINDY, the young head-shaven woman. *
-LAMPLIGHTER
-Heyyyy, Cindy? Hey there... cool.
-Let’s be cool, okay?
-Cindy just looks at Lamplighter.
-LAMPLIGHTER (CONT’D)
-Remember the extra helping of Kraft
-shells n’ cheese I snuck you? I
-like you. You know that, right?
-CINDY
-...who are your friends?...
-MOTHER’S MILK
-We ain’t his friends! Fuck him up!
-CINDY
-...you’re dressed like his friends.
-I don’t like liars --
-CONTINUED:21 21
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 22.
-We’re not entirely sure what’s gonna happen, but it seems
-like it’s gonna be really BAD -- when --
-BAMBAMBAMBAMBAMBAM! A SAGE GROVE SECURITY GUARD behind Cindy *
-OPENS FIRE into her back! *
-She turns to them.
-Lamplighter quietly starts backing down the hall -- *
-Cindy CLENCHES a hand, makes a fist. *
-And the GUARD is CRUSHED. As if by a massive fist. Every *
-BONE SHATTERED --
-Mother’s Milk, Frenchie, and Kimiko watch, stunned.
-MOTHER’S MILK
-Oh, shit!
-When they notice -- Lamplighter is already hauling ass in the
-opposite direction -- AWAY from Cindy -- AWAY FROM ALL OF *
-THEM -- *
-They also notice -- Cindy pivots back to them -- a sliver of
-her face -- one eye on them. *
-So they haul ass, too -- after Lamplighter -- *
-OFF CINDY -- in the middle of the hallway -- clenching her
-fists again -- as EVERY CELL DOOR on both sides of the
-hallway CRUMPLES IN like TIN FOIL, OPENING --
-ANGLE ON BARE FEET shuffling out of various doors... one pair
-FLOATS... as a DOZEN SUPER POWERED PATIENTS STREAM OUT as an
-ALARM BLARES OUT --
-INT. SAGE GROVE CENTER - HALLWAY 3/OUTSIDE SECURITY ROOM -22 22
-CONTINUOUS
-Lamplighter RACES INSIDE the Security Room -- when Kimiko
-sprints towards him and WEDGES HERSELF in the DOORWAY before
-Lamplighter can close it!
-LAMPLIGHTER
-Let go! They’re coming!
-Kimiko shoves the door open. Lamplighter is thrown back *
-(ACTOR ACTION PLEASE) as Frenchie and M.M. race inside. His *
-lighter skitters across the floor away from him. Kimiko *
-slams the door SHUT behind them.
-INT. SAGE GROVE CENTER - SECURITY ROOM - CONTINUOUS23 23
-The Boys are now trapped with their mortal enemy (and lost
-all their EVIDENCE, btw). Lamplighter scrambles for the *
-lighter, holds it out at Frenchie. *
-CONTINUED: (2)21 21
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 23.
-LAMPLIGHTER
-Stay the fuck back! I’ll burn your
-skin off, asshole --
-Frenchie doesn’t give a shit -- he’s ready to end it all, if
-it means ending Lamplighter -- he aims his pistol -- *
-FRENCHIE
-You won’t get the chance --
-NOISES outside approach down the hallway. The Supe Freaks
-will hear them any second --
-MOTHER’S MILK
-Shut up! They’ll hear you!
-Stow. Your. Dicks!
-When the DOOR STARTS RATTLING --
-GUARD (O.S.)
-HELP! SOMEONE HELP ME!!
-Suddenly, screams of HORRIFIC AGONY -- and the small window
-in the door is COATED IN BLOOD and gummy bits --
-Our heroes stand TOTALLY STILL, listening, praying the freaks
-won’t storm inside -- Lamplighter holds up his lighter,
-Frenchie with his gun, Kimiko poised.
-More HORRIFIC SCREAMS from outside. SQUELCHING.
-Meanwhile, M.M. has been watching the SECURITY MONITORS.
-ON SCREEN. An ORDERLY knocked off his feet as a TENTACLE
-DRAGS HIM SCREAMING BY THE LEG out of frame. (What the fuck
-is THAT?)
-The inmates have taken over the asylum.
-M.M. pivots to Lamplighter. *
-MOTHER’S MILK
-(re: Kimiko)
-Now listen. She’s a Supe. So maybe
-you can burn us, but you’ll just
-piss her off. So how ‘bout we all *
-calm down, live through this *
-motherfucker?
-Frenchie and Lamplighter trade suspicious looks.
-ON THE MONITOR -- ANOTHER ANGLE -- A DOZEN SCREAMING PATIENTS
-POUNDING at a HEAVY LOCKED DOOR (HALLWAY 6) -- one pivots
-back to look at the CAMERA with GLOWING EYES.
-MOTHER’S MILK (CONT’D)
-(re: the monitor)
-What’s going on there?
-CONTINUED:23 23
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 24.
-LAMPLIGHTER
-Lockdown. No one’s getting out.
-(re: Kimiko)
-Not even her.
-MOTHER’S MILK
-There’s gotta be an access code.
-LAMPLIGHTER
-There is, genius, at the door. But
-no fucking way I’m telling you or
-taking you with me. Suck shit.
-MOTHER’S MILK *
-You got a Supe army out there who *
-wanna rip you apart --
-(gestures to Kimiko)
-She can help --
-LAMPLIGHTER
-I’ll take my chances.
-Suddenly the DOOR behind him FLINGS OPEN, LOCK BREAKING! *
-ACID VOMIT GUY BARRELS IN -- TACKLES Lamplighter to the FLOOR *
--- his ZIPPO KNOCKED AWAY -- *
-LAMPLIGHTER (CONT’D)
-FUCK!
-Vomit Guy PINS Lamplighter down. Lamplighter STRUGGLES but *
-can’t do much, the dude’s STRONG, arms like GRANITE! *
-Frenchie and M.M. aim their guns, but can’t take the shot, *
-not without killing their only ticket out of here. *
-Vomit Guy GAGS TWICE -- like a CAT COUGHING UP A HAIRBALL -- *
-then VOMITS onto Lamplighter -- Lamplighter SQUIRMS his HEAD *
-away, the puke HITS his SHOULDER -- WHICH SMOKES and BURNS! *
-LAMPLIGHTER (CONT’D) *
-AAAAAAHHHH! *
-Vomit Guy leans closer for a KILL SHOT. GAGS TWICE -- here *
-it comes -- when KIMIKO SPRINGS into Vomit Guy!! KNOCKS HIM *
-ON HIS BACK -- as he VOMITS -- but it spurts up into the air *
-and lands directly on his FACE. HE SCREAMS and his FACE *
-SMOKES and BLEEDS as the vomit BURNS and MELTS INTO HIS EYS -- *
-boring through to his brain. Until he’s dead. *
-Everyone watches this horror. A long, long beat. Then -- *
-LAMPLIGHTER (CONT’D)
-Okay, you guys can come. *
-OMITTED24 24 *
-OMITTED25 25 *
-OMITTED26 26 *
-CONTINUED: (2)23 23
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 25.
-OMITTED27 27 *
-INT. SAGE GROVE CENTER - SECURITY ROOM - DAYA28 A28
-SLAM! -- Mother’s Milk SMASHES the SECURITY CONSOLE CONTROLS *
-with a FIRE EXTINGUISHER. THE MONITORS FRITZ TO BLACK. He *
-makes sure there’s no record of them ever being there -- *
-They peek out the door to make sure the coast is clear... *
-then sneak out... leaving a dead, bloody Vomit Guy behind... *
-INT./EXT. VAN - FIELD OUTSIDE HOSPITAL - DAYB28 B28 *
-INSIDE THE VAN. Hughie still watches the hospital with *
-binocs, stunned, through the windshield as -- *
-BEDLAM. A BLUE SUPER-POWERED ENERGY BURST inside one
-unbroken supe-proof WINDOW. A blood splat against ANOTHER. *
-HUGHIE
-What the fuck??
-EXT. FIELD OUTSIDE HOSPITAL - DAYC28 C28 *
-OUTSIDE THE VAN. Annie watches the windows. Butcher has *
-been trying to get ahold of M.M., tries again. *
-BUTCHER *
-Bloody hell, M.M., pick up! *
-When they pivot to see -- a young, skinny, haggard PATIENT. *
-Must’ve gotten out before the lockdown.
-BUTCHER (CONT’D)
-Hello. Easy, son. No trouble from *
-us, you just stroll on by, yeah? *
-PATIENT
-(near tears)
-I don’t want them to hurt me again.
-BUTCHER
-No one’s gonna hurt you, lad. We’re
-your mates, ain’t we?
-Long beat. Then the Patient nods slowly. Yeah, okay. Just
-as Butcher and Annie breathe a sigh of relief --
-OVERHEAD SHOT. The Patient clenches, unleashing a CIRCULAR
-ENERGY PULSE that widens like a ripple in a pond. Kicking up
-DIRT and DUST. Swatting Butcher and Annie to the ground,
-HARD. And ROLLING the VAN ON ITS ROOF --
-From the dirt -- Annie looks up, horrified, to see --
-BANGBANGBANG! The guy’s chest EXPLODES with gunfire.
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 26.
-REVEAL -- Butcher on the ground. Unloading his pistol into
-him. The Patient drops. Dead.
-Annie stands. Eyes on the bloody Patient. Couldn’t be more
-than 18. But her grim reverie is broken when --
-BUTCHER (CONT’D)
-Gimme a fuckin’ hand!
-The van is UPSIDE DOWN. Butcher SLIDES OPEN the SIDE DOOR,
-Annie quickly joins him, pulling a dazed Hughie out --
-ANNIE
-Hughie. You alright?
-He looks at her. Nods. Then crumples. There’s a JAGGED
-METAL FRAGMENT jutting out of his abdomen. It’s really bad.
-Hughie collapses.
-ANNIE (CONT'D)
-Hughie! BUTCHER
-Hughie, fuck!
-They drop to their knees around him. Inspect the wound.
-Blood begins to flow. Too much blood. Way too much.
-ANNIE
-Oh no oh no.
-BUTCHER
-Can you cauterize it?
-Annie holds up her hand. CAN’T make it glow. *
-ANNIE
-The kid must’ve fried everything. I *
-gotta draw the power from somewhere. *
-BUTCHER *
-Well, you got a useless fuckin’ *
-superpower, dontcha? *
-Butcher looks down at Hughie. There’s only one choice. *
-BUTCHER (CONT’D)
-We gotta get him to a doctor.
-ANNIE
-Where? How?
-BUTCHER
-Well, we ain’t gonna just fuckin’ *
-sit here and watch him bleed out! *
-ANNIE
-What about the others?
-Butcher lifts up Hughie -- *
-CONTINUED:C28 C28
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND WHITE - 9/18/19 27.
-BUTCHER
-They’ll have to sort themselves.
-Come on.
-Together, they shoulder an unconscious Hughie, as fast as
-they can, across the field... both trying to repress their
-OUTRIGHT TERROR at the possibility of losing Hughie...
-INT. HOMELANDER’S TRAILER - DAYD28 D28
-The clock. 4:15.
-Homelander waits. Stormfront is very, very late. He stares
-at the banal flowers. At his card. “XO, Homelander.” It *
-all seems so ridiculous now. So pathetic.
-XO? He’s stupid. Weak to go out on a limb like this. Hates
-himself more than he hates her. XO!?
-Off his twisting expression --
-EXT. BASECAMP - DAY - LATERE28 E28
-CAMERA FINDS: A PAIR OF FIREMAN BOOTS step over -- the
-charred remnant of the card -- “XO, HOMEL”
-CREW watch as FIRETRUCKS and FIREMEN hose down Homelander’s
-trailer. Extinguishing the raging fire that engulfed it.
-Mostly embers and charcoal by now.
-Ashley sits with an EMT, being treated for smoke inhalation. *
-She takes off her mask long enough to ask DEANNA -- business *
-above health always -- *
-ASHLEY *
-Really, no one’s seen Starlight yet? *
-HIGH POV of the chaotic scene. Then we reveal --
-Homelander watches from atop the Dawn of the Seven backdrop. *
-A combustible mix of emotions. Insecurity. Petulance. *
-STORMFRONT (O.S.)
-Been looking everywhere for you.
-Stormfront steps up. Looking over at the smoking trailer.
-STORMFRONT (CONT’D)
-What happened to your trailer?
-HOMELANDER
-Oh. Electrical fire. How was your
-meeting?
-She gives him a look. Can tell he’s lying.
-STORMFRONT
-Sorry, it went long.
-CONTINUED: (2)C28 C28
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 28.
-HOMELANDER
-You don’t have to apologize. So I’m
-gonna go run lines with Noir. Scene
-43 tonight. Real magilla.
-He’s a little stiff. Stormfront senses it --
-STORMFRONT
-What’s wrong?
-HOMELANDER
-Nothing.
-STORMFRONT
-You sure?
-HOMELANDER
-Why would anything be wrong?
-He heads off, with as much dignity as he can muster. But he
-can’t help himself. His insecurity overwhelms him. He
-pivots back around --
-HOMELANDER (CONT’D)
-Oh, by the way? I went to the
-Tower. You weren’t there. No one
-knew where you were.
-STORMFRONT
-You were -- checking on me?
-HOMELANDER
-I was checking to see how your
-meeting went. But it’s fine.
-STORMFRONT
-Hold on. Just let me --
-He steps forward. For a flash -- we see what a Homelander
-SCORNED looks like. Anger and hurt and violence. It should
-scare the ever loving SHIT out of us. He lightly brushes his
-hand over her throat. Then --
-HOMELANDER
-Explain? Why would you have to
-explain anything?
-He walks off. Off Stormfront -- actually RATTLED for the
-first time. Which for her, is something. *
-OMITTED28 28 *
-INT. SAGE GROVE CENTER - HALLWAY 5 - DAYA29 A29
-Heads on swivel, M.M., Frenchie, Kimiko and Lamplighter. *
-Walk down a hall. Over a MUTILATED ORDERLY CORPSE, face down *
-in a big pool of blood. Lamplighter, still nursing his acid- *
-burnt SHOULDER, stops at a particular ROOM -- *
-CONTINUED:E28 E28
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 29.
-LAMPLIGHTER
-C’mon, in here.
-INT. SAGE GROVE CENTER - MEDICAL SUPPLY ROOM - DAY29 29
-They lock the door behind them -- as Lamplighter moves to the
-antiseptic and gauze to wrap himself up.
-CLOSE ON FRENCHIE. He looks around like Moses looking at the
-Promised Land: the room is STACKED FULL OF DRUGS!
-SHELVES AND SHELVES of PILLS, LIQUIDS, you name it. (All pad-
-locked. Also syringes, oxygen tanks, brooms, wheelchairs.) *
-GIVE US CLOSE-UPS of ALL THE PILLS for Frenchie’s reaction -- *
-FRENCHIE
-(in awe)
-It’s so beautiful.
-He immediately inspects all the goodies as -- *
-Lamplighter grabs supplies. Dresses, bandages his SHOULDER. *
-MOTHER'S MILK
-What the hell’s going on anyway?
-(Lamplighter looks at him)
-Juicing people with Compound V, only
-to roast ‘em alive? Why? And why
-are you here?
-LAMPLIGHTER
-Maybe I just like watching people
-burn.
-Lamplighter looks at Frenchie. Frenchie stops examining the *
-drugs, looks back at him. It’s loaded as fuck. *
-LAMPLIGHTER (CONT’D)
-I remember you, y’know. You were
-tailin’ me the night I torched those
-kids.
-M.M. clocks Frenchie’s guilt and anger roiling within.
-MOTHER’S MILK
-Frenchie...
-LAMPLIGHTER
-Why didn’t you stop me? Maybe you
-like watching people burn, too.
-FRENCHIE
-FILS DE PUTE!
-Frenchie charges him -- M.M. has to work like a MOTHERFUCKER
-to pull him back -- Lamplighter grins, he wants it --
-CONTINUED:A29 A29
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 30.
-MOTHER'S MILK
-NO! Stop it!
-Finally, Frenchie twists free. Tries to catch his breath.
-Push down his anger -- but more than that -- his ANGUISH.
-Kimiko watches him. With some empathy. She’s never quite
-seen him like this.
-Off Frenchie, MATCH CUT TO:
-INT. RUN DOWN WAREHOUSE - NIGHT - FLASHBACK30 30
-FRENCHIE’S FACE. Staring at a gorgeous engagement ring in
-M.M.’s hand.
-CHYRON: 5 YEARS AGO
-FRENCHIE
-Mon dieu...
-MOTHER'S MILK
-I don’t wanna hear nothing about
-getting tired of the pussy. I love *
-her. *
-Beat. Then Frenchie surprisingly hugs him. M.M. grins.
-We’ve never seen such warm camaraderie between these two.
-They used to be very good friends.
-Mallory steps up. A small smile on her face. She carries a
-TABLET COMPUTER to be used a bit later.
-MALLORY
-Congratulations, Marvin.
-MOTHER’S MILK
-Thank you, Colonel.
-FRENCHIE
-Oh, the bachelor party I will throw
-you. What are your feelings about
-transgender strippers?
-MOTHER’S MILK
-Strippers ain’t my kinda Hershey’s,
-with or without nuts. I was
-thinking a golf trip maybe.
-FRENCHIE
-You’re a fucking monster.
-Mallory stifles a smile. Enjoys the camaraderie of her men.
-Meanwhile, an intense Butcher at the window, all business.
-BUTCHER
-He’s here.
-CONTINUED:29 29
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 31.
-Butcher cocks the hammer on a 9mm at his side. The Boys
-position themselves behind Mallory. Game faces on.
-ENTRANCE. AN ORANGE FLICKERING GLOW approaches, growing
-steadily brighter. LAMPLIGHTER enters. Sharp. Trim.
-Wearing his supersuit and carrying his renowned LIT STAFF.
-He posts before them in all of his Seven glory --
-THE BOYS SNICKER. It’s contagious. Even Mallory has to
-clear her throat and look away.
-LAMPLIGHTER
-What?
-BUTCHER
-Sorry, mate. You just look like one
-a’ them poncy baton twirlers.
-MOTHER’S MILK
-Majorettes.
-BUTCHER
-Right. A majorette.
-Mallory shows Lamplighter the TABLET. FLICKS through some
-images. We don’t see the images, but the blood drains from
-his face.
-MALLORY
-So here’s what happens now. You’re
-going to tell us every single thing
-you see and hear at the Tower.
-BUTCHER
-Especially when it’s about
-Homelander.
-Mallory shoots Butcher a “shut up” look. Butcher looks back,
-defiant. When it comes to Homelander -- whatever it takes.
-Lamplighter. Fury in his eyes. The intensity of the torch
-increases -- Butcher grips his gun. Frenchie glances at M.M.
-Tense. But Mallory remains cool.
-MALLORY
-Please don’t pretend like you have a
-choice.
-(hands him a card)
-I look forward to your call.
-A moment. Lamplighter takes the card, storms out. Butcher
-smiles, pleased with himself --
-BUTCHER
-What’d I say? Easy peasy.
-Mallory drops her bravado.
-CONTINUED:30 30
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 32.
-MALLORY
-I don’t like it. You don’t back an
-animal like that into a corner.
-BUTCHER
-Fuck him. We own his arse.
-MALLORY
-Frenchie. Keep an eye on
-Lamplighter. Don’t let him outta
-your sight.
-FRENCHIE
-Oui, madame.
-Frenchie nods, heads out. Off this --
-EXT. RURAL ROAD - DAY - PRESENT31 31
-Country road, lined with thick trees on both sides. A
-Hyundai SEDAN rolls around the corner, BRAKES in front of --
-Annie. Stepping into the road, waving her hands.
-The driver -- businessman DENNIS, 40, loosened tie and blazer
--- rolls down the window --
-DENNIS
-What’s the trouble, miss?
-ANNIE
-Sir, I need you to step out of your
-car please.
-DENNIS
-What’re you talking about?
-Butcher steps up. Arm around a bleeding Hughie -- GUN
-conspicuously at his side.
-BUTCHER
-FBI. Need to commandeer your
-Hyundai. Bit of an emergency.
-DENNIS
-Jesus. What happened to him?
-BUTCHER
-Long story, that.
-Dennis climbs out --
-DENNIS
-Can I see some I.D.?
-BUTCHER
-In my other pants, too busy saving *
-this one, but you can ring my boss -- *
-CONTINUED: (2)30 30
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. GREEN PAGES - 9/15/19 33.
-DENNIS
-Look, I’ll take you to the hospital.
-But it’s the middle of nowhere, I’m
-not giving you my car. *
-Butcher. A beat of resignation. *
-BUTCHER *
-Alright. Have it your way. *
-Butcher carefully sets Hughie down against a tree. Then *
-approaches. Menacing. Gun at his side. *
-ANNIE
-(cool it)
-Butcher, no. Listen, sir -- *
-When Dennis PULLS a GUN from his GLOVE BOX -- LUNGES from the
-car for a cleaner shot -- he’s TERRIFIED --
-DENNIS
-Just stay back!
-ANNIE
-Whoa, that’s not necessary. Let’s
-just talk!
-DENNIS *
-FBI. Get real. You’re not even
-American! Is he even really hurt?
-This some scam?? *
-The situation spins further and further out of control. *
-BUTCHER *
-If I wanted to nick some wheels, it *
-wouldn’t be a fuckin’ Hyundai. *
-DENNIS
-This is a stand your ground state.
-Stay back!
-BUTCHER *
-You stand where you want. *
-ANNIE
-Butcher, stop. Buddy, put the gun
-down!
-Butcher keeps approaching --
-DENNIS
-I said stay back!
-ANNIE
-I said put it down!
-CONTINUED:31 31
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. GREEN PAGES - 9/15/19 34.
-CLOSE ON ANNIE. She can see -- CLOSE ON DENNIS. CLOSE ON
-HIS TRIGGER FINGER. He’s about to FIRE --
-His Hyundai headlights suddenly FLARE -- as she HOLDS OUT her
-HANDS and BLASTS HIM BACK --
-CONTINUED: (2)31 31
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. GREEN PAGES - 9/15/19 34A.
-Dennis sails through the air, CRACKS his head hard on the
-pavement. Blood starts pooling beneath him.
-Annie rushes over. Checks his pulse. Tries to rouse him.
-Butcher SNAGS Dennis’ KEYS from his hands. Moves to Hughie,
-loads him into the back seat.
-CLOSE ON ANNIE. PUSH IN. Her frozen stillness.
-ANNIE (CONT’D)
-He’s dead. You couldn’t just listen
-to me and stay back??
-BUTCHER
-Come on! You can cauterize it!
-Annie. Leaves Dennis there, a murder in the road.
-Heads to the open back door, where Hughie lays. Beside an
-EMPTY BABY SEAT, strapped in the back. Annie takes it in.
-The things she has to do. The depths she has to go. Then --
-She reaches out her HAND. The LIGHTS inside the CAR PULSE,
-the RADIO FRITZES with static -- as she presses her now
-GLOWING HAND against Hughie’s wound. We HEAR his FLESH
-SIZZLE. Even unconscious, he SCREAMS.
-Annie struggles with seeing him like this.
-Her power finally dims and goes out. The bleeding’s stopped.
-BUTCHER (CONT’D)
-It won’t hold long. Come on.
-Butcher jumps in the driver’s seat, she hops in the
-passenger’s seat.
-Even Butcher knows better than to fuck with her right now.
-BUTCHER (CONT’D)
-(quietly)
-Thank you.
-This doesn’t make Annie feel any better. Not by a longshot.
-She watches Dennis’s face-down body in the SIDE MIRROR as
-they leave it behind.
-OMITTED32 32 *
-CONTINUED: (3)31 31
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 35-36.
-OMITTED33 33 *
-INT. SAGE GROVE CENTER - MEDICAL SUPPLY ROOM - DAY34 34
-CRASH! Frenchie’s elbow SMASHES the glass of a MEDICINE
-CABINET. Starts stuffing them into his pockets --
-MOTHER’S MILK
-This really the time to go shopping?
-Frenchie checks out the drug labels.
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 37.
-FRENCHIE *
-One, why not? And two, this is good *
-news. Perhaps we won’t have to *
-fight anyone. *
-MOTHER’S MILK *
-What do you mean? *
-FRENCHIE *
-With some aerated propofol, some *
-other odds and ends? I make a *
-knockout bomb. Even for Supes. *
-M.M. reacts, it’s a smart idea. Lamplighter keeps his *
-distance. Tension between them still thick. Plays with his *
-‘Titty Committee’ ZIPPO. Click. Click.
-Frenchie eyes him as he selects PILLS, CHEMICALS, GLASS *
-CONTAINERS. Sets up a make-shift lab. Something burns on *
-his mind. Then... finally decides to say it.
-FRENCHIE (CONT’D)
-Why are we still alive?
-LAMPLIGHTER
-Dumb luck. *
-FRENCHIE
-Non. I mean that night. We went *
-underground for months, but you
-never came for us. Not you, not
-Homelander, no one. Why?
-LAMPLIGHTER
-What, you’re disappointed we didn’t
-kill you?
-FRENCHIE
-The Seven always retaliate.
-Lamplighter’s hiding something he wants to keep buried. He
-grows annoyed. His Zippo. Click. Click.
-LAMPLIGHTER
-You’re nobodies. You weren’t worth
-it.
-Frenchie looks up at Lamplighter as he realizes --
-FRENCHIE
-You never told them, did you?
-A moment. Lamplighter clearly grows uncomfortable.
-FRENCHIE (CONT’D)
-Why wouldn’t you tell them?
-LAMPLIGHTER
-Who says I didn’t?
-CONTINUED:34 34
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 38.
-FRENCHIE
-I figured you’d boast about it.
-Must’ve found it thrilling.
-Lamplighter shifts. Increasingly uncomfortable. Does NOT
-want to keep talking about this. Clickclickclick.
-LAMPLIGHTER
-I’m not an animal.
-FRENCHIE
-Only an animal would do what you
-did.
-LAMPLIGHTER
-Just fucking drop it, okay?
-FRENCHIE
-You murdered innocent children --
-LAMPLIGHTER
-(getting hotter)
-Shut the fuck up --
-FRENCHIE
-You watched them burn alive, crying
-for their Mama -- if that’s not an
-animal, then what --
-LAMPLIGHTER
-(finally blurts out)
-I didn’t know!
-(then quieter)
-I didn’t know they were in the bed.
-I thought it was your boss. Wasn’t
-until I heard them screaming... but
-by then it was too late.
-For the first time Frenchie, SHOCKED, sees Lamplighter as far
-more complicated than he imagined. But M.M. doesn’t care --
-MOTHER’S MILK
-You didn’t mean to? We should feel
-bad for you? Fuck you.
-LAMPLIGHTER
-I don’t want anything from you.
-(to Frenchie, in real and
-genuine pain)
-I saw you following me that night.
-Then you disappeared. I keep asking
-myself, why didn’t you stop me? Why
-didn’t you?
-M.M. shoots Frenchie a simmering look.
-MOTHER’S MILK
-Good question.
-CONTINUED: (2)34 34
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 39.
-Kimiko watches, sympathetic -- as Frenchie IN ANGUISH stares *
-at M.M. and Lamplighter. His guilt crushing him down.
-EXT. MEATPACKING DISTRICT - NIGHT - FLASHBACK35 35
-MATCH CUT TO Frenchie sticking to the shadows and watching
-Lamplighter (still in costume) entering an extravagant RED *
-CARPET ART GALA. He holds hands with a beautiful model -- *
-his date for the night. The crowd roars. Paparazzi flash *
-their cameras. Lamplighter grins a Tom Cruise smile.
-VMMMT... VMMMT... -- Frenchie glances at his phone. CHERIE’s
-face appears giving the camera a middle finger. He sends it
-to VM. It buzzes again: Cherie. Merde. Answers --
-FRENCHIE
-Cherie, this’s not a good --
-CHERIE
-(crying)
-He’s dying!
-FRENCHIE
-Quoi?
-CHERIE
-Jay’s OD’ing. I don’t know what he
-took. Please!
-Frenchie tries not to raise his voice.
-FRENCHIE
-Take him to the hospital.
-CHERIE
-Serge! Fucking come! Now!
-Frenchie watches Lamplighter and the model enter the gala. *
-Checks his watch. Considers.
-INT. SEEDY CHELSEA APARTMENT - NIGHT - FLASHBACK36 36
-CLOSE ON Frenchie slapping Jay’s face. He lies unresponsive
-on the floor. Cherie paces, distraught.
-Frenchie empties a HYPODERMIC NEEDLE into Jay’s abdomen. A
-bottle of Naloxone Hcl is at his side. Gives Jay mouth to *
-mouth. Jay stirs barely. Spittle on the side of his mouth.
-(This isn’t Pulp Fiction -- it isn’t sexy, there’s no
-dramatic gasp.) His eyes barely open.
-FRENCHIE
-Jay, c’mon, mon ami. You’re okay.
-You went out. Can you sit up?
-Frenchie helps Jay lean on the couch. Drug paraphernalia
-lies everywhere in the unkempt room. This isn’t the Jay we
-first met. He looks around, groggy. Cherie hugs Frenchie --
-CONTINUED: (3)34 34
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 40.
-CHERIE
-Oh my God!
-But Frenchie glances at his watch, start’s packing up.
-FRENCHIE
-Stay with him. Keep him up. Keep
-him talking.
-CHERIE
-Where’re you going?
-FRENCHIE
-I told you, I’ve got something...
-CHERIE
-More important than this? Us?
-FRENCHIE
-Cherie, I cannot do this right now.
-CHERIE
-Fine, then go. Go! We don’t give a
-shit.
-Frenchie looks at her with guilt, but he can’t stay.
-JAY
-...Serge?
-Frenchie turns to his old friend, gives him a weak and
-heartbroken smile.
-FRENCHIE
-I’ll come back. Je promets.
-EXT. RURAL ROAD - DAY - PRESENT37 37
-The Hyundai SCREAMS down the road. Pushing 90 mph.
-INT. HYUNDAI - MOVING - DAY38 38
-Butcher drives, tense. Annie in the back, beside Hughie. At
-least he’s not bleeding anymore. But he quietly moans. A
-fever. Infection starting to set in. Annie reaches over,
-feels Hughie’s head.
-ANNIE
-He’s burning up.
-BUTCHER
-Going as fast as I can.
-Butcher. Annie. Riding in silence. Butcher looks over at
-her. Beat. Then --
-BUTCHER (CONT’D)
-Appreciate what you did back there.
-CONTINUED:36 36
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 41.
-ANNIE
-Thanks. Your approval means
-everything to me.
-BUTCHER
-And some sarcasm to stick the
-landing. Nice one.
-(long beat of silence) *
-You didn’t have a choice. *
-Annie meets his gaze, steely --
-ANNIE
-I know. Know what I was thinking,
-looking at him? “Why’d you pull a
-gun, you stupid fuck?” That’s all.
-Maybe once I would’ve cried for him,
-but not anymore. Now he was just
-another person in our way.
-Butcher throws her a long look. Maybe even impressed --
-BUTCHER
-Huh.
-ANNIE
-No.
-BUTCHER
-No what?
-ANNIE
-No to that fucking look of quiet
-respect or approval or whatever it
-is. I don’t want it. We’re nothing
-alike. Nothing.
-Off Annie -- she doth protest too much. Fact is, she is
-growing calloused, maybe a bit like Butcher. But hates it --
-INT. CHURCH OF THE COLLECTIVE RENEWAL CENTER - DAY39 39
-OPEN ON A PHOTO PORTRAIT ON THE WALL. Church of the
-Collective Chairman ALASTAIR ADANA. Looking thoughtful.
-Then PULL BACK to REVEAL the real ADANA. He’s impeccably
-dressed in a fine suit and tasteful Rolex.
-WIDE SHOT. Adana is with Deep and A-Train. In an ornate
-DINING ROOM. They’re the only ones in here, save an
-ATTENTIVE CHURCH OF THE COLLECTIVE WAITER -- wearing what
-looks like CREAM LINEN PAJAMAS. (Inside the Church walls,
-these are the uniforms). He serves steak, spoons Bernaise.
-ALASTAIR
-Poor Phillip here lost his wife to
-breast cancer.
-CONTINUED:38 38
-(MORE)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND WHITE - 9/18/19 42.
-But after four levels of our
-“Renewal” study course? Just look *
-at him now.
-DEEP
-Congrats, man.
-Phillip gives a shaky smile, still fragile.
-They all have Frescas. Alastair sips from his.
-ALASTAIR
-Deep, your numbers among women have
-been ticking up quite nicely. Did
-you catch Malala Yousafzai’s Tweet?
-Called you a sweetheart.
-DEEP
-She’s the sweetheart.
-Alastair turns to A-Train, who’s still eating.
-ALASTAIR *
-So what’s on your mind, A-Train? *
-A-TRAIN
-Hmm. Well, Mr. Adana. I mean, Deep *
-invited me here. Having a, I don’t
-know, a real nice lunch.
-Alastair nods, maintaining his warm smile.
-ALASTAIR
-And Deep? What’s on your mind?
-DEEP
-I think A-Train has sabotaged me my
-entire career.
-A-Train looks at Deep, dumbstruck.
-A-TRAIN
-...What?
-DEEP
-You think you’re better than me. I
-fantasize about drowning you, you
-know that? Over and over again.
-And I don’t want to have that
-feeling anymore. I wanna be clean.
-ALASTAIR
-Oh boy. Looks like we got ourselves
-a good old Truth Exchange.
-A-Train stands.
-CONTINUED:39 39
-ALASTAIR (CONT'D)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 43.
-A-TRAIN
-Uh, hell no.
-ALASTAIR
-Please sit down.
-A-TRAIN
-I’m a Baptist, okay -- I saw that
-documentary about y’all -- this
-ain’t my shit --
-As he goes, Alastair calls after him --
-ALASTAIR
-For a man in seven figure debt, a
-heart condition, and in heavy
-withdrawal, you really have the
-luxury to get up and leave?
-A-TRAIN
-How do you know that?
-(re: Deep)
-He fucking tell you that?
-ALASTAIR
-No. The Church knows all kinds of
-things. But don’t worry, we also
-know how to be discreet, especially
-for our members.
-(then)
-They’re gonna give Shockwave your
-uniform, you know. Call him the
-next A-Train.
-A-TRAIN
-They can’t do that.
-ALASTAIR
-Why not? A-Train is a trademark.
-You are just another nobody from the
-South Side of Chicago.
-A-TRAIN
-Fuck you!
-ALASTAIR
-I can help. With this Congressional *
-Hearing, Stan Edgar’s gonna need a *
-united Seven. I can get you back
-in. But first? Sit down. And let
-Deep tell you his truths.
-A moment. A-Train sits, looks at Deep, who needs this
-exchange. Alastair smiles encouragingly.
-ALASTAIR (CONT’D)
-See how much progress we’re making?
-CONTINUED: (2)39 39
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND BLUE - 9/23/19 44.
-INT. SAGE GROVE CENTER - MEDICAL SUPPLIES ROOM - DAY40 40
-Frenchie works his magic. Aerates a solution of pulverized *
-pills and liquid with a nebulizer, then -- *
-Attaches it to an OXYGEN TANK. Dumping the contents in, *
-completing the knock-out bomb. *
-REVERSE TO REVEAL -- Mother’s Milk, Kimiko, even Lamplighter *
-stare at Frenchie’s work with a mixture of awe and fear. *
-LAMPLIGHTER *
-(skeptical) *
-You really think this is gonna work? *
-FRENCHIE *
-I think so. *
-They regard each other. Brought together again by fate. *
-Both men silently wrestling with thoughts of guilt and *
-regret. Until an expression on Lamplighter’s face. Fuck it. *
-LAMPLIGHTER *
-...they’re not trying to make Supes
-here, these people are only test *
-subjects. They’re just trying to
-stabilize the V.
-MOTHER’S MILK
-Stabilize? What do you mean?
-LAMPLIGHTER
-Infants handle it best. But adults?
-Well, you saw. Sometimes you get
-powers. Sometimes you get --
-freaks, sometimes you just explode.
-Vought wants to stabilize it. So
-you stick the V in any adult arm,
-anytime, anywhere, you get a solid
-Supe, solid powers.
-M.M. and Frenchie lock eyes. Jesus Christ. Milk this. This
-is a HUGE SCARY REVEAL.
-MOTHER’S MILK
-(holy fucking shit)
-A thousand more Supes, a hundred
-thousand? Why? Fucks their movies,
-their merchandising --
-LAMPLIGHTER
-They don’t tell me. They just make
-me burn the evidence, y’know?
-Lamplighter quiets. Genuinely tortured. Frenchie looks at
-him. Shocked to find the two of them have much in common.
-If Lamplighter opened up... Frenchie thinks he should, too...
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 45.
-FRENCHIE
-...my best friend was ODing and I
-left to save him that night.
-(Lamplighter looks at him)
-Why I didn’t stop you. You were at
-a party. I was away for 30 minutes. *
-Came back, you were gone.
-M.M. leans forward. He didn’t know. Neither did Kimiko.
-LAMPLIGHTER
-Did he live? Your friend?
-FRENCHIE *
-Oui. But I never saw him again. *
-Then he died a few months later. *
-Another overdose.
-MOTHER’S MILK
-You serious? Why didn’t you tell *
-us?
-FRENCHIE
-What difference would it make?
-MOTHER’S MILK
-All these years... we woulda let you
-off the hook.
-FRENCHIE
-What makes you think I want to be
-let off the hook?
-They all look at Frenchie with sympathy. Even Kimiko.
-Especially Kimiko. They’ve had such a chasm between them
-lately. Now she understands him better than she ever has.
-The emotional moment is abruptly shattered when --
-SMASH -- a THICK GLISTENING TENTACLE DARTS through a DOOR *
-WINDOW, WRAPS AROUND M.M.’s neck! SLAMS him against the *
-doorway. Strangling him! He CLAWS AT IT -- frantically *
-TUGGING AT IT! Back and forth! *
-FRENCHIE (CONT’D)
-Merde!
-Frenchie tries to RIP at the tentacle -- no good!
-Lamplighter doesn’t have a clean shot to burn it!
-So Kimiko DIVES OUT of the ROOM -- we hear a THUMP, a SHOUT
-of PAIN -- and the TENTACLE suddenly drops to the floor. *
-Weaves up to the door, exits. *
-M.M. gasps for air -- they move to the door to see --
-THE BIG BEARDED DUDE. On the floor. Out cold. With “BOSSY”
-embedded in blood on his face.
-CONTINUED:40 40
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 46.
-The tentacle retracts -- up his pajama leg --
-MOTHER’S MILK
-Wait. Was that -- ??
-FRENCHIE
-It’s okay.
-MOTHER’S MILK
-Was that his fucking dick??
-FRENCHIE
-Don’t be so closed-minded. Let’s
-go.
-Frenchie GRABS the oxygen tank and bolts out -- with a
-disturbed M.M., Kimiko and Lamplighter following...
-INT. SAGE GROVE INSTITUTE - HALLWAY 6 - CONTINUOUS41 41
-They move down the HALLWAY -- rounding a CORNER --
-LAMPLIGHTER
-We’re here.
-UP AHEAD. THE DOOR. With a KEYPAD at the side. They made
-it! When --
-CINDY steps out of a stairwell. Between them and the exit.
-Looking at them, chin down, eyes up. *
-MOTHER’S MILK
-Oh fuck!
-They immediately RETREAT -- DIVING into a SIDE ROOM --
-IN THE ROOM. Frenchie unscrews the NOZZLE on the OXYGEN TANK
--- HURLS IT OUT THE DOOR, SLIDING across the floor to Cindy --
-But she clenches her fist -- SCRUNCHING it into a tight ball *
-of twisted metal. And is otherwise UNHARMED -- *
-MOTHER'S MILK *
-You said that shit would work!
-FRENCHIE
-I said I thought it would!
-They BACK AWAY. No other exit out of the room.
-IN THE HALL. CINDY approaches. Closer. Closer. No escape.
-INTERCUT our HEROES with CINDY, build some suspense. When --
-SUDDENLY -- PURPLE PLASMA TENDRILS suddenly LASH OUT --
-WRAPPING TIGHTLY AROUND CINDY’S ARMS AND TORSO --
-CONTINUED: (2)40 40
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 47.
-As Stormfront ENTERS through the NOW OPEN DOOR -- she opened
-it from the outside. Out of the frying pan...
-CINDY SCREAMS -- as it wraps around her, then she crumples to *
-the floor, unconscious.
-STORMFRONT
-Lamplighter?? You here??
-IN THE ROOM. Lamplighter and The Boys trade frightened
-looks. Don’t go out there, man. PLEASE. But then --
-LAMPLIGHTER
-I’m here!!
-NO! They’re dead meat. He steps out of the room --
-Kimiko. Quells her PANIC. It’s SO UNLIKE her to feel fear.
-But she feels it now. (Let’s see a PTSD WIDE ANGLE). *
-Frenchie takes her arm. Trying to calm her. They do their
-best to hide, perhaps behind a desk. But it’s futile.
-Play this next nail-biting moment from The Boys’ POV.
-Stormfront and Lamplighter are JUST OUTSIDE THE OPEN DOOR.
-The Boys. Tense. Will Lamplighter turn them in? Is this
-it? If so, they’re ready to fight to the gory end.
-STORMFRONT
-I just killed six subjects out there
-like a fucking Teddy Bear picnic.
-What the hell happened?
-Long beat. Lamplighter. Genuinely intimidated by
-Stormfront. What’s he gonna say?
-The Boys. Moments away from certain death.
-LAMPLIGHTER
-(finally)
-Dr. Carlton got the propofol dose *
-wrong again. So Cindy got loose,
-freed a bunch of the others. Some
-of them musta got out before the
-lockdown.
-STORMFRONT
-Where’s Dr. Carlton?
-LAMPLIGHTER
-In the cafeteria. And the hallway.
-And some on the walls.
-Long, loooong beat. Will she buy it?
-CONTINUED:41 41
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 48.
-STORMFRONT
-Clean up this mess. I’ll go see who
-else is loose.
-LAMPLIGHTER
-Yes, ma’am.
-She turns, heads off.
-Frenchie, M.M., Kimiko. Rising from their hiding spot in the
-room. Sharing an exhausted, grateful look with Lamplighter.
-As CAMERA FINDS -- the spot on the floor where Cindy was.
-Only she’s not there anymore. She’s GONE...
-INT. MEDICAL CLINIC - DAY42 42
-A sleepy, small town MEDICAL CLINIC. Probably one Doctor on
-call. A NURSE listlessly on-line shops for SHOES. When --
-The DOOR BURSTS OPEN -- Butcher and Annie drag in a feverish
-Hughie, shirt drenched in blood.
-BUTCHER
-We need help!
-INT. MEDICAL CLINIC - DAY - LATER43 43
-Hughie. Still unconscious. Stabilized in a hospital bed.
-The tranquil beeps of the machinery.
-Butcher over him. Alone, we can now see the RAW WORRY in
-Butcher’s face. How much he cares for Hughie. Which he
-immediately covers up when -- Annie enters.
-BUTCHER
-What’d they say?
-ANNIE
-Needs a day or two for the Cefazolin
-to kick in, but he should be
-alright.
-Butcher doesn’t like being a sitting duck.
-BUTCHER
-We ain’t got a day or two.
-ANNIE
-We’ll have to risk it.
-Long beat. She looks down at Hughie. Brushes his hair out
-of his face -- catches a whiff of something -- smiles, warm --
-ANNIE (CONT’D)
-Jesus --
-CONTINUED: (2)41 41
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 49.
-BUTCHER
-What?
-ANNIE
-That kids’ shampoo he uses.
-BUTCHER
-L’Oreal for Kids “Strawberry
-Smoothie.” I seen the bottle.
-Hateful shit.
-Annie smiles, thinking --
-ANNIE
-And his Axe body spray? It’s how
-Vin Diesel must smell.
-BUTCHER
-You know Hughie slathers Creamy
-Desitin on his bum every morning.
-ANNIE
-I don’t wanna know that!
-BUTCHER
-He’s mental, is all I’m saying.
-She smiles. Christ, are these two bonding?
-ANNIE
-But he never quite gives up on you,
-does he?
-BUTCHER
-Aye. He follows you around like a
-right little pup.
-Long beat.
-ANNIE
-He’s too good for either of us.
-INT. MAEVE’S APARTMENT - BEDROOM - DAY44 44
-Elena moves past the bathroom where Maeve showers within --
-ELENA
-I’m gonna postmate Sugarfish.
-QUEEN MAEVE
-(from inside shower)
-Sorry? I can’t hear you --
-ELENA
-Where’s your phone?
-Elena looks around for Maeve’s phone. No sign of it on the
-bed... it’s in the DESK DRAWER for some reason...
-CONTINUED:43 43
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 50.
-She moves to it -- and spots something strange. Connected to
-the phone by a USB cord is... THE BATTERED GO-PRO.
-Elena looks at the Go-Pro. Then at the phone screen -- a
-file that’s been recently downloaded...
-Maeve steps out of the bathroom, dries her hair --
-QUEEN MAEVE
-Did you say Sugarfish?
-Maeve hears Homelander’s voice before she registers Elena on
-the bed, looking at the downloaded footage of Flight 37 --
-Elena watches the SHAKY FOOTAGE -- it’s being taken by a
-terrified HUSBAND (30s) -- the plane WHINING, passengers
-SCREAMING, total panic. Husband turns the camera on himself,
-leaving a final message for his wife --
-HUSBAND (ON VIDEO)
-They’re leaving us! Homelander and
-Queen Maeve. Oh my God, they’re
-leaving!
-He swivels the camera around and catches Maeve pulling the
-SWEET MOM and CUTE LITTLE GIRL toward HOMELANDER who waits
-impatiently at the OPEN REAR EXIT DOOR --
-QUEEN MAEVE (ON VIDEO)
-Take them! Just these two!
-HOMELANDER (ON VIDEO)
-So they can tell the world we let
-everyone else die?
-Maeve stares at Elena watching the video. She can’t breathe.
-QUEEN MAEVE
-Elena. Please...
-But she just watches --
-ON VIDEO. Maeve reluctantly releases the mom and little
-girl, takes Homelander’s hand and the two leap out the exit.
-Desperate screams from the passengers as the husband swivels
-the camera back to his face. This is it...
-HUSBAND (ON VIDEO)
-I love you. Tell the boys I love
-them --
-IN THE ROOM. Elena turns to Maeve. Blood drained from her
-face. Abject horror.
-QUEEN MAEVE
-I’m -- gonna show that to
-Homelander. He either leaves us
-alone, or I put it on CNN. This is *
-how we get out. *
-CONTINUED:44 44
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND WHITE - 9/18/19 51.
-Elena’s got bigger issues right now. Voice small, quivering. *
-ELENA
-You just left them. How could you
-just leave them?
-Maeve’s held onto it too long -- but here it is -- the
-searing guilt, the crushing self-hatred. Like Frenchie, like
-Lamplighter, she can never forgive herself for what happened.
-QUEEN MAEVE
-I was scared. I know I should’ve
-stood up to him. But I didn’t.
-(can barely get it out)
-So I watched them all, I watched
-that little girl, die.
-Elena doesn’t know what to say. What to think. Leaves Maeve
-dangling over a chasm.
-QUEEN MAEVE (CONT’D)
-Please. Don’t look at me like
-that... say something.
-She’s reaching for comfort, understanding, anything -- but
-Elena just looks at her, frozen.
-Off Maeve, searching for some kind of absolution that she
-knows doesn’t exist.
-EXT. CLEARING - DAY45 45
-Some unbelievably visual, wide open space upstate. Emmy
-winning? Fuck that. We’re going full Oscar for this bitch.
-A SAGE GROVE AMBULANCE, stolen, parked. OUTSIDE. Mother’s
-Milk. Frenchie. Kimiko. M.M. on the phone --
-MOTHER’S MILK
-(to Frenchie and Kimiko)
-Yo. Tight scrape, but Hughie’s
-okay.
-FRENCHIE
-Bien. Tell Butcher about the thick *
-penis around your neck.
-M.M. gives Frenchie a “seriously going to kill you” look.
-Then keeps speaking. As Frenchie leans over to Kimiko.
-FRENCHIE (CONT’D)
-I am sorry.
-She looks up at him, curious.
-FRENCHIE (CONT’D)
-For a long time, I was trying to
-save you.
-CONTINUED: (2)44 44
-(MORE)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 52.
-I thought if I did, somehow that
-would make up for the things I’ve
-done.
-(beat)
-But you never asked to be saved. It
-wasn’t even about you. You cannot
-absolve my sins, no one can. I know
-this now. So. I leave you alone.
-Kimiko stares at him, registering his growth and maturity.
-This is a mixed bag. Does she want him to leave her alone?
-When a SEDAN PULLS UP. The guys noticeably tense.
-And MALLORY steps out.
-This is the first time Frenchie and M.M. have seen her since
-her grandchildren were killed. Gone is the easy camaraderie
-we saw in the flashback. It’s LOADED with tension.
-Especially with Frenchie.
-MOTHER’S MILK
-Colonel.
-MALLORY
-Marvin. Where is he?
-FRENCHIE
-Madame Mallory. I know I wasn’t
-welcome at the funeral, so all these
-years, I could never offer my
-condolences, but --
-Mallory is chilly. Clearly hasn’t forgiven Frenchie.
-MALLORY
-Where. Is. He?
-We realize now -- she carries a GUN at her side. She’s
-practically quivering with anger.
-With that -- Kimiko and M.M. open the back of the AMBULANCE.
-Lamplighter sits inside. Waiting for her.
-Mallory is a combustible mix of surprise and quiet rage.
-MALLORY (CONT’D)
-Why isn’t this man restrained?
-Lamplighter can barely make eye contact.
-LAMPLIGHTER *
-No need. I wanted to come. *
-MALLORY *
-I don’t want to hear a single *
-goddamn word from you. *
-(anguish) *
-CONTINUED:45 45
-FRENCHIE (CONT’D)
-(MORE)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 53.
-I thought this was behind me, but -- *
-it’s not, it never is. *
-LAMPLIGHTER
-Then let’s both be done with it -- I *
-know what you have to do. You’d be *
-doing me a favor.
-She gives him a long look. Surprised. He gives her a nod *
-back. Giving her permission to do it. Pleads for it. *
-Her face twists. Finger on the trigger. But then --
-FRENCHIE
-Madame. If I may? Besides you, no
-one wanted him dead more than me.
-But I am begging you for his life. *
-MALLORY *
-(anguished) *
-I don’t have a choice. *
-FRENCHIE *
-It won’t help you. All you’d be *
-doing is ending his torment. You
-cannot punish him as much as he
-punishes himself. Trust me, I know
-this.
-MALLORY
-So -- what exactly -- are you
-proposing we do with him?
-Off Mallory. Off her swirling emotion. What will she do?
-INT. MEDICAL CLINIC - DAY46 46
-Hughie blinks awake. Groggy.
-HUGHIE
-Mom?
-Butcher. Sitting beside him. He cocks his head at the
-mention of Hughie’s Mom -- huh -- first we’ve heard of her.
-BUTCHER
-Not quite.
-HUGHIE
-What... what happened?
-BUTCHER
-You bled all over the place like a
-right wanker, that’s what happened.
-HUGHIE
-Where’s Annie?
-CONTINUED: (2)45 45
-MALLORY (CONT'D)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 54.
-Butcher shakes his head a little. Don’t worry about it.
-Annie’s gone. After all -- Hughie’s too good for her.
-INT. CAB - MOVING - DAY47 47
-Annie. In the backseat of a small town CAB. Blank-faced.
-We wonder if she’s truly as closed up and closed off as she
-seems to be... off this...
-INT. SEVEN TOWER - STORMFRONT’S APARTMENT - BEDROOM - DAY48 48 *
-Stormfront enters her apartment. To find -- *
-HOMELANDER. Just... standing in her place. Blank faced. *
-Not even looking at her. Is he here to hurt her? We don’t *
-know. She treads carefully. She’s even a bit scared. This *
-can go bad a hundred different ways -- *
-STORMFRONT *
-Hey -- you. *
-(silence) *
-Listen. I’m glad you’re here. I *
-want to say how sorry I am. Just *
-let me explain -- *
-He spins on her. Calm, chilling murder in his eyes. *
-HOMELANDER
-Flap, flap, flap goes that mouth of
-yours.
-(his eerie blank look)
-You told me you don’t break easy. *
-I’ve been thinking about that. A
-lot.
-Threat received. She’s intimidated. But calmly as she can --
-STORMFRONT
-I’ll never lie to you again. I’ll *
-tell you everything.
-He wasn’t expecting that -- thrown off-guard.
-STORMFRONT (CONT’D)
-Starting with this.
-Nearby, a LOCKED WOODEN HOPE CHEST. Has some aged history to *
-it. She unlocks it, opens it. First thing she shows *
-Homelander -- a picture from a few years ago. We saw it in
-her trailer in Ep. 205. Stormfront (in uniform) beside a
-very old, wrinkled WOMAN.
-HOMELANDER *
-Your... grandmother.
-STORMFRONT
-My daughter.
-(off Homelander’s surprise)
-CONTINUED:46 46
-(MORE)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND PINK - 10/18/19 55.
-Chloe. She died of Alzheimer’s a
-few years ago.
-He takes this in, surprised. Beat. Then --
-HOMELANDER
-How old are you?
-STORMFRONT
-I was born in 1919. In Berlin.
-She shows him another faded photo of a BERLIN STATE DINNER in
-1940. Swastikas and Gestapo everywhere. Prominent Nazis at
-a table -- Goebbels, Goering -- and clearly STORMFRONT, in
-period appropriate hair and dress.
-HOMELANDER
-Is that you with...?
-CONTINUED:48 48
-STORMFRONT (CONT'D)
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND PINK - 10/18/19 55A.
-STORMFRONT
-Heinrich Himmler. He was a lovely
-dancer... there’s Goebbels... and
-here, the most important man in the
-room.
-She points to a MAN in the photo standing beside GOEBBELS. A
-German with a strong, proud face.
-HOMELANDER
-Vought. That’s Frederick Vought.
-STORMFRONT
-He gave me the first successful V
-injection. He taught me everything. *
-Then we fell in love, he gave me a
-daughter. He made me -- his genius
-made you.
-She’s a TRUE BELIEVER. Sincere. Even emotional.
-STORMFRONT (CONT’D)
-Frederick didn’t care about fans or
-stardom or any of that shallow
-bullshit. We’re in a War for the
-Culture. The other races are
-grinding us down, stealing what’s
-rightfully ours. But we can fight
-back. With an army of super men,
-millions strong. That’s the true
-destiny of Vought. And you’re the
-one who will lead us.
-CLOSE ON HOMELANDER. He doesn’t have to say anything, but
-it’s clear -- he likes the sound of that.
-STORMFRONT (CONT’D)
-So yes, I love you, with all my
-heart. How could I not?
-(takes his hand)
-Everyone I’ve ever loved is in the
-ground. But -- I found you, we
-found each other. We don’t have to
-be alone anymore. That’s the truth.
-Long beat. Will he go for it? Then... he leans in and
-kisses her. It’s passionate, overwhelming: a kiss of
-commitment, of love, of shared dreams. Of trust. She had
-him at Master Race.
-Off this romantic image of our reunited lovers -- the theme
-song to “Golden Girls” kicks in, and we CUT TO --
-EXT. WOODED ROADSIDE – DAY49 49
-One last post script. CLOSE ON BARE FEET. TILT UP to FILTHY
-HOSPITAL ISSUED CLOTHES. And an extended THUMB of a young
-woman. Reveal: CINDY. Alive. Escaped.
-CONTINUED: (2)48 48
-(CONTINUED)
-THE BOYS #206 "The Bloody Doors Off" REV. 2ND YELLOW - 10/29/19 56.
-A car approaches from behind. STICK FIGURE FAMILY stickers *
-on the rear window. Slows. *
-WIDE. Cindy leans her head inside the car. We don’t hear or
-see the exchange. She climbs in. The car drives off...
-“You would see, the biggest gift would be from me, and the
-card attached would say: thank you for being a friend --”
-BLACKOUT.
-TO BE CONTINUED...
-CONTINUED:49 49
-THE BOYS #206 "The Bloody Doors Off" FULL YELLOW DRAFT - 9/13/19 57.
-ADDITIONAL DIALOGUE
-ADDITIONAL DIALOGUE FOR HOMELANDER, STORMFRONT AND THEIR
-INTERVIEWER ON THE SET OF “DAWN OF THE SEVEN” -- FOR BUTCHER
-AND KIMIKO TO WATCH AND REACT TO IN SCENE 4.
-NOTE: Already scripted content is in BOLD FONT
-EXT. SET - NEAR ‘DESTROYED NEW YORK CITY’ - DAY4 4
-Homelander and Stormfront. In directors’ chairs. ON SET for
-“Dawn of the Seven.”
-INTERVIEWER (O.S.)
-In many ways, Dawn of the Seven is
-the first film of its kind -- The
-ultimate superhero movie.
-HOMELANDER
-It’s certainly ambitious.
-STORMFRONT
-I mean, we got Mr. Marathon --
-(re: Homelander)
-We got him!
-HOMELANDER
-You’re so humble!
-(to interviewer)
-She’s amazing. Blows me out of the
-water. Every take.
-INTERVIEWER (O.S.)
-All right. Be honest. Who’s the
-biggest prankster on set?
-Homelander and Stormfront laugh. Flirting. Can’t help it.
-This is so fun. Homelander points to Stormfront --
-HOMELANDER
-(”this one”)
-Oh, no comment...
-STORMFRONT
-He’s right.
-(joking)
-Black Noir has the biggest ego,
-though.
-HOMELANDER
-(going along)
-Oh, of course. Total diva.
-STORMFRONT
-But really, I can’t believe how
-chill everyone is. It feels like
-I’m back home, just making a movie
-with my friends.
-(CONTINUED)
-THE BOYS #206 POCKET DIALOGUE FOR SCENE 4
-INTERVIEWER (O.S.)
-It’s a complicated project.
-Everyone still manages to get along?
-HOMELANDER
-I’ve been with roughly the same crew
-since Homelander: Origins. We
-really are a family.
-INTERVIEWER (O.S.)
-That’s incredible.
-Homelander and Stormfront stare, lost in each others’ eyes...
-CONTINUED:4 4
-THE BOYS #206 POCKET DIALOGUE FOR SCENE 4
-ADDITIONAL DIALOGUE
-ADDITIONAL DIALOGUE FOR THE NEWS ANCHOR IN SCENE 6. TO PLAY
-AS QUEEN MAEVE AND DEEP TALK.
-NOTE: Already scripted content is in BOLD FONT
-INT. MAEVE’S TRAILER - DAY6 6
-ON THE TELEVISION. STOCK FOOTAGE of two different factions
-of people SCREAMING and SHOVING at each other. We see this
-kind of thing at Women’s Clinics and outside rallies.
-NEWS ANCHOR (V.O.)
-Police are reporting unrest
-throughout the city as the story of
-Compound V develops. With the House
-Judiciary Hearing into Vought just
-four days away, pro and anti Vought
-camps clashed in Manhattan this
-morning. Congresswoman Victoria
-Neuman said that Compound V must be
-brought under government control.
-Neuman’s opponents maintain that the
-United States is in the midst of a
-National Emergency too dire to
-warrant regulation, and moved to
-postpone the hearing.
-(then)
-Foreign governments have launched
-probes into the presence of Compound
-V within their borders, petitioning
-top U.N. Officials to launch
-investigations. The Secretary
-General has yet to comment.
-(then)
-A growing faction of citizen
-activists are taking up the charge
-against Vought International.
-Protests have begun in 15 states so
-far, with growing anti-Vought
-crowds.
-THE BOYS #206 POCKET DIALOGUE FOR SCENE 6
+aer banknote berlitz calloway centrust cluett fromstein gitano guterman hydro-quebec ipo kia memotec mlx nahb punts rake regatta rubens sim snack-food ssangyong swapo wachter 
+ pierre <unk> N years old will join the board as a nonexecutive director nov. N 
+ mr. <unk> is chairman of <unk> n.v. the dutch publishing group 
+ rudolph <unk> N years old and former chairman of consolidated gold fields plc was named a nonexecutive director of this british industrial conglomerate 
+ a form of asbestos once used to make kent cigarette filters has caused a high percentage of cancer deaths among a group of workers exposed to it more than N years ago researchers reported 
+ the asbestos fiber <unk> is unusually <unk> once it enters the <unk> with even brief exposures to it causing symptoms that show up decades later researchers said 
+ <unk> inc. the unit of new york-based <unk> corp. that makes kent cigarettes stopped using <unk> in its <unk> cigarette filters in N 
+ although preliminary findings were reported more than a year ago the latest results appear in today 's new england journal of medicine a forum likely to bring new attention to the problem 
+ a <unk> <unk> said this is an old story 
+ we 're talking about years ago before anyone heard of asbestos having any questionable properties 
+ there is no asbestos in our products now 
+ neither <unk> nor the researchers who studied the workers were aware of any research on smokers of the kent cigarettes 
+ we have no useful information on whether users are at risk said james a. <unk> of boston 's <unk> cancer institute 
+ dr. <unk> led a team of researchers from the national cancer institute and the medical schools of harvard university and boston university 
+ the <unk> spokeswoman said asbestos was used in very modest amounts in making paper for the filters in the early 1950s and replaced with a different type of <unk> in N 
+ from N to N N billion kent cigarettes with the filters were sold the company said 
+ among N men who worked closely with the substance N have died more than three times the expected number 
+ four of the five surviving workers have <unk> diseases including three with recently <unk> cancer 
+ the total of N deaths from malignant <unk> lung cancer and <unk> was far higher than expected the researchers said 
+ the <unk> rate is a striking finding among those of us who study <unk> diseases said dr. <unk> 
+ the percentage of lung cancer deaths among the workers at the west <unk> mass. paper factory appears to be the highest for any asbestos workers studied in western industrialized countries he said 
+ the plant which is owned by <unk> & <unk> co. was under contract with <unk> to make the cigarette filters 
+ the finding probably will support those who argue that the u.s. should regulate the class of asbestos including <unk> more <unk> than the common kind of asbestos <unk> found in most schools and other buildings dr. <unk> said 
+ the u.s. is one of the few industrialized nations that does n't have a higher standard of regulation for the smooth <unk> fibers such as <unk> that are classified as <unk> according to <unk> t. <unk> a professor of <unk> at the university of vermont college of medicine 
+ more common <unk> fibers are <unk> and are more easily rejected by the body dr. <unk> explained 
+ in july the environmental protection agency imposed a gradual ban on virtually all uses of asbestos 
+ by N almost all remaining uses of <unk> asbestos will be outlawed 
+ about N workers at a factory that made paper for the kent filters were exposed to asbestos in the 1950s 
+ areas of the factory were particularly dusty where the <unk> was used 
+ workers dumped large <unk> <unk> of the imported material into a huge <unk> poured in cotton and <unk> fibers and <unk> mixed the dry fibers in a process used to make filters 
+ workers described clouds of blue dust that hung over parts of the factory even though <unk> fans <unk> the area 
+ there 's no question that some of those workers and managers contracted <unk> diseases said <unk> phillips vice president of human resources for <unk> & <unk> 
+ but you have to recognize that these events took place N years ago 
+ it has no bearing on our work force today 
+ yields on money-market mutual funds continued to slide amid signs that portfolio managers expect further declines in interest rates 
+ the average seven-day compound yield of the N taxable funds tracked by <unk> 's money fund report eased a fraction of a percentage point to N N from N N for the week ended tuesday 
+ compound yields assume reinvestment of dividends and that the current yield continues for a year 
+ average maturity of the funds ' investments <unk> by a day to N days the longest since early august according to donoghue 's 
+ longer maturities are thought to indicate declining interest rates because they permit portfolio managers to retain relatively higher rates for a longer period 
+ shorter maturities are considered a sign of rising rates because portfolio managers can capture higher rates sooner 
+ the average maturity for funds open only to institutions considered by some to be a stronger indicator because those managers watch the market closely reached a high point for the year N days 
+ nevertheless said <unk> <unk> <unk> editor of money fund report yields may <unk> up again before they <unk> down because of recent rises in short-term interest rates 
+ the yield on six-month treasury bills sold at monday 's auction for example rose to N N from N N 
+ despite recent declines in yields investors continue to pour cash into money funds 
+ assets of the N taxable funds grew by $ N billion during the latest week to $ N billion 
+ typically money-fund yields beat comparable short-term investments because portfolio managers can vary maturities and go after the highest rates 
+ the top money funds are currently yielding well over N N 
+ dreyfus world-wide dollar the <unk> fund had a seven-day compound yield of N N during the latest week down from N N a week earlier 
+ it invests heavily in dollar-denominated securities overseas and is currently <unk> management fees which boosts its yield 
+ the average seven-day simple yield of the N funds was N N down from N N 
+ the 30-day simple yield fell to an average N N from N N the 30-day compound yield slid to an average N N from N N 
+ j.p. <unk> vice chairman of <unk> grace & co. which holds a N N interest in this <unk> company was elected a director 
+ he succeeds <unk> d. <unk> formerly a <unk> grace vice chairman who resigned 
+ <unk> grace holds three of grace energy 's seven board seats 
+ pacific first financial corp. said shareholders approved its acquisition by royal <unk> ltd. of toronto for $ N a share or $ N million 
+ the thrift holding company said it expects to obtain regulatory approval and complete the transaction by year-end 
+ <unk> international inc. said its <unk> & <unk> unit completed the sale of its <unk> controls operations to <unk> s.p a. for $ N million 
+ <unk> is an italian state-owned holding company with interests in the mechanical engineering industry 
+ <unk> controls based in <unk> ohio makes computerized industrial controls systems 
+ it employs N people and has annual revenue of about $ N million 
+ the federal government suspended sales of u.s. savings bonds because congress has n't lifted the ceiling on government debt 
+ until congress acts the government has n't any authority to issue new debt obligations of any kind the treasury said 
+ the government 's borrowing authority dropped at midnight tuesday to $ N trillion from $ N trillion 
+ legislation to lift the debt ceiling is <unk> in the fight over cutting capital-gains taxes 
+ the house has voted to raise the ceiling to $ N trillion but the senate is n't expected to act until next week at the earliest 
+ the treasury said the u.s. will default on nov. N if congress does n't act by then 
+ clark j. <unk> was named senior vice president and general manager of this u.s. sales and marketing arm of japanese auto maker mazda motor corp 
+ in the new position he will oversee mazda 's u.s. sales service parts and marketing operations 
+ previously mr. <unk> N years old was general marketing manager of chrysler corp. 's chrysler division 
+ he had been a sales and marketing executive with chrysler for N years 
+ when it 's time for their <unk> <unk> the nation 's manufacturing <unk> typically jet off to the <unk> <unk> of resort towns like <unk> <unk> and hot springs 
+ not this year 
+ the national association of manufacturers settled on the <unk> capital of indianapolis for its fall board meeting 
+ and the city decided to treat its guests more like royalty or rock stars than factory owners 
+ the idea of course to prove to N corporate decision makers that the buckle on the <unk> belt is n't so <unk> after all that it 's a good place for a company to expand 
+ on the receiving end of the message were officials from giants like du pont and <unk> along with lesser <unk> like <unk> steel and the valley queen <unk> factory 
+ for <unk> the executives joined mayor william h. <unk> iii for an evening of the indianapolis <unk> <unk> and a guest <unk> victor <unk> 
+ champagne and <unk> followed 
+ the next morning with a police <unk> <unk> of executives and their wives <unk> to the indianapolis motor <unk> <unk> by traffic or red lights 
+ the governor could n't make it so the <unk> governor welcomed the special guests 
+ a buffet breakfast was held in the museum where food and drinks are banned to everyday visitors 
+ then in the guests ' honor the <unk> <unk> out four drivers crews and even the official indianapolis N announcer for a <unk> exhibition race 
+ after the race fortune N executives <unk> like <unk> over the cars and drivers 
+ no <unk> the drivers pointed out they still had space on their machines for another sponsor 's name or two 
+ back downtown the <unk> squeezed in a few meetings at the hotel before <unk> the buses again 
+ this time it was for dinner and <unk> a block away 
+ under the stars and <unk> of the <unk> indiana <unk> <unk> nine of the hottest chefs in town fed them indiana <unk> <unk> <unk> <unk> <unk> <unk> and <unk> <unk> with a <unk> <unk> 
+ knowing a <unk> and free <unk> when they eat one the executives gave the chefs a standing <unk> 
+ more than a few <unk> say the <unk> treatment <unk> them to return to a <unk> city for future meetings 
+ but for now they 're looking forward to their winter meeting <unk> in february 
+ south korea registered a trade deficit of $ N million in october reflecting the country 's economic <unk> according to government figures released wednesday 
+ preliminary <unk> by the trade and industry ministry showed another trade deficit in october the fifth monthly setback this year casting a cloud on south korea 's <unk> economy 
+ exports in october stood at $ N billion a mere N N increase from a year earlier while imports increased sharply to $ N billion up N N from last october 
+ south korea 's economic boom which began in N stopped this year because of prolonged labor disputes trade conflicts and sluggish exports 
+ government officials said exports at the end of the year would remain under a government target of $ N billion 
+ despite the gloomy forecast south korea has recorded a trade surplus of $ N million so far this year 
+ from january to october the nation 's accumulated exports increased N N from the same period last year to $ N billion 
+ imports were at $ N billion up N N 
+ newsweek trying to keep pace with rival time magazine announced new advertising rates for N and said it will introduce a new incentive plan for advertisers 
+ the new ad plan from newsweek a unit of the washington post co. is the second incentive plan the magazine has offered advertisers in three years 
+ plans that give advertisers discounts for maintaining or increasing ad spending have become permanent <unk> at the news <unk> and underscore the fierce competition between newsweek time warner inc. 's time magazine and <unk> b. <unk> 's u.s. news & world report 
+ alan <unk> recently named newsweek president said newsweek 's ad rates would increase N N in january 
+ a full <unk> page in newsweek will cost $ N 
+ in mid-october time magazine lowered its guaranteed circulation rate base for N while not increasing ad page rates with a lower circulation base time 's ad rate will be effectively N N higher per subscriber a full page in time costs about $ N 
+ u.s. news has yet to announce its N ad rates 
+ newsweek said it will introduce the circulation credit plan which <unk> space credits to advertisers on renewal advertising 
+ the magazine will reward with page bonuses advertisers who in N meet or exceed their N spending as long as they spent $ N in N and $ N in N 
+ mr. <unk> said the plan is not an attempt to shore up a decline in ad pages in the first nine months of N newsweek 's ad pages totaled N a drop of N N from last year according to publishers information bureau 
+ what matters is what advertisers are paying per page and in that department we are doing fine this fall said mr. <unk> 
+ both newsweek and u.s. news have been gaining circulation in recent years without heavy use of electronic <unk> to subscribers such as telephones or watches 
+ however none of the big three <unk> recorded circulation gains recently 
+ according to audit bureau of <unk> time the largest <unk> had average circulation of N a decrease of N N 
+ newsweek 's circulation for the first six months of N was N flat from the same period last year 
+ u.s. news ' circulation in the same time was N down N N 
+ new england electric system bowed out of the bidding for public service co. of new hampshire saying that the risks were too high and the potential <unk> too far in the future to justify a higher offer 
+ the move leaves united illuminating co. and northeast utilities as the remaining outside bidders for ps of new hampshire which also has proposed an internal reorganization plan in chapter N bankruptcy proceedings under which it would remain an independent company 
+ new england electric based in <unk> mass. had offered $ N billion to acquire ps of new hampshire well below the $ N billion value united illuminating places on its bid and the $ N billion northeast says its bid is worth 
+ united illuminating is based in new haven conn. and northeast is based in hartford conn 
+ ps of new hampshire <unk> n.h. values its internal reorganization plan at about $ N billion 
+ john rowe president and chief executive officer of new england electric said the company 's return on equity could suffer if it made a higher bid and its forecasts related to ps of new hampshire such as growth in electricity demand and improved operating <unk> did n't come true 
+ when we <unk> raising our bid the risks seemed substantial and persistent over the next five years and the rewards seemed a long way out 
+ that got hard to take he added 
+ mr. rowe also noted that political concerns also worried new england electric 
+ no matter who owns ps of new hampshire after it emerges from bankruptcy proceedings its rates will be among the highest in the nation he said 
+ that attracts attention 
+ it was just another one of the risk factors that led to the company 's decision to withdraw from the bidding he added 
+ wilbur ross jr. of rothschild inc. the financial adviser to the troubled company 's equity holders said the withdrawal of new england electric might speed up the reorganization process 
+ the fact that new england proposed lower rate increases N N over seven years against around N N boosts proposed by the other two outside bidders complicated negotiations with state officials mr. ross asserted 
+ now the field is less <unk> he added 
+ separately the federal energy regulatory commission turned down for now a request by northeast seeking approval of its possible purchase of ps of new hampshire 
+ northeast said it would <unk> its request and still hopes for an <unk> review by the ferc so that it could complete the purchase by next summer if its bid is the one approved by the bankruptcy court 
+ ps of new hampshire shares closed yesterday at $ N off N cents in new york stock exchange composite trading 
+ norman <unk> N years old and former president and chief operating officer of toys r us inc. and frederick <unk> jr. N chairman of <unk> banking corp. were elected directors of this consumer electronics and appliances retailing chain 
+ they succeed daniel m. <unk> retired circuit city executive vice president and robert r. <unk> u.s. treasury undersecretary on the <unk> board 
+ commonwealth edison co. was ordered to refund about $ N million to its current and former <unk> for illegal rates collected for cost overruns on a nuclear power plant 
+ the refund was about $ N million more than previously ordered by the illinois commerce commission and trade groups said it may be the largest ever required of a state or local utility 
+ state court judge richard curry ordered edison to make average refunds of about $ N to $ N each to edison customers who have received electric service since april N including about two million customers who have moved during that period 
+ judge curry ordered the refunds to begin feb. N and said that he would n't <unk> any appeals or other attempts to block his order by commonwealth edison 
+ the refund pool may not be held <unk> through another round of appeals judge curry said 
+ commonwealth edison said it is already appealing the underlying commission order and is considering appealing judge curry 's order 
+ the exact amount of the refund will be determined next year based on actual <unk> made until dec. N of this year 
+ commonwealth edison said the ruling could force it to slash its N earnings by $ N a share 
+ for N commonwealth edison reported earnings of $ N million or $ N a share 
+ a commonwealth edison spokesman said that tracking down the two million customers whose addresses have changed during the past N N years would be an administrative nightmare 
+ in new york stock exchange composite trading yesterday commonwealth edison closed at $ N down N cents 
+ the $ N billion <unk> N plant near <unk> ill. was completed in N 
+ in a disputed N ruling the commerce commission said commonwealth edison could raise its electricity rates by $ N million to pay for the plant 
+ but state courts upheld a challenge by consumer groups to the commission 's rate increase and found the rates illegal 
+ the illinois supreme court ordered the commission to audit commonwealth edison 's construction expenses and refund any <unk> expenses 
+ the utility has been collecting for the plant 's construction cost from its N million customers subject to a refund since N 
+ in august the commission ruled that between $ N million and $ N million of the plant 's construction cost was <unk> and should be <unk> plus interest 
+ in his ruling judge curry added an additional $ N million to the commission 's calculations 
+ last month judge curry set the interest rate on the refund at N N 
+ commonwealth edison now faces an additional <unk> refund on its <unk> rate <unk> <unk> that the illinois appellate court has estimated at $ N million 
+ and consumer groups hope that judge curry 's <unk> N order may set a precedent for a second nuclear rate case involving commonwealth edison 's <unk> N plant 
+ commonwealth edison is seeking about $ N million in rate increases to pay for <unk> N 
+ the commission is expected to rule on the <unk> N case by year end 
+ last year commonwealth edison had to refund $ N million for poor performance of its <unk> i nuclear plant 
+ japan 's domestic sales of cars trucks and buses in october rose N N from a year earlier to N units a record for the month the japan automobile dealers ' association said 
+ the strong growth followed year-to-year increases of N N in august and N N in september 
+ the monthly sales have been setting records every month since march 
+ october sales compared with the previous month inched down N N 
+ sales of passenger cars grew N N from a year earlier to N units 
+ sales of medium-sized cars which benefited from price reductions arising from introduction of the consumption tax more than doubled to N units from N in october N 
+ texas instruments japan ltd. a unit of texas instruments inc. said it opened a plant in south korea to manufacture control devices 
+ the new plant located in <unk> about N miles from seoul will help meet increasing and diversifying demand for control products in south korea the company said 
+ the plant will produce control devices used in motor vehicles and household appliances 
+ the survival of spinoff cray computer corp. as a fledgling in the supercomputer business appears to depend heavily on the creativity and <unk> of its chairman and chief designer seymour cray 
+ not only is development of the new company 's initial machine tied directly to mr. cray so is its balance sheet 
+ documents filed with the securities and exchange commission on the pending spinoff disclosed that cray research inc. will withdraw the almost $ N million in financing it is providing the new firm if mr. cray leaves or if the <unk> project he heads is scrapped 
+ the documents also said that although the <unk> mr. cray has been working on the project for more than six years the cray-3 machine is at least another year away from a fully operational prototype 
+ moreover there have been no orders for the cray-3 so far though the company says it is talking with several prospects 
+ while many of the risks were anticipated when <unk> cray research first announced the spinoff in may the <unk> it attached to the financing had n't been made public until yesterday 
+ we did n't have much of a choice cray computer 's chief financial officer gregory <unk> said in an interview 
+ the theory is that seymour is the chief designer of the cray-3 and without him it could not be completed 
+ cray research did not want to fund a project that did not include seymour 
+ the documents also said that cray computer anticipates <unk> perhaps another $ N million in financing beginning next september 
+ but mr. <unk> called that a <unk> scenario 
+ the filing on the details of the spinoff caused cray research stock to jump $ N yesterday to close at $ N in new york stock exchange composite trading 
+ analysts noted yesterday that cray research 's decision to link its $ N million <unk> note to mr. cray 's presence will complicate a valuation of the new company 
+ it has to be considered as an additional risk for the investor said gary p. <unk> of <unk> group inc. minneapolis 
+ cray computer will be a concept stock he said 
+ you either believe seymour can do it again or you do n't 
+ besides the designer 's age other risk factors for mr. cray 's new company include the cray-3 's tricky <unk> chip technology 
+ the sec documents describe those chips which are made of <unk> <unk> as being so fragile and minute they will require special <unk> handling equipment 
+ in addition the cray-3 will contain N processors twice as many as the largest current supercomputer 
+ cray computer also will face intense competition not only from cray research which has about N N of the world-wide supercomputer market and which is expected to roll out the <unk> machine a direct competitor with the cray-3 in N 
+ the spinoff also will compete with international business machines corp. and japan 's big three hitachi ltd. nec corp. and fujitsu ltd 
+ the new company said it believes there are fewer than N potential customers for <unk> priced between $ N million and $ N million presumably the cray-3 price range 
+ under terms of the spinoff cray research stockholders are to receive one cray computer share for every two cray research shares they own in a distribution expected to occur in about two weeks 
+ no price for the new shares has been set 
+ instead the companies will leave it up to the marketplace to decide 
+ cray computer has applied to trade on nasdaq 
+ analysts calculate cray computer 's initial book value at about $ N a share 
+ along with the note cray research is <unk> about $ N million in assets primarily those related to the cray-3 development which has been a drain on cray research 's earnings 
+ <unk> balance sheets clearly show why cray research favored the spinoff 
+ without the cray-3 research and development expenses the company would have been able to report a profit of $ N million for the first half of N rather than the $ N million it posted 
+ on the other hand had it existed then cray computer would have incurred a $ N million loss 
+ mr. cray who could n't be reached for comment will work for the new colorado springs colo. company as an independent contractor the arrangement he had with cray research 
+ regarded as the father of the supercomputer mr. cray was paid $ N at cray research last year 
+ at cray computer he will be paid $ N 
+ besides messrs. cray and <unk> other senior management at the company includes neil <unk> N president and chief executive officer joseph m. <unk> N vice president engineering malcolm a. <unk> N vice president software and douglas r. <unk> N vice president hardware 
+ all came from cray research 
+ cray computer which currently employs N people said it expects a work force of N by the end of N 
+ john r. stevens N years old was named senior executive vice president and chief operating officer both new positions 
+ he will continue to report to donald <unk> president and chief executive officer 
+ mr. stevens was executive vice president of this <unk> holding company 
+ arthur a. hatch N was named executive vice president of the company 
+ he was previously president of the company 's eastern edison co. unit 
+ john d. <unk> N was named to succeed mr. hatch as president of eastern edison 
+ previously he was vice president of eastern edison 
+ robert p. <unk> N was named senior vice president of eastern utilities 
+ he was previously vice president 
+ the u.s. claiming some success in its trade <unk> removed south korea taiwan and saudi arabia from a list of countries it is closely watching for allegedly failing to honor u.s. patents <unk> and other <unk> rights 
+ however five other countries china thailand india brazil and mexico will remain on that so-called priority watch list as a result of an interim review u.s. trade representative carla hills announced 
+ under the new u.s. trade law those countries could face accelerated <unk> investigations and stiff trade sanctions if they do n't improve their protection of intellectual property by next spring 
+ mrs. hills said many of the N countries that she placed under <unk> degrees of scrutiny have made genuine progress on this touchy issue 
+ she said there is growing <unk> around the world that <unk> of <unk> rights <unk> all trading nations and particularly the creativity and <unk> of an <unk> country 's own citizens 
+ u.s. trade negotiators argue that countries with inadequate <unk> for <unk> rights could be hurting themselves by discouraging their own scientists and authors and by <unk> u.s. high-technology firms from investing or marketing their best products there 
+ mrs. hills <unk> south korea for creating an <unk> task force and special enforcement teams of police officers and prosecutors trained to pursue movie and book <unk> 
+ seoul also has instituted effective <unk> procedures to aid these teams she said 
+ taiwan has improved its standing with the u.s. by <unk> a <unk> copyright agreement <unk> its trademark law and introducing legislation to protect foreign movie producers from unauthorized <unk> of their films 
+ that measure could <unk> taipei 's growing number of small <unk> <unk> to pay movie producers for showing their films 
+ saudi arabia for its part has vowed to enact a copyright law compatible with international standards and to apply the law to computer software as well as to literary works mrs. hills said 
+ these three countries are n't completely off the hook though 
+ they will remain on a <unk> list that includes N other countries 
+ those countries including japan italy canada greece and spain are still of some concern to the u.s. but are deemed to pose <unk> problems for american patent and copyright owners than those on the priority list 
+ gary hoffman a washington lawyer specializing in <unk> cases said the threat of u.s. <unk> combined with a growing recognition that protecting intellectual property is in a country 's own interest prompted the improvements made by south korea taiwan and saudi arabia 
+ what this tells us is that u.s. trade law is working he said 
+ he said mexico could be one of the next countries to be removed from the priority list because of its efforts to craft a new patent law 
+ mrs. hills said that the u.s. is still concerned about disturbing developments in turkey and continuing slow progress in malaysia 
+ she did n't elaborate although earlier u.s. trade reports have complained of videocassette <unk> in malaysia and <unk> for u.s. pharmaceutical patents in turkey 
+ the N trade act requires mrs. hills to issue another review of the performance of these countries by april N 
+ so far mrs. hills has n't deemed any cases bad enough to merit an accelerated investigation under the so-called special N provision of the act 
+ argentina said it will ask creditor banks to <unk> its foreign debt of $ N billion the <unk> in the developing world 
+ the declaration by economy minister <unk> <unk> is believed to be the first time such an action has been called for by an <unk> official of such <unk> 
+ the latin american nation has paid very little on its debt since early last year 
+ argentina <unk> to reach a reduction of N N in the value of its external debt mr. <unk> said through his spokesman <unk> <unk> 
+ mr. <unk> met in august with u.s. assistant treasury secretary david mulford 
+ <unk> negotiator carlos <unk> was in washington and new york this week to meet with banks 
+ mr. <unk> recently has said the government of president carlos <unk> who took office july N feels a significant reduction of principal and interest is the only way the debt problem may be solved 
+ but he has not said before that the country wants half the debt <unk> 
+ during its centennial year the wall street journal will report events of the past century that stand as milestones of american business history 
+ three computers that changed the face of personal computing were launched in N 
+ that year the apple ii commodore pet and tandy <unk> came to market 
+ the computers were crude by today 's standards 
+ apple ii owners for example had to use their television sets as screens and <unk> data on <unk> 
+ but apple ii was a major advance from apple i which was built in a garage by stephen <unk> and steven jobs for <unk> such as the <unk> computer club 
+ in addition the apple ii was an affordable $ N 
+ crude as they were these early pcs triggered explosive product development in desktop models for the home and office 
+ big mainframe computers for business had been around for years 
+ but the new N pcs unlike earlier <unk> types such as the <unk> <unk> and <unk> had <unk> and could store about two pages of data in their memories 
+ current pcs are more than N times faster and have memory capacity N times greater than their N counterparts 
+ there were many pioneer pc <unk> 
+ william gates and paul allen in N developed an early <unk> system for pcs and gates became an industry billionaire six years after ibm adapted one of these versions in N 
+ alan f. <unk> currently chairman of seagate technology led the team that developed the disk drives for pcs 
+ dennis <unk> and dale <unk> two atlanta engineers were <unk> of the internal <unk> that allow pcs to share data via the telephone 
+ ibm the world leader in computers did n't offer its first pc until august N as many other companies entered the market 
+ today pc shipments annually total some $ N billion world-wide 
+ <unk> <unk> & co. an australian pharmaceuticals company said its <unk> inc. affiliate acquired <unk> inc. for $ N million 
+ <unk> is a new <unk> pharmaceuticals concern that sells products under the <unk> label 
+ <unk> said it owns N N of <unk> 's voting stock and has an agreement to acquire an additional N N 
+ that stake together with its convertible preferred stock holdings gives <unk> the right to increase its interest to N N of <unk> 's voting stock 
+ oil production from australia 's bass <unk> fields will be raised by N barrels a day to about N barrels with the launch of the <unk> field the first of five small fields scheduled to be brought into production before the end of N 
+ esso australia ltd. a unit of new york-based exxon corp. and broken hill <unk> operate the fields in a joint venture 
+ esso said the <unk> field started production tuesday 
+ output will be gradually increased until it reaches about N barrels a day 
+ the field has reserves of N million barrels 
+ reserves for the five new fields total N million barrels 
+ the <unk> and <unk> fields are expected to start producing early next year and the <unk> and <unk> fields later next year 
+ esso said the fields were developed after the australian government decided in N to make the first N million barrels from new fields free of <unk> tax 
+ <unk> <unk> corp. said it completed the $ N million sale of its southern optical subsidiary to a group led by the unit 's president thomas r. sloan and other managers 
+ following the acquisition of <unk> <unk> by a buy-out group led by shearson lehman hutton earlier this year the maker of <unk> <unk> decided to <unk> itself of certain of its <unk> businesses 
+ the sale of southern optical is a part of the program 
+ the white house said president bush has approved duty-free treatment for imports of certain types of watches that are n't produced in significant quantities in the u.s. the virgin islands and other u.s. <unk> 
+ the action came in response to a petition filed by <unk> inc. for changes in the u.s. <unk> system of preferences for imports from developing nations 
+ previously watch imports were denied such duty-free treatment 
+ <unk> had requested duty-free treatment for many types of watches covered by N different u.s. tariff <unk> 
+ the white house said mr. bush decided to grant duty-free status for N categories but turned down such treatment for other types of watches because of the potential for material injury to watch producers located in the u.s. and the virgin islands 
+ <unk> is a major u.s. producer and seller of watches including <unk> <unk> watches assembled in the philippines and other developing nations covered by the u.s. tariff preferences 
+ u.s. trade officials said the philippines and thailand would be the main beneficiaries of the president 's action 
+ imports of the types of watches that now will be eligible for duty-free treatment totaled about $ N million in N a relatively small share of the $ N billion in u.s. watch imports that year according to an aide to u.s. trade representative carla hills 
+ magna international inc. 's chief financial officer james mcalpine resigned and its chairman frank <unk> is stepping in to help turn the <unk> manufacturer around the company said 
+ mr. <unk> will direct an effort to reduce overhead and curb capital spending until a more satisfactory level of profit is achieved and maintained magna said 
+ stephen <unk> currently vice president finance will succeed mr. mcalpine 
+ an ambitious expansion has left magna with excess capacity and a heavy debt load as the automotive industry enters a downturn 
+ the company has reported declines in operating profit in each of the past three years despite steady sales growth 
+ magna recently cut its quarterly dividend in half and the company 's class a shares are <unk> far below their 52-week high of N canadian dollars us$ N 
+ on the toronto stock exchange yesterday magna shares closed up N canadian cents to c$ N 
+ mr. <unk> founder and controlling shareholder of magna resigned as chief executive officer last year to seek unsuccessfully a seat in canada 's parliament 
+ analysts said mr. <unk> wants to resume a more influential role in running the company 
+ they expect him to cut costs throughout the organization 
+ the company said mr. <unk> will personally direct the restructuring <unk> by <unk> <unk> president and chief executive 
+ neither they nor mr. mcalpine could be reached for comment 
+ magna said mr. mcalpine resigned to pursue a consulting career with magna as one of his clients 
+ lord <unk> <unk> chairman of english china <unk> plc was named a nonexecutive director of this british chemical company 
+ japanese investors nearly <unk> bought up two new mortgage <unk> mutual funds totaling $ N million the u.s. federal national mortgage association said 
+ the purchases show the strong interest of japanese investors in u.s. <unk> instruments fannie mae 's chairman david o. maxwell said at a news conference 
+ he said more than N N of the funds were placed with japanese institutional investors 
+ the rest went to investors from france and hong kong 
+ earlier this year japanese investors snapped up a similar $ N million mortgage-backed securities mutual fund 
+ that fund was put together by blackstone group a new york investment bank 
+ the latest two funds were assembled jointly by goldman sachs & co. of the u.s. and japan 's daiwa securities co 
+ the new seven-year funds one offering a fixed-rate return and the other with a floating-rate return linked to the london interbank offered rate offer two key advantages to japanese investors 
+ first they are designed to eliminate the risk of prepayment mortgage-backed securities can be retired early if interest rates decline and such prepayment forces investors to <unk> their money at lower rates 
+ second they channel monthly mortgage payments into semiannual payments reducing the administrative burden on investors 
+ by addressing those problems mr. maxwell said the new funds have become extremely attractive to japanese and other investors outside the u.s. 
+ such devices have boosted japanese investment in mortgage-backed securities to more than N N of the $ N billion in such instruments outstanding and their purchases are growing at a rapid rate 
+ they also have become large purchasers of fannie mae 's corporate debt buying $ N billion in fannie mae bonds during the first nine months of the year or almost a <unk> of the total amount issued 
+ james l. <unk> <unk> executive vice president was named a director of this oil concern expanding the board to N members 
+ ltv corp. said a federal bankruptcy court judge agreed to extend until march N N the period in which the steel aerospace and energy products company has the exclusive right to file a reorganization plan 
+ the company is operating under chapter N of the federal bankruptcy code giving it court protection from creditors ' lawsuits while it attempts to work out a plan to pay its debts 
+ italian chemical giant montedison <unk> through its montedison acquisition n.v. indirect unit began its $ <unk> tender offer for all the common shares outstanding of erbamont n.v. a maker of pharmaceuticals incorporated in the netherlands 
+ the offer advertised in today 's editions of the wall street journal is scheduled to expire at the end of november 
+ montedison currently owns about N N of erbamont 's common shares outstanding 
+ the offer is being launched <unk> to a previously announced agreement between the companies 
+ japan 's reserves of gold convertible foreign currencies and special drawing rights fell by a hefty $ N billion in october to $ N billion the finance ministry said 
+ the total marks the sixth consecutive monthly decline 
+ the <unk> downturn reflects the intensity of bank of japan <unk> intervention since june when the u.s. currency temporarily surged above the N yen level 
+ the announcement follows a sharper $ N billion decline in the country 's foreign reserves in september to $ N billion 
+ pick a country any country 
+ it 's the latest investment craze sweeping wall street a rash of new closed-end country funds those publicly traded portfolios that invest in stocks of a single foreign country 
+ no fewer than N country funds have been launched or registered with regulators this year triple the level of all of N according to charles e. simon & co. a washington-based research firm 
+ the turf recently has ranged from chile to <unk> to portugal 
+ next week the philippine fund 's launch will be capped by a visit by philippine president <unk> aquino the first time a head of state has kicked off an issue at the big board here 
+ the next province 
+ anything 's possible how about the new guinea fund <unk> george foot a managing partner at <unk> management associates of <unk> mass 
+ the recent explosion of country funds <unk> the closed-end fund mania of the 1920s mr. foot says when narrowly focused funds grew wildly popular 
+ they fell into <unk> after the N crash 
+ unlike traditional <unk> mutual funds most of these <unk> portfolios are the closed-end type issuing a fixed number of shares that trade publicly 
+ the surge brings to nearly N the number of country funds that are or soon will be listed in new york or london 
+ these funds now account for several billions of dollars in assets 
+ people are looking to stake their claims now before the number of available nations runs out says michael porter an analyst at smith barney harris upham & co. new york 
+ behind all the <unk> is some <unk> competition 
+ as individual investors have turned away from the stock market over the years securities firms have scrambled to find new products that brokers find easy to sell 
+ and the firms are stretching their <unk> far and wide to do it 
+ financial planners often urge investors to diversify and to hold a <unk> of international securities 
+ and many emerging markets have <unk> more mature markets such as the u.s. and japan 
+ country funds offer an easy way to get a taste of foreign stocks without the hard research of seeking out individual companies 
+ but it does n't take much to get burned 
+ political and currency gyrations can <unk> the funds 
+ another concern the funds ' share prices tend to swing more than the broader market 
+ when the stock market dropped nearly N N oct. N for instance the mexico fund plunged about N N and the spain fund fell N N 
+ and most country funds were clobbered more than most stocks after the N crash 
+ what 's so wild about the funds ' frenzy right now is that many are trading at historically fat premiums to the value of their underlying portfolios 
+ after trading at an average discount of more than N N in late N and part of last year country funds currently trade at an average premium of N N 
+ the reason share prices of many of these funds this year have climbed much more sharply than the foreign stocks they hold 
+ it 's probably worth paying a premium for funds that invest in markets that are partially closed to foreign investors such as south korea some specialists say 
+ but some european funds recently have skyrocketed spain fund has surged to a startling N N premium 
+ it has been targeted by japanese investors as a good long-term play tied to N 's european economic integration 
+ and several new funds that are n't even fully invested yet have jumped to trade at big premiums 
+ i 'm very alarmed to see these rich <unk> says smith barney 's mr. porter 
+ the newly <unk> premiums reflect the increasingly global marketing of some country funds mr. porter suggests 
+ unlike many u.s. investors those in asia or europe seeking <unk> exposure may be less <unk> to paying higher prices for country funds 
+ there may be an international viewpoint cast on the funds listed here mr. porter says 
+ nonetheless plenty of u.s. analysts and money managers are <unk> at the <unk> trading levels of some country funds 
+ they argue that u.s. investors often can buy american depositary receipts on the big stocks in many funds these so-called adrs represent shares of foreign companies traded in the u.s. 
+ that way investors can essentially buy the funds without paying the premium 
+ for people who insist on jumping in now to buy the funds <unk> 's mr. foot says the only advice i have for these folks is that those who come to the party late had better be ready to leave quickly 
+ the u.s. and soviet union are holding technical talks about possible repayment by moscow of $ N million in <unk> russian debts owed to the u.s. government the state department said 
+ if the debts are repaid it could clear the way for soviet bonds to be sold in the u.s. 
+ however after two meetings with the soviets a state department spokesman said that it 's too early to say whether that will happen 
+ <unk> with the talks the state department said it has permitted a soviet bank to open a new york branch 
+ the branch of the bank for foreign economic affairs was approved last spring and opened in july 
+ but a soviet bank here would be <unk> unless moscow found a way to settle the $ N million debt which was lent to the country 's short-lived democratic <unk> government before the communists seized power in N 
+ under a N law the johnson debt default act as amended it 's illegal for americans to extend credit to countries in default to the u.s. government unless they are members of the world bank and international monetary fund 
+ the u.s.s.r. belongs to neither organization 
+ moscow has settled <unk> debts with other countries in recent years at less than face value 
+ the state department stressed the <unk> debts as the key to satisfying the johnson act 
+ but the soviets might still face legal obstacles to raising money in the u.s. until they settle hundreds of millions of dollars in additional debt still outstanding from the world war ii <unk> program 
+ in another reflection that the growth of the economy is <unk> off the government said that orders for manufactured goods and spending on construction failed to rise in september 
+ meanwhile the national association of purchasing management said its latest survey indicated that the manufacturing economy contracted in october for the sixth consecutive month 
+ its index inched up to N N in october from N N in september 
+ any reading below N N suggests the manufacturing sector is generally declining 
+ the purchasing managers however also said that orders turned up in october after four months of decline 
+ factories booked $ N billion in orders in september nearly the same as the $ N billion in august the commerce department said 
+ if not for a N N surge in orders for capital goods by defense contractors factory orders would have fallen N N 
+ in a separate report the department said construction spending ran at an annual rate of $ N billion not significantly different from the $ N billion reported for august 
+ private construction spending was down but government building activity was up 
+ the figures in both reports were adjusted to remove the effects of usual seasonal patterns but were n't adjusted for inflation 
+ kenneth <unk> economist for society corp. a cleveland bank said demand for exports of factory goods is beginning to <unk> off 
+ at the same time the drop in interest rates since the spring has failed to revive the residential construction industry 
+ what sector is stepping forward to pick up the slack he asked 
+ i draw a blank 
+ by most measures the nation 's industrial sector is now growing very slowly if at all 
+ factory <unk> fell in september 
+ so did the federal reserve board 's <unk> index 
+ yet many economists are n't predicting that the economy is about to slip into recession 
+ they cite a lack of imbalances that provide early warning signals of a downturn 
+ inventories are closely watched for such clues for instance 
+ economists say a buildup in inventories can <unk> cutbacks in production that can lead to a recession 
+ but yesterday 's factory orders report had good news on that front it said factory inventories fell N N in september the first decline since february N 
+ this <unk> to the soft landing scenario said elliott <unk> an economist at donaldson lufkin & jenrette securities corp 
+ i do n't see any signs that inventories are excessive 
+ a soft landing is an economic slowdown that <unk> inflation without leading to a recession 
+ the department said orders for <unk> goods those intended to last fewer than three years fell N N in september to $ N billion after climbing N N the month before 
+ orders for durable goods were up N N to $ N billion after rising N N the month before 
+ the department previously estimated that <unk> orders fell N N in september 
+ factory shipments fell N N to $ N billion after rising N N in august 
+ shipments have been relatively level since january the commerce department noted 
+ manufacturers ' backlogs of unfilled orders rose N N in september to $ N billion helped by strength in the defense capital goods sector 
+ excluding these orders backlogs declined N N 
+ in its construction spending report the commerce department said residential construction which accounts for nearly half of all construction spending was off N N in september to an annual rate of $ N billion 
+ david <unk> economist for the mortgage bankers association predicted the drop in interest rates eventually will boost spending on single-family homes but probably not until early next year 
+ spending on private <unk> construction was off N N to an annual rate of $ N billion with no sector showing strength 
+ government construction spending rose N N to $ N billion 
+ after adjusting for inflation the commerce department said construction spending did n't change in september 
+ for the first nine months of the year total construction spending ran about N N above last year 's level 
+ the government 's construction spending figures contrast with a report issued earlier in the week by mcgraw-hill inc. 's <unk> dodge group 
+ dodge reported an N N increase in construction contracts awarded in september 
+ the <unk> counts money as it is spent dodge counts contracts when they are awarded 
+ the government includes money spent on residential <unk> dodge does n't 
+ although the purchasing managers ' index continues to indicate a slowing economy it is n't <unk> an imminent recession said robert <unk> chairman of the association 's survey committee and director of materials management at pitney bowes inc. stamford conn 
+ he said the index would have to be in the low N N range for several months to be considered a forecast of recession 
+ the report offered new evidence that the nation 's export growth though still continuing may be slowing 
+ only N N of the purchasing managers reported better export orders in october down from N N in september 
+ and N N said export orders were down last month compared with N N the month before 
+ the <unk> managers ' report also added evidence that inflation is under control 
+ for the fifth consecutive month purchasing managers said prices for the goods they purchased fell 
+ the decline was even <unk> than in september 
+ they also said that vendors were delivering goods more quickly in october than they had for each of the five previous months 
+ economists consider that a sign that <unk> pressures are <unk> 
+ when demand is stronger than suppliers can handle and delivery times <unk> prices tend to rise 
+ the purchasing managers ' report is based on data provided by more than N purchasing executives 
+ each of the survey 's indicators <unk> the difference between the number of purchasers reporting improvement in a particular area and the number reporting a worsening 
+ for the first time the october survey polled members on imports 
+ it found that of the N N who import N N said they imported more in october and N N said they imported less than the previous month 
+ while acknowledging one month 's figures do n't prove a trend mr. <unk> said it does lead you to suspect imports are going down or at least not increasing that much 
+ items listed as being in short supply numbered only about a dozen but they included one <unk> milk and milk <unk> 
+ it 's an odd thing to put on the list mr. <unk> noted 
+ he said that for the second month in a row food processors reported a shortage of <unk> dry milk 
+ they blamed increased demand for dairy products at a time of exceptionally high u.s. exports of dry milk coupled with very low import quotas 
+ <unk> <unk> in new york contributed to this article 
+ here are the commerce department 's figures for construction spending in billions of dollars at seasonally adjusted annual rates 
+ here are the commerce department 's latest figures for manufacturers in billions of dollars seasonally adjusted 
+ judging from the <unk> in <unk> <unk> 's a wild sheep chase <unk> N pages $ N baby boomers on both sides of the pacific have a lot in common 
+ although set in japan the novel 's <unk> is almost entirely western especially american 
+ characters drink <unk> dogs <unk> <unk> b. <unk> and watch bugs bunny reruns 
+ they read <unk> <unk> and talk about <unk> and <unk> 
+ they worry about their careers drink too much and suffer through broken <unk> and <unk> affairs 
+ this is japan 
+ for an american reader part of the <unk> of this engaging novel should come in recognizing that japan is n't the <unk> society of contemporary american <unk> 
+ it 's also <unk> to read a japanese author who clearly does n't belong to the <unk> <unk> school of writers who <unk> the notion of the unique japanese <unk> by outsiders 
+ if a wild sheep chase carries an implicit message for international relations it 's that the japanese are more like us than most of us think 
+ that 's not to say that the <unk> plot of a wild sheep chase is rooted in reality 
+ it 's <unk> and often funny 
+ a <unk> <unk> <unk> hero sets off for snow country in search of an <unk> sheep with a star on its back at the <unk> of a <unk> <unk> <unk> with a stanford degree 
+ he has in <unk> his <unk> girlfriend whose sassy <unk> mark her as anything but a <unk> <unk> 
+ along the way he meets a <unk> christian <unk> who offers the hero god 's phone number and the sheep man a sweet <unk> figure who wears what else a <unk> 
+ the 40-year-old mr. <unk> is a publishing <unk> in japan 
+ a more recent novel norwegian wood every japanese under N seems to be <unk> in <unk> <unk> has sold more than four million copies since <unk> published it in N 
+ but he is just one of several <unk> writers tokyo 's <unk> pack who are <unk> the <unk> charts in japan 
+ their books are written in <unk> contemporary language and usually carry hefty <unk> of <unk> 
+ in robert <unk> 's you <unk> have macmillan N pages $ N the <unk> give way to baseball in the <unk> version we would be hard put to call a game 
+ as mr. <unk> describes it <unk> baseball is a mirror of japan 's <unk> <unk> of hard work and harmony 
+ <unk> is japanese for team spirit and japanese <unk> have miles and miles of it 
+ a player 's commitment to practice and team image is as important as his <unk> average 
+ polls once named tokyo giants star <unk> <unk> a <unk> <unk> <unk> soul as the male symbol of japan 
+ but other than the fact that <unk> is played with a ball and a bat it 's <unk> fans <unk> return <unk> balls to stadium <unk> the strike zone <unk> depending on the size of the <unk> ties are permitted even welcomed since they <unk> <unk> the shame of defeat players must <unk> by strict rules of conduct even in their personal lives players for the tokyo giants for example must always wear ties when on the road 
+ you <unk> have <unk> is the often amusing <unk> of how american <unk> <unk> to two per team fare in japan 
+ despite the enormous sums of money they 're paid to stand up at a japanese plate a good number decide it 's not worth it and run for home 
+ funny business <unk> N pages $ N by gary <unk> is anything but 
+ it 's the <unk> complaint of an <unk> american whom sony <unk> for a year while he was on a <unk> <unk> in tokyo to the regret of both parties 
+ in sometimes amusing more often <unk> even vicious <unk> mr. <unk> describes how sony <unk> even the most mundane aspects of its workers ' lives at the <unk> office where employees are assigned lunch partners and at home in the <unk> company <unk> run by a <unk> <unk> 
+ some of his <unk> about japanese management style are on the mark 
+ it 's probably true that many <unk> put in <unk> overtime just for the <unk> of solidarity that the system is so <unk> that only the assistant manager can talk to the manager and the manager to the general manager and that sony was <unk> of letting a young short-term american employee take on any responsibility 
+ all of this must have been <unk> frustrating to mr. <unk> who went to sony with degrees in business and computer science and was <unk> to <unk> another <unk> 
+ but sony ultimately took a lesson from the american management books and fired mr. <unk> after he committed the social crime of making an appointment to see the venerable <unk> <unk> founder of sony 
+ it 's a shame their meeting never took place 
+ mr. <unk> certainly would have learned something and it 's even possible mr. <unk> would have too 
+ ms. <unk> the journal 's deputy editorial features editor worked in tokyo for three years 
+ more and more corners of the globe are becoming free of tobacco smoke 
+ in singapore a new law requires smokers to put out their cigarettes before entering restaurants department stores and sports centers or face a $ N fine 
+ <unk> and private clubs are exempt from the ban and smoking will be permitted in bars except during <unk> hours an official said 
+ singapore already bans smoking in all theaters buses public elevators hospitals and fast-food restaurants 
+ in malaysia <unk> <unk> <unk> a deputy minister in the prime minister 's office launched a <unk> week at the <unk> institute of technology near kuala lumpur and urged other schools to ban <unk> smoking 
+ south korea has different concerns 
+ in seoul officials began visiting about N cigarette <unk> to remove illegal <unk> and <unk> advertising imported cigarettes 
+ south korea has opened its market to foreign cigarettes but restricts advertising to designated places 
+ a marketing study indicates that hong kong consumers are the most <unk> in the N major markets where the survey was carried out 
+ the study by the backer spielvogel bates ad agency also found that the colony 's consumers feel more pressured than those in any of the other surveyed markets which include the u.s. and japan 
+ the survey found that nearly half of hong kong consumers <unk> what it identified as <unk> values compared with about one-third in japan and the u.s. 
+ more than three in five said they are under a great deal of stress most of the time compared with less than one in two u.s. consumers and one in four in japan 
+ the <unk> cabinet endorsed finance minister <unk> <unk> 's proposal to build a $ N million conference center for a joint meeting of the world bank and international monetary fund two years from now 
+ the meeting which is expected to draw N to <unk> was going to be held at the central plaza hotel but the government balked at the hotel 's conditions for undertaking necessary expansion 
+ a major concern about the current plan is whether the new center can be built in such a short time 
+ <unk> arafat has written to the chairman of the international olympic committee asking him to back a palestinian bid to join the committee the <unk> liberation organization news agency <unk> said 
+ an official of the palestinian olympic committee said the committee first applied for membership in N and renewed its application in august of this year 
+ the plo in recent months has been trying to join international organizations but failed earlier this year to win membership in the world health organization and the world tourism organization 
+ a beijing <unk> assistant has become the first <unk> chinese to get aids through sex the people 's daily said 
+ it said the man whom it did not name had been found to have the disease after hospital tests 
+ once the disease was confirmed all the man 's associates and family were tested but none have so far been found to have aids the newspaper said 
+ the man had for a long time had a chaotic sex life including relations with foreign men the newspaper said 
+ the polish government increased home electricity charges by N N and doubled gas prices 
+ the official news agency <unk> said the increases were intended to bring <unk> low energy charges into line with production costs and compensate for a rise in coal prices 
+ in <unk> news south korea in establishing diplomatic ties with poland yesterday announced $ N million in loans to the financially strapped warsaw government 
+ in a victory for environmentalists hungary 's parliament terminated a multibillion-dollar river <unk> dam being built by <unk> firms 
+ the <unk> dam was designed to be <unk> with another dam now nearly complete N miles <unk> in czechoslovakia 
+ in ending hungary 's part of the project parliament authorized prime minister <unk> <unk> to modify a N agreement with czechoslovakia which still wants the dam to be built 
+ mr. <unk> said in parliament that czechoslovakia and hungary would suffer environmental damage if the <unk> <unk> were built as planned 
+ czechoslovakia said in may it could seek $ N billion from hungary if the <unk> contract were broken 
+ the <unk> dam ca n't be operated solely at peak periods without the <unk> project 
+ a painting by august <unk> set a <unk> price record when it sold at auction in stockholm for $ N million 
+ <unk> ii was painted in oils by the playwright in N 
+ after years of decline <unk> in france showed a N N <unk> last year with N more couples <unk> <unk> in N than in the previous year the national statistics office said 
+ but the number of <unk> last year N was still well below the N registered in N the last year of increasing <unk> 
+ <unk> ltd. said it agreed to issue N million canadian dollars us$ N million of N N senior debentures due nov. N N together with N bond purchase warrants 
+ the toronto-based real estate concern said each bond warrant <unk> the holder to buy c$ N principal amount of debentures at par plus accrued interest to the date of purchase 
+ the warrants expire nov. N N 
+ the issue will be <unk> into fixed-rate u.s. dollars at a rate the company said is less than N N a spokesman declined to elaborate 
+ lead underwriters for the issue are <unk> <unk> inc. and <unk> dominion securities inc. both toronto-based investment dealers 
+ <unk> said it expects to complete the issue by the end of the month 
+ as an actor charles lane is n't the <unk> of charlie <unk> 's spirit 
+ steve martin has already laid his claim to that 
+ but it is mr. lane as movie director producer and writer who has been <unk> with <unk> <unk> 's little tramp in a contemporary way 
+ in N as a film student at the purchase campus of the state university of new york mr. lane shot a place in time a <unk> black-and-white film about a <unk> artist a man of the streets 
+ now N years later mr. lane has revived his artist in a <unk> movie called sidewalk stories a <unk> piece of work about a <unk> tramp 
+ of course if the film contained dialogue mr. lane 's artist would be called a homeless person 
+ so would the little tramp for that matter 
+ i say contained dialogue because sidewalk stories is n't really silent at all 
+ <unk> marc <unk> a college friend of mr. lane 's who earns his living playing the double bass in classical music <unk> has prepared an exciting <unk> score that tells you what the characters are thinking and feeling far more precisely than <unk> or even words would 
+ much of mr. lane 's film takes a highly <unk> view of life on the streets though probably no more <unk> than mr. <unk> 's notion of the tramp as the <unk> free spirit 
+ <unk> in lovely black and white by bill <unk> the new york streets of sidewalk stories seem benign 
+ on wall street men and women walk with great purpose <unk> one another only when they <unk> for <unk> 
+ the artist hangs out in greenwich village on a strip of sixth avenue <unk> by <unk> <unk> and other <unk> <unk> 
+ this clearly is not real life no crack dealers no <unk> men selling four-year-old copies of <unk> no one <unk> up in a <unk> box 
+ the artist has his routine 
+ he spends his days <unk> <unk> or trying to 
+ at night he returns to the <unk> building he calls home 
+ his life including his <unk> with a competing <unk> artist seems <unk> 
+ he is his own man 
+ then just as the tramp is given a blind girl to cure in city lights the artist is put in charge of returning a <unk> <unk> <unk> <unk> whose father has been murdered by <unk> to her mother 
+ this <unk> child turns out to be a blessing and a <unk> 
+ she gives the artist a sense of purpose but also <unk> him to the serious <unk> of his <unk> life 
+ the <unk> at the <unk> mission seem far <unk> when he has to <unk> a little girl into one of them at night 
+ to further load the stakes mr. lane <unk> up a highly <unk> <unk> for the artist with a young woman who owns her own children 's shop and who lives in an expensive <unk> apartment building 
+ this story line might <unk> more strongly if mr. lane had as strong a presence in front of the camera as he does behind it 
+ mr. lane 's final purpose is n't to <unk> the artist 's <unk> existence 
+ he has a point he wants to make and he makes it with a great deal of force 
+ the movie ends with sound the sound of street people talking and there is n't anything <unk> or <unk> in those rough beaten voices 
+ the french film maker <unk> <unk> has managed another kind of weird achievement with his story of women 
+ he has made a harsh brilliant picture one that 's <unk> about a character who viewed from the most sympathetic <unk> would seem <unk> 
+ yet this woman <unk> <unk> carries historical significance both as one of the last women to be executed in france and as a symbol of the <unk> government 's <unk> 
+ while <unk> <unk> with the germans during world war ii in the deaths of thousands of resistance <unk> and <unk> its officials needed a <unk> <unk> <unk> 
+ <unk> a <unk> <unk> was their woman 
+ she became an <unk> <unk> and continued because it enabled her to buy <unk> cocoa and other <unk> <unk> 
+ she was <unk> and in one <unk> job killed a client 
+ her <unk> was <unk> and brief 
+ although she was kind and <unk> to her children she was <unk> to her <unk> husband she openly brought her <unk> into their home 
+ as presented by mr. <unk> and played with <unk> intensity by <unk> <unk> <unk> called <unk> <unk> in the film was not a nice person 
+ but she did n't deserve to have her head <unk> off 
+ there is very little to recommend old <unk> a confused <unk> of the carlos <unk> novel of the mexican revolution 
+ most of the picture is taken up with endless scenes of many people either fighting or eating and drinking to <unk> victory 
+ i mention the picture only because many bad movies have a bright spot and this one has gregory peck in a <unk> loose and energetic portrayal of an old man who wants to die the way he wants to die 
+ video tip before seeing sidewalk stories take a look at city lights <unk> 's tramp at his <unk> 
+ boeing co. said it is discussing plans with three of its regular japanese suppliers to possibly help build a larger version of its popular N <unk> 
+ the discussions are still in preliminary stages and the specific details have n't been worked out between the seattle aerospace company and <unk> heavy industries ltd. mitsubishi heavy industries ltd. and fuji heavy industries ltd 
+ the three japanese companies build the body sections of the N accounting for a combined N N of the aircraft 
+ japanese press reports have speculated that the japanese contribution could rise to between N N and N N under the new program 
+ if boeing goes ahead with the larger N the plane could hit the market in the mid-1990s 
+ this is the year the negative ad for years a secondary presence in most political campaigns became the main event 
+ the irony is that the attack commercial after getting a boost in last year 's presidential campaign has come of age in an <unk> election year with only a few <unk> scattered across the country 
+ but in the three leading political <unk> of N the negative ads have reached new levels of <unk> raising fears that this kind of <unk> empty of significant issues is <unk> in a new era of campaigns without content 
+ now says joseph <unk> a pioneer in political television the idea is to attack first last and always 
+ a trend that started with the first <unk> of politics accelerated with the <unk> of the television age and became a <unk> art form in N has reached an entirely new stage 
+ to get people 's attention these days says douglas <unk> a political consultant your tv ad needs to be bold and entertaining and more often than not that means <unk> 
+ and unlike a few years ago you do n't even have to worry whether the ad is <unk> 
+ in N as often as not the principal fights in the major campaigns are prompted by the ads themselves 
+ take a look then at the main attack commercials that set the tone for tuesday 's elections in new york city new jersey and virginia 
+ new york city 
+ the screen <unk> with a small tight <unk> shot of david dinkins democratic candidate for mayor of new york city 
+ david dinkins failed to file his income taxes for four straight years says a <unk> male voice 
+ and then this television commercial paid for by republican rudolph giuliani 's campaign and produced by roger <unk> the master of negative tv ads really gets down to business 
+ mr. dinkins the ad charges also failed to report his campaign contributions accurately <unk> his links to a failing insurance company and paid a convicted <unk> through a phony organization with no members no receipts and no office 
+ david dinkins says the <unk> why does he always wait until he 's caught 
+ nasty <unk> says john <unk> mr. dinkins 's issues director designed to <unk> a case of political corruption that simply does n't exist 
+ <unk> by the giuliani ads mr. dinkins 's tv consultants robert <unk> and david <unk> finally <unk> a negative ad of their own 
+ the screen shows two distorted <unk> photos presumably of two politicians 
+ compare two candidates for mayor says the announcer 
+ one says he 's for banning <unk> bullets 
+ the other has opposed a ban on <unk> bullets 
+ one claims he 's pro-choice 
+ the other has opposed a woman 's right to choose 
+ funny thing says the <unk> both these candidates are named rudolph giuliani 
+ who 's telling the truth 
+ everybody and nobody 
+ it 's a classic situation of ads that are true but not always fully accurate 
+ mr. dinkins did fail to file his income taxes for four years but he insists he voluntarily admitted the oversight when he was being considered for a city job 
+ he was on the board of an insurance company with financial problems but he insists he made no secret of it 
+ the city 's campaign finance board has refused to pay mr. dinkins $ N in matching funds because his campaign records are incomplete 
+ the campaign has blamed these reporting problems on computer errors 
+ and says mr. dinkins he did n't know the man his campaign paid for a <unk> effort had been convicted of <unk> 
+ but say mr. dinkins 's managers he did have an office and his organization did have members 
+ mr. giuliani 's campaign chairman peter powers says the dinkins ad is deceptive 
+ the other side he argues knows giuliani has always been pro-choice even though he has personal reservations 
+ they know he is generally opposed to <unk> bullets but that he had some reservations about the language in the legislation 
+ virginia 
+ democratic <unk> gov. douglas wilder opened his gubernatorial battle with republican marshall coleman with an abortion commercial produced by frank <unk> that analysts of every political <unk> agree was a tour de force 
+ against a shot of <unk> <unk> on an american flag an announcer talks about the strong tradition of freedom and individual liberty that <unk> have <unk> for generations 
+ then just as an image of the <unk> of thomas jefferson <unk> from the screen the announcer continues on the issue of abortion marshall coleman wants to take away your right to choose and give it to the politicians 
+ that commercial which said mr. coleman wanted to take away the right of abortion even in cases of rape and incest a charge mr. coleman denies changed the dynamics of the campaign <unk> it at least in part into a <unk> on abortion 
+ the ad prompted mr. coleman the former virginia attorney general to launch a series of advertisements created by bob goodman and designed to shake mr. wilder 's support among the very women who were attracted by the abortion ad 
+ the coleman <unk> featured a <unk> of a young woman in <unk> and the ad suggested that she was <unk> an <unk> courtroom <unk> 
+ a voice says <unk> now do n't you have <unk> 
+ then an announcer <unk> it was douglas wilder who introduced a bill to force rape victims age N and younger to be <unk> about their private lives by lawyers for accused <unk> 
+ so the next time mr. wilder talks about the rights of women ask him about this law he tried to pass 
+ mr. wilder did introduce such legislation N years ago but he did so at the request of a <unk> a common legislative technique used by lawmakers 
+ the legislation itself noted that it was introduced by request and in N mr. wilder introduced a bill to protect rape victims from <unk> <unk> 
+ people have grown tired of these ads and coleman has gotten the <unk> of being a negative <unk> says mark <unk> a political scientist at mary washington college 
+ wilder has managed to get across the idea that coleman will say anything to get elected governor and more important has been able to put the <unk> for all the negative <unk> on coleman 
+ mr. coleman said this week that he would devote the remainder of the political season to positive <unk> but the truce lasted only hours 
+ by tuesday night television stations were carrying new ads featuring mr. coleman himself raising questions about mr. wilder 's <unk> to rape victims 
+ new jersey 
+ the attacks began when democratic rep. james florio aired an ad featuring a drawing of <unk> and a photograph of mr. florio 's rival republican rep. jim courter 
+ remember <unk> says a female voice 
+ consider jim courter 
+ and then this commercial produced by bob <unk> gets down to its own mean and <unk> business 
+ pictures of <unk> oil <unk> <unk> into focus and the female voice <unk> that hazardous waste on his mr. courter 's property the neighbors are suing for consumer fraud 
+ and the nose on mr. courter 's face grows 
+ the only fraud involved cry mr. courter 's <unk> is the florio commercial itself and so the courter campaign has responded with its own <unk> commercial produced by mr. <unk> 
+ in this one the screen <unk> with photographs of both candidates 
+ who 's really lying asks a female voice 
+ florio 's lying the voice goes on because the barrel on courter 's land contained heating oil was <unk> up and caused no pollution 
+ mr. courter 's long nose <unk> while mr. florio 's grows 
+ who 's telling the truth 
+ stephen <unk> a political scientist at new jersey 's <unk> institute says it 's another example of an ad that 's true but not fully accurate 
+ barrels were dumped on the courter property a complaint was made but there is no evidence the barrels were a serious threat to the environment 
+ even so according to mr. <unk> the ad was devastating because it raised questions about mr. courter 's credibility 
+ but it 's building on a long tradition 
+ in N on route to a re-election rout of democrat frank <unk> gop gov. nelson rockefeller of new york appeared in person saying if you want to keep the crime rates high <unk> is your man 
+ a seat on the chicago board of trade was sold for $ N down $ N from the previous sale last friday 
+ seats currently are quoted at $ N bid and $ N asked 
+ the record price for a full membership on the exchange is $ N set aug. N N 
+ japanese investment in southeast asia is <unk> the region toward economic integration 
+ interviews with analysts and business people in the u.s. suggest that japanese capital may produce the economic cooperation that southeast asian politicians have pursued in fits and starts for decades 
+ but japan 's power in the region also is <unk> fears of domination and <unk> fresh policy questions 
+ the flow of japanese funds has set in motion a process <unk> these economies will be <unk> together by the great japanese investment machine says robert <unk> vice chairman of goldman sachs international corp 
+ in the past five years japanese companies have tripled their commitments in asia to $ N billion 
+ in thailand for example the government 's board of investment approved $ N million of japanese investment in N N times the u.s. investment figure for the year 
+ japan 's commitment in southeast asia also includes steep increases in foreign assistance and trade 
+ asia 's other <unk> countries are following japan 's lead and pumping capital into the region 
+ in taiwan and south korea rising wages are forcing manufacturers to seek other overseas sites for <unk> production 
+ these nations known as asia 's little <unk> also are contributing to southeast asia 's integration but their influence will remain subordinate to japan 's 
+ for <unk> countries such as thailand and malaysia the investment will provide needed jobs and spur growth 
+ but asian nations ' harsh memories of their military domination by japan in the early part of this century make them fearful of falling under japanese economic <unk> now 
+ because of budget constraints in washington the u.s. encourages japan to share economic burdens in the region 
+ but it <unk> yielding political ground 
+ in the coming decade analysts say <unk> relations will be tested as tokyo comes to terms with its new status as the region 's economic <unk> 
+ japan 's swelling investment in southeast asia is part of its economic evolution 
+ in the past decade japanese manufacturers concentrated on domestic production for export 
+ in the 1990s spurred by rising labor costs and the strong yen these companies will increasingly turn themselves into <unk> with plants around the world 
+ to capture the investment southeast asian nations will move to accommodate japanese business 
+ these nations ' internal decisions will be made in a way not to <unk> their largest aid <unk> largest private investor and largest lender says richard <unk> director of the international business and research program at the university of southern california 's graduate school of business 
+ japanese money will help turn southeast asia into a more <unk> economic region 
+ but analysts say asian cooperation is n't likely to parallel the european common market approach 
+ rather japanese investment will spur integration of certain sectors says kent <unk> a specialist in east asian economies at the <unk> wilson school for public and <unk> affairs at princeton university 
+ in electronics for example a japanese company might make television picture <unk> in japan <unk> the sets in malaysia and export them to indonesia 
+ the effect will be to pull asia together not as a common market but as an integrated production zone says goldman sachs 's mr. <unk> 
+ countries in the region also are beginning to consider a <unk> for closer economic and political ties 
+ the economic and foreign ministers of N asian and pacific nations will meet in australia next week to discuss global trade issues as well as regional matters such as transportation and telecommunications 
+ participants will include the u.s. australia canada japan south korea and new zealand as well as the six members of the association of southeast asian nations thailand malaysia singapore indonesia the philippines and <unk> 
+ in addition the u.s. this year offered its own plan for cooperation around the pacific <unk> in a major speech by secretary of state james baker following up a proposal made in january by australian prime minister bob <unk> 
+ the baker proposal <unk> washington 's intention to continue playing a leading political role in the region 
+ in asia as in europe a new order is taking shape mr. baker said 
+ the u.s. with its regional friends must play a crucial role in designing its architecture 
+ but maintaining u.s. influence will be difficult in the face of japanese dominance in the region 
+ japan not only <unk> the u.s. in investment flows but also <unk> it in trade with most southeast asian countries although the u.s. remains the leading trade partner for all of asia 
+ moreover the japanese government now the world 's largest aid <unk> is pumping far more assistance into the region than the u.s. is 
+ while u.s. officials voice optimism about japan 's <unk> role in asia they also convey an <unk> of caution 
+ there 's an understanding on the part of the u.s. that japan has to expand its functions in asia says j. michael <unk> undersecretary of commerce for trade 
+ if they approach it with a <unk> <unk> attitude there will be a net gain for everyone 
+ some asian nations are <unk> about washington 's demand that tokyo step up its military spending to ease the u.s. security burden in the region 
+ the issue is further complicated by uncertainty over the future of the u.s. 's leases on military bases in the philippines and by a possible u.s. troop reduction in south korea 
+ many <unk> regard a u.s. presence as a desirable <unk> to japanese influence 
+ no one wants the u.s. to pick up its <unk> and go home mr. <unk> says 
+ for their part taiwan and south korea are expected to step up their own investments in the next decade to try to slow the japanese <unk> 
+ they do n't want japan to <unk> the region and <unk> it up says <unk> lee professor of east asian politics at the university of pennsylvania 
+ <unk> rice could hardly believe her eyes 
+ while giving the comprehensive test of basic skills to ninth <unk> at greenville high school last march N she spotted a student looking at <unk> sheets 
+ she had seen cheating before but these notes were <unk> 
+ a <unk> is an example of a profession in trade and finance 
+ at the end of world war ii germany surrendered before japan 
+ the <unk> conference committee is used when a bill is passed by the house and senate in different forms 
+ virtually word for word the notes matched questions and answers on the <unk> section of the test the student was taking 
+ in fact the student had the answers to almost all of the N questions in that section 
+ the student surrendered the notes but not without a protest 
+ my teacher said it was ok for me to use the notes on the test he said 
+ the teacher in question was nancy yeargin considered by many students and parents to be one of the best at the school 
+ confronted mrs. yeargin admitted she had given the questions and answers two days before the examination to two <unk> geography classes 
+ she had gone so far as to display the questions on an overhead <unk> and <unk> the answers 
+ mrs. yeargin was fired and prosecuted under an unusual south carolina law that makes it a crime to breach test security 
+ in september she pleaded guilty and paid a $ N fine 
+ her alternative was N days in jail 
+ her story is partly one of personal <unk> 
+ she was an <unk> teacher who won <unk> and inspired students but she will probably never teach again 
+ in her wake she left the <unk> and anger of a principal who was her friend and now calls her a <unk> of colleagues who say she brought them shame of students and parents who defended her and insist she was treated <unk> and of <unk> officials stunned that despite the <unk> nature of her actions she became something of a local <unk> 
+ mrs. yeargin 's case also <unk> some light on the dark side of school reform where pressures on teachers are growing and where <unk> testing has enhanced the temptation to <unk> 
+ the N statute mrs. yeargin violated was designed to enforce provisions of south carolina 's <unk> laws 
+ prosecutors alleged that she was trying to bolster students ' scores to win a bonus under the state 's N education improvement act 
+ the bonus depended on her ability to produce higher <unk> scores 
+ there is incredible pressure on school systems and teachers to raise test scores says walt <unk> an education professor and testing specialist at boston college 
+ so efforts to beat the tests are also on the rise 
+ and most disturbing it is educators not students who are blamed for much of the wrongdoing 
+ a <unk> study released in september by friends for education an <unk> n.m. <unk> group concluded that outright cheating by american educators is common 
+ the group says standardized achievement test scores are greatly inflated because teachers often teach the test as mrs. yeargin did although most are never caught 
+ evidence of widespread cheating has surfaced in several states in the last year or so 
+ california 's education department suspects adult responsibility for <unk> at N schools that changed wrong answers to right ones on a statewide test 
+ after numerous <unk> of questionable teacher help to students texas is <unk> its security practices 
+ and sales of <unk> booklets for classroom instruction are booming 
+ these materials including <unk> school publishing co. 's scoring high and learning materials are nothing short of sophisticated <unk> sheets according to some recent academic research 
+ by using them teachers with administrative blessing telegraph to students <unk> the precise areas on which a test will concentrate and sometimes give away a few exact questions and answers 
+ use of scoring high is widespread in south carolina and common in greenville county mrs. yeargin 's school district 
+ experts say there is n't another state in the country where tests mean as much as they do in south carolina 
+ under the state 's education improvement act low test scores can block students ' promotions or force entire districts into <unk> <unk> <unk> that can mean <unk> 
+ high test scores on the other hand bring recognition and extra money a new computer lab for a school grants for special projects a bonus for the <unk> 
+ and south carolina says it is getting results 
+ since the reforms went in place for example no state has posted a higher rate of improvement on the <unk> <unk> test than south carolina although the state still posts the lowest average score of the about N states who use the sat as the primary college <unk> examination 
+ critics say south carolina is paying a price by stressing improved test scores so much 
+ friends of education rates south carolina one of the worst seven states in its study on academic cheating 
+ says the organization 's founder john <unk> <unk> mrs. yeargin is a way for administrators to protect themselves and look like they take cheating seriously when in fact they do n't take it seriously at all 
+ paul <unk> director of testing for the south carolina department of education says mr. <unk> 's allegations of cheating are <unk> without foundation and based on unfair <unk> 
+ partly because of worries about potential abuse however he says the state will begin keeping closer track of <unk> preparation booklets next spring 
+ south carolina 's reforms were designed for schools like greenville high school 
+ standing on a <unk> hill in a <unk> area of this old textile city the school has educated many of south carolina 's best and <unk> including the state 's last two governors nobel prize winning <unk> charles <unk> and actress <unk> <unk> 
+ but by the early 1980s its glory had faded like the yellow bricks of its broad <unk> 
+ it was full of violence and gangs and kids cutting class says linda ward the school 's principal 
+ crime was awful test scores were low and there was no <unk> in <unk> programs 
+ mrs. ward took over in N becoming the school 's seventh principal in N years 
+ her immediate predecessor suffered a nervous breakdown 
+ prior to his term a teacher <unk> to death in the halls <unk> by a student 
+ <unk> mrs. ward says the school was having trouble serving in harmony its two <unk> and evenly split student groups a <unk> white elite from old <unk> neighborhoods and blacks many of them poor from <unk> inner city neighborhoods 
+ mrs. ward resolved to clean out <unk> in the school 's faculty and restore safety and she also had some new factors working in her behalf 
+ one was statewide school reform which raised overall educational funding and <unk> in a new public spirit for school <unk> 
+ another was nancy yeargin who came to greenville in N full of the energy and ambitions that reformers wanted to reward 
+ being a teacher just became my life says the <unk> mrs. yeargin a teacher for N years before her dismissal 
+ i loved the school its history 
+ i even <unk> about school and new things to do with my students 
+ while mrs. ward fired and restructured staff and struggled to improve <unk> mrs. yeargin worked <unk> days and fast became a student favorite 
+ in N and N she applied for and won bonus pay under the reform law 
+ encouraged by mrs. ward mrs. yeargin taught honor students in the state teacher <unk> program a reform creation designed to encourage good students to consider teaching as a career 
+ she won grant money for the school advised <unk> ran the <unk> club proposed and taught a new cultural <unk> class in western <unk> and was chosen by the school <unk> as teacher of the year 
+ she was an <unk> lady she had it all together says <unk> <unk> a freshman at the university of south carolina who had mrs. yeargin in the <unk> class last year 
+ she says that because of mrs. yeargin she gave up ambitions in architecture and is studying to become a teacher 
+ mary beth <unk> a greenville <unk> <unk> also says mrs. yeargin inspired her to go into education 
+ she taught us more in western <unk> than i 've ever learned in other classes says <unk> green a greenville senior 
+ in the classroom students say mrs. yeargin distinguished herself by <unk> teaching approaches forcing kids to pair up to complete classroom work or using <unk> type <unk> 
+ on <unk> she came to work to prepare study plans or sometimes even to polish the furniture in her classroom 
+ she just never gave it up says mary <unk> mary beth 's mother 
+ you 'd see her <unk> <unk> in the stands at a football game 
+ some fellow teachers however viewed mrs. yeargin as <unk> and too yielding to students 
+ mrs. ward says she often defended her to colleagues who called her a <unk> 
+ pressures began to build 
+ friends told her she was pushing too hard 
+ because of deteriorating hearing she told colleagues she feared she might not be able to teach much longer 
+ mrs. yeargin 's extra work was also helping her earn points in the state 's <unk> program 
+ but the most important source of points was student improvement on tests 
+ huge gains by her students in N and N meant a total of $ N in bonuses over two years a meaningful addition to her annual salary of $ N 
+ winning a bonus for a third year was n't that important to her mrs. yeargin insists 
+ but others at greenville high say she was eager to win if not for money then for pride and recognition 
+ mary elizabeth <unk> another <unk> teacher says she believed mrs. yeargin wanted to keep her standing high so she could get a new job that would n't demand good hearing 
+ indeed mrs. yeargin was interested in a possible job with the state teacher <unk> program 
+ last march after attending a teaching <unk> in washington mrs. yeargin says she returned to greenville two days before annual testing feeling that she had n't prepared her <unk> geography students adequately 
+ when test booklets were passed out N hours ahead of time she says she <unk> questions in the social studies section and gave the answers to students 
+ mrs. yeargin admits she made a big mistake but insists her <unk> were correct 
+ i was trying to help kids in an unfair testing situation she says 
+ only five of the N questions were geography questions 
+ the rest were history <unk> finance subjects they never had 
+ mrs. yeargin says that she also wanted to help lift greenville high school 's overall test scores usually near the bottom of N district high schools in <unk> carried annually by local newspapers 
+ mostly she says she wanted to prevent the damage to <unk> that her <unk> students would suffer from doing badly on the test 
+ these kids broke my heart she says 
+ a whole day goes by and no one even knows they 're alive 
+ they desperately needed somebody who showed they <unk> for them who loved them 
+ the last thing they needed was another <unk> blow 
+ school officials and prosecutors say mrs. yeargin is lying 
+ they found students in an advanced class a year earlier who said she gave them similar help although because the case was n't tried in court this evidence was never presented publicly 
+ that pretty much <unk> any <unk> that she was out to help the poor <unk> child says joe watson the prosecutor in the case who is also president of greenville high school 's <unk> association 
+ mrs. yeargin concedes that she went over the questions in the earlier class adding i wanted to help all students 
+ mr. watson says mrs. yeargin never complained to school officials that the standardized test was unfair 
+ do i have much <unk> for her mr. watson asks 
+ not really 
+ i believe in the system 
+ i believe you have to use the system to change it 
+ what she did was like taking the law into your own hands 
+ mrs. ward says that when the cheating was discovered she wanted to avoid the <unk> public disclosure that a trial would bring 
+ she says she offered mrs. yeargin a quiet resignation and thought she could help save her teaching certificate 
+ mrs. yeargin declined 
+ she said something like you just want to make it easy for the school 
+ i was <unk> mrs. ward recalls 
+ it was like someone had turned a <unk> in me 
+ to the <unk> and <unk> of her <unk> and legal authorities and perhaps as a measure of the <unk> of standardized tests <unk> yeargin won widespread local support 
+ the <unk> hearing at which she was dismissed was crowded with students teachers and parents who came to testify on her behalf 
+ supportive callers <unk> unfair testing not mrs. yeargin on a local radio talk show on which she appeared 
+ the show did n't give the <unk> of mrs. yeargin 's <unk> saying only that she helped students do better on the test 
+ the message to the board of education out of all this is we 've got to take a serious look at how we 're doing our <unk> and our testing policies in this state said the <unk> host 
+ <unk> in the greenville newspaper allowed that mrs. yeargin was wrong but also said the case showed how testing was being <unk> 
+ the radio show <unk> us says mrs. ward 
+ partly because of the show mr. watson says the district decided not to recommend mrs. yeargin for a first-time offenders program that could have <unk> the charges and the conviction from her record 
+ and legal authorities <unk> up an investigation worthy of a murder case 
+ over N witnesses mostly students were interviewed 
+ at greenville high school meanwhile some students especially on the <unk> <unk> were crushed 
+ it 's hard to explain to a <unk> why someone they like had to go says mrs. ward 
+ soon <unk> appeared in the <unk> that carried the school 's familiar <unk> <unk> <unk> on the front 
+ on the back the shirts read we have all the answers 
+ many colleagues are angry at mrs. yeargin 
+ she did a lot of harm says <unk> rice who had discovered the <unk> notes 
+ we work damn hard at what we do for damn little pay and what she did cast unfair <unk> on all of us 
+ but several teachers also say the incident <unk> doubt on the wisdom of evaluating teachers or schools by using standardized test scores 
+ says <unk> key a <unk> teacher the incentive pay thing has opened up a can of <unk> 
+ there may be others doing what she did 
+ mrs. yeargin says she pleaded guilty because she realized it would no longer be possible to win <unk> and because she was afraid of further charges 
+ mrs. ward for one was relieved 
+ despite the strong evidence against mrs. yeargin popular sentiment was so strong in her favor mrs. ward says that i 'm afraid a jury would n't have convicted her 
+ since <unk> first touched slate <unk> have wanted to know what 's on the test 
+ these days students can often find the answer in <unk> <unk> and <unk> their teachers give them in the weeks prior to taking standardized achievement tests 
+ the <unk> section of the widely used california achievement test asks fifth <unk> what is another name for the roman <unk> <unk> 
+ it also asks them to add <unk> and <unk> 
+ <unk> in a <unk> <unk> called learning materials sold to schools across the country by <unk> school publishing co. contain the same questions 
+ in many other <unk> there is almost no difference between the real test and learning materials 
+ what 's more the test and learning materials are both produced by the same company <unk> a joint venture of mcgraw-hill inc. and macmillan 's parent britain 's maxwell communication corp 
+ close parallels between tests and practice tests are common some educators and researchers say 
+ <unk> booklets software and <unk> are a booming publishing <unk> 
+ but some practice products are so similar to the tests themselves that critics say they represent a form of <unk> cheating 
+ if i took these preparation booklets into my classroom i 'd have a hard time <unk> to my students and parents that it was n't cheating says john <unk> a <unk> city mich. teacher who has studied test <unk> 
+ he and other critics say such <unk> aids can defeat the purpose of standardized tests which is to gauge learning progress 
+ it 's as if france decided to give only french history questions to students in a european history class and when everybody <unk> the test they say their kids are good in european history says john <unk> an <unk> n.m. <unk> and founder of an educational research organization friends for education which has studied standardized testing 
+ standardized achievement tests are given about N million times a year across the country to students generally from <unk> through eighth grade 
+ the most widely used of these tests are <unk> 's cat and comprehensive test of basic skills the iowa test of basic skills by <unk> <unk> co. and <unk> <unk> <unk> inc. 's metropolitan achievement test and stanford achievement test 
+ sales figures of the <unk> materials are n't known but their reach into schools is significant 
+ in arizona california florida louisiana maryland new jersey south carolina and texas educators say they are common classroom tools 
+ <unk> says well over N million of its scoring high <unk> books have been sold since their introduction N years ago with most sales in the last five years 
+ about N sets of learning materials teachers ' <unk> have also been sold in the past four years 
+ the materials in each set reach about N students 
+ scoring high and learning materials are the <unk> preparation tests 
+ michael kean director of marketing for <unk> <unk> the <unk> division that publishes learning materials says it is n't aimed at improving test scores 
+ he also asserted that exact questions were n't <unk> 
+ when referred to the questions that matched he said it was <unk> 
+ mr. <unk> the <unk> and william <unk> a michigan state university education professor concluded in a study last june that cat test versions of scoring high and learning materials should n't be used in the classroom because of their similarity to the actual test 
+ they devised a <unk> scale <unk> one point for each <unk> measured on the cat test to rate the <unk> of test <unk> to the <unk> cat 
+ because many of these <unk> the <unk> of <unk> figures metric measurement of volume or pie and bar <unk> for example are only a small part of the total <unk> <unk> mr. <unk> says the preparation <unk> would n't <unk> too many if their real intent was general instruction or even general <unk> with test procedures 
+ but learning materials matched on N of N <unk> 
+ scoring high matched on N 
+ in cat sections where students ' knowledge of <unk> <unk> sounds is tested the authors noted that scoring high concentrated on the same sounds that the test does to the exclusion of other sounds that fifth <unk> should know 
+ learning materials for the <unk> contains at least a dozen examples of exact matches or close parallels to test items 
+ rick <unk> senior editor of scoring high says that messrs. <unk> and <unk> are ignoring the need students have for becoming familiar with tests and testing format 
+ he said authors of scoring high <unk> avoid <unk> exact questions but he does n't deny that some items are similar 
+ when scoring high first came out in N it was a publication of random house 
+ mcgraw-hill was <unk> 
+ in a N advisory to educators mcgraw-hill said scoring high should n't be used because it represented a parallel form of the cat and <unk> tests 
+ but in N mcgraw-hill purchased the random house unit that publishes scoring high which later became part of <unk> 
+ messrs. <unk> and kean say they are <unk> of any efforts by mcgraw-hill to modify or <unk> scoring high 
+ <unk> corp. said it completed the acquisition of sacramento savings & loan association from the <unk> & <unk> c. <unk> foundation for $ N million 
+ the <unk> s&l which has N branch offices in north central california had assets of $ N billion at the end of september 
+ new york-based <unk> is an insurance and financial services concern 
+ the purchase price includes two <unk> companies 
+ the department of health and human services plans to extend its <unk> on federal funding of research involving fetal-tissue transplants 
+ medical researchers believe the <unk> of small amounts of <unk> tissue into humans could help treat <unk> <unk> and such <unk> diseases as <unk> 's <unk> 's and <unk> 's 
+ but anti-abortionists oppose such research because they worry that the development of <unk> using fetal-tissue transplants could lead to an increase in abortions 
+ james mason assistant secretary for health said the ban on federal funding of fetal-tissue transplant research should be continued indefinitely 
+ he said the ban wo n't stop privately funded <unk> research or federally funded fetal-tissue research that does n't involve transplants 
+ department officials say that hhs secre
 `
 
 function eatData(input) {
