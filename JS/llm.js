@@ -36,866 +36,4736 @@ class Word {
 let words = []
 let nextWords = []
 let data = `
-aer banknote berlitz calloway centrust cluett fromstein gitano guterman hydro-quebec ipo kia memotec mlx nahb punts rake regatta rubens sim snack-food ssangyong swapo wachter 
- pierre <unk> N years old will join the board as a nonexecutive director nov. N 
- mr. <unk> is chairman of <unk> n.v. the dutch publishing group 
- rudolph <unk> N years old and former chairman of consolidated gold fields plc was named a nonexecutive director of this british industrial conglomerate 
- a form of asbestos once used to make kent cigarette filters has caused a high percentage of cancer deaths among a group of workers exposed to it more than N years ago researchers reported 
- the asbestos fiber <unk> is unusually <unk> once it enters the <unk> with even brief exposures to it causing symptoms that show up decades later researchers said 
- <unk> inc. the unit of new york-based <unk> corp. that makes kent cigarettes stopped using <unk> in its <unk> cigarette filters in N 
- although preliminary findings were reported more than a year ago the latest results appear in today 's new england journal of medicine a forum likely to bring new attention to the problem 
- a <unk> <unk> said this is an old story 
- we 're talking about years ago before anyone heard of asbestos having any questionable properties 
- there is no asbestos in our products now 
- neither <unk> nor the researchers who studied the workers were aware of any research on smokers of the kent cigarettes 
- we have no useful information on whether users are at risk said james a. <unk> of boston 's <unk> cancer institute 
- dr. <unk> led a team of researchers from the national cancer institute and the medical schools of harvard university and boston university 
- the <unk> spokeswoman said asbestos was used in very modest amounts in making paper for the filters in the early 1950s and replaced with a different type of <unk> in N 
- from N to N N billion kent cigarettes with the filters were sold the company said 
- among N men who worked closely with the substance N have died more than three times the expected number 
- four of the five surviving workers have <unk> diseases including three with recently <unk> cancer 
- the total of N deaths from malignant <unk> lung cancer and <unk> was far higher than expected the researchers said 
- the <unk> rate is a striking finding among those of us who study <unk> diseases said dr. <unk> 
- the percentage of lung cancer deaths among the workers at the west <unk> mass. paper factory appears to be the highest for any asbestos workers studied in western industrialized countries he said 
- the plant which is owned by <unk> & <unk> co. was under contract with <unk> to make the cigarette filters 
- the finding probably will support those who argue that the u.s. should regulate the class of asbestos including <unk> more <unk> than the common kind of asbestos <unk> found in most schools and other buildings dr. <unk> said 
- the u.s. is one of the few industrialized nations that does n't have a higher standard of regulation for the smooth <unk> fibers such as <unk> that are classified as <unk> according to <unk> t. <unk> a professor of <unk> at the university of vermont college of medicine 
- more common <unk> fibers are <unk> and are more easily rejected by the body dr. <unk> explained 
- in july the environmental protection agency imposed a gradual ban on virtually all uses of asbestos 
- by N almost all remaining uses of <unk> asbestos will be outlawed 
- about N workers at a factory that made paper for the kent filters were exposed to asbestos in the 1950s 
- areas of the factory were particularly dusty where the <unk> was used 
- workers dumped large <unk> <unk> of the imported material into a huge <unk> poured in cotton and <unk> fibers and <unk> mixed the dry fibers in a process used to make filters 
- workers described clouds of blue dust that hung over parts of the factory even though <unk> fans <unk> the area 
- there 's no question that some of those workers and managers contracted <unk> diseases said <unk> phillips vice president of human resources for <unk> & <unk> 
- but you have to recognize that these events took place N years ago 
- it has no bearing on our work force today 
- yields on money-market mutual funds continued to slide amid signs that portfolio managers expect further declines in interest rates 
- the average seven-day compound yield of the N taxable funds tracked by <unk> 's money fund report eased a fraction of a percentage point to N N from N N for the week ended tuesday 
- compound yields assume reinvestment of dividends and that the current yield continues for a year 
- average maturity of the funds ' investments <unk> by a day to N days the longest since early august according to donoghue 's 
- longer maturities are thought to indicate declining interest rates because they permit portfolio managers to retain relatively higher rates for a longer period 
- shorter maturities are considered a sign of rising rates because portfolio managers can capture higher rates sooner 
- the average maturity for funds open only to institutions considered by some to be a stronger indicator because those managers watch the market closely reached a high point for the year N days 
- nevertheless said <unk> <unk> <unk> editor of money fund report yields may <unk> up again before they <unk> down because of recent rises in short-term interest rates 
- the yield on six-month treasury bills sold at monday 's auction for example rose to N N from N N 
- despite recent declines in yields investors continue to pour cash into money funds 
- assets of the N taxable funds grew by $ N billion during the latest week to $ N billion 
- typically money-fund yields beat comparable short-term investments because portfolio managers can vary maturities and go after the highest rates 
- the top money funds are currently yielding well over N N 
- dreyfus world-wide dollar the <unk> fund had a seven-day compound yield of N N during the latest week down from N N a week earlier 
- it invests heavily in dollar-denominated securities overseas and is currently <unk> management fees which boosts its yield 
- the average seven-day simple yield of the N funds was N N down from N N 
- the 30-day simple yield fell to an average N N from N N the 30-day compound yield slid to an average N N from N N 
- j.p. <unk> vice chairman of <unk> grace & co. which holds a N N interest in this <unk> company was elected a director 
- he succeeds <unk> d. <unk> formerly a <unk> grace vice chairman who resigned 
- <unk> grace holds three of grace energy 's seven board seats 
- pacific first financial corp. said shareholders approved its acquisition by royal <unk> ltd. of toronto for $ N a share or $ N million 
- the thrift holding company said it expects to obtain regulatory approval and complete the transaction by year-end 
- <unk> international inc. said its <unk> & <unk> unit completed the sale of its <unk> controls operations to <unk> s.p a. for $ N million 
- <unk> is an italian state-owned holding company with interests in the mechanical engineering industry 
- <unk> controls based in <unk> ohio makes computerized industrial controls systems 
- it employs N people and has annual revenue of about $ N million 
- the federal government suspended sales of u.s. savings bonds because congress has n't lifted the ceiling on government debt 
- until congress acts the government has n't any authority to issue new debt obligations of any kind the treasury said 
- the government 's borrowing authority dropped at midnight tuesday to $ N trillion from $ N trillion 
- legislation to lift the debt ceiling is <unk> in the fight over cutting capital-gains taxes 
- the house has voted to raise the ceiling to $ N trillion but the senate is n't expected to act until next week at the earliest 
- the treasury said the u.s. will default on nov. N if congress does n't act by then 
- clark j. <unk> was named senior vice president and general manager of this u.s. sales and marketing arm of japanese auto maker mazda motor corp 
- in the new position he will oversee mazda 's u.s. sales service parts and marketing operations 
- previously mr. <unk> N years old was general marketing manager of chrysler corp. 's chrysler division 
- he had been a sales and marketing executive with chrysler for N years 
- when it 's time for their <unk> <unk> the nation 's manufacturing <unk> typically jet off to the <unk> <unk> of resort towns like <unk> <unk> and hot springs 
- not this year 
- the national association of manufacturers settled on the <unk> capital of indianapolis for its fall board meeting 
- and the city decided to treat its guests more like royalty or rock stars than factory owners 
- the idea of course to prove to N corporate decision makers that the buckle on the <unk> belt is n't so <unk> after all that it 's a good place for a company to expand 
- on the receiving end of the message were officials from giants like du pont and <unk> along with lesser <unk> like <unk> steel and the valley queen <unk> factory 
- for <unk> the executives joined mayor william h. <unk> iii for an evening of the indianapolis <unk> <unk> and a guest <unk> victor <unk> 
- champagne and <unk> followed 
- the next morning with a police <unk> <unk> of executives and their wives <unk> to the indianapolis motor <unk> <unk> by traffic or red lights 
- the governor could n't make it so the <unk> governor welcomed the special guests 
- a buffet breakfast was held in the museum where food and drinks are banned to everyday visitors 
- then in the guests ' honor the <unk> <unk> out four drivers crews and even the official indianapolis N announcer for a <unk> exhibition race 
- after the race fortune N executives <unk> like <unk> over the cars and drivers 
- no <unk> the drivers pointed out they still had space on their machines for another sponsor 's name or two 
- back downtown the <unk> squeezed in a few meetings at the hotel before <unk> the buses again 
- this time it was for dinner and <unk> a block away 
- under the stars and <unk> of the <unk> indiana <unk> <unk> nine of the hottest chefs in town fed them indiana <unk> <unk> <unk> <unk> <unk> <unk> and <unk> <unk> with a <unk> <unk> 
- knowing a <unk> and free <unk> when they eat one the executives gave the chefs a standing <unk> 
- more than a few <unk> say the <unk> treatment <unk> them to return to a <unk> city for future meetings 
- but for now they 're looking forward to their winter meeting <unk> in february 
- south korea registered a trade deficit of $ N million in october reflecting the country 's economic <unk> according to government figures released wednesday 
- preliminary <unk> by the trade and industry ministry showed another trade deficit in october the fifth monthly setback this year casting a cloud on south korea 's <unk> economy 
- exports in october stood at $ N billion a mere N N increase from a year earlier while imports increased sharply to $ N billion up N N from last october 
- south korea 's economic boom which began in N stopped this year because of prolonged labor disputes trade conflicts and sluggish exports 
- government officials said exports at the end of the year would remain under a government target of $ N billion 
- despite the gloomy forecast south korea has recorded a trade surplus of $ N million so far this year 
- from january to october the nation 's accumulated exports increased N N from the same period last year to $ N billion 
- imports were at $ N billion up N N 
- newsweek trying to keep pace with rival time magazine announced new advertising rates for N and said it will introduce a new incentive plan for advertisers 
- the new ad plan from newsweek a unit of the washington post co. is the second incentive plan the magazine has offered advertisers in three years 
- plans that give advertisers discounts for maintaining or increasing ad spending have become permanent <unk> at the news <unk> and underscore the fierce competition between newsweek time warner inc. 's time magazine and <unk> b. <unk> 's u.s. news & world report 
- alan <unk> recently named newsweek president said newsweek 's ad rates would increase N N in january 
- a full <unk> page in newsweek will cost $ N 
- in mid-october time magazine lowered its guaranteed circulation rate base for N while not increasing ad page rates with a lower circulation base time 's ad rate will be effectively N N higher per subscriber a full page in time costs about $ N 
- u.s. news has yet to announce its N ad rates 
- newsweek said it will introduce the circulation credit plan which <unk> space credits to advertisers on renewal advertising 
- the magazine will reward with page bonuses advertisers who in N meet or exceed their N spending as long as they spent $ N in N and $ N in N 
- mr. <unk> said the plan is not an attempt to shore up a decline in ad pages in the first nine months of N newsweek 's ad pages totaled N a drop of N N from last year according to publishers information bureau 
- what matters is what advertisers are paying per page and in that department we are doing fine this fall said mr. <unk> 
- both newsweek and u.s. news have been gaining circulation in recent years without heavy use of electronic <unk> to subscribers such as telephones or watches 
- however none of the big three <unk> recorded circulation gains recently 
- according to audit bureau of <unk> time the largest <unk> had average circulation of N a decrease of N N 
- newsweek 's circulation for the first six months of N was N flat from the same period last year 
- u.s. news ' circulation in the same time was N down N N 
- new england electric system bowed out of the bidding for public service co. of new hampshire saying that the risks were too high and the potential <unk> too far in the future to justify a higher offer 
- the move leaves united illuminating co. and northeast utilities as the remaining outside bidders for ps of new hampshire which also has proposed an internal reorganization plan in chapter N bankruptcy proceedings under which it would remain an independent company 
- new england electric based in <unk> mass. had offered $ N billion to acquire ps of new hampshire well below the $ N billion value united illuminating places on its bid and the $ N billion northeast says its bid is worth 
- united illuminating is based in new haven conn. and northeast is based in hartford conn 
- ps of new hampshire <unk> n.h. values its internal reorganization plan at about $ N billion 
- john rowe president and chief executive officer of new england electric said the company 's return on equity could suffer if it made a higher bid and its forecasts related to ps of new hampshire such as growth in electricity demand and improved operating <unk> did n't come true 
- when we <unk> raising our bid the risks seemed substantial and persistent over the next five years and the rewards seemed a long way out 
- that got hard to take he added 
- mr. rowe also noted that political concerns also worried new england electric 
- no matter who owns ps of new hampshire after it emerges from bankruptcy proceedings its rates will be among the highest in the nation he said 
- that attracts attention 
- it was just another one of the risk factors that led to the company 's decision to withdraw from the bidding he added 
- wilbur ross jr. of rothschild inc. the financial adviser to the troubled company 's equity holders said the withdrawal of new england electric might speed up the reorganization process 
- the fact that new england proposed lower rate increases N N over seven years against around N N boosts proposed by the other two outside bidders complicated negotiations with state officials mr. ross asserted 
- now the field is less <unk> he added 
- separately the federal energy regulatory commission turned down for now a request by northeast seeking approval of its possible purchase of ps of new hampshire 
- northeast said it would <unk> its request and still hopes for an <unk> review by the ferc so that it could complete the purchase by next summer if its bid is the one approved by the bankruptcy court 
- ps of new hampshire shares closed yesterday at $ N off N cents in new york stock exchange composite trading 
- norman <unk> N years old and former president and chief operating officer of toys r us inc. and frederick <unk> jr. N chairman of <unk> banking corp. were elected directors of this consumer electronics and appliances retailing chain 
- they succeed daniel m. <unk> retired circuit city executive vice president and robert r. <unk> u.s. treasury undersecretary on the <unk> board 
- commonwealth edison co. was ordered to refund about $ N million to its current and former <unk> for illegal rates collected for cost overruns on a nuclear power plant 
- the refund was about $ N million more than previously ordered by the illinois commerce commission and trade groups said it may be the largest ever required of a state or local utility 
- state court judge richard curry ordered edison to make average refunds of about $ N to $ N each to edison customers who have received electric service since april N including about two million customers who have moved during that period 
- judge curry ordered the refunds to begin feb. N and said that he would n't <unk> any appeals or other attempts to block his order by commonwealth edison 
- the refund pool may not be held <unk> through another round of appeals judge curry said 
- commonwealth edison said it is already appealing the underlying commission order and is considering appealing judge curry 's order 
- the exact amount of the refund will be determined next year based on actual <unk> made until dec. N of this year 
- commonwealth edison said the ruling could force it to slash its N earnings by $ N a share 
- for N commonwealth edison reported earnings of $ N million or $ N a share 
- a commonwealth edison spokesman said that tracking down the two million customers whose addresses have changed during the past N N years would be an administrative nightmare 
- in new york stock exchange composite trading yesterday commonwealth edison closed at $ N down N cents 
- the $ N billion <unk> N plant near <unk> ill. was completed in N 
- in a disputed N ruling the commerce commission said commonwealth edison could raise its electricity rates by $ N million to pay for the plant 
- but state courts upheld a challenge by consumer groups to the commission 's rate increase and found the rates illegal 
- the illinois supreme court ordered the commission to audit commonwealth edison 's construction expenses and refund any <unk> expenses 
- the utility has been collecting for the plant 's construction cost from its N million customers subject to a refund since N 
- in august the commission ruled that between $ N million and $ N million of the plant 's construction cost was <unk> and should be <unk> plus interest 
- in his ruling judge curry added an additional $ N million to the commission 's calculations 
- last month judge curry set the interest rate on the refund at N N 
- commonwealth edison now faces an additional <unk> refund on its <unk> rate <unk> <unk> that the illinois appellate court has estimated at $ N million 
- and consumer groups hope that judge curry 's <unk> N order may set a precedent for a second nuclear rate case involving commonwealth edison 's <unk> N plant 
- commonwealth edison is seeking about $ N million in rate increases to pay for <unk> N 
- the commission is expected to rule on the <unk> N case by year end 
- last year commonwealth edison had to refund $ N million for poor performance of its <unk> i nuclear plant 
- japan 's domestic sales of cars trucks and buses in october rose N N from a year earlier to N units a record for the month the japan automobile dealers ' association said 
- the strong growth followed year-to-year increases of N N in august and N N in september 
- the monthly sales have been setting records every month since march 
- october sales compared with the previous month inched down N N 
- sales of passenger cars grew N N from a year earlier to N units 
- sales of medium-sized cars which benefited from price reductions arising from introduction of the consumption tax more than doubled to N units from N in october N 
- texas instruments japan ltd. a unit of texas instruments inc. said it opened a plant in south korea to manufacture control devices 
- the new plant located in <unk> about N miles from seoul will help meet increasing and diversifying demand for control products in south korea the company said 
- the plant will produce control devices used in motor vehicles and household appliances 
- the survival of spinoff cray computer corp. as a fledgling in the supercomputer business appears to depend heavily on the creativity and <unk> of its chairman and chief designer seymour cray 
- not only is development of the new company 's initial machine tied directly to mr. cray so is its balance sheet 
- documents filed with the securities and exchange commission on the pending spinoff disclosed that cray research inc. will withdraw the almost $ N million in financing it is providing the new firm if mr. cray leaves or if the <unk> project he heads is scrapped 
- the documents also said that although the <unk> mr. cray has been working on the project for more than six years the cray-3 machine is at least another year away from a fully operational prototype 
- moreover there have been no orders for the cray-3 so far though the company says it is talking with several prospects 
- while many of the risks were anticipated when <unk> cray research first announced the spinoff in may the <unk> it attached to the financing had n't been made public until yesterday 
- we did n't have much of a choice cray computer 's chief financial officer gregory <unk> said in an interview 
- the theory is that seymour is the chief designer of the cray-3 and without him it could not be completed 
- cray research did not want to fund a project that did not include seymour 
- the documents also said that cray computer anticipates <unk> perhaps another $ N million in financing beginning next september 
- but mr. <unk> called that a <unk> scenario 
- the filing on the details of the spinoff caused cray research stock to jump $ N yesterday to close at $ N in new york stock exchange composite trading 
- analysts noted yesterday that cray research 's decision to link its $ N million <unk> note to mr. cray 's presence will complicate a valuation of the new company 
- it has to be considered as an additional risk for the investor said gary p. <unk> of <unk> group inc. minneapolis 
- cray computer will be a concept stock he said 
- you either believe seymour can do it again or you do n't 
- besides the designer 's age other risk factors for mr. cray 's new company include the cray-3 's tricky <unk> chip technology 
- the sec documents describe those chips which are made of <unk> <unk> as being so fragile and minute they will require special <unk> handling equipment 
- in addition the cray-3 will contain N processors twice as many as the largest current supercomputer 
- cray computer also will face intense competition not only from cray research which has about N N of the world-wide supercomputer market and which is expected to roll out the <unk> machine a direct competitor with the cray-3 in N 
- the spinoff also will compete with international business machines corp. and japan 's big three hitachi ltd. nec corp. and fujitsu ltd 
- the new company said it believes there are fewer than N potential customers for <unk> priced between $ N million and $ N million presumably the cray-3 price range 
- under terms of the spinoff cray research stockholders are to receive one cray computer share for every two cray research shares they own in a distribution expected to occur in about two weeks 
- no price for the new shares has been set 
- instead the companies will leave it up to the marketplace to decide 
- cray computer has applied to trade on nasdaq 
- analysts calculate cray computer 's initial book value at about $ N a share 
- along with the note cray research is <unk> about $ N million in assets primarily those related to the cray-3 development which has been a drain on cray research 's earnings 
- <unk> balance sheets clearly show why cray research favored the spinoff 
- without the cray-3 research and development expenses the company would have been able to report a profit of $ N million for the first half of N rather than the $ N million it posted 
- on the other hand had it existed then cray computer would have incurred a $ N million loss 
- mr. cray who could n't be reached for comment will work for the new colorado springs colo. company as an independent contractor the arrangement he had with cray research 
- regarded as the father of the supercomputer mr. cray was paid $ N at cray research last year 
- at cray computer he will be paid $ N 
- besides messrs. cray and <unk> other senior management at the company includes neil <unk> N president and chief executive officer joseph m. <unk> N vice president engineering malcolm a. <unk> N vice president software and douglas r. <unk> N vice president hardware 
- all came from cray research 
- cray computer which currently employs N people said it expects a work force of N by the end of N 
- john r. stevens N years old was named senior executive vice president and chief operating officer both new positions 
- he will continue to report to donald <unk> president and chief executive officer 
- mr. stevens was executive vice president of this <unk> holding company 
- arthur a. hatch N was named executive vice president of the company 
- he was previously president of the company 's eastern edison co. unit 
- john d. <unk> N was named to succeed mr. hatch as president of eastern edison 
- previously he was vice president of eastern edison 
- robert p. <unk> N was named senior vice president of eastern utilities 
- he was previously vice president 
- the u.s. claiming some success in its trade <unk> removed south korea taiwan and saudi arabia from a list of countries it is closely watching for allegedly failing to honor u.s. patents <unk> and other <unk> rights 
- however five other countries china thailand india brazil and mexico will remain on that so-called priority watch list as a result of an interim review u.s. trade representative carla hills announced 
- under the new u.s. trade law those countries could face accelerated <unk> investigations and stiff trade sanctions if they do n't improve their protection of intellectual property by next spring 
- mrs. hills said many of the N countries that she placed under <unk> degrees of scrutiny have made genuine progress on this touchy issue 
- she said there is growing <unk> around the world that <unk> of <unk> rights <unk> all trading nations and particularly the creativity and <unk> of an <unk> country 's own citizens 
- u.s. trade negotiators argue that countries with inadequate <unk> for <unk> rights could be hurting themselves by discouraging their own scientists and authors and by <unk> u.s. high-technology firms from investing or marketing their best products there 
- mrs. hills <unk> south korea for creating an <unk> task force and special enforcement teams of police officers and prosecutors trained to pursue movie and book <unk> 
- seoul also has instituted effective <unk> procedures to aid these teams she said 
- taiwan has improved its standing with the u.s. by <unk> a <unk> copyright agreement <unk> its trademark law and introducing legislation to protect foreign movie producers from unauthorized <unk> of their films 
- that measure could <unk> taipei 's growing number of small <unk> <unk> to pay movie producers for showing their films 
- saudi arabia for its part has vowed to enact a copyright law compatible with international standards and to apply the law to computer software as well as to literary works mrs. hills said 
- these three countries are n't completely off the hook though 
- they will remain on a <unk> list that includes N other countries 
- those countries including japan italy canada greece and spain are still of some concern to the u.s. but are deemed to pose <unk> problems for american patent and copyright owners than those on the priority list 
- gary hoffman a washington lawyer specializing in <unk> cases said the threat of u.s. <unk> combined with a growing recognition that protecting intellectual property is in a country 's own interest prompted the improvements made by south korea taiwan and saudi arabia 
- what this tells us is that u.s. trade law is working he said 
- he said mexico could be one of the next countries to be removed from the priority list because of its efforts to craft a new patent law 
- mrs. hills said that the u.s. is still concerned about disturbing developments in turkey and continuing slow progress in malaysia 
- she did n't elaborate although earlier u.s. trade reports have complained of videocassette <unk> in malaysia and <unk> for u.s. pharmaceutical patents in turkey 
- the N trade act requires mrs. hills to issue another review of the performance of these countries by april N 
- so far mrs. hills has n't deemed any cases bad enough to merit an accelerated investigation under the so-called special N provision of the act 
- argentina said it will ask creditor banks to <unk> its foreign debt of $ N billion the <unk> in the developing world 
- the declaration by economy minister <unk> <unk> is believed to be the first time such an action has been called for by an <unk> official of such <unk> 
- the latin american nation has paid very little on its debt since early last year 
- argentina <unk> to reach a reduction of N N in the value of its external debt mr. <unk> said through his spokesman <unk> <unk> 
- mr. <unk> met in august with u.s. assistant treasury secretary david mulford 
- <unk> negotiator carlos <unk> was in washington and new york this week to meet with banks 
- mr. <unk> recently has said the government of president carlos <unk> who took office july N feels a significant reduction of principal and interest is the only way the debt problem may be solved 
- but he has not said before that the country wants half the debt <unk> 
- during its centennial year the wall street journal will report events of the past century that stand as milestones of american business history 
- three computers that changed the face of personal computing were launched in N 
- that year the apple ii commodore pet and tandy <unk> came to market 
- the computers were crude by today 's standards 
- apple ii owners for example had to use their television sets as screens and <unk> data on <unk> 
- but apple ii was a major advance from apple i which was built in a garage by stephen <unk> and steven jobs for <unk> such as the <unk> computer club 
- in addition the apple ii was an affordable $ N 
- crude as they were these early pcs triggered explosive product development in desktop models for the home and office 
- big mainframe computers for business had been around for years 
- but the new N pcs unlike earlier <unk> types such as the <unk> <unk> and <unk> had <unk> and could store about two pages of data in their memories 
- current pcs are more than N times faster and have memory capacity N times greater than their N counterparts 
- there were many pioneer pc <unk> 
- william gates and paul allen in N developed an early <unk> system for pcs and gates became an industry billionaire six years after ibm adapted one of these versions in N 
- alan f. <unk> currently chairman of seagate technology led the team that developed the disk drives for pcs 
- dennis <unk> and dale <unk> two atlanta engineers were <unk> of the internal <unk> that allow pcs to share data via the telephone 
- ibm the world leader in computers did n't offer its first pc until august N as many other companies entered the market 
- today pc shipments annually total some $ N billion world-wide 
- <unk> <unk> & co. an australian pharmaceuticals company said its <unk> inc. affiliate acquired <unk> inc. for $ N million 
- <unk> is a new <unk> pharmaceuticals concern that sells products under the <unk> label 
- <unk> said it owns N N of <unk> 's voting stock and has an agreement to acquire an additional N N 
- that stake together with its convertible preferred stock holdings gives <unk> the right to increase its interest to N N of <unk> 's voting stock 
- oil production from australia 's bass <unk> fields will be raised by N barrels a day to about N barrels with the launch of the <unk> field the first of five small fields scheduled to be brought into production before the end of N 
- esso australia ltd. a unit of new york-based exxon corp. and broken hill <unk> operate the fields in a joint venture 
- esso said the <unk> field started production tuesday 
- output will be gradually increased until it reaches about N barrels a day 
- the field has reserves of N million barrels 
- reserves for the five new fields total N million barrels 
- the <unk> and <unk> fields are expected to start producing early next year and the <unk> and <unk> fields later next year 
- esso said the fields were developed after the australian government decided in N to make the first N million barrels from new fields free of <unk> tax 
- <unk> <unk> corp. said it completed the $ N million sale of its southern optical subsidiary to a group led by the unit 's president thomas r. sloan and other managers 
- following the acquisition of <unk> <unk> by a buy-out group led by shearson lehman hutton earlier this year the maker of <unk> <unk> decided to <unk> itself of certain of its <unk> businesses 
- the sale of southern optical is a part of the program 
- the white house said president bush has approved duty-free treatment for imports of certain types of watches that are n't produced in significant quantities in the u.s. the virgin islands and other u.s. <unk> 
- the action came in response to a petition filed by <unk> inc. for changes in the u.s. <unk> system of preferences for imports from developing nations 
- previously watch imports were denied such duty-free treatment 
- <unk> had requested duty-free treatment for many types of watches covered by N different u.s. tariff <unk> 
- the white house said mr. bush decided to grant duty-free status for N categories but turned down such treatment for other types of watches because of the potential for material injury to watch producers located in the u.s. and the virgin islands 
- <unk> is a major u.s. producer and seller of watches including <unk> <unk> watches assembled in the philippines and other developing nations covered by the u.s. tariff preferences 
- u.s. trade officials said the philippines and thailand would be the main beneficiaries of the president 's action 
- imports of the types of watches that now will be eligible for duty-free treatment totaled about $ N million in N a relatively small share of the $ N billion in u.s. watch imports that year according to an aide to u.s. trade representative carla hills 
- magna international inc. 's chief financial officer james mcalpine resigned and its chairman frank <unk> is stepping in to help turn the <unk> manufacturer around the company said 
- mr. <unk> will direct an effort to reduce overhead and curb capital spending until a more satisfactory level of profit is achieved and maintained magna said 
- stephen <unk> currently vice president finance will succeed mr. mcalpine 
- an ambitious expansion has left magna with excess capacity and a heavy debt load as the automotive industry enters a downturn 
- the company has reported declines in operating profit in each of the past three years despite steady sales growth 
- magna recently cut its quarterly dividend in half and the company 's class a shares are <unk> far below their 52-week high of N canadian dollars us$ N 
- on the toronto stock exchange yesterday magna shares closed up N canadian cents to c$ N 
- mr. <unk> founder and controlling shareholder of magna resigned as chief executive officer last year to seek unsuccessfully a seat in canada 's parliament 
- analysts said mr. <unk> wants to resume a more influential role in running the company 
- they expect him to cut costs throughout the organization 
- the company said mr. <unk> will personally direct the restructuring <unk> by <unk> <unk> president and chief executive 
- neither they nor mr. mcalpine could be reached for comment 
- magna said mr. mcalpine resigned to pursue a consulting career with magna as one of his clients 
- lord <unk> <unk> chairman of english china <unk> plc was named a nonexecutive director of this british chemical company 
- japanese investors nearly <unk> bought up two new mortgage <unk> mutual funds totaling $ N million the u.s. federal national mortgage association said 
- the purchases show the strong interest of japanese investors in u.s. <unk> instruments fannie mae 's chairman david o. maxwell said at a news conference 
- he said more than N N of the funds were placed with japanese institutional investors 
- the rest went to investors from france and hong kong 
- earlier this year japanese investors snapped up a similar $ N million mortgage-backed securities mutual fund 
- that fund was put together by blackstone group a new york investment bank 
- the latest two funds were assembled jointly by goldman sachs & co. of the u.s. and japan 's daiwa securities co 
- the new seven-year funds one offering a fixed-rate return and the other with a floating-rate return linked to the london interbank offered rate offer two key advantages to japanese investors 
- first they are designed to eliminate the risk of prepayment mortgage-backed securities can be retired early if interest rates decline and such prepayment forces investors to <unk> their money at lower rates 
- second they channel monthly mortgage payments into semiannual payments reducing the administrative burden on investors 
- by addressing those problems mr. maxwell said the new funds have become extremely attractive to japanese and other investors outside the u.s. 
- such devices have boosted japanese investment in mortgage-backed securities to more than N N of the $ N billion in such instruments outstanding and their purchases are growing at a rapid rate 
- they also have become large purchasers of fannie mae 's corporate debt buying $ N billion in fannie mae bonds during the first nine months of the year or almost a <unk> of the total amount issued 
- james l. <unk> <unk> executive vice president was named a director of this oil concern expanding the board to N members 
- ltv corp. said a federal bankruptcy court judge agreed to extend until march N N the period in which the steel aerospace and energy products company has the exclusive right to file a reorganization plan 
- the company is operating under chapter N of the federal bankruptcy code giving it court protection from creditors ' lawsuits while it attempts to work out a plan to pay its debts 
- italian chemical giant montedison <unk> through its montedison acquisition n.v. indirect unit began its $ <unk> tender offer for all the common shares outstanding of erbamont n.v. a maker of pharmaceuticals incorporated in the netherlands 
- the offer advertised in today 's editions of the wall street journal is scheduled to expire at the end of november 
- montedison currently owns about N N of erbamont 's common shares outstanding 
- the offer is being launched <unk> to a previously announced agreement between the companies 
- japan 's reserves of gold convertible foreign currencies and special drawing rights fell by a hefty $ N billion in october to $ N billion the finance ministry said 
- the total marks the sixth consecutive monthly decline 
- the <unk> downturn reflects the intensity of bank of japan <unk> intervention since june when the u.s. currency temporarily surged above the N yen level 
- the announcement follows a sharper $ N billion decline in the country 's foreign reserves in september to $ N billion 
- pick a country any country 
- it 's the latest investment craze sweeping wall street a rash of new closed-end country funds those publicly traded portfolios that invest in stocks of a single foreign country 
- no fewer than N country funds have been launched or registered with regulators this year triple the level of all of N according to charles e. simon & co. a washington-based research firm 
- the turf recently has ranged from chile to <unk> to portugal 
- next week the philippine fund 's launch will be capped by a visit by philippine president <unk> aquino the first time a head of state has kicked off an issue at the big board here 
- the next province 
- anything 's possible how about the new guinea fund <unk> george foot a managing partner at <unk> management associates of <unk> mass 
- the recent explosion of country funds <unk> the closed-end fund mania of the 1920s mr. foot says when narrowly focused funds grew wildly popular 
- they fell into <unk> after the N crash 
- unlike traditional <unk> mutual funds most of these <unk> portfolios are the closed-end type issuing a fixed number of shares that trade publicly 
- the surge brings to nearly N the number of country funds that are or soon will be listed in new york or london 
- these funds now account for several billions of dollars in assets 
- people are looking to stake their claims now before the number of available nations runs out says michael porter an analyst at smith barney harris upham & co. new york 
- behind all the <unk> is some <unk> competition 
- as individual investors have turned away from the stock market over the years securities firms have scrambled to find new products that brokers find easy to sell 
- and the firms are stretching their <unk> far and wide to do it 
- financial planners often urge investors to diversify and to hold a <unk> of international securities 
- and many emerging markets have <unk> more mature markets such as the u.s. and japan 
- country funds offer an easy way to get a taste of foreign stocks without the hard research of seeking out individual companies 
- but it does n't take much to get burned 
- political and currency gyrations can <unk> the funds 
- another concern the funds ' share prices tend to swing more than the broader market 
- when the stock market dropped nearly N N oct. N for instance the mexico fund plunged about N N and the spain fund fell N N 
- and most country funds were clobbered more than most stocks after the N crash 
- what 's so wild about the funds ' frenzy right now is that many are trading at historically fat premiums to the value of their underlying portfolios 
- after trading at an average discount of more than N N in late N and part of last year country funds currently trade at an average premium of N N 
- the reason share prices of many of these funds this year have climbed much more sharply than the foreign stocks they hold 
- it 's probably worth paying a premium for funds that invest in markets that are partially closed to foreign investors such as south korea some specialists say 
- but some european funds recently have skyrocketed spain fund has surged to a startling N N premium 
- it has been targeted by japanese investors as a good long-term play tied to N 's european economic integration 
- and several new funds that are n't even fully invested yet have jumped to trade at big premiums 
- i 'm very alarmed to see these rich <unk> says smith barney 's mr. porter 
- the newly <unk> premiums reflect the increasingly global marketing of some country funds mr. porter suggests 
- unlike many u.s. investors those in asia or europe seeking <unk> exposure may be less <unk> to paying higher prices for country funds 
- there may be an international viewpoint cast on the funds listed here mr. porter says 
- nonetheless plenty of u.s. analysts and money managers are <unk> at the <unk> trading levels of some country funds 
- they argue that u.s. investors often can buy american depositary receipts on the big stocks in many funds these so-called adrs represent shares of foreign companies traded in the u.s. 
- that way investors can essentially buy the funds without paying the premium 
- for people who insist on jumping in now to buy the funds <unk> 's mr. foot says the only advice i have for these folks is that those who come to the party late had better be ready to leave quickly 
- the u.s. and soviet union are holding technical talks about possible repayment by moscow of $ N million in <unk> russian debts owed to the u.s. government the state department said 
- if the debts are repaid it could clear the way for soviet bonds to be sold in the u.s. 
- however after two meetings with the soviets a state department spokesman said that it 's too early to say whether that will happen 
- <unk> with the talks the state department said it has permitted a soviet bank to open a new york branch 
- the branch of the bank for foreign economic affairs was approved last spring and opened in july 
- but a soviet bank here would be <unk> unless moscow found a way to settle the $ N million debt which was lent to the country 's short-lived democratic <unk> government before the communists seized power in N 
- under a N law the johnson debt default act as amended it 's illegal for americans to extend credit to countries in default to the u.s. government unless they are members of the world bank and international monetary fund 
- the u.s.s.r. belongs to neither organization 
- moscow has settled <unk> debts with other countries in recent years at less than face value 
- the state department stressed the <unk> debts as the key to satisfying the johnson act 
- but the soviets might still face legal obstacles to raising money in the u.s. until they settle hundreds of millions of dollars in additional debt still outstanding from the world war ii <unk> program 
- in another reflection that the growth of the economy is <unk> off the government said that orders for manufactured goods and spending on construction failed to rise in september 
- meanwhile the national association of purchasing management said its latest survey indicated that the manufacturing economy contracted in october for the sixth consecutive month 
- its index inched up to N N in october from N N in september 
- any reading below N N suggests the manufacturing sector is generally declining 
- the purchasing managers however also said that orders turned up in october after four months of decline 
- factories booked $ N billion in orders in september nearly the same as the $ N billion in august the commerce department said 
- if not for a N N surge in orders for capital goods by defense contractors factory orders would have fallen N N 
- in a separate report the department said construction spending ran at an annual rate of $ N billion not significantly different from the $ N billion reported for august 
- private construction spending was down but government building activity was up 
- the figures in both reports were adjusted to remove the effects of usual seasonal patterns but were n't adjusted for inflation 
- kenneth <unk> economist for society corp. a cleveland bank said demand for exports of factory goods is beginning to <unk> off 
- at the same time the drop in interest rates since the spring has failed to revive the residential construction industry 
- what sector is stepping forward to pick up the slack he asked 
- i draw a blank 
- by most measures the nation 's industrial sector is now growing very slowly if at all 
- factory <unk> fell in september 
- so did the federal reserve board 's <unk> index 
- yet many economists are n't predicting that the economy is about to slip into recession 
- they cite a lack of imbalances that provide early warning signals of a downturn 
- inventories are closely watched for such clues for instance 
- economists say a buildup in inventories can <unk> cutbacks in production that can lead to a recession 
- but yesterday 's factory orders report had good news on that front it said factory inventories fell N N in september the first decline since february N 
- this <unk> to the soft landing scenario said elliott <unk> an economist at donaldson lufkin & jenrette securities corp 
- i do n't see any signs that inventories are excessive 
- a soft landing is an economic slowdown that <unk> inflation without leading to a recession 
- the department said orders for <unk> goods those intended to last fewer than three years fell N N in september to $ N billion after climbing N N the month before 
- orders for durable goods were up N N to $ N billion after rising N N the month before 
- the department previously estimated that <unk> orders fell N N in september 
- factory shipments fell N N to $ N billion after rising N N in august 
- shipments have been relatively level since january the commerce department noted 
- manufacturers ' backlogs of unfilled orders rose N N in september to $ N billion helped by strength in the defense capital goods sector 
- excluding these orders backlogs declined N N 
- in its construction spending report the commerce department said residential construction which accounts for nearly half of all construction spending was off N N in september to an annual rate of $ N billion 
- david <unk> economist for the mortgage bankers association predicted the drop in interest rates eventually will boost spending on single-family homes but probably not until early next year 
- spending on private <unk> construction was off N N to an annual rate of $ N billion with no sector showing strength 
- government construction spending rose N N to $ N billion 
- after adjusting for inflation the commerce department said construction spending did n't change in september 
- for the first nine months of the year total construction spending ran about N N above last year 's level 
- the government 's construction spending figures contrast with a report issued earlier in the week by mcgraw-hill inc. 's <unk> dodge group 
- dodge reported an N N increase in construction contracts awarded in september 
- the <unk> counts money as it is spent dodge counts contracts when they are awarded 
- the government includes money spent on residential <unk> dodge does n't 
- although the purchasing managers ' index continues to indicate a slowing economy it is n't <unk> an imminent recession said robert <unk> chairman of the association 's survey committee and director of materials management at pitney bowes inc. stamford conn 
- he said the index would have to be in the low N N range for several months to be considered a forecast of recession 
- the report offered new evidence that the nation 's export growth though still continuing may be slowing 
- only N N of the purchasing managers reported better export orders in october down from N N in september 
- and N N said export orders were down last month compared with N N the month before 
- the <unk> managers ' report also added evidence that inflation is under control 
- for the fifth consecutive month purchasing managers said prices for the goods they purchased fell 
- the decline was even <unk> than in september 
- they also said that vendors were delivering goods more quickly in october than they had for each of the five previous months 
- economists consider that a sign that <unk> pressures are <unk> 
- when demand is stronger than suppliers can handle and delivery times <unk> prices tend to rise 
- the purchasing managers ' report is based on data provided by more than N purchasing executives 
- each of the survey 's indicators <unk> the difference between the number of purchasers reporting improvement in a particular area and the number reporting a worsening 
- for the first time the october survey polled members on imports 
- it found that of the N N who import N N said they imported more in october and N N said they imported less than the previous month 
- while acknowledging one month 's figures do n't prove a trend mr. <unk> said it does lead you to suspect imports are going down or at least not increasing that much 
- items listed as being in short supply numbered only about a dozen but they included one <unk> milk and milk <unk> 
- it 's an odd thing to put on the list mr. <unk> noted 
- he said that for the second month in a row food processors reported a shortage of <unk> dry milk 
- they blamed increased demand for dairy products at a time of exceptionally high u.s. exports of dry milk coupled with very low import quotas 
- <unk> <unk> in new york contributed to this article 
- here are the commerce department 's figures for construction spending in billions of dollars at seasonally adjusted annual rates 
- here are the commerce department 's latest figures for manufacturers in billions of dollars seasonally adjusted 
- judging from the <unk> in <unk> <unk> 's a wild sheep chase <unk> N pages $ N baby boomers on both sides of the pacific have a lot in common 
- although set in japan the novel 's <unk> is almost entirely western especially american 
- characters drink <unk> dogs <unk> <unk> b. <unk> and watch bugs bunny reruns 
- they read <unk> <unk> and talk about <unk> and <unk> 
- they worry about their careers drink too much and suffer through broken <unk> and <unk> affairs 
- this is japan 
- for an american reader part of the <unk> of this engaging novel should come in recognizing that japan is n't the <unk> society of contemporary american <unk> 
- it 's also <unk> to read a japanese author who clearly does n't belong to the <unk> <unk> school of writers who <unk> the notion of the unique japanese <unk> by outsiders 
- if a wild sheep chase carries an implicit message for international relations it 's that the japanese are more like us than most of us think 
- that 's not to say that the <unk> plot of a wild sheep chase is rooted in reality 
- it 's <unk> and often funny 
- a <unk> <unk> <unk> hero sets off for snow country in search of an <unk> sheep with a star on its back at the <unk> of a <unk> <unk> <unk> with a stanford degree 
- he has in <unk> his <unk> girlfriend whose sassy <unk> mark her as anything but a <unk> <unk> 
- along the way he meets a <unk> christian <unk> who offers the hero god 's phone number and the sheep man a sweet <unk> figure who wears what else a <unk> 
- the 40-year-old mr. <unk> is a publishing <unk> in japan 
- a more recent novel norwegian wood every japanese under N seems to be <unk> in <unk> <unk> has sold more than four million copies since <unk> published it in N 
- but he is just one of several <unk> writers tokyo 's <unk> pack who are <unk> the <unk> charts in japan 
- their books are written in <unk> contemporary language and usually carry hefty <unk> of <unk> 
- in robert <unk> 's you <unk> have macmillan N pages $ N the <unk> give way to baseball in the <unk> version we would be hard put to call a game 
- as mr. <unk> describes it <unk> baseball is a mirror of japan 's <unk> <unk> of hard work and harmony 
- <unk> is japanese for team spirit and japanese <unk> have miles and miles of it 
- a player 's commitment to practice and team image is as important as his <unk> average 
- polls once named tokyo giants star <unk> <unk> a <unk> <unk> <unk> soul as the male symbol of japan 
- but other than the fact that <unk> is played with a ball and a bat it 's <unk> fans <unk> return <unk> balls to stadium <unk> the strike zone <unk> depending on the size of the <unk> ties are permitted even welcomed since they <unk> <unk> the shame of defeat players must <unk> by strict rules of conduct even in their personal lives players for the tokyo giants for example must always wear ties when on the road 
- you <unk> have <unk> is the often amusing <unk> of how american <unk> <unk> to two per team fare in japan 
- despite the enormous sums of money they 're paid to stand up at a japanese plate a good number decide it 's not worth it and run for home 
- funny business <unk> N pages $ N by gary <unk> is anything but 
- it 's the <unk> complaint of an <unk> american whom sony <unk> for a year while he was on a <unk> <unk> in tokyo to the regret of both parties 
- in sometimes amusing more often <unk> even vicious <unk> mr. <unk> describes how sony <unk> even the most mundane aspects of its workers ' lives at the <unk> office where employees are assigned lunch partners and at home in the <unk> company <unk> run by a <unk> <unk> 
- some of his <unk> about japanese management style are on the mark 
- it 's probably true that many <unk> put in <unk> overtime just for the <unk> of solidarity that the system is so <unk> that only the assistant manager can talk to the manager and the manager to the general manager and that sony was <unk> of letting a young short-term american employee take on any responsibility 
- all of this must have been <unk> frustrating to mr. <unk> who went to sony with degrees in business and computer science and was <unk> to <unk> another <unk> 
- but sony ultimately took a lesson from the american management books and fired mr. <unk> after he committed the social crime of making an appointment to see the venerable <unk> <unk> founder of sony 
- it 's a shame their meeting never took place 
- mr. <unk> certainly would have learned something and it 's even possible mr. <unk> would have too 
- ms. <unk> the journal 's deputy editorial features editor worked in tokyo for three years 
- more and more corners of the globe are becoming free of tobacco smoke 
- in singapore a new law requires smokers to put out their cigarettes before entering restaurants department stores and sports centers or face a $ N fine 
- <unk> and private clubs are exempt from the ban and smoking will be permitted in bars except during <unk> hours an official said 
- singapore already bans smoking in all theaters buses public elevators hospitals and fast-food restaurants 
- in malaysia <unk> <unk> <unk> a deputy minister in the prime minister 's office launched a <unk> week at the <unk> institute of technology near kuala lumpur and urged other schools to ban <unk> smoking 
- south korea has different concerns 
- in seoul officials began visiting about N cigarette <unk> to remove illegal <unk> and <unk> advertising imported cigarettes 
- south korea has opened its market to foreign cigarettes but restricts advertising to designated places 
- a marketing study indicates that hong kong consumers are the most <unk> in the N major markets where the survey was carried out 
- the study by the backer spielvogel bates ad agency also found that the colony 's consumers feel more pressured than those in any of the other surveyed markets which include the u.s. and japan 
- the survey found that nearly half of hong kong consumers <unk> what it identified as <unk> values compared with about one-third in japan and the u.s. 
- more than three in five said they are under a great deal of stress most of the time compared with less than one in two u.s. consumers and one in four in japan 
- the <unk> cabinet endorsed finance minister <unk> <unk> 's proposal to build a $ N million conference center for a joint meeting of the world bank and international monetary fund two years from now 
- the meeting which is expected to draw N to <unk> was going to be held at the central plaza hotel but the government balked at the hotel 's conditions for undertaking necessary expansion 
- a major concern about the current plan is whether the new center can be built in such a short time 
- <unk> arafat has written to the chairman of the international olympic committee asking him to back a palestinian bid to join the committee the <unk> liberation organization news agency <unk> said 
- an official of the palestinian olympic committee said the committee first applied for membership in N and renewed its application in august of this year 
- the plo in recent months has been trying to join international organizations but failed earlier this year to win membership in the world health organization and the world tourism organization 
- a beijing <unk> assistant has become the first <unk> chinese to get aids through sex the people 's daily said 
- it said the man whom it did not name had been found to have the disease after hospital tests 
- once the disease was confirmed all the man 's associates and family were tested but none have so far been found to have aids the newspaper said 
- the man had for a long time had a chaotic sex life including relations with foreign men the newspaper said 
- the polish government increased home electricity charges by N N and doubled gas prices 
- the official news agency <unk> said the increases were intended to bring <unk> low energy charges into line with production costs and compensate for a rise in coal prices 
- in <unk> news south korea in establishing diplomatic ties with poland yesterday announced $ N million in loans to the financially strapped warsaw government 
- in a victory for environmentalists hungary 's parliament terminated a multibillion-dollar river <unk> dam being built by <unk> firms 
- the <unk> dam was designed to be <unk> with another dam now nearly complete N miles <unk> in czechoslovakia 
- in ending hungary 's part of the project parliament authorized prime minister <unk> <unk> to modify a N agreement with czechoslovakia which still wants the dam to be built 
- mr. <unk> said in parliament that czechoslovakia and hungary would suffer environmental damage if the <unk> <unk> were built as planned 
- czechoslovakia said in may it could seek $ N billion from hungary if the <unk> contract were broken 
- the <unk> dam ca n't be operated solely at peak periods without the <unk> project 
- a painting by august <unk> set a <unk> price record when it sold at auction in stockholm for $ N million 
- <unk> ii was painted in oils by the playwright in N 
- after years of decline <unk> in france showed a N N <unk> last year with N more couples <unk> <unk> in N than in the previous year the national statistics office said 
- but the number of <unk> last year N was still well below the N registered in N the last year of increasing <unk> 
- <unk> ltd. said it agreed to issue N million canadian dollars us$ N million of N N senior debentures due nov. N N together with N bond purchase warrants 
- the toronto-based real estate concern said each bond warrant <unk> the holder to buy c$ N principal amount of debentures at par plus accrued interest to the date of purchase 
- the warrants expire nov. N N 
- the issue will be <unk> into fixed-rate u.s. dollars at a rate the company said is less than N N a spokesman declined to elaborate 
- lead underwriters for the issue are <unk> <unk> inc. and <unk> dominion securities inc. both toronto-based investment dealers 
- <unk> said it expects to complete the issue by the end of the month 
- as an actor charles lane is n't the <unk> of charlie <unk> 's spirit 
- steve martin has already laid his claim to that 
- but it is mr. lane as movie director producer and writer who has been <unk> with <unk> <unk> 's little tramp in a contemporary way 
- in N as a film student at the purchase campus of the state university of new york mr. lane shot a place in time a <unk> black-and-white film about a <unk> artist a man of the streets 
- now N years later mr. lane has revived his artist in a <unk> movie called sidewalk stories a <unk> piece of work about a <unk> tramp 
- of course if the film contained dialogue mr. lane 's artist would be called a homeless person 
- so would the little tramp for that matter 
- i say contained dialogue because sidewalk stories is n't really silent at all 
- <unk> marc <unk> a college friend of mr. lane 's who earns his living playing the double bass in classical music <unk> has prepared an exciting <unk> score that tells you what the characters are thinking and feeling far more precisely than <unk> or even words would 
- much of mr. lane 's film takes a highly <unk> view of life on the streets though probably no more <unk> than mr. <unk> 's notion of the tramp as the <unk> free spirit 
- <unk> in lovely black and white by bill <unk> the new york streets of sidewalk stories seem benign 
- on wall street men and women walk with great purpose <unk> one another only when they <unk> for <unk> 
- the artist hangs out in greenwich village on a strip of sixth avenue <unk> by <unk> <unk> and other <unk> <unk> 
- this clearly is not real life no crack dealers no <unk> men selling four-year-old copies of <unk> no one <unk> up in a <unk> box 
- the artist has his routine 
- he spends his days <unk> <unk> or trying to 
- at night he returns to the <unk> building he calls home 
- his life including his <unk> with a competing <unk> artist seems <unk> 
- he is his own man 
- then just as the tramp is given a blind girl to cure in city lights the artist is put in charge of returning a <unk> <unk> <unk> <unk> whose father has been murdered by <unk> to her mother 
- this <unk> child turns out to be a blessing and a <unk> 
- she gives the artist a sense of purpose but also <unk> him to the serious <unk> of his <unk> life 
- the <unk> at the <unk> mission seem far <unk> when he has to <unk> a little girl into one of them at night 
- to further load the stakes mr. lane <unk> up a highly <unk> <unk> for the artist with a young woman who owns her own children 's shop and who lives in an expensive <unk> apartment building 
- this story line might <unk> more strongly if mr. lane had as strong a presence in front of the camera as he does behind it 
- mr. lane 's final purpose is n't to <unk> the artist 's <unk> existence 
- he has a point he wants to make and he makes it with a great deal of force 
- the movie ends with sound the sound of street people talking and there is n't anything <unk> or <unk> in those rough beaten voices 
- the french film maker <unk> <unk> has managed another kind of weird achievement with his story of women 
- he has made a harsh brilliant picture one that 's <unk> about a character who viewed from the most sympathetic <unk> would seem <unk> 
- yet this woman <unk> <unk> carries historical significance both as one of the last women to be executed in france and as a symbol of the <unk> government 's <unk> 
- while <unk> <unk> with the germans during world war ii in the deaths of thousands of resistance <unk> and <unk> its officials needed a <unk> <unk> <unk> 
- <unk> a <unk> <unk> was their woman 
- she became an <unk> <unk> and continued because it enabled her to buy <unk> cocoa and other <unk> <unk> 
- she was <unk> and in one <unk> job killed a client 
- her <unk> was <unk> and brief 
- although she was kind and <unk> to her children she was <unk> to her <unk> husband she openly brought her <unk> into their home 
- as presented by mr. <unk> and played with <unk> intensity by <unk> <unk> <unk> called <unk> <unk> in the film was not a nice person 
- but she did n't deserve to have her head <unk> off 
- there is very little to recommend old <unk> a confused <unk> of the carlos <unk> novel of the mexican revolution 
- most of the picture is taken up with endless scenes of many people either fighting or eating and drinking to <unk> victory 
- i mention the picture only because many bad movies have a bright spot and this one has gregory peck in a <unk> loose and energetic portrayal of an old man who wants to die the way he wants to die 
- video tip before seeing sidewalk stories take a look at city lights <unk> 's tramp at his <unk> 
- boeing co. said it is discussing plans with three of its regular japanese suppliers to possibly help build a larger version of its popular N <unk> 
- the discussions are still in preliminary stages and the specific details have n't been worked out between the seattle aerospace company and <unk> heavy industries ltd. mitsubishi heavy industries ltd. and fuji heavy industries ltd 
- the three japanese companies build the body sections of the N accounting for a combined N N of the aircraft 
- japanese press reports have speculated that the japanese contribution could rise to between N N and N N under the new program 
- if boeing goes ahead with the larger N the plane could hit the market in the mid-1990s 
- this is the year the negative ad for years a secondary presence in most political campaigns became the main event 
- the irony is that the attack commercial after getting a boost in last year 's presidential campaign has come of age in an <unk> election year with only a few <unk> scattered across the country 
- but in the three leading political <unk> of N the negative ads have reached new levels of <unk> raising fears that this kind of <unk> empty of significant issues is <unk> in a new era of campaigns without content 
- now says joseph <unk> a pioneer in political television the idea is to attack first last and always 
- a trend that started with the first <unk> of politics accelerated with the <unk> of the television age and became a <unk> art form in N has reached an entirely new stage 
- to get people 's attention these days says douglas <unk> a political consultant your tv ad needs to be bold and entertaining and more often than not that means <unk> 
- and unlike a few years ago you do n't even have to worry whether the ad is <unk> 
- in N as often as not the principal fights in the major campaigns are prompted by the ads themselves 
- take a look then at the main attack commercials that set the tone for tuesday 's elections in new york city new jersey and virginia 
- new york city 
- the screen <unk> with a small tight <unk> shot of david dinkins democratic candidate for mayor of new york city 
- david dinkins failed to file his income taxes for four straight years says a <unk> male voice 
- and then this television commercial paid for by republican rudolph giuliani 's campaign and produced by roger <unk> the master of negative tv ads really gets down to business 
- mr. dinkins the ad charges also failed to report his campaign contributions accurately <unk> his links to a failing insurance company and paid a convicted <unk> through a phony organization with no members no receipts and no office 
- david dinkins says the <unk> why does he always wait until he 's caught 
- nasty <unk> says john <unk> mr. dinkins 's issues director designed to <unk> a case of political corruption that simply does n't exist 
- <unk> by the giuliani ads mr. dinkins 's tv consultants robert <unk> and david <unk> finally <unk> a negative ad of their own 
- the screen shows two distorted <unk> photos presumably of two politicians 
- compare two candidates for mayor says the announcer 
- one says he 's for banning <unk> bullets 
- the other has opposed a ban on <unk> bullets 
- one claims he 's pro-choice 
- the other has opposed a woman 's right to choose 
- funny thing says the <unk> both these candidates are named rudolph giuliani 
- who 's telling the truth 
- everybody and nobody 
- it 's a classic situation of ads that are true but not always fully accurate 
- mr. dinkins did fail to file his income taxes for four years but he insists he voluntarily admitted the oversight when he was being considered for a city job 
- he was on the board of an insurance company with financial problems but he insists he made no secret of it 
- the city 's campaign finance board has refused to pay mr. dinkins $ N in matching funds because his campaign records are incomplete 
- the campaign has blamed these reporting problems on computer errors 
- and says mr. dinkins he did n't know the man his campaign paid for a <unk> effort had been convicted of <unk> 
- but say mr. dinkins 's managers he did have an office and his organization did have members 
- mr. giuliani 's campaign chairman peter powers says the dinkins ad is deceptive 
- the other side he argues knows giuliani has always been pro-choice even though he has personal reservations 
- they know he is generally opposed to <unk> bullets but that he had some reservations about the language in the legislation 
- virginia 
- democratic <unk> gov. douglas wilder opened his gubernatorial battle with republican marshall coleman with an abortion commercial produced by frank <unk> that analysts of every political <unk> agree was a tour de force 
- against a shot of <unk> <unk> on an american flag an announcer talks about the strong tradition of freedom and individual liberty that <unk> have <unk> for generations 
- then just as an image of the <unk> of thomas jefferson <unk> from the screen the announcer continues on the issue of abortion marshall coleman wants to take away your right to choose and give it to the politicians 
- that commercial which said mr. coleman wanted to take away the right of abortion even in cases of rape and incest a charge mr. coleman denies changed the dynamics of the campaign <unk> it at least in part into a <unk> on abortion 
- the ad prompted mr. coleman the former virginia attorney general to launch a series of advertisements created by bob goodman and designed to shake mr. wilder 's support among the very women who were attracted by the abortion ad 
- the coleman <unk> featured a <unk> of a young woman in <unk> and the ad suggested that she was <unk> an <unk> courtroom <unk> 
- a voice says <unk> now do n't you have <unk> 
- then an announcer <unk> it was douglas wilder who introduced a bill to force rape victims age N and younger to be <unk> about their private lives by lawyers for accused <unk> 
- so the next time mr. wilder talks about the rights of women ask him about this law he tried to pass 
- mr. wilder did introduce such legislation N years ago but he did so at the request of a <unk> a common legislative technique used by lawmakers 
- the legislation itself noted that it was introduced by request and in N mr. wilder introduced a bill to protect rape victims from <unk> <unk> 
- people have grown tired of these ads and coleman has gotten the <unk> of being a negative <unk> says mark <unk> a political scientist at mary washington college 
- wilder has managed to get across the idea that coleman will say anything to get elected governor and more important has been able to put the <unk> for all the negative <unk> on coleman 
- mr. coleman said this week that he would devote the remainder of the political season to positive <unk> but the truce lasted only hours 
- by tuesday night television stations were carrying new ads featuring mr. coleman himself raising questions about mr. wilder 's <unk> to rape victims 
- new jersey 
- the attacks began when democratic rep. james florio aired an ad featuring a drawing of <unk> and a photograph of mr. florio 's rival republican rep. jim courter 
- remember <unk> says a female voice 
- consider jim courter 
- and then this commercial produced by bob <unk> gets down to its own mean and <unk> business 
- pictures of <unk> oil <unk> <unk> into focus and the female voice <unk> that hazardous waste on his mr. courter 's property the neighbors are suing for consumer fraud 
- and the nose on mr. courter 's face grows 
- the only fraud involved cry mr. courter 's <unk> is the florio commercial itself and so the courter campaign has responded with its own <unk> commercial produced by mr. <unk> 
- in this one the screen <unk> with photographs of both candidates 
- who 's really lying asks a female voice 
- florio 's lying the voice goes on because the barrel on courter 's land contained heating oil was <unk> up and caused no pollution 
- mr. courter 's long nose <unk> while mr. florio 's grows 
- who 's telling the truth 
- stephen <unk> a political scientist at new jersey 's <unk> institute says it 's another example of an ad that 's true but not fully accurate 
- barrels were dumped on the courter property a complaint was made but there is no evidence the barrels were a serious threat to the environment 
- even so according to mr. <unk> the ad was devastating because it raised questions about mr. courter 's credibility 
- but it 's building on a long tradition 
- in N on route to a re-election rout of democrat frank <unk> gop gov. nelson rockefeller of new york appeared in person saying if you want to keep the crime rates high <unk> is your man 
- a seat on the chicago board of trade was sold for $ N down $ N from the previous sale last friday 
- seats currently are quoted at $ N bid and $ N asked 
- the record price for a full membership on the exchange is $ N set aug. N N 
- japanese investment in southeast asia is <unk> the region toward economic integration 
- interviews with analysts and business people in the u.s. suggest that japanese capital may produce the economic cooperation that southeast asian politicians have pursued in fits and starts for decades 
- but japan 's power in the region also is <unk> fears of domination and <unk> fresh policy questions 
- the flow of japanese funds has set in motion a process <unk> these economies will be <unk> together by the great japanese investment machine says robert <unk> vice chairman of goldman sachs international corp 
- in the past five years japanese companies have tripled their commitments in asia to $ N billion 
- in thailand for example the government 's board of investment approved $ N million of japanese investment in N N times the u.s. investment figure for the year 
- japan 's commitment in southeast asia also includes steep increases in foreign assistance and trade 
- asia 's other <unk> countries are following japan 's lead and pumping capital into the region 
- in taiwan and south korea rising wages are forcing manufacturers to seek other overseas sites for <unk> production 
- these nations known as asia 's little <unk> also are contributing to southeast asia 's integration but their influence will remain subordinate to japan 's 
- for <unk> countries such as thailand and malaysia the investment will provide needed jobs and spur growth 
- but asian nations ' harsh memories of their military domination by japan in the early part of this century make them fearful of falling under japanese economic <unk> now 
- because of budget constraints in washington the u.s. encourages japan to share economic burdens in the region 
- but it <unk> yielding political ground 
- in the coming decade analysts say <unk> relations will be tested as tokyo comes to terms with its new status as the region 's economic <unk> 
- japan 's swelling investment in southeast asia is part of its economic evolution 
- in the past decade japanese manufacturers concentrated on domestic production for export 
- in the 1990s spurred by rising labor costs and the strong yen these companies will increasingly turn themselves into <unk> with plants around the world 
- to capture the investment southeast asian nations will move to accommodate japanese business 
- these nations ' internal decisions will be made in a way not to <unk> their largest aid <unk> largest private investor and largest lender says richard <unk> director of the international business and research program at the university of southern california 's graduate school of business 
- japanese money will help turn southeast asia into a more <unk> economic region 
- but analysts say asian cooperation is n't likely to parallel the european common market approach 
- rather japanese investment will spur integration of certain sectors says kent <unk> a specialist in east asian economies at the <unk> wilson school for public and <unk> affairs at princeton university 
- in electronics for example a japanese company might make television picture <unk> in japan <unk> the sets in malaysia and export them to indonesia 
- the effect will be to pull asia together not as a common market but as an integrated production zone says goldman sachs 's mr. <unk> 
- countries in the region also are beginning to consider a <unk> for closer economic and political ties 
- the economic and foreign ministers of N asian and pacific nations will meet in australia next week to discuss global trade issues as well as regional matters such as transportation and telecommunications 
- participants will include the u.s. australia canada japan south korea and new zealand as well as the six members of the association of southeast asian nations thailand malaysia singapore indonesia the philippines and <unk> 
- in addition the u.s. this year offered its own plan for cooperation around the pacific <unk> in a major speech by secretary of state james baker following up a proposal made in january by australian prime minister bob <unk> 
- the baker proposal <unk> washington 's intention to continue playing a leading political role in the region 
- in asia as in europe a new order is taking shape mr. baker said 
- the u.s. with its regional friends must play a crucial role in designing its architecture 
- but maintaining u.s. influence will be difficult in the face of japanese dominance in the region 
- japan not only <unk> the u.s. in investment flows but also <unk> it in trade with most southeast asian countries although the u.s. remains the leading trade partner for all of asia 
- moreover the japanese government now the world 's largest aid <unk> is pumping far more assistance into the region than the u.s. is 
- while u.s. officials voice optimism about japan 's <unk> role in asia they also convey an <unk> of caution 
- there 's an understanding on the part of the u.s. that japan has to expand its functions in asia says j. michael <unk> undersecretary of commerce for trade 
- if they approach it with a <unk> <unk> attitude there will be a net gain for everyone 
- some asian nations are <unk> about washington 's demand that tokyo step up its military spending to ease the u.s. security burden in the region 
- the issue is further complicated by uncertainty over the future of the u.s. 's leases on military bases in the philippines and by a possible u.s. troop reduction in south korea 
- many <unk> regard a u.s. presence as a desirable <unk> to japanese influence 
- no one wants the u.s. to pick up its <unk> and go home mr. <unk> says 
- for their part taiwan and south korea are expected to step up their own investments in the next decade to try to slow the japanese <unk> 
- they do n't want japan to <unk> the region and <unk> it up says <unk> lee professor of east asian politics at the university of pennsylvania 
- <unk> rice could hardly believe her eyes 
- while giving the comprehensive test of basic skills to ninth <unk> at greenville high school last march N she spotted a student looking at <unk> sheets 
- she had seen cheating before but these notes were <unk> 
- a <unk> is an example of a profession in trade and finance 
- at the end of world war ii germany surrendered before japan 
- the <unk> conference committee is used when a bill is passed by the house and senate in different forms 
- virtually word for word the notes matched questions and answers on the <unk> section of the test the student was taking 
- in fact the student had the answers to almost all of the N questions in that section 
- the student surrendered the notes but not without a protest 
- my teacher said it was ok for me to use the notes on the test he said 
- the teacher in question was nancy yeargin considered by many students and parents to be one of the best at the school 
- confronted mrs. yeargin admitted she had given the questions and answers two days before the examination to two <unk> geography classes 
- she had gone so far as to display the questions on an overhead <unk> and <unk> the answers 
- mrs. yeargin was fired and prosecuted under an unusual south carolina law that makes it a crime to breach test security 
- in september she pleaded guilty and paid a $ N fine 
- her alternative was N days in jail 
- her story is partly one of personal <unk> 
- she was an <unk> teacher who won <unk> and inspired students but she will probably never teach again 
- in her wake she left the <unk> and anger of a principal who was her friend and now calls her a <unk> of colleagues who say she brought them shame of students and parents who defended her and insist she was treated <unk> and of <unk> officials stunned that despite the <unk> nature of her actions she became something of a local <unk> 
- mrs. yeargin 's case also <unk> some light on the dark side of school reform where pressures on teachers are growing and where <unk> testing has enhanced the temptation to <unk> 
- the N statute mrs. yeargin violated was designed to enforce provisions of south carolina 's <unk> laws 
- prosecutors alleged that she was trying to bolster students ' scores to win a bonus under the state 's N education improvement act 
- the bonus depended on her ability to produce higher <unk> scores 
- there is incredible pressure on school systems and teachers to raise test scores says walt <unk> an education professor and testing specialist at boston college 
- so efforts to beat the tests are also on the rise 
- and most disturbing it is educators not students who are blamed for much of the wrongdoing 
- a <unk> study released in september by friends for education an <unk> n.m. <unk> group concluded that outright cheating by american educators is common 
- the group says standardized achievement test scores are greatly inflated because teachers often teach the test as mrs. yeargin did although most are never caught 
- evidence of widespread cheating has surfaced in several states in the last year or so 
- california 's education department suspects adult responsibility for <unk> at N schools that changed wrong answers to right ones on a statewide test 
- after numerous <unk> of questionable teacher help to students texas is <unk> its security practices 
- and sales of <unk> booklets for classroom instruction are booming 
- these materials including <unk> school publishing co. 's scoring high and learning materials are nothing short of sophisticated <unk> sheets according to some recent academic research 
- by using them teachers with administrative blessing telegraph to students <unk> the precise areas on which a test will concentrate and sometimes give away a few exact questions and answers 
- use of scoring high is widespread in south carolina and common in greenville county mrs. yeargin 's school district 
- experts say there is n't another state in the country where tests mean as much as they do in south carolina 
- under the state 's education improvement act low test scores can block students ' promotions or force entire districts into <unk> <unk> <unk> that can mean <unk> 
- high test scores on the other hand bring recognition and extra money a new computer lab for a school grants for special projects a bonus for the <unk> 
- and south carolina says it is getting results 
- since the reforms went in place for example no state has posted a higher rate of improvement on the <unk> <unk> test than south carolina although the state still posts the lowest average score of the about N states who use the sat as the primary college <unk> examination 
- critics say south carolina is paying a price by stressing improved test scores so much 
- friends of education rates south carolina one of the worst seven states in its study on academic cheating 
- says the organization 's founder john <unk> <unk> mrs. yeargin is a way for administrators to protect themselves and look like they take cheating seriously when in fact they do n't take it seriously at all 
- paul <unk> director of testing for the south carolina department of education says mr. <unk> 's allegations of cheating are <unk> without foundation and based on unfair <unk> 
- partly because of worries about potential abuse however he says the state will begin keeping closer track of <unk> preparation booklets next spring 
- south carolina 's reforms were designed for schools like greenville high school 
- standing on a <unk> hill in a <unk> area of this old textile city the school has educated many of south carolina 's best and <unk> including the state 's last two governors nobel prize winning <unk> charles <unk> and actress <unk> <unk> 
- but by the early 1980s its glory had faded like the yellow bricks of its broad <unk> 
- it was full of violence and gangs and kids cutting class says linda ward the school 's principal 
- crime was awful test scores were low and there was no <unk> in <unk> programs 
- mrs. ward took over in N becoming the school 's seventh principal in N years 
- her immediate predecessor suffered a nervous breakdown 
- prior to his term a teacher <unk> to death in the halls <unk> by a student 
- <unk> mrs. ward says the school was having trouble serving in harmony its two <unk> and evenly split student groups a <unk> white elite from old <unk> neighborhoods and blacks many of them poor from <unk> inner city neighborhoods 
- mrs. ward resolved to clean out <unk> in the school 's faculty and restore safety and she also had some new factors working in her behalf 
- one was statewide school reform which raised overall educational funding and <unk> in a new public spirit for school <unk> 
- another was nancy yeargin who came to greenville in N full of the energy and ambitions that reformers wanted to reward 
- being a teacher just became my life says the <unk> mrs. yeargin a teacher for N years before her dismissal 
- i loved the school its history 
- i even <unk> about school and new things to do with my students 
- while mrs. ward fired and restructured staff and struggled to improve <unk> mrs. yeargin worked <unk> days and fast became a student favorite 
- in N and N she applied for and won bonus pay under the reform law 
- encouraged by mrs. ward mrs. yeargin taught honor students in the state teacher <unk> program a reform creation designed to encourage good students to consider teaching as a career 
- she won grant money for the school advised <unk> ran the <unk> club proposed and taught a new cultural <unk> class in western <unk> and was chosen by the school <unk> as teacher of the year 
- she was an <unk> lady she had it all together says <unk> <unk> a freshman at the university of south carolina who had mrs. yeargin in the <unk> class last year 
- she says that because of mrs. yeargin she gave up ambitions in architecture and is studying to become a teacher 
- mary beth <unk> a greenville <unk> <unk> also says mrs. yeargin inspired her to go into education 
- she taught us more in western <unk> than i 've ever learned in other classes says <unk> green a greenville senior 
- in the classroom students say mrs. yeargin distinguished herself by <unk> teaching approaches forcing kids to pair up to complete classroom work or using <unk> type <unk> 
- on <unk> she came to work to prepare study plans or sometimes even to polish the furniture in her classroom 
- she just never gave it up says mary <unk> mary beth 's mother 
- you 'd see her <unk> <unk> in the stands at a football game 
- some fellow teachers however viewed mrs. yeargin as <unk> and too yielding to students 
- mrs. ward says she often defended her to colleagues who called her a <unk> 
- pressures began to build 
- friends told her she was pushing too hard 
- because of deteriorating hearing she told colleagues she feared she might not be able to teach much longer 
- mrs. yeargin 's extra work was also helping her earn points in the state 's <unk> program 
- but the most important source of points was student improvement on tests 
- huge gains by her students in N and N meant a total of $ N in bonuses over two years a meaningful addition to her annual salary of $ N 
- winning a bonus for a third year was n't that important to her mrs. yeargin insists 
- but others at greenville high say she was eager to win if not for money then for pride and recognition 
- mary elizabeth <unk> another <unk> teacher says she believed mrs. yeargin wanted to keep her standing high so she could get a new job that would n't demand good hearing 
- indeed mrs. yeargin was interested in a possible job with the state teacher <unk> program 
- last march after attending a teaching <unk> in washington mrs. yeargin says she returned to greenville two days before annual testing feeling that she had n't prepared her <unk> geography students adequately 
- when test booklets were passed out N hours ahead of time she says she <unk> questions in the social studies section and gave the answers to students 
- mrs. yeargin admits she made a big mistake but insists her <unk> were correct 
- i was trying to help kids in an unfair testing situation she says 
- only five of the N questions were geography questions 
- the rest were history <unk> finance subjects they never had 
- mrs. yeargin says that she also wanted to help lift greenville high school 's overall test scores usually near the bottom of N district high schools in <unk> carried annually by local newspapers 
- mostly she says she wanted to prevent the damage to <unk> that her <unk> students would suffer from doing badly on the test 
- these kids broke my heart she says 
- a whole day goes by and no one even knows they 're alive 
- they desperately needed somebody who showed they <unk> for them who loved them 
- the last thing they needed was another <unk> blow 
- school officials and prosecutors say mrs. yeargin is lying 
- they found students in an advanced class a year earlier who said she gave them similar help although because the case was n't tried in court this evidence was never presented publicly 
- that pretty much <unk> any <unk> that she was out to help the poor <unk> child says joe watson the prosecutor in the case who is also president of greenville high school 's <unk> association 
- mrs. yeargin concedes that she went over the questions in the earlier class adding i wanted to help all students 
- mr. watson says mrs. yeargin never complained to school officials that the standardized test was unfair 
- do i have much <unk> for her mr. watson asks 
- not really 
- i believe in the system 
- i believe you have to use the system to change it 
- what she did was like taking the law into your own hands 
- mrs. ward says that when the cheating was discovered she wanted to avoid the <unk> public disclosure that a trial would bring 
- she says she offered mrs. yeargin a quiet resignation and thought she could help save her teaching certificate 
- mrs. yeargin declined 
- she said something like you just want to make it easy for the school 
- i was <unk> mrs. ward recalls 
- it was like someone had turned a <unk> in me 
- to the <unk> and <unk> of her <unk> and legal authorities and perhaps as a measure of the <unk> of standardized tests <unk> yeargin won widespread local support 
- the <unk> hearing at which she was dismissed was crowded with students teachers and parents who came to testify on her behalf 
- supportive callers <unk> unfair testing not mrs. yeargin on a local radio talk show on which she appeared 
- the show did n't give the <unk> of mrs. yeargin 's <unk> saying only that she helped students do better on the test 
- the message to the board of education out of all this is we 've got to take a serious look at how we 're doing our <unk> and our testing policies in this state said the <unk> host 
- <unk> in the greenville newspaper allowed that mrs. yeargin was wrong but also said the case showed how testing was being <unk> 
- the radio show <unk> us says mrs. ward 
- partly because of the show mr. watson says the district decided not to recommend mrs. yeargin for a first-time offenders program that could have <unk> the charges and the conviction from her record 
- and legal authorities <unk> up an investigation worthy of a murder case 
- over N witnesses mostly students were interviewed 
- at greenville high school meanwhile some students especially on the <unk> <unk> were crushed 
- it 's hard to explain to a <unk> why someone they like had to go says mrs. ward 
- soon <unk> appeared in the <unk> that carried the school 's familiar <unk> <unk> <unk> on the front 
- on the back the shirts read we have all the answers 
- many colleagues are angry at mrs. yeargin 
- she did a lot of harm says <unk> rice who had discovered the <unk> notes 
- we work damn hard at what we do for damn little pay and what she did cast unfair <unk> on all of us 
- but several teachers also say the incident <unk> doubt on the wisdom of evaluating teachers or schools by using standardized test scores 
- says <unk> key a <unk> teacher the incentive pay thing has opened up a can of <unk> 
- there may be others doing what she did 
- mrs. yeargin says she pleaded guilty because she realized it would no longer be possible to win <unk> and because she was afraid of further charges 
- mrs. ward for one was relieved 
- despite the strong evidence against mrs. yeargin popular sentiment was so strong in her favor mrs. ward says that i 'm afraid a jury would n't have convicted her 
- since <unk> first touched slate <unk> have wanted to know what 's on the test 
- these days students can often find the answer in <unk> <unk> and <unk> their teachers give them in the weeks prior to taking standardized achievement tests 
- the <unk> section of the widely used california achievement test asks fifth <unk> what is another name for the roman <unk> <unk> 
- it also asks them to add <unk> and <unk> 
- <unk> in a <unk> <unk> called learning materials sold to schools across the country by <unk> school publishing co. contain the same questions 
- in many other <unk> there is almost no difference between the real test and learning materials 
- what 's more the test and learning materials are both produced by the same company <unk> a joint venture of mcgraw-hill inc. and macmillan 's parent britain 's maxwell communication corp 
- close parallels between tests and practice tests are common some educators and researchers say 
- <unk> booklets software and <unk> are a booming publishing <unk> 
- but some practice products are so similar to the tests themselves that critics say they represent a form of <unk> cheating 
- if i took these preparation booklets into my classroom i 'd have a hard time <unk> to my students and parents that it was n't cheating says john <unk> a <unk> city mich. teacher who has studied test <unk> 
- he and other critics say such <unk> aids can defeat the purpose of standardized tests which is to gauge learning progress 
- it 's as if france decided to give only french history questions to students in a european history class and when everybody <unk> the test they say their kids are good in european history says john <unk> an <unk> n.m. <unk> and founder of an educational research organization friends for education which has studied standardized testing 
- standardized achievement tests are given about N million times a year across the country to students generally from <unk> through eighth grade 
- the most widely used of these tests are <unk> 's cat and comprehensive test of basic skills the iowa test of basic skills by <unk> <unk> co. and <unk> <unk> <unk> inc. 's metropolitan achievement test and stanford achievement test 
- sales figures of the <unk> materials are n't known but their reach into schools is significant 
- in arizona california florida louisiana maryland new jersey south carolina and texas educators say they are common classroom tools 
- <unk> says well over N million of its scoring high <unk> books have been sold since their introduction N years ago with most sales in the last five years 
- about N sets of learning materials teachers ' <unk> have also been sold in the past four years 
- the materials in each set reach about N students 
- scoring high and learning materials are the <unk> preparation tests 
- michael kean director of marketing for <unk> <unk> the <unk> division that publishes learning materials says it is n't aimed at improving test scores 
- he also asserted that exact questions were n't <unk> 
- when referred to the questions that matched he said it was <unk> 
- mr. <unk> the <unk> and william <unk> a michigan state university education professor concluded in a study last june that cat test versions of scoring high and learning materials should n't be used in the classroom because of their similarity to the actual test 
- they devised a <unk> scale <unk> one point for each <unk> measured on the cat test to rate the <unk> of test <unk> to the <unk> cat 
- because many of these <unk> the <unk> of <unk> figures metric measurement of volume or pie and bar <unk> for example are only a small part of the total <unk> <unk> mr. <unk> says the preparation <unk> would n't <unk> too many if their real intent was general instruction or even general <unk> with test procedures 
- but learning materials matched on N of N <unk> 
- scoring high matched on N 
- in cat sections where students ' knowledge of <unk> <unk> sounds is tested the authors noted that scoring high concentrated on the same sounds that the test does to the exclusion of other sounds that fifth <unk> should know 
- learning materials for the <unk> contains at least a dozen examples of exact matches or close parallels to test items 
- rick <unk> senior editor of scoring high says that messrs. <unk> and <unk> are ignoring the need students have for becoming familiar with tests and testing format 
- he said authors of scoring high <unk> avoid <unk> exact questions but he does n't deny that some items are similar 
- when scoring high first came out in N it was a publication of random house 
- mcgraw-hill was <unk> 
- in a N advisory to educators mcgraw-hill said scoring high should n't be used because it represented a parallel form of the cat and <unk> tests 
- but in N mcgraw-hill purchased the random house unit that publishes scoring high which later became part of <unk> 
- messrs. <unk> and kean say they are <unk> of any efforts by mcgraw-hill to modify or <unk> scoring high 
- <unk> corp. said it completed the acquisition of sacramento savings & loan association from the <unk> & <unk> c. <unk> foundation for $ N million 
- the <unk> s&l which has N branch offices in north central california had assets of $ N billion at the end of september 
- new york-based <unk> is an insurance and financial services concern 
- the purchase price includes two <unk> companies 
- the department of health and human services plans to extend its <unk> on federal funding of research involving fetal-tissue transplants 
- medical researchers believe the <unk> of small amounts of <unk> tissue into humans could help treat <unk> <unk> and such <unk> diseases as <unk> 's <unk> 's and <unk> 's 
- but anti-abortionists oppose such research because they worry that the development of <unk> using fetal-tissue transplants could lead to an increase in abortions 
- james mason assistant secretary for health said the ban on federal funding of fetal-tissue transplant research should be continued indefinitely 
- he said the ban wo n't stop privately funded <unk> research or federally funded fetal-tissue research that does n't involve transplants 
- department officials say that hhs secre
+ACT I
+SCENE I. A desert place.
+
+    Thunder and lightning. Enter three Witches 
+
+First Witch
+
+    When shall we three meet again
+    In thunder, lightning, or in rain?
+
+Second Witch
+
+    When the hurlyburly's done,
+    When the battle's lost and won.
+
+Third Witch
+
+    That will be ere the set of sun.
+
+First Witch
+
+    Where the place?
+
+Second Witch
+
+    Upon the heath.
+
+Third Witch
+
+    There to meet with Macbeth.
+
+First Witch
+
+    I come, Graymalkin!
+
+Second Witch
+
+    Paddock calls.
+
+Third Witch
+
+    Anon.
+
+ALL
+
+    Fair is foul, and foul is fair:
+    Hover through the fog and filthy air.
+
+    Exeunt
+
+SCENE II. A camp near Forres.
+
+    Alarum within. Enter DUNCAN, MALCOLM, DONALBAIN, LENNOX, with Attendants, meeting a bleeding Sergeant 
+
+DUNCAN
+
+    What bloody man is that? He can report,
+    As seemeth by his plight, of the revolt
+    The newest state.
+
+MALCOLM
+
+    This is the sergeant
+    Who like a good and hardy soldier fought
+    'Gainst my captivity. Hail, brave friend!
+    Say to the king the knowledge of the broil
+    As thou didst leave it.
+
+Sergeant
+
+    Doubtful it stood;
+    As two spent swimmers, that do cling together
+    And choke their art. The merciless Macdonwald--
+    Worthy to be a rebel, for to that
+    The multiplying villanies of nature
+    Do swarm upon him--from the western isles
+    Of kerns and gallowglasses is supplied;
+    And fortune, on his damned quarrel smiling,
+    Show'd like a rebel's whore: but all's too weak:
+    For brave Macbeth--well he deserves that name--
+    Disdaining fortune, with his brandish'd steel,
+    Which smoked with bloody execution,
+    Like valour's minion carved out his passage
+    Till he faced the slave;
+    Which ne'er shook hands, nor bade farewell to him,
+    Till he unseam'd him from the nave to the chaps,
+    And fix'd his head upon our battlements.
+
+DUNCAN
+
+    O valiant cousin! worthy gentleman!
+
+Sergeant
+
+    As whence the sun 'gins his reflection
+    Shipwrecking storms and direful thunders break,
+    So from that spring whence comfort seem'd to come
+    Discomfort swells. Mark, king of Scotland, mark:
+    No sooner justice had with valour arm'd
+    Compell'd these skipping kerns to trust their heels,
+    But the Norweyan lord surveying vantage,
+    With furbish'd arms and new supplies of men
+    Began a fresh assault.
+
+DUNCAN
+
+    Dismay'd not this
+    Our captains, Macbeth and Banquo?
+
+Sergeant
+
+    Yes;
+    As sparrows eagles, or the hare the lion.
+    If I say sooth, I must report they were
+    As cannons overcharged with double cracks, so they
+    Doubly redoubled strokes upon the foe:
+    Except they meant to bathe in reeking wounds,
+    Or memorise another Golgotha,
+    I cannot tell.
+    But I am faint, my gashes cry for help.
+
+DUNCAN
+
+    So well thy words become thee as thy wounds;
+    They smack of honour both. Go get him surgeons.
+
+    Exit Sergeant, attended
+    Who comes here?
+
+    Enter ROSS
+
+MALCOLM
+
+    The worthy thane of Ross.
+
+LENNOX
+
+    What a haste looks through his eyes! So should he look
+    That seems to speak things strange.
+
+ROSS
+
+    God save the king!
+
+DUNCAN
+
+    Whence camest thou, worthy thane?
+
+ROSS
+
+    From Fife, great king;
+    Where the Norweyan banners flout the sky
+    And fan our people cold. Norway himself,
+    With terrible numbers,
+    Assisted by that most disloyal traitor
+    The thane of Cawdor, began a dismal conflict;
+    Till that Bellona's bridegroom, lapp'd in proof,
+    Confronted him with self-comparisons,
+    Point against point rebellious, arm 'gainst arm.
+    Curbing his lavish spirit: and, to conclude,
+    The victory fell on us.
+
+DUNCAN
+
+    Great happiness!
+
+ROSS
+
+    That now
+    Sweno, the Norways' king, craves composition:
+    Nor would we deign him burial of his men
+    Till he disbursed at Saint Colme's inch
+    Ten thousand dollars to our general use.
+
+DUNCAN
+
+    No more that thane of Cawdor shall deceive
+    Our bosom interest: go pronounce his present death,
+    And with his former title greet Macbeth.
+
+ROSS
+
+    I'll see it done.
+
+DUNCAN
+
+    What he hath lost noble Macbeth hath won.
+
+    Exeunt
+
+SCENE III. A heath near Forres.
+
+    Thunder. Enter the three Witches 
+
+First Witch
+
+    Where hast thou been, sister?
+
+Second Witch
+
+    Killing swine.
+
+Third Witch
+
+    Sister, where thou?
+
+First Witch
+
+    A sailor's wife had chestnuts in her lap,
+    And munch'd, and munch'd, and munch'd:--
+    'Give me,' quoth I:
+    'Aroint thee, witch!' the rump-fed ronyon cries.
+    Her husband's to Aleppo gone, master o' the Tiger:
+    But in a sieve I'll thither sail,
+    And, like a rat without a tail,
+    I'll do, I'll do, and I'll do.
+
+Second Witch
+
+    I'll give thee a wind.
+
+First Witch
+
+    Thou'rt kind.
+
+Third Witch
+
+    And I another.
+
+First Witch
+
+    I myself have all the other,
+    And the very ports they blow,
+    All the quarters that they know
+    I' the shipman's card.
+    I will drain him dry as hay:
+    Sleep shall neither night nor day
+    Hang upon his pent-house lid;
+    He shall live a man forbid:
+    Weary se'nnights nine times nine
+    Shall he dwindle, peak and pine:
+    Though his bark cannot be lost,
+    Yet it shall be tempest-tost.
+    Look what I have.
+
+Second Witch
+
+    Show me, show me.
+
+First Witch
+
+    Here I have a pilot's thumb,
+    Wreck'd as homeward he did come.
+
+    Drum within
+
+Third Witch
+
+    A drum, a drum!
+    Macbeth doth come.
+
+ALL
+
+    The weird sisters, hand in hand,
+    Posters of the sea and land,
+    Thus do go about, about:
+    Thrice to thine and thrice to mine
+    And thrice again, to make up nine.
+    Peace! the charm's wound up.
+
+    Enter MACBETH and BANQUO
+
+MACBETH
+
+    So foul and fair a day I have not seen.
+
+BANQUO
+
+    How far is't call'd to Forres? What are these
+    So wither'd and so wild in their attire,
+    That look not like the inhabitants o' the earth,
+    And yet are on't? Live you? or are you aught
+    That man may question? You seem to understand me,
+    By each at once her chappy finger laying
+    Upon her skinny lips: you should be women,
+    And yet your beards forbid me to interpret
+    That you are so.
+
+MACBETH
+
+    Speak, if you can: what are you?
+
+First Witch
+
+    All hail, Macbeth! hail to thee, thane of Glamis!
+
+Second Witch
+
+    All hail, Macbeth, hail to thee, thane of Cawdor!
+
+Third Witch
+
+    All hail, Macbeth, thou shalt be king hereafter!
+
+BANQUO
+
+    Good sir, why do you start; and seem to fear
+    Things that do sound so fair? I' the name of truth,
+    Are ye fantastical, or that indeed
+    Which outwardly ye show? My noble partner
+    You greet with present grace and great prediction
+    Of noble having and of royal hope,
+    That he seems rapt withal: to me you speak not.
+    If you can look into the seeds of time,
+    And say which grain will grow and which will not,
+    Speak then to me, who neither beg nor fear
+    Your favours nor your hate.
+
+First Witch
+
+    Hail!
+
+Second Witch
+
+    Hail!
+
+Third Witch
+
+    Hail!
+
+First Witch
+
+    Lesser than Macbeth, and greater.
+
+Second Witch
+
+    Not so happy, yet much happier.
+
+Third Witch
+
+    Thou shalt get kings, though thou be none:
+    So all hail, Macbeth and Banquo!
+
+First Witch
+
+    Banquo and Macbeth, all hail!
+
+MACBETH
+
+    Stay, you imperfect speakers, tell me more:
+    By Sinel's death I know I am thane of Glamis;
+    But how of Cawdor? the thane of Cawdor lives,
+    A prosperous gentleman; and to be king
+    Stands not within the prospect of belief,
+    No more than to be Cawdor. Say from whence
+    You owe this strange intelligence? or why
+    Upon this blasted heath you stop our way
+    With such prophetic greeting? Speak, I charge you.
+
+    Witches vanish
+
+BANQUO
+
+    The earth hath bubbles, as the water has,
+    And these are of them. Whither are they vanish'd?
+
+MACBETH
+
+    Into the air; and what seem'd corporal melted
+    As breath into the wind. Would they had stay'd!
+
+BANQUO
+
+    Were such things here as we do speak about?
+    Or have we eaten on the insane root
+    That takes the reason prisoner?
+
+MACBETH
+
+    Your children shall be kings.
+
+BANQUO
+
+    You shall be king.
+
+MACBETH
+
+    And thane of Cawdor too: went it not so?
+
+BANQUO
+
+    To the selfsame tune and words. Who's here?
+
+    Enter ROSS and ANGUS
+
+ROSS
+
+    The king hath happily received, Macbeth,
+    The news of thy success; and when he reads
+    Thy personal venture in the rebels' fight,
+    His wonders and his praises do contend
+    Which should be thine or his: silenced with that,
+    In viewing o'er the rest o' the selfsame day,
+    He finds thee in the stout Norweyan ranks,
+    Nothing afeard of what thyself didst make,
+    Strange images of death. As thick as hail
+    Came post with post; and every one did bear
+    Thy praises in his kingdom's great defence,
+    And pour'd them down before him.
+
+ANGUS
+
+    We are sent
+    To give thee from our royal master thanks;
+    Only to herald thee into his sight,
+    Not pay thee.
+
+ROSS
+
+    And, for an earnest of a greater honour,
+    He bade me, from him, call thee thane of Cawdor:
+    In which addition, hail, most worthy thane!
+    For it is thine.
+
+BANQUO
+
+    What, can the devil speak true?
+
+MACBETH
+
+    The thane of Cawdor lives: why do you dress me
+    In borrow'd robes?
+
+ANGUS
+
+    Who was the thane lives yet;
+    But under heavy judgment bears that life
+    Which he deserves to lose. Whether he was combined
+    With those of Norway, or did line the rebel
+    With hidden help and vantage, or that with both
+    He labour'd in his country's wreck, I know not;
+    But treasons capital, confess'd and proved,
+    Have overthrown him.
+
+MACBETH
+
+    [Aside] Glamis, and thane of Cawdor!
+    The greatest is behind.
+
+    To ROSS and ANGUS
+    Thanks for your pains.
+
+    To BANQUO
+    Do you not hope your children shall be kings,
+    When those that gave the thane of Cawdor to me
+    Promised no less to them?
+
+BANQUO
+
+    That trusted home
+    Might yet enkindle you unto the crown,
+    Besides the thane of Cawdor. But 'tis strange:
+    And oftentimes, to win us to our harm,
+    The instruments of darkness tell us truths,
+    Win us with honest trifles, to betray's
+    In deepest consequence.
+    Cousins, a word, I pray you.
+
+MACBETH
+
+    [Aside] Two truths are told,
+    As happy prologues to the swelling act
+    Of the imperial theme.--I thank you, gentlemen.
+
+    Aside
+    Cannot be ill, cannot be good: if ill,
+    Why hath it given me earnest of success,
+    Commencing in a truth? I am thane of Cawdor:
+    If good, why do I yield to that suggestion
+    Whose horrid image doth unfix my hair
+    And make my seated heart knock at my ribs,
+    Against the use of nature? Present fears
+    Are less than horrible imaginings:
+    My thought, whose murder yet is but fantastical,
+    Shakes so my single state of man that function
+    Is smother'd in surmise, and nothing is
+    But what is not.
+
+BANQUO
+
+    Look, how our partner's rapt.
+
+MACBETH
+
+    [Aside] If chance will have me king, why, chance may crown me,
+    Without my stir.
+
+BANQUO
+
+    New horrors come upon him,
+    Like our strange garments, cleave not to their mould
+    But with the aid of use.
+
+MACBETH
+
+    [Aside] Come what come may,
+    Time and the hour runs through the roughest day.
+
+BANQUO
+
+    Worthy Macbeth, we stay upon your leisure.
+
+MACBETH
+
+    Give me your favour: my dull brain was wrought
+    With things forgotten. Kind gentlemen, your pains
+    Are register'd where every day I turn
+    The leaf to read them. Let us toward the king.
+    Think upon what hath chanced, and, at more time,
+    The interim having weigh'd it, let us speak
+    Our free hearts each to other.
+
+BANQUO
+
+    Very gladly.
+
+MACBETH
+
+    Till then, enough. Come, friends.
+
+    Exeunt
+
+SCENE IV. Forres. The palace.
+
+    Flourish. Enter DUNCAN, MALCOLM, DONALBAIN, LENNOX, and Attendants 
+
+DUNCAN
+
+    Is execution done on Cawdor? Are not
+    Those in commission yet return'd?
+
+MALCOLM
+
+    My liege,
+    They are not yet come back. But I have spoke
+    With one that saw him die: who did report
+    That very frankly he confess'd his treasons,
+    Implored your highness' pardon and set forth
+    A deep repentance: nothing in his life
+    Became him like the leaving it; he died
+    As one that had been studied in his death
+    To throw away the dearest thing he owed,
+    As 'twere a careless trifle.
+
+DUNCAN
+
+    There's no art
+    To find the mind's construction in the face:
+    He was a gentleman on whom I built
+    An absolute trust.
+
+    Enter MACBETH, BANQUO, ROSS, and ANGUS
+    O worthiest cousin!
+    The sin of my ingratitude even now
+    Was heavy on me: thou art so far before
+    That swiftest wing of recompense is slow
+    To overtake thee. Would thou hadst less deserved,
+    That the proportion both of thanks and payment
+    Might have been mine! only I have left to say,
+    More is thy due than more than all can pay.
+
+MACBETH
+
+    The service and the loyalty I owe,
+    In doing it, pays itself. Your highness' part
+    Is to receive our duties; and our duties
+    Are to your throne and state children and servants,
+    Which do but what they should, by doing every thing
+    Safe toward your love and honour.
+
+DUNCAN
+
+    Welcome hither:
+    I have begun to plant thee, and will labour
+    To make thee full of growing. Noble Banquo,
+    That hast no less deserved, nor must be known
+    No less to have done so, let me enfold thee
+    And hold thee to my heart.
+
+BANQUO
+
+    There if I grow,
+    The harvest is your own.
+
+DUNCAN
+
+    My plenteous joys,
+    Wanton in fulness, seek to hide themselves
+    In drops of sorrow. Sons, kinsmen, thanes,
+    And you whose places are the nearest, know
+    We will establish our estate upon
+    Our eldest, Malcolm, whom we name hereafter
+    The Prince of Cumberland; which honour must
+    Not unaccompanied invest him only,
+    But signs of nobleness, like stars, shall shine
+    On all deservers. From hence to Inverness,
+    And bind us further to you.
+
+MACBETH
+
+    The rest is labour, which is not used for you:
+    I'll be myself the harbinger and make joyful
+    The hearing of my wife with your approach;
+    So humbly take my leave.
+
+DUNCAN
+
+    My worthy Cawdor!
+
+MACBETH
+
+    [Aside] The Prince of Cumberland! that is a step
+    On which I must fall down, or else o'erleap,
+    For in my way it lies. Stars, hide your fires;
+    Let not light see my black and deep desires:
+    The eye wink at the hand; yet let that be,
+    Which the eye fears, when it is done, to see.
+
+    Exit
+
+DUNCAN
+
+    True, worthy Banquo; he is full so valiant,
+    And in his commendations I am fed;
+    It is a banquet to me. Let's after him,
+    Whose care is gone before to bid us welcome:
+    It is a peerless kinsman.
+
+    Flourish. Exeunt
+
+SCENE V. Inverness. Macbeth's castle.
+
+    Enter LADY MACBETH, reading a letter 
+
+LADY MACBETH
+
+    'They met me in the day of success: and I have
+    learned by the perfectest report, they have more in
+    them than mortal knowledge. When I burned in desire
+    to question them further, they made themselves air,
+    into which they vanished. Whiles I stood rapt in
+    the wonder of it, came missives from the king, who
+    all-hailed me 'Thane of Cawdor;' by which title,
+    before, these weird sisters saluted me, and referred
+    me to the coming on of time, with 'Hail, king that
+    shalt be!' This have I thought good to deliver
+    thee, my dearest partner of greatness, that thou
+    mightst not lose the dues of rejoicing, by being
+    ignorant of what greatness is promised thee. Lay it
+    to thy heart, and farewell.'
+    Glamis thou art, and Cawdor; and shalt be
+    What thou art promised: yet do I fear thy nature;
+    It is too full o' the milk of human kindness
+    To catch the nearest way: thou wouldst be great;
+    Art not without ambition, but without
+    The illness should attend it: what thou wouldst highly,
+    That wouldst thou holily; wouldst not play false,
+    And yet wouldst wrongly win: thou'ldst have, great Glamis,
+    That which cries 'Thus thou must do, if thou have it;
+    And that which rather thou dost fear to do
+    Than wishest should be undone.' Hie thee hither,
+    That I may pour my spirits in thine ear;
+    And chastise with the valour of my tongue
+    All that impedes thee from the golden round,
+    Which fate and metaphysical aid doth seem
+    To have thee crown'd withal.
+
+    Enter a Messenger
+    What is your tidings?
+
+Messenger
+
+    The king comes here to-night.
+
+LADY MACBETH
+
+    Thou'rt mad to say it:
+    Is not thy master with him? who, were't so,
+    Would have inform'd for preparation.
+
+Messenger
+
+    So please you, it is true: our thane is coming:
+    One of my fellows had the speed of him,
+    Who, almost dead for breath, had scarcely more
+    Than would make up his message.
+
+LADY MACBETH
+
+    Give him tending;
+    He brings great news.
+
+    Exit Messenger
+    The raven himself is hoarse
+    That croaks the fatal entrance of Duncan
+    Under my battlements. Come, you spirits
+    That tend on mortal thoughts, unsex me here,
+    And fill me from the crown to the toe top-full
+    Of direst cruelty! make thick my blood;
+    Stop up the access and passage to remorse,
+    That no compunctious visitings of nature
+    Shake my fell purpose, nor keep peace between
+    The effect and it! Come to my woman's breasts,
+    And take my milk for gall, you murdering ministers,
+    Wherever in your sightless substances
+    You wait on nature's mischief! Come, thick night,
+    And pall thee in the dunnest smoke of hell,
+    That my keen knife see not the wound it makes,
+    Nor heaven peep through the blanket of the dark,
+    To cry 'Hold, hold!'
+
+    Enter MACBETH
+    Great Glamis! worthy Cawdor!
+    Greater than both, by the all-hail hereafter!
+    Thy letters have transported me beyond
+    This ignorant present, and I feel now
+    The future in the instant.
+
+MACBETH
+
+    My dearest love,
+    Duncan comes here to-night.
+
+LADY MACBETH
+
+    And when goes hence?
+
+MACBETH
+
+    To-morrow, as he purposes.
+
+LADY MACBETH
+
+    O, never
+    Shall sun that morrow see!
+    Your face, my thane, is as a book where men
+    May read strange matters. To beguile the time,
+    Look like the time; bear welcome in your eye,
+    Your hand, your tongue: look like the innocent flower,
+    But be the serpent under't. He that's coming
+    Must be provided for: and you shall put
+    This night's great business into my dispatch;
+    Which shall to all our nights and days to come
+    Give solely sovereign sway and masterdom.
+
+MACBETH
+
+    We will speak further.
+
+LADY MACBETH
+
+    Only look up clear;
+    To alter favour ever is to fear:
+    Leave all the rest to me.
+
+    Exeunt
+
+SCENE VI. Before Macbeth's castle.
+
+    Hautboys and torches. Enter DUNCAN, MALCOLM, DONALBAIN, BANQUO, LENNOX, MACDUFF, ROSS, ANGUS, and Attendants 
+
+DUNCAN
+
+    This castle hath a pleasant seat; the air
+    Nimbly and sweetly recommends itself
+    Unto our gentle senses.
+
+BANQUO
+
+    This guest of summer,
+    The temple-haunting martlet, does approve,
+    By his loved mansionry, that the heaven's breath
+    Smells wooingly here: no jutty, frieze,
+    Buttress, nor coign of vantage, but this bird
+    Hath made his pendent bed and procreant cradle:
+    Where they most breed and haunt, I have observed,
+    The air is delicate.
+
+    Enter LADY MACBETH
+
+DUNCAN
+
+    See, see, our honour'd hostess!
+    The love that follows us sometime is our trouble,
+    Which still we thank as love. Herein I teach you
+    How you shall bid God 'ild us for your pains,
+    And thank us for your trouble.
+
+LADY MACBETH
+
+    All our service
+    In every point twice done and then done double
+    Were poor and single business to contend
+    Against those honours deep and broad wherewith
+    Your majesty loads our house: for those of old,
+    And the late dignities heap'd up to them,
+    We rest your hermits.
+
+DUNCAN
+
+    Where's the thane of Cawdor?
+    We coursed him at the heels, and had a purpose
+    To be his purveyor: but he rides well;
+    And his great love, sharp as his spur, hath holp him
+    To his home before us. Fair and noble hostess,
+    We are your guest to-night.
+
+LADY MACBETH
+
+    Your servants ever
+    Have theirs, themselves and what is theirs, in compt,
+    To make their audit at your highness' pleasure,
+    Still to return your own.
+
+DUNCAN
+
+    Give me your hand;
+    Conduct me to mine host: we love him highly,
+    And shall continue our graces towards him.
+    By your leave, hostess.
+
+    Exeunt
+
+SCENE VII. Macbeth's castle.
+
+    Hautboys and torches. Enter a Sewer, and divers Servants with dishes and service, and pass over the stage. Then enter MACBETH 
+
+MACBETH
+
+    If it were done when 'tis done, then 'twere well
+    It were done quickly: if the assassination
+    Could trammel up the consequence, and catch
+    With his surcease success; that but this blow
+    Might be the be-all and the end-all here,
+    But here, upon this bank and shoal of time,
+    We'ld jump the life to come. But in these cases
+    We still have judgment here; that we but teach
+    Bloody instructions, which, being taught, return
+    To plague the inventor: this even-handed justice
+    Commends the ingredients of our poison'd chalice
+    To our own lips. He's here in double trust;
+    First, as I am his kinsman and his subject,
+    Strong both against the deed; then, as his host,
+    Who should against his murderer shut the door,
+    Not bear the knife myself. Besides, this Duncan
+    Hath borne his faculties so meek, hath been
+    So clear in his great office, that his virtues
+    Will plead like angels, trumpet-tongued, against
+    The deep damnation of his taking-off;
+    And pity, like a naked new-born babe,
+    Striding the blast, or heaven's cherubim, horsed
+    Upon the sightless couriers of the air,
+    Shall blow the horrid deed in every eye,
+    That tears shall drown the wind. I have no spur
+    To prick the sides of my intent, but only
+    Vaulting ambition, which o'erleaps itself
+    And falls on the other.
+
+    Enter LADY MACBETH
+    How now! what news?
+
+LADY MACBETH
+
+    He has almost supp'd: why have you left the chamber?
+
+MACBETH
+
+    Hath he ask'd for me?
+
+LADY MACBETH
+
+    Know you not he has?
+
+MACBETH
+
+    We will proceed no further in this business:
+    He hath honour'd me of late; and I have bought
+    Golden opinions from all sorts of people,
+    Which would be worn now in their newest gloss,
+    Not cast aside so soon.
+
+LADY MACBETH
+
+    Was the hope drunk
+    Wherein you dress'd yourself? hath it slept since?
+    And wakes it now, to look so green and pale
+    At what it did so freely? From this time
+    Such I account thy love. Art thou afeard
+    To be the same in thine own act and valour
+    As thou art in desire? Wouldst thou have that
+    Which thou esteem'st the ornament of life,
+    And live a coward in thine own esteem,
+    Letting 'I dare not' wait upon 'I would,'
+    Like the poor cat i' the adage?
+
+MACBETH
+
+    Prithee, peace:
+    I dare do all that may become a man;
+    Who dares do more is none.
+
+LADY MACBETH
+
+    What beast was't, then,
+    That made you break this enterprise to me?
+    When you durst do it, then you were a man;
+    And, to be more than what you were, you would
+    Be so much more the man. Nor time nor place
+    Did then adhere, and yet you would make both:
+    They have made themselves, and that their fitness now
+    Does unmake you. I have given suck, and know
+    How tender 'tis to love the babe that milks me:
+    I would, while it was smiling in my face,
+    Have pluck'd my nipple from his boneless gums,
+    And dash'd the brains out, had I so sworn as you
+    Have done to this.
+
+MACBETH
+
+    If we should fail?
+
+LADY MACBETH
+
+    We fail!
+    But screw your courage to the sticking-place,
+    And we'll not fail. When Duncan is asleep--
+    Whereto the rather shall his day's hard journey
+    Soundly invite him--his two chamberlains
+    Will I with wine and wassail so convince
+    That memory, the warder of the brain,
+    Shall be a fume, and the receipt of reason
+    A limbeck only: when in swinish sleep
+    Their drenched natures lie as in a death,
+    What cannot you and I perform upon
+    The unguarded Duncan? what not put upon
+    His spongy officers, who shall bear the guilt
+    Of our great quell?
+
+MACBETH
+
+    Bring forth men-children only;
+    For thy undaunted mettle should compose
+    Nothing but males. Will it not be received,
+    When we have mark'd with blood those sleepy two
+    Of his own chamber and used their very daggers,
+    That they have done't?
+
+LADY MACBETH
+
+    Who dares receive it other,
+    As we shall make our griefs and clamour roar
+    Upon his death?
+
+MACBETH
+
+    I am settled, and bend up
+    Each corporal agent to this terrible feat.
+    Away, and mock the time with fairest show:
+    False face must hide what the false heart doth know.
+
+    Exeunt
+
+ACT II
+SCENE I. Court of Macbeth's castle.
+
+    Enter BANQUO, and FLEANCE bearing a torch before him 
+
+BANQUO
+
+    How goes the night, boy?
+
+FLEANCE
+
+    The moon is down; I have not heard the clock.
+
+BANQUO
+
+    And she goes down at twelve.
+
+FLEANCE
+
+    I take't, 'tis later, sir.
+
+BANQUO
+
+    Hold, take my sword. There's husbandry in heaven;
+    Their candles are all out. Take thee that too.
+    A heavy summons lies like lead upon me,
+    And yet I would not sleep: merciful powers,
+    Restrain in me the cursed thoughts that nature
+    Gives way to in repose!
+
+    Enter MACBETH, and a Servant with a torch
+    Give me my sword.
+    Who's there?
+
+MACBETH
+
+    A friend.
+
+BANQUO
+
+    What, sir, not yet at rest? The king's a-bed:
+    He hath been in unusual pleasure, and
+    Sent forth great largess to your offices.
+    This diamond he greets your wife withal,
+    By the name of most kind hostess; and shut up
+    In measureless content.
+
+MACBETH
+
+    Being unprepared,
+    Our will became the servant to defect;
+    Which else should free have wrought.
+
+BANQUO
+
+    All's well.
+    I dreamt last night of the three weird sisters:
+    To you they have show'd some truth.
+
+MACBETH
+
+    I think not of them:
+    Yet, when we can entreat an hour to serve,
+    We would spend it in some words upon that business,
+    If you would grant the time.
+
+BANQUO
+
+    At your kind'st leisure.
+
+MACBETH
+
+    If you shall cleave to my consent, when 'tis,
+    It shall make honour for you.
+
+BANQUO
+
+    So I lose none
+    In seeking to augment it, but still keep
+    My bosom franchised and allegiance clear,
+    I shall be counsell'd.
+
+MACBETH
+
+    Good repose the while!
+
+BANQUO
+
+    Thanks, sir: the like to you!
+
+    Exeunt BANQUO and FLEANCE
+
+MACBETH
+
+    Go bid thy mistress, when my drink is ready,
+    She strike upon the bell. Get thee to bed.
+
+    Exit Servant
+    Is this a dagger which I see before me,
+    The handle toward my hand? Come, let me clutch thee.
+    I have thee not, and yet I see thee still.
+    Art thou not, fatal vision, sensible
+    To feeling as to sight? or art thou but
+    A dagger of the mind, a false creation,
+    Proceeding from the heat-oppressed brain?
+    I see thee yet, in form as palpable
+    As this which now I draw.
+    Thou marshall'st me the way that I was going;
+    And such an instrument I was to use.
+    Mine eyes are made the fools o' the other senses,
+    Or else worth all the rest; I see thee still,
+    And on thy blade and dudgeon gouts of blood,
+    Which was not so before. There's no such thing:
+    It is the bloody business which informs
+    Thus to mine eyes. Now o'er the one halfworld
+    Nature seems dead, and wicked dreams abuse
+    The curtain'd sleep; witchcraft celebrates
+    Pale Hecate's offerings, and wither'd murder,
+    Alarum'd by his sentinel, the wolf,
+    Whose howl's his watch, thus with his stealthy pace.
+    With Tarquin's ravishing strides, towards his design
+    Moves like a ghost. Thou sure and firm-set earth,
+    Hear not my steps, which way they walk, for fear
+    Thy very stones prate of my whereabout,
+    And take the present horror from the time,
+    Which now suits with it. Whiles I threat, he lives:
+    Words to the heat of deeds too cold breath gives.
+
+    A bell rings
+    I go, and it is done; the bell invites me.
+    Hear it not, Duncan; for it is a knell
+    That summons thee to heaven or to hell.
+
+    Exit
+
+SCENE II. The same.
+
+    Enter LADY MACBETH 
+
+LADY MACBETH
+
+    That which hath made them drunk hath made me bold;
+    What hath quench'd them hath given me fire.
+    Hark! Peace!
+    It was the owl that shriek'd, the fatal bellman,
+    Which gives the stern'st good-night. He is about it:
+    The doors are open; and the surfeited grooms
+    Do mock their charge with snores: I have drugg'd
+    their possets,
+    That death and nature do contend about them,
+    Whether they live or die.
+
+MACBETH
+
+    [Within] Who's there? what, ho!
+
+LADY MACBETH
+
+    Alack, I am afraid they have awaked,
+    And 'tis not done. The attempt and not the deed
+    Confounds us. Hark! I laid their daggers ready;
+    He could not miss 'em. Had he not resembled
+    My father as he slept, I had done't.
+
+    Enter MACBETH
+    My husband!
+
+MACBETH
+
+    I have done the deed. Didst thou not hear a noise?
+
+LADY MACBETH
+
+    I heard the owl scream and the crickets cry.
+    Did not you speak?
+
+MACBETH
+
+    When?
+
+LADY MACBETH
+
+    Now.
+
+MACBETH
+
+    As I descended?
+
+LADY MACBETH
+
+    Ay.
+
+MACBETH
+
+    Hark!
+    Who lies i' the second chamber?
+
+LADY MACBETH
+
+    Donalbain.
+
+MACBETH
+
+    This is a sorry sight.
+
+    Looking on his hands
+
+LADY MACBETH
+
+    A foolish thought, to say a sorry sight.
+
+MACBETH
+
+    There's one did laugh in's sleep, and one cried
+    'Murder!'
+    That they did wake each other: I stood and heard them:
+    But they did say their prayers, and address'd them
+    Again to sleep.
+
+LADY MACBETH
+
+    There are two lodged together.
+
+MACBETH
+
+    One cried 'God bless us!' and 'Amen' the other;
+    As they had seen me with these hangman's hands.
+    Listening their fear, I could not say 'Amen,'
+    When they did say 'God bless us!'
+
+LADY MACBETH
+
+    Consider it not so deeply.
+
+MACBETH
+
+    But wherefore could not I pronounce 'Amen'?
+    I had most need of blessing, and 'Amen'
+    Stuck in my throat.
+
+LADY MACBETH
+
+    These deeds must not be thought
+    After these ways; so, it will make us mad.
+
+MACBETH
+
+    Methought I heard a voice cry 'Sleep no more!
+    Macbeth does murder sleep', the innocent sleep,
+    Sleep that knits up the ravell'd sleeve of care,
+    The death of each day's life, sore labour's bath,
+    Balm of hurt minds, great nature's second course,
+    Chief nourisher in life's feast,--
+
+LADY MACBETH
+
+    What do you mean?
+
+MACBETH
+
+    Still it cried 'Sleep no more!' to all the house:
+    'Glamis hath murder'd sleep, and therefore Cawdor
+    Shall sleep no more; Macbeth shall sleep no more.'
+
+LADY MACBETH
+
+    Who was it that thus cried? Why, worthy thane,
+    You do unbend your noble strength, to think
+    So brainsickly of things. Go get some water,
+    And wash this filthy witness from your hand.
+    Why did you bring these daggers from the place?
+    They must lie there: go carry them; and smear
+    The sleepy grooms with blood.
+
+MACBETH
+
+    I'll go no more:
+    I am afraid to think what I have done;
+    Look on't again I dare not.
+
+LADY MACBETH
+
+    Infirm of purpose!
+    Give me the daggers: the sleeping and the dead
+    Are but as pictures: 'tis the eye of childhood
+    That fears a painted devil. If he do bleed,
+    I'll gild the faces of the grooms withal;
+    For it must seem their guilt.
+
+    Exit. Knocking within
+
+MACBETH
+
+    Whence is that knocking?
+    How is't with me, when every noise appals me?
+    What hands are here? ha! they pluck out mine eyes.
+    Will all great Neptune's ocean wash this blood
+    Clean from my hand? No, this my hand will rather
+    The multitudinous seas in incarnadine,
+    Making the green one red.
+
+    Re-enter LADY MACBETH
+
+LADY MACBETH
+
+    My hands are of your colour; but I shame
+    To wear a heart so white.
+
+    Knocking within
+    I hear a knocking
+    At the south entry: retire we to our chamber;
+    A little water clears us of this deed:
+    How easy is it, then! Your constancy
+    Hath left you unattended.
+
+    Knocking within
+    Hark! more knocking.
+    Get on your nightgown, lest occasion call us,
+    And show us to be watchers. Be not lost
+    So poorly in your thoughts.
+
+MACBETH
+
+    To know my deed, 'twere best not know myself.
+
+    Knocking within
+    Wake Duncan with thy knocking! I would thou couldst!
+
+    Exeunt
+
+SCENE III. The same.
+
+    Knocking within. Enter a Porter 
+
+Porter
+
+    Here's a knocking indeed! If a
+    man were porter of hell-gate, he should have
+    old turning the key.
+
+    Knocking within
+    Knock,
+    knock, knock! Who's there, i' the name of
+    Beelzebub? Here's a farmer, that hanged
+    himself on the expectation of plenty: come in
+    time; have napkins enow about you; here
+    you'll sweat for't.
+
+    Knocking within
+    Knock,
+    knock! Who's there, in the other devil's
+    name? Faith, here's an equivocator, that could
+    swear in both the scales against either scale;
+    who committed treason enough for God's sake,
+    yet could not equivocate to heaven: O, come
+    in, equivocator.
+
+    Knocking within
+    Knock,
+    knock, knock! Who's there? Faith, here's an
+    English tailor come hither, for stealing out of
+    a French hose: come in, tailor; here you may
+    roast your goose.
+
+    Knocking within
+    Knock,
+    knock; never at quiet! What are you? But
+    this place is too cold for hell. I'll devil-porter
+    it no further: I had thought to have let in
+    some of all professions that go the primrose
+    way to the everlasting bonfire.
+
+    Knocking within
+    Anon, anon! I pray you, remember the porter.
+
+    Opens the gate
+
+    Enter MACDUFF and LENNOX
+
+MACDUFF
+
+    Was it so late, friend, ere you went to bed,
+    That you do lie so late?
+
+Porter
+
+    'Faith sir, we were carousing till the
+    second cock: and drink, sir, is a great
+    provoker of three things.
+
+MACDUFF
+
+    What three things does drink especially provoke?
+
+Porter
+
+    Marry, sir, nose-painting, sleep, and
+    urine. Lechery, sir, it provokes, and unprovokes;
+    it provokes the desire, but it takes
+    away the performance: therefore, much drink
+    may be said to be an equivocator with lechery:
+    it makes him, and it mars him; it sets
+    him on, and it takes him off; it persuades him,
+    and disheartens him; makes him stand to, and
+    not stand to; in conclusion, equivocates him
+    in a sleep, and, giving him the lie, leaves him.
+
+MACDUFF
+
+    I believe drink gave thee the lie last night.
+
+Porter
+
+    That it did, sir, i' the very throat on
+    me: but I requited him for his lie; and, I
+    think, being too strong for him, though he took
+    up my legs sometime, yet I made a shift to cast
+    him.
+
+MACDUFF
+
+    Is thy master stirring?
+
+    Enter MACBETH
+    Our knocking has awaked him; here he comes.
+
+LENNOX
+
+    Good morrow, noble sir.
+
+MACBETH
+
+    Good morrow, both.
+
+MACDUFF
+
+    Is the king stirring, worthy thane?
+
+MACBETH
+
+    Not yet.
+
+MACDUFF
+
+    He did command me to call timely on him:
+    I have almost slipp'd the hour.
+
+MACBETH
+
+    I'll bring you to him.
+
+MACDUFF
+
+    I know this is a joyful trouble to you;
+    But yet 'tis one.
+
+MACBETH
+
+    The labour we delight in physics pain.
+    This is the door.
+
+MACDUFF
+
+    I'll make so bold to call,
+    For 'tis my limited service.
+
+    Exit
+
+LENNOX
+
+    Goes the king hence to-day?
+
+MACBETH
+
+    He does: he did appoint so.
+
+LENNOX
+
+    The night has been unruly: where we lay,
+    Our chimneys were blown down; and, as they say,
+    Lamentings heard i' the air; strange screams of death,
+    And prophesying with accents terrible
+    Of dire combustion and confused events
+    New hatch'd to the woeful time: the obscure bird
+    Clamour'd the livelong night: some say, the earth
+    Was feverous and did shake.
+
+MACBETH
+
+    'Twas a rough night.
+
+LENNOX
+
+    My young remembrance cannot parallel
+    A fellow to it.
+
+    Re-enter MACDUFF
+
+MACDUFF
+
+    O horror, horror, horror! Tongue nor heart
+    Cannot conceive nor name thee!
+
+MACBETH LENNOX
+
+    What's the matter.
+
+MACDUFF
+
+    Confusion now hath made his masterpiece!
+    Most sacrilegious murder hath broke ope
+    The Lord's anointed temple, and stole thence
+    The life o' the building!
+
+MACBETH
+
+    What is 't you say? the life?
+
+LENNOX
+
+    Mean you his majesty?
+
+MACDUFF
+
+    Approach the chamber, and destroy your sight
+    With a new Gorgon: do not bid me speak;
+    See, and then speak yourselves.
+
+    Exeunt MACBETH and LENNOX
+    Awake, awake!
+    Ring the alarum-bell. Murder and treason!
+    Banquo and Donalbain! Malcolm! awake!
+    Shake off this downy sleep, death's counterfeit,
+    And look on death itself! up, up, and see
+    The great doom's image! Malcolm! Banquo!
+    As from your graves rise up, and walk like sprites,
+    To countenance this horror! Ring the bell.
+
+    Bell rings
+
+    Enter LADY MACBETH
+
+LADY MACBETH
+
+    What's the business,
+    That such a hideous trumpet calls to parley
+    The sleepers of the house? speak, speak!
+
+MACDUFF
+
+    O gentle lady,
+    'Tis not for you to hear what I can speak:
+    The repetition, in a woman's ear,
+    Would murder as it fell.
+
+    Enter BANQUO
+    O Banquo, Banquo,
+    Our royal master 's murder'd!
+
+LADY MACBETH
+
+    Woe, alas!
+    What, in our house?
+
+BANQUO
+
+    Too cruel any where.
+    Dear Duff, I prithee, contradict thyself,
+    And say it is not so.
+
+    Re-enter MACBETH and LENNOX, with ROSS
+
+MACBETH
+
+    Had I but died an hour before this chance,
+    I had lived a blessed time; for, from this instant,
+    There 's nothing serious in mortality:
+    All is but toys: renown and grace is dead;
+    The wine of life is drawn, and the mere lees
+    Is left this vault to brag of.
+
+    Enter MALCOLM and DONALBAIN
+
+DONALBAIN
+
+    What is amiss?
+
+MACBETH
+
+    You are, and do not know't:
+    The spring, the head, the fountain of your blood
+    Is stopp'd; the very source of it is stopp'd.
+
+MACDUFF
+
+    Your royal father 's murder'd.
+
+MALCOLM
+
+    O, by whom?
+
+LENNOX
+
+    Those of his chamber, as it seem'd, had done 't:
+    Their hands and faces were an badged with blood;
+    So were their daggers, which unwiped we found
+    Upon their pillows:
+    They stared, and were distracted; no man's life
+    Was to be trusted with them.
+
+MACBETH
+
+    O, yet I do repent me of my fury,
+    That I did kill them.
+
+MACDUFF
+
+    Wherefore did you so?
+
+MACBETH
+
+    Who can be wise, amazed, temperate and furious,
+    Loyal and neutral, in a moment? No man:
+    The expedition my violent love
+    Outrun the pauser, reason. Here lay Duncan,
+    His silver skin laced with his golden blood;
+    And his gash'd stabs look'd like a breach in nature
+    For ruin's wasteful entrance: there, the murderers,
+    Steep'd in the colours of their trade, their daggers
+    Unmannerly breech'd with gore: who could refrain,
+    That had a heart to love, and in that heart
+    Courage to make 's love kno wn?
+
+LADY MACBETH
+
+    Help me hence, ho!
+
+MACDUFF
+
+    Look to the lady.
+
+MALCOLM
+
+    [Aside to DONALBAIN] Why do we hold our tongues,
+    That most may claim this argument for ours?
+
+DONALBAIN
+
+    [Aside to MALCOLM] What should be spoken here,
+    where our fate,
+    Hid in an auger-hole, may rush, and seize us?
+    Let 's away;
+    Our tears are not yet brew'd.
+
+MALCOLM
+
+    [Aside to DONALBAIN] Nor our strong sorrow
+    Upon the foot of motion.
+
+BANQUO
+
+    Look to the lady:
+
+    LADY MACBETH is carried out
+    And when we have our naked frailties hid,
+    That suffer in exposure, let us meet,
+    And question this most bloody piece of work,
+    To know it further. Fears and scruples shake us:
+    In the great hand of God I stand; and thence
+    Against the undivulged pretence I fight
+    Of treasonous malice.
+
+MACDUFF
+
+    And so do I.
+
+ALL
+
+    So all.
+
+MACBETH
+
+    Let's briefly put on manly readiness,
+    And meet i' the hall together.
+
+ALL
+
+    Well contented.
+
+    Exeunt all but Malcolm and Donalbain.
+
+MALCOLM
+
+    What will you do? Let's not consort with them:
+    To show an unfelt sorrow is an office
+    Which the false man does easy. I'll to England.
+
+DONALBAIN
+
+    To Ireland, I; our separated fortune
+    Shall keep us both the safer: where we are,
+    There's daggers in men's smiles: the near in blood,
+    The nearer bloody.
+
+MALCOLM
+
+    This murderous shaft that's shot
+    Hath not yet lighted, and our safest way
+    Is to avoid the aim. Therefore, to horse;
+    And let us not be dainty of leave-taking,
+    But shift away: there's warrant in that theft
+    Which steals itself, when there's no mercy left.
+
+    Exeunt
+
+SCENE IV. Outside Macbeth's castle.
+
+    Enter ROSS and an old Man 
+
+Old Man
+
+    Threescore and ten I can remember well:
+    Within the volume of which time I have seen
+    Hours dreadful and things strange; but this sore night
+    Hath trifled former knowings.
+
+ROSS
+
+    Ah, good father,
+    Thou seest, the heavens, as troubled with man's act,
+    Threaten his bloody stage: by the clock, 'tis day,
+    And yet dark night strangles the travelling lamp:
+    Is't night's predominance, or the day's shame,
+    That darkness does the face of earth entomb,
+    When living light should kiss it?
+
+Old Man
+
+    'Tis unnatural,
+    Even like the deed that's done. On Tuesday last,
+    A falcon, towering in her pride of place,
+    Was by a mousing owl hawk'd at and kill'd.
+
+ROSS
+
+    And Duncan's horses--a thing most strange and certain--
+    Beauteous and swift, the minions of their race,
+    Turn'd wild in nature, broke their stalls, flung out,
+    Contending 'gainst obedience, as they would make
+    War with mankind.
+
+Old Man
+
+    'Tis said they eat each other.
+
+ROSS
+
+    They did so, to the amazement of mine eyes
+    That look'd upon't. Here comes the good Macduff.
+
+    Enter MACDUFF
+    How goes the world, sir, now?
+
+MACDUFF
+
+    Why, see you not?
+
+ROSS
+
+    Is't known who did this more than bloody deed?
+
+MACDUFF
+
+    Those that Macbeth hath slain.
+
+ROSS
+
+    Alas, the day!
+    What good could they pretend?
+
+MACDUFF
+
+    They were suborn'd:
+    Malcolm and Donalbain, the king's two sons,
+    Are stol'n away and fled; which puts upon them
+    Suspicion of the deed.
+
+ROSS
+
+    'Gainst nature still!
+    Thriftless ambition, that wilt ravin up
+    Thine own life's means! Then 'tis most like
+    The sovereignty will fall upon Macbeth.
+
+MACDUFF
+
+    He is already named, and gone to Scone
+    To be invested.
+
+ROSS
+
+    Where is Duncan's body?
+
+MACDUFF
+
+    Carried to Colmekill,
+    The sacred storehouse of his predecessors,
+    And guardian of their bones.
+
+ROSS
+
+    Will you to Scone?
+
+MACDUFF
+
+    No, cousin, I'll to Fife.
+
+ROSS
+
+    Well, I will thither.
+
+MACDUFF
+
+    Well, may you see things well done there: adieu!
+    Lest our old robes sit easier than our new!
+
+ROSS
+
+    Farewell, father.
+
+Old Man
+
+    God's benison go with you; and with those
+    That would make good of bad, and friends of foes!
+
+    Exeunt
+
+ACT III
+SCENE I. Forres. The palace.
+
+    Enter BANQUO 
+
+BANQUO
+
+    Thou hast it now: king, Cawdor, Glamis, all,
+    As the weird women promised, and, I fear,
+    Thou play'dst most foully for't: yet it was said
+    It should not stand in thy posterity,
+    But that myself should be the root and father
+    Of many kings. If there come truth from them--
+    As upon thee, Macbeth, their speeches shine--
+    Why, by the verities on thee made good,
+    May they not be my oracles as well,
+    And set me up in hope? But hush! no more.
+
+    Sennet sounded. Enter MACBETH, as king, LADY MACBETH, as queen, LENNOX, ROSS, Lords, Ladies, and Attendants
+
+MACBETH
+
+    Here's our chief guest.
+
+LADY MACBETH
+
+    If he had been forgotten,
+    It had been as a gap in our great feast,
+    And all-thing unbecoming.
+
+MACBETH
+
+    To-night we hold a solemn supper sir,
+    And I'll request your presence.
+
+BANQUO
+
+    Let your highness
+    Command upon me; to the which my duties
+    Are with a most indissoluble tie
+    For ever knit.
+
+MACBETH
+
+    Ride you this afternoon?
+
+BANQUO
+
+    Ay, my good lord.
+
+MACBETH
+
+    We should have else desired your good advice,
+    Which still hath been both grave and prosperous,
+    In this day's council; but we'll take to-morrow.
+    Is't far you ride?
+
+BANQUO
+
+    As far, my lord, as will fill up the time
+    'Twixt this and supper: go not my horse the better,
+    I must become a borrower of the night
+    For a dark hour or twain.
+
+MACBETH
+
+    Fail not our feast.
+
+BANQUO
+
+    My lord, I will not.
+
+MACBETH
+
+    We hear, our bloody cousins are bestow'd
+    In England and in Ireland, not confessing
+    Their cruel parricide, filling their hearers
+    With strange invention: but of that to-morrow,
+    When therewithal we shall have cause of state
+    Craving us jointly. Hie you to horse: adieu,
+    Till you return at night. Goes Fleance with you?
+
+BANQUO
+
+    Ay, my good lord: our time does call upon 's.
+
+MACBETH
+
+    I wish your horses swift and sure of foot;
+    And so I do commend you to their backs. Farewell.
+
+    Exit BANQUO
+    Let every man be master of his time
+    Till seven at night: to make society
+    The sweeter welcome, we will keep ourself
+    Till supper-time alone: while then, God be with you!
+
+    Exeunt all but MACBETH, and an attendant
+    Sirrah, a word with you: attend those men
+    Our pleasure?
+
+ATTENDANT
+
+    They are, my lord, without the palace gate.
+
+MACBETH
+
+    Bring them before us.
+
+    Exit Attendant
+    To be thus is nothing;
+    But to be safely thus.--Our fears in Banquo
+    Stick deep; and in his royalty of nature
+    Reigns that which would be fear'd: 'tis much he dares;
+    And, to that dauntless temper of his mind,
+    He hath a wisdom that doth guide his valour
+    To act in safety. There is none but he
+    Whose being I do fear: and, under him,
+    My Genius is rebuked; as, it is said,
+    Mark Antony's was by Caesar. He chid the sisters
+    When first they put the name of king upon me,
+    And bade them speak to him: then prophet-like
+    They hail'd him father to a line of kings:
+    Upon my head they placed a fruitless crown,
+    And put a barren sceptre in my gripe,
+    Thence to be wrench'd with an unlineal hand,
+    No son of mine succeeding. If 't be so,
+    For Banquo's issue have I filed my mind;
+    For them the gracious Duncan have I murder'd;
+    Put rancours in the vessel of my peace
+    Only for them; and mine eternal jewel
+    Given to the common enemy of man,
+    To make them kings, the seed of Banquo kings!
+    Rather than so, come fate into the list.
+    And champion me to the utterance! Who's there!
+
+    Re-enter Attendant, with two Murderers
+    Now go to the door, and stay there till we call.
+
+    Exit Attendant
+    Was it not yesterday we spoke together?
+
+First Murderer
+
+    It was, so please your highness.
+
+MACBETH
+
+    Well then, now
+    Have you consider'd of my speeches? Know
+    That it was he in the times past which held you
+    So under fortune, which you thought had been
+    Our innocent self: this I made good to you
+    In our last conference, pass'd in probation with you,
+    How you were borne in hand, how cross'd,
+    the instruments,
+    Who wrought with them, and all things else that might
+    To half a soul and to a notion crazed
+    Say 'Thus did Banquo.'
+
+First Murderer
+
+    You made it known to us.
+
+MACBETH
+
+    I did so, and went further, which is now
+    Our point of second meeting. Do you find
+    Your patience so predominant in your nature
+    That you can let this go? Are you so gospell'd
+    To pray for this good man and for his issue,
+    Whose heavy hand hath bow'd you to the grave
+    And beggar'd yours for ever?
+
+First Murderer
+
+    We are men, my liege.
+
+MACBETH
+
+    Ay, in the catalogue ye go for men;
+    As hounds and greyhounds, mongrels, spaniels, curs,
+    Shoughs, water-rugs and demi-wolves, are clept
+    All by the name of dogs: the valued file
+    Distinguishes the swift, the slow, the subtle,
+    The housekeeper, the hunter, every one
+    According to the gift which bounteous nature
+    Hath in him closed; whereby he does receive
+    Particular addition. from the bill
+    That writes them all alike: and so of men.
+    Now, if you have a station in the file,
+    Not i' the worst rank of manhood, say 't;
+    And I will put that business in your bosoms,
+    Whose execution takes your enemy off,
+    Grapples you to the heart and love of us,
+    Who wear our health but sickly in his life,
+    Which in his death were perfect.
+
+Second Murderer
+
+    I am one, my liege,
+    Whom the vile blows and buffets of the world
+    Have so incensed that I am reckless what
+    I do to spite the world.
+
+First Murderer
+
+    And I another
+    So weary with disasters, tugg'd with fortune,
+    That I would set my lie on any chance,
+    To mend it, or be rid on't.
+
+MACBETH
+
+    Both of you
+    Know Banquo was your enemy.
+
+Both Murderers
+
+    True, my lord.
+
+MACBETH
+
+    So is he mine; and in such bloody distance,
+    That every minute of his being thrusts
+    Against my near'st of life: and though I could
+    With barefaced power sweep him from my sight
+    And bid my will avouch it, yet I must not,
+    For certain friends that are both his and mine,
+    Whose loves I may not drop, but wail his fall
+    Who I myself struck down; and thence it is,
+    That I to your assistance do make love,
+    Masking the business from the common eye
+    For sundry weighty reasons.
+
+Second Murderer
+
+    We shall, my lord,
+    Perform what you command us.
+
+First Murderer
+
+    Though our lives--
+
+MACBETH
+
+    Your spirits shine through you. Within this hour at most
+    I will advise you where to plant yourselves;
+    Acquaint you with the perfect spy o' the time,
+    The moment on't; for't must be done to-night,
+    And something from the palace; always thought
+    That I require a clearness: and with him--
+    To leave no rubs nor botches in the work--
+    Fleance his son, that keeps him company,
+    Whose absence is no less material to me
+    Than is his father's, must embrace the fate
+    Of that dark hour. Resolve yourselves apart:
+    I'll come to you anon.
+
+Both Murderers
+
+    We are resolved, my lord.
+
+MACBETH
+
+    I'll call upon you straight: abide within.
+
+    Exeunt Murderers
+    It is concluded. Banquo, thy soul's flight,
+    If it find heaven, must find it out to-night.
+
+    Exit
+
+SCENE II. The palace.
+
+    Enter LADY MACBETH and a Servant 
+
+LADY MACBETH
+
+    Is Banquo gone from court?
+
+Servant
+
+    Ay, madam, but returns again to-night.
+
+LADY MACBETH
+
+    Say to the king, I would attend his leisure
+    For a few words.
+
+Servant
+
+    Madam, I will.
+
+    Exit
+
+LADY MACBETH
+
+    Nought's had, all's spent,
+    Where our desire is got without content:
+    'Tis safer to be that which we destroy
+    Than by destruction dwell in doubtful joy.
+
+    Enter MACBETH
+    How now, my lord! why do you keep alone,
+    Of sorriest fancies your companions making,
+    Using those thoughts which should indeed have died
+    With them they think on? Things without all remedy
+    Should be without regard: what's done is done.
+
+MACBETH
+
+    We have scotch'd the snake, not kill'd it:
+    She'll close and be herself, whilst our poor malice
+    Remains in danger of her former tooth.
+    But let the frame of things disjoint, both the
+    worlds suffer,
+    Ere we will eat our meal in fear and sleep
+    In the affliction of these terrible dreams
+    That shake us nightly: better be with the dead,
+    Whom we, to gain our peace, have sent to peace,
+    Than on the torture of the mind to lie
+    In restless ecstasy. Duncan is in his grave;
+    After life's fitful fever he sleeps well;
+    Treason has done his worst: nor steel, nor poison,
+    Malice domestic, foreign levy, nothing,
+    Can touch him further.
+
+LADY MACBETH
+
+    Come on;
+    Gentle my lord, sleek o'er your rugged looks;
+    Be bright and jovial among your guests to-night.
+
+MACBETH
+
+    So shall I, love; and so, I pray, be you:
+    Let your remembrance apply to Banquo;
+    Present him eminence, both with eye and tongue:
+    Unsafe the while, that we
+    Must lave our honours in these flattering streams,
+    And make our faces vizards to our hearts,
+    Disguising what they are.
+
+LADY MACBETH
+
+    You must leave this.
+
+MACBETH
+
+    O, full of scorpions is my mind, dear wife!
+    Thou know'st that Banquo, and his Fleance, lives.
+
+LADY MACBETH
+
+    But in them nature's copy's not eterne.
+
+MACBETH
+
+    There's comfort yet; they are assailable;
+    Then be thou jocund: ere the bat hath flown
+    His cloister'd flight, ere to black Hecate's summons
+    The shard-borne beetle with his drowsy hums
+    Hath rung night's yawning peal, there shall be done
+    A deed of dreadful note.
+
+LADY MACBETH
+
+    What's to be done?
+
+MACBETH
+
+    Be innocent of the knowledge, dearest chuck,
+    Till thou applaud the deed. Come, seeling night,
+    Scarf up the tender eye of pitiful day;
+    And with thy bloody and invisible hand
+    Cancel and tear to pieces that great bond
+    Which keeps me pale! Light thickens; and the crow
+    Makes wing to the rooky wood:
+    Good things of day begin to droop and drowse;
+    While night's black agents to their preys do rouse.
+    Thou marvell'st at my words: but hold thee still;
+    Things bad begun make strong themselves by ill.
+    So, prithee, go with me.
+
+    Exeunt
+
+SCENE III. A park near the palace.
+
+    Enter three Murderers 
+
+First Murderer
+
+    But who did bid thee join with us?
+
+Third Murderer
+
+    Macbeth.
+
+Second Murderer
+
+    He needs not our mistrust, since he delivers
+    Our offices and what we have to do
+    To the direction just.
+
+First Murderer
+
+    Then stand with us.
+    The west yet glimmers with some streaks of day:
+    Now spurs the lated traveller apace
+    To gain the timely inn; and near approaches
+    The subject of our watch.
+
+Third Murderer
+
+    Hark! I hear horses.
+
+BANQUO
+
+    [Within] Give us a light there, ho!
+
+Second Murderer
+
+    Then 'tis he: the rest
+    That are within the note of expectation
+    Already are i' the court.
+
+First Murderer
+
+    His horses go about.
+
+Third Murderer
+
+    Almost a mile: but he does usually,
+    So all men do, from hence to the palace gate
+    Make it their walk.
+
+Second Murderer
+
+    A light, a light!
+
+    Enter BANQUO, and FLEANCE with a torch
+
+Third Murderer
+
+    'Tis he.
+
+First Murderer
+
+    Stand to't.
+
+BANQUO
+
+    It will be rain to-night.
+
+First Murderer
+
+    Let it come down.
+
+    They set upon BANQUO
+
+BANQUO
+
+    O, treachery! Fly, good Fleance, fly, fly, fly!
+    Thou mayst revenge. O slave!
+
+    Dies. FLEANCE escapes
+
+Third Murderer
+
+    Who did strike out the light?
+
+First Murderer
+
+    Wast not the way?
+
+Third Murderer
+
+    There's but one down; the son is fled.
+
+Second Murderer
+
+    We have lost
+    Best half of our affair.
+
+First Murderer
+
+    Well, let's away, and say how much is done.
+
+    Exeunt
+
+SCENE IV. The same. Hall in the palace.
+
+    A banquet prepared. Enter MACBETH, LADY MACBETH, ROSS, LENNOX, Lords, and Attendants 
+
+MACBETH
+
+    You know your own degrees; sit down: at first
+    And last the hearty welcome.
+
+Lords
+
+    Thanks to your majesty.
+
+MACBETH
+
+    Ourself will mingle with society,
+    And play the humble host.
+    Our hostess keeps her state, but in best time
+    We will require her welcome.
+
+LADY MACBETH
+
+    Pronounce it for me, sir, to all our friends;
+    For my heart speaks they are welcome.
+
+    First Murderer appears at the door
+
+MACBETH
+
+    See, they encounter thee with their hearts' thanks.
+    Both sides are even: here I'll sit i' the midst:
+    Be large in mirth; anon we'll drink a measure
+    The table round.
+
+    Approaching the door
+    There's blood on thy face.
+
+First Murderer
+
+    'Tis Banquo's then.
+
+MACBETH
+
+    'Tis better thee without than he within.
+    Is he dispatch'd?
+
+First Murderer
+
+    My lord, his throat is cut; that I did for him.
+
+MACBETH
+
+    Thou art the best o' the cut-throats: yet he's good
+    That did the like for Fleance: if thou didst it,
+    Thou art the nonpareil.
+
+First Murderer
+
+    Most royal sir,
+    Fleance is 'scaped.
+
+MACBETH
+
+    Then comes my fit again: I had else been perfect,
+    Whole as the marble, founded as the rock,
+    As broad and general as the casing air:
+    But now I am cabin'd, cribb'd, confined, bound in
+    To saucy doubts and fears. But Banquo's safe?
+
+First Murderer
+
+    Ay, my good lord: safe in a ditch he bides,
+    With twenty trenched gashes on his head;
+    The least a death to nature.
+
+MACBETH
+
+    Thanks for that:
+    There the grown serpent lies; the worm that's fled
+    Hath nature that in time will venom breed,
+    No teeth for the present. Get thee gone: to-morrow
+    We'll hear, ourselves, again.
+
+    Exit Murderer
+
+LADY MACBETH
+
+    My royal lord,
+    You do not give the cheer: the feast is sold
+    That is not often vouch'd, while 'tis a-making,
+    'Tis given with welcome: to feed were best at home;
+    From thence the sauce to meat is ceremony;
+    Meeting were bare without it.
+
+MACBETH
+
+    Sweet remembrancer!
+    Now, good digestion wait on appetite,
+    And health on both!
+
+LENNOX
+
+    May't please your highness sit.
+
+    The GHOST OF BANQUO enters, and sits in MACBETH's place
+
+MACBETH
+
+    Here had we now our country's honour roof'd,
+    Were the graced person of our Banquo present;
+    Who may I rather challenge for unkindness
+    Than pity for mischance!
+
+ROSS
+
+    His absence, sir,
+    Lays blame upon his promise. Please't your highness
+    To grace us with your royal company.
+
+MACBETH
+
+    The table's full.
+
+LENNOX
+
+    Here is a place reserved, sir.
+
+MACBETH
+
+    Where?
+
+LENNOX
+
+    Here, my good lord. What is't that moves your highness?
+
+MACBETH
+
+    Which of you have done this?
+
+Lords
+
+    What, my good lord?
+
+MACBETH
+
+    Thou canst not say I did it: never shake
+    Thy gory locks at me.
+
+ROSS
+
+    Gentlemen, rise: his highness is not well.
+
+LADY MACBETH
+
+    Sit, worthy friends: my lord is often thus,
+    And hath been from his youth: pray you, keep seat;
+    The fit is momentary; upon a thought
+    He will again be well: if much you note him,
+    You shall offend him and extend his passion:
+    Feed, and regard him not. Are you a man?
+
+MACBETH
+
+    Ay, and a bold one, that dare look on that
+    Which might appal the devil.
+
+LADY MACBETH
+
+    O proper stuff!
+    This is the very painting of your fear:
+    This is the air-drawn dagger which, you said,
+    Led you to Duncan. O, these flaws and starts,
+    Impostors to true fear, would well become
+    A woman's story at a winter's fire,
+    Authorized by her grandam. Shame itself!
+    Why do you make such faces? When all's done,
+    You look but on a stool.
+
+MACBETH
+
+    Prithee, see there! behold! look! lo!
+    how say you?
+    Why, what care I? If thou canst nod, speak too.
+    If charnel-houses and our graves must send
+    Those that we bury back, our monuments
+    Shall be the maws of kites.
+
+    GHOST OF BANQUO vanishes
+
+LADY MACBETH
+
+    What, quite unmann'd in folly?
+
+MACBETH
+
+    If I stand here, I saw him.
+
+LADY MACBETH
+
+    Fie, for shame!
+
+MACBETH
+
+    Blood hath been shed ere now, i' the olden time,
+    Ere human statute purged the gentle weal;
+    Ay, and since too, murders have been perform'd
+    Too terrible for the ear: the times have been,
+    That, when the brains were out, the man would die,
+    And there an end; but now they rise again,
+    With twenty mortal murders on their crowns,
+    And push us from our stools: this is more strange
+    Than such a murder is.
+
+LADY MACBETH
+
+    My worthy lord,
+    Your noble friends do lack you.
+
+MACBETH
+
+    I do forget.
+    Do not muse at me, my most worthy friends,
+    I have a strange infirmity, which is nothing
+    To those that know me. Come, love and health to all;
+    Then I'll sit down. Give me some wine; fill full.
+    I drink to the general joy o' the whole table,
+    And to our dear friend Banquo, whom we miss;
+    Would he were here! to all, and him, we thirst,
+    And all to all.
+
+Lords
+
+    Our duties, and the pledge.
+
+    Re-enter GHOST OF BANQUO
+
+MACBETH
+
+    Avaunt! and quit my sight! let the earth hide thee!
+    Thy bones are marrowless, thy blood is cold;
+    Thou hast no speculation in those eyes
+    Which thou dost glare with!
+
+LADY MACBETH
+
+    Think of this, good peers,
+    But as a thing of custom: 'tis no other;
+    Only it spoils the pleasure of the time.
+
+MACBETH
+
+    What man dare, I dare:
+    Approach thou like the rugged Russian bear,
+    The arm'd rhinoceros, or the Hyrcan tiger;
+    Take any shape but that, and my firm nerves
+    Shall never tremble: or be alive again,
+    And dare me to the desert with thy sword;
+    If trembling I inhabit then, protest me
+    The baby of a girl. Hence, horrible shadow!
+    Unreal mockery, hence!
+
+    GHOST OF BANQUO vanishes
+    Why, so: being gone,
+    I am a man again. Pray you, sit still.
+
+LADY MACBETH
+
+    You have displaced the mirth, broke the good meeting,
+    With most admired disorder.
+
+MACBETH
+
+    Can such things be,
+    And overcome us like a summer's cloud,
+    Without our special wonder? You make me strange
+    Even to the disposition that I owe,
+    When now I think you can behold such sights,
+    And keep the natural ruby of your cheeks,
+    When mine is blanched with fear.
+
+ROSS
+
+    What sights, my lord?
+
+LADY MACBETH
+
+    I pray you, speak not; he grows worse and worse;
+    Question enrages him. At once, good night:
+    Stand not upon the order of your going,
+    But go at once.
+
+LENNOX
+
+    Good night; and better health
+    Attend his majesty!
+
+LADY MACBETH
+
+    A kind good night to all!
+
+    Exeunt all but MACBETH and LADY MACBETH
+
+MACBETH
+
+    It will have blood; they say, blood will have blood:
+    Stones have been known to move and trees to speak;
+    Augurs and understood relations have
+    By magot-pies and choughs and rooks brought forth
+    The secret'st man of blood. What is the night?
+
+LADY MACBETH
+
+    Almost at odds with morning, which is which.
+
+MACBETH
+
+    How say'st thou, that Macduff denies his person
+    At our great bidding?
+
+LADY MACBETH
+
+    Did you send to him, sir?
+
+MACBETH
+
+    I hear it by the way; but I will send:
+    There's not a one of them but in his house
+    I keep a servant fee'd. I will to-morrow,
+    And betimes I will, to the weird sisters:
+    More shall they speak; for now I am bent to know,
+    By the worst means, the worst. For mine own good,
+    All causes shall give way: I am in blood
+    Stepp'd in so far that, should I wade no more,
+    Returning were as tedious as go o'er:
+    Strange things I have in head, that will to hand;
+    Which must be acted ere they may be scann'd.
+
+LADY MACBETH
+
+    You lack the season of all natures, sleep.
+
+MACBETH
+
+    Come, we'll to sleep. My strange and self-abuse
+    Is the initiate fear that wants hard use:
+    We are yet but young in deed.
+
+    Exeunt
+
+SCENE V. A Heath.
+
+    Thunder. Enter the three Witches meeting HECATE 
+
+First Witch
+
+    Why, how now, Hecate! you look angerly.
+
+HECATE
+
+    Have I not reason, beldams as you are,
+    Saucy and overbold? How did you dare
+    To trade and traffic with Macbeth
+    In riddles and affairs of death;
+    And I, the mistress of your charms,
+    The close contriver of all harms,
+    Was never call'd to bear my part,
+    Or show the glory of our art?
+    And, which is worse, all you have done
+    Hath been but for a wayward son,
+    Spiteful and wrathful, who, as others do,
+    Loves for his own ends, not for you.
+    But make amends now: get you gone,
+    And at the pit of Acheron
+    Meet me i' the morning: thither he
+    Will come to know his destiny:
+    Your vessels and your spells provide,
+    Your charms and every thing beside.
+    I am for the air; this night I'll spend
+    Unto a dismal and a fatal end:
+    Great business must be wrought ere noon:
+    Upon the corner of the moon
+    There hangs a vaporous drop profound;
+    I'll catch it ere it come to ground:
+    And that distill'd by magic sleights
+    Shall raise such artificial sprites
+    As by the strength of their illusion
+    Shall draw him on to his confusion:
+    He shall spurn fate, scorn death, and bear
+    He hopes 'bove wisdom, grace and fear:
+    And you all know, security
+    Is mortals' chiefest enemy.
+
+    Music and a song within: 'Come away, come away,' & c
+    Hark! I am call'd; my little spirit, see,
+    Sits in a foggy cloud, and stays for me.
+
+    Exit
+
+First Witch
+
+    Come, let's make haste; she'll soon be back again.
+
+    Exeunt
+
+SCENE VI. Forres. The palace.
+
+    Enter LENNOX and another Lord 
+
+LENNOX
+
+    My former speeches have but hit your thoughts,
+    Which can interpret further: only, I say,
+    Things have been strangely borne. The
+    gracious Duncan
+    Was pitied of Macbeth: marry, he was dead:
+    And the right-valiant Banquo walk'd too late;
+    Whom, you may say, if't please you, Fleance kill'd,
+    For Fleance fled: men must not walk too late.
+    Who cannot want the thought how monstrous
+    It was for Malcolm and for Donalbain
+    To kill their gracious father? damned fact!
+    How it did grieve Macbeth! did he not straight
+    In pious rage the two delinquents tear,
+    That were the slaves of drink and thralls of sleep?
+    Was not that nobly done? Ay, and wisely too;
+    For 'twould have anger'd any heart alive
+    To hear the men deny't. So that, I say,
+    He has borne all things well: and I do think
+    That had he Duncan's sons under his key--
+    As, an't please heaven, he shall not--they
+    should find
+    What 'twere to kill a father; so should Fleance.
+    But, peace! for from broad words and 'cause he fail'd
+    His presence at the tyrant's feast, I hear
+    Macduff lives in disgrace: sir, can you tell
+    Where he bestows himself?
+
+Lord
+
+    The son of Duncan,
+    From whom this tyrant holds the due of birth
+    Lives in the English court, and is received
+    Of the most pious Edward with such grace
+    That the malevolence of fortune nothing
+    Takes from his high respect: thither Macduff
+    Is gone to pray the holy king, upon his aid
+    To wake Northumberland and warlike Siward:
+    That, by the help of these--with Him above
+    To ratify the work--we may again
+    Give to our tables meat, sleep to our nights,
+    Free from our feasts and banquets bloody knives,
+    Do faithful homage and receive free honours:
+    All which we pine for now: and this report
+    Hath so exasperate the king that he
+    Prepares for some attempt of war.
+
+LENNOX
+
+    Sent he to Macduff?
+
+Lord
+
+    He did: and with an absolute 'Sir, not I,'
+    The cloudy messenger turns me his back,
+    And hums, as who should say 'You'll rue the time
+    That clogs me with this answer.'
+
+LENNOX
+
+    And that well might
+    Advise him to a caution, to hold what distance
+    His wisdom can provide. Some holy angel
+    Fly to the court of England and unfold
+    His message ere he come, that a swift blessing
+    May soon return to this our suffering country
+    Under a hand accursed!
+
+Lord
+
+    I'll send my prayers with him.
+
+    Exeunt
+
+ACT IV
+SCENE I. A cavern. In the middle, a boiling cauldron.
+
+    Thunder. Enter the three Witches 
+
+First Witch
+
+    Thrice the brinded cat hath mew'd.
+
+Second Witch
+
+    Thrice and once the hedge-pig whined.
+
+Third Witch
+
+    Harpier cries 'Tis time, 'tis time.
+
+First Witch
+
+    Round about the cauldron go;
+    In the poison'd entrails throw.
+    Toad, that under cold stone
+    Days and nights has thirty-one
+    Swelter'd venom sleeping got,
+    Boil thou first i' the charmed pot.
+
+ALL
+
+    Double, double toil and trouble;
+    Fire burn, and cauldron bubble.
+
+Second Witch
+
+    Fillet of a fenny snake,
+    In the cauldron boil and bake;
+    Eye of newt and toe of frog,
+    Wool of bat and tongue of dog,
+    Adder's fork and blind-worm's sting,
+    Lizard's leg and owlet's wing,
+    For a charm of powerful trouble,
+    Like a hell-broth boil and bubble.
+
+ALL
+
+    Double, double toil and trouble;
+    Fire burn and cauldron bubble.
+
+Third Witch
+
+    Scale of dragon, tooth of wolf,
+    Witches' mummy, maw and gulf
+    Of the ravin'd salt-sea shark,
+    Root of hemlock digg'd i' the dark,
+    Liver of blaspheming Jew,
+    Gall of goat, and slips of yew
+    Silver'd in the moon's eclipse,
+    Nose of Turk and Tartar's lips,
+    Finger of birth-strangled babe
+    Ditch-deliver'd by a drab,
+    Make the gruel thick and slab:
+    Add thereto a tiger's chaudron,
+    For the ingredients of our cauldron.
+
+ALL
+
+    Double, double toil and trouble;
+    Fire burn and cauldron bubble.
+
+Second Witch
+
+    Cool it with a baboon's blood,
+    Then the charm is firm and good.
+
+    Enter HECATE to the other three Witches
+
+HECATE
+
+    O well done! I commend your pains;
+    And every one shall share i' the gains;
+    And now about the cauldron sing,
+    Live elves and fairies in a ring,
+    Enchanting all that you put in.
+
+    Music and a song: 'Black spirits,' & c
+
+    HECATE retires
+
+Second Witch
+
+    By the pricking of my thumbs,
+    Something wicked this way comes.
+    Open, locks,
+    Whoever knocks!
+
+    Enter MACBETH
+
+MACBETH
+
+    How now, you secret, black, and midnight hags!
+    What is't you do?
+
+ALL
+
+    A deed without a name.
+
+MACBETH
+
+    I conjure you, by that which you profess,
+    Howe'er you come to know it, answer me:
+    Though you untie the winds and let them fight
+    Against the churches; though the yesty waves
+    Confound and swallow navigation up;
+    Though bladed corn be lodged and trees blown down;
+    Though castles topple on their warders' heads;
+    Though palaces and pyramids do slope
+    Their heads to their foundations; though the treasure
+    Of nature's germens tumble all together,
+    Even till destruction sicken; answer me
+    To what I ask you.
+
+First Witch
+
+    Speak.
+
+Second Witch
+
+    Demand.
+
+Third Witch
+
+    We'll answer.
+
+First Witch
+
+    Say, if thou'dst rather hear it from our mouths,
+    Or from our masters?
+
+MACBETH
+
+    Call 'em; let me see 'em.
+
+First Witch
+
+    Pour in sow's blood, that hath eaten
+    Her nine farrow; grease that's sweaten
+    From the murderer's gibbet throw
+    Into the flame.
+
+ALL
+
+    Come, high or low;
+    Thyself and office deftly show!
+
+    Thunder. First Apparition: an armed Head
+
+MACBETH
+
+    Tell me, thou unknown power,--
+
+First Witch
+
+    He knows thy thought:
+    Hear his speech, but say thou nought.
+
+First Apparition
+
+    Macbeth! Macbeth! Macbeth! beware Macduff;
+    Beware the thane of Fife. Dismiss me. Enough.
+
+    Descends
+
+MACBETH
+
+    Whate'er thou art, for thy good caution, thanks;
+    Thou hast harp'd my fear aright: but one
+    word more,--
+
+First Witch
+
+    He will not be commanded: here's another,
+    More potent than the first.
+
+    Thunder. Second Apparition: A bloody Child
+
+Second Apparition
+
+    Macbeth! Macbeth! Macbeth!
+
+MACBETH
+
+    Had I three ears, I'ld hear thee.
+
+Second Apparition
+
+    Be bloody, bold, and resolute; laugh to scorn
+    The power of man, for none of woman born
+    Shall harm Macbeth.
+
+    Descends
+
+MACBETH
+
+    Then live, Macduff: what need I fear of thee?
+    But yet I'll make assurance double sure,
+    And take a bond of fate: thou shalt not live;
+    That I may tell pale-hearted fear it lies,
+    And sleep in spite of thunder.
+
+    Thunder. Third Apparition: a Child crowned, with a tree in his hand
+    What is this
+    That rises like the issue of a king,
+    And wears upon his baby-brow the round
+    And top of sovereignty?
+
+ALL
+
+    Listen, but speak not to't.
+
+Third Apparition
+
+    Be lion-mettled, proud; and take no care
+    Who chafes, who frets, or where conspirers are:
+    Macbeth shall never vanquish'd be until
+    Great Birnam wood to high Dunsinane hill
+    Shall come against him.
+
+    Descends
+
+MACBETH
+
+    That will never be
+    Who can impress the forest, bid the tree
+    Unfix his earth-bound root? Sweet bodements! good!
+    Rebellion's head, rise never till the wood
+    Of Birnam rise, and our high-placed Macbeth
+    Shall live the lease of nature, pay his breath
+    To time and mortal custom. Yet my heart
+    Throbs to know one thing: tell me, if your art
+    Can tell so much: shall Banquo's issue ever
+    Reign in this kingdom?
+
+ALL
+
+    Seek to know no more.
+
+MACBETH
+
+    I will be satisfied: deny me this,
+    And an eternal curse fall on you! Let me know.
+    Why sinks that cauldron? and what noise is this?
+
+    Hautboys
+
+First Witch
+
+    Show!
+
+Second Witch
+
+    Show!
+
+Third Witch
+
+    Show!
+
+ALL
+
+    Show his eyes, and grieve his heart;
+    Come like shadows, so depart!
+
+    A show of Eight Kings, the last with a glass in his hand; GHOST OF BANQUO following
+
+MACBETH
+
+    Thou art too like the spirit of Banquo: down!
+    Thy crown does sear mine eye-balls. And thy hair,
+    Thou other gold-bound brow, is like the first.
+    A third is like the former. Filthy hags!
+    Why do you show me this? A fourth! Start, eyes!
+    What, will the line stretch out to the crack of doom?
+    Another yet! A seventh! I'll see no more:
+    And yet the eighth appears, who bears a glass
+    Which shows me many more; and some I see
+    That two-fold balls and treble scepters carry:
+    Horrible sight! Now, I see, 'tis true;
+    For the blood-bolter'd Banquo smiles upon me,
+    And points at them for his.
+
+    Apparitions vanish
+    What, is this so?
+
+First Witch
+
+    Ay, sir, all this is so: but why
+    Stands Macbeth thus amazedly?
+    Come, sisters, cheer we up his sprites,
+    And show the best of our delights:
+    I'll charm the air to give a sound,
+    While you perform your antic round:
+    That this great king may kindly say,
+    Our duties did his welcome pay.
+
+    Music. The witches dance and then vanish, with HECATE
+
+MACBETH
+
+    Where are they? Gone? Let this pernicious hour
+    Stand aye accursed in the calendar!
+    Come in, without there!
+
+    Enter LENNOX
+
+LENNOX
+
+    What's your grace's will?
+
+MACBETH
+
+    Saw you the weird sisters?
+
+LENNOX
+
+    No, my lord.
+
+MACBETH
+
+    Came they not by you?
+
+LENNOX
+
+    No, indeed, my lord.
+
+MACBETH
+
+    Infected be the air whereon they ride;
+    And damn'd all those that trust them! I did hear
+    The galloping of horse: who was't came by?
+
+LENNOX
+
+    'Tis two or three, my lord, that bring you word
+    Macduff is fled to England.
+
+MACBETH
+
+    Fled to England!
+
+LENNOX
+
+    Ay, my good lord.
+
+MACBETH
+
+    Time, thou anticipatest my dread exploits:
+    The flighty purpose never is o'ertook
+    Unless the deed go with it; from this moment
+    The very firstlings of my heart shall be
+    The firstlings of my hand. And even now,
+    To crown my thoughts with acts, be it thought and done:
+    The castle of Macduff I will surprise;
+    Seize upon Fife; give to the edge o' the sword
+    His wife, his babes, and all unfortunate souls
+    That trace him in his line. No boasting like a fool;
+    This deed I'll do before this purpose cool.
+    But no more sights!--Where are these gentlemen?
+    Come, bring me where they are.
+
+    Exeunt
+
+SCENE II. Fife. Macduff's castle.
+
+    Enter LADY MACDUFF, her Son, and ROSS 
+
+LADY MACDUFF
+
+    What had he done, to make him fly the land?
+
+ROSS
+
+    You must have patience, madam.
+
+LADY MACDUFF
+
+    He had none:
+    His flight was madness: when our actions do not,
+    Our fears do make us traitors.
+
+ROSS
+
+    You know not
+    Whether it was his wisdom or his fear.
+
+LADY MACDUFF
+
+    Wisdom! to leave his wife, to leave his babes,
+    His mansion and his titles in a place
+    From whence himself does fly? He loves us not;
+    He wants the natural touch: for the poor wren,
+    The most diminutive of birds, will fight,
+    Her young ones in her nest, against the owl.
+    All is the fear and nothing is the love;
+    As little is the wisdom, where the flight
+    So runs against all reason.
+
+ROSS
+
+    My dearest coz,
+    I pray you, school yourself: but for your husband,
+    He is noble, wise, judicious, and best knows
+    The fits o' the season. I dare not speak
+    much further;
+    But cruel are the times, when we are traitors
+    And do not know ourselves, when we hold rumour
+    From what we fear, yet know not what we fear,
+    But float upon a wild and violent sea
+    Each way and move. I take my leave of you:
+    Shall not be long but I'll be here again:
+    Things at the worst will cease, or else climb upward
+    To what they were before. My pretty cousin,
+    Blessing upon you!
+
+LADY MACDUFF
+
+    Father'd he is, and yet he's fatherless.
+
+ROSS
+
+    I am so much a fool, should I stay longer,
+    It would be my disgrace and your discomfort:
+    I take my leave at once.
+
+    Exit
+
+LADY MACDUFF
+
+    Sirrah, your father's dead;
+    And what will you do now? How will you live?
+
+Son
+
+    As birds do, mother.
+
+LADY MACDUFF
+
+    What, with worms and flies?
+
+Son
+
+    With what I get, I mean; and so do they.
+
+LADY MACDUFF
+
+    Poor bird! thou'ldst never fear the net nor lime,
+    The pitfall nor the gin.
+
+Son
+
+    Why should I, mother? Poor birds they are not set for.
+    My father is not dead, for all your saying.
+
+LADY MACDUFF
+
+    Yes, he is dead; how wilt thou do for a father?
+
+Son
+
+    Nay, how will you do for a husband?
+
+LADY MACDUFF
+
+    Why, I can buy me twenty at any market.
+
+Son
+
+    Then you'll buy 'em to sell again.
+
+LADY MACDUFF
+
+    Thou speak'st with all thy wit: and yet, i' faith,
+    With wit enough for thee.
+
+Son
+
+    Was my father a traitor, mother?
+
+LADY MACDUFF
+
+    Ay, that he was.
+
+Son
+
+    What is a traitor?
+
+LADY MACDUFF
+
+    Why, one that swears and lies.
+
+Son
+
+    And be all traitors that do so?
+
+LADY MACDUFF
+
+    Every one that does so is a traitor, and must be hanged.
+
+Son
+
+    And must they all be hanged that swear and lie?
+
+LADY MACDUFF
+
+    Every one.
+
+Son
+
+    Who must hang them?
+
+LADY MACDUFF
+
+    Why, the honest men.
+
+Son
+
+    Then the liars and swearers are fools,
+    for there are liars and swearers enow to beat
+    the honest men and hang up them.
+
+LADY MACDUFF
+
+    Now, God help thee, poor monkey!
+    But how wilt thou do for a father?
+
+Son
+
+    If he were dead, you'ld weep for
+    him: if you would not, it were a good sign
+    that I should quickly have a new father.
+
+LADY MACDUFF
+
+    Poor prattler, how thou talk'st!
+
+    Enter a Messenger
+
+Messenger
+
+    Bless you, fair dame! I am not to you known,
+    Though in your state of honour I am perfect.
+    I doubt some danger does approach you nearly:
+    If you will take a homely man's advice,
+    Be not found here; hence, with your little ones.
+    To fright you thus, methinks, I am too savage;
+    To do worse to you were fell cruelty,
+    Which is too nigh your person. Heaven preserve you!
+    I dare abide no longer.
+
+    Exit
+
+LADY MACDUFF
+
+    Whither should I fly?
+    I have done no harm. But I remember now
+    I am in this earthly world; where to do harm
+    Is often laudable, to do good sometime
+    Accounted dangerous folly: why then, alas,
+    Do I put up that womanly defence,
+    To say I have done no harm?
+
+    Enter Murderers
+    What are these faces?
+
+First Murderer
+
+    Where is your husband?
+
+LADY MACDUFF
+
+    I hope, in no place so unsanctified
+    Where such as thou mayst find him.
+
+First Murderer
+
+    He's a traitor.
+
+Son
+
+    Thou liest, thou shag-hair'd villain!
+
+First Murderer
+
+    What, you egg!
+
+    Stabbing him
+    Young fry of treachery!
+
+Son
+
+    He has kill'd me, mother:
+    Run away, I pray you!
+
+    Dies
+
+    Exit LADY MACDUFF, crying 'Murder!' Exeunt Murderers, following her
+
+SCENE III. England. Before the King's palace.
+
+    Enter MALCOLM and MACDUFF 
+
+MALCOLM
+
+    Let us seek out some desolate shade, and there
+    Weep our sad bosoms empty.
+
+MACDUFF
+
+    Let us rather
+    Hold fast the mortal sword, and like good men
+    Bestride our down-fall'n birthdom: each new morn
+    New widows howl, new orphans cry, new sorrows
+    Strike heaven on the face, that it resounds
+    As if it felt with Scotland and yell'd out
+    Like syllable of dolour.
+
+MALCOLM
+
+    What I believe I'll wail,
+    What know believe, and what I can redress,
+    As I shall find the time to friend, I will.
+    What you have spoke, it may be so perchance.
+    This tyrant, whose sole name blisters our tongues,
+    Was once thought honest: you have loved him well.
+    He hath not touch'd you yet. I am young;
+    but something
+    You may deserve of him through me, and wisdom
+    To offer up a weak poor innocent lamb
+    To appease an angry god.
+
+MACDUFF
+
+    I am not treacherous.
+
+MALCOLM
+
+    But Macbeth is.
+    A good and virtuous nature may recoil
+    In an imperial charge. But I shall crave
+    your pardon;
+    That which you are my thoughts cannot transpose:
+    Angels are bright still, though the brightest fell;
+    Though all things foul would wear the brows of grace,
+    Yet grace must still look so.
+
+MACDUFF
+
+    I have lost my hopes.
+
+MALCOLM
+
+    Perchance even there where I did find my doubts.
+    Why in that rawness left you wife and child,
+    Those precious motives, those strong knots of love,
+    Without leave-taking? I pray you,
+    Let not my jealousies be your dishonours,
+    But mine own safeties. You may be rightly just,
+    Whatever I shall think.
+
+MACDUFF
+
+    Bleed, bleed, poor country!
+    Great tyranny! lay thou thy basis sure,
+    For goodness dare not cheque thee: wear thou
+    thy wrongs;
+    The title is affeer'd! Fare thee well, lord:
+    I would not be the villain that thou think'st
+    For the whole space that's in the tyrant's grasp,
+    And the rich East to boot.
+
+MALCOLM
+
+    Be not offended:
+    I speak not as in absolute fear of you.
+    I think our country sinks beneath the yoke;
+    It weeps, it bleeds; and each new day a gash
+    Is added to her wounds: I think withal
+    There would be hands uplifted in my right;
+    And here from gracious England have I offer
+    Of goodly thousands: but, for all this,
+    When I shall tread upon the tyrant's head,
+    Or wear it on my sword, yet my poor country
+    Shall have more vices than it had before,
+    More suffer and more sundry ways than ever,
+    By him that shall succeed.
+
+MACDUFF
+
+    What should he be?
+
+MALCOLM
+
+    It is myself I mean: in whom I know
+    All the particulars of vice so grafted
+    That, when they shall be open'd, black Macbeth
+    Will seem as pure as snow, and the poor state
+    Esteem him as a lamb, being compared
+    With my confineless harms.
+
+MACDUFF
+
+    Not in the legions
+    Of horrid hell can come a devil more damn'd
+    In evils to top Macbeth.
+
+MALCOLM
+
+    I grant him bloody,
+    Luxurious, avaricious, false, deceitful,
+    Sudden, malicious, smacking of every sin
+    That has a name: but there's no bottom, none,
+    In my voluptuousness: your wives, your daughters,
+    Your matrons and your maids, could not fill up
+    The cistern of my lust, and my desire
+    All continent impediments would o'erbear
+    That did oppose my will: better Macbeth
+    Than such an one to reign.
+
+MACDUFF
+
+    Boundless intemperance
+    In nature is a tyranny; it hath been
+    The untimely emptying of the happy throne
+    And fall of many kings. But fear not yet
+    To take upon you what is yours: you may
+    Convey your pleasures in a spacious plenty,
+    And yet seem cold, the time you may so hoodwink.
+    We have willing dames enough: there cannot be
+    That vulture in you, to devour so many
+    As will to greatness dedicate themselves,
+    Finding it so inclined.
+
+MALCOLM
+
+    With this there grows
+    In my most ill-composed affection such
+    A stanchless avarice that, were I king,
+    I should cut off the nobles for their lands,
+    Desire his jewels and this other's house:
+    And my more-having would be as a sauce
+    To make me hunger more; that I should forge
+    Quarrels unjust against the good and loyal,
+    Destroying them for wealth.
+
+MACDUFF
+
+    This avarice
+    Sticks deeper, grows with more pernicious root
+    Than summer-seeming lust, and it hath been
+    The sword of our slain kings: yet do not fear;
+    Scotland hath foisons to fill up your will.
+    Of your mere own: all these are portable,
+    With other graces weigh'd.
+
+MALCOLM
+
+    But I have none: the king-becoming graces,
+    As justice, verity, temperance, stableness,
+    Bounty, perseverance, mercy, lowliness,
+    Devotion, patience, courage, fortitude,
+    I have no relish of them, but abound
+    In the division of each several crime,
+    Acting it many ways. Nay, had I power, I should
+    Pour the sweet milk of concord into hell,
+    Uproar the universal peace, confound
+    All unity on earth.
+
+MACDUFF
+
+    O Scotland, Scotland!
+
+MALCOLM
+
+    If such a one be fit to govern, speak:
+    I am as I have spoken.
+
+MACDUFF
+
+    Fit to govern!
+    No, not to live. O nation miserable,
+    With an untitled tyrant bloody-scepter'd,
+    When shalt thou see thy wholesome days again,
+    Since that the truest issue of thy throne
+    By his own interdiction stands accursed,
+    And does blaspheme his breed? Thy royal father
+    Was a most sainted king: the queen that bore thee,
+    Oftener upon her knees than on her feet,
+    Died every day she lived. Fare thee well!
+    These evils thou repeat'st upon thyself
+    Have banish'd me from Scotland. O my breast,
+    Thy hope ends here!
+
+MALCOLM
+
+    Macduff, this noble passion,
+    Child of integrity, hath from my soul
+    Wiped the black scruples, reconciled my thoughts
+    To thy good truth and honour. Devilish Macbeth
+    By many of these trains hath sought to win me
+    Into his power, and modest wisdom plucks me
+    From over-credulous haste: but God above
+    Deal between thee and me! for even now
+    I put myself to thy direction, and
+    Unspeak mine own detraction, here abjure
+    The taints and blames I laid upon myself,
+    For strangers to my nature. I am yet
+    Unknown to woman, never was forsworn,
+    Scarcely have coveted what was mine own,
+    At no time broke my faith, would not betray
+    The devil to his fellow and delight
+    No less in truth than life: my first false speaking
+    Was this upon myself: what I am truly,
+    Is thine and my poor country's to command:
+    Whither indeed, before thy here-approach,
+    Old Siward, with ten thousand warlike men,
+    Already at a point, was setting forth.
+    Now we'll together; and the chance of goodness
+    Be like our warranted quarrel! Why are you silent?
+
+MACDUFF
+
+    Such welcome and unwelcome things at once
+    'Tis hard to reconcile.
+
+    Enter a Doctor
+
+MALCOLM
+
+    Well; more anon.--Comes the king forth, I pray you?
+
+Doctor
+
+    Ay, sir; there are a crew of wretched souls
+    That stay his cure: their malady convinces
+    The great assay of art; but at his touch--
+    Such sanctity hath heaven given his hand--
+    They presently amend.
+
+MALCOLM
+
+    I thank you, doctor.
+
+    Exit Doctor
+
+MACDUFF
+
+    What's the disease he means?
+
+MALCOLM
+
+    'Tis call'd the evil:
+    A most miraculous work in this good king;
+    Which often, since my here-remain in England,
+    I have seen him do. How he solicits heaven,
+    Himself best knows: but strangely-visited people,
+    All swoln and ulcerous, pitiful to the eye,
+    The mere despair of surgery, he cures,
+    Hanging a golden stamp about their necks,
+    Put on with holy prayers: and 'tis spoken,
+    To the succeeding royalty he leaves
+    The healing benediction. With this strange virtue,
+    He hath a heavenly gift of prophecy,
+    And sundry blessings hang about his throne,
+    That speak him full of grace.
+
+    Enter ROSS
+
+MACDUFF
+
+    See, who comes here?
+
+MALCOLM
+
+    My countryman; but yet I know him not.
+
+MACDUFF
+
+    My ever-gentle cousin, welcome hither.
+
+MALCOLM
+
+    I know him now. Good God, betimes remove
+    The means that makes us strangers!
+
+ROSS
+
+    Sir, amen.
+
+MACDUFF
+
+    Stands Scotland where it did?
+
+ROSS
+
+    Alas, poor country!
+    Almost afraid to know itself. It cannot
+    Be call'd our mother, but our grave; where nothing,
+    But who knows nothing, is once seen to smile;
+    Where sighs and groans and shrieks that rend the air
+    Are made, not mark'd; where violent sorrow seems
+    A modern ecstasy; the dead man's knell
+    Is there scarce ask'd for who; and good men's lives
+    Expire before the flowers in their caps,
+    Dying or ere they sicken.
+
+MACDUFF
+
+    O, relation
+    Too nice, and yet too true!
+
+MALCOLM
+
+    What's the newest grief?
+
+ROSS
+
+    That of an hour's age doth hiss the speaker:
+    Each minute teems a new one.
+
+MACDUFF
+
+    How does my wife?
+
+ROSS
+
+    Why, well.
+
+MACDUFF
+
+    And all my children?
+
+ROSS
+
+    Well too.
+
+MACDUFF
+
+    The tyrant has not batter'd at their peace?
+
+ROSS
+
+    No; they were well at peace when I did leave 'em.
+
+MACDUFF
+
+    But not a niggard of your speech: how goes't?
+
+ROSS
+
+    When I came hither to transport the tidings,
+    Which I have heavily borne, there ran a rumour
+    Of many worthy fellows that were out;
+    Which was to my belief witness'd the rather,
+    For that I saw the tyrant's power a-foot:
+    Now is the time of help; your eye in Scotland
+    Would create soldiers, make our women fight,
+    To doff their dire distresses.
+
+MALCOLM
+
+    Be't their comfort
+    We are coming thither: gracious England hath
+    Lent us good Siward and ten thousand men;
+    An older and a better soldier none
+    That Christendom gives out.
+
+ROSS
+
+    Would I could answer
+    This comfort with the like! But I have words
+    That would be howl'd out in the desert air,
+    Where hearing should not latch them.
+
+MACDUFF
+
+    What concern they?
+    The general cause? or is it a fee-grief
+    Due to some single breast?
+
+ROSS
+
+    No mind that's honest
+    But in it shares some woe; though the main part
+    Pertains to you alone.
+
+MACDUFF
+
+    If it be mine,
+    Keep it not from me, quickly let me have it.
+
+ROSS
+
+    Let not your ears despise my tongue for ever,
+    Which shall possess them with the heaviest sound
+    That ever yet they heard.
+
+MACDUFF
+
+    Hum! I guess at it.
+
+ROSS
+
+    Your castle is surprised; your wife and babes
+    Savagely slaughter'd: to relate the manner,
+    Were, on the quarry of these murder'd deer,
+    To add the death of you.
+
+MALCOLM
+
+    Merciful heaven!
+    What, man! ne'er pull your hat upon your brows;
+    Give sorrow words: the grief that does not speak
+    Whispers the o'er-fraught heart and bids it break.
+
+MACDUFF
+
+    My children too?
+
+ROSS
+
+    Wife, children, servants, all
+    That could be found.
+
+MACDUFF
+
+    And I must be from thence!
+    My wife kill'd too?
+
+ROSS
+
+    I have said.
+
+MALCOLM
+
+    Be comforted:
+    Let's make us medicines of our great revenge,
+    To cure this deadly grief.
+
+MACDUFF
+
+    He has no children. All my pretty ones?
+    Did you say all? O hell-kite! All?
+    What, all my pretty chickens and their dam
+    At one fell swoop?
+
+MALCOLM
+
+    Dispute it like a man.
+
+MACDUFF
+
+    I shall do so;
+    But I must also feel it as a man:
+    I cannot but remember such things were,
+    That were most precious to me. Did heaven look on,
+    And would not take their part? Sinful Macduff,
+    They were all struck for thee! naught that I am,
+    Not for their own demerits, but for mine,
+    Fell slaughter on their souls. Heaven rest them now!
+
+MALCOLM
+
+    Be this the whetstone of your sword: let grief
+    Convert to anger; blunt not the heart, enrage it.
+
+MACDUFF
+
+    O, I could play the woman with mine eyes
+    And braggart with my tongue! But, gentle heavens,
+    Cut short all intermission; front to front
+    Bring thou this fiend of Scotland and myself;
+    Within my sword's length set him; if he 'scape,
+    Heaven forgive him too!
+
+MALCOLM
+
+    This tune goes manly.
+    Come, go we to the king; our power is ready;
+    Our lack is nothing but our leave; Macbeth
+    Is ripe for shaking, and the powers above
+    Put on their instruments. Receive what cheer you may:
+    The night is long that never finds the day.
+
+    Exeunt
+
+ACT V
+SCENE I. Dunsinane. Ante-room in the castle.
+
+    Enter a Doctor of Physic and a Waiting-Gentlewoman 
+
+Doctor
+
+    I have two nights watched with you, but can perceive
+    no truth in your report. When was it she last walked?
+
+Gentlewoman
+
+    Since his majesty went into the field, I have seen
+    her rise from her bed, throw her night-gown upon
+    her, unlock her closet, take forth paper, fold it,
+    write upon't, read it, afterwards seal it, and again
+    return to bed; yet all this while in a most fast sleep.
+
+Doctor
+
+    A great perturbation in nature, to receive at once
+    the benefit of sleep, and do the effects of
+    watching! In this slumbery agitation, besides her
+    walking and other actual performances, what, at any
+    time, have you heard her say?
+
+Gentlewoman
+
+    That, sir, which I will not report after her.
+
+Doctor
+
+    You may to me: and 'tis most meet you should.
+
+Gentlewoman
+
+    Neither to you nor any one; having no witness to
+    confirm my speech.
+
+    Enter LADY MACBETH, with a taper
+    Lo you, here she comes! This is her very guise;
+    and, upon my life, fast asleep. Observe her; stand close.
+
+Doctor
+
+    How came she by that light?
+
+Gentlewoman
+
+    Why, it stood by her: she has light by her
+    continually; 'tis her command.
+
+Doctor
+
+    You see, her eyes are open.
+
+Gentlewoman
+
+    Ay, but their sense is shut.
+
+Doctor
+
+    What is it she does now? Look, how she rubs her hands.
+
+Gentlewoman
+
+    It is an accustomed action with her, to seem thus
+    washing her hands: I have known her continue in
+    this a quarter of an hour.
+
+LADY MACBETH
+
+    Yet here's a spot.
+
+Doctor
+
+    Hark! she speaks: I will set down what comes from
+    her, to satisfy my remembrance the more strongly.
+
+LADY MACBETH
+
+    Out, damned spot! out, I say!--One: two: why,
+    then, 'tis time to do't.--Hell is murky!--Fie, my
+    lord, fie! a soldier, and afeard? What need we
+    fear who knows it, when none can call our power to
+    account?--Yet who would have thought the old man
+    to have had so much blood in him.
+
+Doctor
+
+    Do you mark that?
+
+LADY MACBETH
+
+    The thane of Fife had a wife: where is she now?--
+    What, will these hands ne'er be clean?--No more o'
+    that, my lord, no more o' that: you mar all with
+    this starting.
+
+Doctor
+
+    Go to, go to; you have known what you should not.
+
+Gentlewoman
+
+    She has spoke what she should not, I am sure of
+    that: heaven knows what she has known.
+
+LADY MACBETH
+
+    Here's the smell of the blood still: all the
+    perfumes of Arabia will not sweeten this little
+    hand. Oh, oh, oh!
+
+Doctor
+
+    What a sigh is there! The heart is sorely charged.
+
+Gentlewoman
+
+    I would not have such a heart in my bosom for the
+    dignity of the whole body.
+
+Doctor
+
+    Well, well, well,--
+
+Gentlewoman
+
+    Pray God it be, sir.
+
+Doctor
+
+    This disease is beyond my practise: yet I have known
+    those which have walked in their sleep who have died
+    holily in their beds.
+
+LADY MACBETH
+
+    Wash your hands, put on your nightgown; look not so
+    pale.--I tell you yet again, Banquo's buried; he
+    cannot come out on's grave.
+
+Doctor
+
+    Even so?
+
+LADY MACBETH
+
+    To bed, to bed! there's knocking at the gate:
+    come, come, come, come, give me your hand. What's
+    done cannot be undone.--To bed, to bed, to bed!
+
+    Exit
+
+Doctor
+
+    Will she go now to bed?
+
+Gentlewoman
+
+    Directly.
+
+Doctor
+
+    Foul whisperings are abroad: unnatural deeds
+    Do breed unnatural troubles: infected minds
+    To their deaf pillows will discharge their secrets:
+    More needs she the divine than the physician.
+    God, God forgive us all! Look after her;
+    Remove from her the means of all annoyance,
+    And still keep eyes upon her. So, good night:
+    My mind she has mated, and amazed my sight.
+    I think, but dare not speak.
+
+Gentlewoman
+
+    Good night, good doctor.
+
+    Exeunt
+
+SCENE II. The country near Dunsinane.
+
+    Drum and colours. Enter MENTEITH, CAITHNESS, ANGUS, LENNOX, and Soldiers 
+
+MENTEITH
+
+    The English power is near, led on by Malcolm,
+    His uncle Siward and the good Macduff:
+    Revenges burn in them; for their dear causes
+    Would to the bleeding and the grim alarm
+    Excite the mortified man.
+
+ANGUS
+
+    Near Birnam wood
+    Shall we well meet them; that way are they coming.
+
+CAITHNESS
+
+    Who knows if Donalbain be with his brother?
+
+LENNOX
+
+    For certain, sir, he is not: I have a file
+    Of all the gentry: there is Siward's son,
+    And many unrough youths that even now
+    Protest their first of manhood.
+
+MENTEITH
+
+    What does the tyrant?
+
+CAITHNESS
+
+    Great Dunsinane he strongly fortifies:
+    Some say he's mad; others that lesser hate him
+    Do call it valiant fury: but, for certain,
+    He cannot buckle his distemper'd cause
+    Within the belt of rule.
+
+ANGUS
+
+    Now does he feel
+    His secret murders sticking on his hands;
+    Now minutely revolts upbraid his faith-breach;
+    Those he commands move only in command,
+    Nothing in love: now does he feel his title
+    Hang loose about him, like a giant's robe
+    Upon a dwarfish thief.
+
+MENTEITH
+
+    Who then shall blame
+    His pester'd senses to recoil and start,
+    When all that is within him does condemn
+    Itself for being there?
+
+CAITHNESS
+
+    Well, march we on,
+    To give obedience where 'tis truly owed:
+    Meet we the medicine of the sickly weal,
+    And with him pour we in our country's purge
+    Each drop of us.
+
+LENNOX
+
+    Or so much as it needs,
+    To dew the sovereign flower and drown the weeds.
+    Make we our march towards Birnam.
+
+    Exeunt, marching
+
+SCENE III. Dunsinane. A room in the castle.
+
+    Enter MACBETH, Doctor, and Attendants 
+
+MACBETH
+
+    Bring me no more reports; let them fly all:
+    Till Birnam wood remove to Dunsinane,
+    I cannot taint with fear. What's the boy Malcolm?
+    Was he not born of woman? The spirits that know
+    All mortal consequences have pronounced me thus:
+    'Fear not, Macbeth; no man that's born of woman
+    Shall e'er have power upon thee.' Then fly,
+    false thanes,
+    And mingle with the English epicures:
+    The mind I sway by and the heart I bear
+    Shall never sag with doubt nor shake with fear.
+
+    Enter a Servant
+    The devil damn thee black, thou cream-faced loon!
+    Where got'st thou that goose look?
+
+Servant
+
+    There is ten thousand--
+
+MACBETH
+
+    Geese, villain!
+
+Servant
+
+    Soldiers, sir.
+
+MACBETH
+
+    Go prick thy face, and over-red thy fear,
+    Thou lily-liver'd boy. What soldiers, patch?
+    Death of thy soul! those linen cheeks of thine
+    Are counsellors to fear. What soldiers, whey-face?
+
+Servant
+
+    The English force, so please you.
+
+MACBETH
+
+    Take thy face hence.
+
+    Exit Servant
+    Seyton!--I am sick at heart,
+    When I behold--Seyton, I say!--This push
+    Will cheer me ever, or disseat me now.
+    I have lived long enough: my way of life
+    Is fall'n into the sear, the yellow leaf;
+    And that which should accompany old age,
+    As honour, love, obedience, troops of friends,
+    I must not look to have; but, in their stead,
+    Curses, not loud but deep, mouth-honour, breath,
+    Which the poor heart would fain deny, and dare not. Seyton!
+
+    Enter SEYTON
+
+SEYTON
+
+    What is your gracious pleasure?
+
+MACBETH
+
+    What news more?
+
+SEYTON
+
+    All is confirm'd, my lord, which was reported.
+
+MACBETH
+
+    I'll fight till from my bones my flesh be hack'd.
+    Give me my armour.
+
+SEYTON
+
+    'Tis not needed yet.
+
+MACBETH
+
+    I'll put it on.
+    Send out more horses; skirr the country round;
+    Hang those that talk of fear. Give me mine armour.
+    How does your patient, doctor?
+
+Doctor
+
+    Not so sick, my lord,
+    As she is troubled with thick coming fancies,
+    That keep her from her rest.
+
+MACBETH
+
+    Cure her of that.
+    Canst thou not minister to a mind diseased,
+    Pluck from the memory a rooted sorrow,
+    Raze out the written troubles of the brain
+    And with some sweet oblivious antidote
+    Cleanse the stuff'd bosom of that perilous stuff
+    Which weighs upon the heart?
+
+Doctor
+
+    Therein the patient
+    Must minister to himself.
+
+MACBETH
+
+    Throw physic to the dogs; I'll none of it.
+    Come, put mine armour on; give me my staff.
+    Seyton, send out. Doctor, the thanes fly from me.
+    Come, sir, dispatch. If thou couldst, doctor, cast
+    The water of my land, find her disease,
+    And purge it to a sound and pristine health,
+    I would applaud thee to the very echo,
+    That should applaud again.--Pull't off, I say.--
+    What rhubarb, cyme, or what purgative drug,
+    Would scour these English hence? Hear'st thou of them?
+
+Doctor
+
+    Ay, my good lord; your royal preparation
+    Makes us hear something.
+
+MACBETH
+
+    Bring it after me.
+    I will not be afraid of death and bane,
+    Till Birnam forest come to Dunsinane.
+
+Doctor
+
+    [Aside] Were I from Dunsinane away and clear,
+    Profit again should hardly draw me here.
+
+    Exeunt
+
+SCENE IV. Country near Birnam wood.
+
+    Drum and colours. Enter MALCOLM, SIWARD and YOUNG SIWARD, MACDUFF, MENTEITH, CAITHNESS, ANGUS, LENNOX, ROSS, and Soldiers, marching 
+
+MALCOLM
+
+    Cousins, I hope the days are near at hand
+    That chambers will be safe.
+
+MENTEITH
+
+    We doubt it nothing.
+
+SIWARD
+
+    What wood is this before us?
+
+MENTEITH
+
+    The wood of Birnam.
+
+MALCOLM
+
+    Let every soldier hew him down a bough
+    And bear't before him: thereby shall we shadow
+    The numbers of our host and make discovery
+    Err in report of us.
+
+Soldiers
+
+    It shall be done.
+
+SIWARD
+
+    We learn no other but the confident tyrant
+    Keeps still in Dunsinane, and will endure
+    Our setting down before 't.
+
+MALCOLM
+
+    'Tis his main hope:
+    For where there is advantage to be given,
+    Both more and less have given him the revolt,
+    And none serve with him but constrained things
+    Whose hearts are absent too.
+
+MACDUFF
+
+    Let our just censures
+    Attend the true event, and put we on
+    Industrious soldiership.
+
+SIWARD
+
+    The time approaches
+    That will with due decision make us know
+    What we shall say we have and what we owe.
+    Thoughts speculative their unsure hopes relate,
+    But certain issue strokes must arbitrate:
+    Towards which advance the war.
+
+    Exeunt, marching
+
+SCENE V. Dunsinane. Within the castle.
+
+    Enter MACBETH, SEYTON, and Soldiers, with drum and colours 
+
+MACBETH
+
+    Hang out our banners on the outward walls;
+    The cry is still 'They come:' our castle's strength
+    Will laugh a siege to scorn: here let them lie
+    Till famine and the ague eat them up:
+    Were they not forced with those that should be ours,
+    We might have met them dareful, beard to beard,
+    And beat them backward home.
+
+    A cry of women within
+    What is that noise?
+
+SEYTON
+
+    It is the cry of women, my good lord.
+
+    Exit
+
+MACBETH
+
+    I have almost forgot the taste of fears;
+    The time has been, my senses would have cool'd
+    To hear a night-shriek; and my fell of hair
+    Would at a dismal treatise rouse and stir
+    As life were in't: I have supp'd full with horrors;
+    Direness, familiar to my slaughterous thoughts
+    Cannot once start me.
+
+    Re-enter SEYTON
+    Wherefore was that cry?
+
+SEYTON
+
+    The queen, my lord, is dead.
+
+MACBETH
+
+    She should have died hereafter;
+    There would have been a time for such a word.
+    To-morrow, and to-morrow, and to-morrow,
+    Creeps in this petty pace from day to day
+    To the last syllable of recorded time,
+    And all our yesterdays have lighted fools
+    The way to dusty death. Out, out, brief candle!
+    Life's but a walking shadow, a poor player
+    That struts and frets his hour upon the stage
+    And then is heard no more: it is a tale
+    Told by an idiot, full of sound and fury,
+    Signifying nothing.
+
+    Enter a Messenger
+    Thou comest to use thy tongue; thy story quickly.
+
+Messenger
+
+    Gracious my lord,
+    I should report that which I say I saw,
+    But know not how to do it.
+
+MACBETH
+
+    Well, say, sir.
+
+Messenger
+
+    As I did stand my watch upon the hill,
+    I look'd toward Birnam, and anon, methought,
+    The wood began to move.
+
+MACBETH
+
+    Liar and slave!
+
+Messenger
+
+    Let me endure your wrath, if't be not so:
+    Within this three mile may you see it coming;
+    I say, a moving grove.
+
+MACBETH
+
+    If thou speak'st false,
+    Upon the next tree shalt thou hang alive,
+    Till famine cling thee: if thy speech be sooth,
+    I care not if thou dost for me as much.
+    I pull in resolution, and begin
+    To doubt the equivocation of the fiend
+    That lies like truth: 'Fear not, till Birnam wood
+    Do come to Dunsinane:' and now a wood
+    Comes toward Dunsinane. Arm, arm, and out!
+    If this which he avouches does appear,
+    There is nor flying hence nor tarrying here.
+    I gin to be aweary of the sun,
+    And wish the estate o' the world were now undone.
+    Ring the alarum-bell! Blow, wind! come, wrack!
+    At least we'll die with harness on our back.
+
+    Exeunt
+
+SCENE VI. Dunsinane. Before the castle.
+
+    Drum and colours. Enter MALCOLM, SIWARD, MACDUFF, and their Army, with boughs 
+
+MALCOLM
+
+    Now near enough: your leafy screens throw down.
+    And show like those you are. You, worthy uncle,
+    Shall, with my cousin, your right-noble son,
+    Lead our first battle: worthy Macduff and we
+    Shall take upon 's what else remains to do,
+    According to our order.
+
+SIWARD
+
+    Fare you well.
+    Do we but find the tyrant's power to-night,
+    Let us be beaten, if we cannot fight.
+
+MACDUFF
+
+    Make all our trumpets speak; give them all breath,
+    Those clamorous harbingers of blood and death.
+
+    Exeunt
+
+SCENE VII. Another part of the field.
+
+    Alarums. Enter MACBETH 
+
+MACBETH
+
+    They have tied me to a stake; I cannot fly,
+    But, bear-like, I must fight the course. What's he
+    That was not born of woman? Such a one
+    Am I to fear, or none.
+
+    Enter YOUNG SIWARD
+
+YOUNG SIWARD
+
+    What is thy name?
+
+MACBETH
+
+    Thou'lt be afraid to hear it.
+
+YOUNG SIWARD
+
+    No; though thou call'st thyself a hotter name
+    Than any is in hell.
+
+MACBETH
+
+    My name's Macbeth.
+
+YOUNG SIWARD
+
+    The devil himself could not pronounce a title
+    More hateful to mine ear.
+
+MACBETH
+
+    No, nor more fearful.
+
+YOUNG SIWARD
+
+    Thou liest, abhorred tyrant; with my sword
+    I'll prove the lie thou speak'st.
+
+    They fight and YOUNG SIWARD is slain
+
+MACBETH
+
+    Thou wast born of woman
+    But swords I smile at, weapons laugh to scorn,
+    Brandish'd by man that's of a woman born.
+
+    Exit
+
+    Alarums. Enter MACDUFF
+
+MACDUFF
+
+    That way the noise is. Tyrant, show thy face!
+    If thou be'st slain and with no stroke of mine,
+    My wife and children's ghosts will haunt me still.
+    I cannot strike at wretched kerns, whose arms
+    Are hired to bear their staves: either thou, Macbeth,
+    Or else my sword with an unbatter'd edge
+    I sheathe again undeeded. There thou shouldst be;
+    By this great clatter, one of greatest note
+    Seems bruited. Let me find him, fortune!
+    And more I beg not.
+
+    Exit. Alarums
+
+    Enter MALCOLM and SIWARD
+
+SIWARD
+
+    This way, my lord; the castle's gently render'd:
+    The tyrant's people on both sides do fight;
+    The noble thanes do bravely in the war;
+    The day almost itself professes yours,
+    And little is to do.
+
+MALCOLM
+
+    We have met with foes
+    That strike beside us.
+
+SIWARD
+
+    Enter, sir, the castle.
+
+    Exeunt. Alarums
+
+SCENE VIII. Another part of the field.
+
+    Enter MACBETH 
+
+MACBETH
+
+    Why should I play the Roman fool, and die
+    On mine own sword? whiles I see lives, the gashes
+    Do better upon them.
+
+    Enter MACDUFF
+
+MACDUFF
+
+    Turn, hell-hound, turn!
+
+MACBETH
+
+    Of all men else I have avoided thee:
+    But get thee back; my soul is too much charged
+    With blood of thine already.
+
+MACDUFF
+
+    I have no words:
+    My voice is in my sword: thou bloodier villain
+    Than terms can give thee out!
+
+    They fight
+
+MACBETH
+
+    Thou losest labour:
+    As easy mayst thou the intrenchant air
+    With thy keen sword impress as make me bleed:
+    Let fall thy blade on vulnerable crests;
+    I bear a charmed life, which must not yield,
+    To one of woman born.
+
+MACDUFF
+
+    Despair thy charm;
+    And let the angel whom thou still hast served
+    Tell thee, Macduff was from his mother's womb
+    Untimely ripp'd.
+
+MACBETH
+
+    Accursed be that tongue that tells me so,
+    For it hath cow'd my better part of man!
+    And be these juggling fiends no more believed,
+    That palter with us in a double sense;
+    That keep the word of promise to our ear,
+    And break it to our hope. I'll not fight with thee.
+
+MACDUFF
+
+    Then yield thee, coward,
+    And live to be the show and gaze o' the time:
+    We'll have thee, as our rarer monsters are,
+    Painted on a pole, and underwrit,
+    'Here may you see the tyrant.'
+
+MACBETH
+
+    I will not yield,
+    To kiss the ground before young Malcolm's feet,
+    And to be baited with the rabble's curse.
+    Though Birnam wood be come to Dunsinane,
+    And thou opposed, being of no woman born,
+    Yet I will try the last. Before my body
+    I throw my warlike shield. Lay on, Macduff,
+    And damn'd be him that first cries, 'Hold, enough!'
+
+    Exeunt, fighting. Alarums
+
+    Retreat. Flourish. Enter, with drum and colours, MALCOLM, SIWARD, ROSS, the other Thanes, and Soldiers
+
+MALCOLM
+
+    I would the friends we miss were safe arrived.
+
+SIWARD
+
+    Some must go off: and yet, by these I see,
+    So great a day as this is cheaply bought.
+
+MALCOLM
+
+    Macduff is missing, and your noble son.
+
+ROSS
+
+    Your son, my lord, has paid a soldier's debt:
+    He only lived but till he was a man;
+    The which no sooner had his prowess confirm'd
+    In the unshrinking station where he fought,
+    But like a man he died.
+
+SIWARD
+
+    Then he is dead?
+
+ROSS
+
+    Ay, and brought off the field: your cause of sorrow
+    Must not be measured by his worth, for then
+    It hath no end.
+
+SIWARD
+
+    Had he his hurts before?
+
+ROSS
+
+    Ay, on the front.
+
+SIWARD
+
+    Why then, God's soldier be he!
+    Had I as many sons as I have hairs,
+    I would not wish them to a fairer death:
+    And so, his knell is knoll'd.
+
+MALCOLM
+
+    He's worth more sorrow,
+    And that I'll spend for him.
+
+SIWARD
+
+    He's worth no more
+    They say he parted well, and paid his score:
+    And so, God be with him! Here comes newer comfort.
+
+    Re-enter MACDUFF, with MACBETH's head
+
+MACDUFF
+
+    Hail, king! for so thou art: behold, where stands
+    The usurper's cursed head: the time is free:
+    I see thee compass'd with thy kingdom's pearl,
+    That speak my salutation in their minds;
+    Whose voices I desire aloud with mine:
+    Hail, King of Scotland!
+
+ALL
+
+    Hail, King of Scotland!
+
+    Flourish
+
+MALCOLM
+
+    We shall not spend a large expense of time
+    Before we reckon with your several loves,
+    And make us even with you. My thanes and kinsmen,
+    Henceforth be earls, the first that ever Scotland
+    In such an honour named. What's more to do,
+    Which would be planted newly with the time,
+    As calling home our exiled friends abroad
+    That fled the snares of watchful tyranny;
+    Producing forth the cruel ministers
+    Of this dead butcher and his fiend-like queen,
+    Who, as 'tis thought, by self and violent hands
+    Took off her life; this, and what needful else
+    That calls upon us, by the grace of Grace,
+    We will perform in measure, time and place:
+    So, thanks to all at once and to each one,
+    Whom we invite to see us crown'd at Scone.
+
+    Flourish. Exeunt
+
 `
 
 function eatData(input) {
