@@ -3654,7 +3654,8 @@ function updateManualOutput() {
   text[text.length-1] = ""
   text = text.join("")
   runSeed(seed,1)
-  manualOutput.innerHTML = text+" "+outputText
+  text += (" "+outputText)
+  manualOutput.innerHTML = format(text)
 }
 
 //STUFF THAT RUNS ON LOAD
