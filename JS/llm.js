@@ -3925,9 +3925,9 @@ function format(text) {
   return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
-function runSeed(seedTemp, count) {
+function runSeed(seed, count) {
     outputText = ""
-    let seed = seedTemp.toLowerCase().split(" ").join("")
+    seed = seed.toLowerCase().split(" ").join("")
     if (!words.includes(seed)) {
       outputText = "INVALID SEED"
       return
@@ -3968,5 +3968,6 @@ mainBody.addEventListener('load',loadFunc())
 function loadFunc() {
   eatData(data)
   seedWhitelist = seedWhitelist.filter((k)=>!(seedBlacklist.includes(k)||punctuation.includes(k)))
+  console.log("words:",words)
   console.log("seedWhitelist:",seedWhitelist)
 }
