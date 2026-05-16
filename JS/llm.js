@@ -4921,7 +4921,8 @@ function updateManualOutput() {
   text = text.join(" ")
   runSeed(seed,1)
   text += (" "+outputText.toLowerCase())
-  manualOutput.innerHTML = format(text)
+  text = format(text)
+  manualOutput.innerHTML = text
 }
 
 //STUFF THAT RUNS ON LOAD
