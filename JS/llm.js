@@ -4918,8 +4918,12 @@ function updateManualOutput() {
   text[text.length-1] = ""
   text = text.filter((k)=>k!="").join(" ")
   runSeed(seed,1)
-  text += (" "+outputText.toLowerCase())
-  manualOutput.innerHTML = format(text)
+  text += " "
+  text += outputText.toLowerCase()
+  console.log(text)
+  text = format(text)
+  console.log(text)
+  manualOutput.innerHTML = text
 }
 
 //STUFF THAT RUNS ON LOAD
