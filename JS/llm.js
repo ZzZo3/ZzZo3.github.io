@@ -3957,6 +3957,7 @@ function updateOutput() {
 }
 
 function updateManualOutput() {
+  console.log("input detected")
   runSeed(input.text,1)
   manualOutput.innerHTML = outputText
 }
