@@ -1,6 +1,7 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
-const input = document.getElementById("input")
+const inputText = document.getElementById("inputText")
+const inputButton = document.getElementById("inputButton")
 const outputBox = document.getElementById("output")
 const manualOutput = document.getElementById("manualOutput")
 let outputText = ""
@@ -3647,9 +3648,12 @@ function updateOutput() {
 }
 
 function updateManualOutput() {
-  console.log("input keypress detected")
-  runSeed(input.value,1)
-  manualOutput.innerHTML = outputText
+  let text = inputText.value
+  text = text.split(" ")
+  let seed = text[text.length-1]
+  text[text.length-1] = ""
+  runSeed(seed,1)
+  manualOutput.innerHTML = text," ",outputText
 }
 
 //STUFF THAT RUNS ON LOAD
