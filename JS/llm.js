@@ -3652,6 +3652,7 @@ function updateManualOutput() {
   text = text.split(" ")
   let seed = text[text.length-1]
   text[text.length-1] = ""
+  text = text.join("")
   runSeed(seed,1)
   manualOutput.innerHTML = text," ",outputText
 }
