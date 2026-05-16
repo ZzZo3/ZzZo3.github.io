@@ -1,6 +1,8 @@
 //BASE
 const mainBody = document.getElementById("mainBody")
+const input = document.getElementById("input")
 const outputBox = document.getElementById("output")
+const manualOutput = document.getElementById("manualOutput")
 let outputText = ""
 
 //SEED LISTS & FORMATTING
@@ -3923,6 +3925,21 @@ function format(text) {
   return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
+function runSeed(seed, count) {
+    outputText = ""
+    seed = seed.toLowerCase().split(" ").join("")
+    if (!words.includes(seed)) {
+      outputText = "INVALID SEED"
+      return
+    }
+    for (let i=0; i<count; i++) {
+      let newWrite = write(seed)
+      let newForm = format(newWrite)
+      console.log(i+1,"seed: \"",seed,"\", write: \"",newWrite,"\", format: \"",newForm,"\"")
+      outputText += "<br>"+(i+1)+"  "+newForm
+    }
+}
+
 function run(count) {
     outputText = ""
     for (let i=0; i<count; i++) {
@@ -3939,9 +3956,15 @@ function updateOutput() {
   outputBox.innerHTML = outputText
 }
 
+function updateManualOutput() {
+  runSeed(input.text,1)
+  manualOutput.innerHTML = outputText
+}
+
 //STUFF THAT RUNS ON LOAD
 
 mainBody.addEventListener('load',loadFunc())
+input.addEventListener('input',updateManualOutput())
 function loadFunc() {
   eatData(data)
   seedWhitelist = seedWhitelist.filter((k)=>!(seedBlacklist.includes(k)||punctuation.includes(k)))
