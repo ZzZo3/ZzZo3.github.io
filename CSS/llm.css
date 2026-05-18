@@ -5,6 +5,9 @@
 .rollButton:hover {
   text-shadow: 0px 0px 6px #fffeeb;
 }
-.glowButton {
-  box-shadow: 0px 0px 10px rgb(255, 195, 65);
+.glowButtonA {
+  box-shadow: 0px 0px 14px rgb(255, 188, 42);
+}
+.glowButtonB {
+  box-shadow: 0px 0px 6px rgb(255, 199, 79);
 }
