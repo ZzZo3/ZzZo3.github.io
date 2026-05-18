@@ -122,21 +122,21 @@
 
 #compassW {
   border: red;
-  top: 0px;
+  top: -64px;
   left: 0px
 }
 #compassA {
   border: orange;
-  top: 32px;
+  top: 0px;
   left: 0px
 }
 #compassS {
   border: yellow;
-  top: 32px;
-  left: 32px
+  top: 0px;
+  left: 64px
 }
 #compassD {
   border: green;
-  top: 0px;
-  left: 32px
+  top: -64px;
+  left: 64px
 }
