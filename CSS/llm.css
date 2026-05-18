@@ -23,6 +23,6 @@
   padding: auto
 }
 
-#manualOutput {
-  margin: 2%;
+.predictionOutput {
+  margin: 2%
 }
