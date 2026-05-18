@@ -19,8 +19,9 @@
   display: block;
   height: 32px;
   width: 192px;
-  margin-top: 1%;
-  padding: auto
+  margin-top: 2%;
+  margin-bottom: 1%;
+  resize: none
 }
 
 .predictionOutput {
