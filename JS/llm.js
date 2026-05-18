@@ -4864,6 +4864,9 @@ function write(inWord) {
 }
 
 function format(text) {
+  for (let i=0; i<punctuation.length; i++) {
+    text = text.split(punctuation[i]).join(" "+punctuation[i])
+  }
   text = text.split(" ").map((k) => {
     if (capitalizedWords.includes(k)) {
       k = k.charAt(0).toUpperCase() + k.slice(1)
@@ -4880,10 +4883,9 @@ function format(text) {
     }
     return k
   }).join(" ")
-  text = text.split(" .").join(".")
-  text = text.split(" !").join("!")
-  text = text.split(" ?").join("?")
-  text = text.split(" ,").join(",")
+  for (let i=0; i<punctuation.length; i++) {
+    text = text.split(" "+punctuation[i]).join(punctuation[i])
+  }
   return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
