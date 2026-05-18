@@ -7,7 +7,7 @@ const manualOutput = document.getElementById("manualOutput")
 let outputText = ""
 
 //SEED LISTS & FORMATTING
-const seedBlacklist = [" ", ""]
+const seedBlacklist = [" ", "", "\'", "\""]
 let seedWhitelist = []
 const capitalizedWords = ['i', 'lord', 'lady', 'sankara',
   'french', 'france', 'burkina', 'faso', 'volta', 'english',
