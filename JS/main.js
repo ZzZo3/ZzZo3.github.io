@@ -48,6 +48,7 @@ let POSITIONprevious = [0, 0]
 let canMove = true
 let link = ''
 let name = ''
+let note = ''
 
 // BIG BASES
 let BIGBASES = []
@@ -513,6 +514,14 @@ function getTile() {
       name = TILE.getAttribute("data-name")
       nameDisplay.innerText = "  "+name
       tileTip.style.opacity = 1.0
+    } else {
+      name = ''
+      nameDisplay.innerText = 'Unknown Page'
+    }
+    if (TILE.hasAttribute("data-note")) {
+      note = TILE.getAttribute("data-note")
+    } else {
+      note = ""
     }
   } else {
     console.log('   no tile found at ' + [POSITION])
@@ -520,7 +529,7 @@ function getTile() {
     linkDisplay.innerText = '[ no link found ]'
     tileTip.style.opacity = 0.0
   }
-  posDisplay.innerText = '[' + POSITION[0] + ',' + POSITION[1] + ']'
+  posDisplay.innerText = '[' + POSITION[0] + ',' + POSITION[1] + ']' + note
 }
 function useTile() {
   console.log('useTile() called at: ' + POSITION)
