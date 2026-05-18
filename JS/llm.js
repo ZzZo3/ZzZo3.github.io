@@ -4924,7 +4924,7 @@ function updateManualOutput() {
   text = text.filter((k) => k != "").join(" ")
   runSeed(seed)
   text += " "
-  text += outputText.toLowerCase()
+  text += outputText
   text = format(text)
   manualOutput.innerHTML = text
 }
