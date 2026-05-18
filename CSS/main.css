@@ -100,6 +100,11 @@ html, body {
   font-size: 36px;
 }
 
+.neonderthawText {
+  font-family: "Neonderthaw", cursive;
+  font-size: 36px;
+}
+
 .neonText {
   animation: flicker 1.5s infinite alternate;
   color: #fff;
