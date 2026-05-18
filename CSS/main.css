@@ -60,6 +60,11 @@ html, body {
   margin-left: 2.5px;
 }
 
+.isoDimInput {
+  height: 16px;
+  width: 128px;
+}
+
 #headerContainer {
   margin-top: 1%;
   padding-top: 0.5%;
