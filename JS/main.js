@@ -42,6 +42,7 @@ const spreadDefault = 1.0
 const scaleDefault = 2.0
 const hillDefault = 0
 const scrollDefault = 0
+const dimDefault = [9, 9]
 //POSITION / TILE DATA
 let POSITION = [0, 0]
 let POSITIONprevious = [0, 0]
@@ -427,7 +428,7 @@ gridXInput.addEventListener('input', gridXFunc)
 function gridXFunc() {
   console.log('\"gridXFunc()\" began')
   let scheme = document.getElementById('SCHEMATIC')
-  let val = Number.isNaN(gridXInput.value) ? "7" : gridXInput.value
+  let val = Number.isNaN(gridXInput.value) ? String(dimDefault[0]) : gridXInput.value
   scheme.setAttribute('data-Xdim', val)
   console.log(scheme.getAttribute('data-Xdim'))
   renderIsometric()
@@ -438,7 +439,7 @@ gridYInput.addEventListener('input', gridYFunc)
 function gridYFunc() {
   console.log('\"gridYFunc()\" began')
   let scheme = document.getElementById('SCHEMATIC')
-  let val = Number.isNaN(gridYInput.value) ? "7" : gridYInput.value
+  let val = Number.isNaN(gridYInput.value) ? String(dimDefault[1]) : gridYInput.value
   scheme.setAttribute('data-Ydim', val)
   console.log(scheme.getAttribute('data-Ydim'))
   renderIsometric()
