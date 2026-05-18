@@ -10,9 +10,9 @@ let outputText = ""
 const seedBlacklist = [" ", ""]
 let seedWhitelist = []
 const capitalizedWords = ['i', 'lord', 'lady', 'sankara',
-  'french', 'france', 'burkina', 'faso', 'volta',
+  'french', 'france', 'burkina', 'faso', 'volta', 'english',
   'october', 'sahel', 'graymalkin', 'palestine', 'palestinian',
-  'israel', 'africa', 'latin', 'america', 'american',
+  'israel', 'africa', 'latin', 'america', 'american', 'scotland',
   'asia', 'asian', 'thomas', 'caesar', 'god', 'macbeth',
   'banquo', 'hecate', 'duncan', 'malcolm', 'donalbain',
   'macduff', 'norway', 'lennox', 'ross', 'menteith', 'angus',
