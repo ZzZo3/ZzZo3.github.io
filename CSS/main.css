@@ -184,3 +184,8 @@ html, body {
 .compassB {
   top: -26px;
 }
+
+#compassSel {
+  top: -48px;
+  left: 20px;
+}
