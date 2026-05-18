@@ -18,7 +18,8 @@ const capitalizedWords = ['i','lord','sankara',
   'macduff','norway','lennox','ross','menteith','angus',
   'caithness','fleance','siward','seyton','cawdor',
   'ireland','birmingham','dunsinane','morocco','barry','larry',
-  'afghanistan','norweyan','josé','marti','martin','luther']
+  'afghanistan','norweyan','marti','martin','luther']
+const replacedWords = [['weird','weïrd'],['jose','José']]
 const punctuation = [",",";",":",".","!","?","[","]","(",")",
   "{","}","<",">","/","\`","~","\'","\"","|","-","—","—","—"]
 const puncTerminating = [".","!","?"]
@@ -4866,6 +4867,11 @@ function format(text) {
   text = text.split(" ").map((k)=>{
     if (capitalizedWords.includes(k)) {
       k = k.charAt(0).toUpperCase() + k.slice(1)
+    }
+    for (let i=0; i<replacedWords.length; i++) {
+        if (replacedWords[i][0]==k) {
+            k = replacedWords[i][1]
+        }
     }
     for (let i=0; i<wordBlacklist.length; i++) {
       if (k.includes(wordBlacklist[i])) {
