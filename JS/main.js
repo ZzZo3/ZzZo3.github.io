@@ -116,8 +116,8 @@ document.addEventListener('keydown', function (event) {
 //COMPASS BUTTON LISTENERS
 compassW.addEventListener('click', walkUp)
 compassS.addEventListener('click', walkDown)
-compassA.addEventListener('click', walkLeft)
-compassD.addEventListener('click', walkRight)
+compassA.addEventListener('click', walkRight)
+compassD.addEventListener('click', walkLeft)
 //WINDOW SCALE LISTENER
 function grabWindowDim() {
   windowDimensions = [window.innerWidth, window.innerHeight]

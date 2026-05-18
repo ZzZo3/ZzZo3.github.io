@@ -121,8 +121,13 @@ html, body {
   position: absolute;
   height: 24px;
   width: 24px;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.compassButton:hover {
   border: 1px solid white;
-  fill: none;
 }
 
 #compassW {
