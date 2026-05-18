@@ -4771,10 +4771,9 @@ MALCOLM
 
 function eatData(input) {
   data = data.split("\n").join()
-  data = data.split(".").join(" . ")
-  data = data.split("!").join(" ! ")
-  data = data.split("?").join(" ? ")
-  data = data.split(",").join(" , ")
+  for (let i=0; i<punctuation.length; i++) {
+    data = data.split(punctuation[i]).join(" "+punctuation[i]+" ")
+  }
   data = data.split(" ")
   data = data.filter((k) => k != "" && k != " ")
   data = data.map((k) => k.toLowerCase())
