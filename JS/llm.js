@@ -4887,12 +4887,12 @@ function format(text) {
   return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
-function runSeed(seed) {
-  outputText = ""
+function runSeed(text, seed) {
+  outputText = text + " "
   let newWrite = write(seed)
-  let newForm = format(newWrite)
-  console.log("MANUAL  seed: \"", seed, "\", write: \"", newWrite, "\", format: \"", newForm, "\"")
-  outputText = newForm
+  outputText += newWrite
+  outputText = format(outputText)
+  console.log("RUNSEED -  seed: \"", seed, "\", write: \"", newWrite, "\", format/text: \"", outputText, "\"")
 }
 
 function run(count) {
@@ -4901,7 +4901,7 @@ function run(count) {
     let seed = seedWhitelist[Math.floor(Math.random() * seedWhitelist.length)]
     let newWrite = write(seed)
     let newForm = format(newWrite)
-    console.log(i + 1, "seed: \"", seed, "\", write: \"", newWrite, "\", format: \"", newForm, "\"")
+    console.log("RUN() -", i + 1, "seed: \"", seed, "\", write: \"", newWrite, "\", format: \"", newForm, "\"")
     outputText += "<br>" + (i + 1) + "  " + newForm
   }
 }
@@ -4922,11 +4922,8 @@ function updateManualOutput() {
   }
   text[text.length - 1] = ""
   text = text.filter((k) => k != "").join(" ")
-  runSeed(seed)
-  text += " "
-  text += outputText
-  text = format(text)
-  manualOutput.innerHTML = text
+  runSeed(text, seed)
+  manualOutput.innerHTML = outputText
 }
 
 //STUFF THAT RUNS ON LOAD
