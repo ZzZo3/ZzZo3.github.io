@@ -1,100 +1,111 @@
 /* TABS */
 .tab {
-    overflow: auto;
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: black;
-    height: 44px;
-    width: auto;
-    align-content:start;
+  overflow: auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  height: 44px;
+  width: auto;
+  align-content: start;
 }
+
 .tabcontent {
-    display: none;
-    padding: 0.35% 0.75%;
-    height: 80%;
+  display: none;
+  padding: 0.35% 0.75%;
+  height: 80%;
 }
 
 /*BUTTONS*/
 .tab button {
-    padding: 14px 18px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
 }
-#saveData{
-    margin-left: 1%;
+
+#saveData {
+  margin-left: 1%;
 }
-.mark{
-    display: inline;
-    border-radius: 5px;
-    margin-left: 2.5px;
+
+.mark {
+  display: inline;
+  border-radius: 5px;
+  margin-left: 2.5px;
 }
 
 /* CONTAINERS */
-.smallInput{
-    display:flex;
-    flex-direction: row;
-    margin: 2.5px 1%;
+.smallInput {
+  display: flex;
+  flex-direction: row;
+  margin: 2.5px 1%;
 }
-.smallInput >* {
-    display: inline-block;
-    font-family:'Courier New', Courier, monospace;
+
+.smallInput>* {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
 }
-.container{
-    margin: none;
-    padding: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    height: 320px;
-    gap: 1;
+
+.container {
+  margin: none;
+  padding: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 320px;
+  gap: 1;
 }
-#termCont{
-    height: 212px;
+
+#termCont {
+  height: 212px;
 }
-.container >* {
-    display: inline;
-    flex-grow: 1;
-    width: 100%;
-    height: 288px;
-    box-sizing: border-box;
-    margin: 1%;
-    padding: 1%;
-    line-height: 18px;
-    background-size: 100% 36px;
-    background-attachment: local;
-    border: 1px solid black;
-    border-radius: 5px;
-    white-space: pre;
-    overflow: auto;
-    overflow:-moz-scrollbars-vertical;
+
+.container>* {
+  display: inline;
+  flex-grow: 1;
+  width: 100%;
+  height: 288px;
+  box-sizing: border-box;
+  margin: 1%;
+  padding: 1%;
+  line-height: 18px;
+  background-size: 100% 36px;
+  background-attachment: local;
+  border: 1px solid black;
+  border-radius: 5px;
+  white-space: pre;
+  overflow: auto;
+  overflow: -moz-scrollbars-vertical;
 }
-#input{
-    resize: none;
-    field-sizing: 16px;
-    font-family:'Courier New', Courier, monospace;
-    background-image: linear-gradient(#212121 50%, #2f2f2f 50%);
-    color: rgb(255, 216, 132);
-    outline: 1px solid white;
+
+#input {
+  resize: none;
+  field-sizing: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: linear-gradient(#212121 50%, #2f2f2f 50%);
+  color: rgb(255, 216, 132);
+  outline: 1px solid white;
 }
-.annot{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    background-image: linear-gradient(#212121 50%, #2f2f2f 50%);
-    color: rgb(255, 216, 132);
+
+.annot {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  background-image: linear-gradient(#212121 50%, #2f2f2f 50%);
+  color: rgb(255, 216, 132);
 }
+
 /* TABLE */
 .docTable {
-    border: 1px solid white;
-    border-radius: 5px;
-    border-collapse: collapse;
-    text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  border-collapse: collapse;
+  text-align: center;
 }
-.docTable >* {
-    border: 1px solid white;
-    border-left: none;
-    border-right: none;
-    border-radius: 5px;
-    padding: 6px 8px;
+
+.docTable>* {
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  padding: 6px 8px;
 }

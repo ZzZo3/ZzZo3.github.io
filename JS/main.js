@@ -38,535 +38,535 @@ const scaleDefault = 2.0
 const hillDefault = 0
 const scrollDefault = 0
 //POSITION / TILE DATA
-let POSITION = [0,0]
-let POSITIONprevious = [0,0]
+let POSITION = [0, 0]
+let POSITIONprevious = [0, 0]
 let canMove = true
 let link = ''
 
 // BIG BASES
 let BIGBASES = []
 class BIGBASE {
-    constructor(coords, scale) {
-        this.coords = coords
-        this.scale = scale
-        this.redirections = []
-        this.setRedirns()
+  constructor(coords, scale) {
+    this.coords = coords
+    this.scale = scale
+    this.redirections = []
+    this.setRedirns()
+  }
+  setRedirns() {
+    let potentials = []
+    for (let xStep = this.coords[0]; xStep < (this.coords[0] + this.scale); xStep++) {
+      for (let yStep = this.coords[1]; yStep < (this.coords[1] + this.scale); yStep++) {
+        potentials.push([xStep, yStep])
+      }
     }
-    setRedirns() {
-        let potentials = []
-        for (let xStep = this.coords[0]; xStep < (this.coords[0] + this.scale); xStep++) {
-            for (let yStep = this.coords[1]; yStep < (this.coords[1] + this.scale); yStep++) {
-                potentials.push([xStep,yStep])
-            }
-        }
-        let invalidCoords = potentials.filter((coordPair)=>coordPair!=this.coords)
-        invalidCoords.forEach((pair)=>{
-            this.redirections.push(pair)
-        }) 
-    }
+    let invalidCoords = potentials.filter((coordPair) => coordPair != this.coords)
+    invalidCoords.forEach((pair) => {
+      this.redirections.push(pair)
+    })
+  }
 }
 function setBigBases() {
-    console.log('\"setBigBases()\" began')
-    document.querySelectorAll(".isometricBase").forEach((tile)=>{
-        if (!tile.hasAttribute('data-scale')) {
-            return
-        }
-        let pts = parseInt(tile.getAttribute('data-scale'))
-        if (pts==1) {
-            return
-        }
-        let xCoord = parseInt(tile.classList[1].slice(1))
-        let yCoord = parseInt(tile.classList[2].slice(1))
-        let coords = [xCoord,yCoord]
-        BIGBASES.push(new BIGBASE(coords, pts))
-    })
-    console.log('BIGBASES:')
-    console.log(BIGBASES)
+  console.log('\"setBigBases()\" began')
+  document.querySelectorAll(".isometricBase").forEach((tile) => {
+    if (!tile.hasAttribute('data-scale')) {
+      return
+    }
+    let pts = parseInt(tile.getAttribute('data-scale'))
+    if (pts == 1) {
+      return
+    }
+    let xCoord = parseInt(tile.classList[1].slice(1))
+    let yCoord = parseInt(tile.classList[2].slice(1))
+    let coords = [xCoord, yCoord]
+    BIGBASES.push(new BIGBASE(coords, pts))
+  })
+  console.log('BIGBASES:')
+  console.log(BIGBASES)
 }
 
 
 //BASE
 //KEY LISTENER
 document.addEventListener('keydown', function (event) {
-    console.log('Key: \"' + event.key + '\"');
-    if (canMove) {
-        if (event.key === 'w') {
-            walkUp() // -y(iso) -> -x -y (offset from top left)
-        }
-        if (event.key === 's') {
-            walkDown() // +y(iso) -> +x +y (offset from top left)
-        }
-        if (event.key === 'a') {
-            walkRight() // +x(iso) -> +x -y (offset from top left)
-        }
-        if (event.key === 'd') {
-            walkLeft() // -x(iso) -> -x +y (offset from top left)
-        }
+  console.log('Key: \"' + event.key + '\"');
+  if (canMove) {
+    if (event.key === 'w') {
+      walkUp() // -y(iso) -> -x -y (offset from top left)
     }
-    if (event.key === 'Enter') {
-        useTile()
+    if (event.key === 's') {
+      walkDown() // +y(iso) -> +x +y (offset from top left)
     }
+    if (event.key === 'a') {
+      walkRight() // +x(iso) -> +x -y (offset from top left)
+    }
+    if (event.key === 'd') {
+      walkLeft() // -x(iso) -> -x +y (offset from top left)
+    }
+  }
+  if (event.key === 'Enter') {
+    useTile()
+  }
 });
 //WINDOW SCALE LISTENER
 function grabWindowDim() {
-    windowDimensions = [window.innerWidth, window.innerHeight]
-    console.log('windowDimensions: ' + windowDimensions)
+  windowDimensions = [window.innerWidth, window.innerHeight]
+  console.log('windowDimensions: ' + windowDimensions)
 }
 window.onresize = () => {
-    renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
+  renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
 }
 
 
 //TRANSLATE ISOMETRIC COORDINATES TO SCREEN COORDINATES (from top left, where +y is down and +x is right)
 
 function Iso2Reg(xi, yi) {
-    let xf = 0
-    let yf = 0
-    // xi <- iterations (+leftward, -rightward)
-    yf -= (11 + mountainOffset / isoSpread) * isoSpread * tileScale * xi
-    xf += 32 * tileScale * isoSpread * xi
-    // yi <- iterations (+downward, -upward)
-    yf += (11 + mountainOffset / isoSpread) * isoSpread * tileScale * yi
-    xf += 32 * tileScale * isoSpread * yi
-    return [xf, yf]
+  let xf = 0
+  let yf = 0
+  // xi <- iterations (+leftward, -rightward)
+  yf -= (11 + mountainOffset / isoSpread) * isoSpread * tileScale * xi
+  xf += 32 * tileScale * isoSpread * xi
+  // yi <- iterations (+downward, -upward)
+  yf += (11 + mountainOffset / isoSpread) * isoSpread * tileScale * yi
+  xf += 32 * tileScale * isoSpread * yi
+  return [xf, yf]
 }
 
 
 //MOVEMENT
 
 function savePosition() {
-    let savePos = POSITION[0]+','+POSITION[1]
-    sessionStorage.setItem('POSITION',savePos)
+  let savePos = POSITION[0] + ',' + POSITION[1]
+  sessionStorage.setItem('POSITION', savePos)
 }
 function restorePosition() {
-    let savedPos = sessionStorage.getItem('POSITION')
-    let POS = savedPos.split(',').map(Number)
-    POSITION = [POS[0],POS[1]]
-    POSITIONprevious = [...POSITION]
-    renderIsometric()
+  let savedPos = sessionStorage.getItem('POSITION')
+  let POS = savedPos.split(',').map(Number)
+  POSITION = [POS[0], POS[1]]
+  POSITIONprevious = [...POSITION]
+  renderIsometric()
 }
-originButton.addEventListener('click',origin)
+originButton.addEventListener('click', origin)
 function origin() {
-    console.log('origin() called')
-    POSITIONprevious = [...POSITION]
-    let SchematicTile = document.getElementById('SCHEMATIC')
-    let Xdim = SchematicTile.getAttribute("data-Xdim")
-    let Ydim = SchematicTile.getAttribute("data-Ydim")
-    let x = 0
-    let y = 0
-    if (Xdim % 2 == 0) {
-        x = Xdim / 2 - 1
-    } else {
-        x = Xdim / 2 - 0.5
-    }
-    if (Ydim % 2 == 0) {
-        y = Ydim / 2
-    } else {
-        y = Ydim / 2 - 0.5
-    }
-    POSITION = [x, y]
-    console.log('    POSITION: ' + POSITION)
-    renderIsometric()
-    savePosition()
+  console.log('origin() called')
+  POSITIONprevious = [...POSITION]
+  let SchematicTile = document.getElementById('SCHEMATIC')
+  let Xdim = SchematicTile.getAttribute("data-Xdim")
+  let Ydim = SchematicTile.getAttribute("data-Ydim")
+  let x = 0
+  let y = 0
+  if (Xdim % 2 == 0) {
+    x = Xdim / 2 - 1
+  } else {
+    x = Xdim / 2 - 0.5
+  }
+  if (Ydim % 2 == 0) {
+    y = Ydim / 2
+  } else {
+    y = Ydim / 2 - 0.5
+  }
+  POSITION = [x, y]
+  console.log('    POSITION: ' + POSITION)
+  renderIsometric()
+  savePosition()
 }
 function walkUp() {
-    console.log('\"walkUp()\" called')
-    let to = [POSITION[0],(POSITION[1] - 1)]
-    move(to)
+  console.log('\"walkUp()\" called')
+  let to = [POSITION[0], (POSITION[1] - 1)]
+  move(to)
 }
 function walkDown() {
-    console.log('\"walkDown()\" called')
-    let to = [POSITION[0],(POSITION[1] + 1)]
-    move(to)
+  console.log('\"walkDown()\" called')
+  let to = [POSITION[0], (POSITION[1] + 1)]
+  move(to)
 }
 function walkLeft() {
-    console.log('\"walkLeft()\" called')
-    let to = [(POSITION[0] + 1),POSITION[1]]
-    move(to)
+  console.log('\"walkLeft()\" called')
+  let to = [(POSITION[0] + 1), POSITION[1]]
+  move(to)
 }
 function walkRight() {
-    console.log('\"walkRight()\" called')
-    let to = [(POSITION[0] - 1),POSITION[1]]
-    move(to)
+  console.log('\"walkRight()\" called')
+  let to = [(POSITION[0] - 1), POSITION[1]]
+  move(to)
 }
 function move(to) {
-    BIGBASES.forEach((obj)=>{
-        if (JSON.stringify(obj.coords)==JSON.stringify(POSITION)) {
-            if (to[0] > POSITION[0]) {
-                to = [(to[0] + obj.scale - 1),to[1]]
-            }
-            if (to[1] > POSITION[1]) {
-                to = [to[0],(to[1] + obj.scale - 1)]
-            }
-        }
-        obj.redirections.forEach((coordPair)=>{
-            if (JSON.stringify(coordPair)==JSON.stringify(to)) {
-                to = obj.coords
-            }
-        })
+  BIGBASES.forEach((obj) => {
+    if (JSON.stringify(obj.coords) == JSON.stringify(POSITION)) {
+      if (to[0] > POSITION[0]) {
+        to = [(to[0] + obj.scale - 1), to[1]]
+      }
+      if (to[1] > POSITION[1]) {
+        to = [to[0], (to[1] + obj.scale - 1)]
+      }
+    }
+    obj.redirections.forEach((coordPair) => {
+      if (JSON.stringify(coordPair) == JSON.stringify(to)) {
+        to = obj.coords
+      }
     })
-    POSITION = to
-    renderSelector()
-    savePosition()
+  })
+  POSITION = to
+  renderSelector()
+  savePosition()
 }
 
 
 //ISOMETRIC RENDER
 
 function renderSchematic() {
-    console.log('\"renderSchematic()\" began')
-    let clonesToKill = document.querySelectorAll('.cloneSchemTile')
-    clonesToKill.forEach((node) => {
-        node.remove()
-    })
-    let SchematicTile = document.getElementById('SCHEMATIC')
-    let Xdim = SchematicTile.getAttribute("data-Xdim")
-    let Ydim = SchematicTile.getAttribute("data-Ydim")
-    console.log('   schemDimensions: (' + Xdim + ',' + Ydim + ')')
-    for (let xi = 0; xi < Xdim; xi++) {
-        for (let yi = 0; yi < Ydim; yi++) {
-            let invalidSchemCoord = false
-            BIGBASES.forEach((obj)=>{
-                obj.redirections.forEach((coordPair)=>{
-                    if (JSON.stringify(coordPair)==JSON.stringify([xi,yi])) {
-                        invalidSchemCoord = true
-                    }
-                })
-            })
-            if (!invalidSchemCoord) {
-                let offsets = Iso2Reg(xi, yi)
-                let schemTile = SchematicTile.cloneNode()
-                schemTile.classList.add('cloneSchemTile')
-                schemTile.style.zIndex = yi - xi    // SCHEMATIC TILE AT ORIGIN HAS z: 0
-                schemTile.style.left = offsets[0] + "px"
-                schemTile.style.top = offsets[1] + "px"
-                schemTile.style.width = 64 * tileScale + "px"
-                schemTile.style.height = 256 * tileScale + "px"
-                schemTile.style.visibility = "visible"
-                isometricContainer.appendChild(schemTile)
-            } else {
-                console.log('   non-viable schematic tile at[' + xi + ',' + yi + ']')
-            }
-            console.log('   schematic cloned at [' + xi + ',' + yi + ']')
-        }
+  console.log('\"renderSchematic()\" began')
+  let clonesToKill = document.querySelectorAll('.cloneSchemTile')
+  clonesToKill.forEach((node) => {
+    node.remove()
+  })
+  let SchematicTile = document.getElementById('SCHEMATIC')
+  let Xdim = SchematicTile.getAttribute("data-Xdim")
+  let Ydim = SchematicTile.getAttribute("data-Ydim")
+  console.log('   schemDimensions: (' + Xdim + ',' + Ydim + ')')
+  for (let xi = 0; xi < Xdim; xi++) {
+    for (let yi = 0; yi < Ydim; yi++) {
+      let invalidSchemCoord = false
+      BIGBASES.forEach((obj) => {
+        obj.redirections.forEach((coordPair) => {
+          if (JSON.stringify(coordPair) == JSON.stringify([xi, yi])) {
+            invalidSchemCoord = true
+          }
+        })
+      })
+      if (!invalidSchemCoord) {
+        let offsets = Iso2Reg(xi, yi)
+        let schemTile = SchematicTile.cloneNode()
+        schemTile.classList.add('cloneSchemTile')
+        schemTile.style.zIndex = yi - xi    // SCHEMATIC TILE AT ORIGIN HAS z: 0
+        schemTile.style.left = offsets[0] + "px"
+        schemTile.style.top = offsets[1] + "px"
+        schemTile.style.width = 64 * tileScale + "px"
+        schemTile.style.height = 256 * tileScale + "px"
+        schemTile.style.visibility = "visible"
+        isometricContainer.appendChild(schemTile)
+      } else {
+        console.log('   non-viable schematic tile at[' + xi + ',' + yi + ']')
+      }
+      console.log('   schematic cloned at [' + xi + ',' + yi + ']')
     }
-    console.log('> \"renderSchematic()\" finished')
+  }
+  console.log('> \"renderSchematic()\" finished')
 }
 function renderSelector() {
-    console.log('\"renderSelector()\" began')
-    console.log('   POSIITON: '+POSITIONprevious+'->'+POSITION)
-    let off = 175
-    let maxX = document.getElementById('SCHEMATIC').getAttribute('data-Xdim')
-    let maxY = document.getElementById('SCHEMATIC').getAttribute('data-Ydim')
-    if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY ) { // if inside schematic grid:
-        let ZED = 2 // SELECTOR AT ORIGIN HAS z: 2
-        let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + ZED
-        let newZ = POSITION[1] - POSITION[0] + ZED
+  console.log('\"renderSelector()\" began')
+  console.log('   POSIITON: ' + POSITIONprevious + '->' + POSITION)
+  let off = 175
+  let maxX = document.getElementById('SCHEMATIC').getAttribute('data-Xdim')
+  let maxY = document.getElementById('SCHEMATIC').getAttribute('data-Ydim')
+  if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY) { // if inside schematic grid:
+    let ZED = 2 // SELECTOR AT ORIGIN HAS z: 2
+    let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + ZED
+    let newZ = POSITION[1] - POSITION[0] + ZED
 
-        // v TWEEN v
-        let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
-        let frame = 0
-        let tween = new TWEEN.Tween(Obj)
-            .to({ x: POSITION[0], y: POSITION[1] }, 100*isoSpread) // 100 ms (at no spread) -> 0.10 sec
-            .easing(TWEEN.Easing.Cubic.InOut)
-            .onStart(()=>{
-                canMove = false
-                frame = 0
-                if (newZ >= oldZ) { // if Z will increase, update Z immediately
-                    Selection.style.zIndex = newZ
-                    SelectionZ.style.zIndex = newZ + 1
-                }
-            })
-            .onUpdate(()=>{
-                frame ++
-                console.log('   frame: '+frame)
-                if (frame % 2 == 0) {
-                    console.log = function () {} // disable console.log() while tweening
-                    let offsets = Iso2Reg(Obj.x,Obj.y)
-                    let offsetsi = Iso2Reg(-Obj.x,-Obj.y)
-                    Selection.style.top = offsets[1] + off * tileScale + "px"
-                    Selection.style.left = offsets[0] + "px"
-                    SelectionZ.style.top = offsets[1] + off * tileScale + "px"
-                    SelectionZ.style.left = offsets[0] + "px"
-                    renderIsoWindow(offsetsi)
-                    console.log = consoleLogFunc // enable console.log() after tweening
-                }
-            })
-            .onComplete(()=>{
-                POSITIONprevious = [...POSITION]
-                canMove = true
-                frame = 0
-                if (newZ < oldZ) { // if Z will decrease, wait to update Z
-                    Selection.style.zIndex = newZ
-                    SelectionZ.style.zIndex = newZ + 1
-                }
-                getTile()
-            })
-        tween.start()
-        function animate(time) {
-            requestAnimationFrame(animate)
-            tween.update(time)
+    // v TWEEN v
+    let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
+    let frame = 0
+    let tween = new TWEEN.Tween(Obj)
+      .to({ x: POSITION[0], y: POSITION[1] }, 100 * isoSpread) // 100 ms (at no spread) -> 0.10 sec
+      .easing(TWEEN.Easing.Cubic.InOut)
+      .onStart(() => {
+        canMove = false
+        frame = 0
+        if (newZ >= oldZ) { // if Z will increase, update Z immediately
+          Selection.style.zIndex = newZ
+          SelectionZ.style.zIndex = newZ + 1
         }
-        animate()
-        // ^ TWEEN ^
-
-    } else {
-        console.log('   POSITION outside grid')
-        console.log('   sending back ...')
-        POSITION = [...POSITIONprevious]
+      })
+      .onUpdate(() => {
+        frame++
+        console.log('   frame: ' + frame)
+        if (frame % 2 == 0) {
+          console.log = function () { } // disable console.log() while tweening
+          let offsets = Iso2Reg(Obj.x, Obj.y)
+          let offsetsi = Iso2Reg(-Obj.x, -Obj.y)
+          Selection.style.top = offsets[1] + off * tileScale + "px"
+          Selection.style.left = offsets[0] + "px"
+          SelectionZ.style.top = offsets[1] + off * tileScale + "px"
+          SelectionZ.style.left = offsets[0] + "px"
+          renderIsoWindow(offsetsi)
+          console.log = consoleLogFunc // enable console.log() after tweening
+        }
+      })
+      .onComplete(() => {
+        POSITIONprevious = [...POSITION]
+        canMove = true
+        frame = 0
+        if (newZ < oldZ) { // if Z will decrease, wait to update Z
+          Selection.style.zIndex = newZ
+          SelectionZ.style.zIndex = newZ + 1
+        }
         getTile()
+      })
+    tween.start()
+    function animate(time) {
+      requestAnimationFrame(animate)
+      tween.update(time)
     }
-    Selection.style.width = 64 * tileScale + "px"
-    Selection.style.height = 64 * tileScale + "px"
-    SelectionZ.style.width = 64 * tileScale + "px"
-    SelectionZ.style.height = 64 * tileScale + "px"
-    console.log('> \"renderSelector()\" finished')
+    animate()
+    // ^ TWEEN ^
+
+  } else {
+    console.log('   POSITION outside grid')
+    console.log('   sending back ...')
+    POSITION = [...POSITIONprevious]
+    getTile()
+  }
+  Selection.style.width = 64 * tileScale + "px"
+  Selection.style.height = 64 * tileScale + "px"
+  SelectionZ.style.width = 64 * tileScale + "px"
+  SelectionZ.style.height = 64 * tileScale + "px"
+  console.log('> \"renderSelector()\" finished')
 }
 function renderIsoWindow(offsets) {
-    grabWindowDim(offsets)
-    let winOffX = windowDimensions[0] / 2
-    let winOffY = windowDimensions[1] / 2
-    console.log('\"renderIsoWindow()\" began')
-    isometricContainer.style.left = winOffX - (32 * tileScale) + offsets[0] + 'px'
-    isometricContainer.style.top = winOffY - ((256-11) * tileScale) + offsets[1] + scrollOffset + 'px'
-    console.log('> \"renderIsoWindow()\" finished')
+  grabWindowDim(offsets)
+  let winOffX = windowDimensions[0] / 2
+  let winOffY = windowDimensions[1] / 2
+  console.log('\"renderIsoWindow()\" began')
+  isometricContainer.style.left = winOffX - (32 * tileScale) + offsets[0] + 'px'
+  isometricContainer.style.top = winOffY - ((256 - 11) * tileScale) + offsets[1] + scrollOffset + 'px'
+  console.log('> \"renderIsoWindow()\" finished')
 }
 function renderIsometric() {
-    console.log('\"renderIsometric()\" began')
-    var isometricTilesQuery = document.querySelectorAll(".isometricTile")
-    var isometricBasesQuery = document.querySelectorAll(".isometricBase")
-    REND(isometricTilesQuery,3)     // TILE AT ORIGIN HAS z: 3
-    REND(isometricBasesQuery,1)     // BASE AT ORIGIN HAS z: 1
-    renderSchematic()
-    renderSelector()
-    renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
-    console.log('> \"renderIsometric()\" finished')
+  console.log('\"renderIsometric()\" began')
+  var isometricTilesQuery = document.querySelectorAll(".isometricTile")
+  var isometricBasesQuery = document.querySelectorAll(".isometricBase")
+  REND(isometricTilesQuery, 3)     // TILE AT ORIGIN HAS z: 3
+  REND(isometricBasesQuery, 1)     // BASE AT ORIGIN HAS z: 1
+  renderSchematic()
+  renderSelector()
+  renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
+  console.log('> \"renderIsometric()\" finished')
 }
-function REND(CLASS,ZED) {
-    CLASS.forEach((tile) => {
-        let offY = 0
-        var perTileScale = 1
-        if (tile.hasAttribute('data-scale')) {
-            perTileScale = parseInt(tile.getAttribute('data-scale'))
-        }
-        if (tile.hasAttribute('data-offY')) {offY = parseInt(tile.getAttribute('data-offY'))}
-        let xi = parseInt(tile.classList[1].slice(1))
-        let yi = parseInt(tile.classList[2].slice(1))
-        console.log('   IsometricTile:')
-        let offsets = Iso2Reg(xi, yi)
-        let xf = offsets[0] + "px"
-        let yf = offsets[1]
-        yf += offY * tileScale
-        tile.style.left = xf
-        tile.style.top = (yf - (256-11)*(perTileScale-1)*tileScale) + "px"
-        tile.style.zIndex = yi - xi + ZED
-        tile.style.width = 64 * perTileScale * tileScale + "px"
-        tile.style.height = 256 * perTileScale * tileScale + "px"
-        return tile
-    })
+function REND(CLASS, ZED) {
+  CLASS.forEach((tile) => {
+    let offY = 0
+    var perTileScale = 1
+    if (tile.hasAttribute('data-scale')) {
+      perTileScale = parseInt(tile.getAttribute('data-scale'))
+    }
+    if (tile.hasAttribute('data-offY')) { offY = parseInt(tile.getAttribute('data-offY')) }
+    let xi = parseInt(tile.classList[1].slice(1))
+    let yi = parseInt(tile.classList[2].slice(1))
+    console.log('   IsometricTile:')
+    let offsets = Iso2Reg(xi, yi)
+    let xf = offsets[0] + "px"
+    let yf = offsets[1]
+    yf += offY * tileScale
+    tile.style.left = xf
+    tile.style.top = (yf - (256 - 11) * (perTileScale - 1) * tileScale) + "px"
+    tile.style.zIndex = yi - xi + ZED
+    tile.style.width = 64 * perTileScale * tileScale + "px"
+    tile.style.height = 256 * perTileScale * tileScale + "px"
+    return tile
+  })
 }
 
 
 //RENDER INPUTS
 
-spreadInput.addEventListener('input',spreadInputFunc)
+spreadInput.addEventListener('input', spreadInputFunc)
 function spreadInputFunc() {
-    console.log('\"spreadInputFunc()\" began')
-    isoSpread = parseFloat(spreadInput.value)
-    isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
-    SpLabel.innerText = 'Spread: ' + isoSpread
-    console.log('   ' + isoSpread)
-    sessionStorage.setItem('Spread',isoSpread)
-    renderIsometric()
-    console.log('> \"spreadInputFunc()\" finished')
+  console.log('\"spreadInputFunc()\" began')
+  isoSpread = parseFloat(spreadInput.value)
+  isoSpread = Number.isNaN(isoSpread) ? 1.0 : isoSpread
+  SpLabel.innerText = 'Spread: ' + isoSpread
+  console.log('   ' + isoSpread)
+  sessionStorage.setItem('Spread', isoSpread)
+  renderIsometric()
+  console.log('> \"spreadInputFunc()\" finished')
 }
-scaleInput.addEventListener('input',scaleInputFunc)
+scaleInput.addEventListener('input', scaleInputFunc)
 function scaleInputFunc() {
-    console.log('\"scaleInputFunc()\" began')
-    tileScale = parseFloat(scaleInput.value)
-    tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
-    ScLabel.innerText = 'Scale: ' + tileScale
-    console.log('   ' + tileScale)
-    sessionStorage.setItem('Scale',tileScale)
-    renderIsometric()
-    console.log('> \"scaleInputFunc()\" finished')
+  console.log('\"scaleInputFunc()\" began')
+  tileScale = parseFloat(scaleInput.value)
+  tileScale = Number.isNaN(tileScale) ? 2.0 : tileScale
+  ScLabel.innerText = 'Scale: ' + tileScale
+  console.log('   ' + tileScale)
+  sessionStorage.setItem('Scale', tileScale)
+  renderIsometric()
+  console.log('> \"scaleInputFunc()\" finished')
 }
-mountainInput.addEventListener('input',mountainInputFunc)
+mountainInput.addEventListener('input', mountainInputFunc)
 function mountainInputFunc() {
-    console.log('\"mountainInputFunc()\" began')
-    mountainOffset = parseInt(mountainInput.value)
-    mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
-    MnLabel.innerText = 'Hill: ' + mountainOffset
-    sessionStorage.setItem('Hill',mountainOffset)
-    renderIsometric()
-    console.log('> \"mountainInputFunc()\" finished')
+  console.log('\"mountainInputFunc()\" began')
+  mountainOffset = parseInt(mountainInput.value)
+  mountainOffset = Number.isNaN(mountainOffset) ? 0 : mountainOffset
+  MnLabel.innerText = 'Hill: ' + mountainOffset
+  sessionStorage.setItem('Hill', mountainOffset)
+  renderIsometric()
+  console.log('> \"mountainInputFunc()\" finished')
 }
-scrollInput.addEventListener('input',scrollInputFunc)
+scrollInput.addEventListener('input', scrollInputFunc)
 function scrollInputFunc() {
-    console.log('\"scrollInputFunc()\" began')
-    scrollOffset = parseInt(scrollInput.value)
-    scrollOffset = Number.isNaN(scrollOffset) ? 0 : scrollOffset
-    ScrollLabel.innerText = 'Scroll: ' + scrollOffset
-    sessionStorage.setItem('Scroll',scrollOffset)
-    renderIsometric()
-    console.log('> \"scrollInputFunc()\" finished')
+  console.log('\"scrollInputFunc()\" began')
+  scrollOffset = parseInt(scrollInput.value)
+  scrollOffset = Number.isNaN(scrollOffset) ? 0 : scrollOffset
+  ScrollLabel.innerText = 'Scroll: ' + scrollOffset
+  sessionStorage.setItem('Scroll', scrollOffset)
+  renderIsometric()
+  console.log('> \"scrollInputFunc()\" finished')
 }
-gridXInput.addEventListener('input',gridXFunc)
+gridXInput.addEventListener('input', gridXFunc)
 function gridXFunc() {
-    console.log('\"gridXFunc()\" began')
-    let scheme = document.getElementById('SCHEMATIC')
-    let val = Number.isNaN(gridXInput.value) ? "7" : gridXInput.value
-    scheme.setAttribute('data-Xdim', val)
-    console.log(scheme.getAttribute('data-Xdim'))
-    renderIsometric()
-    origin()
-    console.log('> \"gridXFunc()\" finished')
+  console.log('\"gridXFunc()\" began')
+  let scheme = document.getElementById('SCHEMATIC')
+  let val = Number.isNaN(gridXInput.value) ? "7" : gridXInput.value
+  scheme.setAttribute('data-Xdim', val)
+  console.log(scheme.getAttribute('data-Xdim'))
+  renderIsometric()
+  origin()
+  console.log('> \"gridXFunc()\" finished')
 }
-gridYInput.addEventListener('input',gridYFunc)
+gridYInput.addEventListener('input', gridYFunc)
 function gridYFunc() {
-    console.log('\"gridYFunc()\" began')
-    let scheme = document.getElementById('SCHEMATIC')
-    let val = Number.isNaN(gridYInput.value) ? "7" : gridYInput.value
-    scheme.setAttribute('data-Ydim', val)
-    console.log(scheme.getAttribute('data-Ydim'))
-    renderIsometric()
-    origin()
-    console.log('> \"gridYFunc()\" finished')
+  console.log('\"gridYFunc()\" began')
+  let scheme = document.getElementById('SCHEMATIC')
+  let val = Number.isNaN(gridYInput.value) ? "7" : gridYInput.value
+  scheme.setAttribute('data-Ydim', val)
+  console.log(scheme.getAttribute('data-Ydim'))
+  renderIsometric()
+  origin()
+  console.log('> \"gridYFunc()\" finished')
 }
-resetSpreadButton.addEventListener('click',resetSpread)
+resetSpreadButton.addEventListener('click', resetSpread)
 function resetSpread() {
-    console.log('isoSpread -> ' + spreadDefault)
-    isoSpread = spreadDefault
-    spreadInput.value = isoSpread
-    SpLabel.innerText = 'Spread: ' + isoSpread
-    sessionStorage.setItem('Spread',isoSpread)
-    renderIsometric()
+  console.log('isoSpread -> ' + spreadDefault)
+  isoSpread = spreadDefault
+  spreadInput.value = isoSpread
+  SpLabel.innerText = 'Spread: ' + isoSpread
+  sessionStorage.setItem('Spread', isoSpread)
+  renderIsometric()
 }
-resetScaleButton.addEventListener('click',resetScale)
+resetScaleButton.addEventListener('click', resetScale)
 function resetScale() {
-    console.log('tileScale -> ' + scaleDefault)
-    tileScale = scaleDefault
-    scaleInput.value = scaleDefault
-    ScLabel.innerText = 'Scale: ' + tileScale
-    sessionStorage.setItem('Scale',tileScale)
-    renderIsometric()
+  console.log('tileScale -> ' + scaleDefault)
+  tileScale = scaleDefault
+  scaleInput.value = scaleDefault
+  ScLabel.innerText = 'Scale: ' + tileScale
+  sessionStorage.setItem('Scale', tileScale)
+  renderIsometric()
 }
-resetMountainButton.addEventListener('click',resetMountain)
+resetMountainButton.addEventListener('click', resetMountain)
 function resetMountain() {
-    console.log('mountainOffset -> ' + hillDefault)
-    mountainOffset = hillDefault
-    mountainInput.value = hillDefault
-    MnLabel.innerText = 'Hill: ' + mountainOffset
-    sessionStorage.setItem('Hill',mountainOffset)
-    renderIsometric()
+  console.log('mountainOffset -> ' + hillDefault)
+  mountainOffset = hillDefault
+  mountainInput.value = hillDefault
+  MnLabel.innerText = 'Hill: ' + mountainOffset
+  sessionStorage.setItem('Hill', mountainOffset)
+  renderIsometric()
 }
-resetScrollButton.addEventListener('click',resetScroll)
+resetScrollButton.addEventListener('click', resetScroll)
 function resetScroll() {
-    console.log('scrollOffset -> ' + scrollDefault)
-    scrollOffset = scrollDefault
-    scrollInput.value = scrollDefault
-    ScrollLabel.innerText = 'Scroll: ' + scrollOffset
-    sessionStorage.setItem('Scroll',scrollOffset)
-    renderIsometric()
+  console.log('scrollOffset -> ' + scrollDefault)
+  scrollOffset = scrollDefault
+  scrollInput.value = scrollDefault
+  ScrollLabel.innerText = 'Scroll: ' + scrollOffset
+  sessionStorage.setItem('Scroll', scrollOffset)
+  renderIsometric()
 }
 
 
 //GET and USE TILE
 
 function getTile() {
-    console.log('getTile() called at: ' + POSITION)
-    var isometricTilesQuery = document.querySelectorAll(".isometricTile")
-    let found = false
-    let TILE
-    let xQ = 'x' + POSITION[0]
-    let yQ = 'y' + POSITION[1]
-    isometricTilesQuery.forEach((element) => {
-        if (element.classList.contains(xQ) & element.classList.contains(yQ)) {
-            found = true
-            TILE = element
-        }
-    })
-    if (found) {
-        console.log('   found: ' + TILE.id)
-        if (TILE.hasAttribute("data-link")) {
-            link = "https://n0n-sense.org/" + TILE.getAttribute("data-link")
-            console.log('   link found: ' + link)
-            linkDisplay.innerText = '[ '+link+' ]'
-            tileTip.style.opacity = 1.0
-        } else {
-            link = ''
-            linkDisplay.innerText = '[ no link found ]'
-            tileTip.style.opacity = 0.0
-        }
-    } else {
-        console.log('   no tile found at ' + [POSITION])
-        link = ''
-        linkDisplay.innerText = '[ no link found ]'
-        tileTip.style.opacity = 0.0
+  console.log('getTile() called at: ' + POSITION)
+  var isometricTilesQuery = document.querySelectorAll(".isometricTile")
+  let found = false
+  let TILE
+  let xQ = 'x' + POSITION[0]
+  let yQ = 'y' + POSITION[1]
+  isometricTilesQuery.forEach((element) => {
+    if (element.classList.contains(xQ) & element.classList.contains(yQ)) {
+      found = true
+      TILE = element
     }
-    posDisplay.innerText = '['+POSITION[0]+','+POSITION[1]+']'
+  })
+  if (found) {
+    console.log('   found: ' + TILE.id)
+    if (TILE.hasAttribute("data-link")) {
+      link = "https://n0n-sense.org/" + TILE.getAttribute("data-link")
+      console.log('   link found: ' + link)
+      linkDisplay.innerText = '[ ' + link + ' ]'
+      tileTip.style.opacity = 1.0
+    } else {
+      link = ''
+      linkDisplay.innerText = '[ no link found ]'
+      tileTip.style.opacity = 0.0
+    }
+  } else {
+    console.log('   no tile found at ' + [POSITION])
+    link = ''
+    linkDisplay.innerText = '[ no link found ]'
+    tileTip.style.opacity = 0.0
+  }
+  posDisplay.innerText = '[' + POSITION[0] + ',' + POSITION[1] + ']'
 }
 function useTile() {
-    console.log('useTile() called at: ' + POSITION)
-    if (link != '') {
-        window.location.href = link
-    }
+  console.log('useTile() called at: ' + POSITION)
+  if (link != '') {
+    window.location.href = link
+  }
 }
 
 
 //STUFF THAT RUNS ON LOAD
 
-mainBody.addEventListener('load',loadFunc())
+mainBody.addEventListener('load', loadFunc())
 function loadFunc() {
-    console.log('\"loadFunc()\" began')
-    if (sessionStorage.getItem('Spread') != null) {     //SPREAD
-        let storedSpread = sessionStorage.getItem('Spread')
-        isoSpread = parseFloat(storedSpread)
-        spreadInput.value = storedSpread
-        SpLabel.innerText = 'Spread: ' + isoSpread
-    } else {
-        isoSpread = spreadDefault
-        spreadInput.value = isoSpread
-        SpLabel.innerText = 'Spread: ' + isoSpread
-    }
-    if (sessionStorage.getItem('Scale') != null) {      //SCALE
-        let storedScale = sessionStorage.getItem('Scale')
-        tileScale = parseFloat(storedScale)
-        scaleInput.value = storedScale
-        ScLabel.innerText = 'Scale: ' + tileScale
-    } else {
-        tileScale = scaleDefault
-        scaleInput.value = tileScale
-        ScLabel.innerText = 'Scale: ' + tileScale
-    }
-    if (sessionStorage.getItem('Hill') != null) {       //HILL
-        let storedHill = sessionStorage.getItem('Hill')
-        mountainOffset = parseFloat(storedHill)
-        mountainInput.value = storedHill
-        MnLabel.innerText = 'Hill: ' + mountainOffset
-    } else {
-        mountainOffset = hillDefault
-        mountainInput.value = mountainOffset
-        MnLabel.innerText = 'Hill: ' + mountainOffset
-    }
-    if (sessionStorage.getItem('Scroll') != null) {       //SCROLL
-        let storedScroll = sessionStorage.getItem('Scroll')
-        scrollOffset = parseFloat(storedScroll)
-        scrollInput.value = storedScroll
-        ScrollLabel.innerText = 'Scroll: ' + scrollOffset
-    } else {
-        scrollOffset = scrollDefault
-        scrollInput.value = scrollOffset
-        ScrollLabel.innerText = 'Scroll: ' + scrollOffset
-    }
-    setBigBases()                                       //SET BIG BASES
-    renderIsometric()                                   //RENDER ISOMETRIC
-    if (sessionStorage.getItem('POSITION') != null) {   //POSITION
-        console.log('stored POSITION detected')
-        restorePosition()
-        console.log('   POSITION restored')
-    } else {
-        origin()
-    }
-    console.log('> \"loadFunc()\" finished')
+  console.log('\"loadFunc()\" began')
+  if (sessionStorage.getItem('Spread') != null) {     //SPREAD
+    let storedSpread = sessionStorage.getItem('Spread')
+    isoSpread = parseFloat(storedSpread)
+    spreadInput.value = storedSpread
+    SpLabel.innerText = 'Spread: ' + isoSpread
+  } else {
+    isoSpread = spreadDefault
+    spreadInput.value = isoSpread
+    SpLabel.innerText = 'Spread: ' + isoSpread
+  }
+  if (sessionStorage.getItem('Scale') != null) {      //SCALE
+    let storedScale = sessionStorage.getItem('Scale')
+    tileScale = parseFloat(storedScale)
+    scaleInput.value = storedScale
+    ScLabel.innerText = 'Scale: ' + tileScale
+  } else {
+    tileScale = scaleDefault
+    scaleInput.value = tileScale
+    ScLabel.innerText = 'Scale: ' + tileScale
+  }
+  if (sessionStorage.getItem('Hill') != null) {       //HILL
+    let storedHill = sessionStorage.getItem('Hill')
+    mountainOffset = parseFloat(storedHill)
+    mountainInput.value = storedHill
+    MnLabel.innerText = 'Hill: ' + mountainOffset
+  } else {
+    mountainOffset = hillDefault
+    mountainInput.value = mountainOffset
+    MnLabel.innerText = 'Hill: ' + mountainOffset
+  }
+  if (sessionStorage.getItem('Scroll') != null) {       //SCROLL
+    let storedScroll = sessionStorage.getItem('Scroll')
+    scrollOffset = parseFloat(storedScroll)
+    scrollInput.value = storedScroll
+    ScrollLabel.innerText = 'Scroll: ' + scrollOffset
+  } else {
+    scrollOffset = scrollDefault
+    scrollInput.value = scrollOffset
+    ScrollLabel.innerText = 'Scroll: ' + scrollOffset
+  }
+  setBigBases()                                       //SET BIG BASES
+  renderIsometric()                                   //RENDER ISOMETRIC
+  if (sessionStorage.getItem('POSITION') != null) {   //POSITION
+    console.log('stored POSITION detected')
+    restorePosition()
+    console.log('   POSITION restored')
+  } else {
+    origin()
+  }
+  console.log('> \"loadFunc()\" finished')
 }

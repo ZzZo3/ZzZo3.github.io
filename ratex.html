@@ -1,139 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="./CSS/global.css">
-    <link rel="stylesheet" href="./CSS/ratex.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title class="pageTitle">RaTeX! [Ver]</title>
-    <link rel="icon" type="image/gif" href="./assets/icons/ratspin.gif">
+  <link rel="stylesheet" href="./CSS/global.css">
+  <link rel="stylesheet" href="./CSS/ratex.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title class="pageTitle">RaTeX! [Ver]</title>
+  <link rel="icon" type="image/gif" href="./assets/icons/ratspin.gif">
 </head>
-<body  class="tileStarry slowSmoothStars" onload="loadFunc()">
-    <!--HEADER-->
-    <table>
-        <tr>
-            <td>
-                <a href="https://n0n-sense.org/main" class="toZzZ1tyButton">↪ ZzZ1ty</a>
-            </td>
-            <td>
-                <h3  class="pageTitle">RaTeX! [Ver]</h3>
-            </td>
-        </tr>
+
+<body class="tileStarry slowSmoothStars" onload="loadFunc()">
+  <!--HEADER-->
+  <table>
+    <tr>
+      <td>
+        <a href="https://n0n-sense.org/main" class="toZzZ1tyButton">↪ ZzZ1ty</a>
+      </td>
+      <td>
+        <h3 class="pageTitle">RaTeX! [Ver]</h3>
+      </td>
+    </tr>
+  </table>
+  <p>Rat-Fish Automatic Typography Evaluation System</p>
+  <!--TABS-->
+  <div class="tab">
+    <button class="tablinks amberButton" id="WritingTab" onClick="switchTab(event, 'Writing')">Writing</button>
+    <button class="tablinks amberButton" onClick="switchTab(event, 'Documentation')">Documentation</button>
+    <button class="tablinks amberButton" onClick="switchTab(event, 'Axiomata')">Axiomata</button>
+    <button class="tablinks amberButton" onClick="switchTab(event, 'Storage')">Storage</button>
+    <button class="tablinks amberButton" onClick="switchTab(event, 'Calculator')">Calculator</button>
+    <button class="tablinks amberButton" onClick="switchTab(event, 'Changelog')">Changelog</button>
+  </div>
+  <!--TRANSLATOR-->
+  <div id="Writing" class="tabcontent">
+    <div class="container">
+      <textarea id="input" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
+      <div class="annot" id="output"></div>
+    </div>
+    <div id="terminal">
+      <div id="terminalOutput"></div>
+      <textarea id="terminalInput" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
+    </div>
+    <button class="dataButton amberButton" id="saveData">
+      save as ...
+    </button>
+    <button class="dataButton amberButton" id="pullData">
+      open ...
+    </button>
+    <button class="dataButton amberButton" id="clearData">
+      clear saves
+    </button>
+    <button class="dataButton amberButton" id="copyIn">
+      copy input
+    </button>
+    <button class="dataButton amberButton" id="copyOut">
+      copy output
+    </button>
+    <button class="dataButton amberButton" id="simplify">
+      simplify
+    </button>
+    <button class="dataButton amberButton" id="erase">
+      erase
+    </button>
+    <button class="dataButton amberButton" id="doubleSlash">
+      \ → \\
+    </button>
+    <button class="dataButton amberButton" id="singleSlash">
+      \\ → \
+    </button>
+    <div class="smallInput">
+      <input type="text" id="saveAsBox" style="display: none" placeholder="save as ..."
+        onkeydown="detectSaveEnter(event)">
+      <button class="mark amberButton" id="confirmSaveAs" style="display: none"
+        onclick="confirmSaveAsFunc()">🗸</button>
+      <button class="mark amberButton" id="closeSaveAs" style="display: none">⨯</button>
+    </div>
+    <div class="smallInput">
+      <input type="text" id="pullSavedBox" style="display: none" placeholder="open ..."
+        onkeydown="detectPullEnter(event)">
+      <button class="mark amberButton" id="confirmPullData" style="display: none"
+        onclick="confirmPullDataFunc()">🗸</button>
+      <button class="mark amberButton" id="closePullData" style="display: none">⨯</button>
+    </div>
+  </div>
+  <!--DOCUMENTATION-->
+  <div id="Documentation" class="tabcontent">
+    <h3>Documentation</h3>
+    <p>yello</p>
+    <table id="docTable">
+      <tr>
+        <th>Symbol</th>
+        <th>Shorthand</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <td>A1</td>
+        <td>A2</td>
+        <td>
+          <button class="amberButton dataButton">buttonA</button>
+        </td>
+      </tr>
+      <tr>
+        <td>B1</td>
+        <td>B2</td>
+        <td>
+          <button class="amberButton dataButton">buttonB</button>
+        </td>
+      </tr>
     </table>
-    <p>Rat-Fish Automatic Typography Evaluation System</p>
-    <!--TABS-->
-    <div class="tab">
-        <button class="tablinks amberButton" id="WritingTab" onClick="switchTab(event, 'Writing')">Writing</button>
-        <button class="tablinks amberButton" onClick="switchTab(event, 'Documentation')">Documentation</button>
-        <button class="tablinks amberButton" onClick="switchTab(event, 'Axiomata')">Axiomata</button>
-        <button class="tablinks amberButton" onClick="switchTab(event, 'Storage')">Storage</button>
-        <button class="tablinks amberButton" onClick="switchTab(event, 'Calculator')">Calculator</button>
-        <button class="tablinks amberButton" onClick="switchTab(event, 'Changelog')">Changelog</button>
+  </div>
+  <div id="Axiomata" class="tabcontent">
+    <h3>Axiomata</h3>
+    <p>yello</p>
+  </div>
+  <div id="Storage" class="tabcontent">
+    <h3>Storage</h3>
+    <p id="storage">[storage]</p>
+  </div>
+  <div id="Calculator" class="tabcontent">
+    <h3>Calculator</h3>
+    <p>yello</p>
+    <div class="container">
+      <div class="annot" id="calcInput"></div>
+      <div class="annot" id="calcOutput"></div>
     </div>
-    <!--TRANSLATOR-->
-    <div id="Writing" class="tabcontent">
-        <div class="container">
-            <textarea id="input" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
-            <div class="annot" id="output"></div>
-        </div>
-        <div id="terminal">
-            <div id="terminalOutput"></div>
-            <textarea id="terminalInput" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
-        </div>
-        <button class="dataButton amberButton" id="saveData">
-            save as ...
-        </button>
-        <button class="dataButton amberButton" id="pullData">
-            open ...
-        </button>
-        <button class="dataButton amberButton" id="clearData">
-            clear saves
-        </button>
-        <button class="dataButton amberButton" id="copyIn">
-            copy input
-        </button>
-        <button class="dataButton amberButton" id="copyOut">
-            copy output
-        </button>
-        <button class="dataButton amberButton" id="simplify">
-            simplify
-        </button>
-        <button class="dataButton amberButton" id="erase">
-            erase
-        </button>
-        <button class="dataButton amberButton" id="doubleSlash">
-            \ → \\
-        </button>
-        <button class="dataButton amberButton" id="singleSlash">
-            \\ → \
-        </button>
-        <div class="smallInput">
-            <input type="text" id="saveAsBox" style="display: none" placeholder="save as ..." onkeydown="detectSaveEnter(event)">
-            <button class="mark amberButton" id="confirmSaveAs"  style="display: none" onclick="confirmSaveAsFunc()">🗸</button>
-            <button class="mark amberButton" id="closeSaveAs"  style="display: none">⨯</button>
-        </div>
-        <div class="smallInput">
-            <input type="text" id="pullSavedBox" style="display: none" placeholder="open ..." onkeydown="detectPullEnter(event)">
-            <button class="mark amberButton" id="confirmPullData"  style="display: none" onclick="confirmPullDataFunc()">🗸</button>
-            <button class="mark amberButton" id="closePullData"  style="display: none">⨯</button>
-        </div>
+    <button class="dataButton amberButton" id="roundPrompt">
+      rounding to [roundTo]
+    </button>
+    <div class="smallInput">
+      <input type="text" id="roundBox" style="display: none" placeholder="eg '0.1' for tenths"
+        onkeydown="detectRoundEnter(event)">
+      <button class="mark amberButton" id="confirmRound" style="display: none" onclick="confirmRoundFunc()">🗸</button>
+      <button class="mark amberButton" id="closeRound" style="display: none">⨯</button>
     </div>
-    <!--DOCUMENTATION-->
-    <div id="Documentation" class="tabcontent">
-        <h3>Documentation</h3>
-        <p>yello</p>
-        <table id="docTable">
-            <tr>
-                <th>Symbol</th>
-                <th>Shorthand</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>A1</td>
-                <td>A2</td>
-                <td>
-                    <button class="amberButton dataButton">buttonA</button>
-                </td>
-            </tr>
-            <tr>
-                <td>B1</td>
-                <td>B2</td>
-                <td>
-                    <button class="amberButton dataButton">buttonB</button>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div id="Axiomata" class="tabcontent">
-        <h3>Axiomata</h3>
-        <p>yello</p>
-    </div>
-    <div id="Storage" class="tabcontent">
-        <h3>Storage</h3>
-        <p id="storage">[storage]</p>
-    </div>
-    <div id="Calculator" class="tabcontent">
-        <h3>Calculator</h3>
-        <p>yello</p>
-        <div class="container">
-            <div class="annot" id="calcInput"></div>
-            <div class="annot" id="calcOutput"></div>
-        </div>
-        <button class="dataButton amberButton" id="roundPrompt">
-            rounding to [roundTo]
-        </button>
-        <div class="smallInput">
-            <input type="text" id="roundBox" style="display: none" placeholder="eg '0.1' for tenths" onkeydown="detectRoundEnter(event)">
-            <button class="mark amberButton" id="confirmRound"  style="display: none" onclick="confirmRoundFunc()">🗸</button>
-            <button class="mark amberButton" id="closeRound"  style="display: none">⨯</button>
-        </div>
-    </div>
-    <div id="Changelog" class="tabcontent">
-        <h3>Changelog</h3>
-        <p>yello</p>
-    </div>
-    <scirpt src="./JS/errorAlerts.js"></scripts>
+  </div>
+  <div id="Changelog" class="tabcontent">
+    <h3>Changelog</h3>
+    <p>yello</p>
+  </div>
+  <scirpt src="./JS/errorAlerts.js">
+    </scripts>
     <script src="./JS/terminal.js"></script>
     <script src="./JS/ratex.js"></script>
 </body>
+
 </html>

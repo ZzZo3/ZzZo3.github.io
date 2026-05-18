@@ -6,6 +6,6 @@ const pageTitle = document.getElementsByClassName('pageTitle')
 //STUFF THAT RUNS ON LOAD
 
 function loadFunc() {
-    console.log('\"loadFunc()\" began')
-    console.log('   \"loadFunc()\" finished')
+  console.log('\"loadFunc()\" began')
+  console.log('   \"loadFunc()\" finished')
 }

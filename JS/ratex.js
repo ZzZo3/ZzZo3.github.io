@@ -32,8 +32,8 @@ storage.textContent = Object.keys(localStorage)
 
 
 function setRF() {
-localStorage.setItem('RaTeX:RF+',
-`# \\SETS
+  localStorage.setItem('RaTeX:RF+',
+    `# \\SETS
 bin type set = { 0 , 1 }
   # \\binary \\set - also referred with 'bool','boolean'
 
@@ -75,322 +75,322 @@ copol p( x type reals , z type reals p) type bin = [ out = pol ( x ) =? pol ( z 
 }
 
 function randomInt(max) {
-    return Math.floor(Math.random() * max)
+  return Math.floor(Math.random() * max)
 }
 
 function displayData() {
-    storage.textContent = Object.keys(localStorage)
+  storage.textContent = Object.keys(localStorage)
 }
 displayData()
 
 let exclusiveMappings = [
-//OPERATORS & QUERIES
-    ['∴','type'],
-    ['∴?','type?','typeq','typequery','typequeer'],
-    ['∴→','types','typeval','typeeval','type->'],
-    ['→','->','eval','evaluates'],
-    ['≤','<='],
-    ['≤?','<=?','<=q','<=query','<=queer'],
-    ['≥','>='],
-    ['≥?','>=?','>=q','>=query','>=queer'],
-    ['∈','elem','element'],
-    ['∈?','elem?','elemq','elemquery','elemqueer','element','elementq','elementquery','elementqueer'],
-//BINARY OPERATORS
-    ['&','and'],
-    ['//','or'],
-    ['⨈','xor'],
-    ['!','not'],
-//SETS
-    ['𝕊','set','setset','sets'],
-    ['ℂ','comps','setcomp','complex'],
-    ['ℝ','reals','setreal'],
-    ['ℚ','rats','setrat','rationals'],
-    ['ℤ','ints','setint','integers'],
-    ['ℕ','nats','setnat','naturals'],
-    ['𝔹','bin','binary','bool','boolean'],
-//CONSTANTS
-    ['π','pi'],
-//FUNCTIONS
-    ['ℑ','iterate','iteration'],
-    ['∑','sum','summate','summation'],
-    ['∏','prod','product','production'],
-    ['𝔉','fact','factorial'],
-    ['𝔇','derange','derangement'],
-    ['↥','pol','polarity'],
-    ['⇈','copol','copolar','copolarity'],
-//OTHER
-    ['{θ}','EV','Expression','ExpressionVector'],
-    ['θ','out','output','theta'],
-    ['θ\'','out\'','output\'','theta\''],
-    ['ω','while'],
-    ['λ','if'],
-    ['⤓','import'],
-    ['⦅','p('],
-    ['⦆','p)']
+  //OPERATORS & QUERIES
+  ['∴', 'type'],
+  ['∴?', 'type?', 'typeq', 'typequery', 'typequeer'],
+  ['∴→', 'types', 'typeval', 'typeeval', 'type->'],
+  ['→', '->', 'eval', 'evaluates'],
+  ['≤', '<='],
+  ['≤?', '<=?', '<=q', '<=query', '<=queer'],
+  ['≥', '>='],
+  ['≥?', '>=?', '>=q', '>=query', '>=queer'],
+  ['∈', 'elem', 'element'],
+  ['∈?', 'elem?', 'elemq', 'elemquery', 'elemqueer', 'element', 'elementq', 'elementquery', 'elementqueer'],
+  //BINARY OPERATORS
+  ['&', 'and'],
+  ['//', 'or'],
+  ['⨈', 'xor'],
+  ['!', 'not'],
+  //SETS
+  ['𝕊', 'set', 'setset', 'sets'],
+  ['ℂ', 'comps', 'setcomp', 'complex'],
+  ['ℝ', 'reals', 'setreal'],
+  ['ℚ', 'rats', 'setrat', 'rationals'],
+  ['ℤ', 'ints', 'setint', 'integers'],
+  ['ℕ', 'nats', 'setnat', 'naturals'],
+  ['𝔹', 'bin', 'binary', 'bool', 'boolean'],
+  //CONSTANTS
+  ['π', 'pi'],
+  //FUNCTIONS
+  ['ℑ', 'iterate', 'iteration'],
+  ['∑', 'sum', 'summate', 'summation'],
+  ['∏', 'prod', 'product', 'production'],
+  ['𝔉', 'fact', 'factorial'],
+  ['𝔇', 'derange', 'derangement'],
+  ['↥', 'pol', 'polarity'],
+  ['⇈', 'copol', 'copolar', 'copolarity'],
+  //OTHER
+  ['{θ}', 'EV', 'Expression', 'ExpressionVector'],
+  ['θ', 'out', 'output', 'theta'],
+  ['θ\'', 'out\'', 'output\'', 'theta\''],
+  ['ω', 'while'],
+  ['λ', 'if'],
+  ['⤓', 'import'],
+  ['⦅', 'p('],
+  ['⦆', 'p)']
 ]
 
 let inclusiveMappings = [
-    ['inc0','⤓0'],
-    ['inc1','⤓1'],
-    ['inc2','⤓2'],
-    ['inc3','⤓3']
+  ['inc0', '⤓0'],
+  ['inc1', '⤓1'],
+  ['inc2', '⤓2'],
+  ['inc3', '⤓3']
 ]
 
-input.addEventListener('input',()=>{
-    output.textContent = translate(input.value,false)
+input.addEventListener('input', () => {
+  output.textContent = translate(input.value, false)
 })
 
 function translate(toTrans, simplify) {
-    console.log('\"translate()\" called - simplify: ',simplify)
-    let text = toTrans
-    let i = 0
-    if(simplify) {
-        i = 1
+  console.log('\"translate()\" called - simplify: ', simplify)
+  let text = toTrans
+  let i = 0
+  if (simplify) {
+    i = 1
+  }
+  text = text.split(/[\n]/) //chops String into array of lines
+  text = text.map(line => line.split(' ')) //changes each 'line' of [text] based on function to chop Strings into arrays of words
+  text = text.map(line => line.map(word => { //changes each 'line' of [text] into array of 'word's
+    let chars = word.split('')
+    if (chars[0] == '\\' && !simplify) {
+      chars[0] = ''
+      return chars.join('')
     }
-    text = text.split(/[\n]/) //chops String into array of lines
-    text = text.map(line=>line.split(' ')) //changes each 'line' of [text] based on function to chop Strings into arrays of words
-    text = text.map(line=>line.map(word=>{ //changes each 'line' of [text] into array of 'word's
-        let chars = word.split('')
-        if(chars[0] == '\\' && !simplify) {
-            chars[0] = ''
-            return chars.join('')
-        }
-        exclusiveMappings.forEach((transMap)=>{ //for each 'transMap' in 'exclusiveMappings', run the function
-            if(transMap.map(item=>item.toLowerCase()).includes(word.toLowerCase())) {
-                word = transMap[i]
-            }
-        })
-        inclusiveMappings.forEach((transMap)=>{
-            if(word.toLowerCase().includes(transMap[i].toLowerCase())) {
-                word = transMap[1-i]
-            }
-            if(simplify && word == transMap[0]) {
-                word = transMap[0]
-            }
-        })
-        return word
-    }))
-    console.log('   \"translate()\" finished')
-    return text.map(k=>k.join(' ')).join('\n')
+    exclusiveMappings.forEach((transMap) => { //for each 'transMap' in 'exclusiveMappings', run the function
+      if (transMap.map(item => item.toLowerCase()).includes(word.toLowerCase())) {
+        word = transMap[i]
+      }
+    })
+    inclusiveMappings.forEach((transMap) => {
+      if (word.toLowerCase().includes(transMap[i].toLowerCase())) {
+        word = transMap[1 - i]
+      }
+      if (simplify && word == transMap[0]) {
+        word = transMap[0]
+      }
+    })
+    return word
+  }))
+  console.log('   \"translate()\" finished')
+  return text.map(k => k.join(' ')).join('\n')
 }
 
 function switchTab(evt, tabName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
+  // Declare all variables
+  var i, tabcontent, tablinks;
 
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
 
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
 
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
 
-    if(tabName == 'Writing') {
-        input.focus()
-    }
-    if(tabName == 'Calculator') {
-        calcInput.textContent = output.textContent
-        calculate('N')
-    }
+  if (tabName == 'Writing') {
+    input.focus()
+  }
+  if (tabName == 'Calculator') {
+    calcInput.textContent = output.textContent
+    calculate('N')
+  }
 }
 
-saveData.onclick = ()=>{
-    saveAsBox.style.display = 'block'
-    confirmSaveAs.style.display = 'inline'
-    closeSaveAs.style.display = 'inline'
-    saveAsBox.focus()
+saveData.onclick = () => {
+  saveAsBox.style.display = 'block'
+  confirmSaveAs.style.display = 'inline'
+  closeSaveAs.style.display = 'inline'
+  saveAsBox.focus()
 }
-pullData.onclick = ()=>{
-    pullSavedBox.style.display = 'block'
-    confirmPullData.style.display = 'inline'
-    closePullData.style.display = 'inline'
-    pullSavedBox.focus()
+pullData.onclick = () => {
+  pullSavedBox.style.display = 'block'
+  confirmPullData.style.display = 'inline'
+  closePullData.style.display = 'inline'
+  pullSavedBox.focus()
 }
-clearData.onclick = ()=>{
-    output.textContent = translate(input.value,false)
-    localStorage.clear()
-    setRF()
+clearData.onclick = () => {
+  output.textContent = translate(input.value, false)
+  localStorage.clear()
+  setRF()
+  displayData()
+}
+closeSaveAs.onclick = () => {
+  saveAsBox.style.display = 'none'
+  confirmSaveAs.style.display = 'none'
+  closeSaveAs.style.display = 'none'
+  saveAsBox.value = ''
+}
+closePullData.onclick = () => {
+  pullSavedBox.style.display = 'none'
+  confirmPullData.style.display = 'none'
+  closePullData.style.display = 'none'
+  pullSavedBox.value = ''
+}
+function confirmSaveAsFunc(saveAs) {
+  console.log('attempting to write to: \"' + saveAs + '\"')
+  if (saveAs == 'RaTeX:RF+') {
+    console.log('   cannot write to RaTeX:RF+')
+    let pickRand = randomInt(5)
+    if (pickRand == 0) {
+      alert('no :3')
+    } else if (pickRand == 1) {
+      alert('incorrect.')
+    } else if (pickRand == 2) {
+      alert('dissallowed.')
+    } else if (pickRand == 3) {
+      alert('wrong.')
+    } else if (pickRand == 4) {
+      alert('unfaithful.')
+    } else {
+      alert('deceitful.')
+    }
+  } else if (saveAs != '') {
+    localStorage.setItem('RaTeX:' + saveAs, input.value)
     displayData()
-}
-closeSaveAs.onclick = ()=>{
+    console.log('   \"' + saveAs + '\" write success')
+    saveAsBox.value = ''
     saveAsBox.style.display = 'none'
     confirmSaveAs.style.display = 'none'
     closeSaveAs.style.display = 'none'
-    saveAsBox.value = ''
+  }
 }
-closePullData.onclick = ()=>{
+function confirmPullDataFunc(data) {
+  console.log('attempting to read: \"' + data + '\"')
+  if (Object.keys(localStorage).includes(data)) {
+    console.log('   \"' + data + '\" found')
+    input.value = localStorage[data]
+    output.textContent = translate(input.value, false)
+    console.log('   \"' + data + '\" read success')
+    pullSavedBox.value = ''
     pullSavedBox.style.display = 'none'
     confirmPullData.style.display = 'none'
     closePullData.style.display = 'none'
-    pullSavedBox.value = ''
-}
-function confirmSaveAsFunc(saveAs) {
-    console.log('attempting to write to: \"'+saveAs+'\"')
-    if(saveAs == 'RaTeX:RF+') {
-        console.log('   cannot write to RaTeX:RF+')
-        let pickRand = randomInt(5)
-        if(pickRand == 0) {
-            alert('no :3')
-        } else if(pickRand == 1) {
-            alert('incorrect.')
-        } else if(pickRand == 2) {
-            alert('dissallowed.')
-        } else if(pickRand == 3) {
-            alert('wrong.')
-        } else if(pickRand == 4) {
-            alert('unfaithful.')
-        } else {
-            alert('deceitful.')
-        }
-    } else if(saveAs != '') {
-        localStorage.setItem('RaTeX:'+saveAs,input.value)
-        displayData()
-        console.log('   \"'+saveAs+'\" write success')
-        saveAsBox.value = ''
-        saveAsBox.style.display = 'none'
-        confirmSaveAs.style.display = 'none'
-        closeSaveAs.style.display = 'none'
-    }
-}
-function confirmPullDataFunc(data) {
-    console.log('attempting to read: \"'+data+'\"')
-    if(Object.keys(localStorage).includes(data)) {
-        console.log('   \"'+data+'\" found')
-        input.value = localStorage[data]
-        output.textContent = translate(input.value,false)
-        console.log('   \"'+data+'\" read success')
-        pullSavedBox.value = ''
-        pullSavedBox.style.display = 'none'
-        confirmPullData.style.display = 'none'
-        closePullData.style.display = 'none'
-    }
+  }
 }
 function detectSaveEnter(event) {
-    let key = event.key
-    if(key == "Enter") {
-        confirmSaveAsFunc(saveAsBox.value)
-    }
+  let key = event.key
+  if (key == "Enter") {
+    confirmSaveAsFunc(saveAsBox.value)
+  }
 }
 function detectPullEnter(event) {
-    let key = event.key
-    if(key == "Enter") {
-        confirmPullDataFunc(pullSavedBox.value)
-    }
+  let key = event.key
+  if (key == "Enter") {
+    confirmPullDataFunc(pullSavedBox.value)
+  }
 }
-copyIn.onclick = ()=>{
-    navigator.clipboard.writeText(input.value)
+copyIn.onclick = () => {
+  navigator.clipboard.writeText(input.value)
 }
-copyOut.onclick = ()=>{
-    navigator.clipboard.writeText(output.textContent)
+copyOut.onclick = () => {
+  navigator.clipboard.writeText(output.textContent)
 }
-simplify.onclick = ()=>{
-    input.value = translate(input.value,true)
-    output.textContent = translate(input.value,false)
+simplify.onclick = () => {
+  input.value = translate(input.value, true)
+  output.textContent = translate(input.value, false)
 }
-erase.onclick = ()=>{
-    input.value = ''
-    output.textContent = ''
+erase.onclick = () => {
+  input.value = ''
+  output.textContent = ''
 }
-doubleSlash.onclick = ()=>{
-    backslashFunc('expand')
+doubleSlash.onclick = () => {
+  backslashFunc('expand')
 }
-singleSlash.onclick = ()=>{
-    backslashFunc('condense')
+singleSlash.onclick = () => {
+  backslashFunc('condense')
 }
 
 // BACKSLASHES
 
 function removeExtraBacks(tempText) {
-    let text = tempText
-    let changed = 0
-    text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
-    text = text.map((line, num)=>{
-        let indexedSlashes = []
-        let indexedDoubleSlashes = []
-        line.forEach((char, index)=>{
-            if (char=='\\') {
-                indexedSlashes.push(index)
-            }
-        })
-        indexedSlashes.forEach(index=>{
-            if (index > 0) {
-                if (line[index-1]=='\\') {
-                    indexedDoubleSlashes.push(index)
-                    changed++
-                }
-            }
-        })
-        line = line.filter((value, index)=>{
-            return !indexedDoubleSlashes.includes(index)
-        })
-        return line
+  let text = tempText
+  let changed = 0
+  text = text.split('\n').map(line => line.split('')) //splits text into array of arrays of characters
+  text = text.map((line, num) => {
+    let indexedSlashes = []
+    let indexedDoubleSlashes = []
+    line.forEach((char, index) => {
+      if (char == '\\') {
+        indexedSlashes.push(index)
+      }
     })
-    if (changed > 0) {
-        console.log('   REMOVED '+changed+' EXTRANEOUS BACKSLASHES')
-    }
-    return text.map(k=>k.join('')).join('\n')
+    indexedSlashes.forEach(index => {
+      if (index > 0) {
+        if (line[index - 1] == '\\') {
+          indexedDoubleSlashes.push(index)
+          changed++
+        }
+      }
+    })
+    line = line.filter((value, index) => {
+      return !indexedDoubleSlashes.includes(index)
+    })
+    return line
+  })
+  if (changed > 0) {
+    console.log('   REMOVED ' + changed + ' EXTRANEOUS BACKSLASHES')
+  }
+  return text.map(k => k.join('')).join('\n')
 }
 
 function backslashFunc(direction) {
-    if (direction=='condense') {
-        console.log('\\\\ -> \\')
-        let text = input.value
-        text = removeExtraBacks(text)
-        input.value = text
-        output.textContent = translate(input.value,false)
-    } else if (direction=='expand') {
-        console.log('\\ -> \\\\')
-        let text = input.value
-        let changed = 0
-        text = removeExtraBacks(text)
-        text = text.split('\n').map(line=>line.split('')) //splits text into array of arrays of characters
-        text = text.map((line, num)=>{
-            let indexedSlashes = []
-            line.forEach((char, index)=>{
-                if (char=='\\') {
-                    indexedSlashes.push(index)
-                }
-            })
-            indexedSlashes.forEach(index=>{
-                line[index] = '\\\\'
-                changed++
-            })
-            return line
-        })
-        if (changed > 0) {
-            console.log('   REDOUBLED '+changed+' BACKSLASHES')
+  if (direction == 'condense') {
+    console.log('\\\\ -> \\')
+    let text = input.value
+    text = removeExtraBacks(text)
+    input.value = text
+    output.textContent = translate(input.value, false)
+  } else if (direction == 'expand') {
+    console.log('\\ -> \\\\')
+    let text = input.value
+    let changed = 0
+    text = removeExtraBacks(text)
+    text = text.split('\n').map(line => line.split('')) //splits text into array of arrays of characters
+    text = text.map((line, num) => {
+      let indexedSlashes = []
+      line.forEach((char, index) => {
+        if (char == '\\') {
+          indexedSlashes.push(index)
         }
-        input.value = text.map(k=>k.join('')).join('\n')
-        output.textContent = translate(input.value,false)
+      })
+      indexedSlashes.forEach(index => {
+        line[index] = '\\\\'
+        changed++
+      })
+      return line
+    })
+    if (changed > 0) {
+      console.log('   REDOUBLED ' + changed + ' BACKSLASHES')
     }
+    input.value = text.map(k => k.join('')).join('\n')
+    output.textContent = translate(input.value, false)
+  }
 }
 
 //CALCULATOR
 //definition operators
-let definitionOperators = ['=','∴','≥','≤','∈']
+let definitionOperators = ['=', '∴', '≥', '≤', '∈']
 //arithmatic operators
-let arithmaticOperators = ['+','-','*','/','^']
+let arithmaticOperators = ['+', '-', '*', '/', '^']
 //queries
-let queryOperators = ['=?','∴?','≥?','≤?','∈?']
+let queryOperators = ['=?', '∴?', '≥?', '≤?', '∈?']
 //evaluations
-let evaluations = ['→','∴→']
+let evaluations = ['→', '∴→']
 //sets
-let sets = ['𝕊','ℂ','ℝ','ℚ','ℤ','ℕ','𝔹']
+let sets = ['𝕊', 'ℂ', 'ℝ', 'ℚ', 'ℤ', 'ℕ', '𝔹']
 //constants
 let constants = ['π']
 //RF+ variables
-let RFvariables = ['ℑ','∑','∏','𝔇']
+let RFvariables = ['ℑ', '∑', '∏', '𝔇']
 //[other]
-let CHANGEOTHERS = ['θ','ω','⤓']
+let CHANGEOTHERS = ['θ', 'ω', '⤓']
 /*literals
     anything that can be read as an int (for now)
 
@@ -398,234 +398,234 @@ user variables
     any 'words' that don't match other token kinds
 */
 function calculate(find) {
-    //TOKENIZATION
-    console.log('calculation called for '+find)
-    let text = calcInput.textContent
-    text = text.split('\n')
-    text = text.map(line=>{
-        line = line.split(' ')
-        potentialComment = line.filter(potentialSpace=>{
-            return potentialSpace !== ' '
-        })
-        if (potentialComment[0]=='#') {
-            line = ['COMMENT']
-        }
-        return line
+  //TOKENIZATION
+  console.log('calculation called for ' + find)
+  let text = calcInput.textContent
+  text = text.split('\n')
+  text = text.map(line => {
+    line = line.split(' ')
+    potentialComment = line.filter(potentialSpace => {
+      return potentialSpace !== ' '
     })
-    text = text.filter(line=>{
-        return line != ['COMMENT']
+    if (potentialComment[0] == '#') {
+      line = ['COMMENT']
+    }
+    return line
+  })
+  text = text.filter(line => {
+    return line != ['COMMENT']
+  })
+  console.log('input: \n' + text.map(k => k.join(' ')).join('\n'))
+  console.log('input split: \n' + JSON.stringify(text))
+  //IDENTIFICATION
+  text = text.map((line) => {
+    line = line.map((word) => {
+      if (definitionOperators.includes(word)) {
+        word = word + '<define>'
+      } else if (arithmaticOperators.includes(word)) {
+        word = word + '<arith>'
+      } else if (queryOperators.includes(word)) {
+        word = word + '<queer>'
+      } else if (evaluations.includes(word)) {
+        word = word + '<eval>'
+      } else if (sets.includes(word)) {
+        word = word + '<set>'
+      } else if (constants.includes(word)) {
+        word = word + '<constant>'
+      } else if (RFvariables.includes(word)) {
+        word = word + '<RF>'
+      } else if (CHANGEOTHERS.includes(word)) {
+        word = word + '<other>'
+      } else if (!isNaN(+word)) {
+        word = word + '<literal>'
+      } else {
+        word = word + '<>'
+      }
+      return word
     })
-    console.log('input: \n'+text.map(k=>k.join(' ')).join('\n'))
-    console.log('input split: \n'+JSON.stringify(text))
-    //IDENTIFICATION
-    text = text.map((line)=>{
-        line = line.map((word)=>{
-            if(definitionOperators.includes(word)) {
-                word = word+'<define>'
-            } else if(arithmaticOperators.includes(word)) {
-                word = word+'<arith>'
-            } else  if(queryOperators.includes(word)) {
-                word = word+'<queer>'
-            } else if(evaluations.includes(word)) {
-                word = word+'<eval>'
-            } else if(sets.includes(word)) {
-                word = word+'<set>'
-            } else if(constants.includes(word)) {
-                word = word+'<constant>'
-            } else if(RFvariables.includes(word)) {
-                word = word+'<RF>'
-            } else if(CHANGEOTHERS.includes(word)) {
-                word = word+'<other>'
-            } else if( !isNaN(+word)) {
-                word = word+'<literal>'
-            } else {
-                word = word+'<>'
-            }
-            return word
-        })
-        return line
-    })
-    console.log('identification: \n'+text.map(k=>k.join(' ')).join('\n'))
-    calcOutput.textContent = text.map(k=>k.join(' ')).join('\n')
+    return line
+  })
+  console.log('identification: \n' + text.map(k => k.join(' ')).join('\n'))
+  calcOutput.textContent = text.map(k => k.join(' ')).join('\n')
 }
 
-function arith(A,op,B) {
-    console.log(+A+' '+op+' '+B)   
-    A = Number(A)
-    B = Number(B)
-    let out
-    if (op=='+') {
-        out = A + B
-    } else if (op=='-') {
-        out = A - B
-    } else if (op=='*') {
-        out = A * B
-    } else if (op=='/') {
-        out = A / B
-    } else if (op=='^') {
-        out = A ** B
-    }
-    if(rounded) {
-        out = Math.round(out / roundTo) * roundTo
-    }
-    return out
+function arith(A, op, B) {
+  console.log(+A + ' ' + op + ' ' + B)
+  A = Number(A)
+  B = Number(B)
+  let out
+  if (op == '+') {
+    out = A + B
+  } else if (op == '-') {
+    out = A - B
+  } else if (op == '*') {
+    out = A * B
+  } else if (op == '/') {
+    out = A / B
+  } else if (op == '^') {
+    out = A ** B
+  }
+  if (rounded) {
+    out = Math.round(out / roundTo) * roundTo
+  }
+  return out
 }
 
-roundPrompt.onclick = ()=>{
-    roundBox.style.display = 'block'
-    confirmRound.style.display = 'inline'
-    closeRound.style.display = 'inline'
-    roundBox.focus()
+roundPrompt.onclick = () => {
+  roundBox.style.display = 'block'
+  confirmRound.style.display = 'inline'
+  closeRound.style.display = 'inline'
+  roundBox.focus()
 }
-closeRound.onclick = ()=>{
-    roundBox.style.display = 'none'
-    confirmRound.style.display = 'none'
-    closeRound.style.display = 'none'
-    roundBox.value = ''
+closeRound.onclick = () => {
+  roundBox.style.display = 'none'
+  confirmRound.style.display = 'none'
+  closeRound.style.display = 'none'
+  roundBox.value = ''
 }
 function confirmRoundFunc() {
-    console.log('attempting to round to: '+roundBox.value)
-    let roundInput = roundBox.value
-    if (roundInput != '') {
-        if( !isNaN(+roundInput)) {
-            rounded = true
-            roundTo = +roundInput
-            roundPrompt.textContent = 'rounding to ['+roundBox.value+']'
-            console.log('   rounding to nearest: '+roundTo)
-        } else if (roundInput=='raw') {
-            rounded = false
-            roundPrompt.textContent = 'rounding to ['+roundBox.value+']'
-            console.log('   not rounding')
-        } else {
-            console.log('   rounding failed')
-        }
+  console.log('attempting to round to: ' + roundBox.value)
+  let roundInput = roundBox.value
+  if (roundInput != '') {
+    if (!isNaN(+roundInput)) {
+      rounded = true
+      roundTo = +roundInput
+      roundPrompt.textContent = 'rounding to [' + roundBox.value + ']'
+      console.log('   rounding to nearest: ' + roundTo)
+    } else if (roundInput == 'raw') {
+      rounded = false
+      roundPrompt.textContent = 'rounding to [' + roundBox.value + ']'
+      console.log('   not rounding')
     } else {
-        console.log('   rounding failed')
+      console.log('   rounding failed')
     }
-    roundBox.style.display = 'none'
-    confirmRound.style.display = 'none'
-    closeRound.style.display = 'none'
-    roundBox.value = ''
+  } else {
+    console.log('   rounding failed')
+  }
+  roundBox.style.display = 'none'
+  confirmRound.style.display = 'none'
+  closeRound.style.display = 'none'
+  roundBox.value = ''
 }
 function detectRoundEnter(event) {
-    let key = event.key
-    if(key == "Enter") {
-        confirmRoundFunc()
-    }
+  let key = event.key
+  if (key == "Enter") {
+    confirmRoundFunc()
+  }
 }
 
 
 // TERMINAL COMMANDS
 
 TERMINALCOMMANDS.push(
-new TerminalCMND(['backslash','bs'], // BACKSLASH
-`
+  new TerminalCMND(['backslash', 'bs'], // BACKSLASH
+    `
 HELP: \'backslash\'
 `,
-    [new TerminalARG('dirn',['ex','cd'],false)],
-(argList)=>{
-    if (argList[0]=='ex') {
+    [new TerminalARG('dirn', ['ex', 'cd'], false)],
+    (argList) => {
+      if (argList[0] == 'ex') {
         backslashFunc('expand')
         TERMINAL.write('>  expanded slashes')
-    } else if (argList[0]=='cd') {
+      } else if (argList[0] == 'cd') {
         backslashFunc('condense')
         TERMINAL.write('>  condensed slashes')
-    }
-}),
-new TerminalCMND(['pull'], // PULL
-`
+      }
+    }),
+  new TerminalCMND(['pull'], // PULL
+    `
 HELP: \'pull\'
 `,
-    [new TerminalARG('from',[],false)],
-(argList)=>{
-    if(Object.keys(localStorage).includes('RaTeX:'+argList[0])) {
-        confirmPullDataFunc('RaTeX:'+argList[0])
-        TERMINAL.write('>  pulled from document: \"RaTeX:'+argList[0]+'\"')
-    } else {
-        TERMINAL.write('>  could not find document: \"RaTeX:'+argList[0]+'\"')
-    }
-}),
-new TerminalCMND(['push'], // PUSH
-`
+    [new TerminalARG('from', [], false)],
+    (argList) => {
+      if (Object.keys(localStorage).includes('RaTeX:' + argList[0])) {
+        confirmPullDataFunc('RaTeX:' + argList[0])
+        TERMINAL.write('>  pulled from document: \"RaTeX:' + argList[0] + '\"')
+      } else {
+        TERMINAL.write('>  could not find document: \"RaTeX:' + argList[0] + '\"')
+      }
+    }),
+  new TerminalCMND(['push'], // PUSH
+    `
 HELP: \'push\'
 `,
-    [new TerminalARG('to',[],false)],
-(argList)=>{
-    if(argList[0]=='RF+') {
+    [new TerminalARG('to', [], false)],
+    (argList) => {
+      if (argList[0] == 'RF+') {
         TERMINAL.write('>  cannot push to RaTeX:RF+')
-    } else if(Object.keys(localStorage).includes('RaTeX:'+argList[0])) {
-        let currentData = localStorage.getItem('RaTeX:'+argList[0])
-        localStorage.setItem('RaTeX:'+argList[0],(currentData+'\n'+input.value))
-        TERMINAL.write('>  appended to: \"RaTeX:'+argList[0]+'\"')
-    } else {
-        localStorage.setItem('RaTeX:'+argList[0],input.value)
-        TERMINAL.write('>  pushed to: \"RaTeX:'+argList[0]+'\"')
-    }
-}),
-new TerminalCMND(['simplify','smpf'],[], // SIMPLIFY
-`
+      } else if (Object.keys(localStorage).includes('RaTeX:' + argList[0])) {
+        let currentData = localStorage.getItem('RaTeX:' + argList[0])
+        localStorage.setItem('RaTeX:' + argList[0], (currentData + '\n' + input.value))
+        TERMINAL.write('>  appended to: \"RaTeX:' + argList[0] + '\"')
+      } else {
+        localStorage.setItem('RaTeX:' + argList[0], input.value)
+        TERMINAL.write('>  pushed to: \"RaTeX:' + argList[0] + '\"')
+      }
+    }),
+  new TerminalCMND(['simplify', 'smpf'], [], // SIMPLIFY
+    `
 HELP: \'simplify\'
 `,
-(argList)=>{
-    input.value = translate(input.value,true)
-    output.textContent = translate(input.value,false)
-    TERMINAL.write('>  simplified document')
-}),
-new TerminalCMND(['erase','er'], // ERASE
-`
+    (argList) => {
+      input.value = translate(input.value, true)
+      output.textContent = translate(input.value, false)
+      TERMINAL.write('>  simplified document')
+    }),
+  new TerminalCMND(['erase', 'er'], // ERASE
+    `
 HELP: \'erase\'
 `,
-    [new TerminalARG('doc',[],true)],
-(argList)=>{
-    if (argList[0]=='-') {
+    [new TerminalARG('doc', [], true)],
+    (argList) => {
+      if (argList[0] == '-') {
         input.value = ''
         output.textContent = ''
         TERMINAL.write('>  erased current document')
-    } else if (argList[0]=='all') {
+      } else if (argList[0] == 'all') {
         localStorage.clear()
         setRF()
         TERMINAL.write('>  cleared localStorage')
-    } else if(Object.keys(localStorage).includes(argList[0])) {
-        if(argList[0]=='RF+') {
-            TERMINAL.write('>  cannot erase RF+')
-        } else if(Object.keys(localStorage).includes(argList[0])) {
-            localStorage.removeItem(argList[0])
-            TERMINAL.write('>  erased: '+argList[0])
+      } else if (Object.keys(localStorage).includes(argList[0])) {
+        if (argList[0] == 'RF+') {
+          TERMINAL.write('>  cannot erase RF+')
+        } else if (Object.keys(localStorage).includes(argList[0])) {
+          localStorage.removeItem(argList[0])
+          TERMINAL.write('>  erased: ' + argList[0])
         }
-    } else {
-        TERMINAL.write('>  could not find document: '+argList[0])
-    }
-}),
-new TerminalCMND(['copy'], // COPY
-`
+      } else {
+        TERMINAL.write('>  could not find document: ' + argList[0])
+      }
+    }),
+  new TerminalCMND(['copy'], // COPY
+    `
 HELP: \'copy\'
 `,
-    [new TerminalARG('from',['in','out'])],
-(argList)=>{
-    if (argList[0]=='in') {
+    [new TerminalARG('from', ['in', 'out'])],
+    (argList) => {
+      if (argList[0] == 'in') {
         navigator.clipboard.writeText(input.value)
         TERMINAL.write('>  copied raw document to clipboard')
-    } else if (argList[0]=='out') {
+      } else if (argList[0] == 'out') {
         navigator.clipboard.writeText(output.textContent)
         TERMINAL.write('>  copied translated document to clipboard')
-    }
-})
+      }
+    })
 )
 
 
 // STUFF THAT RUNS ON LOAD
 
 function loadFunc() {
-    console.log('\"loadFunc()\" began')
-    for(let i = 0; i<pageTitle.length; i++) {
-        pageTitle[i].textContent = 'RaTeX! '+vNum
-    }
-    switchTab(event, 'Writing')
-    output.textContent = translate(input.value,false)
-    roundPrompt.textContent = 'rounding to ['+roundTo+']'
-    setRF()
-    terminalInput.value = ''
-    document.getElementById('terminal').style.height = (3*12)+'vh'
-    TERMINAL.height = (12*3)
-    console.log('   \"loadFunc()\" finished')
+  console.log('\"loadFunc()\" began')
+  for (let i = 0; i < pageTitle.length; i++) {
+    pageTitle[i].textContent = 'RaTeX! ' + vNum
+  }
+  switchTab(event, 'Writing')
+  output.textContent = translate(input.value, false)
+  roundPrompt.textContent = 'rounding to [' + roundTo + ']'
+  setRF()
+  terminalInput.value = ''
+  document.getElementById('terminal').style.height = (3 * 12) + 'vh'
+  TERMINAL.height = (12 * 3)
+  console.log('   \"loadFunc()\" finished')
 }

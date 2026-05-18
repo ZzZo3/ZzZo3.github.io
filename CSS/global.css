@@ -1,120 +1,129 @@
-html, body {
-    height: 100%;
-    font-family:'Courier New', Courier, monospace;
+html,
+body {
+  height: 100%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* BACKGROUNDS */
 .tileDark {
-    color: white;
-    background: 
-      conic-gradient(
-          #080808 90deg,
-          #101010 90deg 180deg,
-          #080808 180deg 270deg,
-          #101010 270deg 360deg
-      );
-    background-repeat: repeat;
-    background-size: 25px 25px;
-    background-position: top left;
+  color: white;
+  background:
+    conic-gradient(#080808 90deg,
+      #101010 90deg 180deg,
+      #080808 180deg 270deg,
+      #101010 270deg 360deg);
+  background-repeat: repeat;
+  background-size: 25px 25px;
+  background-position: top left;
 }
 
 .tileLight {
-    color: black;
-    background: 
-      conic-gradient(
-          #f3f3f3 90deg,
-          #f7f7f7 90deg 180deg,
-          #f3f3f3 180deg 270deg,
-          #f7f7f7 270deg 360deg
-      );
-    background-repeat: repeat;
-    background-size: 25px 25px;
-    background-position: top left;
+  color: black;
+  background:
+    conic-gradient(#f3f3f3 90deg,
+      #f7f7f7 90deg 180deg,
+      #f3f3f3 180deg 270deg,
+      #f7f7f7 270deg 360deg);
+  background-repeat: repeat;
+  background-size: 25px 25px;
+  background-position: top left;
 }
 
 .tileStarry {
-    color: white;
-    background-repeat: repeat;
-    background-size: 100px 100px;
-    background-position: top left;
+  color: white;
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  background-position: top left;
 }
+
 .staticStars {
-    background-image: url("../assets/backgrounds/starryNight.png");
+  background-image: url("../assets/backgrounds/starryNight.png");
 }
+
 .fastStars {
-    background-image: url("../assets/backgrounds/starryNight.gif");
+  background-image: url("../assets/backgrounds/starryNight.gif");
 }
+
 .slowStars {
-    background-image: url("../assets/backgrounds/starryNightSlow.gif");
+  background-image: url("../assets/backgrounds/starryNightSlow.gif");
 }
+
 .fastSmoothStars {
-    background-image: url("../assets/backgrounds/starryNightFSmooth.gif");
+  background-image: url("../assets/backgrounds/starryNightFSmooth.gif");
 }
+
 .slowSmoothStars {
-    background-image: url("../assets/backgrounds/starryNightSSmooth.gif");
+  background-image: url("../assets/backgrounds/starryNightSSmooth.gif");
 }
 
 /* ZZZ1TY BUTTON */
 .toZzZ1tyButton {
-    display: inline;
-    padding: 2px 6px;
-    margin-right: 18px;
-    margin-left: 0px;
-    border-radius: 5px;
-    border: 2px solid #6011AF;
-    background-image: url("../assets/backgrounds/starryNightFSmooth.gif");
-    background-repeat: repeat;
-    background-size: 50px 50px;
-    background-position: top left;
-    color: rgb(255, 216, 132);
-    text-decoration: none;
-    font-family:'Courier New', Courier, monospace;
-    outline: none;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.25s;
+  display: inline;
+  padding: 2px 6px;
+  margin-right: 18px;
+  margin-left: 0px;
+  border-radius: 5px;
+  border: 2px solid #6011AF;
+  background-image: url("../assets/backgrounds/starryNightFSmooth.gif");
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  background-position: top left;
+  color: rgb(255, 216, 132);
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
 }
+
 .toZzZ1tyButton:hover {
-    color: rgb(255, 216, 132);
-    text-shadow: 0px 0px 6px #fffeeb;
-    box-shadow: 0px 0px 6px #7d33c6;
+  color: rgb(255, 216, 132);
+  text-shadow: 0px 0px 6px #fffeeb;
+  box-shadow: 0px 0px 6px #7d33c6;
 }
 
 /* BUTTONS */
 .amberButton {
-    border: 1px solid white;
-    background-color: black;
-    color: rgb(255, 216, 132);
-    font-family:'Courier New', Courier, monospace;
-    outline: none;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.25s;
+  border: 1px solid white;
+  background-color: black;
+  color: rgb(255, 216, 132);
+  font-family: 'Courier New', Courier, monospace;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
 }
+
 .amberButton:hover {
-    background-color: #2f2f2f;
+  background-color: #2f2f2f;
 }
+
 .amberButton.active {
-    background-color: #212121;
+  background-color: #212121;
 }
 
 .dataButton {
-    padding: 2px 6px;
-    border-radius: 5px;
-    margin-top: 1%;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-top: 1%;
 }
+
 /*HYPERLINKS*/
 .hyperlink:link {
-    color: rgb(185, 34, 255);
+  color: rgb(185, 34, 255);
 }
+
 .hyperlink:visited {
-    color: rgb(185, 34, 255);
+  color: rgb(185, 34, 255);
 }
+
 .hyperlink:hover {
-    color: red;
+  color: red;
 }
+
 .hyperlink:active {
-    color: red;
+  color: red;
 }
 
 /* TERMINAL
@@ -123,55 +132,59 @@ html, body {
     <textarea id="terminalInput" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
 </div>
 */
-#terminal{
-    display: block;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 97%;
-    height: 180px;
-    margin-top: 1%;
-    margin-left: 1%;
-    resize: none;
-    background-image: linear-gradient(#09090a 50%, #121214 50%);
-    background-size: 100% 6vh;
-    background-attachment: local;
-    border: 1px solid white;
-    border-radius: 5px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+#terminal {
+  display: block;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 97%;
+  height: 180px;
+  margin-top: 1%;
+  margin-left: 1%;
+  resize: none;
+  background-image: linear-gradient(#09090a 50%, #121214 50%);
+  background-size: 100% 6vh;
+  background-attachment: local;
+  border: 1px solid white;
+  border-radius: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-#terminal >* {
-    display: block;
-    flex-grow: 1;
-    margin: none;
-    background: none;
-    resize: none;
-    box-sizing: border-box;
-    width: 100%;
-    height: 3vh;
-    field-sizing: 2.67vh;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1.05vw;
-    border: none;
-    outline: none;
+
+#terminal>* {
+  display: block;
+  flex-grow: 1;
+  margin: none;
+  background: none;
+  resize: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3vh;
+  field-sizing: 2.67vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.05vw;
+  border: none;
+  outline: none;
 }
+
 #terminalOutput {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    white-space: pre-line;
-    line-height: 3vh;
-    margin-right: 1vw;
-    margin-left: 1vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: pre-line;
+  line-height: 3vh;
+  margin-right: 1vw;
+  margin-left: 1vw;
 }
+
 #terminalInput {
-    overflow-y: hidden;
-    overflow-x: visible;
-    background-color: none;
-    line-height: 2.67vh;
-    margin-right: 1vw;
-    margin-left: 1vw;
-    color: rgb(255,216,132);
+  overflow-y: hidden;
+  overflow-x: visible;
+  background-color: none;
+  line-height: 2.67vh;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  color: rgb(255, 216, 132);
 }
+
 #terminalInput:focus {
-    background-color: blue;
+  background-color: blue;
 }

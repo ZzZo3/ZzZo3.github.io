@@ -11,11 +11,11 @@ TERMINAL.commandArrayName = 'ZORKCOMMANDS'
 //STUFF THAT RUNS ON LOAD
 
 function loadFunc() {
-    console.log('\"loadFunc()\" began')
-    for(let i = 0; i<pageTitle.length; i++) {
-        pageTitle[i].textContent = 'ZzZ0rk! '+vNum
-    }
-    document.getElementById('terminal').style.height = (3*26)+'vh'
-    TERMINAL.height = (26*3)
-    console.log('   \"loadFunc()\" finished')
+  console.log('\"loadFunc()\" began')
+  for (let i = 0; i < pageTitle.length; i++) {
+    pageTitle[i].textContent = 'ZzZ0rk! ' + vNum
+  }
+  document.getElementById('terminal').style.height = (3 * 26) + 'vh'
+  TERMINAL.height = (26 * 3)
+  console.log('   \"loadFunc()\" finished')
 }

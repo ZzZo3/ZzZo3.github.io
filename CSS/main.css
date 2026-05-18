@@ -1,57 +1,66 @@
-.relative >* {
-    position: relative;
-    z-index: 0;
-}
-#isometricParent {
-    position: relative;
-    width: 0px;
-    height: 0px;
-}
-#isometricContainer {
-    position: absolute;
-    width: 0px;
-    height: 0px;
-}
-#isometricContainer >* {
-    position: absolute;
-    image-rendering: pixelated;
-    width: 64px;
-    height: 256px;
-}
-#SchematicTile { /*all clones*/
-    pointer-events: none;
-}
-.SchematicTile { /*only the one that's not cloned*/
-    visibility: hidden;
-}
-.Selection {
-    height: 64px;
-    z-index: 100;
-}
-.slider {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 2px;
+.relative>* {
+  position: relative;
+  z-index: 0;
 }
 
-.top >* {
-    z-index: 100;
+#isometricParent {
+  position: relative;
+  width: 0px;
+  height: 0px;
+}
+
+#isometricContainer {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+}
+
+#isometricContainer>* {
+  position: absolute;
+  image-rendering: pixelated;
+  width: 64px;
+  height: 256px;
+}
+
+#SchematicTile {
+  /*all clones*/
+  pointer-events: none;
+}
+
+.SchematicTile {
+  /*only the one that's not cloned*/
+  visibility: hidden;
+}
+
+.Selection {
+  height: 64px;
+  z-index: 100;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 2px;
+}
+
+.top>* {
+  z-index: 100;
 }
 
 .inputResetPair {
-    display: flex;
+  display: flex;
 }
 
 .resetButton {
-    margin-left: 2.5px;
+  margin-left: 2.5px;
 }
 
 #tileTip {
-    margin-top: 1%;
-    padding: 0.5%;
-    border: 2px solid gray;
-    border-radius: 10px;
-    height: 200px;
-    width: 400px;
+  margin-top: 1%;
+  padding: 0.5%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
 }

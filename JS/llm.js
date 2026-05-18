@@ -10,27 +10,27 @@ let outputText = ""
 const seedBlacklist = [" ", ""]
 let seedWhitelist = []
 const capitalizedWords = ['i', 'lord', 'sankara',
-    'french', 'france', 'burkina', 'faso', 'volta',
-    'october', 'sahel', 'graymalkin', 'palestine', 'palestinian',
-    'israel', 'africa', 'latin', 'america', 'american',
-    'asia', 'asian', 'thomas', 'caesar', 'god', 'macbeth',
-    'banquo', 'hecate', 'duncan', 'malcolm', 'donalbain',
-    'macduff', 'norway', 'lennox', 'ross', 'menteith', 'angus',
-    'caithness', 'fleance', 'siward', 'seyton', 'cawdor',
-    'ireland', 'birmingham', 'dunsinane', 'morocco', 'barry', 'larry',
-    'afghanistan', 'norweyan', 'marti', 'martin', 'luther']
+  'french', 'france', 'burkina', 'faso', 'volta',
+  'october', 'sahel', 'graymalkin', 'palestine', 'palestinian',
+  'israel', 'africa', 'latin', 'america', 'american',
+  'asia', 'asian', 'thomas', 'caesar', 'god', 'macbeth',
+  'banquo', 'hecate', 'duncan', 'malcolm', 'donalbain',
+  'macduff', 'norway', 'lennox', 'ross', 'menteith', 'angus',
+  'caithness', 'fleance', 'siward', 'seyton', 'cawdor',
+  'ireland', 'birmingham', 'dunsinane', 'morocco', 'barry', 'larry',
+  'afghanistan', 'norweyan', 'marti', 'martin', 'luther']
 const replacedWords = [['weird', 'weïrd'], ['jose', 'José']]
 const punctuation = [",", ";", ":", ".", "!", "?", "[", "]", "(", ")",
-    "{", "}", "<", ">", "/", "\`", "~", "\'", "\"", "|", "-", "—", "—", "—"]
+  "{", "}", "<", ">", "/", "\`", "~", "\'", "\"", "|", "-", "—", "—", "—"]
 const puncTerminating = [".", "!", "?"]
 const wordBlacklist = ["negro", "nigger"]
 
 //CLASSES
 class Word {
-    constructor(name, nexts) {
-        this.name = name
-        this.nexts = nexts
-    }
+  constructor(name, nexts) {
+    this.name = name
+    this.nexts = nexts
+  }
 }
 
 //DATA
@@ -4770,171 +4770,171 @@ MALCOLM
 `
 
 function eatData(input) {
-    data = data.split("\n").join()
-    data = data.split(".").join(" . ")
-    data = data.split("!").join(" ! ")
-    data = data.split("?").join(" ? ")
-    data = data.split(",").join(" , ")
-    data = data.split(" ")
-    data = data.filter((k) => k != "" && k != " ")
-    data = data.map((k) => k.toLowerCase())
-    console.log(data)
-    for (let i = 0; i < data.length; i++) {
-        if (!words.includes(data[i])) {
-            words.push(data[i])
-        }
+  data = data.split("\n").join()
+  data = data.split(".").join(" . ")
+  data = data.split("!").join(" ! ")
+  data = data.split("?").join(" ? ")
+  data = data.split(",").join(" , ")
+  data = data.split(" ")
+  data = data.filter((k) => k != "" && k != " ")
+  data = data.map((k) => k.toLowerCase())
+  console.log(data)
+  for (let i = 0; i < data.length; i++) {
+    if (!words.includes(data[i])) {
+      words.push(data[i])
     }
-    for (let i = 0; i < words.length; i++) {
-        var possibleNexts = []
-        for (let j = 0; j < data.length; j++) {
-            if (data[j] == words[i] && j + 1 < data.length) {
-                possibleNexts.push(data[j + 1])
-                if (puncTerminating.includes(data[j])) {
-                    seedWhitelist.push(data[j + 1])
-                }
-            }
+  }
+  for (let i = 0; i < words.length; i++) {
+    var possibleNexts = []
+    for (let j = 0; j < data.length; j++) {
+      if (data[j] == words[i] && j + 1 < data.length) {
+        possibleNexts.push(data[j + 1])
+        if (puncTerminating.includes(data[j])) {
+          seedWhitelist.push(data[j + 1])
         }
-        let nextsRaw = []
-        for (let j = 0; j < words.length; j++) {
-            let count = possibleNexts.filter(w => w === words[j]).length
-            nextsRaw.push([words[j], count])
-        }
-        let sum = 0
-        for (let j = 0; j < nextsRaw.length; j++) {
-            sum += nextsRaw[j][1]
-        }
-        let nextsProcessed = []
-        for (let j = 0; j < nextsRaw.length; j++) {
-            let prob = nextsRaw[j][1] / sum
-            nextsProcessed.push([nextsRaw[j][0], prob])
-        }
-        nextWords.push([words[i], nextsProcessed])
+      }
     }
+    let nextsRaw = []
+    for (let j = 0; j < words.length; j++) {
+      let count = possibleNexts.filter(w => w === words[j]).length
+      nextsRaw.push([words[j], count])
+    }
+    let sum = 0
+    for (let j = 0; j < nextsRaw.length; j++) {
+      sum += nextsRaw[j][1]
+    }
+    let nextsProcessed = []
+    for (let j = 0; j < nextsRaw.length; j++) {
+      let prob = nextsRaw[j][1] / sum
+      nextsProcessed.push([nextsRaw[j][0], prob])
+    }
+    nextWords.push([words[i], nextsProcessed])
+  }
 }
 
 function follow(inWord) {
-    var index = 0
-    let foundInWord = false
-    for (let i = 0; i < nextWords.length; i++) {
-        if (nextWords[i][0] == inWord) {
-            index = i
-            foundInWord = true
-        }
+  var index = 0
+  let foundInWord = false
+  for (let i = 0; i < nextWords.length; i++) {
+    if (nextWords[i][0] == inWord) {
+      index = i
+      foundInWord = true
     }
-    if (!foundInWord) {
-        return
+  }
+  if (!foundInWord) {
+    return
+  }
+  var nexts = nextWords[index][1]
+  //weighted random v
+  var items = nexts.map((k) => (k[0]))
+  var weights = nexts.map((k) => (k[1]))
+  var cmltvWeights = []
+  for (let i = 0; i < weights.length; i++) {
+    var weight = 0
+    for (let j = 0; j <= i; j++) {
+      weight += weights[j]
     }
-    var nexts = nextWords[index][1]
-    //weighted random v
-    var items = nexts.map((k) => (k[0]))
-    var weights = nexts.map((k) => (k[1]))
-    var cmltvWeights = []
-    for (let i = 0; i < weights.length; i++) {
-        var weight = 0
-        for (let j = 0; j <= i; j++) {
-            weight += weights[j]
-        }
-        cmltvWeights[i] = weight
+    cmltvWeights[i] = weight
+  }
+  let picker = Math.random()
+  let pick = "_"
+  for (let i = 0; i < cmltvWeights.length; i++) {
+    if (cmltvWeights[i] >= picker && pick == "_") {
+      pick = items[i]
     }
-    let picker = Math.random()
-    let pick = "_"
-    for (let i = 0; i < cmltvWeights.length; i++) {
-        if (cmltvWeights[i] >= picker && pick == "_") {
-            pick = items[i]
-        }
-    }
-    var outWord = pick;
-    return (outWord)
+  }
+  var outWord = pick;
+  return (outWord)
 }
 
 function write(inWord) {
-    var text = [inWord]
-    var last = inWord
-    for (let n = 0; n < 100; n++) {
-        if (!puncTerminating.includes(last)) {
-            var next = last
-            while (next == last || punctuation.includes(last) && punctuation.includes(next)) {
-                next = follow(last)
-            }
-            text.push(next)
-            last = next
-        }
+  var text = [inWord]
+  var last = inWord
+  for (let n = 0; n < 100; n++) {
+    if (!puncTerminating.includes(last)) {
+      var next = last
+      while (next == last || punctuation.includes(last) && punctuation.includes(next)) {
+        next = follow(last)
+      }
+      text.push(next)
+      last = next
     }
-    return (text.join(" "))
+  }
+  return (text.join(" "))
 }
 
 function format(text) {
-    text = text.split(" ").map((k) => {
-        if (capitalizedWords.includes(k)) {
-            k = k.charAt(0).toUpperCase() + k.slice(1)
-        }
-        for (let i = 0; i < replacedWords.length; i++) {
-            if (replacedWords[i][0] == k) {
-                k = replacedWords[i][1]
-            }
-        }
-        for (let i = 0; i < wordBlacklist.length; i++) {
-            if (k.includes(wordBlacklist[i])) {
-                k = "***"
-            }
-        }
-        return k
-    }).join(" ")
-    text = text.split(" .").join(".")
-    text = text.split(" !").join("!")
-    text = text.split(" ?").join("?")
-    text = text.split(" ,").join(",")
-    return text.charAt(0).toUpperCase() + text.slice(1)
+  text = text.split(" ").map((k) => {
+    if (capitalizedWords.includes(k)) {
+      k = k.charAt(0).toUpperCase() + k.slice(1)
+    }
+    for (let i = 0; i < replacedWords.length; i++) {
+      if (replacedWords[i][0] == k) {
+        k = replacedWords[i][1]
+      }
+    }
+    for (let i = 0; i < wordBlacklist.length; i++) {
+      if (k.includes(wordBlacklist[i])) {
+        k = "***"
+      }
+    }
+    return k
+  }).join(" ")
+  text = text.split(" .").join(".")
+  text = text.split(" !").join("!")
+  text = text.split(" ?").join("?")
+  text = text.split(" ,").join(",")
+  return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
 function runSeed(seed) {
-    outputText = ""
-    let newWrite = write(seed)
-    let newForm = format(newWrite)
-    console.log("MANUAL  seed: \"", seed, "\", write: \"", newWrite, "\", format: \"", newForm, "\"")
-    outputText = newForm
+  outputText = ""
+  let newWrite = write(seed)
+  let newForm = format(newWrite)
+  console.log("MANUAL  seed: \"", seed, "\", write: \"", newWrite, "\", format: \"", newForm, "\"")
+  outputText = newForm
 }
 
 function run(count) {
-    outputText = ""
-    for (let i = 0; i < count; i++) {
-        let seed = seedWhitelist[Math.floor(Math.random() * seedWhitelist.length)]
-        let newWrite = write(seed)
-        let newForm = format(newWrite)
-        console.log(i + 1, "seed: \"", seed, "\", write: \"", newWrite, "\", format: \"", newForm, "\"")
-        outputText += "<br>" + (i + 1) + "  " + newForm
-    }
+  outputText = ""
+  for (let i = 0; i < count; i++) {
+    let seed = seedWhitelist[Math.floor(Math.random() * seedWhitelist.length)]
+    let newWrite = write(seed)
+    let newForm = format(newWrite)
+    console.log(i + 1, "seed: \"", seed, "\", write: \"", newWrite, "\", format: \"", newForm, "\"")
+    outputText += "<br>" + (i + 1) + "  " + newForm
+  }
 }
 
 function updateOutput() {
-    run(3)
-    outputBox.innerHTML = outputText
+  run(3)
+  outputBox.innerHTML = outputText
 }
 
 function updateManualOutput() {
-    let text = inputText.value.split(" ")
-    let seed = text[text.length - 1]
-    seed = seed.toLowerCase().split(" ").join("")
-    if (!words.includes(seed)) {
-        outputText = "INVALID SEED"
-        console.log('ERROR: MANUAL SEED FAILURE / INVALID SEED')
-        return
-    }
-    text[text.length - 1] = ""
-    text = text.filter((k) => k != "").join(" ")
-    runSeed(seed)
-    text += " "
-    text += outputText.toLowerCase()
-    text = format(text)
-    manualOutput.innerHTML = text
+  let text = inputText.value.split(" ")
+  let seed = text[text.length - 1]
+  seed = seed.toLowerCase().split(" ").join("")
+  if (!words.includes(seed)) {
+    outputText = "INVALID SEED"
+    console.log('ERROR: MANUAL SEED FAILURE / INVALID SEED')
+    return
+  }
+  text[text.length - 1] = ""
+  text = text.filter((k) => k != "").join(" ")
+  runSeed(seed)
+  text += " "
+  text += outputText.toLowerCase()
+  text = format(text)
+  manualOutput.innerHTML = text
 }
 
 //STUFF THAT RUNS ON LOAD
 
 mainBody.addEventListener('load', loadFunc())
 function loadFunc() {
-    eatData(data)
-    seedWhitelist = seedWhitelist.filter((k) => !(seedBlacklist.includes(k) || punctuation.includes(k)))
-    console.log("words:", words)
-    console.log("seedWhitelist:", seedWhitelist)
+  eatData(data)
+  seedWhitelist = seedWhitelist.filter((k) => !(seedBlacklist.includes(k) || punctuation.includes(k)))
+  console.log("words:", words)
+  console.log("seedWhitelist:", seedWhitelist)
 }
