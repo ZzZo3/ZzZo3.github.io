@@ -4,6 +4,7 @@ const inputText = document.getElementById("inputText")
 const inputButton = document.getElementById("inputButton")
 const outputBox = document.getElementById("output")
 const manualOutput = document.getElementById("manualOutput")
+const rollButton = document.getElementById('rollButton')
 let outputText = ""
 
 //SEED LISTS & FORMATTING
@@ -4932,6 +4933,13 @@ function updateManualOutput() {
   runSeed(text, seed)
   manualOutput.innerHTML = outputText
 }
+
+//DOCUMENT FORMATTING
+
+setInterval(() => {
+  rollButton.classList.toggle('amberButton dataButton rollButton');
+  rollButton.classList.toggle('amberButton dataButton');
+}, 2000);
 
 //STUFF THAT RUNS ON LOAD
 
