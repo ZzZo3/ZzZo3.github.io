@@ -4888,7 +4888,11 @@ function format(text) {
 }
 
 function runSeed(text, seed) {
-  outputText = text + " "
+  if (text!="") {
+    outputText = text + " "
+  } else {
+    outputText = ""
+  }
   let newWrite = write(seed)
   outputText += newWrite
   outputText = format(outputText)
