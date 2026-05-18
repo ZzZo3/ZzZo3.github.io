@@ -4939,7 +4939,7 @@ function updateManualOutput() {
 setInterval(() => {
   rollButton.className.toggle('amberButton dataButton rollButton glowButton');
   rollButton.className.toggle('amberButton dataButton rollButton');
-}, 2000);
+}, 750);
 
 //STUFF THAT RUNS ON LOAD
 
