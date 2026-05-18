@@ -4882,7 +4882,6 @@ function format(text) {
   for (let i=0; i<punctuation.length; i++) {
     let pre = " "+punctuation[i]
     let post = punctuation[i]
-    console.log("format punc -  i:",i,", pre: \"",pre,"\", post: \"",post,"\"")
     text = text.split(pre).join(post)
   }
   return text.charAt(0).toUpperCase() + text.slice(1)
