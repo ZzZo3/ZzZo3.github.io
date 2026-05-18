@@ -28,6 +28,10 @@ const tileTip = document.getElementById('tileTip')
 const linkDisplay = document.getElementById('linkDisplay')
 const posDisplay = document.getElementById('posDisplay')
 const nameDisplay = document.getElementById('nameDisplay')
+const compassW = document.getElementById('compassW')
+const compassS = document.getElementById('compassS')
+const compassA = document.getElementById('compassA')
+const compassD = document.getElementById('compassD')
 //RENDER VARIABLES
 let isoSpread = 1.0
 let tileScale = 1.0
@@ -109,6 +113,11 @@ document.addEventListener('keydown', function (event) {
     useTile()
   }
 });
+//COMPASS BUTTON LISTENERS
+compassW.addEventListener('click', walkUp())
+compassS.addEventListener('click', walkDown())
+compassA.addEventListener('click', walkLeft())
+compassD.addEventListener('click', walkRight())
 //WINDOW SCALE LISTENER
 function grabWindowDim() {
   windowDimensions = [window.innerWidth, window.innerHeight]

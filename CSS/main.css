@@ -108,3 +108,10 @@
   height: 64px;
   width: 64px
 }
+
+.compassButton {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border: 1px solid white
+}
