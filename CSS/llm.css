@@ -2,12 +2,23 @@
   margin: 2.5px 1%;
   font-family: 'Courier New', Courier, monospace;
 }
+
 .rollButton:hover {
   text-shadow: 0px 0px 6px #fffeeb;
 }
+
 .glowButtonA {
   box-shadow: 0px 0px 14px rgb(255, 188, 42);
 }
+
 .glowButtonB {
   box-shadow: 0px 0px 6px rgb(255, 199, 79);
+}
+
+.inputText {
+  display: block;
+  height: 16px;
+  width: 192px;
+  margin: 2%;
+  padding: auto
 }
