@@ -60,6 +60,14 @@ html, body {
   margin-left: 2.5px;
 }
 
+#headerContainer {
+  margin-top: 1%;
+  padding-top: 0.5%;
+  padding-left: 1%;
+  height: 240px;
+  width: 400px;
+}
+
 #tileTip {
   margin-top: 1%;
   padding-top: 0.5%;

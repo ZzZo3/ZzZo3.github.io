@@ -56,37 +56,39 @@
             hiiii! this is the main path :3
         </p>
         -->
-    <div class="inputResetPair top">
-      <div class="slider">
-        <label id="SpLabel" for="spreadInput">Spread: []</label>
-        <input type="range" min="0.02" max="3" step="0.02" value="1" id="spreadInput">
+    <div class="headerContainer">
+      <div class="inputResetPair top">
+        <div class="slider">
+          <label id="SpLabel" for="spreadInput">Spread: []</label>
+          <input type="range" min="0.02" max="3" step="0.02" value="1" id="spreadInput">
+        </div>
+        <button class="dataButton amberButton resetButton" id="resetSpreadButton">reset spread</button>
       </div>
-      <button class="dataButton amberButton resetButton" id="resetSpreadButton">reset spread</button>
-    </div>
-    <div class="inputResetPair">
-      <div class="slider">
-        <label id="ScLabel" for="scaleInput">Scale: []</label>
-        <input type="range" min="0" max="4" step="0.02" value="2" id="scaleInput">
+      <div class="inputResetPair">
+        <div class="slider">
+          <label id="ScLabel" for="scaleInput">Scale: []</label>
+          <input type="range" min="0" max="4" step="0.02" value="2" id="scaleInput">
+        </div>
+        <button class="dataButton amberButton resetButton" id="resetScaleButton">reset scale</button>
       </div>
-      <button class="dataButton amberButton resetButton" id="resetScaleButton">reset scale</button>
-    </div>
-    <div class="inputResetPair">
-      <div class="slider">
-        <label id="MnLabel" for="mountainInput">Hill: []</label>
-        <input type="range" min="-38" max="38" step="1" value="0" id="mountainInput">
+      <div class="inputResetPair">
+        <div class="slider">
+          <label id="MnLabel" for="mountainInput">Hill: []</label>
+          <input type="range" min="-38" max="38" step="1" value="0" id="mountainInput">
+        </div>
+        <button class="dataButton amberButton resetButton" id="resetMountainButton">reset mountain</button>
       </div>
-      <button class="dataButton amberButton resetButton" id="resetMountainButton">reset mountain</button>
-    </div>
-    <div class="inputResetPair">
-      <div class="slider">
-        <label id="ScrollLabel" for="scrollInput">Scroll: []</label>
-        <input type="range" min="-256" max="256" step="2" value="0" id="scrollInput">
+      <div class="inputResetPair">
+        <div class="slider">
+          <label id="ScrollLabel" for="scrollInput">Scroll: []</label>
+          <input type="range" min="-256" max="256" step="2" value="0" id="scrollInput">
+        </div>
+        <button class="dataButton amberButton resetButton" id="resetScrollButton">reset scroll</button>
       </div>
-      <button class="dataButton amberButton resetButton" id="resetScrollButton">reset scroll</button>
+      <input type="text" id="gridXInput" placeholder="X dimension: Int (tiles)">
+      <input type="text" id="gridYInput" placeholder="Y dimension: Int (tiles)">
+      <button class="dataButton amberButton" id="originButton">origin</button>
     </div>
-    <input type="text" id="gridXInput" placeholder="X dimension: Int (tiles)">
-    <input type="text" id="gridYInput" placeholder="Y dimension: Int (tiles)">
-    <button class="dataButton amberButton" id="originButton">origin</button>
     <div class="tileDark" id="tileTip">
       <div class="neonText viburText" id="nameDisplay">
         [name appear here]
