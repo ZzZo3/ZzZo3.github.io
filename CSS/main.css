@@ -66,6 +66,7 @@
 }
 
 .neonText {
+  font-family: "Vibur", sans-serif;
   animation: flicker 1.5s infinite alternate;
   color: #fff;
 }
