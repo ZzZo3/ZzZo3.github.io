@@ -32,6 +32,7 @@ const compassW = document.getElementById('compassW')
 const compassS = document.getElementById('compassS')
 const compassA = document.getElementById('compassA')
 const compassD = document.getElementById('compassD')
+const compassSel = document.getElementById('compassSel')
 //RENDER VARIABLES
 let isoSpread = 1.0
 let tileScale = 1.0
@@ -120,6 +121,7 @@ compassW.addEventListener('click', walkUp)
 compassS.addEventListener('click', walkDown)
 compassA.addEventListener('click', walkRight)
 compassD.addEventListener('click', walkLeft)
+compassSel.addEventListener('click', useTile)
 //WINDOW SCALE LISTENER
 function grabWindowDim() {
   windowDimensions = [window.innerWidth, window.innerHeight]
