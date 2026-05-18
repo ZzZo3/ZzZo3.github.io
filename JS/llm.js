@@ -4864,9 +4864,6 @@ function write(inWord) {
 }
 
 function format(text) {
-  for (let i=0; i<punctuation.length; i++) {
-    text = text.split(punctuation[i]).join(" "+punctuation[i])
-  }
   text = text.split(" ").map((k) => {
     if (capitalizedWords.includes(k)) {
       k = k.charAt(0).toUpperCase() + k.slice(1)
@@ -4884,7 +4881,10 @@ function format(text) {
     return k
   }).join(" ")
   for (let i=0; i<punctuation.length; i++) {
-    text = text.split(" "+punctuation[i]).join(punctuation[i])
+    let pre = " "+punctuation[i]
+    let post = punctuation[i]
+    console.log("format punc -  i:",i,", pre: \"",pre,"\", post: \"",post,"\"")
+    text = text.split(pre).join(post)
   }
   return text.charAt(0).toUpperCase() + text.slice(1)
 }
