@@ -66,8 +66,10 @@
 }
 
 #compassContainer {
-  margin: 3px;
   border: 1px solid aquamarine
+  position: absolute;
+  top: 90%;
+  left: 2%
 }
 
 #compass {
