@@ -117,26 +117,25 @@
   position: absolute;
   height: 16px;
   width: 16px;
-  border: 1px solid
 }
 
 #compassW {
-  border: red;
+  border: 1px solid red;
   top: -64px;
   left: 0px
 }
 #compassA {
-  border: orange;
+  border: 1px solid orange;
   top: 0px;
   left: 0px
 }
 #compassS {
-  border: yellow;
+  border: 1px solid yellow;
   top: 0px;
   left: 64px
 }
 #compassD {
-  border: green;
+  border: 1px solid green;
   top: -64px;
   left: 64px
 }
