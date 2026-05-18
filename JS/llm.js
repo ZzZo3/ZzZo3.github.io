@@ -9,7 +9,7 @@ let outputText = ""
 //SEED LISTS & FORMATTING
 const seedBlacklist = [" ", ""]
 let seedWhitelist = []
-const capitalizedWords = ['i', 'lord', 'sankara',
+const capitalizedWords = ['i', 'lord', 'lady', 'sankara',
   'french', 'france', 'burkina', 'faso', 'volta',
   'october', 'sahel', 'graymalkin', 'palestine', 'palestinian',
   'israel', 'africa', 'latin', 'america', 'american',
