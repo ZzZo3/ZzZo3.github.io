@@ -502,7 +502,7 @@ function getTile() {
     }
     if (TILE.hasAttribute("data-name")) {
       name = TILE.getAttribute("data-name")
-      nameDisplay.innerText = name
+      nameDisplay.innerText = "  "+name
       tileTip.style.opacity = 1.0
     }
   } else {
