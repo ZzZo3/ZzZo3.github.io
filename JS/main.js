@@ -529,7 +529,7 @@ function getTile() {
     linkDisplay.innerText = '[ no link found ]'
     tileTip.style.opacity = 0.0
   }
-  posDisplay.innerText = '[' + POSITION[0] + ',' + POSITION[1] + '] •' + note
+  posDisplay.innerText = '[' + POSITION[0] + ',' + POSITION[1] + ']  ' + note
 }
 function useTile() {
   console.log('useTile() called at: ' + POSITION)
