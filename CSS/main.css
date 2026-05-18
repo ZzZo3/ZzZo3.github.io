@@ -119,27 +119,25 @@ html, body {
 
 .compassButton {
   position: absolute;
-  height: 16px;
-  width: 16px;
+  height: 24px;
+  width: 24px;
+  border: 1px solid white;
+  fill-opacity: 0.0;
 }
 
 #compassW {
-  border: 1px solid red;
-  top: -64px;
-  left: 0px
+  top: -70px;
+  left: -4px
 }
 #compassA {
-  border: 1px solid orange;
-  top: 0px;
-  left: 0px
+  top: -12px;
+  left: -4px
 }
 #compassS {
-  border: 1px solid yellow;
-  top: 0px;
-  left: 64px
+  top: -12px;
+  left: 32px
 }
 #compassD {
-  border: 1px solid green;
-  top: -64px;
-  left: 64px
+  top: -70px;
+  left: 32px
 }
