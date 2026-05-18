@@ -17,9 +17,9 @@
 
 #inputText {
   display: block;
-  height: 16px;
+  height: 32px;
   width: 192px;
-  margin: 2%;
+  margin-top: 1%;
   padding: auto
 }
 
