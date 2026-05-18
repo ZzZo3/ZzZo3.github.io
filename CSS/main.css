@@ -109,6 +109,10 @@
   width: 64px
 }
 
+#compassButtonsContainer {
+  position: relative
+}
+
 .compassButton {
   position: absolute;
   height: 16px;
@@ -117,14 +121,22 @@
 }
 
 #compassW {
-  border: red
+  border: red;
+  top: 0px;
+  left: 0px
 }
 #compassA {
-  border: orange
+  border: orange;
+  top: 32px;
+  left: 0px
 }
 #compassS {
-  border: yellow
+  border: yellow;
+  top: 32px;
+  left: 32px
 }
 #compassD {
-  border: green
+  border: green;
+  top: 0px;
+  left: 32px
 }
