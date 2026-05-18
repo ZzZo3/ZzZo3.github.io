@@ -4902,7 +4902,10 @@ function runSeed(text, seed) {
 function run(count) {
   outputText = ""
   for (let i = 0; i < count; i++) {
-    let seed = seedWhitelist[Math.floor(Math.random() * seedWhitelist.length)]
+    let seed = ""
+    while (seedBlacklist.includes(seed)) {
+        seed = seedWhitelist[Math.floor(Math.random() * seedWhitelist.length)]
+    }
     let newWrite = write(seed)
     let newForm = format(newWrite)
     console.log("RUN() -", i + 1, "seed: \"", seed, "\", write: \"", newWrite, "\", format: \"", newForm, "\"")
@@ -4919,7 +4922,7 @@ function updateManualOutput() {
   let text = inputText.value.split(" ")
   let seed = text[text.length - 1]
   seed = seed.toLowerCase().split(" ").join("")
-  if (!words.includes(seed)) {
+  if (!words.includes(seed) || seedBlacklist.includes(seed)) {
     outputText = "INVALID SEED"
     console.log('ERROR: MANUAL SEED FAILURE / INVALID SEED')
     return
