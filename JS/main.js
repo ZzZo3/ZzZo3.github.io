@@ -27,6 +27,7 @@ const SelectionZ = document.getElementById('SelectionZ')
 const tileTip = document.getElementById('tileTip')
 const linkDisplay = document.getElementById('linkDisplay')
 const posDisplay = document.getElementById('posDisplay')
+const nameDisplay = document.getElementById('nameDisplay')
 //RENDER VARIABLES
 let isoSpread = 1.0
 let tileScale = 1.0
@@ -42,6 +43,7 @@ let POSITION = [0, 0]
 let POSITIONprevious = [0, 0]
 let canMove = true
 let link = ''
+let name = ''
 
 // BIG BASES
 let BIGBASES = []
@@ -497,6 +499,11 @@ function getTile() {
       link = ''
       linkDisplay.innerText = '[ no link found ]'
       tileTip.style.opacity = 0.0
+    }
+    if (TILE.hasAttribute("data-name")) {
+      name = TILE.getAttribute("data-name")
+      nameDisplay.innerText = name
+      tileTip.style.opacity = 1.0
     }
   } else {
     console.log('   no tile found at ' + [POSITION])

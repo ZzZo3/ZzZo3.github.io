@@ -65,8 +65,12 @@
   width: 400px;
 }
 
+.viburText {
+  font-family: "Vibur", cursive;
+  size: 48px;
+}
+
 .neonText {
-  font-family: "Vibur", sans-serif;
   animation: flicker 1.5s infinite alternate;
   color: #fff;
 }
