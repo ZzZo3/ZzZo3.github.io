@@ -109,7 +109,7 @@ html, body {
 }
 
 @keyframes flicker {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  0%, 33%, 37%, 54%, 69%, 73%, 100% {
       text-shadow:
       0 0 4px #fff,
       0 0 11px #fff,
@@ -121,7 +121,7 @@ html, body {
       0 0 150px #0fa;
   }
   
-  20%, 24%, 55% {        
+  32%, 35%, 52%, 68%, 71% {        
       text-shadow: none;
   }    
 }
