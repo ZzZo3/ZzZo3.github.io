@@ -21,7 +21,7 @@ const capitalizedWords = ['i', 'lord', 'lady', 'sankara',
   'afghanistan', 'norweyan', 'marti', 'martin', 'luther']
 const replacedWords = [['weird', 'weïrd'], ['jose', 'José']]
 const punctuation = [",", ";", ":", ".", "!", "?", "[", "]", "(", ")",
-  "{", "}", "<", ">", "/", "\`", "~", "\'", "\"", "|", "-", "—", "—", "—"]
+  "{", "}", "<", ">", "/", "\`", "~", "|", "-", "—", "—", "—"]
 const puncTerminating = [".", "!", "?"]
 const wordBlacklist = ["negro", "nigger"]
 
