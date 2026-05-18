@@ -37,7 +37,7 @@ const compassSel = document.getElementById('compassSel')
 let isoSpread = 1.0
 let tileScale = 1.0
 let mountainOffset = 0
-let scrollOffset = 0
+let scrollOffset = 160
 //DEFAULT VALUES
 const spreadDefault = 1.0
 const scaleDefault = 2.0
