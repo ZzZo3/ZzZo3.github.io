@@ -2,6 +2,9 @@
   margin: 2.5px 1%;
   font-family: 'Courier New', Courier, monospace;
 }
-.rollButton {
+.rollButton:hover {
+  text-shadow: 0px 0px 6px #fffeeb;
+}
+.glowButton {
   box-shadow: 0px 0px 6px rgb(255, 216, 132);
 }
