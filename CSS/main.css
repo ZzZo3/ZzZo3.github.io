@@ -65,6 +65,11 @@ html, body {
   width: 80px;
 }
 
+#header {
+  margin: 2%;
+  font-size: 64px;
+}
+
 #headerContainer {
   margin-top: 1%;
   padding-top: 0.5%;
