@@ -4937,8 +4937,8 @@ function updateManualOutput() {
 //DOCUMENT FORMATTING
 
 setInterval(() => {
-  rollButton.classList.toggle('amberButton dataButton rollButton glowButton');
-  rollButton.classList.toggle('amberButton dataButton rollButton');
+  rollButton.className.toggle('amberButton dataButton rollButton glowButton');
+  rollButton.className.toggle('amberButton dataButton rollButton');
 }, 2000);
 
 //STUFF THAT RUNS ON LOAD
