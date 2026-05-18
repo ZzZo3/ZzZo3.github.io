@@ -4887,19 +4887,18 @@ function format(text) {
   return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
-function runSeed(seed, count) {
+function runSeed(seed) {
     outputText = ""
     seed = seed.toLowerCase().split(" ").join("")
     if (!words.includes(seed)) {
-      outputText = "INVALID SEED"
-      return
+        outputText = "INVALID SEED"
+        console.log('ERROR: MANUAL SEED FAILURE / INVALID SEED')
+        return
     }
-    for (let i=0; i<count; i++) {
-      let newWrite = write(seed)
-      let newForm = format(newWrite)
-      console.log(i+1,"seed: \"",seed,"\", write: \"",newWrite,"\", format: \"",newForm,"\"")
-      outputText = newForm
-    }
+    let newWrite = write(seed)
+    let newForm = format(newWrite)
+    console.log("MANUAL  seed: \"",seed,"\", write: \"",newWrite,"\", format: \"",newForm,"\"")
+    outputText = newForm
 }
 
 function run(count) {
@@ -4923,12 +4922,10 @@ function updateManualOutput() {
   let seed = text[text.length-1]
   text[text.length-1] = ""
   text = text.filter((k)=>k!="").join(" ")
-  runSeed(seed,1)
+  runSeed(seed)
   text += " "
   text += outputText.toLowerCase()
-  console.log(text)
   text = format(text)
-  console.log(text)
   manualOutput.innerHTML = text
 }
 
