@@ -114,10 +114,10 @@ document.addEventListener('keydown', function (event) {
   }
 });
 //COMPASS BUTTON LISTENERS
-compassW.addEventListener('click', walkUp())
-compassS.addEventListener('click', walkDown())
-compassA.addEventListener('click', walkLeft())
-compassD.addEventListener('click', walkRight())
+compassW.addEventListener('click', walkUp)
+compassS.addEventListener('click', walkDown)
+compassA.addEventListener('click', walkLeft)
+compassD.addEventListener('click', walkRight)
 //WINDOW SCALE LISTENER
 function grabWindowDim() {
   windowDimensions = [window.innerWidth, window.innerHeight]
