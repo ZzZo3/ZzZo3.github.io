@@ -64,3 +64,13 @@
   height: 200px;
   width: 400px;
 }
+
+#compassContainer {
+  margin: 3px;
+  border: 1px solid aquamarine
+}
+
+#compass {
+  height: 64px;
+  width: 64px
+}
