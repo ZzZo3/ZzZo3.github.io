@@ -71,6 +71,7 @@ html, body {
   padding-left: 1%;
   height: 240px;
   width: 400px;
+  border: 2px solid gray
 }
 
 #tileTip {
