@@ -65,6 +65,10 @@
   width: 400px;
 }
 
+.spinGIF {
+  scale: 0.6
+}
+
 .viburText {
   font-family: "Vibur", cursive;
   font-size: 36px;
