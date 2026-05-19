@@ -157,7 +157,7 @@ html, body {
 }
 
 #compassButtonsContainer {
-  position: fixed;
+  position: absolute;
 }
 
 .compassButton {
