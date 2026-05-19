@@ -52,7 +52,7 @@ let link = ''
 let name = ''
 let note = ''
 
-// TILE AND BASE CLASSES
+/* TILE AND BASE CLASSES
 class tileObj {
   constructor(position, link, scale, name, note, src) {
     this.position = position
@@ -71,7 +71,7 @@ class baseObj {
     this.scale = scale
   }
 }
-let BASES = []
+let BASES = []*/
 
 // BIG BASES
 let BIGBASES = []
