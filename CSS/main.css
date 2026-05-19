@@ -167,7 +167,8 @@ html, body {
   background: transparent;
   outline: none;
   border: none;
-  color: orange
+  color: white;
+  text-shadow: 0 0 10px black;
 }
 
 .compassButton:hover {
