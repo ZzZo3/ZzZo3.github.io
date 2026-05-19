@@ -155,10 +155,10 @@ html, body {
   height: 64px;
   width: 64px
 }
-/*
+
 #compassButtonsContainer {
   position: fixed;
-}*/
+}
 
 .compassButton {
   position: relative;
@@ -167,6 +167,7 @@ html, body {
   background: transparent;
   outline: none;
   border: none;
+  color: orange
 }
 
 .compassButton:hover {
