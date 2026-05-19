@@ -99,16 +99,16 @@ function setBigBases() {
 document.addEventListener('keydown', function (event) {
   console.log('Key: \"' + event.key + '\"');
   if (canMove) {
-    if (event.key === 'w') {
+    if (event.key === 'w' || event.key === 'ArrowUp') {
       walkUp() // -y(iso) -> -x -y (offset from top left)
     }
-    if (event.key === 's') {
+    if (event.key === 's' || event.key === 'ArrowDown') {
       walkDown() // +y(iso) -> +x +y (offset from top left)
     }
-    if (event.key === 'a') {
+    if (event.key === 'a' || event.key === 'ArrowLeft') {
       walkRight() // +x(iso) -> +x -y (offset from top left)
     }
-    if (event.key === 'd') {
+    if (event.key === 'd' || event.key === 'ArrowRight') {
       walkLeft() // -x(iso) -> -x +y (offset from top left)
     }
   }
