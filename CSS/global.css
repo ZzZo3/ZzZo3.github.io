@@ -202,9 +202,8 @@ body {
   background-color: blue;
 }
 
-.contructionTape {
+.construction {
   position: relative;
-  background-image: url("../assets/backgrounds/constructionTape.png");
   background-repeat: repeat;
   background-size: 64px 64px;
   background-position: top left;
@@ -219,4 +218,40 @@ body {
   margin-left: 0%;
   margin-top: 4%;
   margin-bottom: 4%;
+}
+
+.redTape {
+  background-image: url("../assets/backgrounds/redTape.png");
+}
+
+.orangeTape {
+  background-image: url("../assets/backgrounds/orangeTape.png");
+}
+
+.yellowTape {
+  background-image: url("../assets/backgrounds/yellowTape.png");
+}
+
+.greenTape {
+  background-image: url("../assets/backgrounds/greenTape.png");
+}
+
+.cyanTape {
+  background-image: url("../assets/backgrounds/cyanTape.png");
+}
+
+.blueTape {
+  background-image: url("../assets/backgrounds/blueTape.png");
+}
+
+.purpleTape {
+  background-image: url("../assets/backgrounds/purpleTape.png");
+}
+
+.magentaTape {
+  background-image: url("../assets/backgrounds/magentaTape.png");
+}
+
+.roseTape {
+  background-image: url("../assets/backgrounds/roseTape.png");
 }
