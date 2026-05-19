@@ -168,9 +168,6 @@ html, body {
   background: transparent;
   outline: none;
   border: none;
-  color: white;
-  text-shadow: 0 0 10px black;
-  border: 1px solid white;
 }
 
 .compassButton:hover {
