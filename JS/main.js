@@ -84,8 +84,8 @@ function setBigBases() {
     if (pts == 1) {
       return
     }
-    let xCoord = parseInt(tile.classList[1])
-    let yCoord = parseInt(tile.classList[2])
+    let xCoord = parseInt(tile.classList[1].slice(1))
+    let yCoord = parseInt(tile.classList[2].slice(1))
     let coords = [xCoord, yCoord]
     BIGBASES.push(new BIGBASE(coords, pts))
   })
@@ -365,8 +365,8 @@ function REND(CLASS, ZED) {
       perTileScale = parseInt(tile.getAttribute('data-scale'))
     }
     if (tile.hasAttribute('data-offY')) { offY = parseInt(tile.getAttribute('data-offY')) }
-    let xi = parseInt(tile.classList[1])
-    let yi = parseInt(tile.classList[2])
+    let xi = parseInt(tile.classList[1].slice(1))
+    let yi = parseInt(tile.classList[2].slice(1))
     console.log('   IsometricTile:')
     let offsets = Iso2Reg(xi, yi)
     let xf = offsets[0] + "px"
@@ -493,8 +493,10 @@ function getTile() {
   var isometricTilesQuery = document.querySelectorAll(".isometricTile")
   let found = false
   let TILE
+  let xQ = 'x' + POSITION[0]
+  let yQ = 'y' + POSITION[1]
   isometricTilesQuery.forEach((element) => {
-    if (element.classList[1]==String(POSITION[0]) & element.classList[2]==String(POSITION[1])) {
+    if (element.classList.contains(xQ) & element.classList.contains(yQ)) {
       found = true
       TILE = element
     }
