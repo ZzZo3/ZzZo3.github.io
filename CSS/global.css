@@ -204,14 +204,14 @@ body {
 
 .contructionTape {
   position: relative;
-  left: 64px;
+  left: -64px;
   background-image: url("../assets/backgrounds/constructionTape.png");
   background-repeat: repeat;
   background-size: 64px 64px;
   background-position: top left;
   width: 120vw;
   height: 3.125vw;
-  font-size: 1.875vw;
+  font-size: 2.6vw; /*1.875*/
   padding: 0.625vw;
   color: white;
   font-weight: bolder;
