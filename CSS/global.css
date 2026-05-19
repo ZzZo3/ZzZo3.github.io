@@ -203,16 +203,19 @@ body {
 }
 
 .contructionTape {
-  width: 100vw;
-  height: 3.125vw;
+  position: relative;
+  left: 64px;
   background-image: url("../assets/backgrounds/constructionTape.png");
   background-repeat: repeat;
   background-size: 64px 64px;
   background-position: top left;
+  width: 120vw;
+  height: 3.125vw;
+  font-size: 1.875vw;
+  padding: 0.625vw;
   color: white;
   font-weight: bolder;
   margin-left: 0px;
   margin-top: 2%;
   margin-bottom: 2%;
-  padding: 0.5%
 }
