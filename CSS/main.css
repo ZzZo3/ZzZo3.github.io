@@ -111,7 +111,7 @@ html, body {
 }
 
 .neonTextP {
-  animation: flickerP 1.5s infinite alternate;
+  animation: flickerP 0.2s infinite alternate;
   color: #fff;
 }
 
@@ -134,7 +134,7 @@ html, body {
 }
 
 @keyframes flickerP {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  0%, 50% {
       text-shadow:
       0 0 4px #fff,
       0 0 11px #fff,
@@ -146,7 +146,7 @@ html, body {
       0 0 150px rgb(157, 0, 255);
   }
   
-  20%, 24%, 55% {        
+  51%, 100% {        
       text-shadow: none;
   }    
 }
