@@ -161,10 +161,10 @@ html, body {
   height: 64px;
   width: 64px
 }
-
+/*
 #compassButtonsContainer {
   position: fixed;
-}
+}*/
 
 .compassButton {
   position: relative;
