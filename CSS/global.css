@@ -203,7 +203,7 @@ body {
 }
 
 .contructionTape {
-  position: relative;
+  position: absolute;
   left: -128px;
   background-image: url("../assets/backgrounds/constructionTape.png");
   background-repeat: repeat;
