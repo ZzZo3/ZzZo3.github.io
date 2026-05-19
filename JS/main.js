@@ -494,7 +494,7 @@ function getTile() {
   let found = false
   let TILE
   isometricTilesQuery.forEach((element) => {
-    if (element.classList.contains(String(POSITION[0])) & element.classList.contains(String(POSITION[1]))) {
+    if (element.classList[1]==String(POSITION[0]) & element.classList[2]==String(POSITION[1])) {
       found = true
       TILE = element
     }
