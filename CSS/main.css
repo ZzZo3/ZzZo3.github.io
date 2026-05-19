@@ -111,7 +111,7 @@ html, body {
 }
 
 .neonTextP {
-  animation: flickerP 0.2s infinite alternate;
+  animation: alternateP 1s infinite alternate;
   color: #fff;
 }
 
@@ -133,9 +133,9 @@ html, body {
   }    
 }
 
-@keyframes flickerP {
-  0%, 50% {
-      text-shadow:
+@keyframes alternateP {
+  0%, 49% {
+    text-shadow:
       0 0 4px #fff,
       0 0 11px #fff,
       0 0 19px #fff,
@@ -145,10 +145,15 @@ html, body {
       0 0 100px rgb(140, 0, 255),
       0 0 150px rgb(157, 0, 255);
   }
-  
-  51%, 100% {        
-      text-shadow: none;
-  }    
+  50%, 100% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 6px #fff,
+      0 0 20px rgb(212, 171, 255),
+      0 0 35px rgb(172, 108, 255),
+      0 0 45px rgb(140, 0, 255),
+      0 0 70px rgb(157, 0, 255);
+  }
 }
 
 #compassContainer {
