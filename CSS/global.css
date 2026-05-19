@@ -223,56 +223,36 @@ body {
 
 .redTape {
   background-image: url("../assets/backgrounds/redTape.png");
-  background-repeat: repeat;
-  background-size: 64px 64px;
-  background-position: top left;
 }
 
 .orangeTape {
   background-image: url("../assets/backgrounds/orangeTape.png");
-  background-repeat: repeat;
-  background-size: 64px 64px;
-  background-position: top left;
+}
+
+.yellowTape {
+  background-image: url("../assets/backgrounds/yellowTape.png");
 }
 
 .greenTape {
   background-image: url("../assets/backgrounds/greenTape.png");
-  background-repeat: repeat;
-  background-size: 64px 64px;
-  background-position: top left;
 }
 
 .cyanTape {
   background-image: url("../assets/backgrounds/cyanTape.png");
-  background-repeat: repeat;
-  background-size: 64px 64px;
-  background-position: top left;
 }
 
 .blueTape {
   background-image: url("../assets/backgrounds/blueTape.png");
-  background-repeat: repeat;
-  background-size: 64px 64px;
-  background-position: top left;
 }
 
 .purpleTape {
   background-image: url("../assets/backgrounds/purpleTape.png");
-  background-repeat: repeat;
-  background-size: 64px 64px;
-  background-position: top left;
 }
 
 .magentaTape {
   background-image: url("../assets/backgrounds/magentaTape.png");
-  background-repeat: repeat;
-  background-size: 64px 64px;
-  background-position: top left;
 }
 
 .roseTape {
   background-image: url("../assets/backgrounds/roseTape.png");
-  background-repeat: repeat;
-  background-size: 64px 64px;
-  background-position: top left;
 }
