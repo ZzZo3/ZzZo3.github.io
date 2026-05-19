@@ -204,7 +204,7 @@ body {
 
 .contructionTape {
   position: absolute;
-  left: -128px;
+  left: 0px;
   background-image: url("../assets/backgrounds/constructionTape.png");
   background-repeat: repeat;
   background-size: 64px 64px;
