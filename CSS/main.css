@@ -148,7 +148,7 @@ html, body {
 
 #compassContainer {
   position: relative;
-  left: 3vw
+  margin: 2%
 }
 
 #compass {
