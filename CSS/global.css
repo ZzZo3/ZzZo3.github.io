@@ -211,4 +211,8 @@ body {
   background-position: top left;
   color: white;
   font-weight: bolder;
+  margin-left: 0px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 0.5%
 }
