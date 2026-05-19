@@ -183,13 +183,13 @@ html, body {
   left: 44px;
 }
 .compassT {
-  top: -4px;
+  top: -68px;
 }
 .compassB {
-  top: 44px;
+  top: -20px;
 }
 
 #compassSel {
-  top: 20px;
+  top: -44px;
   left: 20px;
 }
