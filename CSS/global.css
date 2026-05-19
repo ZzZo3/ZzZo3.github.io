@@ -203,7 +203,6 @@ body {
 }
 
 .construction {
-  position: relative;
   background-image: url("../assets/backgrounds/yellowTape.png");
   background-repeat: repeat;
   background-size: 64px 64px;
