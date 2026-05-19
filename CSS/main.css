@@ -152,7 +152,7 @@ html, body {
 }
 
 #compassContainer {
-  position: absolute;
+  position: fixed;
   top: 86vh;
   left: 3vw
 }
