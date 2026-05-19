@@ -152,7 +152,6 @@ html, body {
 }
 
 #compassContainer {
-  position: absolute;
   top: 86vh;
   left: 3vw
 }
@@ -160,10 +159,6 @@ html, body {
 #compass {
   height: 64px;
   width: 64px
-}
-
-#compassButtonsContainer {
-  position: relative
 }
 
 .compassButton {
