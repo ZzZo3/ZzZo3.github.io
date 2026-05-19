@@ -210,15 +210,13 @@ body {
   background-position: top left;
   width: 120vw;
   height: 3.125vw;
+  font-size: 3.75vw;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: bold;
   padding-top: 1vw;
   padding-left: 0.625vw;
   margin-left: 0%;
   margin-top: 4%;
   margin-bottom: 4%;
-}
-.contructionTape>* {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 3.75vw;
-  color: white;
-  font-weight: bold;
 }
