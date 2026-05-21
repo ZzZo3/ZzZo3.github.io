@@ -61,8 +61,23 @@ function sumAudit(sum) {
     else {return 'fail'}
 }
 
-function tieBreaker(data) {
-    let secondsTally = tally(candidates,1)
+function tieBreaker(data,losingVotes) {
+    let losingIndexes = []
+    data.forEach((K,index)=>{if(K[1]==losingVotes){
+        losingIndexes.push(index)
+    }})
+    let secondsTally = tally(data,1)
+    let tieBreak = 1
+    let tieLoser
+    console.log('  losingIndexes',losingIndexes)
+    console.log('  secondsTally',secondsTally)
+    losingIndexes.forEach((i)=>{
+        if (secondsTally[i][1]<tieBreak){
+            tieLoser = secondsTally[i]
+        }
+    })
+    console.log('  tieLoser',tieLoser)
+    return tieLoser
 }
 
 function run() {
@@ -75,23 +90,30 @@ function run() {
     let percentSum = 0
     while (checkWinner()==null) {
         round++
-        candidates = tally(candidates,0)
+        candidates = tally([...candidates],0)
         title('Round '+round)
         candidates.forEach((K)=>{console.log(' ',K[1],'-',K[0])})
         // ROUND DATA
         let runningWinner = candidates[0]
-        let runningLoser = candidates[0]
+        let runningLoser = [candidates[0]]
         let runningSum = 0
         candidates.forEach((K)=>{
             runningSum+=K[1]
             if (K[1]>runningWinner[1]){
                 runningWinner = K
             }
-            if (K[1]<runningLoser[1]){
-                runningLoser = K
+            if (K[1]<runningLoser[0][1]){
+                runningLoser = [[...K]]
+            } else if (K[1]==runningLoser[0][1]){
+                runningLoser.push([...K])
             }
         })
+        if (runningLoser.length>1){
+            console.log('LAST PLACE TIE:')
+            tieBreaker([...candidates],runningLoser[0][1])
+        }
         roundDataArray.push(new roundData([...runningWinner],[...runningLoser],runningSum))
+        console.log(roundDataArray[roundDataArray.length-1])
         // REROUTE ROUND LOSER'S VOTES
         reroute()
     }
