@@ -14,10 +14,12 @@ let candidates = [['Marcello Hernández',0],['Bruce Gator Reinsburg',0],['Claudi
 
 let roundDataArray = []
 class roundData {
-    constructor(winner,loser,voteTotal) {
+    constructor(list,winner,loser,voteAudit,anomalies) {
+        this.list = list
         this.winner = winner
         this.loser = loser
-        this.voteTotal = voteTotal
+        this.voteAudit = voteAudit
+        this.anomalies = anomalies
     }
 }
 
@@ -95,6 +97,7 @@ function run() {
         let runningWinner = candidates[0]
         let runningLoser = [['',1]]
         let runningSum = 0
+        let anomalies = ''
         candidates.forEach((K)=>{
             runningSum+=K[1]
             if (K[1]>runningWinner[1]){
@@ -110,10 +113,15 @@ function run() {
         if (runningLoser.length>1){
             console.log('LAST PLACE TIE:')
             roundLoser = tieBreaker([...candidates],runningLoser[0][1])
+            let loserNames=[...runningLoser].map((K)=>{return ' '+K[0]})
+            anomalies = 'last place tie among'+loserNames
         }
-        roundDataArray.push(new roundData([...runningWinner],roundLoser,runningSum))
+        roundDataArray.push(new roundData([...candidates],[...runningWinner],roundLoser,[runningSum,sumAudit(runningSum)],anomalies))
         console.log('ROUND NOTES:')
-        console.log(roundDataArray[roundDataArray.length-1])
+        let notes = roundDataArray[roundDataArray.length-1]
+        console.log('running winner:',notes.winner[0],'-',notes.winner[1])
+        console.log('round loser:',notes.loser[0])
+        console.log('vote total:',notes.voteAudit[0]+'/1 (audit',notes.voteAudit[1]+')')
         // REROUTE ROUND LOSER'S VOTES
         reroute(roundLoser[0])
         console.log('rerouted',roundLoser[0],'\'s votes')
@@ -122,7 +130,6 @@ function run() {
     let winningPercent = Math.floor(checkWinner()[1]*10000)/100
     console.log(checkWinner()[0],'has won with',winningPercent+'% of the vote.')
     console.log('The instant-runoff program ran for',round,'rounds.')
-    console.log(checkWinner()[0],'won',)
 }
 
 // STUFF THAT RUNS ON LOAD()
