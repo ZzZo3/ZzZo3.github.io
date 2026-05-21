@@ -48,7 +48,6 @@ function reroute() {
     candidates.forEach((K,index)=>{if(K[1]<lowest){
         lowest=K[1];candidateIndex=index}})
     lowestName=candidates[candidateIndex][0]
-    console.log('lowest:',[lowestName,lowest])
     ballots.map((ballot)=>{if (ballot[0]==lowestName) {
         ballot.shift()
     }})
@@ -73,7 +72,6 @@ function run() {
         round++
         tally()
         title('Round '+round)
-        console.log('data:')
         candidates.forEach((K)=>{console.log(' ',K[1],'-',K[0])})
         // ROUND DATA
         let runningWinner = candidates[0]
@@ -89,9 +87,6 @@ function run() {
             }
         })
         roundDataArray.push(new roundData([...runningWinner],[...runningLoser],runningSum))
-        console.log('running winner:',runningWinner[0],'-',runningWinner[1])
-        console.log('running loser:',runningLoser[0],'-',runningLoser[1])
-        console.log('vote sum audit:',runningSum,'-',sumAudit(runningSum))
         // REROUTE ROUND LOSER'S VOTES
         reroute()
     }
@@ -105,4 +100,5 @@ function run() {
 // STUFF THAT RUNS ON LOAD()
 
 run()
+title('Round Data')
 console.log(roundDataArray)
