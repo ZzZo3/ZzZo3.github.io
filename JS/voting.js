@@ -30,15 +30,16 @@ function checkWinner() {
     return null
 }
 
-function tally() {
+function tally(data,i) {
     let total=0
-    candidates.forEach((K)=>{
+    data.forEach((K)=>{
         K[1]=0
         ballots.forEach((ballot)=>{
-            if (ballot[0]==K[0]){K[1]++;total++}
+            if (ballot[i]==K[0]){K[1]++;total++}
         })
     })
-    candidates.map((K)=>{K[1]=K[1]/total;return K})
+    data.map((K)=>{K[1]=K[1]/total;return K})
+    return data
 }
 
 function reroute() {
@@ -60,6 +61,10 @@ function sumAudit(sum) {
     else {return 'fail'}
 }
 
+function tieBreaker(data) {
+    let secondsTally = tally(candidates,1)
+}
+
 function run() {
     title('Information')
     console.log('candidates:')
@@ -70,7 +75,7 @@ function run() {
     let percentSum = 0
     while (checkWinner()==null) {
         round++
-        tally()
+        candidates = tally(candidates,0)
         title('Round '+round)
         candidates.forEach((K)=>{console.log(' ',K[1],'-',K[0])})
         // ROUND DATA
