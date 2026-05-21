@@ -42,17 +42,15 @@ function tally(data,i) {
     return data
 }
 
-function reroute() {
-    let lowest = 1
-    let lowestName = ""
-    let candidateIndex = 0
-    candidates.forEach((K,index)=>{if(K[1]<lowest){
-        lowest=K[1];candidateIndex=index}})
-    lowestName=candidates[candidateIndex][0]
+function reroute(lowestName) {
+    let losingIndex = 0
+    candidates.forEach((K,index)=>{if(K[0]==lowestName){
+        losingIndex=index
+    }})
     ballots.map((ballot)=>{if (ballot[0]==lowestName) {
         ballot.shift()
     }})
-    candidates.splice(candidateIndex,1)
+    candidates.splice(losingIndex,1)
 }
 
 function sumAudit(sum) {
@@ -67,12 +65,12 @@ function tieBreaker(data,losingVotes) {
         losingIndexes.push(index)
     }})
     let secondsTally = tally(data,1)
-    let tieBreak = 1
-    let tieLoser
+    let tieLoser = ['',1]
     console.log('  losingIndexes',losingIndexes)
-    console.log('  secondsTally',secondsTally)
+    console.log('  secondsTally:')
+    losingIndexes.forEach((i)=>{console.log('   ',secondsTally[i])})
     losingIndexes.forEach((i)=>{
-        if (secondsTally[i][1]<tieBreak){
+        if (secondsTally[i][1]<tieLoser[1]){
             tieLoser = secondsTally[i]
         }
     })
@@ -95,7 +93,7 @@ function run() {
         candidates.forEach((K)=>{console.log(' ',K[1],'-',K[0])})
         // ROUND DATA
         let runningWinner = candidates[0]
-        let runningLoser = [candidates[0]]
+        let runningLoser = [['',1]]
         let runningSum = 0
         candidates.forEach((K)=>{
             runningSum+=K[1]
@@ -108,14 +106,17 @@ function run() {
                 runningLoser.push([...K])
             }
         })
+        let roundLoser = runningLoser[0]
         if (runningLoser.length>1){
             console.log('LAST PLACE TIE:')
-            tieBreaker([...candidates],runningLoser[0][1])
+            roundLoser = tieBreaker([...candidates],runningLoser[0][1])
         }
-        roundDataArray.push(new roundData([...runningWinner],[...runningLoser],runningSum))
+        roundDataArray.push(new roundData([...runningWinner],roundLoser,runningSum))
+        console.log('ROUND NOTES:')
         console.log(roundDataArray[roundDataArray.length-1])
         // REROUTE ROUND LOSER'S VOTES
-        reroute()
+        reroute(roundLoser[0])
+        console.log('rerouted',roundLoser[0],'\'s votes')
     }
     title('DECLARATION')
     let winningPercent = Math.floor(checkWinner()[1]*10000)/100
