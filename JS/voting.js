@@ -172,7 +172,6 @@ function format(dataF) {
   results += '\n' + dataRs[rounds - 1].winner[0] + ' has won with ' + winningPercent + '% of the vote.'
   results += '\nThe instant-runoff program ran for ' + rounds + '/' + (dataRs[0].list.length - 1) + ' possible rounds.\nBelow is the per-round review. Raw data is not available at this time.'
   dataRs.forEach((round, index) => {
-    results += '\n' + title('ROUND ' + (index + 1)) + '\n* Votes counted as portions, where 1.00 represents 100%'
     round.list.forEach((K, i) => {
       results += '\n' + (i + 1) + ') ' + K[0] + ': ' + (Math.floor(K[1]*10000)/100)+'%' // candidates list
       let barL = Math.round(K[1] * 80), bar = ""
