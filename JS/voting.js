@@ -1,11 +1,12 @@
 // EXTRANEOUS FUNCTIONS/DECLARATIONS AND DATA
 
 function title(word) {
-    let line = '---------------------------------------'
+    let line = '--------------------------------------'
     line = line.slice(Math.floor(word.length/2))
-    let extra="-"
-    if (word.length/2!=Math.floor(word.length/2)){extra=''}
-    return line+' '+word+' '+line+extra
+    let extra=""
+    let extraA=""
+    if (word.length/2==Math.floor(word.length/2)){extra='-'}else{extraA='-'}
+    return line+extra+extraA+' '+word+' '+line+extra
 }
 
 let ballotsRaw = []
