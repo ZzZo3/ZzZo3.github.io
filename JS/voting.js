@@ -184,7 +184,7 @@ function format(dataF) {
     results += '\n'+dataRs[rounds-1].winner[0]+' has won with '+winningPercent+'% of the vote.'
     results += '\nThe instant-runoff program ran for '+rounds+'/'+(dataRs[0].list.length-1)+' possible rounds.\nBelow is the per-round review. Raw data is not available at this time.'
     dataRs.forEach((round,index)=>{
-        results+='\n'+title('ROUND '+(index+1))
+        results+='\n'+title('ROUND '+(index+1))+'\n* Votes counted as portions, where 1.00 represents 100%'
         let list = ''
         round.list.forEach((K,i)=>{
             list+='\n'+(i+1)+') '+K[0]+': '+K[1]
@@ -214,8 +214,12 @@ function format(dataF) {
             })
             
         }})
-        results+='\n- '+round.winner[0]+' lead this round.'
-        results+='\n- '+round.loser[0]+'\'s votes were distrubuted to their voters\' next choice candidates.'
+        if (index+1<rounds){
+            results+='\n- '+round.winner[0]+' lead this round.'
+            results+='\n- '+round.loser[0]+'\'s votes were distrubuted to their voters\' next choice candidates.'
+        }else{
+            results += '\n- '+dataRs[rounds-1].winner[0]+' can therefore be declared the winner with '+winningPercent+'% of the vote.'
+        }
     })
     return results+'\n'+title('RESULTS END')
 }
