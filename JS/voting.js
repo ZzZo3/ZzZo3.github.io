@@ -2,8 +2,10 @@
 
 function title(word) {
     let line = '---------------------------------------'
-    line = line.slice(word.length/2)
-    return line+' '+word+' '+line
+    line = line.slice(Math.floor(word.length/2))
+    let extra="-"
+    if (word.length/2!=Math.floor(word.length/2)){extra=''}
+    return line+' '+word+' '+line+extra
 }
 
 let ballotsRaw = []
@@ -13,12 +15,11 @@ function setBallots() {
 setBallots()
 
 class roundData {
-    constructor(list,winner,loser,voteAudit,anomalies) {
+    constructor(list,winner,loser,voteAudit) {
         this.list = list
         this.winner = winner
         this.loser = loser
         this.voteAudit = voteAudit
-        this.anomalies = anomalies
     }
 }
 
@@ -96,11 +97,6 @@ function sumAudit(sum) {
 
 function tieBreaker(data,votes,place,round) {
     let dataB = JSON.parse(JSON.stringify(data))
-    if (place==1) {
-        console.log(title('ROUND '+round+' TIE FOR FIRST'))
-    } else {
-        console.log(title('ROUND '+round+' TIE FOR LAST'))
-    }
     let indexes = []
     dataB.forEach((K,index)=>{if(K[1]==votes){
         indexes.push(index)
@@ -108,15 +104,11 @@ function tieBreaker(data,votes,place,round) {
     let secondsTally = [...tally([...dataB],1)]
     let startVal=Math.abs((place-1)/2)
     let tieChosen = ['',startVal]
-    console.log(indexes,'tied with',votes)
-    console.log('secondsTally:')
-    indexes.forEach((i)=>{console.log(' ',secondsTally[i])})
     indexes.forEach((i)=>{
         if (place*secondsTally[i][1]>place*tieChosen[1]){
             tieChosen = secondsTally[i]
         }
     })
-    console.log('  tieChosen',tieChosen)
     let tieDataOutput = new tieData(
         JSON.parse(JSON.stringify(secondsTally)),
         round,
@@ -141,7 +133,6 @@ function run(ballotsTemp) {
         let runningWinner = [['',0]]
         let runningLoser = [['',1]]
         let runningSum = 0
-        let anomalies = ''
         candidates.forEach((K)=>{
             runningSum+=K[1]
             if (K[1]>runningWinner[0][1]){
@@ -162,21 +153,18 @@ function run(ballotsTemp) {
             roundLoser = breaker.choice
             tieDataArray.push(breaker)
             let loserNames=runningLoser.map((K)=>{return ' '+K[0]})
-            anomalies += 'There was a last place tie among'+loserNames
         }
         if (runningWinner.length>1){
             let breaker = tieBreaker(candidates,runningWinner[0][1],1,round)
             roundWinner = breaker.choice
             tieDataArray.push(breaker)
             let winnerNames=runningWinner.map((K)=>{return ' '+K[0]})
-            anomalies += 'There was a first place tie among'+winnerNames
         }
         roundDataArray.push(new roundData(
             JSON.parse(JSON.stringify(candidates)),
             JSON.parse(JSON.stringify(roundWinner)),
             JSON.parse(JSON.stringify(roundLoser)),
-            [runningSum,sumAudit(runningSum)],
-            anomalies))
+            [runningSum,sumAudit(runningSum)]))
         // REROUTE ROUND LOSER'S VOTES
         candidates = reroute(candidates,roundLoser[0])
     }
@@ -186,28 +174,47 @@ function run(ballotsTemp) {
 // PRETTY OUTPUT
 
 function format(dataF) {
-    let results = title('RESULTS')
+    let results = title('RESULT')
     let dataRs = dataF[0]
     let dataTs = dataF[1]
     let rounds = dataRs.length
     
     let winningPercent = Math.floor(dataRs[rounds-1].winner[1]*10000)/100
     results += '\n'+dataRs[rounds-1].winner[0]+' has won with '+winningPercent+'% of the vote.'
-    results += '\nThe instant-runoff program ran for '+rounds+' rounds.'
+    results += '\nThe instant-runoff program ran for '+rounds+'/'+(dataRs[0].list.length-1)+' possible rounds.\nBelow is the per-round review. Raw data is not available at this time.'
     dataRs.forEach((round,index)=>{
         results+='\n'+title('ROUND '+(index+1))
         let list = ''
         round.list.forEach((K,i)=>{
             list+='\n'+(i+1)+') '+K[0]+': '+K[1]
+            let barL = Math.round(K[1]*80)
+            let bar=""
+            for (let k=0;k<barL;k++) {
+                bar+="X"
+            }
+            for (let k=barL;k<80;k++) {
+                bar+="|"
+            }
+            list+='\n'+bar
         })
         results+=list
-        results+='\n  Winner: '+round.winner
-        results+='\n  Loser: '+round.loser
         results+='\n  Vote Audit: '+round.voteAudit[0]+'/1 -> '+round.voteAudit[1]
         dataTs.forEach((tie)=>{if (tie.round==index+1){
+            let place = 'last'
+            if(tie.place==1){place='first'}
+            let tied = []
+            tie.indexes.forEach((index)=>{
+                tied.push(tie.nexts[index])
+            })
+            let names = tied.map((K)=>{return ' '+K[0]})
+            results+='\n- There was a '+place+' place tie among'+names+'.'
+            tied.forEach((K)=>{
+                results+='\n  '+K[0]+' got '+K[1]+' of voters\' next-choice votes.'
+            })
             
         }})
-        if(round.anomalies!=''){results+='\n'+round.anomalies}
+        results+='\n- '+round.winner[0]+' lead this round.'
+        results+='\n- '+round.loser[0]+'\'s votes were distrubuted to their voters\' next choice candidates.'
     })
     return results+'\n'+title('RESULTS END')
 }
