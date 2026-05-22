@@ -91,8 +91,7 @@ function reroute(data, lowestName) {
 
 function sumAudit(sum) {
   let error = sum - 1
-  if (Math.abs(error) < 0.00000001) { return 'pass' }
-  else { return 'fail' }
+  if (Math.abs(error) < 0.00000001) { return 'pass' } else { return 'fail' }
 }
 
 function tieBreaker(data, votes, place, round) {
@@ -107,8 +106,7 @@ function tieBreaker(data, votes, place, round) {
   indexes.forEach((i) => {
     if (place * secondsTally[i][1] > place * tieChosen[1]) { tieChosen = secondsTally[i] }
   })
-  let tieDataOutput = new tieData(
-    JSON.parse(JSON.stringify(secondsTally)), round, place, votes, indexes, tieChosen)
+  let tieDataOutput = new tieData(JSON.parse(JSON.stringify(secondsTally)), round, place, votes, indexes, tieChosen)
   secondsTally = tally(JSON.parse(JSON.stringify(dataB)), 0)
   return tieDataOutput
 }
@@ -161,7 +159,7 @@ function run(ballotsTemp) {
   return [roundDataArray, tieDataArray]
 }
 
-// PRETTY OUTPUT
+// OUTPUT FORMATTING
 
 function format(dataF) {
   let results = title('RESULT')
@@ -171,19 +169,15 @@ function format(dataF) {
   results += '\n' + dataRs[rounds - 1].winner[0] + ' has won with ' + winningPercent + '% of the vote.'
   results += '\nThe instant-runoff program ran for ' + rounds + '/' + (dataRs[0].list.length - 1) + ' possible rounds.\nBelow is the per-round review. Raw data is not available at this time.'
   dataRs.forEach((round, index) => {
-    // round title
     results += '\n' + title('ROUND ' + (index + 1)) + '\n* Votes counted as portions, where 1.00 represents 100%'
-    // candidates list
     round.list.forEach((K, i) => {
-      results += '\n' + (i + 1) + ') ' + K[0] + ': ' + K[1]
+      results += '\n' + (i + 1) + ') ' + K[0] + ': ' + K[1] // candidates list
       let barL = Math.round(K[1] * 80), bar = ""
       for (let k = 0; k < barL; k++) { bar += "X" }
       for (let k = barL; k < 80; k++) { bar += "|" }
       results += '\n' + bar
     })
-    // vote audit
     results += '\n  Vote Audit: ' + round.voteAudit[0] + '/1 -> ' + round.voteAudit[1]
-    // tie data
     dataTs.forEach((tie) => {
       if (tie.round == index + 1) {
         let place = 'last'
@@ -195,7 +189,6 @@ function format(dataF) {
         tied.forEach((K) => { results += '\n  ' + K[0] + ' got ' + K[1] + ' of voters\' next-choice votes.' })
       }
     })
-    // winner, loser
     if (index + 1 < rounds) {
       results += '\n- ' + round.winner[0] + ' lead this round.'
       results += '\n- ' + round.loser[0] + '\'s votes were distrubuted to their voters\' next choice candidates.'
@@ -206,9 +199,9 @@ function format(dataF) {
   return results + '\n' + title('RESULTS END')
 }
 
-// STUFF THAT RUNS ON LOAD()
+// STUFF THAT RUNS ON LOAD
 
 let results = run(ballotsRaw)
-//console.log(title('RAW OUTPUT DATA'))
-//console.log(results[0],results[1])
+/*console.log(title('RAW OUTPUT DATA'))
+console.log(results[0],results[1])*/
 console.log(format(results))
