@@ -83,8 +83,8 @@ function reroute(data, lowestName) {
     if (K[0] == lowestName) { losingIndex = index }
   })
   ballotsRaw.map((ballot) => {
-    ballot.forEach((candidate,index)=>{
-      if (candidate==lowestName) {ballot.splice(index,1)}
+    ballot.forEach((candidate, index) => {
+      if (candidate == lowestName) { ballot.splice(index, 1) }
     })
     if (ballot[0] == lowestName) { ballot.shift() }
   })
@@ -172,8 +172,9 @@ function format(dataF) {
   results += '\n' + dataRs[rounds - 1].winner[0] + ' has won with ' + winningPercent + '% of the vote.'
   results += '\nThe instant-runoff program ran for ' + rounds + '/' + (dataRs[0].list.length - 1) + ' possible rounds.\nBelow is the per-round review. Raw data is not available at this time.'
   dataRs.forEach((round, index) => {
+    results += '\n' + title('ROUND ' + (index + 1))
     round.list.forEach((K, i) => {
-      results += '\n' + (i + 1) + ') ' + K[0] + ': ' + (Math.floor(K[1]*10000)/100)+'%' // candidates list
+      results += '\n' + (i + 1) + ') ' + K[0] + ': ' + (Math.floor(K[1] * 10000) / 100) + '%' // candidates list
       let barL = Math.round(K[1] * 80), bar = ""
       for (let k = 0; k < barL; k++) { bar += "X" }
       for (let k = barL; k < 80; k++) { bar += "|" }
@@ -188,7 +189,7 @@ function format(dataF) {
         tie.indexes.forEach((index) => { tied.push(tie.nexts[index]) })
         let names = tied.map((K) => { return ' ' + K[0] })
         results += '\n- There was a ' + place + ' place tie among' + names + '.'
-        tied.forEach((K) => { results += '\n  ' + K[0] + ' got ' + (Math.floor(K[1]*10000)/100) + '% of voters\' next-choice votes.' })
+        tied.forEach((K) => { results += '\n  ' + K[0] + ' got ' + (Math.floor(K[1] * 10000) / 100) + '% of voters\' next-choice votes.' })
       }
     })
     if (index + 1 < rounds) {
@@ -206,4 +207,4 @@ function format(dataF) {
 let results = run(ballotsRaw)
 /*console.log(title('RAW OUTPUT DATA'))
 console.log(results[0],results[1])*/
-console.log('%c'+format(results),'color: gold')
+console.log('%c' + format(results), 'color: gold')
