@@ -120,18 +120,10 @@ function setBigBases() {
 document.addEventListener('keydown', function (event) {
   console.log('Key: \"' + event.key + '\"');
   if (canMove) {
-    if (event.key === 'w' || event.key === 'ArrowUp') {
-      walkUp() // -y(iso) -> -x -y (offset from top left)
-    }
-    if (event.key === 's' || event.key === 'ArrowDown') {
-      walkDown() // +y(iso) -> +x +y (offset from top left)
-    }
-    if (event.key === 'a' || event.key === 'ArrowLeft') {
-      walkRight() // +x(iso) -> +x -y (offset from top left)
-    }
-    if (event.key === 'd' || event.key === 'ArrowRight') {
-      walkLeft() // -x(iso) -> -x +y (offset from top left)
-    }
+    if (event.key === 'w') { walkUp() } // -y(iso) -> -x -y (offset from top left)
+    if (event.key === 's') { walkDown() } // +y(iso) -> +x +y (offset from top left)
+    if (event.key === 'a') { walkRight() } // +x(iso) -> +x -y (offset from top left)
+    if (event.key === 'd') { walkLeft() } // -x(iso) -> -x +y (offset from top left)
   }
   if (event.key === 'Enter') {
     useTile()
@@ -156,8 +148,7 @@ window.onresize = () => {
 //TRANSLATE ISOMETRIC COORDINATES TO SCREEN COORDINATES (from top left, where +y is down and +x is right)
 
 function Iso2Reg(xi, yi) {
-  let xf = 0
-  let yf = 0
+  let xf = 0, yf = 0
   // xi <- iterations (+leftward, -rightward)
   yf -= (11 + mountainOffset / isoSpread) * isoSpread * tileScale * xi
   xf += 32 * tileScale * isoSpread * xi
@@ -186,20 +177,10 @@ function origin() {
   console.log('origin() called')
   POSITIONprevious = [...POSITION]
   let SchematicTile = document.getElementById('SCHEMATIC')
-  let Xdim = SchematicTile.getAttribute("data-Xdim")
-  let Ydim = SchematicTile.getAttribute("data-Ydim")
-  let x = 0
-  let y = 0
-  if (Xdim % 2 == 0) {
-    x = Xdim / 2 - 1
-  } else {
-    x = Xdim / 2 - 0.5
-  }
-  if (Ydim % 2 == 0) {
-    y = Ydim / 2
-  } else {
-    y = Ydim / 2 - 0.5
-  }
+  let Xdim = SchematicTile.getAttribute("data-Xdim"), Ydim = SchematicTile.getAttribute("data-Ydim")
+  let x = 0, y = 0
+  if (Xdim % 2 == 0) { x = Xdim / 2 - 1 } else { x = Xdim / 2 - 0.5 }
+  if (Ydim % 2 == 0) { y = Ydim / 2 } else { y = Ydim / 2 - 0.5 }
   POSITION = [x, y]
   console.log('    POSITION: ' + POSITION)
   renderIsometric()
@@ -228,17 +209,11 @@ function walkRight() {
 function move(to) {
   BIGBASES.forEach((obj) => {
     if (JSON.stringify(obj.coords) == JSON.stringify(POSITION)) {
-      if (to[0] > POSITION[0]) {
-        to = [(to[0] + obj.scale - 1), to[1]]
-      }
-      if (to[1] > POSITION[1]) {
-        to = [to[0], (to[1] + obj.scale - 1)]
-      }
+      if (to[0] > POSITION[0]) { to = [(to[0] + obj.scale - 1), to[1]] }
+      if (to[1] > POSITION[1]) { to = [to[0], (to[1] + obj.scale - 1)] }
     }
     obj.redirections.forEach((coordPair) => {
-      if (JSON.stringify(coordPair) == JSON.stringify(to)) {
-        to = obj.coords
-      }
+      if (JSON.stringify(coordPair) == JSON.stringify(to)) { to = obj.coords }
     })
   })
   POSITION = to
@@ -256,17 +231,14 @@ function renderSchematic() {
     node.remove()
   })
   let SchematicTile = document.getElementById('SCHEMATIC')
-  let Xdim = SchematicTile.getAttribute("data-Xdim")
-  let Ydim = SchematicTile.getAttribute("data-Ydim")
+  let Xdim = SchematicTile.getAttribute("data-Xdim"), Ydim = SchematicTile.getAttribute("data-Ydim")
   console.log('   schemDimensions: (' + Xdim + ',' + Ydim + ')')
   for (let xi = 0; xi < Xdim; xi++) {
     for (let yi = 0; yi < Ydim; yi++) {
       let invalidSchemCoord = false
       BIGBASES.forEach((obj) => {
         obj.redirections.forEach((coordPair) => {
-          if (JSON.stringify(coordPair) == JSON.stringify([xi, yi])) {
-            invalidSchemCoord = true
-          }
+          if (JSON.stringify(coordPair) == JSON.stringify([xi, yi])) { invalidSchemCoord = true }
         })
       })
       if (!invalidSchemCoord) {
@@ -280,9 +252,7 @@ function renderSchematic() {
         schemTile.style.height = 256 * tileScale + "px"
         schemTile.style.visibility = "visible"
         isometricContainer.appendChild(schemTile)
-      } else {
-        console.log('   non-viable schematic tile at[' + xi + ',' + yi + ']')
-      }
+      } else { console.log('   non-viable schematic tile at[' + xi + ',' + yi + ']') }
       console.log('   schematic cloned at [' + xi + ',' + yi + ']')
     }
   }
@@ -292,12 +262,10 @@ function renderSelector() {
   console.log('\"renderSelector()\" began')
   console.log('   POSIITON: ' + POSITIONprevious + '->' + POSITION)
   let off = 175
-  let maxX = document.getElementById('SCHEMATIC').getAttribute('data-Xdim')
-  let maxY = document.getElementById('SCHEMATIC').getAttribute('data-Ydim')
+  let maxX = document.getElementById('SCHEMATIC').getAttribute('data-Xdim'), maxY = document.getElementById('SCHEMATIC').getAttribute('data-Ydim')
   if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY) { // if inside schematic grid:
     let ZED = 2 // SELECTOR AT ORIGIN HAS z: 2
-    let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + ZED
-    let newZ = POSITION[1] - POSITION[0] + ZED
+    let oldZ = POSITIONprevious[1] - POSITIONprevious[0] + ZED, newZ = POSITION[1] - POSITION[0] + ZED
 
     // v TWEEN v
     let Obj = { x: POSITIONprevious[0], y: POSITIONprevious[1] }
@@ -318,8 +286,7 @@ function renderSelector() {
         console.log('   frame: ' + frame)
         if (frame % 2 == 0) {
           console.log = function () { } // disable console.log() while tweening
-          let offsets = Iso2Reg(Obj.x, Obj.y)
-          let offsetsi = Iso2Reg(-Obj.x, -Obj.y)
+          let offsets = Iso2Reg(Obj.x, Obj.y), offsetsi = Iso2Reg(-Obj.x, -Obj.y)
           Selection.style.top = offsets[1] + off * tileScale + "px"
           Selection.style.left = offsets[0] + "px"
           SelectionZ.style.top = offsets[1] + off * tileScale + "px"
@@ -347,8 +314,7 @@ function renderSelector() {
     // ^ TWEEN ^
 
   } else {
-    console.log('   POSITION outside grid')
-    console.log('   sending back ...')
+    console.log('   POSITION outside grid\n   sending back ...')
     POSITION = [...POSITIONprevious]
     getTile()
   }
@@ -360,8 +326,7 @@ function renderSelector() {
 }
 function renderIsoWindow(offsets) {
   grabWindowDim(offsets)
-  let winOffX = windowDimensions[0] / 2
-  let winOffY = windowDimensions[1] / 2
+  let winOffX = windowDimensions[0] / 2, winOffY = windowDimensions[1] / 2
   console.log('\"renderIsoWindow()\" began')
   isometricContainer.style.left = winOffX - (32 * tileScale) + offsets[0] + 'px'
   isometricContainer.style.top = winOffY - ((256 - 11) * tileScale) + offsets[1] + scrollOffset + 'px'
@@ -382,16 +347,12 @@ function REND(CLASS, ZED) {
   CLASS.forEach((tile) => {
     let offY = 0
     var perTileScale = 1
-    if (tile.hasAttribute('data-scale')) {
-      perTileScale = parseInt(tile.getAttribute('data-scale'))
-    }
+    if (tile.hasAttribute('data-scale')) { perTileScale = parseInt(tile.getAttribute('data-scale')) }
     if (tile.hasAttribute('data-offY')) { offY = parseInt(tile.getAttribute('data-offY')) }
-    let xi = parseInt(tile.classList[1].slice(1))
-    let yi = parseInt(tile.classList[2].slice(1))
+    let xi = parseInt(tile.classList[1].slice(1)), yi = parseInt(tile.classList[2].slice(1))
     console.log('   IsometricTile:')
     let offsets = Iso2Reg(xi, yi)
-    let xf = offsets[0] + "px"
-    let yf = offsets[1]
+    let xf = offsets[0] + "px", yf = offsets[1]
     yf += offY * tileScale
     tile.style.left = xf
     tile.style.top = (yf - (256 - 11) * (perTileScale - 1) * tileScale) + "px"
@@ -536,17 +497,13 @@ function getTile() {
     }
     if (TILE.hasAttribute("data-name")) {
       name = TILE.getAttribute("data-name")
-      nameDisplay.innerText = "  "+name
+      nameDisplay.innerText = "  " + name
       tileTip.style.opacity = 1.0
     } else {
       name = ''
       nameDisplay.innerText = 'Unknown Page'
     }
-    if (TILE.hasAttribute("data-note")) {
-      note = TILE.getAttribute("data-note")
-    } else {
-      note = ""
-    }
+    if (TILE.hasAttribute("data-note")) { note = TILE.getAttribute("data-note") } else { note = "" }
   } else {
     console.log('   no tile found at ' + [POSITION])
     link = ''
@@ -557,9 +514,7 @@ function getTile() {
 }
 function useTile() {
   console.log('useTile() called at: ' + POSITION)
-  if (link != '') {
-    window.location.href = link
-  }
+  if (link != '') { window.location.href = link }
 }
 
 
@@ -614,8 +569,6 @@ function loadFunc() {
     console.log('stored POSITION detected')
     restorePosition()
     console.log('   POSITION restored')
-  } else {
-    origin()
-  }
+  } else { origin() }
   console.log('> \"loadFunc()\" finished')
 }
