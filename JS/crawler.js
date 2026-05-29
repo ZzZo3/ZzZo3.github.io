@@ -37,10 +37,12 @@ function print(text) {
 //STUFF THAT RUNS ON LOAD
 
 async function main() {
+  let i=0
   while (true) {
-    print("awaiting>");
+    i++
+    print("["+i+" awaiting>");
     await input();
-    print("<received");
+    print("<received] ");
   }
   alert(lastInput);
 }
