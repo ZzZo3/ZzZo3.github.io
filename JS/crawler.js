@@ -4,15 +4,28 @@ const outputElement = document.getElementById("output");
 let lastInput = "";
 // GET INPUT & SET OUTPUT
 
+inputElement.addEventListener("keydown", (event)=>{
+  if (event.key==="Enter") {
+    event.preventDefault()
+  }
+})
+
+function inputEnter(event) {
+  if (event.key==="Enter") {
+    inputElement.removeEventListener("keydown", inputEnter);
+    print(inputElement.value);
+    resolveInputPromise();
+  }
+}
+
 async function input() {
   console.log("Awaiting input...");
   await new Promise((resolve)=>{
-    inputElement.addEventListener("keydown", (event)=>{
-      if (event.key==="Enter") { resolve(); }
-    }, { once : true });
+    resolveInputPromise = resolve;
+    inputElement.addEventListener("keydown", inputEnter);
   });
   let toReturn = inputElement.value;
-  console.log("Input recorded. Continuing...");
+  console.log("Input received. Continuing...");
   inputElement.value = "";
   lastInput = toReturn;
 }
@@ -24,9 +37,9 @@ function print(text) {
 //STUFF THAT RUNS ON LOAD
 
 async function main() {
-  print("started")
+  print("awaiting>");
   await input();
-  print("stopped")
+  print("<received");
   alert(lastInput);
 }
 
