@@ -31,8 +31,9 @@ async function main() {
   alert(lastInput);
 }
 
+main();
+
 function loadFunc() {
   console.log("\"loadFunc()\" began");
-  main();
   console.log("   \"loadFunc()\" finished");
 }
