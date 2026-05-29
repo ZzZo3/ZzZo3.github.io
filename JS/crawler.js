@@ -26,9 +26,13 @@ function print(text) {
 
 //STUFF THAT RUNS ON LOAD
 
+async function main() {
+  await input();
+  alert(lastInput);
+}
+
 function loadFunc() {
   console.log("\"loadFunc()\" began");
-  input();
-  alert(lastInput);
+  main();
   console.log("   \"loadFunc()\" finished");
 }
