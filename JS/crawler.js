@@ -4,17 +4,14 @@ const outputElement = document.getElementById("output");
 let lastInput = "";
 // GET INPUT & SET OUTPUT
 
-const inputEnterProm = new Promise((resolve, reject)=>{
-  inputElement.addEventListener("keydown", (event)=>{
-    if (event.key==="Enter") { resolve(); }
-  }, { once : true });
-});
-
 async function input() {
   console.log("Awaiting input...");
-  await inputEnterProm();
+  await new Promise((resolve)=>{
+    inputElement.addEventListener("keydown", (event)=>{
+      if (event.key==="Enter") { resolve(); }
+    }, { once : true });
+  });
   let toReturn = inputElement.value;
-  alert(toReturn);
   console.log("Input recorded. Continuing...");
   inputElement.value = "";
   lastInput = toReturn;
