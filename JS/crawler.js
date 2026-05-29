@@ -13,7 +13,6 @@ inputElement.addEventListener("keydown", (event)=>{
 function inputEnter(event) {
   if (event.key==="Enter") {
     inputElement.removeEventListener("keydown", inputEnter);
-    print(inputElement.value);
     resolveInputPromise();
   }
 }
@@ -24,10 +23,9 @@ async function input() {
     resolveInputPromise = resolve;
     inputElement.addEventListener("keydown", inputEnter);
   });
-  let toReturn = inputElement.value;
   console.log("Input received. Continuing...");
+  lastInput = inputElement.value;
   inputElement.value = "";
-  lastInput = toReturn;
 }
 
 function print(text) {
@@ -40,9 +38,10 @@ async function main() {
   let i=0
   while (true) {
     i++
-    print("["+i+" awaiting>");
+    var line = i+" awaiting> "
     await input();
-    print("<received] ");
+    line += lastInput+" <received";
+    print(line);
   }
   alert(lastInput);
 }
