@@ -5,8 +5,8 @@ let lastInput = "";
 // GET INPUT & SET OUTPUT
 
 const inputEnterProm = new Promise((resolve, reject)=>{
-    inputElement.addEventListener("keydown", (event)=>{
-      if (event.key==="Enter") { resolve; }
+    document.addEventListener("keydown", (event)=>{
+      if (event.key==="Enter") { resolve(); }
     });
 });
 
