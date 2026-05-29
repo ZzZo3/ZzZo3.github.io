@@ -6,10 +6,10 @@
   padding-top: 0px;
   padding-left: 2px;
   height: 18px;
-  width: 100%;
+  width: 96%;
   border: 2px solid white;
   resize: none;
-  margin-left: 2%;
+  margin-right: 2%;
   margin-top: 1%;
 }
 
@@ -19,8 +19,8 @@
   padding-top: 0px;
   padding-left: 2px;
   height: 100%;
-  width: 100%;
+  width: 96%;
   border: 2px solid white;
-  margin-left: 2%;
+  margin-right: 2%;
   margin-top: 1%;
 }
