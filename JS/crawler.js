@@ -7,7 +7,7 @@ const outputElement = document.getElementById("output");
 const inputEnterProm = new Promise((resolve, reject)=>{
     inputElement.addEventListener("keydown", (event)=>{
       if (event.key==="Enter") { resolve(inputElement.value); }
-    }
+    });
 });
 
 async function in() {
