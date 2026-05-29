@@ -29,7 +29,7 @@ async function input() {
 }
 
 function print(text) {
-  outputElement.textContent += "\n"+text;
+  outputElement.textContent += text+"\n";
 }
 
 //STUFF THAT RUNS ON LOAD
