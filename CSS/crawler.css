@@ -10,10 +10,10 @@ body {
   padding-top: 0px;
   padding-left: 2px;
   height: 18px;
-  width: 96%;
+  width: 94%;
   border: 2px solid white;
   resize: none;
-  margin-right: 2%;
+  margin-left: 2%;
   margin-top: 1%;
 }
 
@@ -23,9 +23,9 @@ body {
   padding-top: 0px;
   padding-left: 2px;
   height: 100%;
-  width: 96%;
+  width: 94%;
   border: 2px solid white;
-  margin-right: 2%;
+  margin-left: 2%;
   margin-top: 1%;
   white-space: pre-wrap;
 }
