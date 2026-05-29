@@ -4,10 +4,10 @@ const outputElement = document.getElementById('output')
 
 // GET INPUT & SET OUTPUT
 
-func in() -> String {
+function in() {
   return inputElement.text
 }
-func print(text) {
+function print(text) {
   outputElement.innerHTML += "\n"+text
 }
 
