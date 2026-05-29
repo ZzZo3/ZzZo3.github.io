@@ -13,7 +13,7 @@ const inputEnter = () => {
 };
 
 async function in() {
-  console.log("Waiting for input...");
+  console.log("Awaiting input...");
   await inputEnter();
   console.log("Input recorded. Continuing...");
   return inputElement.value
@@ -30,5 +30,7 @@ start();
 
 function loadFunc() {
   console.log('\"loadFunc()\" began')
+  let text = in()
+  alert(text)
   console.log('   \"loadFunc()\" finished')
 }
