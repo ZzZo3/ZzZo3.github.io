@@ -1,7 +1,7 @@
 // BASE
 const inputElement = document.getElementById("input");
 const outputElement = document.getElementById("output");
-
+let lastInput = ""
 // GET INPUT & SET OUTPUT
 
 const inputEnterProm = new Promise((resolve, reject)=>{
@@ -17,7 +17,7 @@ async function input() {
   alert(toReturn);
   console.log("Input recorded. Continuing...");
   inputElement.value = "";
-  return toReturn;
+  lastInput = toReturn;
 }
 
 function print(text) {
@@ -28,7 +28,7 @@ function print(text) {
 
 function loadFunc() {
   console.log("\"loadFunc()\" began");
-  let text = input();
-  alert(text);
+  await input();
+  alert(lastInput);
   console.log("   \"loadFunc()\" finished");
 }
