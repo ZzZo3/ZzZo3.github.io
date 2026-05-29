@@ -28,7 +28,7 @@ function print(text) {
 
 function loadFunc() {
   console.log("\"loadFunc()\" began");
-  await input();
+  input();
   alert(lastInput);
   console.log("   \"loadFunc()\" finished");
 }
