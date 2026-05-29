@@ -6,7 +6,7 @@ let lastInput = "";
 
 const inputEnterProm = new Promise((resolve, reject)=>{
   inputElement.addEventListener("keydown", (event)=>{
-    if (event.key==="O") { resolve(); }
+    if (event.key==="Enter") { resolve(); }
   }, { once : true });
 });
 
