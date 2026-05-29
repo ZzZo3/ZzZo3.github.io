@@ -37,9 +37,11 @@ function print(text) {
 //STUFF THAT RUNS ON LOAD
 
 async function main() {
-  print("awaiting>");
-  await input();
-  print("<received");
+  while (true) {
+    print("awaiting>");
+    await input();
+    print("<received");
+  }
   alert(lastInput);
 }
 
