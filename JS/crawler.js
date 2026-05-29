@@ -5,9 +5,9 @@ let lastInput = "";
 // GET INPUT & SET OUTPUT
 
 const inputEnterProm = new Promise((resolve, reject)=>{
-    document.addEventListener("keydown", (event)=>{
-      if (event.key==="Enter") { resolve(); }
-    });
+  inputElement.addEventListener("keydown", (event)=>{
+    if (event.key==="O") { resolve(); }
+  }, { once : true });
 });
 
 async function input() {
@@ -27,7 +27,9 @@ function print(text) {
 //STUFF THAT RUNS ON LOAD
 
 async function main() {
+  print("started")
   await input();
+  print("stopped")
   alert(lastInput);
 }
 
