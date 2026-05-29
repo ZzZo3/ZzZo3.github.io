@@ -2,6 +2,8 @@
 const inputElement = document.getElementById("input");
 const outputElement = document.getElementById("output");
 let lastInput = "";
+let outputText = "";
+
 // GET INPUT & SET OUTPUT
 
 inputElement.addEventListener("keydown", (event)=>{
@@ -29,26 +31,63 @@ async function input() {
 }
 
 function print(text) {
-  outputElement.textContent += text+"\n";
+  outputText += text+"\n";
+  outputFormat();
 }
 
-//STUFF THAT RUNS ON LOAD
+function outputFormat() {
+  outputElement.textContent = outputText;
+}
+
+//CLASSES
+
+var pr = {
+  line: function(){
+    print("--------------------------------------------------------------------------------")
+  },
+  nl: function(){
+    print("");
+  },
+  center: function(text){
+    if (text.length>80) {
+      console.log("ERROR: pr.center() input too long!");
+      return
+    }
+    let space = "                                        ".slice(Math.floor(text.length / 2));
+    print(space + text);
+  },
+  title: function(){
+    this.line();
+    this.nl();
+    this.nl();
+    this.nl();
+    this.nl();
+    this.nl();
+    this.nl();  
+    this.line();
+  }
+};
+
+//MAIN BODY
 
 async function main() {
-  let i=0
+  pr.title();
+  pr.center("CENTER");
+  let i=0;
   while (true) {
-    i++
-    var line = i+" awaiting> "
+    i++;
+    print(i+" awaiting...");
     await input();
-    line += lastInput+" <received";
-    print(line);
+    pr.line();
+    print(lastInput);
   }
   alert(lastInput);
 }
 
-main();
+//STUFF THAT RUNS ON LOAD
 
 function loadFunc() {
   console.log("\"loadFunc()\" began");
+  main();
   console.log("   \"loadFunc()\" finished");
 }

@@ -10,7 +10,7 @@ body {
   padding-top: 0px;
   padding-left: 2px;
   height: 18px;
-  width: 94%;
+  width: 94vw;
   border: 2px solid white;
   resize: none;
   margin-left: 2%;
@@ -23,9 +23,16 @@ body {
   padding-top: 0px;
   padding-left: 2px;
   height: 100%;
-  width: 94%;
+  width: 94vw;
   border: 2px solid white;
   margin-left: 2%;
   margin-top: 1%;
   white-space: pre-wrap;
+  background:
+    conic-gradient(#080808 90deg,
+      #161616 90deg 270deg,
+      #080808 270deg 360deg);
+  background-repeat: repeat;
+  background-size: 36px 36px;
+  background-position: top left;
 }
