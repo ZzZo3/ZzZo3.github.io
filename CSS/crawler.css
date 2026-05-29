@@ -3,13 +3,14 @@
 #input {
   font-size: 16px;
   height: 32px;
-  width: 100vw;
+  width: 100%;
   border: 2px solid white;
+  resize: none;
 }
 
 #output {
   font-size: 16px;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   border: 2px solid white;
 }
