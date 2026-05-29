@@ -1,36 +1,35 @@
 // BASE
-const inputElement = document.getElementById('input')
-const outputElement = document.getElementById('output')
+const inputElement = document.getElementById("input");
+const outputElement = document.getElementById("output");
 
 // GET INPUT & SET OUTPUT
 
-const inputEnter = () => {
-  return new Promise((resolve) => {
-    inputElement.addEventListener('keydown', (event)=>{
-      if (event.key==="Enter") { resolve }
-    }, { once: true });
-  });
-};
+const inputEnterProm = new Promise((resolve, reject)=>{
+    inputElement.addEventListener("keydown", (event)=>{
+      if (event.key==="Enter") { resolve(inputElement.value); }
+    }
+});
 
 async function in() {
   console.log("Awaiting input...");
-  await inputEnter();
+  inputEnterProm.then((value)=>{
+    alert(value)
+    toReturn = value
+  });
   console.log("Input recorded. Continuing...");
-  return inputElement.value
-  inputElement.value = ""
+  inputElement.value = "";
+  return toReturn;
 }
 
 function print(text) {
-  outputElement.textContent += "\n"+text
+  outputElement.textContent += "\n"+text;
 }
 
 //STUFF THAT RUNS ON LOAD
 
-start();
-
 function loadFunc() {
-  console.log('\"loadFunc()\" began')
-  let text = in()
-  alert(text)
-  console.log('   \"loadFunc()\" finished')
+  console.log("\"loadFunc()\" began");
+  let text = in();
+  alert(text);
+  console.log("   \"loadFunc()\" finished");
 }
