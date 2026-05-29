@@ -6,16 +6,15 @@ const outputElement = document.getElementById("output");
 
 const inputEnterProm = new Promise((resolve, reject)=>{
     inputElement.addEventListener("keydown", (event)=>{
-      if (event.key==="Enter") { resolve(inputElement.value); }
+      if (event.key==="Enter") { resolve(); }
     });
 });
 
-async function in() {
+async function input() {
   console.log("Awaiting input...");
-  inputEnterProm.then((value)=>{
-    alert(value)
-    toReturn = value
-  });
+  await inputEnterProm();
+  let toReturn = inputElement.value;
+  alert(toReturn);
   console.log("Input recorded. Continuing...");
   inputElement.value = "";
   return toReturn;
@@ -29,7 +28,7 @@ function print(text) {
 
 function loadFunc() {
   console.log("\"loadFunc()\" began");
-  let text = in();
+  let text = input();
   alert(text);
   console.log("   \"loadFunc()\" finished");
 }
