@@ -5,10 +5,10 @@ const outputElement = document.getElementById('output')
 // GET INPUT & SET OUTPUT
 
 function in() {
-  return inputElement.text
+  return inputElement.value
 }
 function print(text) {
-  outputElement.innerHTML += "\n"+text
+  outputElement.textContent += "\n"+text
 }
 
 //STUFF THAT RUNS ON LOAD
