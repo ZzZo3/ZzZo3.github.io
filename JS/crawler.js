@@ -1,12 +1,12 @@
 // BASE
 const inputElement = document.getElementById("input");
 const outputElement = document.getElementById("output");
-let lastInput = ""
+let lastInput = "";
 // GET INPUT & SET OUTPUT
 
 const inputEnterProm = new Promise((resolve, reject)=>{
     inputElement.addEventListener("keydown", (event)=>{
-      if (event.key==="Enter") { resolve(); }
+      if (event.key==="Enter") { resolve; }
     });
 });
 
