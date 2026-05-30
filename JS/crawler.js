@@ -97,6 +97,7 @@ async function main() {
         print("You are lost.")
         setTimeout(()=>{
           pr.crawler();
+          document.getElementById("musicPlayer").play();
         }, 2000);
       }, 1000);
     }, 1000);
