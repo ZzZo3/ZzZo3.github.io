@@ -3,6 +3,7 @@ html, body {
   font-family: Courier New;
   color: white;
   height: 116%;
+  margin: ;
 }
 
 #container {
@@ -24,11 +25,11 @@ html, body {
   line-height: 18px;
   height: 18px;
   width: 770px;
-  padding-top: 0px;
+  padding-top: 2px;
   padding-left: 2px;
+  padding-right: 2px;
   border: 2px solid white;
   resize: none;
-  margin-left: 2vw;
   margin-top: 2vh;
 }
 
@@ -38,11 +39,11 @@ html, body {
   line-height: 18px;
   height: 900px;
   width: 770px;
-  padding-top: 0px;
+  padding-top: 1px;
   padding-left: 2px;
+  padding-right: 2px;
   resize: none;
   border: 2px solid white;
-  margin-left: 2vw;
   margin-top: 2vh;
   white-space: pre-wrap;
   background:
