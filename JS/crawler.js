@@ -93,16 +93,29 @@ var Player = {
   rank: 0,
   title: "",
   prestige: 0,
+  health: 20,
   maxHealth: 20,
-  plHealth: 20,
-  weaponArr: [], //[Weapon]
-  newWeaponIndexArr: [], //[Int]
-  maxHealed: true,
+  inventory: [],
   eventArr: [], //[String]
   eventCooldownArr: [], //[Int]
   eventRealCooldownArr: [], //[Int]
   eventCount: 0,
   layer: 1,
+  titleCheck() {
+    let titleReqs = [
+      ["traveller",0],
+      ["skirmisher",10],
+      ["soldier",25],
+      ["knight",50],
+      ["good knight",100],
+      ["great knight",175],
+      ["holy knight",300]
+    ]
+    for (let i=0; i<titleReqs.length; i++) {
+      if (this.prestige>titleReqs[i][1]) { this.rank = i };
+    }
+    
+  }
 };
 
 // ITEMS
@@ -124,6 +137,11 @@ class Weapon {
     }
   }
 }
+var basicSword = new Weapon("Basic Sword", 0, 6, 1, 1, 1);
+var sturdySword = new Weapon("Sturdy Sword", 0, 4, 2, 1, 0.5);
+Player.inventory.push(basicSword);
+Player.inventory.push(sturdySword);
+console.log(Player)
 
 // CRAWLER: MAIN BODY
 
@@ -145,7 +163,7 @@ async function main() {
 }
 
 async function loop() {
-  print("LAYER 1")
+  pr.title("LAYER 1")
   let i=0;
   while (true) {
     i++;
