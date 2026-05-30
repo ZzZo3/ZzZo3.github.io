@@ -95,11 +95,11 @@ async function main() {
   let i=0;
   while (true) {
     i++;
-    print(i+" awaiting...");
+    print("awaiting...");
     await input();
     pr.line("_");
     pr.nl();
-    print(lastInput);
+    print("  "+lastInput);
   }
   alert(lastInput);
 }

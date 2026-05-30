@@ -11,11 +11,11 @@ html, body {
   padding-top: 0px;
   padding-left: 2px;
   height: 18px;
-  width: 94vw;
+  width: 770px;
   border: 2px solid white;
   resize: none;
-  margin-left: 2%;
-  margin-top: 1%;
+  margin-left: 2vw;
+  margin-top: 2vh;
 }
 
 #output {
@@ -24,11 +24,12 @@ html, body {
   line-height: 18px;
   padding-top: 0px;
   padding-left: 2px;
-  height: 864px;
-  width: 94vw;
+  height: 770px;
+  width: 770px;
+  resize: none;
   border: 2px solid white;
-  margin-left: 2%;
-  margin-top: 1%;
+  margin-left: 2vw;
+  margin-top: 2vh;
   white-space: pre-wrap;
   background:
     conic-gradient(#080808 90deg,
