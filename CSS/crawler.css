@@ -4,14 +4,20 @@ html, body {
   color: white;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  border: 3px solid green; 
+}
+
 #input {
   font-family: Courier New;
   font-size: 16px;
   line-height: 18px;
-  padding-top: 0px;
-  padding-left: 2px;
   height: 18px;
   width: 770px;
+  padding-top: 0px;
+  padding-left: 2px;
   border: 2px solid white;
   resize: none;
   margin-left: 2vw;
@@ -22,10 +28,10 @@ html, body {
   overflow-y: scroll;
   font-size: 16px;
   line-height: 18px;
+  height: 900px;
+  width: 770px;
   padding-top: 0px;
   padding-left: 2px;
-  height: 770px;
-  width: 770px;
   resize: none;
   border: 2px solid white;
   margin-left: 2vw;
