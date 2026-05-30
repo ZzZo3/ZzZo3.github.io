@@ -33,6 +33,7 @@ async function input() {
 function print(text) {
   outputText += text+"\n";
   outputFormat();
+  outputElement.scrollBy(0, 999999);
 }
 
 function outputFormat() {
@@ -42,8 +43,12 @@ function outputFormat() {
 //CLASSES
 
 var pr = {
-  line: function(){
-    print("--------------------------------------------------------------------------------")
+  line: function(char){
+    let line = ""
+    for (let i=0; i<80; i++) {
+      line += char
+    }
+    print(line)
   },
   nl: function(){
     print("");
@@ -56,29 +61,44 @@ var pr = {
     let space = "                                        ".slice(Math.floor(text.length / 2));
     print(space + text);
   },
-  title: function(){
-    this.line();
-    this.nl();
-    this.nl();
-    this.nl();
-    this.nl();
-    this.nl();
-    this.nl();  
-    this.line();
+  title: function(text){
+    if (text.length>80) {
+      console.log("ERROR: pr.center() input too long!");
+      return
+    }
+    let bar = "---------------------------------------".slice(Math.floor(text.length / 2));
+    bar = bar+" "+text+" "+bar
+    if (bar.length>80) {
+      bar = bar.slice(bar.length - 80)
+    }
+    print(bar);
+  },
+  crawler: function(){
+    this.line('_');
+    this.center("  _____ _____        __          ___      ______ _____  ");
+    this.center(" / ____|  __ \\     /\\\\ \\        / / |    |  ____|  __ \\ ");
+    this.center("| |    | |__) |   /  \\\\ \\  /\\  / /| |    | |__  | |__) |");
+    this.center("| |    |  _  /   / /\\ \\\\ \\/  \\/ / | |    |  __| |  _  / ");
+    this.center("| |____| | \\ \\  / ____ \\\\  /\\  /  | |____| |____| | \\ \\ ");
+    this.center(" \\_____|_|  \\_\\/_/    \\_\\\\/  \\/   |______|______|_|  \\_\\");
+    this.line('_');
   }
 };
 
 //MAIN BODY
 
 async function main() {
-  pr.title();
+  pr.crawler();
   pr.center("CENTER");
+  pr.title("THE STORY CONTINUES ...");
+  pr.center("WAOW");
   let i=0;
   while (true) {
     i++;
     print(i+" awaiting...");
     await input();
-    pr.line();
+    pr.line("_");
+    pr.nl();
     print(lastInput);
   }
   alert(lastInput);
