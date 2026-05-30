@@ -88,6 +88,7 @@ var pr = {
 
 // CRAWLER: CLASSES
 
+// ACTORS
 var Player = {
   rank: 0,
   title: "",
@@ -103,6 +104,26 @@ var Player = {
   eventCount: 0,
   layer: 1,
 };
+
+// ITEMS
+class Weapon {
+  constructor(name, lvl, die, rolls, bonus, upgradeChance) {
+    this.name = name;
+    this.lvl = lvl;
+    this.die = die; // e.g. "2d6"
+    this.rolls = rolls; // e.g. [6,6]
+    this.bonus = bonus; // added damage per level
+    this.upgradeChance = upgradeChance; // 0->1 % appearance in upgrade scene
+    this.upgrade = function(by) {
+      this.lvl += by;
+    },
+    this.damageCalc = function() {
+      let rolledSum = 0;
+      for (let i=0; i<this.rolls; i++) { rolledSum += Math.ceil(Math.random() * this.die); };
+      return rolledSum+(this.lvl*this.bonus);
+    }
+  }
+}
 
 // CRAWLER: MAIN BODY
 
