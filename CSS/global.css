@@ -17,6 +17,10 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.pageTitle {
+  margin-right: 20px;
+}
+
 /* BACKGROUNDS */
 .tileDark {
   color: white;
