@@ -89,10 +89,18 @@ var pr = {
 //MAIN BODY
 
 async function main() {
-  print("The castle is gone.")
-  print("The forest is deadly.")
-  print("You are lost.")
-  pr.crawler();
+  setTimeout(() => {
+    print("The castle is gone.");
+    setTimeout(() => {
+      print("The forest is deadly.")
+      setTimeout(() => {
+        print("You are lost.")
+        setTimeout(()=>{
+          pr.crawler();
+        }, 2000);
+      }, 1000);
+    }, 1000);
+  }, 1000);
   let i=0;
   while (true) {
     i++;

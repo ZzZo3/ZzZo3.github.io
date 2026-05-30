@@ -5,12 +5,18 @@ html, body {
   height: 116%;
 }
 
-#container {
+.container {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 64px;
   left: 0px;
+}
+
+.audio {
+  position: absolute;
+  top: 64px;
+  left: 10px;
 }
 
 .center {
