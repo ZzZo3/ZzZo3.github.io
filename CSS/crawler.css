@@ -2,12 +2,20 @@ html, body {
   background-color: black;
   font-family: Courier New;
   color: white;
+  height: 120%;
+}
+
+#container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 64px;
+  left: 0px;
 }
 
 .center {
   display: flex;
   justify-content: center;
-  border: 3px solid green; 
 }
 
 #input {
