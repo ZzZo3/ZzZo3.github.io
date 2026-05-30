@@ -1,10 +1,10 @@
-// BASE
+// HTML & BASE
 const inputElement = document.getElementById("input");
 const outputElement = document.getElementById("output");
 let lastInput = "";
 let outputText = "";
 
-// GET INPUT & SET OUTPUT
+// FRAMEWORK: INPUT & OUTPUT
 
 inputElement.addEventListener("keydown", (event)=>{
   if (event.key==="Enter") {
@@ -40,20 +40,20 @@ function outputFormat() {
   outputElement.textContent = outputText;
 }
 
-//CLASSES
+// FRAMEWORK: CLASSES
 
 var pr = {
-  line: function(char){
+  line(char) {
     let line = ""
     for (let i=0; i<80; i++) {
       line += char
     }
     print(line)
   },
-  nl: function(){
+  nl() {
     print("");
   },
-  center: function(text){
+  center(text) {
     if (text.length>80) {
       console.log("ERROR: pr.center() input too long!");
       return
@@ -61,7 +61,7 @@ var pr = {
     let space = "                                        ".slice(Math.floor(text.length / 2));
     print(space + text);
   },
-  title: function(text){
+  title(text) {
     if (text.length>80) {
       console.log("ERROR: pr.center() input too long!");
       return
@@ -73,7 +73,7 @@ var pr = {
     }
     print(bar);
   },
-  crawler: function(){
+  crawler() {
     this.line('_');
     this.center("  _____ _____        __          ___      ______ _____  ");
     this.center(" / ____|  __ \\     /\\\\ \\        / / |    |  ____|  __ \\ ");
@@ -86,7 +86,25 @@ var pr = {
   }
 };
 
-//MAIN BODY
+// CRAWLER: CLASSES
+
+var Player = {
+  rank: 0,
+  title: "",
+  prestige: 0,
+  maxHealth: 20,
+  plHealth: 20,
+  weaponArr: [], //[Weapon]
+  newWeaponIndexArr: [], //[Int]
+  maxHealed: true,
+  eventArr: [], //[String]
+  eventCooldownArr: [], //[Int]
+  eventRealCooldownArr: [], //[Int]
+  eventCount: 0,
+  layer: 1,
+};
+
+// CRAWLER: MAIN BODY
 
 async function main() {
   setTimeout(() => {
@@ -106,6 +124,7 @@ async function main() {
 }
 
 async function loop() {
+  print("LAYER 1")
   let i=0;
   while (true) {
     i++;
@@ -118,7 +137,7 @@ async function loop() {
   alert(lastInput);
 }
 
-//STUFF THAT RUNS ON LOAD
+// FRAMEWORK: STUFF THAT RUNS ON LOAD
 
 function loadFunc() {
   console.log("\"loadFunc()\" began");
