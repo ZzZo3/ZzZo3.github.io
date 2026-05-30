@@ -98,10 +98,14 @@ async function main() {
         setTimeout(()=>{
           pr.crawler();
           document.getElementById("musicPlayer").play();
+          loop();
         }, 2000);
       }, 1000);
     }, 1000);
   }, 1000);
+}
+
+async function loop() {
   let i=0;
   while (true) {
     i++;
