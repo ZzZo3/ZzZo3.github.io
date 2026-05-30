@@ -99,10 +99,10 @@ async function main() {
           pr.crawler();
           document.getElementById("musicPlayer").play();
           loop();
-        }, 2000);
-      }, 1000);
-    }, 1000);
-  }, 1000);
+        }, 2600);
+      }, 1200);
+    }, 1200);
+  }, 1200);
 }
 
 async function loop() {
