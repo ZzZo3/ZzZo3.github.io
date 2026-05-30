@@ -82,24 +82,25 @@ var pr = {
     this.center("| |____| | \\ \\  / ____ \\\\  /\\  /  | |____| |____| | \\ \\ ");
     this.center(" \\_____|_|  \\_\\/_/    \\_\\\\/  \\/   |______|______|_|  \\_\\");
     this.line('_');
+    this.nl();
   }
 };
 
 //MAIN BODY
 
 async function main() {
+  print("The castle is gone.")
+  print("The forest is deadly.")
+  print("You are lost.")
   pr.crawler();
-  pr.center("CENTER");
-  pr.title("THE STORY CONTINUES ...");
-  pr.center("WAOW");
   let i=0;
   while (true) {
     i++;
     print("awaiting...");
     await input();
-    pr.line("_");
+    print(">  "+lastInput);
+    pr.title("THE STORY CONTINUES ...");
     pr.nl();
-    print("  "+lastInput);
   }
   alert(lastInput);
 }
