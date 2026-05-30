@@ -47,7 +47,7 @@ html, body {
   white-space: pre-wrap;
   background:
     conic-gradient(#080808 90deg,
-      #161616 90deg 270deg,
+      #101010 90deg 270deg,
       #080808 270deg 360deg);
   background-repeat: repeat;
   background-size: 36px 36px;
