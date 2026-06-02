@@ -69,7 +69,7 @@ var pr = {
     let bar = "---------------------------------------".slice(Math.floor(text.length / 2));
     bar = bar+" "+text+" "+bar
     if (bar.length>80) {
-      bar = bar.slice(bar.length - 80)
+      bar = bar.slice(bar.length - 77)
     }
     print(bar);
   },
