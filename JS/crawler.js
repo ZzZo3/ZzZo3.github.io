@@ -180,12 +180,6 @@ async function loop() {
 
 function loadFunc() {
   console.log("\"loadFunc()\" began");
-  pr.line("_")
-  pr.title("HELLO")
-  pr.title("HI")
-  pr.line("_")
-  pr.center("HELLO")
-  pr.center("HI")
   main();
   console.log("   \"loadFunc()\" finished");
 }
