@@ -58,7 +58,7 @@ var pr = {
       console.log("ERROR: pr.center() input too long!");
       return
     }
-    let space = "                                        ".slice(Math.floor(text.length / 2));
+    let space = "                                      ".slice(Math.floor(text.length / 2));
     print(space + text);
   },
   title(text) {
@@ -66,9 +66,9 @@ var pr = {
       console.log("ERROR: pr.center() input too long!");
       return
     }
-    let bar = "---------------------------------------".slice(Math.floor(text.length / 2));
+    let bar =   "--------------------------------------".slice(Math.ceil(text.length / 2));
     bar = bar+" "+text+" "+bar
-    if (bar.length>80) {
+    if (bar.length>77) {
       bar = bar.slice(bar.length - 77)
     }
     print(bar);
@@ -180,6 +180,12 @@ async function loop() {
 
 function loadFunc() {
   console.log("\"loadFunc()\" began");
+  pr.line("_")
+  pr.title("HELLO")
+  pr.title("HI")
+  pr.line("_")
+  pr.center("HELLO")
+  pr.center("HI")
   main();
   console.log("   \"loadFunc()\" finished");
 }
