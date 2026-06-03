@@ -5,6 +5,12 @@ const outputElement = document.getElementById("output");
 let lastInput = "";
 let outputText = "";
 
+// FRAMEWORK: UTILITIES
+
+function randomFrom(array) {
+  return array[Math.floor(Math.random()*(array.length-0.00001))];
+};
+
 // FRAMEWORK: INPUT & OUTPUT
 
 inputElement.addEventListener("keydown", (event)=>{
@@ -180,7 +186,7 @@ class Event {
     this.prevExpo = ""; // exposition that prints for player to choose "left"/"right"
     this.expo = ""; // initial exposition on event start
     const eventTypes = ["FIGHT","BATTLE","CONVERSATION"];
-    this.type = eventTypes[Math.floor(Math.random()*2.9999)];
+    this.type = randomFrom(eventTypes);
   };
 };
 
@@ -193,6 +199,59 @@ async function runEvent(obj) {
     await input("ANY");
     eventRunning = false;
   };
+};
+
+// CRAWLER: Text
+
+const Text = {
+  layerExpo: [
+  "You lost sight of the twisting path you had been following ages ago. Daylight is giving way to night, but just as you begin to lose hope, you notice another path further on. But the comfort of the beaten path vanishes as you approach a fork, each further path totally concealed by the darkness."
+  ],
+  pathExpo(layer) {
+    let choices = 0
+    let expos = [[[ //guaranteed
+    "As you stumble forward, you notice [A]",
+    "You take a moment to rest in a clearing. When you wake, you see [A]"
+    ],[ //2
+
+    ],[ //3
+
+    ],[ //4
+
+    ],[ //5
+
+    ],[ //6
+
+    ]
+    ],[[ //two options
+    "As you continue to stumble through the thick woods, the trees suddenly give way to a razed clearing. You step out into the glade and notice two paths leading further into the thickets. To the left, you see [A] To the right, there is [B]",
+    "You wander further into the treacherous forest, but as you stare on, you realize that you're approaching another split in the path. To the left, you spot [A] To the right, you see [B]"
+    ],[ //2
+
+    ],[ //3
+
+    ],[ //4
+
+    ],[ //5
+
+    ],[ //6
+
+    ]],
+    [[ //three options
+
+    ],[ //2
+
+    ],[ //3
+
+    ],[ //4
+
+    ],[ //5
+
+    ],[ //6
+
+    ]]];
+    return randomFrom(expos[choices][layer]);
+  }
 };
 
 // CRAWLER: MAIN BODY
@@ -212,13 +271,14 @@ async function main() {
 }
 
 async function loop() {
-  while (true) {
+  while (Player.layer<7) {
     let lastLayer = Player.layer;
     Player.layerCheck();
-    if (Player.layer!=lastLayer) { pr.title("LAYER "+Player.layer); };
+    if (Player.layer!=lastLayer) { pr.title("LAYER "+Player.layer); print(Text.layerExpo[Player.layer-1]); }
+    else { print(Text.pathExpo(Player.layer-1)); };
     let eventL = new Event();
     let eventR = new Event();
-    while (eventR===eventL) { eventR = new Event(); };
+    while (eventR.type==eventL.type) { eventR = new Event(); };
     print("[\"left\"]:"+eventL.type);
     print("[\"right\"]:"+eventR.type);
     await input(["left","right"]);
