@@ -173,7 +173,7 @@ class Event {
     this.prevExpo = ""; // exposition that prints for player to choose "left"/"right"
     this.expo = ""; // initial exposition on event start
     const eventTypes = ["FIGHT","BATTLE","CONVERSATION"];
-    this.type = eventTypes[Math.random(3)];
+    this.type = eventTypes[Math.floor(Math.random()*2.9999)];
   };
 };
 
