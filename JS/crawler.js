@@ -169,9 +169,9 @@ console.log(Player);
 
 // EVENTS
 class Event {
-  prevExpo: ""; // exposition that prints for player to choose "left"/"right"
-  expo: ""; // initial exposition on event start
   constructor () {
+    this.prevExpo = ""; // exposition that prints for player to choose "left"/"right"
+    this.expo = ""; // initial exposition on event start
     const eventTypes = ["FIGHT","BATTLE","CONVERSATION"];
     this.type = eventTypes[Math.random(3)];
   };
@@ -199,12 +199,9 @@ async function loop() {
     Player.layerCheck();
     if (Player.layer!=lastLayer) { pr.title("LAYER "+Player.layer); };
     let eventL = new Event();
-    let eventR;
-    while (eventR!=eventL) {
-      eventR = new Event();
-    };
-    print("[\"left\"]:"eventL.type);
-    print("[\"right\"]:"eventR.type);
+    let eventR = new Event();
+    print("[\"left\"]:"+eventL.type);
+    print("[\"right\"]:"+eventR.type);
     await input(["left","right"]);
     let choice = eventL; if (lastInput=="right") { choice = eventR; };
     await event(choice);
