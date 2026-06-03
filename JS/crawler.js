@@ -156,16 +156,18 @@ var Player = {
 };
 
 class Enemy {
-  constructor(name,article,pluralVerb) {
+  constructor(name,article,plural) {
     this.name = name;
     this.article = article+" ";
-    this.pluralVerb = pluralVerb;
+    this.pluralVerb = "";
+    if (!plural) { this.pluralVerb="s"; }
+    else { this.plural="s"; };
   }
 };
 let Enemies = [[//forest
-  new Enemy("Goblin","a","s"),
-  new Enemy("Fairies","some",""),
-  new Enemy("Skeleton","a","s")
+  new Enemy("Goblin","a",false),
+  new Enemy("Fairies","some",true),
+  new Enemy("Skeleton","a",false)
   ],[//dungeon
 
   ],[
@@ -218,7 +220,7 @@ class Event {
   };
   prevExpo() {
     if (this.type=="FIGHT") {
-      return this.prevExpoPlaceholders.split("[aE]").join(this.enemy.article).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
+      return fightTrans(this.prevExpoPlaceholders,this.enemy)
     } else if (this.type=="BATTLE") {
       return "[battle expo]";
     } else if (this.type=="CONVERSATION") {
@@ -227,7 +229,7 @@ class Event {
   };
   expo() {
     if (this.type=="FIGHT") {
-      return this.expoPlaceholders.split("[aE]").join(this.enemy.article).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
+      return fightTrans(this.expoPlaceholders,this.enemy)
     } else if (this.type=="BATTLE") {
       return "[battle expo]";
     } else if (this.type=="CONVERSATION") {
@@ -324,7 +326,9 @@ const Text = {
     "l6, fight prev expo"
   ]],
   fightExpos: [[
-    "The [E] look[plV] at you."
+    "The [E] look[plV] at you.",
+    "The [E] snarl[plV] at you as you approach.",
+    "As you approach the [E], the [E] growl[plV]."
   ],[
     "l2, fight expo"
   ],[
@@ -337,6 +341,13 @@ const Text = {
     "l6, fight expo"
   ]]
 };
+function fightTrans(text,enemy) {
+return text
+  .split("[aE]").join(enemy.article)
+  .split("[E]").join(enemy.name)
+  .split("[pl]").join(enemy.plural)
+  .split("[plV]").join(enemy.pluralVerb);
+}
 
 // CRAWLER: MAIN BODY
 
