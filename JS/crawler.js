@@ -392,10 +392,6 @@ async function loop() {
       while (testEventType(events,newEvent)) { newEvent = new Event(); };
       events.push(newEvent);
     };
-    print("^  choices:");
-    for (let i=0; i<choices; i++) {
-      print(events[i].type)
-    }
     if (Player.layer==lastLayer) { print(Text.pathExpo(events)); };
     if (choices==1) { print("You may walk [\"forward\"].");await input(["forward"]); }
     else if (choices==2) { print("You may walk [\"left\"] or [\"right\"].");await input(["left","right"]); }
