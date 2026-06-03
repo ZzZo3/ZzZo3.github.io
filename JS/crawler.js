@@ -26,22 +26,29 @@ function awaitTick() {
 };
 
 async function input(wants) {
+  console.log("Awaiting input... wants: "+wants);
   let acceptedInput = false;
+  print("awaiting input ...");
   while (!acceptedInput) {
-    console.log("Awaiting input...");
-    print("awaiting input ...");
     const IntervalID0 = setInterval(awaitTick, 1000);
     await new Promise((resolve)=>{
       resolveInputPromise = resolve;
       inputElement.addEventListener("keydown", inputEnter);
     });
     clearInterval(IntervalID0);
-    console.log("Input received. Continuing...");
     lastInput = inputElement.value;
-    pr.replace(2,">  "+lastInput);
+    //pr.replace(2,">  "+lastInput);
+    print(">  "+lastInput);
     inputElement.value = "";
-    if (wants=="ANY" || wants.includes(lastInput)) { acceptedInput=true };
+    if (wants=="ANY" || wants.includes(lastInput)) { acceptedInput=true; }
+    else if (wants!="ANY") {
+      print("!  invalid input");
+      print("awaiting input ...")
+    };
   }
+  pr.title("THE STORY CONTINUES ...");
+  pr.nl();
+  console.log("Input received: \""+lastInput+"\" Continuing...");
 };
 
 function print(text) {
@@ -199,24 +206,25 @@ async function loop() {
     Player.layerCheck();
     if (Player.layer!=lastLayer) { pr.title("LAYER "+Player.layer); };
     let eventL = new Event();
-    let eventR;
-    while (eventR!=eventL) { eventR = new Event(); };
+    let eventR = new Event();
+    while (eventR===eventL) { eventR = new Event(); };
     print("[\"left\"]:"+eventL.type);
     print("[\"right\"]:"+eventR.type);
     await input(["left","right"]);
     let choice = eventL; if (lastInput=="right") { choice = eventR; };
-    await event(choice);
+    await runEvent(choice);
     Player.eventCount++;
-    console.log("events completed: "+i)
+    console.log("events completed: "+Player.eventCount);
   };
 };
 
-async function event(obj) {
+async function runEvent(obj) {
   let eventRunning = true;
+  print("chose type: "+obj.type);
+  print(obj.expo);
   while (eventRunning) {
+    print("no event code yet :\( . say anything");
     await input("ANY");
-    pr.title("THE STORY CONTINUES ...");
-    pr.nl();
     eventRunning = false;
   };
 };
