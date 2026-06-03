@@ -290,7 +290,7 @@ const Text = {
     "[l6, 3 options expo:] [A], [B]"
     ]],
     [[ //three options
-    "[l1, 3 options expo:] [A], [B], [C]"
+    "And on you bloodily stagger. To the left, you notice [A] Directly ahead, you spot [B] And to the right, there is [C]"
     ],[ //2
     "[l2, 3 options expo:] [A], [B], [C]"
     ],[ //3
