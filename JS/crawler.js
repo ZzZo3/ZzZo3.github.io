@@ -199,7 +199,8 @@ async function loop() {
     Player.layerCheck();
     if (Player.layer!=lastLayer) { pr.title("LAYER "+Player.layer); };
     let eventL = new Event();
-    let eventR = new Event();
+    let eventR;
+    while (eventR!=eventL) { eventR = new Event(); };
     print("[\"left\"]:"+eventL.type);
     print("[\"right\"]:"+eventR.type);
     await input(["left","right"]);
