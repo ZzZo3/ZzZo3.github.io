@@ -155,6 +155,29 @@ var Player = {
   }
 };
 
+class Enemy {
+  constructor(name,article) {
+    this.name = name;
+    this.articleName = article+" "+name;
+  }
+};
+let Enemies = [[//forest
+  new Enemy("Goblin","a"),
+  new Enemy("Fairies","some"),
+  new Enemy("Skeleton","a")
+  ],[
+  
+  ],[
+
+  ],[
+
+  ],[
+
+  ],[
+
+  ]
+];
+
 class Weapon {
   constructor(name, lvl, die, rolls, bonus, upgradeChance) {
     this.name = name;
@@ -183,16 +206,31 @@ console.log(Player);
 
 class Event {
   constructor () {
-    this.expoPlaceholders = "exposition on event start"; // exposition on event start
+    this.prevExpoPlaceholders = "[preview within path expo]";
+    this.expoPlaceholders = "[exposition on event start]";
     this.type = randomFrom(["FIGHT","BATTLE","CONVERSATION"]);
     if (this.type=="FIGHT") {
       this.enemy = randomFrom[Enemies[Player.layer-1]];
+      this.prevExpoPlaceholders = randomFrom(Text.fightPrevExpos[Player.layer-1]);
       this.expoPlaceholders = randomFrom(Text.fightExpos[Player.layer-1]);
     }
+  };
+  prevExpo() {
+    if (this.type=="FIGHT") {
+      return this.prevExpoPlaceholders.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name);
+    } else if (this.type=="BATTLE") {
+      return "battle expo";
+    } else if (this.type=="CONVERSATION") {
+      return "convo expo";
+    };
   };
   expo() {
     if (this.type=="FIGHT") {
       return this.expoPlaceholders.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name);
+    } else if (this.type=="BATTLE") {
+      return "battle expo";
+    } else if (this.type=="CONVERSATION") {
+      return "convo expo";
     };
   };
 };
@@ -267,11 +305,24 @@ const Text = {
     if (events.length>2) { text = text.split("[C]").join(events[2].expo()); };
     return text;
   },
-  fightExpos: [[
+  fightPrevExpos: [[
     "a felled tree, atop of which sits [aE].",
     "a particularly unsettling area of shadow, within which [aE] roam[pl2E]."
   ],[
     "a particularly unsettling area of shadow, within which [aE] roam[pl2E]."
+  ],[
+    "l3, fight prev expo"
+  ],[
+    "l4, fight prev expo"
+  ],[
+    "l5, fight prev expo"
+  ],[
+    "l6, fight prev expo"
+  ]],
+  fightExpos: [[
+    "l1, fight expo"
+  ],[
+    "l2, fight expo"
   ],[
     "l3, fight expo"
   ],[
@@ -280,7 +331,7 @@ const Text = {
     "l5, fight expo"
   ],[
     "l6, fight expo"
-  ]],
+  ]]
 };
 
 // CRAWLER: MAIN BODY
@@ -306,7 +357,8 @@ async function loop() {
     Player.layerCheck();
     if (Player.layer!=lastLayer) {
       choices = 2;
-      pr.title("LAYER "+Player.layer); print(Text.layerExpo[Player.layer-1]);
+      pr.title("LAYER "+Player.layer);
+      print(Text.layerExpos[Player.layer-1]);
     } else {
       if (choices>=0&&choices<0.2) { choices=1 }
       else if (choices>=0.2&&choices<=0.8) { choices=2 }
