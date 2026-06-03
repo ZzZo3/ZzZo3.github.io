@@ -19,18 +19,18 @@ function inputEnter(event) {
   }
 }
 
-async function awaitTick() {
+function awaitTick() {
   let text = outputElement.innerText;
   text = text.split("\n");
-  if (text[text.length-2]=="awaiting input ...") { console.log("...->.");pr.replace(2,"awaiting input ."); };
-  if (text[text.length-2]=="awaiting input .") { console.log(".->..");pr.replace(2,"awaiting input .."); };
-  if (text[text.length-2]=="awaiting input ..") { console.log("..->...");pr.replace(2,"awaiting input .."); };
+  if (text[text.length-2]=="awaiting input ...") { console.log("...->.");pr.replace(2,"awaiting input ."); }
+  else if (text[text.length-2]=="awaiting input .") { console.log(".->..");pr.replace(2,"awaiting input .."); }
+  else if (text[text.length-2]=="awaiting input ..") { console.log("..->...");pr.replace(2,"awaiting input .."); };
 }
 
 async function input() {
   console.log("Awaiting input...");
   print("awaiting input ...");
-  const IntervalID333 = setInterval(awaitTick, 1000);
+  window.setInterval(awaitTick, 1000);
   await new Promise((resolve)=>{
     resolveInputPromise = resolve;
     inputElement.addEventListener("keydown", inputEnter);
