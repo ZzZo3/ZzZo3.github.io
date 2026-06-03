@@ -102,14 +102,14 @@ var pr = {
     print(bar);
   },
   crawler() {
-    this.line('_');
+    this.line("_");
     this.center("  _____ _____        __          ___      ______ _____  ");
     this.center(" / ____|  __ \\     /\\\\ \\        / / |    |  ____|  __ \\ ");
     this.center("| |    | |__) |   /  \\\\ \\  /\\  / /| |    | |__  | |__) |");
     this.center("| |    |  _  /   / /\\ \\\\ \\/  \\/ / | |    |  __| |  _  / ");
     this.center("| |____| | \\ \\  / ____ \\\\  /\\  /  | |____| |____| | \\ \\ ");
     this.center(" \\_____|_|  \\_\\/_/    \\_\\\\/  \\/   |______|______|_|  \\_\\");
-    this.line('_');
+    this.line("_");
     this.nl();
   },
   replace(t,line) {
@@ -166,8 +166,8 @@ let Enemies = [[//forest
   new Enemy("Goblin","a","s"),
   new Enemy("Fairies","some",""),
   new Enemy("Skeleton","a","s")
-  ],[
-  
+  ],[//dungeon
+
   ],[
 
   ],[
@@ -211,14 +211,14 @@ class Event {
     this.expoPlaceholders = "[exposition on event start]";
     this.type = randomFrom(["FIGHT","BATTLE","CONVERSATION"]);
     if (this.type=="FIGHT") {
-      this.enemy = randomFrom[Enemies[Player.layer-1]];
+      this.enemy = Enemies[Player.layer-1][0]; // SHOULD BE RANDOMFROM()
       this.prevExpoPlaceholders = randomFrom(Text.fightPrevExpos[Player.layer-1]);
       this.expoPlaceholders = randomFrom(Text.fightExpos[Player.layer-1]);
     }
   };
   prevExpo() {
     if (this.type=="FIGHT") {
-      return this.prevExpoPlaceholders//.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
+      return this.prevExpoPlaceholders.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
     } else if (this.type=="BATTLE") {
       return "battle expo";
     } else if (this.type=="CONVERSATION") {
@@ -227,7 +227,7 @@ class Event {
   };
   expo() {
     if (this.type=="FIGHT") {
-      return this.expoPlaceholders//.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
+      return this.expoPlaceholders.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
     } else if (this.type=="BATTLE") {
       return "battle expo";
     } else if (this.type=="CONVERSATION") {
