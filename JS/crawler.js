@@ -183,17 +183,24 @@ console.log(Player);
 
 class Event {
   constructor () {
-    this.prevExpo = ""; // exposition that prints for player to choose "left"/"right"
-    this.expo = ""; // initial exposition on event start
-    const eventTypes = ["FIGHT","BATTLE","CONVERSATION"];
-    this.type = randomFrom(eventTypes);
+    this.expoPlaceholders = "exposition on event start"; // exposition on event start
+    this.type = randomFrom(["FIGHT","BATTLE","CONVERSATION"]);
+    if (this.type=="FIGHT") {
+      this.enemy = randomFrom[Enemies[Player.layer-1]];
+      this.expoPlaceholders = randomFrom(Text.fightExpos[Player.layer-1]);
+    }
+  };
+  expo() {
+    if (this.type=="FIGHT") {
+      return this.expoPlaceholders.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name);
+    };
   };
 };
 
 async function runEvent(obj) {
   let eventRunning = true;
   print("chose type: "+obj.type);
-  print(obj.expo);
+  print(obj.expo());
   while (eventRunning) {
     print("no event code yet :\( . say anything");
     await input("ANY");
@@ -204,8 +211,13 @@ async function runEvent(obj) {
 // CRAWLER: Text
 
 const Text = {
-  layerExpo: [
-  "You lost sight of the twisting path you had been following ages ago. Daylight is giving way to night, but just as you begin to lose hope, you notice another path further on. But the comfort of the beaten path vanishes as you approach a fork, each further path totally concealed by the darkness."
+  layerExpos: [
+  "You lost sight of the twisting path you had been following ages ago. Daylight is giving way to night, but just as you begin to lose hope, you notice another path further on. But the comfort of the beaten path vanishes as you approach a fork, each further path totally concealed by the darkness.",
+  "l2, expo",
+  "l3, expo",
+  "l4, expo",
+  "l5, expo",
+  "l6, expo",
   ],
   pathExpo(events) {
     let expos = [[[ //guaranteed
@@ -250,11 +262,25 @@ const Text = {
     "l6, 3 options expo: [A], [B], [C]"
     ]]];
     let text = randomFrom(expos[events.length-1][Player.layer-1]);
-    text = text.split("[A]").join(events[0].expo);
-    if (events.length>1) { text = text.split("[B]").join(events[1].expo); };
-    if (events.length>2) { text = text.split("[C]").join(events[2].expo); };
+    text = text.split("[A]").join(events[0].expo());
+    if (events.length>1) { text = text.split("[B]").join(events[1].expo()); };
+    if (events.length>2) { text = text.split("[C]").join(events[2].expo()); };
     return text;
-  }
+  },
+  fightExpos: [[
+    "a felled tree, atop of which sits [aE].",
+    "a particularly unsettling area of shadow, within which [aE] roam[pl2E]."
+  ],[
+    "a particularly unsettling area of shadow, within which [aE] roam[pl2E]."
+  ],[
+    "l3, fight expo"
+  ],[
+    "l4, fight expo"
+  ],[
+    "l5, fight expo"
+  ],[
+    "l6, fight expo"
+  ]],
 };
 
 // CRAWLER: MAIN BODY
@@ -286,7 +312,7 @@ async function loop() {
       else if (choices>=0.2&&choices<=0.8) { choices=2 }
       else if (choices>0.8&&choices<=1) { choices=3 };
     };
-    print("choices: "+choices);
+    print("^  choices: "+choices);
     let events = [];
     for (let i=0; i<choices; i++) {
       let newEvent = new Event();
