@@ -1,4 +1,5 @@
 // HTML & BASE
+
 const inputElement = document.getElementById("input");
 const outputElement = document.getElementById("output");
 let lastInput = "";
@@ -114,9 +115,8 @@ var pr = {
   }
 };
 
-// CRAWLER: CLASSES
+// CRAWLER: ACTORS & ITEMS
 
-// ACTORS
 var Player = {
   rank: 0,
   title: "",
@@ -149,7 +149,6 @@ var Player = {
   }
 };
 
-// ITEMS
 class Weapon {
   constructor(name, lvl, die, rolls, bonus, upgradeChance) {
     this.name = name;
@@ -174,13 +173,25 @@ Player.inventory.push(basicSword);
 Player.inventory.push(sturdySword);
 console.log(Player);
 
-// EVENTS
+// CRAWLER: EVENTS
+
 class Event {
   constructor () {
     this.prevExpo = ""; // exposition that prints for player to choose "left"/"right"
     this.expo = ""; // initial exposition on event start
     const eventTypes = ["FIGHT","BATTLE","CONVERSATION"];
     this.type = eventTypes[Math.floor(Math.random()*2.9999)];
+  };
+};
+
+async function runEvent(obj) {
+  let eventRunning = true;
+  print("chose type: "+obj.type);
+  print(obj.expo);
+  while (eventRunning) {
+    print("no event code yet :\( . say anything");
+    await input("ANY");
+    eventRunning = false;
   };
 };
 
@@ -215,17 +226,6 @@ async function loop() {
     await runEvent(choice);
     Player.eventCount++;
     console.log("events completed: "+Player.eventCount);
-  };
-};
-
-async function runEvent(obj) {
-  let eventRunning = true;
-  print("chose type: "+obj.type);
-  print(obj.expo);
-  while (eventRunning) {
-    print("no event code yet :\( . say anything");
-    await input("ANY");
-    eventRunning = false;
   };
 };
 
