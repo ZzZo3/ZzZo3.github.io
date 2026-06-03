@@ -47,7 +47,8 @@ html, body {
   height: 900px;
   width: 770px;
   padding-top: 1px;
-  padding-left: 2px;
+  padding-left: 2em;
+  text-indent: -2em;
   padding-right: 2px;
   resize: none;
   border: 2px solid white;
