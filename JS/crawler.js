@@ -22,15 +22,14 @@ function inputEnter(event) {
 function awaitTick() {
   let text = outputElement.innerText;
   text = text.split("\n");
-  console.log("awaitTick called, line=\""+text[text.length-2]+"\"");
-  if (text[text.length-2]=="awaiting input ...") { console.log("...->.");pr.replace(2,"awaiting input ."); }
-  else if (text[text.length-2]=="awaiting input .") { console.log(".->..");pr.replace(2,"awaiting input .."); }
-  else if (text[text.length-2]=="awaiting input ..") { console.log("..->...");pr.replace(2,"awaiting input ..."); };
+  if (text[text.length-2]=="awaiting input ..."||text[text.length-2]=="hallo. eins zwei, eins zwei.") { pr.replace(2,"awaiting input ."); }
+  else if (text[text.length-2]=="awaiting input .") { pr.replace(2,"awaiting input .."); }
+  else if (text[text.length-2]=="awaiting input ..") { pr.replace(2,"awaiting input ..."); };
 }
 
 async function input() {
   console.log("Awaiting input...");
-  print("awaiting input ...");
+  print("hallo. eins zwei, eins zwei.");
   const IntervalID0 = setInterval(awaitTick, 1000);
   await new Promise((resolve)=>{
     resolveInputPromise = resolve;
@@ -39,6 +38,7 @@ async function input() {
   clearInterval(IntervalID0);
   console.log("Input received. Continuing...");
   lastInput = inputElement.value;
+  pr.replace(2,">  "+lastInput);
   inputElement.value = "";
 }
 
@@ -70,7 +70,7 @@ var pr = {
       console.log("ERROR: pr.center() input too long!");
       return
     }
-    let space = "                                      ".slice(Math.floor(text.length / 2));
+    let space = "                                        ".slice(Math.floor(text.length / 2));
     print(space + text);
   },
   title(text) {
@@ -78,10 +78,10 @@ var pr = {
       console.log("ERROR: pr.center() input too long!");
       return
     }
-    let bar =   "--------------------------------------".slice(Math.ceil(text.length / 2));
+    let bar =   "----------------------------------------".slice(Math.ceil(text.length / 2));
     bar = bar+" "+text+" "+bar
-    if (bar.length>77) {
-      bar = bar.slice(bar.length - 77)
+    if (bar.length>80) {
+      bar = bar.slice(bar.length - 80)
     }
     print(bar);
   },
@@ -119,7 +119,7 @@ var Player = {
   eventCooldownArr: [], //[Int]
   eventRealCooldownArr: [], //[Int]
   eventCount: 0,
-  layer: 1,
+  layer: 0,
   titleCheck() {
     let titleReqs = [
       ["traveller",0],
@@ -133,7 +133,10 @@ var Player = {
     for (let i=0; i<titleReqs.length; i++) {
       if (this.prestige>titleReqs[i][1]) { this.rank = i };
     }
-    
+  },
+  layerCheck() {
+    if (this.eventCount>0) { this.layer = Math.floor(this.eventCount-1/10)+1; }
+    else { this.layer = 1; };
   }
 };
 
@@ -166,33 +169,43 @@ console.log(Player)
 
 async function main() {
   setTimeout(() => {
-    print("The castle is gone.");
-    setTimeout(() => {
-      print("The forest is deadly.")
-      setTimeout(() => {
-        print("You are lost.")
-        setTimeout(()=>{
-          pr.crawler();
-          document.getElementById("musicPlayer").play();
-          loop();
-        }, 2600);
-      }, 1200);
-    }, 1200);
-  }, 1200);
+  print("The castle is gone.");
+  setTimeout(() => {
+  print("The forest is deadly.")
+  setTimeout(() => {
+  print("You are lost.")
+  setTimeout(()=>{
+    pr.crawler();
+    document.getElementById("musicPlayer").play();
+    loop();
+  }, 2600);}, 1200);}, 1200);}, 1200);
 }
 
 async function loop() {
-  pr.title("LAYER 1")
-  let i=0;
   while (true) {
-    i++;
+    let lastLayer = Player.layer;
+    Player.layerCheck();
+    if (Player.layer!=lastLayer) { pr.title("LAYER "+Player.layer); };
+    let eventL = eventRoll();
+    let eventR;
+    while (eventR!=eventL) {
+      eventR = eventRoll();
+    };
+    print()
+    await event();
+    Player.eventCount++;
+    console.log("events completed: "+i)
+  };
+};
+
+async function event() {
+  let eventRunning = true;
+  while (eventRunning) {
     await input();
-    print(">  "+lastInput);
     pr.title("THE STORY CONTINUES ...");
     pr.nl();
-  }
-  alert(lastInput);
-}
+  };
+};
 
 // FRAMEWORK: STUFF THAT RUNS ON LOAD
 
@@ -200,4 +213,4 @@ function loadFunc() {
   console.log("\"loadFunc()\" began");
   main();
   console.log("   \"loadFunc()\" finished");
-}
+};
