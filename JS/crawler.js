@@ -44,13 +44,19 @@ async function input(wants) {
     });
     clearInterval(IntervalID0);
     lastInput = inputElement.value;
-    //pr.replace(2,">  "+lastInput);
-    print(">  "+lastInput);
     inputElement.value = "";
-    if (wants=="ANY" || wants.includes(lastInput)) { acceptedInput=true; }
-    else if (wants!="ANY") {
+    if (wants=="ANY" || wants.includes(lastInput)) {
+      //pr.replace(2,">  "+lastInput);
+      print(">  "+lastInput);
+      acceptedInput=true
+    } else if (wants.length>1 || lastInput!="") {
       print("!  invalid input");
       print("awaiting input ...")
+    } else {
+      lastInput = wants[0];
+      //pr.replace(2,">  "+lastInput);
+      print(">  "+lastInput);
+      acceptedInput=true;
     };
   }
   pr.title("THE STORY CONTINUES ...");
@@ -213,7 +219,7 @@ class Event {
     this.expoPlaceholders = "[exposition on event start]";
     this.type = randomFrom(["FIGHT","BATTLE","CONVERSATION"]);
     if (this.type=="FIGHT") {
-      this.enemy = Enemies[Player.layer-1][0]; // SHOULD BE RANDOMFROM()
+      this.enemy = randomFrom(Enemies[Player.layer-1]); // SHOULD BE RANDOMFROM()
       this.prevExpoPlaceholders = randomFrom(Text.fightPrevExpos[Player.layer-1]);
       this.expoPlaceholders = randomFrom(Text.fightExpos[Player.layer-1]);
     }
@@ -240,7 +246,6 @@ class Event {
 
 async function runEvent(obj) {
   let eventRunning = true;
-  print("^  chose type: "+obj.type);
   print(obj.expo());
   while (eventRunning) {
     print("no event code yet :\( . say anything");
@@ -312,10 +317,10 @@ const Text = {
     "a felled tree, atop of which sit[plV] [aE][E].",
     "a particularly unsettling area of shadow, within which [aE][E] roam[plV].",
     "[aE][E] hiding behind a pile of logs.",
-    "[aE] frightful [E] waiting for something, although you do not know what."
+    "[aE]frightful [E] waiting for something, although you do not know what."
   ],[
     "a particularly unsettling area of shadow, within which [aE] roam[plV].",
-    "[aE] frightful [E] waiting for something, although you do not know what."
+    "[aE]frightful [E] waiting for something, although you do not know what."
   ],[
     "l3, fight prev expo"
   ],[
@@ -401,7 +406,6 @@ async function loop() {
     else if (choices==3 && lastInput=="forward") { choice = events[1]; };
     await runEvent(choice);
     Player.eventCount++;
-    print("^  events completed: "+Player.eventCount);
     console.log("events completed: "+Player.eventCount);
   };
 };
