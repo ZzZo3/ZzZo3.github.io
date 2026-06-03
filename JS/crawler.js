@@ -7,60 +7,62 @@ let outputText = "";
 // FRAMEWORK: INPUT & OUTPUT
 
 inputElement.addEventListener("keydown", (event)=>{
-  if (event.key==="Enter") {
-    event.preventDefault()
-  }
-})
+  if (event.key==="Enter") { event.preventDefault(); };
+});
 
 function inputEnter(event) {
   if (event.key==="Enter") {
     inputElement.removeEventListener("keydown", inputEnter);
     resolveInputPromise();
-  }
-}
+  };
+};
 
 function awaitTick() {
   let text = outputElement.innerText;
   text = text.split("\n");
-  if (text[text.length-2]=="awaiting input ..."||text[text.length-2]=="hallo. eins zwei, eins zwei.") { pr.replace(2,"awaiting input ."); }
+  if (text[text.length-2]=="awaiting input ...") { pr.replace(2,"awaiting input ."); }
   else if (text[text.length-2]=="awaiting input .") { pr.replace(2,"awaiting input .."); }
   else if (text[text.length-2]=="awaiting input ..") { pr.replace(2,"awaiting input ..."); };
-}
+};
 
-async function input() {
-  console.log("Awaiting input...");
-  print("hallo. eins zwei, eins zwei.");
-  const IntervalID0 = setInterval(awaitTick, 1000);
-  await new Promise((resolve)=>{
-    resolveInputPromise = resolve;
-    inputElement.addEventListener("keydown", inputEnter);
-  });
-  clearInterval(IntervalID0);
-  console.log("Input received. Continuing...");
-  lastInput = inputElement.value;
-  pr.replace(2,">  "+lastInput);
-  inputElement.value = "";
-}
+async function input(wants) {
+  let acceptedInput = false;
+  while (!acceptedInput) {
+    console.log("Awaiting input...");
+    print("awaiting input ...");
+    const IntervalID0 = setInterval(awaitTick, 1000);
+    await new Promise((resolve)=>{
+      resolveInputPromise = resolve;
+      inputElement.addEventListener("keydown", inputEnter);
+    });
+    clearInterval(IntervalID0);
+    console.log("Input received. Continuing...");
+    lastInput = inputElement.value;
+    pr.replace(2,">  "+lastInput);
+    inputElement.value = "";
+    if (wants=="ANY" || wants.includes(lastInput)) { acceptedInput=true };
+  }
+};
 
 function print(text) {
   outputText += text+"\n";
   outputFormat();
   outputElement.scrollBy(0, 999999);
-}
+};
 
 function outputFormat() {
   outputElement.textContent = outputText;
-}
+};
 
 // FRAMEWORK: CLASSES
 
 var pr = {
   line(char) {
-    let line = ""
+    let line = "";
     for (let i=0; i<80; i++) {
-      line += char
-    }
-    print(line)
+      line += char;
+    };
+    print(line);
   },
   nl() {
     print("");
@@ -68,20 +70,20 @@ var pr = {
   center(text) {
     if (text.length>80) {
       console.log("ERROR: pr.center() input too long!");
-      return
-    }
+      return;
+    };
     let space = "                                        ".slice(Math.floor(text.length / 2));
     print(space + text);
   },
   title(text) {
     if (text.length>80) {
       console.log("ERROR: pr.center() input too long!");
-      return
+      return;
     }
     let bar =   "----------------------------------------".slice(Math.ceil(text.length / 2));
-    bar = bar+" "+text+" "+bar
+    bar = bar+" "+text+" "+bar;
     if (bar.length>80) {
-      bar = bar.slice(bar.length - 80)
+      bar = bar.slice(bar.length - 80);
     }
     print(bar);
   },
@@ -151,19 +153,29 @@ class Weapon {
     this.upgradeChance = upgradeChance; // 0->1 % appearance in upgrade scene
     this.upgrade = function(by) {
       this.lvl += by;
-    },
+    };
     this.damageCalc = function() {
       let rolledSum = 0;
       for (let i=0; i<this.rolls; i++) { rolledSum += Math.ceil(Math.random() * this.die); };
       return rolledSum+(this.lvl*this.bonus);
-    }
-  }
-}
+    };
+  };
+};
 var basicSword = new Weapon("Basic Sword", 0, 6, 1, 1, 1);
 var sturdySword = new Weapon("Sturdy Sword", 0, 4, 2, 1, 0.5);
 Player.inventory.push(basicSword);
 Player.inventory.push(sturdySword);
-console.log(Player)
+console.log(Player);
+
+// EVENTS
+class Event {
+  prevExpo: ""; // exposition that prints for player to choose "left"/"right"
+  expo: ""; // initial exposition on event start
+  constructor () {
+    const eventTypes = ["FIGHT","BATTLE","CONVERSATION"];
+    this.type = eventTypes[Math.random(3)];
+  };
+};
 
 // CRAWLER: MAIN BODY
 
@@ -171,9 +183,9 @@ async function main() {
   setTimeout(() => {
   print("The castle is gone.");
   setTimeout(() => {
-  print("The forest is deadly.")
+  print("The forest is deadly.");
   setTimeout(() => {
-  print("You are lost.")
+  print("You are lost.");
   setTimeout(()=>{
     pr.crawler();
     document.getElementById("musicPlayer").play();
@@ -186,24 +198,28 @@ async function loop() {
     let lastLayer = Player.layer;
     Player.layerCheck();
     if (Player.layer!=lastLayer) { pr.title("LAYER "+Player.layer); };
-    let eventL = eventRoll();
+    let eventL = new Event();
     let eventR;
     while (eventR!=eventL) {
-      eventR = eventRoll();
+      eventR = new Event();
     };
-    print()
-    await event();
+    print("[\"left\"]:"eventL.type);
+    print("[\"right\"]:"eventR.type);
+    await input(["left","right"]);
+    let choice = eventL; if (lastInput=="right") { choice = eventR; };
+    await event(choice);
     Player.eventCount++;
     console.log("events completed: "+i)
   };
 };
 
-async function event() {
+async function event(obj) {
   let eventRunning = true;
   while (eventRunning) {
-    await input();
+    await input("ANY");
     pr.title("THE STORY CONTINUES ...");
     pr.nl();
+    eventRunning = false;
   };
 };
 
