@@ -207,50 +207,53 @@ const Text = {
   layerExpo: [
   "You lost sight of the twisting path you had been following ages ago. Daylight is giving way to night, but just as you begin to lose hope, you notice another path further on. But the comfort of the beaten path vanishes as you approach a fork, each further path totally concealed by the darkness."
   ],
-  pathExpo(layer) {
-    let choices = 0
+  pathExpo(events) {
     let expos = [[[ //guaranteed
     "As you stumble forward, you notice [A]",
     "You take a moment to rest in a clearing. When you wake, you see [A]"
     ],[ //2
-
+    "l2, 1 option expo: [A]"
     ],[ //3
-
+    "l3, 1 option expo: [A]"
     ],[ //4
-
+    "l4, 1 option expo: [A]"
     ],[ //5
-
+    "l5, 1 option expo: [A]"
     ],[ //6
-
+    "l6, 1 option expo: [A]"
     ]
     ],[[ //two options
     "As you continue to stumble through the thick woods, the trees suddenly give way to a razed clearing. You step out into the glade and notice two paths leading further into the thickets. To the left, you see [A] To the right, there is [B]",
     "You wander further into the treacherous forest, but as you stare on, you realize that you're approaching another split in the path. To the left, you spot [A] To the right, you see [B]"
     ],[ //2
-
+    "l2, 3 options expo: [A], [B]"
     ],[ //3
-
+    "l3, 3 options expo: [A], [B]"
     ],[ //4
-
+    "l4, 3 options expo: [A], [B]"
     ],[ //5
-
+    "l5, 3 options expo: [A], [B]"
     ],[ //6
-
+    "l6, 3 options expo: [A], [B]"
     ]],
     [[ //three options
-
+    "l1, 3 options expo: [A], [B], [C]"
     ],[ //2
-
+    "l2, 3 options expo: [A], [B], [C]"
     ],[ //3
-
+    "l3, 3 options expo: [A], [B], [C]"
     ],[ //4
-
+    "l4, 3 options expo: [A], [B], [C]"
     ],[ //5
-
+    "l5, 3 options expo: [A], [B], [C]"
     ],[ //6
-
+    "l6, 3 options expo: [A], [B], [C]"
     ]]];
-    return randomFrom(expos[choices][layer]);
+    let text = randomFrom(expos[events.length-1][Player.layer-1]);
+    text = text.split("[A]").join(events[0].expo);
+    if (events.length>1) { text = text.split("[B]").join(events[1].expo); };
+    if (events.length>2) { text = text.split("[C]").join(events[2].expo); };
+    return text;
   }
 };
 
@@ -273,16 +276,30 @@ async function main() {
 async function loop() {
   while (Player.layer<7) {
     let lastLayer = Player.layer;
+    let choices = Math.random();
     Player.layerCheck();
-    if (Player.layer!=lastLayer) { pr.title("LAYER "+Player.layer); print(Text.layerExpo[Player.layer-1]); }
-    else { print(Text.pathExpo(Player.layer-1)); };
-    let eventL = new Event();
-    let eventR = new Event();
-    while (eventR.type==eventL.type) { eventR = new Event(); };
-    print("[\"left\"]:"+eventL.type);
-    print("[\"right\"]:"+eventR.type);
-    await input(["left","right"]);
-    let choice = eventL; if (lastInput=="right") { choice = eventR; };
+    if (Player.layer!=lastLayer) {
+      choices = 2;
+      pr.title("LAYER "+Player.layer); print(Text.layerExpo[Player.layer-1]);
+    } else {
+      if (choices>=0&&choices<0.2) { choices=1 }
+      else if (choices>=0.2&&choices<=0.8) { choices=2 }
+      else if (choices>0.8&&choices<=1) { choices=3 };
+    };
+    print("choices: "+choices);
+    let events = [];
+    for (let i=0; i<choices; i++) {
+      let newEvent = new Event();
+      while (events.includes(newEvent)) { newEvent = new Event(); };
+      events.push(newEvent);
+    };
+    if (Player.layer==lastLayer) { print(Text.pathExpo(events)); };
+    if (choices==1) { print("You may walk [\"forward\"].");await input(["forward"]); }
+    else if (choices==2) { print("You may walk [\"left\"] or [\"right\"].");await input(["left","right"]); }
+    else if (choices==3) { print("You may walk [\"left\"], [\"forward\"], or [\"right\"].");await input(["left","forward","right"]); };
+    let choice = events[0];
+    if (lastInput=="right") { choice = events[events.length-1]; }
+    else if (choices==3 && lastInput=="forward") { choice = events[1]; };
     await runEvent(choice);
     Player.eventCount++;
     console.log("events completed: "+Player.eventCount);
