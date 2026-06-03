@@ -19,8 +19,18 @@ function inputEnter(event) {
   }
 }
 
+async function awaitTick() {
+  let text = outputElement.innerText;
+  text = text.split("\n");
+  if (text[text.length-2]=="awaiting input ...") { console.log("...->.");pr.replace(2,"awaiting input ."); };
+  if (text[text.length-2]=="awaiting input .") { console.log(".->..");pr.replace(2,"awaiting input .."); };
+  if (text[text.length-2]=="awaiting input ..") { console.log("..->...");pr.replace(2,"awaiting input .."); };
+}
+
 async function input() {
   console.log("Awaiting input...");
+  print("awaiting input ...");
+  const IntervalID333 = setInterval(awaitTick, 1000);
   await new Promise((resolve)=>{
     resolveInputPromise = resolve;
     inputElement.addEventListener("keydown", inputEnter);
@@ -83,6 +93,13 @@ var pr = {
     this.center(" \\_____|_|  \\_\\/_/    \\_\\\\/  \\/   |______|______|_|  \\_\\");
     this.line('_');
     this.nl();
+  },
+  replace(t,line) {
+    var text = outputElement.innerText;
+    text = text.split("\n");
+    text[text.length-t]=line;
+    text = text.join("\n");
+    outputElement.innerText = text;
   }
 };
 
@@ -167,7 +184,6 @@ async function loop() {
   let i=0;
   while (true) {
     i++;
-    print("awaiting...");
     await input();
     print(">  "+lastInput);
     pr.title("THE STORY CONTINUES ...");
