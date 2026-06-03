@@ -150,7 +150,7 @@ var Player = {
     }
   },
   layerCheck() {
-    if (this.eventCount>0) { this.layer = Math.floor(this.eventCount-1/10)+1; }
+    if (this.eventCount>0) { this.layer = Math.floor((this.eventCount-1)/10)+1; }
     else { this.layer = 1; };
   }
 };
@@ -302,6 +302,7 @@ async function loop() {
     else if (choices==3 && lastInput=="forward") { choice = events[1]; };
     await runEvent(choice);
     Player.eventCount++;
+    print("event count: "+Player.eventCount);
     console.log("events completed: "+Player.eventCount);
   };
 };
