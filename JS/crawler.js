@@ -22,6 +22,7 @@ function inputEnter(event) {
 function awaitTick() {
   let text = outputElement.innerText;
   text = text.split("\n");
+  console.log("awaitTick called, t="+t+", line="+text[text.length-t]);
   if (text[text.length-2]=="awaiting input ...") { console.log("...->.");pr.replace(2,"awaiting input ."); }
   else if (text[text.length-2]=="awaiting input .") { console.log(".->..");pr.replace(2,"awaiting input .."); }
   else if (text[text.length-2]=="awaiting input ..") { console.log("..->...");pr.replace(2,"awaiting input .."); };
