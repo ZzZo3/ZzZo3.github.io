@@ -22,20 +22,21 @@ function inputEnter(event) {
 function awaitTick() {
   let text = outputElement.innerText;
   text = text.split("\n");
-  console.log("awaitTick called, t="+t+", line="+text[text.length-t]);
+  console.log("awaitTick called, line=\""+text[text.length-2]+"\"");
   if (text[text.length-2]=="awaiting input ...") { console.log("...->.");pr.replace(2,"awaiting input ."); }
   else if (text[text.length-2]=="awaiting input .") { console.log(".->..");pr.replace(2,"awaiting input .."); }
-  else if (text[text.length-2]=="awaiting input ..") { console.log("..->...");pr.replace(2,"awaiting input .."); };
+  else if (text[text.length-2]=="awaiting input ..") { console.log("..->...");pr.replace(2,"awaiting input ..."); };
 }
 
 async function input() {
   console.log("Awaiting input...");
   print("awaiting input ...");
-  window.setInterval(awaitTick, 1000);
+  const IntervalID0 = setInterval(awaitTick, 1000);
   await new Promise((resolve)=>{
     resolveInputPromise = resolve;
     inputElement.addEventListener("keydown", inputEnter);
   });
+  clearInterval(IntervalID0);
   console.log("Input received. Continuing...");
   lastInput = inputElement.value;
   inputElement.value = "";
