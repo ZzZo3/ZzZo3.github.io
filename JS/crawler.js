@@ -254,7 +254,7 @@ async function runEvent(obj) {
 const Text = {
   layerExpos: [
   "You lost sight of the twisting path you had been following ages ago. Daylight is giving way to night, but just as you begin to lose hope, you notice another path further on. But the comfort of the beaten path vanishes as you approach a fork, each further path totally concealed by the darkness.",
-  "l2, expo",
+  "You are wounded, and must seek shelter. You stagger into an ancient structure to rest. As you catch your breath, the floor gives way. You fall into a chasm, and find yourself in a dungeon.",
   "l3, expo",
   "l4, expo",
   "l5, expo",
