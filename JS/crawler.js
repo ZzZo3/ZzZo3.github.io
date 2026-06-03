@@ -156,15 +156,16 @@ var Player = {
 };
 
 class Enemy {
-  constructor(name,article) {
+  constructor(name,article,pluralVerb) {
     this.name = name;
     this.articleName = article+" "+name;
+    this.pluralVerb = pluralVerb;
   }
 };
 let Enemies = [[//forest
-  new Enemy("Goblin","a"),
-  new Enemy("Fairies","some"),
-  new Enemy("Skeleton","a")
+  new Enemy("Goblin","a","s"),
+  new Enemy("Fairies","some",""),
+  new Enemy("Skeleton","a","s")
   ],[
   
   ],[
@@ -217,7 +218,7 @@ class Event {
   };
   prevExpo() {
     if (this.type=="FIGHT") {
-      return this.prevExpoPlaceholders.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name);
+      return this.prevExpoPlaceholders//.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
     } else if (this.type=="BATTLE") {
       return "battle expo";
     } else if (this.type=="CONVERSATION") {
@@ -226,7 +227,7 @@ class Event {
   };
   expo() {
     if (this.type=="FIGHT") {
-      return this.expoPlaceholders.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name);
+      return this.expoPlaceholders//.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
     } else if (this.type=="BATTLE") {
       return "battle expo";
     } else if (this.type=="CONVERSATION") {
@@ -237,7 +238,7 @@ class Event {
 
 async function runEvent(obj) {
   let eventRunning = true;
-  print("chose type: "+obj.type);
+  print("^  chose type: "+obj.type);
   print(obj.expo());
   while (eventRunning) {
     print("no event code yet :\( . say anything");
@@ -300,16 +301,16 @@ const Text = {
     "l6, 3 options expo: [A], [B], [C]"
     ]]];
     let text = randomFrom(expos[events.length-1][Player.layer-1]);
-    text = text.split("[A]").join(events[0].expo());
-    if (events.length>1) { text = text.split("[B]").join(events[1].expo()); };
-    if (events.length>2) { text = text.split("[C]").join(events[2].expo()); };
+    text = text.split("[A]").join(events[0].prevExpo());
+    if (events.length>1) { text = text.split("[B]").join(events[1].prevExpo()); };
+    if (events.length>2) { text = text.split("[C]").join(events[2].prevExpo()); };
     return text;
   },
   fightPrevExpos: [[
     "a felled tree, atop of which sits [aE].",
-    "a particularly unsettling area of shadow, within which [aE] roam[pl2E]."
+    "a particularly unsettling area of shadow, within which [aE] roam[plV]."
   ],[
-    "a particularly unsettling area of shadow, within which [aE] roam[pl2E]."
+    "a particularly unsettling area of shadow, within which [aE] roam[plV]."
   ],[
     "l3, fight prev expo"
   ],[
@@ -320,7 +321,7 @@ const Text = {
     "l6, fight prev expo"
   ]],
   fightExpos: [[
-    "l1, fight expo"
+    "The [E] look[plV] at you."
   ],[
     "l2, fight expo"
   ],[
@@ -350,6 +351,13 @@ async function main() {
   }, 2600);}, 1200);}, 1200);}, 1200);
 }
 
+function testEventType(events,newEvent) {
+  for (let k=0; k<events.length; k++) {
+    if (events[k].type==newEvent.type) { return true }
+    else { return false };
+  };
+};
+
 async function loop() {
   while (Player.layer<7) {
     let lastLayer = Player.layer;
@@ -364,13 +372,16 @@ async function loop() {
       else if (choices>=0.2&&choices<=0.8) { choices=2 }
       else if (choices>0.8&&choices<=1) { choices=3 };
     };
-    print("^  choices: "+choices);
     let events = [];
     for (let i=0; i<choices; i++) {
       let newEvent = new Event();
-      while (events.includes(newEvent)) { newEvent = new Event(); };
+      while (testEventType(events,newEvent)) { newEvent = new Event(); };
       events.push(newEvent);
     };
+    print("^  choices:");
+    for (let i=0; i<choices; i++) {
+      print(events[i].type)
+    }
     if (Player.layer==lastLayer) { print(Text.pathExpo(events)); };
     if (choices==1) { print("You may walk [\"forward\"].");await input(["forward"]); }
     else if (choices==2) { print("You may walk [\"left\"] or [\"right\"].");await input(["left","right"]); }
@@ -380,7 +391,7 @@ async function loop() {
     else if (choices==3 && lastInput=="forward") { choice = events[1]; };
     await runEvent(choice);
     Player.eventCount++;
-    print("event count: "+Player.eventCount);
+    print("^  events completed: "+Player.eventCount);
     console.log("events completed: "+Player.eventCount);
   };
 };
