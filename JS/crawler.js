@@ -158,7 +158,7 @@ var Player = {
 class Enemy {
   constructor(name,article,pluralVerb) {
     this.name = name;
-    this.articleName = article+" "+name;
+    this.article = article+" ";
     this.pluralVerb = pluralVerb;
   }
 };
@@ -218,20 +218,20 @@ class Event {
   };
   prevExpo() {
     if (this.type=="FIGHT") {
-      return this.prevExpoPlaceholders.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
+      return this.prevExpoPlaceholders.split("[aE]").join(this.enemy.article).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
     } else if (this.type=="BATTLE") {
-      return "battle expo";
+      return "[battle expo]";
     } else if (this.type=="CONVERSATION") {
-      return "convo expo";
+      return "[convo expo]";
     };
   };
   expo() {
     if (this.type=="FIGHT") {
-      return this.expoPlaceholders.split("[aE]").join(this.enemy.articleName).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
+      return this.expoPlaceholders.split("[aE]").join(this.enemy.article).split("[E]").join(this.enemy.name).split("[plV]").join(this.enemy.pluralVerb);
     } else if (this.type=="BATTLE") {
-      return "battle expo";
+      return "[battle expo]";
     } else if (this.type=="CONVERSATION") {
-      return "convo expo";
+      return "[convo expo]";
     };
   };
 };
@@ -263,42 +263,42 @@ const Text = {
     "As you stumble forward, you notice [A]",
     "You take a moment to rest in a clearing. When you wake, you see [A]"
     ],[ //2
-    "l2, 1 option expo: [A]"
+    "[l2, 1 option expo:] [A]"
     ],[ //3
-    "l3, 1 option expo: [A]"
+    "[l3, 1 option expo:] [A]"
     ],[ //4
-    "l4, 1 option expo: [A]"
+    "[l4, 1 option expo:] [A]"
     ],[ //5
-    "l5, 1 option expo: [A]"
+    "[l5, 1 option expo:] [A]"
     ],[ //6
-    "l6, 1 option expo: [A]"
+    "[l6, 1 option expo:] [A]"
     ]
     ],[[ //two options
     "As you continue to stumble through the thick woods, the trees suddenly give way to a razed clearing. You step out into the glade and notice two paths leading further into the thickets. To the left, you see [A] To the right, there is [B]",
     "You wander further into the treacherous forest, but as you stare on, you realize that you're approaching another split in the path. To the left, you spot [A] To the right, you see [B]"
     ],[ //2
-    "l2, 3 options expo: [A], [B]"
+    "[l2, 3 options expo:] [A], [B]"
     ],[ //3
-    "l3, 3 options expo: [A], [B]"
+    "[l3, 3 options expo:] [A], [B]"
     ],[ //4
-    "l4, 3 options expo: [A], [B]"
+    "[l4, 3 options expo:] [A], [B]"
     ],[ //5
-    "l5, 3 options expo: [A], [B]"
+    "[l5, 3 options expo:] [A], [B]"
     ],[ //6
-    "l6, 3 options expo: [A], [B]"
+    "[l6, 3 options expo:] [A], [B]"
     ]],
     [[ //three options
-    "l1, 3 options expo: [A], [B], [C]"
+    "[l1, 3 options expo:] [A], [B], [C]"
     ],[ //2
-    "l2, 3 options expo: [A], [B], [C]"
+    "[l2, 3 options expo:] [A], [B], [C]"
     ],[ //3
-    "l3, 3 options expo: [A], [B], [C]"
+    "[l3, 3 options expo:] [A], [B], [C]"
     ],[ //4
-    "l4, 3 options expo: [A], [B], [C]"
+    "[l4, 3 options expo:] [A], [B], [C]"
     ],[ //5
-    "l5, 3 options expo: [A], [B], [C]"
+    "[l5, 3 options expo:] [A], [B], [C]"
     ],[ //6
-    "l6, 3 options expo: [A], [B], [C]"
+    "[l6, 3 options expo:] [A], [B], [C]"
     ]]];
     let text = randomFrom(expos[events.length-1][Player.layer-1]);
     text = text.split("[A]").join(events[0].prevExpo());
@@ -307,10 +307,13 @@ const Text = {
     return text;
   },
   fightPrevExpos: [[
-    "a felled tree, atop of which sits [aE].",
-    "a particularly unsettling area of shadow, within which [aE] roam[plV]."
+    "a felled tree, atop of which sit[plV] [aE][E].",
+    "a particularly unsettling area of shadow, within which [aE][E] roam[plV].",
+    "[aE][E] hiding behind a pile of logs.",
+    "[aE] frightful [E] waiting for something, although you do not know what."
   ],[
-    "a particularly unsettling area of shadow, within which [aE] roam[plV]."
+    "a particularly unsettling area of shadow, within which [aE] roam[plV].",
+    "[aE] frightful [E] waiting for something, although you do not know what."
   ],[
     "l3, fight prev expo"
   ],[
