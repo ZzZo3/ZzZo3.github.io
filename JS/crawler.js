@@ -162,18 +162,24 @@ var Player = {
 };
 
 class Enemy {
-  constructor(name,article,plural) {
+  constructor(name,article,plural,health) {
     this.name = name;
-    this.article = article+" ";
-    this.pluralVerb = "";
-    if (!plural) { this.pluralVerb="s"; }
-    else { this.plural="s"; };
+    this.health = health;
+    this.conj = {};
+    this.conj.article = article+" ";
+    this.conj.pluralVerb = "";
+    if (plural) {
+      this.conj.has="have";
+    } else {
+      this.conj.pluralVerb="s";
+      this.conj.has="has";
+    };
   }
 };
 let Enemies = [[//forest
-  new Enemy("Goblin","a",false),
-  new Enemy("Fairies","some",true),
-  new Enemy("Skeleton","a",false)
+  new Enemy("Goblin","a",false,14),
+  new Enemy("Fairies","some",true,10),
+  new Enemy("Skeleton","a",false,18)
   ],[//dungeon
 
   ],[
@@ -245,10 +251,27 @@ class Event {
 };
 
 async function runEvent(obj) {
-  let eventRunning = true;
   print(obj.expo());
+  if (obj.type=="FIGHT") { runFight(obj); }
+  else {
+    let eventRunning = true;
+    while (eventRunning) {
+      print("no event code yet :\( . say anything");
+      await input("ANY");
+      eventRunning = false;
+    };
+  }
+};
+
+async function runFight(obj) {
+  print("A FIGHT has begun.");
+  obj.enemy.health = Math.floor(obj.enemy.health*(1.2**(Player.layer-1))+0.5);
+  print(fightTrans("The [E] [has] [HP] HP.\nYou have "+Player.health+" HP.",obj.enemy));
+  let eventRunning = true;
   while (eventRunning) {
-    print("no event code yet :\( . say anything");
+    print("no fight loop yet :\( . say anything");
+    
+    
     await input("ANY");
     eventRunning = false;
   };
@@ -332,6 +355,7 @@ const Text = {
   ]],
   fightExpos: [[
     "The [E] look[plV] at you.",
+    "The [E] menace[plV] at you.",
     "The [E] snarl[plV] at you as you approach.",
     "As you approach the [E], the [E] growl[plV]."
   ],[
@@ -348,10 +372,11 @@ const Text = {
 };
 function fightTrans(text,enemy) {
 return text
-  .split("[aE]").join(enemy.article)
   .split("[E]").join(enemy.name)
-  .split("[pl]").join(enemy.plural)
-  .split("[plV]").join(enemy.pluralVerb);
+  .split("[HP]").join(enemy.health)
+  .split("[aE]").join(enemy.conj.article)
+  .split("[plV]").join(enemy.conj.pluralVerb)
+  .split("[has]").join(enemy.conj.has);
 }
 
 // CRAWLER: MAIN BODY
