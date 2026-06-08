@@ -36,6 +36,10 @@ async function input(wants) {
   console.log("Awaiting input... wants: "+wants);
   let acceptedInput = false;
   print("awaiting input ...");
+  let optionCount = 0;
+  for (let i=0; i<wants.length; i++) {
+    if (["left","forward","right"].includes(wants[i])) { optionCount++; };
+  };
   while (!acceptedInput) {
     const IntervalID0 = setInterval(awaitTick, 1000);
     await new Promise((resolve)=>{
@@ -44,24 +48,25 @@ async function input(wants) {
     });
     clearInterval(IntervalID0);
     lastInput = inputElement.value;
+    console.log("-  possible input: \""+lastInput+"\"");
     inputElement.value = "";
-    if (wants=="ANY" || wants.includes(lastInput)) {
+    if (lastInput=="INVALIDINPUT" || (wants!="ANY" && optionCount>1 && lastInput=="")) {
+      print("!  invalid input");
+      print("awaiting input ...");
+    } else if (wants=="ANY" || wants.includes(lastInput)) {
       //pr.replace(2,">  "+lastInput);
       print(">  "+lastInput);
-      acceptedInput=true
-    } else if (wants.length>1 || lastInput!="") {
-      print("!  invalid input");
-      print("awaiting input ...")
-    } else {
+      acceptedInput=true;
+    } else if (lastInput=="") {
       lastInput = wants[0];
       //pr.replace(2,">  "+lastInput);
       print(">  "+lastInput);
       acceptedInput=true;
     };
-  }
+  };
   pr.title("THE STORY CONTINUES ...");
   pr.nl();
-  console.log("Input received: \""+lastInput+"\" Continuing...");
+  console.log(">  Input received: \""+lastInput+"\" Continuing...");
 };
 
 function print(text) {
@@ -224,8 +229,10 @@ class Event {
     this.prevExpoPlaceholders = "[preview within path expo]";
     this.expoPlaceholders = "[exposition on event start]";
     this.type = randomFrom(["FIGHT","BATTLE","CONVERSATION"]);
+    this.keyword = "placeholderEventKeyword" //alt input for direction (invalid if identical to another choice)
     if (this.type=="FIGHT") {
       this.enemy = randomFrom(Enemies[Player.layer-1]); // SHOULD BE RANDOMFROM()
+      this.keyword = this.enemy.name;
       this.prevExpoPlaceholders = randomFrom(Text.fightPrevExpos[Player.layer-1]);
       this.expoPlaceholders = randomFrom(Text.fightExpos[Player.layer-1]);
     }
@@ -411,8 +418,10 @@ async function loop() {
   while (Player.layer<7) {
     let lastLayer = Player.layer;
     let choices = Math.random();
+    let newLayer = false;
     Player.layerCheck();
     if (Player.layer!=lastLayer) {
+      newLayer=true;
       choices = 2;
       pr.title("LAYER "+Player.layer);
       print(Text.layerExpos[Player.layer-1]);
@@ -427,13 +436,30 @@ async function loop() {
       while (testEventType(events,newEvent)) { newEvent = new Event(); };
       events.push(newEvent);
     };
-    if (Player.layer==lastLayer) { print(Text.pathExpo(events)); };
-    if (choices==1) { print("You may walk [\"forward\"].");await input(["forward"]); }
-    else if (choices==2) { print("You may walk [\"left\"] or [\"right\"].");await input(["left","right"]); }
-    else if (choices==3) { print("You may walk [\"left\"], [\"forward\"], or [\"right\"].");await input(["left","forward","right"]); };
+    let problemKeywords = [];
+    for (let i=0; i<events.length; i++) {
+      for (let k=0; k<events.length; k++) {
+        if (k!=i && events[k].keyword==events[i].keyword) {
+          problemKeywords.push(events[k].keyword);
+        };
+      };
+    };
+    for (let i=0; i<events.length; i++) {
+      if (problemKeywords.includes(events[i].keyword)) { events[i].keyword = "INVALIDINPUT"; }
+    };
+    if (newLayer) {
+      if (choices==1) { print("You may walk [\"forward\"].");await input(["forward"]); }
+      else if (choices==2) { print("You may walk [\"left\"] or [\"right\"].");await input(["left","right"]); }
+      else if (choices==3) { print("You may walk [\"left\"], [\"forward\"], or [\"right\"].");await input(["left","forward","right"]); };
+    } else {
+      print(Text.pathExpo(events));
+      if (choices==1) { print("You may walk [\"forward\"].");await input(["forward",events[0].keyword]); }
+      else if (choices==2) { print("You may walk [\"left\"] or [\"right\"].");await input(["left","right",events[0].keyword,events[1].keyword]); }
+      else if (choices==3) { print("You may walk [\"left\"], [\"forward\"], or [\"right\"].");await input(["left","forward","right",events[0].keyword,events[1].keyword,events[2].keyword]); };
+    };
     let choice = events[0];
-    if (lastInput=="right") { choice = events[events.length-1]; }
-    else if (choices==3 && lastInput=="forward") { choice = events[1]; };
+    if (lastInput=="right" || lastInput==events[events.length-1].keyword) { choice = events[events.length-1]; }
+    else if (choices==3 && (lastInput=="forward" || lastInput==events[1].keyword)) { choice = events[1]; };
     await runEvent(choice);
     Player.eventCount++;
     console.log("events completed: "+Player.eventCount);
