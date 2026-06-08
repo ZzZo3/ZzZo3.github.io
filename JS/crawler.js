@@ -282,7 +282,7 @@ async function runFight(obj) {
 const Text = {
   layerExpos: [
   "You lost sight of the twisting path you had been following ages ago. Daylight is giving way to night, but just as you begin to lose hope, you notice another path further on. But the comfort of the beaten path vanishes as you approach a fork, each further path totally concealed by the darkness.",
-  "You are wounded, and must seek shelter. You stagger into an ancient structure to rest. As you catch your breath, the floor gives way. You fall into a chasm, and find yourself in a dungeon.",
+  "You are wounded. You enter an ancient structure to rest. As you catch your breath, the floor gives way. You tumble into the chasm, and arise in a dungeon. Before you is a hallway that seems to extend forever. You take a torch from the wall and move forward, eventually reaching a junction.",
   "l3, expo",
   "l4, expo",
   "l5, expo",
@@ -304,8 +304,11 @@ const Text = {
     "[l6, 1 option expo:] [A]"
     ]
     ],[[ //two options
-    "As you continue to stumble through the thick woods, the trees suddenly give way to a razed clearing. You step out into the glade and notice two paths leading further into the thickets. To the left, you see [A] To the right, there is [B]",
-    "You wander further into the treacherous forest, but as you stare on, you realize that you're approaching another split in the path. To the left, you spot [A] To the right, you see [B]"
+    "As you continue through the thick woods, the trees give way to a clearing. You step out into the glade and notice two paths leading further on. To the left, you see [A] To the right, there is [B]",
+    "You wander further into the forest. But as you stare on, you realize that you are approaching another split in the path. Leftwards, you spot [A] Rightwards, you witness [B]",
+    "Exhausted, you push forwards. But the path reveals a choice. To the left, there is [A] However, to the right, you notice [B]",
+    "You trek onwards, unperturbed by the feeling of danger in the air. You find yourself at another fork. To the left, you notice [A] To the right, you see [B]",
+    "Always moving onwards, you must make another decision. To the left, you see [A] But to the right, there is [B]"
     ],[ //2
     "[l2, 3 options expo:] [A], [B]"
     ],[ //3
@@ -318,7 +321,9 @@ const Text = {
     "[l6, 3 options expo:] [A], [B]"
     ]],
     [[ //three options
-    "And on you bloodily stagger. To the left, you notice [A] Directly ahead, you spot [B] And to the right, there is [C]"
+    "And on you bloodily stagger. To the left, you notice [A] Directly ahead, you spot [B] And to the right, there is [C]",
+    "You break through a rough of thickets, revealing a trifurcation in the path. To the left, you see [A] Ahead, you behold [B] To the right, you notice [C]",
+    "You are always moving fromwards the castle. But the path splits into three: Leftwards, you spy [A] Forwards, you spot [B] Rightwards, you sight [C]"
     ],[ //2
     "[l2, 3 options expo:] [A], [B], [C]"
     ],[ //3
@@ -338,12 +343,12 @@ const Text = {
   },
   fightPrevExpos: [[
     "a felled tree, atop of which sit[plV] [aE][E].",
-    "a particularly unsettling area of shadow, within which [aE][E] roam[plV].",
+    "an area of shadow, within which [aE][E] roam[plV].",
     "[aE][E] hiding behind a pile of logs.",
-    "[aE]frightful [E] waiting for something, although you do not know what."
+    "[aE]frightful [E] lying in wait."
   ],[
-    "a particularly unsettling area of shadow, within which [aE] roam[plV].",
-    "[aE]frightful [E] waiting for something, although you do not know what."
+    "an area of shadow, within which [aE] roam[plV].",
+    "[aE]frightful [E] lying in wait."
   ],[
     "l3, fight prev expo"
   ],[
