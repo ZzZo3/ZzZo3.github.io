@@ -70,11 +70,18 @@ class baseObj {
     this.id = id
     this.scale = scale
   }
+}*/
+
+let BASES = []
+class BASE {
+  constructor(position, id, scale, src) {
+    this.position = position
+    this.id = id
+    this.scale = scale
+  }
 }
-let BASES = []*/
 
 // BIG BASES
-let BIGBASES = []
 class BIGBASE {
   constructor(coords, scale) {
     this.coords = coords
@@ -240,6 +247,9 @@ function renderSchematic() {
         obj.redirections.forEach((coordPair) => {
           if (JSON.stringify(coordPair) == JSON.stringify([xi, yi])) { invalidSchemCoord = true }
         })
+      })
+      document.querySelectorAll(".isometricBase").forEach((tile) => {
+        if (tile.hasAttribute('data-rmSchem')) { invalidSchemCoord = true }
       })
       if (!invalidSchemCoord) {
         let offsets = Iso2Reg(xi, yi)
