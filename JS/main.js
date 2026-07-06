@@ -216,12 +216,10 @@ function renderSchematic() {
     for (let yi = 0; yi < Ydim; yi++) {
       let invalidSchemCoord = false
       BIGBASES.forEach((obj) => {
-        obj.redirections.forEach((coordPair) => {
-          if (JSON.stringify(coordPair) == JSON.stringify([xi, yi])) { invalidSchemCoord = true }
-        })
+        obj.redirections.forEach((coordPair) => { if (JSON.stringify(coordPair) == JSON.stringify([xi, yi])) { invalidSchemCoord = true }})
       })
       document.querySelectorAll(".isometricBase").forEach((tile) => {
-        if (tile.hasAttribute('data-rmSchem')) { invalidSchemCoord = true }
+        if (xi==parseInt(tile.classList[1].slice(1)) && yi==parseInt(tile.classList[2].slice(1))) { invalidSchemCoord = true }
       })
       if (!invalidSchemCoord) {
         let offsets = Iso2Reg(xi, yi)
