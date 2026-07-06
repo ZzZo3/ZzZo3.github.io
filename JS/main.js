@@ -328,9 +328,9 @@ function REND(CLASS, ZED) {
     if (tile.hasAttribute('data-scale')) { perTileScale = parseInt(tile.getAttribute('data-scale')) }
     if (tile.hasAttribute('data-offY')) { offY = parseInt(tile.getAttribute('data-offY')) }
     if (isoSpread > 1.0) {
-      if (tile.getAttribute('src')=="./assets/isometric/bases/WATER.png") { tile.setAttribute('src',"./assets/isometric/bases/WATER_CEIL.png") }
-    } else {
       if (tile.getAttribute('src')=="./assets/isometric/bases/WATER_CEIL.png") { tile.setAttribute('src',"./assets/isometric/bases/WATER.png") }
+    } else {
+      if (tile.getAttribute('src')=="./assets/isometric/bases/WATER.png") { tile.setAttribute('src',"./assets/isometric/bases/WATER_CEIL.png") }
     }
     let xi = parseInt(tile.classList[1].slice(1)), yi = parseInt(tile.classList[2].slice(1))
     console.log('   IsometricTile:')
