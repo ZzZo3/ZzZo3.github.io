@@ -314,10 +314,8 @@ function renderIsoWindow(offsets) {
 }
 function renderIsometric() {
   console.log('\"renderIsometric()\" began')
-  var isometricTilesQuery = document.querySelectorAll(".isometricTile")
-  var isometricBasesQuery = document.querySelectorAll(".isometricBase")
-  REND(isometricTilesQuery, 3)     // TILE AT ORIGIN HAS z: 3
-  REND(isometricBasesQuery, 1)     // BASE AT ORIGIN HAS z: 1
+  REND(document.querySelectorAll(".isometricTile"), 3)     // TILE AT ORIGIN HAS z: 3
+  REND(document.querySelectorAll(".isometricBase"), 1)     // BASE AT ORIGIN HAS z: 1
   renderSchematic()
   renderSelector()
   renderIsoWindow(Iso2Reg(-POSITION[0], -POSITION[1]))
@@ -329,6 +327,11 @@ function REND(CLASS, ZED) {
     var perTileScale = 1
     if (tile.hasAttribute('data-scale')) { perTileScale = parseInt(tile.getAttribute('data-scale')) }
     if (tile.hasAttribute('data-offY')) { offY = parseInt(tile.getAttribute('data-offY')) }
+    if (isoSpread > 1.0) {
+      if (tile.getAttribute('src')=="./assets/isometric/bases/WATER.png") { tile.setAttribute('src',"./assets/isometric/bases/WATER_CEIL.png") }
+    } else {
+      if (tile.getAttribute('src')=="./assets/isometric/bases/WATER_CEIL.png") { tile.setAttribute('src',"./assets/isometric/bases/WATER.png") }
+    }
     let xi = parseInt(tile.classList[1].slice(1)), yi = parseInt(tile.classList[2].slice(1))
     console.log('   IsometricTile:')
     let offsets = Iso2Reg(xi, yi)
