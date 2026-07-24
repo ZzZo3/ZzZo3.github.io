@@ -6,17 +6,20 @@ var windowDimensions = [window.innerWidth, window.innerHeight]
 const consoleLogFunc = console.log
 //NODES
 const spreadInput = document.getElementById("spreadInput")
-const scaleInput = document.getElementById("scaleInput")
-const mountainInput = document.getElementById("mountainInput")
-const scrollInput = document.getElementById("scrollInput")
 const SpLabel = document.getElementById("SpLabel")
-const ScLabel = document.getElementById("ScLabel")
-const MnLabel = document.getElementById("MnLabel")
-const ScrollLabel = document.getElementById("ScrollLabel")
 const resetSpreadButton = document.getElementById("resetSpreadButton")
+const scaleInput = document.getElementById("scaleInput")
+const ScLabel = document.getElementById("ScLabel")
 const resetScaleButton = document.getElementById("resetScaleButton")
+const mountainInput = document.getElementById("mountainInput")
+const MnLabel = document.getElementById("MnLabel")
 const resetMountainButton = document.getElementById("resetMountainButton")
+const scrollInput = document.getElementById("scrollInput")
+const ScrollLabel = document.getElementById("ScrollLabel")
 const resetScrollButton = document.getElementById("resetScrollButton")
+const scrollInput = document.getElementById("pushInput")
+const ScrollLabel = document.getElementById("PushLabel")
+const resetScrollButton = document.getElementById("resetPushButton")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const originButton = document.getElementById("originButton")
@@ -38,11 +41,13 @@ let isoSpread = 1.0
 let tileScale = 1.0
 let mountainOffset = 0
 let scrollOffset = 160
+let pushOffset = 0
 //DEFAULT VALUES
 const spreadDefault = 1.0
 const scaleDefault = 2.0
 const hillDefault = 0
 const scrollDefault = 0
+const pushDefault = 0
 const dimDefault = [9, 9]
 //POSITION / TILE DATA
 let POSITION = [0, 0]
@@ -360,6 +365,16 @@ function spreadInputFunc() {
   renderIsometric()
   console.log('> \"spreadInputFunc()\" finished')
 }
+resetSpreadButton.addEventListener('click', resetSpread)
+function resetSpread() {
+  console.log('isoSpread -> ' + spreadDefault)
+  isoSpread = spreadDefault
+  spreadInput.value = isoSpread
+  SpLabel.innerText = 'Spread: ' + isoSpread
+  sessionStorage.setItem('Spread', isoSpread)
+  renderIsometric()
+}
+
 scaleInput.addEventListener('input', scaleInputFunc)
 function scaleInputFunc() {
   console.log('\"scaleInputFunc()\" began')
@@ -371,6 +386,16 @@ function scaleInputFunc() {
   renderIsometric()
   console.log('> \"scaleInputFunc()\" finished')
 }
+resetScaleButton.addEventListener('click', resetScale)
+function resetScale() {
+  console.log('tileScale -> ' + scaleDefault)
+  tileScale = scaleDefault
+  scaleInput.value = scaleDefault
+  ScLabel.innerText = 'Scale: ' + tileScale
+  sessionStorage.setItem('Scale', tileScale)
+  renderIsometric()
+}
+
 mountainInput.addEventListener('input', mountainInputFunc)
 function mountainInputFunc() {
   console.log('\"mountainInputFunc()\" began')
@@ -381,6 +406,16 @@ function mountainInputFunc() {
   renderIsometric()
   console.log('> \"mountainInputFunc()\" finished')
 }
+resetMountainButton.addEventListener('click', resetMountain)
+function resetMountain() {
+  console.log('mountainOffset -> ' + hillDefault)
+  mountainOffset = hillDefault
+  mountainInput.value = hillDefault
+  MnLabel.innerText = 'Hill: ' + mountainOffset
+  sessionStorage.setItem('Hill', mountainOffset)
+  renderIsometric()
+}
+
 scrollInput.addEventListener('input', scrollInputFunc)
 function scrollInputFunc() {
   console.log('\"scrollInputFunc()\" began')
@@ -391,6 +426,36 @@ function scrollInputFunc() {
   renderIsometric()
   console.log('> \"scrollInputFunc()\" finished')
 }
+resetScrollButton.addEventListener('click', resetScroll)
+function resetScroll() {
+  console.log('scrollOffset -> ' + scrollDefault)
+  scrollOffset = scrollDefault
+  scrollInput.value = scrollDefault
+  ScrollLabel.innerText = 'Scroll: ' + scrollOffset
+  sessionStorage.setItem('Scroll', scrollOffset)
+  renderIsometric()
+}
+
+pushInput.addEventListener('input', pushInputFunc)
+function pushInputFunc() {
+  console.log('\"pushInputFunc()\" began')
+  pushOffset = parseInt(pushInput.value)
+  pushOffset = Number.isNaN(pushOffset) ? 0 : pushOffset
+  PushLabel.innerText = 'Push: ' + pushOffset
+  sessionStorage.setItem('Push', pushOffset)
+  renderIsometric()
+  console.log('> \"pushInputFunc()\" finished')
+}
+resetPushButton.addEventListener('click', resetPush)
+function resetPush() {
+  console.log('pushOffset -> ' + pushDefault)
+  pushOffset = pushDefault
+  pushInput.value = pushDefault
+  PushLabel.innerText = 'Push: ' + pushOffset
+  sessionStorage.setItem('Push', pushOffset)
+  renderIsometric()
+}
+
 gridXInput.addEventListener('input', gridXFunc)
 function gridXFunc() {
   console.log('\"gridXFunc()\" began')
@@ -412,42 +477,6 @@ function gridYFunc() {
   renderIsometric()
   origin()
   console.log('> \"gridYFunc()\" finished')
-}
-resetSpreadButton.addEventListener('click', resetSpread)
-function resetSpread() {
-  console.log('isoSpread -> ' + spreadDefault)
-  isoSpread = spreadDefault
-  spreadInput.value = isoSpread
-  SpLabel.innerText = 'Spread: ' + isoSpread
-  sessionStorage.setItem('Spread', isoSpread)
-  renderIsometric()
-}
-resetScaleButton.addEventListener('click', resetScale)
-function resetScale() {
-  console.log('tileScale -> ' + scaleDefault)
-  tileScale = scaleDefault
-  scaleInput.value = scaleDefault
-  ScLabel.innerText = 'Scale: ' + tileScale
-  sessionStorage.setItem('Scale', tileScale)
-  renderIsometric()
-}
-resetMountainButton.addEventListener('click', resetMountain)
-function resetMountain() {
-  console.log('mountainOffset -> ' + hillDefault)
-  mountainOffset = hillDefault
-  mountainInput.value = hillDefault
-  MnLabel.innerText = 'Hill: ' + mountainOffset
-  sessionStorage.setItem('Hill', mountainOffset)
-  renderIsometric()
-}
-resetScrollButton.addEventListener('click', resetScroll)
-function resetScroll() {
-  console.log('scrollOffset -> ' + scrollDefault)
-  scrollOffset = scrollDefault
-  scrollInput.value = scrollDefault
-  ScrollLabel.innerText = 'Scroll: ' + scrollOffset
-  sessionStorage.setItem('Scroll', scrollOffset)
-  renderIsometric()
 }
 
 
@@ -545,6 +574,16 @@ function loadFunc() {
     scrollOffset = scrollDefault
     scrollInput.value = scrollOffset
     ScrollLabel.innerText = 'Scroll: ' + scrollOffset
+  }
+  if (sessionStorage.getItem('Push') != null) {       //PUSH
+    let storedPush = sessionStorage.getItem('Push')
+    pushOffset = parseFloat(storedPush)
+    pushInput.value = storedPush
+    PushLabel.innerText = 'Push: ' + pushOffset
+  } else {
+    pushOffset = pushDefault
+    pushInput.value = pushOffset
+    PushLabel.innerText = 'Push: ' + pushOffset
   }
   setBigBases()                                       //SET BIG BASES
   renderIsometric()                                   //RENDER ISOMETRIC
