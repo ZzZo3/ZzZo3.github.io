@@ -247,7 +247,7 @@ function renderSchematic() {
 function renderSelector() {
   console.log('\"renderSelector()\" began')
   console.log('   POSIITON: ' + POSITIONprevious + '->' + POSITION)
-  let off = 175 - pushOffset
+  let off = 175// - pushOffset
   let maxX = document.getElementById('SCHEMATIC').getAttribute('data-Xdim'), maxY = document.getElementById('SCHEMATIC').getAttribute('data-Ydim')
   if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY) { // if inside schematic grid:
     let ZED = 2 // SELECTOR AT ORIGIN HAS z: 2
@@ -342,9 +342,7 @@ function REND(CLASS, ZED) {
     console.log('   IsometricTile:')
     let offsets = Iso2Reg(xi, yi)
     let xf = offsets[0] + "px", yf = offsets[1]
-    yf += offY
-    //if (xi==POSITION[0] && yi==POSITION[1]) { yf -= pushOffset }
-    yf *= tileScale
+    yf += offY * tileScale
     tile.style.left = xf
     tile.style.top = (yf - (256 - 11) * (perTileScale - 1) * tileScale) + "px"
     tile.style.zIndex = yi - xi + ZED
@@ -353,6 +351,16 @@ function REND(CLASS, ZED) {
     return tile
   })
 }
+/*function PUSH_SEL_TILE(CLASS) {
+  CLASS.forEach((tile) => {
+    let xi = parseInt(tile.classList[1].slice(1)), yi = parseInt(tile.classList[2].slice(1))
+    if (xi == POSITION[0] && yi == POSITION[1]) {
+      var offY = parseInt(tile.style.top.slice(0, -2))
+      tile.style.top = offY - (pushOffset * tileScale)
+      return tile
+    }
+  })
+}*/
 
 
 //RENDER INPUTS
