@@ -17,9 +17,9 @@ const resetMountainButton = document.getElementById("resetMountainButton")
 const scrollInput = document.getElementById("scrollInput")
 const ScrollLabel = document.getElementById("ScrollLabel")
 const resetScrollButton = document.getElementById("resetScrollButton")
-const scrollInput = document.getElementById("pushInput")
-const ScrollLabel = document.getElementById("PushLabel")
-const resetScrollButton = document.getElementById("resetPushButton")
+const pushInput = document.getElementById("pushInput")
+const PushLabel = document.getElementById("PushLabel")
+const resetPushButton = document.getElementById("resetPushButton")
 const gridXInput = document.getElementById("gridXInput")
 const gridYInput = document.getElementById("gridYInput")
 const originButton = document.getElementById("originButton")
@@ -228,6 +228,7 @@ function renderSchematic() {
       })
       if (!invalidSchemCoord) {
         let offsets = Iso2Reg(xi, yi)
+        if (xi==POSITION[0] && yi==POSITION[1]) { offsets[1] -= pushOffset * tileScale }
         let schemTile = SchematicTile.cloneNode()
         schemTile.classList.add('cloneSchemTile')
         schemTile.style.zIndex = yi - xi    // SCHEMATIC TILE AT ORIGIN HAS z: 0
@@ -246,7 +247,7 @@ function renderSchematic() {
 function renderSelector() {
   console.log('\"renderSelector()\" began')
   console.log('   POSIITON: ' + POSITIONprevious + '->' + POSITION)
-  let off = 175
+  let off = 175 - pushOffset
   let maxX = document.getElementById('SCHEMATIC').getAttribute('data-Xdim'), maxY = document.getElementById('SCHEMATIC').getAttribute('data-Ydim')
   if (POSITION[0] >= 0 && POSITION[0] < +maxX && POSITION[1] >= 0 && POSITION[1] < +maxY) { // if inside schematic grid:
     let ZED = 2 // SELECTOR AT ORIGIN HAS z: 2
@@ -341,7 +342,9 @@ function REND(CLASS, ZED) {
     console.log('   IsometricTile:')
     let offsets = Iso2Reg(xi, yi)
     let xf = offsets[0] + "px", yf = offsets[1]
-    yf += offY * tileScale
+    yf += offY
+    if (xi==POSITION[0] && yi==POSITION[1]) { yf -= pushOffset }
+    yf *= tileScale
     tile.style.left = xf
     tile.style.top = (yf - (256 - 11) * (perTileScale - 1) * tileScale) + "px"
     tile.style.zIndex = yi - xi + ZED
