@@ -228,7 +228,7 @@ function renderSchematic() {
       })
       if (!invalidSchemCoord) {
         let offsets = Iso2Reg(xi, yi)
-        if (xi==POSITION[0] && yi==POSITION[1]) { offsets[1] -= pushOffset * tileScale }
+        // if (xi==POSITION[0] && yi==POSITION[1]) { offsets[1] -= pushOffset * tileScale }
         let schemTile = SchematicTile.cloneNode()
         schemTile.classList.add('cloneSchemTile')
         schemTile.style.zIndex = yi - xi    // SCHEMATIC TILE AT ORIGIN HAS z: 0
