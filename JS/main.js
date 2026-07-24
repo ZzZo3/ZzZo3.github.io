@@ -452,7 +452,7 @@ function pushInputFunc() {
   console.log('\"pushInputFunc()\" began')
   pushOffset = parseInt(pushInput.value)
   pushOffset = Number.isNaN(pushOffset) ? 0 : pushOffset
-  PushLabel.innerText = 'Push: ' + pushOffset
+  PushLabel.innerText = 'Push(WIP): ' + pushOffset
   sessionStorage.setItem('Push', pushOffset)
   renderIsometric()
   console.log('> \"pushInputFunc()\" finished')
@@ -462,7 +462,7 @@ function resetPush() {
   console.log('pushOffset -> ' + pushDefault)
   pushOffset = pushDefault
   pushInput.value = pushDefault
-  PushLabel.innerText = 'Push: ' + pushOffset
+  PushLabel.innerText = 'Push(WIP): ' + pushOffset
   sessionStorage.setItem('Push', pushOffset)
   renderIsometric()
 }
@@ -590,11 +590,11 @@ function loadFunc() {
     let storedPush = sessionStorage.getItem('Push')
     pushOffset = parseFloat(storedPush)
     pushInput.value = storedPush
-    PushLabel.innerText = 'Push: ' + pushOffset
+    PushLabel.innerText = 'Push(WIP): ' + pushOffset
   } else {
     pushOffset = pushDefault
     pushInput.value = pushOffset
-    PushLabel.innerText = 'Push: ' + pushOffset
+    PushLabel.innerText = 'Push(WIP): ' + pushOffset
   }
   setBigBases()                                       //SET BIG BASES
   renderIsometric()                                   //RENDER ISOMETRIC
