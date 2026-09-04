@@ -249,7 +249,7 @@ class Event {
     this.keyword = "placeholderEventKeyword" //alt input for direction (invalid if identical to another choice)
     if (this.type=="FIGHT") {
       let enemyWeights = [];
-      for (int i=0; i<Enemies[Player.layer-1].length; i++) { enemyWeights[i] = Enemies[Player.layer-1][i].rarity;}
+      for (let i=0; i<Enemies[Player.layer-1].length; i++) { enemyWeights[i] = Enemies[Player.layer-1][i].rarity;}
       this.enemy = weightedRandomFrom(Enemies[Player.layer-1],enemyWeights);
       this.keyword = this.enemy.name;
       this.prevExpoPlaceholders = randomFrom(Text.fightPrevExpos[Player.layer-1]);
