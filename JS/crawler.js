@@ -180,9 +180,10 @@ var Player = {
 };
 
 class Enemy {
-  constructor(name,article,plural,health,rarity) {
+  constructor(name,article,plural,health,inventory,rarity) {
     this.name = name;
     this.health = health;
+    this.inventory = inventory;
     this.rarity = rarity;
     this.conj = {};
     this.conj.article = article+" ";
@@ -201,14 +202,14 @@ ranges of health
 modifiers: infested, ancient, etc
 */
 let Enemies = [[//forest
-  new Enemy("Goblin","a",false,14,1.00),
-  new Enemy("Fairies","some",true,10,0.30),
-  new Enemy("Skeleton","a",false,18,0.80),
-  new Enemy("Little Mushroom Man","a",false,2,0.12),
-  new Enemy("Pack of Little Mushroom Men","a",false,24,0.30),
-  new Enemy("Vilolent Fungus Necrohulk","a",false,213,0.01)
+  new Enemy("Goblin","a",false,14,[],1.00),
+  new Enemy("Fairies","some",true,10,[],0.30),
+  new Enemy("Skeleton","a",false,18,[],0.80),
+  new Enemy("Little Mushroom Man","a",false,2,[],0.12),
+  new Enemy("Pack of Little Mushroom Men","a",false,24,[],0.30),
+  new Enemy("Vilolent Fungus Necrohulk","a",false,213,[],0.01)
   ],[//dungeon
-  new Enemy("Modron","a",false,10,1.00)
+  new Enemy("Modron","a",false,10,[],1.00)
   ],[
 
   ],[
@@ -301,7 +302,7 @@ async function runFight(obj) {
   let eventRunning = true;
   while (eventRunning) {
     print("no fight loop yet :\( . say anything");
-    
+    print(Player.inventory);
     
     await input("ANY");
     eventRunning = false;
@@ -409,7 +410,7 @@ const Text = {
   ]]
 };
 function fightTrans(text,enemy) {
-return text
+  return text
   .split("[E]").join(enemy.name)
   .split("[HP]").join(enemy.health)
   .split("[aE]").join(enemy.conj.article)
@@ -443,7 +444,7 @@ function testEventType(events,newEvent) {
 async function loop() {
   while (Player.layer<7) {
     let lastLayer = Player.layer;
-    let choices = Math.random();
+    let choices = Math.random(); // -> 1,2,3 paths
     let newLayer = false;
     Player.layerCheck();
     if (Player.layer!=lastLayer) {
