@@ -197,30 +197,6 @@ class Enemy {
   }
 };
 
-/*enemy ideas
-ranges of health
-modifiers: infested, ancient, etc
-*/
-let Enemies = [[//forest
-  new Enemy("Goblin","a",false,14,[],1.00),
-  new Enemy("Fairies","some",true,10,[],0.30),
-  new Enemy("Skeleton","a",false,18,[],0.80),
-  new Enemy("Little Mushroom Man","a",false,2,[],0.12),
-  new Enemy("Pack of Little Mushroom Men","a",false,24,[],0.30),
-  new Enemy("Vilolent Fungus Necrohulk","a",false,213,[],0.01)
-  ],[//dungeon
-  new Enemy("Modron","a",false,10,[],1.00)
-  ],[
-
-  ],[
-
-  ],[
-
-  ],[
-
-  ]
-];
-
 class Weapon {
   constructor(name, lvl, die, rolls, bonus, upgradeChance) {
     this.name = name;
@@ -239,11 +215,38 @@ class Weapon {
     };
   };
 };
+//Player Items
 var basicSword = new Weapon("Basic Sword", 0, 6, 1, 1, 1);
 var sturdySword = new Weapon("Sturdy Sword", 0, 4, 2, 1, 0.5);
+//Non-Player Items
+var goblinAttack = new Weapon("Goblin Attack", 1, 4, 1, 0, 0);
 Player.inventory.push(basicSword);
 Player.inventory.push(sturdySword);
 console.log(Player);
+
+/*enemy ideas
+ranges of health
+modifiers: infested, ancient, etc
+*/
+let Enemies = [[//forest
+  new Enemy("Goblin","a",false,14,[goblinAttack],1.00),
+  new Enemy("Fairies","some",true,10,[goblinAttack],0.30),
+  new Enemy("Skeleton","a",false,18,[goblinAttack],0.80),
+  new Enemy("Little Mushroom Man","a",false,2,[goblinAttack],0.12),
+  new Enemy("Pack of Little Mushroom Men","a",false,24,[goblinAttack],0.30),
+  new Enemy("Vilolent Fungus Necrohulk","a",false,213,[goblinAttack],0.01)
+  ],[//dungeon
+  new Enemy("Modron","a",false,10,[goblinAttack],1.00)
+  ],[
+
+  ],[
+
+  ],[
+
+  ],[
+
+  ]
+];
 
 // CRAWLER: EVENTS
 
