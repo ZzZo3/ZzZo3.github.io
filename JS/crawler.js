@@ -200,7 +200,8 @@ let Enemies = [[//forest
   new Enemy("Goblin","a",false,14,1.00),
   new Enemy("Fairies","some",true,10,0.30),
   new Enemy("Skeleton","a",false,18,0.80),
-  new Enemy("Pack of Little Mushroom Men","a",true,24,0.30),
+  new Enemy("Little Mushroom Man","a",false,2,0.12),
+  new Enemy("Pack of Little Mushroom Men","a",false,24,0.30),
   new Enemy("Vilolent Fungus Necrohulk","a",false,213,0.01)
   ],[//dungeon
   new Enemy("Modron","a",false,10,1.00)
