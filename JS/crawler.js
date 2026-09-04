@@ -195,7 +195,11 @@ class Enemy {
     };
   }
 };
-//enemies should have ranges of health
+
+/*enemy ideas
+ranges of health
+modifiers: infested, ancient, etc
+*/
 let Enemies = [[//forest
   new Enemy("Goblin","a",false,14,1.00),
   new Enemy("Fairies","some",true,10,0.30),
