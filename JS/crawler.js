@@ -14,13 +14,13 @@ function randomFrom(array) {
 function weightedRandomFrom(array,weights) {
   if (array.length!=weights.length) {return array[0];};
   let total = 0;
-  weights.forEach(k)=>{total+=k};
+  weights.forEach((k)=>{total+=k});
   let cursor = Math.random()*total
   let index = 0
   let runningTotal = 0;
-  weights.forEach(k,i)=>{
+  weights.forEach((k,i)=>{
     if (cursor<runningTotal) { index=i;};
-  };
+  });
   return array[index];
 };
 
