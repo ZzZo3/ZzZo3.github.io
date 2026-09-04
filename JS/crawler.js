@@ -11,6 +11,19 @@ function randomFrom(array) {
   return array[Math.floor(Math.random()*(array.length-0.00001))];
 };
 
+function weightedRandomFrom(array,weights) {
+  if (array.length!=weights.length) {return array[0];};
+  let total = 0;
+  weights.forEach(k)=>{total+=k};
+  let cursor = Math.random()*total
+  let index = 0
+  let runningTotal = 0;
+  weights.forEach(k,i)=>{
+    if (cursor<runningTotal) { index=i;};
+  };
+  return array[index];
+};
+
 // FRAMEWORK: INPUT & OUTPUT
 
 inputElement.addEventListener("keydown", (event)=>{
@@ -167,9 +180,10 @@ var Player = {
 };
 
 class Enemy {
-  constructor(name,article,plural,health) {
+  constructor(name,article,plural,health,rarity) {
     this.name = name;
     this.health = health;
+    this.rarity = rarity;
     this.conj = {};
     this.conj.article = article+" ";
     this.conj.pluralVerb = "";
@@ -181,12 +195,15 @@ class Enemy {
     };
   }
 };
+//enemies should have ranges of health
 let Enemies = [[//forest
-  new Enemy("Goblin","a",false,14),
-  new Enemy("Fairies","some",true,10),
-  new Enemy("Skeleton","a",false,18)
+  new Enemy("Goblin","a",false,14,1.00),
+  new Enemy("Fairies","some",true,10,0.30),
+  new Enemy("Skeleton","a",false,18,0.80),
+  new Enemy("Pack of Little Mushroom Men","a",true,24,0.30),
+  new Enemy("Vilolent Fungus Necrohulk","a",false,213,0.01)
   ],[//dungeon
-
+  new Enemy("Modron","a",false,10,1.00)
   ],[
 
   ],[
@@ -231,7 +248,9 @@ class Event {
     this.type = randomFrom(["FIGHT","BATTLE","CONVERSATION"]);
     this.keyword = "placeholderEventKeyword" //alt input for direction (invalid if identical to another choice)
     if (this.type=="FIGHT") {
-      this.enemy = randomFrom(Enemies[Player.layer-1]); // SHOULD BE RANDOMFROM()
+      let enemyWeights = [];
+      for (int i=0; i<Enemies[Player.layer-1].length; i++) { enemyWeights[i] = Enemies[Player.layer-1][i].rarity;}
+      this.enemy = weightedRandomFrom(Enemies[Player.layer-1],enemyWeights);
       this.keyword = this.enemy.name;
       this.prevExpoPlaceholders = randomFrom(Text.fightPrevExpos[Player.layer-1]);
       this.expoPlaceholders = randomFrom(Text.fightExpos[Player.layer-1]);
