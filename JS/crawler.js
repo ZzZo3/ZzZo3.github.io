@@ -299,9 +299,10 @@ async function runEvent(obj) {
 };
 
 async function runFight(obj) {
+  let enemy = structuredClone(obj.enemy);
   print("A FIGHT has begun.");
-  obj.enemy.health = Math.floor(obj.enemy.health*(1.2**(Player.layer-1))+0.5);
-  print(fightTrans("The [E] [has] [HP] HP.\nYou have "+Player.health+" HP.",obj.enemy));
+  enemy.health = Math.floor(enemy.health*(1.2**(Player.layer-1))+0.5);
+  print(fightTrans("The [E] [has] [HP] HP.\nYou have "+Player.health+" HP.",enemy));
   let eventRunning = true;
   while (eventRunning) {
     print("no fight loop yet :\( . say anything");
