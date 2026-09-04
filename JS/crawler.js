@@ -315,7 +315,9 @@ const Text = {
     "You wander further into the forest. But as you stare on, you realize that you are approaching another split in the path. Leftwards, you spot [A] Rightwards, you witness [B]",
     "Exhausted, you push forwards. But the path reveals a choice. To the left, there is [A] However, to the right, you notice [B]",
     "You trek onwards, unperturbed by the feeling of danger in the air. You find yourself at another fork. To the left, you notice [A] To the right, you see [B]",
-    "Always moving onwards, you must make another decision. To the left, you see [A] But to the right, there is [B]"
+    "Always moving onwards, you must make another decision. To the left, you see [A] But to the right, there is [B]",
+    "theres a 2 way for in the road. there is [A] to the left. and off to the right you see [B]",
+    "ummm. boom! the woke left.. without saying goodbye :< but over there you witness [A] anyway, the right-leaning side of the isle has [B]"
     ],[ //2
     "[l2, 3 options expo:] [A], [B]"
     ],[ //3
