@@ -261,7 +261,7 @@ class Event {
   constructor () {
     this.prevExpoPlaceholders = "[preview within path expo]";
     this.expoPlaceholders = "[exposition on event start]";
-    this.type = randomFrom(["FIGHT","BATTLE","CONVERSATION"]);
+    this.type = randomFrom(["FIGHT","BATTLE","CONVERSATION","UPGRADE"]);
     this.keyword = "placeholderEventKeyword" //alt input for direction (invalid if identical to another choice)
     if (this.type=="FIGHT") {
       let enemyWeights = [];
@@ -279,6 +279,8 @@ class Event {
       return "[battle expo]";
     } else if (this.type=="CONVERSATION") {
       return "[convo expo]";
+    } else if (this.type=="UPGRADE") {
+      return "[upgrade expo]";
     };
   };
   expo() {
@@ -288,6 +290,8 @@ class Event {
       return "[battle expo]";
     } else if (this.type=="CONVERSATION") {
       return "[convo expo]";
+    } else if (this.type=="UPGRADE") {
+      return "[upgrade expo]";
     };
   };
 };
@@ -300,6 +304,8 @@ async function runEvent(obj) {
     while (eventRunning) {
       print("no event code yet :\( . say anything");
       await input("ANY");
+      print("hello");
+      alert("hello");
       eventRunning = false;
     };
   }
