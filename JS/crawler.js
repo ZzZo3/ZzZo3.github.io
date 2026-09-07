@@ -298,7 +298,7 @@ class Event {
 
 async function runEvent(obj) {
   print(obj.expo());
-  if (obj.type=="FIGHT") { runFight(obj); }
+  if (obj.type=="FIGHT") { await runFight(obj); }
   else {
     let eventRunning = true;
     while (eventRunning) {
