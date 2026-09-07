@@ -350,7 +350,7 @@ async function runFight(obj) {
       const itemKeys = [];
       print("Inventory:");
       Player.inventory.forEach((k,i)=>{
-        print("i "+k.name+"["+k.lvl+"]: "+k.rolls+"d"+k.die+"+"+k.bonus);
+        print(i+"  "+k.name+"["+k.lvl+"]: "+k.rolls+"d"+k.die+"+"+k.bonus);
         itemKeys[i] = String(i);
       });
       await input(itemKeys);
