@@ -12,7 +12,7 @@ function randomFrom(array) {
 };
 
 function weightedRandomFrom(array,weights) {
-  console.log("\"weightedRandomFrom()\" began");
+  console.log("\"weightedRandomFrom()\" began\narray: ",array," weights: ",weights);
   if (array.length!=weights.length) { console.log("   ERROR: Array length != Weights length");
     return array[0];};
   let cursor = Math.random() * /*sum*/weights.reduce((a,b)=>a+b,0);
