@@ -60,18 +60,18 @@ async function input(wants) {
     lastInput = inputElement.value;
     console.log("-  possible input: \""+lastInput+"\"");
     inputElement.value = "";
-    if (lastInput=="INVALIDINPUT" || (wants!="ANY" && wants.length>1 && lastInput=="")) {
-      print("!  invalid input");
-      print("awaiting input ...");
-    } else if (wants=="ANY" || wants.includes(lastInput)) {
+    if (wants=="ANY" || wants.includes(lastInput)) {
       //pr.replace(2,">  "+lastInput);
       print(">  "+lastInput);
       acceptedInput=true;
-    } else if (lastInput=="") {
+    } else if (wants.length=1 && lastInput=="") {
       lastInput = wants[0];
       //pr.replace(2,">  "+lastInput);
       print(">  "+lastInput);
       acceptedInput=true;
+    } else {
+      print("!  invalid input");
+      print("awaiting input ...");
     };
   };
   pr.title("THE STORY CONTINUES ...");
@@ -326,12 +326,20 @@ async function runFight(obj) {
   let eventRunning = true;
   while (eventRunning) {
     print("Will you use an [\"item\"] or [\"retreat\"]?");
-    await input("ANY");
-
-    print("Inventory:");
-    Player.inventory.forEach((k,i)=>{
-      print("i "+k.name+"["+k.lvl+"]: "+k.rolls+"d"+k.die+"+"+k.bonus);
-    });
+    await input(["item,retreat"]);
+    if (lastInput=="item") {
+      const itemKeys = [];
+      print("Inventory:");
+      Player.inventory.forEach((k,i)=>{
+        print("i "+k.name+"["+k.lvl+"]: "+k.rolls+"d"+k.die+"+"+k.bonus);
+        itemKeys[i] = i;
+      });
+      await input(itemKeys);
+      print("You chose "+Player.inventory[i].name);
+    } else {
+      print("You run the other way.");
+      eventRunning = false;
+    };
 
 
     await input("ANY");
