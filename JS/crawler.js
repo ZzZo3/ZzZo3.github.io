@@ -212,6 +212,17 @@ class Weapon {
     };
   };
 };
+/*
+
+WWWWW  WWWWW  WWWWWW  W     W   WWWW
+  W      W    W       WW   WW  W    W
+  W      W    W       W W W W  W
+  W      W    WWWWWW  W  W  W   WWWW
+  W      W    W       W     W       W
+  W      W    W       W     W  W    W
+WWWWW    W    WWWWWW  W     W   WWWW
+
+*/
 //Player Items
 var basicSword = new Weapon("Basic Sword", 0, 6, 1, 1, 1);
 var sturdySword = new Weapon("Sturdy Sword", 0, 4, 2, 1, 0.5);
@@ -304,7 +315,6 @@ async function runEvent(obj) {
     };
   }
 };
-
 /*
 
 WWWWWW  W     W  WWWWWW  W     W  WWWWW   WWWW
@@ -346,9 +356,17 @@ async function runFight(obj) {
     eventRunning = false;
   };
 };
+/*
 
-// CRAWLER: TEXT
+WWWWW  WWWWWW  W     W  WWWWW
+  W    W        W   W     W
+  W    W         W W      W
+  W    WWWWWW     W       W
+  W    W         W W      W
+  W    W        W   W     W
+  W    WWWWWW  W     W    W
 
+*/
 const Text = {
   layerExpos: [
   "You lost sight of the twisting path you had been following ages ago. Daylight is giving way to night, but just as you begin to lose hope, you notice another path further on. But the comfort of the beaten path vanishes as you approach a fork, each further path totally concealed by the darkness.",
@@ -455,9 +473,17 @@ function fightTrans(text,enemy) {
   .split("[plV]").join(enemy.conj.pluralVerb)
   .split("[has]").join(enemy.conj.has);
 }
+/*
 
-// CRAWLER: MAIN BODY
+W     W     W     WWWWW  W     W
+WW   WW    W W      W    WW    W
+W W W W    W W      W    W W   W
+W  W  W   W   W     W    W  W  W
+W     W   WWWWW     W    W   W W
+W     W  W     W    W    W    WW
+W     W  W     W  WWWWW  W     W
 
+*/
 async function main() {
   setTimeout(() => {
   print("The castle is gone.");
