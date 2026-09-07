@@ -332,8 +332,10 @@ async function runFight(obj) {
   let eventRunning = true;
   while (eventRunning) {
     print("no fight loop yet :\( . say anything");
-    print(Player.inventory);
-
+    print("Inventory:");
+    Player.inventory.forEach((k)=>{
+      print("  ",k.name,"[",k.lvl,"]: ",k.rolls,"d",k.die,"+",k.bonus);
+    });
     await input("ANY");
     alert("done awaiting");
     eventRunning = false;
