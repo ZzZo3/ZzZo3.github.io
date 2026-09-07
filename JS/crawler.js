@@ -224,10 +224,16 @@ var goblinAttack = new Weapon("Goblin Attack", 1, 4, 1, 0, 0);
 Player.inventory.push(basicSword);
 Player.inventory.push(sturdySword);
 console.log(Player);
+/*
 
-/*enemy ideas
-ranges of health
-modifiers: infested, ancient, etc
+WWWWWW  W     W  WWWWWW  W     W  WWWWW  WWWWWW   WWWW
+W       WW    W  W       WW   WW    W    W       W    W
+W       W W   W  W       W W W W    W    W       W
+WWWWWW  W  W  W  WWWWWW  W  W  W    W    WWWWWW   WWWW
+W       W   W W  W       W     W    W    W            W
+W       W    WW  W       W     W    W    W       W    W
+WWWWWW  W     W  WWWWWW  W     W  WWWWW  WWWWWW   WWWW
+
 */
 let Enemies = [[//forest
   new Enemy("Goblin","a",false,14,[goblinAttack],1.00),
@@ -299,23 +305,37 @@ async function runEvent(obj) {
   }
 };
 
+/*
+
+WWWWWW  W     W  WWWWWW  W     W  WWWWW   WWWW
+W       W     W  W       WW    W    W    W    W
+W        W   W   W       W W   W    W    W
+WWWWWW   W   W   WWWWWW  W  W  W    W     WWWW
+W         W W    W       W   W W    W         W
+W         W W    W       W    WW    W    W    W
+WWWWWW     W     WWWWWW  W     W    W     WWWW
+
+*/
+// FIGHT
 async function runFight(obj) {
   console.log("\"runFight()\" began.");
   let enemy = JSON.parse(JSON.stringify(obj.enemy));
   print("A FIGHT has begun.");
   enemy.health = Math.floor(enemy.health*(1.2**(Player.layer-1))+0.5);
   print(fightTrans("The [E] [has] [HP] HP.\nYou have "+Player.health+" HP.",enemy));
+
   let eventRunning = true;
   while (eventRunning) {
     print("no fight loop yet :\( . say anything");
     print(Player.inventory);
-    
+
     await input("ANY");
+    alert("done awaiting");
     eventRunning = false;
   };
 };
 
-// CRAWLER: Text
+// CRAWLER: TEXT
 
 const Text = {
   layerExpos: [
