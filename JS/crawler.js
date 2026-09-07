@@ -300,6 +300,7 @@ async function runEvent(obj) {
 };
 
 async function runFight(obj) {
+  console.log("\"runFight()\" began.");
   let enemy = structuredClone(obj.enemy);
   print("A FIGHT has begun.");
   enemy.health = Math.floor(enemy.health*(1.2**(Player.layer-1))+0.5);
