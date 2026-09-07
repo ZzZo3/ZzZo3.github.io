@@ -345,13 +345,13 @@ async function runFight(obj) {
   let eventRunning = true;
   while (eventRunning) {
     print("Will you use an [\"item\"] or [\"retreat\"]?");
-    await input(["item,retreat"]);
+    await input(["item","retreat"]);
     if (lastInput=="item") {
       const itemKeys = [];
       print("Inventory:");
       Player.inventory.forEach((k,i)=>{
         print("i "+k.name+"["+k.lvl+"]: "+k.rolls+"d"+k.die+"+"+k.bonus);
-        itemKeys[i] = i;
+        itemKeys[i] = String(i);
       });
       await input(itemKeys);
       print("You chose "+Player.inventory[i].name);
