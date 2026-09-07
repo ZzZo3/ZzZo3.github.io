@@ -12,15 +12,15 @@ function randomFrom(array) {
 };
 
 function weightedRandomFrom(array,weights) {
-  if (array.length!=weights.length) {return array[0];};
-  let total = 0;
-  weights.forEach((k)=>{total+=k});
-  let cursor = Math.random()*total
-  let index = 0
-  let runningTotal = 0;
-  weights.forEach((k,i)=>{
-    if (cursor<runningTotal) { index=i;};
-  });
+  console.log("\"weightedRandomFrom()\" began");
+  if (array.length!=weights.length) { console.log("   ERROR: Array length != Weights length");
+    return array[0];};
+  let cursor = Math.random() * /*sum*/weights.reduce((a,b)=>{a+b},0);
+  let index = 0, total = weights[0];
+  while (cursor>total) {
+    total+=weights[index];
+    index++
+  };
   return array[index];
 };
 
