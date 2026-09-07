@@ -73,7 +73,7 @@ async function input(wants) {
       //pr.replace(2,">  "+lastInput);
       print(">  "+lastInput);
       acceptedInput=true;
-    } else if (wants.length=1 && lastInput=="") {
+    } else if (wants.length==1 && lastInput=="") {
       lastInput = wants[0];
       //pr.replace(2,">  "+lastInput);
       print(">  "+lastInput);
