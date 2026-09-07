@@ -50,10 +50,6 @@ async function input(wants) {
   console.log("Awaiting input... wants: "+wants);
   let acceptedInput = false;
   print("awaiting input ...");
-  let optionCount = 0;
-  for (let i=0; i<wants.length; i++) {
-    if (["left","forward","right"].includes(wants[i])) { optionCount++; };
-  };
   while (!acceptedInput) {
     const IntervalID0 = setInterval(awaitTick, 1000);
     await new Promise((resolve)=>{
@@ -64,7 +60,7 @@ async function input(wants) {
     lastInput = inputElement.value;
     console.log("-  possible input: \""+lastInput+"\"");
     inputElement.value = "";
-    if (lastInput=="INVALIDINPUT" || (wants!="ANY" && optionCount>1 && lastInput=="")) {
+    if (lastInput=="INVALIDINPUT" || (wants!="ANY" && wants.length>1 && lastInput=="")) {
       print("!  invalid input");
       print("awaiting input ...");
     } else if (wants=="ANY" || wants.includes(lastInput)) {
@@ -329,11 +325,15 @@ async function runFight(obj) {
   print(fightTrans("The [E] [has] [HP] HP.\nYou have "+Player.health+" HP.",enemy));
   let eventRunning = true;
   while (eventRunning) {
-    print("no fight loop yet :\( . say anything");
+    print("Will you use an [\"item\"] or [\"retreat\"]?");
+    await input("ANY");
+
     print("Inventory:");
-    Player.inventory.forEach((k)=>{
-      print("  "+k.name+"["+k.lvl+"]: "+k.rolls+"d"+k.die+"+"+k.bonus);
+    Player.inventory.forEach((k,i)=>{
+      print("i "+k.name+"["+k.lvl+"]: "+k.rolls+"d"+k.die+"+"+k.bonus);
     });
+
+
     await input("ANY");
     eventRunning = false;
   };
