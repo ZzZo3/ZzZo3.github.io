@@ -329,7 +329,6 @@ async function runFight(obj) {
   print("A FIGHT has begun.");
   enemy.health = Math.floor(enemy.health*(1.2**(Player.layer-1))+0.5);
   print(fightTrans("The [E] [has] [HP] HP.\nYou have "+Player.health+" HP.",enemy));
-
   let eventRunning = true;
   while (eventRunning) {
     print("no fight loop yet :\( . say anything");
