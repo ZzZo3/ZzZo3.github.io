@@ -16,6 +16,7 @@ function weightedRandomFrom(array,weights) {
   if (array.length!=weights.length) { console.log("   ERROR: Array length != Weights length");
     return array[0];};
   let cursor = Math.random() * /*sum*/weights.reduce((a,b)=>{a+b},0);
+  console.log("cursor: ",cursor);
   let index = 0, total = weights[0];
   while (cursor>total) {
     total+=weights[index];
