@@ -260,7 +260,7 @@ class Event {
     if (this.type=="FIGHT") {
       let enemyWeights = [];
       for (let i=0; i<Enemies[Player.layer-1].length; i++) { enemyWeights[i] = Enemies[Player.layer-1][i].rarity;}
-      this.enemy = weightedRandomFrom(Enemies[Player.layer-1],enemyWeights);
+      this.enemy = structuredClone(weightedRandomFrom(Enemies[Player.layer-1],enemyWeights););
       this.keyword = this.enemy.name;
       this.prevExpoPlaceholders = randomFrom(Text.fightPrevExpos[Player.layer-1]);
       this.expoPlaceholders = randomFrom(Text.fightExpos[Player.layer-1]);
@@ -301,7 +301,7 @@ async function runEvent(obj) {
 
 async function runFight(obj) {
   console.log("\"runFight()\" began.");
-  let enemy = structuredClone(obj.enemy);
+  let enemy = obj.enemy;
   print("A FIGHT has begun.");
   enemy.health = Math.floor(enemy.health*(1.2**(Player.layer-1))+0.5);
   print(fightTrans("The [E] [has] [HP] HP.\nYou have "+Player.health+" HP.",enemy));
