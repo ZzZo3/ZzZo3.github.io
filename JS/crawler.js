@@ -334,7 +334,7 @@ async function runFight(obj) {
     print("no fight loop yet :\( . say anything");
     print("Inventory:");
     Player.inventory.forEach((k)=>{
-      print("  ",k.name,"[",k.lvl,"]: ",k.rolls,"d",k.die,"+",k.bonus);
+      print("  "+k.name+"["+k.lvl+"]: "+k.rolls+"d"+k.die+"+"+k.bonus);
     });
     await input("ANY");
     alert("done awaiting");
