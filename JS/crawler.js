@@ -304,8 +304,6 @@ async function runEvent(obj) {
     while (eventRunning) {
       print("no event code yet :\( . say anything");
       await input("ANY");
-      print("hello");
-      alert("hello");
       eventRunning = false;
     };
   }
