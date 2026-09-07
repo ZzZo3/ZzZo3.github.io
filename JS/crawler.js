@@ -45,7 +45,16 @@ function awaitTick() {
   else if (text[text.length-2]=="awaiting input .") { pr.replace(2,"awaiting input .."); }
   else if (text[text.length-2]=="awaiting input ..") { pr.replace(2,"awaiting input ..."); };
 };
+/*
 
+WWWWW  W    W  WWWW   W    W  WWWWW
+  W    WW   W  W   W  W    W    W
+  W    W W  W  W   W  W    W    W
+  W    W  W W  WWWW   w    W    W
+  W    W   WW  W      W    W    W
+WWWWW  W    W  W       WWWW     W
+
+*/
 async function input(wants) {
   console.log("Awaiting input... wants: "+wants);
   let acceptedInput = false;
