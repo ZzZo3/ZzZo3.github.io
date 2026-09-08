@@ -419,7 +419,7 @@ WWWWW  WWWWWW  W     W  WWWWW
 */
 const Text = {
   layerExpos: [
-  "You lost sight of the twisting path you had been following ages ago. Daylight is giving way to night, but just as you begin to lose hope, you find the path again. The comfort vanishes as you approach a fork, each further path totally concealed by the darkness.",
+  "You lost sight of the twisting path you had been following ages ago. Daylight is giving way to night, but just as you begin to lose hope, you find the path again. Your comfort vanishes, however, as you approach a fork. Each further path is totally concealed by the darkness.",
   "You are wounded. You enter an ancient structure to rest. As you catch your breath, the floor gives way. You tumble into the chasm, and arise in a dungeon. Before you is a hallway that seems to extend forever. You take a torch from the wall and move forward, eventually reaching a junction.",
   "l3, expo",
   "l4, expo",
