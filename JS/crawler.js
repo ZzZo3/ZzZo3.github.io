@@ -247,6 +247,9 @@ class Weapon extends Item { //no cooldown, manual upgrade levels
     this.upgrade = function(by) {
       this.lvl += by;
     };
+  },
+  list() {
+    return name+"["+lvl+"]"+"  "+rolls
   };
 };
 
