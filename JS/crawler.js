@@ -215,11 +215,15 @@ class Weapon {
       this.lvl += by;
     };
     this.roll = function() {
+      print("Rolling "+this.rolls+"d"+this.die+"+"+this.bonus+"...");
       let damageSum = 0;
       for (let i=0; i<this.rolls; i++) {
-        damageSum += Math.ceil(Math.random() * this.die);
+        const roll = Math.ceil(Math.random()*this.die;
+        print("< "+roll+" >");
+        damageSum += roll);
       };
-      return damageSum+(this.lvl*this.bonus);
+      print("+ "+this.bonus+" = "+damageSum+this.bonus);
+      return damageSum+this.bonus;
     };
   };
 };
@@ -357,8 +361,9 @@ async function runFight(obj) {
       });
       await input(itemKeys);
       const item = Player.inventory[Int(lastInput)];
-      print("You chose "+item.name);
-      
+      print("Any input to roll for damage from "+item.name+".");
+      await input("ANY");
+      const damage = item.roll;
 
       
     } else {
