@@ -214,10 +214,12 @@ class Weapon {
     this.upgrade = function(by) {
       this.lvl += by;
     };
-    this.damageCalc = function() {
-      let rolledSum = 0;
-      for (let i=0; i<this.rolls; i++) { rolledSum += Math.ceil(Math.random() * this.die); };
-      return rolledSum+(this.lvl*this.bonus);
+    this.roll = function() {
+      let damageSum = 0;
+      for (let i=0; i<this.rolls; i++) {
+        damageSum += Math.ceil(Math.random() * this.die);
+      };
+      return damageSum+(this.lvl*this.bonus);
     };
   };
 };
@@ -354,7 +356,11 @@ async function runFight(obj) {
         itemKeys[i] = String(i);
       });
       await input(itemKeys);
-      print("You chose "+Player.inventory[i].name);
+      const item = Player.inventory[Int(lastInput)];
+      print("You chose "+item.name);
+      
+
+      
     } else {
       print("You run the other way.");
       eventRunning = false;
