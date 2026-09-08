@@ -25,6 +25,28 @@ function weightedRandomFrom(array,weights) {
   return array[index];
 };
 
+function roll(rolls,die,bonus) {
+  print("Rolling "+rolls+"d"+die+"+"+bonus+"...");
+  let sum = 0;
+  if (rolls==1 && bonus==0) { sum = Math.ceil(Math.random()*die); return sum;}
+  for (let i=0; i<rolls; i++) {
+    const roll = Math.ceil(Math.random()*die);
+    print("  "+roll);
+    sum += roll;
+  };
+  if (bonus>0) {
+    sum += bonus;
+    print("+ "+bonus);
+  }
+  print("< "+sum+" >"); return sum;
+};
+
+function quietRoll(rolls,die,bonus) {
+  let sum = 0;
+  for (let i=0; i<rolls; i++) { sum += Math.ceil(Math.random()*die);};
+  return sum+bonus;
+};
+
 // FRAMEWORK: INPUT & OUTPUT
 
 inputElement.addEventListener("keydown", (event)=>{
@@ -214,18 +236,6 @@ class Weapon {
     this.upgrade = function(by) {
       this.lvl += by;
     };
-    this.roll = function() {
-      print("Rolling "+this.rolls+"d"+this.die+"+"+this.bonus+"...");
-      let damageSum = 0;
-      for (let i=0; i<this.rolls; i++) {
-        const roll = Math.ceil(Math.random()*this.die);
-        print("< "+roll+" >");
-        damageSum += roll;
-      };
-      damageSum += this.bonus;
-      print(" + "+this.bonus+" = "+damageSum);
-      return damageSum;
-    };
   };
 };
 /*
@@ -364,13 +374,27 @@ async function runFight(obj) {
       const item = Player.inventory[parseInt(lastInput)];
       print("Any input to roll for damage from "+item.name+".");
       await input("ANY");
-      const damage = item.roll();
+      const damage = roll(item.rolls,item.die,item.bonus);
       enemy.health -= damage;
       print(fightTrans("The [E] [has] [HP] HP remaining.",enemy));
-      
-    } else {
-      print("You run the other way.");
-      eventRunning = false;
+      print(enemy.name+"'s turn!");
+
+
+    } else { // retreat
+      print(fightTrans("You must beat the [E]'s roll.",enemy));
+      const enemyRoll = quietRoll(1,20,0);
+      print("Any input to roll for damage from "+item.name+".");
+      await input("ANY");
+      const playerRoll = roll(1,20,0);
+      print(fightTrans("[E]'s roll was ",enemy)+enemyRoll+".");
+      if (playerRoll>enemyRoll) {
+        print("You successfully escape the "+enemy.name);
+        eventRunning = false;
+      } else {
+        print(enemy.name+"'s turn!");
+
+
+      }
     };
 
     //end fight loop
