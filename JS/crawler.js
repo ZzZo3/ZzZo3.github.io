@@ -28,7 +28,11 @@ function weightedRandomFrom(array,weights) {
 function roll(rolls,die,bonus) {
   print("Rolling "+rolls+"d"+die+"+"+bonus+"...");
   let sum = 0;
-  if (rolls==1 && bonus==0) { sum = Math.ceil(Math.random()*die); return sum;}
+  if (rolls==1 && bonus==0) {
+    sum = Math.ceil(Math.random()*die);
+    print("< "+sum+" >");
+    return sum;
+  };
   for (let i=0; i<rolls; i++) {
     const roll = Math.ceil(Math.random()*die);
     print("  "+roll);
@@ -37,8 +41,9 @@ function roll(rolls,die,bonus) {
   if (bonus>0) {
     sum += bonus;
     print("+ "+bonus);
-  }
-  print("< "+sum+" >"); return sum;
+  };
+  print("< "+sum+" >");
+  return sum;
 };
 
 function quietRoll(rolls,die,bonus) {
@@ -361,6 +366,8 @@ async function runFight(obj) {
   print(fightTrans("The [E] [has] [HP] HP.\nYou have "+Player.health+" HP.",enemy));
   let eventRunning = true;
   while (eventRunning) {
+// PLAYER TURN
+    print("It is your turn.");
     print("Will you use an [\"item\"] or [\"retreat\"]?");
     await input(["item","retreat"]);
     if (lastInput=="item") {
@@ -377,9 +384,7 @@ async function runFight(obj) {
       const damage = roll(item.rolls,item.die,item.bonus);
       enemy.health -= damage;
       print(fightTrans("The [E] [has] [HP] HP remaining.",enemy));
-      print(enemy.name+"'s turn!");
-
-
+      print("Your turn is over.");
     } else { // retreat
       print(fightTrans("You must beat the [E]'s roll.",enemy));
       const enemyRoll = quietRoll(1,20,0);
@@ -391,10 +396,10 @@ async function runFight(obj) {
         print("You successfully escape the "+enemy.name);
         eventRunning = false;
       } else {
-        print(enemy.name+"'s turn!");
-
-
+        print("Your turn is over.");
       }
+// ENEMY TURN
+
     };
 
     //end fight loop
