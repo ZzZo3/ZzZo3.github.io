@@ -360,7 +360,7 @@ async function runFight(obj) {
         itemKeys[i] = String(i);
       });
       await input(itemKeys);
-      const item = Player.inventory[Int(lastInput)];
+      const item = Player.inventory[parseInt(lastInput)];
       print("Any input to roll for damage from "+item.name+".");
       await input("ANY");
       const damage = item.roll();
