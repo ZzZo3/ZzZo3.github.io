@@ -222,8 +222,9 @@ class Weapon {
         print("< "+roll+" >");
         damageSum += roll;
       };
-      print("+ "+this.bonus+" = "+damageSum+this.bonus);
-      return damageSum+this.bonus;
+      damageSum += this.bonus;
+      print(" + "+this.bonus+" = "+damageSum);
+      return damageSum;
     };
   };
 };
