@@ -230,18 +230,36 @@ class Enemy {
   }
 };
 
-class Weapon {
-  constructor(name, lvl, die, rolls, bonus, upgradeChance) {
+class Item {
+  constructor(name, type) {
     this.name = name;
+  }
+};
+
+class Weapon extends Item { //no cooldown, manual upgrade levels
+  constructor(name, lvl, die, rolls, bonus, upgradeChance) {
+    super(name);
     this.lvl = lvl;
-    this.die = die; // e.g. "2d6"
-    this.rolls = rolls; // e.g. [6,6]
-    this.bonus = bonus; // added damage per level
-    this.upgradeChance = upgradeChance; // 0->1 % appearance in upgrade scene
+    this.die = die;     // 2[d6]+1
+    this.rolls = rolls; // [2]d6+1
+    this.bonus = bonus; // 2d6[+1]
+    this.upgradeChance = upgradeChance; // [0...1] % appearance in upgrade scene
     this.upgrade = function(by) {
       this.lvl += by;
     };
   };
+};
+
+class Spell extends Item { //cooldown, xp levels
+  constructor(name, xp, lvl, die, rolls, bonus, cooldown) {
+    super(name);
+    this.xp = xp;
+    this.lvl = lvl;
+    this.die = die;     // 2[d6]+1
+    this.rolls = rolls; // [2]d6+1
+    this.bonus = bonus; // 2d6[+1]
+    this.cooldown = cooldown;
+  }
 };
 /*
 
