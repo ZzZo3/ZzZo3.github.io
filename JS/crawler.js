@@ -366,7 +366,7 @@ async function runFight(obj) {
       await input("ANY");
       const damage = item.roll();
       enemy.health -= damage;
-      print(fightTrans("The [E] [has] ")+enemy.health+" HP remaining.");
+      print(fightTrans("The [E] [has] [HP] HP remaining.",enemy));
       
     } else {
       print("You run the other way.");
