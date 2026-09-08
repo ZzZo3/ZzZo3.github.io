@@ -373,9 +373,8 @@ async function runFight(obj) {
       eventRunning = false;
     };
 
-
+    print("say anything");
     await input("ANY");
-    eventRunning = false;
   };
 };
 /*
