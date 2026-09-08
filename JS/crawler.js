@@ -218,7 +218,7 @@ class Weapon {
       print("Rolling "+this.rolls+"d"+this.die+"+"+this.bonus+"...");
       let damageSum = 0;
       for (let i=0; i<this.rolls; i++) {
-        const roll = Math.ceil(Math.random()*this.die;
+        const roll = Math.ceil(Math.random()*this.die);
         print("< "+roll+" >");
         damageSum += roll);
       };
