@@ -399,6 +399,7 @@ async function runFight(obj) {
 
     //end fight loop
   };
+  print("The FIGHT is over.");
 };
 /*
 
