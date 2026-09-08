@@ -383,7 +383,7 @@ async function runFight(obj) {
     } else { // retreat
       print(fightTrans("You must beat the [E]'s roll.",enemy));
       const enemyRoll = quietRoll(1,20,0);
-      print("Any input to roll for damage from "+item.name+".");
+      print("Any input to roll your d20.");
       await input("ANY");
       const playerRoll = roll(1,20,0);
       print(fightTrans("[E]'s roll was ",enemy)+enemyRoll+".");
