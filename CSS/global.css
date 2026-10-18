@@ -15,6 +15,7 @@ html,
 body {
   height: 100%;
   font-family: 'Courier New', Courier, monospace;
+  image-rendering: pixelated;
 }
 
 .pageTitle {
@@ -29,7 +30,7 @@ body {
       #101010 90deg 180deg,
       #080808 180deg 270deg,
       #101010 270deg 360deg);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: 25px 25px;
   background-position: top left;
   image-rendering: pixelated;
@@ -71,7 +72,7 @@ body {
 }
 
 .slowSmoothStars {
-  background-color: yellowgreen;
+  background-color: indigo;
   background-image: url("../assets/backgrounds/starryNightSSmooth.gif");
   background-blend-mode: luminosity;
   image-rendering: pixelated;
@@ -216,9 +217,12 @@ body {
 }
 
 .construction {
-  background-image: url("../assets/backgrounds/yellowTape.png");
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: luminosity;
+  image-rendering: initial;
+  background-image: url("../assets/backgrounds/roseTape.png");
   background-repeat: repeat;
-  background-size: 64px 64px;
+  background-size: 3.125vw 3.125vw;
   background-position: top left;
   width: 120vw;
   height: 3.125vw;
