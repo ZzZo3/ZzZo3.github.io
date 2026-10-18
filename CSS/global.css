@@ -211,16 +211,13 @@ body {
   background-color: blue;
 }
 
-.constructionContainer {
+.construction>* {
   margin-top: 2%;
   margin-bottom: 2%;
-}
-
-.construction {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(25,0,50,0.5);
   background-blend-mode: luminosity;
   image-rendering: initial;
-  background-image: url("../assets/backgrounds/roseTape.png");
+  background-image: url("../assets/backgrounds/yellowTape.png");
   background-repeat: repeat;
   background-size: 3.125vw 3.125vw;
   background-position: top left;
