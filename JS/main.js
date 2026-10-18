@@ -333,7 +333,7 @@ function REND(CLASS, ZED) {
     var perTileScale = 1
     if (tile.hasAttribute('data-scale')) { perTileScale = parseInt(tile.getAttribute('data-scale')) }
     if (tile.hasAttribute('data-offY')) { offY = parseInt(tile.getAttribute('data-offY')) }
-    if (isoSpread > 1.0) {
+    if (isoSpread > 1.0 || mountainOffset > 0.0) {
       if (tile.getAttribute('src')=="./assets/isometric/bases/WATER_CEIL.png") { tile.setAttribute('src',"./assets/isometric/bases/WATER.png") }
     } else {
       if (tile.getAttribute('src')=="./assets/isometric/bases/WATER.png") { tile.setAttribute('src',"./assets/isometric/bases/WATER_CEIL.png") }
