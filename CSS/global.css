@@ -71,9 +71,9 @@ body {
 }
 
 .slowSmoothStars {
-  background-color: red;
+  background-color: yellowgreen;
   background-image: url("../assets/backgrounds/starryNightSSmooth.gif");
-  background-blend-mode: multiply;
+  background-blend-mode: luminosity;
   image-rendering: pixelated;
 }
 
