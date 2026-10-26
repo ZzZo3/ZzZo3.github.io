@@ -16,6 +16,7 @@ body {
   height: 100%;
   font-family: 'Courier New', Courier, monospace;
   image-rendering: pixelated;
+  margin: none;
 }
 
 .pageTitle {
@@ -30,7 +31,7 @@ body {
       #101010 90deg 180deg,
       #080808 180deg 270deg,
       #101010 270deg 360deg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 25px 25px;
   background-position: top left;
   image-rendering: pixelated;
