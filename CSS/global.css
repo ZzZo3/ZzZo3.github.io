@@ -16,7 +16,6 @@ body {
   height: 100%;
   font-family: 'Courier New', Courier, monospace;
   image-rendering: pixelated;
-  margin: none;
 }
 
 .pageTitle {
@@ -35,6 +34,7 @@ body {
   background-size: 25px 25px;
   background-position: top left;
   image-rendering: pixelated;
+  margin: 0 0;
 }
 
 .tileLight {
