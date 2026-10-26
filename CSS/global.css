@@ -16,6 +16,8 @@ body {
   height: 100%;
   font-family: 'Courier New', Courier, monospace;
   image-rendering: pixelated;
+  background-position: top left;
+  background-repeat: repeat;
 }
 
 img { loading: lazy; }
@@ -32,10 +34,9 @@ img { loading: lazy; }
       #101010 90deg 180deg,
       #080808 180deg 270deg,
       #101010 270deg 360deg);
-  background-repeat: repeat;
   background-size: 25px 25px;
-  background-position: top left;
   margin: 0 0;
+  padding-left: 1vw;
 }
 
 .tileLight {
@@ -45,18 +46,17 @@ img { loading: lazy; }
       #f7f7f7 90deg 180deg,
       #f3f3f3 180deg 270deg,
       #f7f7f7 270deg 360deg);
-  background-repeat: repeat;
   background-size: 25px 25px;
-  background-position: top left;
   margin: 0 0;
+  padding-left: 1vw;
 }
 
 .tileStarry {
   color: white;
-  background-repeat: repeat;
   background-size: 100px 100px;
   background-position: top left;
   margin: 0 0;
+  padding-left: 1vw;
 }
 
 .staticStars {
