@@ -18,6 +18,8 @@ body {
   image-rendering: pixelated;
 }
 
+img { loading: lazy; }
+
 .pageTitle {
   margin-right: 20px;
 }
